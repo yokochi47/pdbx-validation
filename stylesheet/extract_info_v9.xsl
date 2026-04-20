@@ -1570,7 +1570,7 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
 	    <xsl:when test='@restraint_type="THETA&apos;"'>
 	      <xsl:attribute name="type">theta'</xsl:attribute>
 	    </xsl:when>
-	    <xsl:when test="@restraint_type='.' or @restraint_type='PPA' or @restraint_type='VEANgle' or @restraint_type='UNNAMED' or @restraint_type='UNKN'">
+	    <xsl:when test="@restraint_type='.' or @restraint_type='PPA' or @restraint_type='VEANgle' or @restraint_type='UNNAMED' or @restraint_type='UNKN' or @restraint_type='ALIGN'">
 	      <xsl:attribute name="type">other</xsl:attribute>
 	    </xsl:when>
 	    <xsl:otherwise>
@@ -1696,7 +1696,7 @@ Restraint type, <xsl:value-of select="@restraint_type"/>, is not listed in XSLT 
 	      <xsl:when test='@ang_rest_type="THETA&apos;"'>
 		<VRPTx:theta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_prime_violations_count>
 	      </xsl:when>
-	      <xsl:when test="@ang_rest_type='.' or @ang_rest_type='PPA' or @ang_rest_type='VEANgle' or @ang_rest_type='UNNAMED' or @ang_rest_type='UNKN'">
+	      <xsl:when test="@ang_rest_type='.' or @ang_rest_type='PPA' or @ang_rest_type='VEANgle' or @ang_rest_type='UNNAMED' or @ang_rest_type='UNKN' or @ang_rest_type='ALIGN'">
 		<VRPTx:other_violations_count><xsl:value-of select="@violations_count"/></VRPTx:other_violations_count>
 	      </xsl:when>
 	      <xsl:otherwise>
@@ -1820,7 +1820,7 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
 	      <xsl:when test='@ang_rest_type="THETA&apos;"'>
 		<VRPTx:theta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_prime_violations_count>
 	      </xsl:when>
-	      <xsl:when test="@ang_rest_type='.' or @ang_rest_type='PPA' or @ang_rest_type='VEANgle' or @ang_rest_type='UNNAMED' or @ang_rest_type='UNKN'">
+	      <xsl:when test="@ang_rest_type='.' or @ang_rest_type='PPA' or @ang_rest_type='VEANgle' or @ang_rest_type='UNNAMED' or @ang_rest_type='UNKN' or @ang_rest_type='ALIGN'">
 		<VRPTx:other_violations_count><xsl:value-of select="@violations_count"/></VRPTx:other_violations_count>
 	      </xsl:when>
 	      <xsl:otherwise>

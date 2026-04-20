@@ -94,12 +94,12 @@
   <xsl:template match="/PDBx:datablock/*">
     <xsl:element name="PDBo:has_{local-name(.)}">
       <xsl:element name="PDBo:{local-name(.)}">
-	<xsl:attribute name="rdf:about">
-	  <xsl:value-of select="concat($base,'/',local-name(.))"/>
-	</xsl:attribute>
-	<xsl:apply-templates>
-	  <xsl:with-param name="base" select="$base"/>
-	</xsl:apply-templates>
+        <xsl:attribute name="rdf:about">
+          <xsl:value-of select="concat($base,'/',local-name(.))"/>
+        </xsl:attribute>
+        <xsl:apply-templates>
+          <xsl:with-param name="base" select="$base"/>
+        </xsl:apply-templates>
       </xsl:element>
     </xsl:element>
   </xsl:template>
@@ -112,21 +112,21 @@
     <xsl:variable name="data_type"><xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/></xsl:variable>
     <xsl:element name="PDBo:{$tag_name}">
       <xsl:if test="$data_type!=''">
-	<xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_type"/></xsl:attribute>
+        <xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_type"/></xsl:attribute>
       </xsl:if>
       <xsl:choose>
-	<xsl:when test="contains(local-name(),'one_letter_code')">
-	  <xsl:choose>
-	    <xsl:when test=".='?' or .='.'"/>
-	    <xsl:otherwise>
-	      <xsl:value-of select="translate(normalize-space(.),'
+        <xsl:when test="contains(local-name(),'one_letter_code')">
+          <xsl:choose>
+            <xsl:when test=".='?' or .='.'"/>
+            <xsl:otherwise>
+              <xsl:value-of select="translate(normalize-space(.),'
 ','')"/>
-	    </xsl:otherwise>
-	  </xsl:choose>
-	</xsl:when>
-	<xsl:otherwise>
-	  <xsl:value-of select="."/>
-	</xsl:otherwise>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="."/>
+        </xsl:otherwise>
       </xsl:choose>
     </xsl:element>
   </xsl:template>
@@ -139,7 +139,7 @@
     <xsl:variable name="data_type"><xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/></xsl:variable>
     <xsl:element name="PDBo:{$tag_name}">
       <xsl:if test="$data_type!=''">
-	<xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_type"/></xsl:attribute>
+        <xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_type"/></xsl:attribute>
       </xsl:if>
       <xsl:value-of select="."/>
     </xsl:element>
@@ -166,15 +166,15 @@
     <xsl:variable name="doi_url">
       <xsl:value-of select="$doi"/>
       <xsl:call-template name="replace-string">
-	<xsl:with-param name="str">
-	  <xsl:call-template name="replace-string">
-	    <xsl:with-param name="str" select="text()"/>
-	    <xsl:with-param name="replace">&lt;</xsl:with-param>
-	    <xsl:with-param name="with">&amp;lt;</xsl:with-param>
-	  </xsl:call-template>
-	</xsl:with-param>
-	<xsl:with-param name="replace">&gt;</xsl:with-param>
-	<xsl:with-param name="with">&amp;gt;</xsl:with-param>
+        <xsl:with-param name="str">
+          <xsl:call-template name="replace-string">
+            <xsl:with-param name="str" select="text()"/>
+            <xsl:with-param name="replace">&lt;</xsl:with-param>
+            <xsl:with-param name="with">&amp;lt;</xsl:with-param>
+          </xsl:call-template>
+        </xsl:with-param>
+        <xsl:with-param name="replace">&gt;</xsl:with-param>
+        <xsl:with-param name="with">&amp;gt;</xsl:with-param>
       </xsl:call-template>
     </xsl:variable>
     <PDBo:link_to_doi rdf:resource="{$doi_url}" rdfs:label="doi:{text()}"/>
@@ -226,15 +226,15 @@
   <xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked">
     <xsl:variable name="tax_list">
       <xsl:call-template name="tokenize">
-	<xsl:with-param name="str" select="text()"/>
-	<xsl:with-param name="substr">,</xsl:with-param>
+        <xsl:with-param name="str" select="text()"/>
+        <xsl:with-param name="substr">,</xsl:with-param>
       </xsl:call-template>
     </xsl:variable>
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-	<PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
-	<rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
@@ -242,15 +242,15 @@
   <xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_host_org_ncbi_taxonomy_id[text()!='']" mode="linked">
     <xsl:variable name="tax_list">
       <xsl:call-template name="tokenize">
-	<xsl:with-param name="str" select="text()"/>
-	<xsl:with-param name="substr">,</xsl:with-param>
+        <xsl:with-param name="str" select="text()"/>
+        <xsl:with-param name="substr">,</xsl:with-param>
       </xsl:call-template>
     </xsl:variable>
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-	<PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
-	<rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
@@ -258,15 +258,15 @@
   <xsl:template match="PDBx:entity_src_nat/PDBx:pdbx_ncbi_taxonomy_id[text()!='']" mode="linked">
     <xsl:variable name="tax_list">
       <xsl:call-template name="tokenize">
-	<xsl:with-param name="str" select="text()"/>
-	<xsl:with-param name="substr">,</xsl:with-param>
+        <xsl:with-param name="str" select="text()"/>
+        <xsl:with-param name="substr">,</xsl:with-param>
       </xsl:call-template>
     </xsl:variable>
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-	<PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
-	<rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
@@ -275,17 +275,17 @@
     <xsl:variable name="ec_norm"><xsl:value-of select="normalize-space(text())"/></xsl:variable>
     <xsl:if test="$ec_norm!=''">
       <xsl:variable name="ec_list">
-	<xsl:call-template name="tokenize">
-	  <xsl:with-param name="str" select="$ec_norm"/>
-	  <xsl:with-param name="substr">,</xsl:with-param>
-	</xsl:call-template>
+        <xsl:call-template name="tokenize">
+          <xsl:with-param name="str" select="$ec_norm"/>
+          <xsl:with-param name="substr">,</xsl:with-param>
+        </xsl:call-template>
       </xsl:variable>
       <xsl:for-each select="ext:node-set($ec_list)/token">
-	<xsl:variable name="ec"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
-	<xsl:if test="string-length($ec)!=0">
-	  <PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/>
-	  <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
-	</xsl:if>
+        <xsl:variable name="ec"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+        <xsl:if test="string-length($ec)!=0">
+          <PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/>
+          <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
+        </xsl:if>
       </xsl:for-each>
     </xsl:if>
   </xsl:template>
@@ -388,8 +388,8 @@
     <xsl:variable name="wurcs_id"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
     <xsl:for-each select="$glytoucan/catalog/wurcs[@id=$wurcs_id]">
       <xsl:if test="text()!=''">
-	<PDBo:link_to_glycoinfo rdf:resource="{$glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/>
-	<rdfs:seeAlso rdf:resource="{$idorg}glytoucan/{text()}" rdfs:label="glytoucan:{text()}"/>
+        <PDBo:link_to_glycoinfo rdf:resource="{$glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/>
+        <rdfs:seeAlso rdf:resource="{$idorg}glytoucan/{text()}" rdfs:label="glytoucan:{text()}"/>
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
@@ -455,12 +455,12 @@
       <PDBo:array_data rdf:about="{$base}/array_data/{$array_id_encoded},{$binary_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@array_id!=''">
-	<PDBo:reference_to_array_structure>
-	  <rdf:Description rdf:about="{$base}/array_structure/">
-	    <PDBo:referenced_by_array_data rdf:resource="{$base}/array_data/{$array_id_encoded},{$binary_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_array_structure>
-	<!-- array_structureKeyref_0_0_0_0 -->
+        <PDBo:reference_to_array_structure>
+          <rdf:Description rdf:about="{$base}/array_structure/{translate(@array_id,' ^','__')}">
+            <PDBo:referenced_by_array_data rdf:resource="{$base}/array_data/{$array_id_encoded},{$binary_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_array_structure>
+        <!-- array_structureKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -479,12 +479,12 @@
       <PDBo:array_intensities rdf:about="{$base}/array_intensities/{$array_id_encoded},{$binary_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@array_id!=''">
-	<PDBo:reference_to_array_structure>
-	  <rdf:Description rdf:about="{$base}/array_structure/">
-	    <PDBo:referenced_by_array_intensities rdf:resource="{$base}/array_intensities/{$array_id_encoded},{$binary_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_array_structure>
-	<!-- array_structureKeyref_0_0_1_0 -->
+        <PDBo:reference_to_array_structure>
+          <rdf:Description rdf:about="{$base}/array_structure/{translate(@array_id,' ^','__')}">
+            <PDBo:referenced_by_array_intensities rdf:resource="{$base}/array_intensities/{$array_id_encoded},{$binary_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_array_structure>
+        <!-- array_structureKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -517,12 +517,12 @@
       <PDBo:array_structure_list rdf:about="{$base}/array_structure_list/{$array_id_encoded},{$index_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@array_id!=''">
-	<PDBo:reference_to_array_structure>
-	  <rdf:Description rdf:about="{$base}/array_structure/">
-	    <PDBo:referenced_by_array_structure_list rdf:resource="{$base}/array_structure_list/{$array_id_encoded},{$index_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_array_structure>
-	<!-- array_structureKeyref_0_0_2_0 -->
+        <PDBo:reference_to_array_structure>
+          <rdf:Description rdf:about="{$base}/array_structure/{translate(@array_id,' ^','__')}">
+            <PDBo:referenced_by_array_structure_list rdf:resource="{$base}/array_structure_list/{$array_id_encoded},{$index_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_array_structure>
+        <!-- array_structureKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -559,12 +559,12 @@
       <PDBo:array_structure_list_section rdf:about="{$base}/array_structure_list_section/{$array_id_encoded},{$id_encoded},{$index_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@array_id!=''">
-	<PDBo:reference_to_array_structure>
-	  <rdf:Description rdf:about="{$base}/array_structure/">
-	    <PDBo:referenced_by_array_structure_list_section rdf:resource="{$base}/array_structure_list_section/{$array_id_encoded},{$id_encoded},{$index_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_array_structure>
-	<!-- array_structureKeyref_0_0_3_0 -->
+        <PDBo:reference_to_array_structure>
+          <rdf:Description rdf:about="{$base}/array_structure/{translate(@array_id,' ^','__')}">
+            <PDBo:referenced_by_array_structure_list_section rdf:resource="{$base}/array_structure_list_section/{$array_id_encoded},{$id_encoded},{$index_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_array_structure>
+        <!-- array_structureKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -581,12 +581,12 @@
       <PDBo:atom_site_anisotrop rdf:about="{$base}/atom_site_anisotrop/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:type_symbol!=''">
-	<PDBo:reference_to_atom_type>
-	  <rdf:Description rdf:about="{$base}/atom_type/{translate(PDBx:type_symbol,' ^','__')}">
-	    <PDBo:referenced_by_atom_site_anisotrop rdf:resource="{$base}/atom_site_anisotrop/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_atom_type>
-	<!-- atom_typeKeyref_0_0_1_0 -->
+        <PDBo:reference_to_atom_type>
+          <rdf:Description rdf:about="{$base}/atom_type/">
+            <PDBo:referenced_by_atom_site_anisotrop rdf:resource="{$base}/atom_site_anisotrop/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_atom_type>
+        <!-- atom_typeKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -603,12 +603,12 @@
       <PDBo:atom_sites rdf:about="{$base}/atom_sites/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_atom_sites rdf:resource="{$base}/atom_sites/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_0_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_atom_sites rdf:resource="{$base}/atom_sites/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -655,20 +655,20 @@
       <PDBo:atom_sites_alt_gen rdf:about="{$base}/atom_sites_alt_gen/{$alt_id_encoded},{$ens_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@alt_id!=''">
-	<PDBo:reference_to_atom_sites_alt>
-	  <rdf:Description rdf:about="{$base}/atom_sites_alt/">
-	    <PDBo:referenced_by_atom_sites_alt_gen rdf:resource="{$base}/atom_sites_alt_gen/{$alt_id_encoded},{$ens_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_atom_sites_alt>
-	<!-- atom_sites_altKeyref_0_0_0_0 -->
+        <PDBo:reference_to_atom_sites_alt>
+          <rdf:Description rdf:about="{$base}/atom_sites_alt/{translate(@alt_id,' ^','__')}">
+            <PDBo:referenced_by_atom_sites_alt_gen rdf:resource="{$base}/atom_sites_alt_gen/{$alt_id_encoded},{$ens_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_atom_sites_alt>
+        <!-- atom_sites_altKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:if test="@ens_id!=''">
-	<PDBo:reference_to_atom_sites_alt_ens>
-	  <rdf:Description rdf:about="{$base}/atom_sites_alt_ens/">
-	    <PDBo:referenced_by_atom_sites_alt_gen rdf:resource="{$base}/atom_sites_alt_gen/{$alt_id_encoded},{$ens_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_atom_sites_alt_ens>
-	<!-- atom_sites_alt_ensKeyref_0_0_0_0 -->
+        <PDBo:reference_to_atom_sites_alt_ens>
+          <rdf:Description rdf:about="{$base}/atom_sites_alt_ens/{translate(@ens_id,' ^','__')}">
+            <PDBo:referenced_by_atom_sites_alt_gen rdf:resource="{$base}/atom_sites_alt_gen/{$alt_id_encoded},{$ens_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_atom_sites_alt_ens>
+        <!-- atom_sites_alt_ensKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -787,12 +787,12 @@
       <PDBo:cell rdf:about="{$base}/cell/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_cell rdf:resource="{$base}/cell/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_1_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_cell rdf:resource="{$base}/cell/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -809,12 +809,12 @@
       <PDBo:cell_measurement rdf:about="{$base}/cell_measurement/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_cell_measurement rdf:resource="{$base}/cell_measurement/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_2_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_cell_measurement rdf:resource="{$base}/cell_measurement/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -869,12 +869,12 @@
       <PDBo:chem_comp_angle rdf:about="{$base}/chem_comp_angle/{$atom_id_1_encoded},{$atom_id_2_encoded},{$atom_id_3_encoded},{$comp_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@atom_id_1!='' and @comp_id!=''">
-	<PDBo:reference_to_chem_comp_atom>
-	  <rdf:Description rdf:about="{$base}/chem_comp_atom/,">
-	    <PDBo:referenced_by_chem_comp_angle rdf:resource="{$base}/chem_comp_angle/{$atom_id_1_encoded},{$atom_id_2_encoded},{$atom_id_3_encoded},{$comp_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp_atom>
-	<!-- chem_comp_atomKeyref_0_0_0_0 -->
+        <PDBo:reference_to_chem_comp_atom>
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(@atom_id_1,' ^','__')},{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_chem_comp_angle rdf:resource="{$base}/chem_comp_angle/{$atom_id_1_encoded},{$atom_id_2_encoded},{$atom_id_3_encoded},{$comp_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp_atom>
+        <!-- chem_comp_atomKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -893,12 +893,12 @@
       <PDBo:chem_comp_atom rdf:about="{$base}/chem_comp_atom/{$atom_id_encoded},{$comp_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_chem_comp_atom rdf:resource="{$base}/chem_comp_atom/{$atom_id_encoded},{$comp_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_1_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_chem_comp_atom rdf:resource="{$base}/chem_comp_atom/{$atom_id_encoded},{$comp_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -919,28 +919,28 @@
       <PDBo:chem_comp_bond rdf:about="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_chem_comp_bond rdf:resource="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_2_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_chem_comp_bond rdf:resource="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:if test="@atom_id_1!='' and @comp_id!=''">
-	<PDBo:reference_to_chem_comp_atom>
-	  <rdf:Description rdf:about="{$base}/chem_comp_atom/,">
-	    <PDBo:referenced_by_chem_comp_bond rdf:resource="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp_atom>
-	<!-- chem_comp_atomKeyref_0_0_1_0 -->
+        <PDBo:reference_to_chem_comp_atom>
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(@atom_id_1,' ^','__')},{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_chem_comp_bond rdf:resource="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp_atom>
+        <!-- chem_comp_atomKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:if test="@atom_id_2!='' and @comp_id!=''">
-	<PDBo:reference_to_chem_comp_atom>
-	  <rdf:Description rdf:about="{$base}/chem_comp_atom/,">
-	    <PDBo:referenced_by_chem_comp_bond rdf:resource="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp_atom>
-	<!-- chem_comp_atomKeyref_0_0_1_1 -->
+        <PDBo:reference_to_chem_comp_atom>
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(@atom_id_2,' ^','__')},{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_chem_comp_bond rdf:resource="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp_atom>
+        <!-- chem_comp_atomKeyref_0_0_1_1 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -959,12 +959,12 @@
       <PDBo:chem_comp_chir rdf:about="{$base}/chem_comp_chir/{$comp_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_chem_comp_chir rdf:resource="{$base}/chem_comp_chir/{$comp_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_3_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_chem_comp_chir rdf:resource="{$base}/chem_comp_chir/{$comp_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -985,12 +985,12 @@
       <PDBo:chem_comp_chir_atom rdf:about="{$base}/chem_comp_chir_atom/{$atom_id_encoded},{$chir_id_encoded},{$comp_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_chem_comp_chir_atom rdf:resource="{$base}/chem_comp_chir_atom/{$atom_id_encoded},{$chir_id_encoded},{$comp_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_4_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_chem_comp_chir_atom rdf:resource="{$base}/chem_comp_chir_atom/{$atom_id_encoded},{$chir_id_encoded},{$comp_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1007,12 +1007,12 @@
       <PDBo:chem_comp_link rdf:about="{$base}/chem_comp_link/{$link_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
-	<PDBo:reference_to_chem_link>
-	  <rdf:Description rdf:about="{$base}/chem_link/">
-	    <PDBo:referenced_by_chem_comp_link rdf:resource="{$base}/chem_comp_link/{$link_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_link>
-	<!-- chem_linkKeyref_0_0_0_0 -->
+        <PDBo:reference_to_chem_link>
+          <rdf:Description rdf:about="{$base}/chem_link/{translate(@link_id,' ^','__')}">
+            <PDBo:referenced_by_chem_comp_link rdf:resource="{$base}/chem_comp_link/{$link_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_link>
+        <!-- chem_linkKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1031,12 +1031,12 @@
       <PDBo:chem_comp_plane rdf:about="{$base}/chem_comp_plane/{$comp_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_chem_comp_plane rdf:resource="{$base}/chem_comp_plane/{$comp_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_5_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_chem_comp_plane rdf:resource="{$base}/chem_comp_plane/{$comp_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1057,12 +1057,12 @@
       <PDBo:chem_comp_plane_atom rdf:about="{$base}/chem_comp_plane_atom/{$atom_id_encoded},{$comp_id_encoded},{$plane_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_chem_comp_plane_atom rdf:resource="{$base}/chem_comp_plane_atom/{$atom_id_encoded},{$comp_id_encoded},{$plane_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_6_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_chem_comp_plane_atom rdf:resource="{$base}/chem_comp_plane_atom/{$atom_id_encoded},{$comp_id_encoded},{$plane_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_6_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1081,12 +1081,12 @@
       <PDBo:chem_comp_tor rdf:about="{$base}/chem_comp_tor/{$comp_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:atom_id_1!='' and @comp_id!=''">
-	<PDBo:reference_to_chem_comp_atom>
-	  <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(PDBx:atom_id_1,' ^','__')},">
-	    <PDBo:referenced_by_chem_comp_tor rdf:resource="{$base}/chem_comp_tor/{$comp_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp_atom>
-	<!-- chem_comp_atomKeyref_0_0_2_0 -->
+        <PDBo:reference_to_chem_comp_atom>
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/,{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_chem_comp_tor rdf:resource="{$base}/chem_comp_tor/{$comp_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp_atom>
+        <!-- chem_comp_atomKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1139,12 +1139,12 @@
       <PDBo:chem_link_angle rdf:about="{$base}/chem_link_angle/{$atom_id_1_encoded},{$atom_id_2_encoded},{$atom_id_3_encoded},{$link_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
-	<PDBo:reference_to_chem_link>
-	  <rdf:Description rdf:about="{$base}/chem_link/">
-	    <PDBo:referenced_by_chem_link_angle rdf:resource="{$base}/chem_link_angle/{$atom_id_1_encoded},{$atom_id_2_encoded},{$atom_id_3_encoded},{$link_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_link>
-	<!-- chem_linkKeyref_0_0_1_0 -->
+        <PDBo:reference_to_chem_link>
+          <rdf:Description rdf:about="{$base}/chem_link/{translate(@link_id,' ^','__')}">
+            <PDBo:referenced_by_chem_link_angle rdf:resource="{$base}/chem_link_angle/{$atom_id_1_encoded},{$atom_id_2_encoded},{$atom_id_3_encoded},{$link_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_link>
+        <!-- chem_linkKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1165,12 +1165,12 @@
       <PDBo:chem_link_bond rdf:about="{$base}/chem_link_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$link_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
-	<PDBo:reference_to_chem_link>
-	  <rdf:Description rdf:about="{$base}/chem_link/">
-	    <PDBo:referenced_by_chem_link_bond rdf:resource="{$base}/chem_link_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$link_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_link>
-	<!-- chem_linkKeyref_0_0_2_0 -->
+        <PDBo:reference_to_chem_link>
+          <rdf:Description rdf:about="{$base}/chem_link/{translate(@link_id,' ^','__')}">
+            <PDBo:referenced_by_chem_link_bond rdf:resource="{$base}/chem_link_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$link_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_link>
+        <!-- chem_linkKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1189,12 +1189,12 @@
       <PDBo:chem_link_chir rdf:about="{$base}/chem_link_chir/{$id_encoded},{$link_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
-	<PDBo:reference_to_chem_link>
-	  <rdf:Description rdf:about="{$base}/chem_link/">
-	    <PDBo:referenced_by_chem_link_chir rdf:resource="{$base}/chem_link_chir/{$id_encoded},{$link_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_link>
-	<!-- chem_linkKeyref_0_0_3_0 -->
+        <PDBo:reference_to_chem_link>
+          <rdf:Description rdf:about="{$base}/chem_link/{translate(@link_id,' ^','__')}">
+            <PDBo:referenced_by_chem_link_chir rdf:resource="{$base}/chem_link_chir/{$id_encoded},{$link_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_link>
+        <!-- chem_linkKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1229,12 +1229,12 @@
       <PDBo:chem_link_plane rdf:about="{$base}/chem_link_plane/{$id_encoded},{$link_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
-	<PDBo:reference_to_chem_link>
-	  <rdf:Description rdf:about="{$base}/chem_link/">
-	    <PDBo:referenced_by_chem_link_plane rdf:resource="{$base}/chem_link_plane/{$id_encoded},{$link_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_link>
-	<!-- chem_linkKeyref_0_0_4_0 -->
+        <PDBo:reference_to_chem_link>
+          <rdf:Description rdf:about="{$base}/chem_link/{translate(@link_id,' ^','__')}">
+            <PDBo:referenced_by_chem_link_plane rdf:resource="{$base}/chem_link_plane/{$id_encoded},{$link_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_link>
+        <!-- chem_linkKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1269,12 +1269,12 @@
       <PDBo:chem_link_tor rdf:about="{$base}/chem_link_tor/{$id_encoded},{$link_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
-	<PDBo:reference_to_chem_link>
-	  <rdf:Description rdf:about="{$base}/chem_link/">
-	    <PDBo:referenced_by_chem_link_tor rdf:resource="{$base}/chem_link_tor/{$id_encoded},{$link_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_link>
-	<!-- chem_linkKeyref_0_0_5_0 -->
+        <PDBo:reference_to_chem_link>
+          <rdf:Description rdf:about="{$base}/chem_link/{translate(@link_id,' ^','__')}">
+            <PDBo:referenced_by_chem_link_tor rdf:resource="{$base}/chem_link_tor/{$id_encoded},{$link_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_link>
+        <!-- chem_linkKeyref_0_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1305,12 +1305,12 @@
       <PDBo:chemical rdf:about="{$base}/chemical/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_chemical rdf:resource="{$base}/chemical/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_3_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_chemical rdf:resource="{$base}/chemical/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1327,12 +1327,12 @@
       <PDBo:chemical_conn_atom rdf:about="{$base}/chemical_conn_atom/{$number_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:type_symbol!=''">
-	<PDBo:reference_to_atom_type>
-	  <rdf:Description rdf:about="{$base}/atom_type/{translate(PDBx:type_symbol,' ^','__')}">
-	    <PDBo:referenced_by_chemical_conn_atom rdf:resource="{$base}/chemical_conn_atom/{$number_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_atom_type>
-	<!-- atom_typeKeyref_0_0_2_0 -->
+        <PDBo:reference_to_atom_type>
+          <rdf:Description rdf:about="{$base}/atom_type/">
+            <PDBo:referenced_by_chemical_conn_atom rdf:resource="{$base}/chemical_conn_atom/{$number_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_atom_type>
+        <!-- atom_typeKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1351,20 +1351,20 @@
       <PDBo:chemical_conn_bond rdf:about="{$base}/chemical_conn_bond/{$atom_1_encoded},{$atom_2_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@atom_1!=''">
-	<PDBo:reference_to_chemical_conn_atom>
-	  <rdf:Description rdf:about="{$base}/chemical_conn_atom/">
-	    <PDBo:referenced_by_chemical_conn_bond rdf:resource="{$base}/chemical_conn_bond/{$atom_1_encoded},{$atom_2_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chemical_conn_atom>
-	<!-- chemical_conn_atomKeyref_0_0_0_0 -->
+        <PDBo:reference_to_chemical_conn_atom>
+          <rdf:Description rdf:about="{$base}/chemical_conn_atom/{translate(@atom_1,' ^','__')}">
+            <PDBo:referenced_by_chemical_conn_bond rdf:resource="{$base}/chemical_conn_bond/{$atom_1_encoded},{$atom_2_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chemical_conn_atom>
+        <!-- chemical_conn_atomKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:if test="@atom_2!=''">
-	<PDBo:reference_to_chemical_conn_atom>
-	  <rdf:Description rdf:about="{$base}/chemical_conn_atom/">
-	    <PDBo:referenced_by_chemical_conn_bond rdf:resource="{$base}/chemical_conn_bond/{$atom_1_encoded},{$atom_2_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chemical_conn_atom>
-	<!-- chemical_conn_atomKeyref_0_0_0_1 -->
+        <PDBo:reference_to_chemical_conn_atom>
+          <rdf:Description rdf:about="{$base}/chemical_conn_atom/{translate(@atom_2,' ^','__')}">
+            <PDBo:referenced_by_chemical_conn_bond rdf:resource="{$base}/chemical_conn_bond/{$atom_1_encoded},{$atom_2_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chemical_conn_atom>
+        <!-- chemical_conn_atomKeyref_0_0_0_1 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1381,12 +1381,12 @@
       <PDBo:chemical_formula rdf:about="{$base}/chemical_formula/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_chemical_formula rdf:resource="{$base}/chemical_formula/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_4_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_chemical_formula rdf:resource="{$base}/chemical_formula/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1421,12 +1421,12 @@
       <PDBo:citation_author rdf:about="{$base}/citation_author/{$citation_id_encoded},{$name_encoded},{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@citation_id!=''">
-	<PDBo:reference_to_citation>
-	  <rdf:Description rdf:about="{$base}/citation/">
-	    <PDBo:referenced_by_citation_author rdf:resource="{$base}/citation_author/{$citation_id_encoded},{$name_encoded},{$ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_citation>
-	<!-- citationKeyref_0_0_0_0 -->
+        <PDBo:reference_to_citation>
+          <rdf:Description rdf:about="{$base}/citation/{translate(@citation_id,' ^','__')}">
+            <PDBo:referenced_by_citation_author rdf:resource="{$base}/citation_author/{$citation_id_encoded},{$name_encoded},{$ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_citation>
+        <!-- citationKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1445,12 +1445,12 @@
       <PDBo:citation_editor rdf:about="{$base}/citation_editor/{$citation_id_encoded},{$name_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@citation_id!=''">
-	<PDBo:reference_to_citation>
-	  <rdf:Description rdf:about="{$base}/citation/">
-	    <PDBo:referenced_by_citation_editor rdf:resource="{$base}/citation_editor/{$citation_id_encoded},{$name_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_citation>
-	<!-- citationKeyref_0_0_1_0 -->
+        <PDBo:reference_to_citation>
+          <rdf:Description rdf:about="{$base}/citation/{translate(@citation_id,' ^','__')}">
+            <PDBo:referenced_by_citation_editor rdf:resource="{$base}/citation_editor/{$citation_id_encoded},{$name_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_citation>
+        <!-- citationKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1467,12 +1467,12 @@
       <PDBo:computing rdf:about="{$base}/computing/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_computing rdf:resource="{$base}/computing/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_5_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_computing rdf:resource="{$base}/computing/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1489,12 +1489,12 @@
       <PDBo:database rdf:about="{$base}/database/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_database rdf:resource="{$base}/database/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_6_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_database rdf:resource="{$base}/database/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_6_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1541,12 +1541,12 @@
       <PDBo:database_PDB_matrix rdf:about="{$base}/database_PDB_matrix/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_database_PDB_matrix rdf:resource="{$base}/database_PDB_matrix/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_7_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_database_PDB_matrix rdf:resource="{$base}/database_PDB_matrix/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_7_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1593,12 +1593,12 @@
       <PDBo:database_PDB_rev_record rdf:about="{$base}/database_PDB_rev_record/{$rev_num_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@rev_num!=''">
-	<PDBo:reference_to_database_PDB_rev>
-	  <rdf:Description rdf:about="{$base}/database_PDB_rev/">
-	    <PDBo:referenced_by_database_PDB_rev_record rdf:resource="{$base}/database_PDB_rev_record/{$rev_num_encoded},{$type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_database_PDB_rev>
-	<!-- database_PDB_revKeyref_0_0_0_0 -->
+        <PDBo:reference_to_database_PDB_rev>
+          <rdf:Description rdf:about="{$base}/database_PDB_rev/{translate(@rev_num,' ^','__')}">
+            <PDBo:referenced_by_database_PDB_rev_record rdf:resource="{$base}/database_PDB_rev_record/{$rev_num_encoded},{$type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_database_PDB_rev>
+        <!-- database_PDB_revKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1629,12 +1629,12 @@
       <PDBo:diffrn rdf:about="{$base}/diffrn/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:crystal_id!=''">
-	<PDBo:reference_to_exptl_crystal>
-	  <rdf:Description rdf:about="{$base}/exptl_crystal/{translate(PDBx:crystal_id,' ^','__')}">
-	    <PDBo:referenced_by_diffrn rdf:resource="{$base}/diffrn/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_exptl_crystal>
-	<!-- exptl_crystalKeyref_0_0_0_0 -->
+        <PDBo:reference_to_exptl_crystal>
+          <rdf:Description rdf:about="{$base}/exptl_crystal/">
+            <PDBo:referenced_by_diffrn rdf:resource="{$base}/diffrn/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_exptl_crystal>
+        <!-- exptl_crystalKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1681,12 +1681,12 @@
       <PDBo:diffrn_detector rdf:about="{$base}/diffrn_detector/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_diffrn_detector rdf:resource="{$base}/diffrn_detector/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_0_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_detector rdf:resource="{$base}/diffrn_detector/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1735,12 +1735,12 @@
       <PDBo:diffrn_measurement rdf:about="{$base}/diffrn_measurement/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_diffrn_measurement rdf:resource="{$base}/diffrn_measurement/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_1_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_measurement rdf:resource="{$base}/diffrn_measurement/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1757,12 +1757,12 @@
       <PDBo:diffrn_orient_matrix rdf:about="{$base}/diffrn_orient_matrix/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_diffrn_orient_matrix rdf:resource="{$base}/diffrn_orient_matrix/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_2_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_orient_matrix rdf:resource="{$base}/diffrn_orient_matrix/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1785,12 +1785,12 @@
       <PDBo:diffrn_orient_refln rdf:about="{$base}/diffrn_orient_refln/{$diffrn_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_diffrn_orient_refln rdf:resource="{$base}/diffrn_orient_refln/{$diffrn_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_3_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_orient_refln rdf:resource="{$base}/diffrn_orient_refln/{$diffrn_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1807,12 +1807,12 @@
       <PDBo:diffrn_radiation rdf:about="{$base}/diffrn_radiation/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_diffrn_radiation rdf:resource="{$base}/diffrn_radiation/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_4_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_radiation rdf:resource="{$base}/diffrn_radiation/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1845,12 +1845,12 @@
       <PDBo:diffrn_refln rdf:about="{$base}/diffrn_refln/{$diffrn_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_diffrn_refln rdf:resource="{$base}/diffrn_refln/{$diffrn_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_5_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_refln rdf:resource="{$base}/diffrn_refln/{$diffrn_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1867,12 +1867,12 @@
       <PDBo:diffrn_reflns rdf:about="{$base}/diffrn_reflns/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_diffrn_reflns rdf:resource="{$base}/diffrn_reflns/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_6_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_reflns rdf:resource="{$base}/diffrn_reflns/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_6_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1917,12 +1917,12 @@
       <PDBo:diffrn_scan rdf:about="{$base}/diffrn_scan/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:frame_id_end!='' and PDBx:frame_id_start!=''">
-	<PDBo:reference_to_diffrn_data_frame>
-	  <rdf:Description rdf:about="{$base}/diffrn_data_frame/{translate(PDBx:frame_id_end,' ^','__')},{translate(PDBx:frame_id_start,' ^','__')}">
-	    <PDBo:referenced_by_diffrn_scan rdf:resource="{$base}/diffrn_scan/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn_data_frame>
-	<!-- diffrn_data_frameKeyref_0_0_0_0 -->
+        <PDBo:reference_to_diffrn_data_frame>
+          <rdf:Description rdf:about="{$base}/diffrn_data_frame/,">
+            <PDBo:referenced_by_diffrn_scan rdf:resource="{$base}/diffrn_scan/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn_data_frame>
+        <!-- diffrn_data_frameKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1941,12 +1941,12 @@
       <PDBo:diffrn_scan_axis rdf:about="{$base}/diffrn_scan_axis/{$axis_id_encoded},{$scan_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@scan_id!=''">
-	<PDBo:reference_to_diffrn_scan>
-	  <rdf:Description rdf:about="{$base}/diffrn_scan/">
-	    <PDBo:referenced_by_diffrn_scan_axis rdf:resource="{$base}/diffrn_scan_axis/{$axis_id_encoded},{$scan_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn_scan>
-	<!-- diffrn_scanKeyref_0_0_0_0 -->
+        <PDBo:reference_to_diffrn_scan>
+          <rdf:Description rdf:about="{$base}/diffrn_scan/{translate(@scan_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_scan_axis rdf:resource="{$base}/diffrn_scan_axis/{$axis_id_encoded},{$scan_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn_scan>
+        <!-- diffrn_scanKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1979,12 +1979,12 @@
       <PDBo:diffrn_scan_frame rdf:about="{$base}/diffrn_scan_frame/{$frame_id_encoded},{$scan_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@scan_id!=''">
-	<PDBo:reference_to_diffrn_scan>
-	  <rdf:Description rdf:about="{$base}/diffrn_scan/">
-	    <PDBo:referenced_by_diffrn_scan_frame rdf:resource="{$base}/diffrn_scan_frame/{$frame_id_encoded},{$scan_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn_scan>
-	<!-- diffrn_scanKeyref_0_0_1_0 -->
+        <PDBo:reference_to_diffrn_scan>
+          <rdf:Description rdf:about="{$base}/diffrn_scan/{translate(@scan_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_scan_frame rdf:resource="{$base}/diffrn_scan_frame/{$frame_id_encoded},{$scan_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn_scan>
+        <!-- diffrn_scanKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2017,12 +2017,12 @@
       <PDBo:diffrn_source rdf:about="{$base}/diffrn_source/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_diffrn_source rdf:resource="{$base}/diffrn_source/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_7_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_source rdf:resource="{$base}/diffrn_source/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_7_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2041,12 +2041,12 @@
       <PDBo:diffrn_standard_refln rdf:about="{$base}/diffrn_standard_refln/{$code_encoded},{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_diffrn_standard_refln rdf:resource="{$base}/diffrn_standard_refln/{$code_encoded},{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_8_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_standard_refln rdf:resource="{$base}/diffrn_standard_refln/{$code_encoded},{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_8_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2063,12 +2063,12 @@
       <PDBo:diffrn_standards rdf:about="{$base}/diffrn_standards/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_diffrn_standards rdf:resource="{$base}/diffrn_standards/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_9_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_diffrn_standards rdf:resource="{$base}/diffrn_standards/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_9_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2101,12 +2101,12 @@
       <PDBo:em_2d_projection_selection rdf:about="{$base}/em_2d_projection_selection/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_em_2d_projection_selection rdf:resource="{$base}/em_2d_projection_selection/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_8_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_em_2d_projection_selection rdf:resource="{$base}/em_2d_projection_selection/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_8_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2141,12 +2141,12 @@
       <PDBo:em_3d_fitting rdf:about="{$base}/em_3d_fitting/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_em_3d_fitting rdf:resource="{$base}/em_3d_fitting/{$entry_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_9_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_em_3d_fitting rdf:resource="{$base}/em_3d_fitting/{$entry_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_9_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2181,12 +2181,12 @@
       <PDBo:em_3d_reconstruction rdf:about="{$base}/em_3d_reconstruction/{$id_encoded},{$image_processing_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/{translate(PDBx:entry_id,' ^','__')}">
-	    <PDBo:referenced_by_em_3d_reconstruction rdf:resource="{$base}/em_3d_reconstruction/{$id_encoded},{$image_processing_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_10_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/">
+            <PDBo:referenced_by_em_3d_reconstruction rdf:resource="{$base}/em_3d_reconstruction/{$id_encoded},{$image_processing_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_10_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2203,12 +2203,12 @@
       <PDBo:em_admin rdf:about="{$base}/em_admin/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_em_admin rdf:resource="{$base}/em_admin/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_11_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_em_admin rdf:resource="{$base}/em_admin/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_11_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2227,12 +2227,12 @@
       <PDBo:em_assembly rdf:about="{$base}/em_assembly/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_em_assembly rdf:resource="{$base}/em_assembly/{$entry_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_12_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_em_assembly rdf:resource="{$base}/em_assembly/{$entry_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_12_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2351,12 +2351,12 @@
       <PDBo:em_depositor_info rdf:about="{$base}/em_depositor_info/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_em_depositor_info rdf:resource="{$base}/em_depositor_info/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_13_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_em_depositor_info rdf:resource="{$base}/em_depositor_info/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_13_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2389,12 +2389,12 @@
       <PDBo:em_detector rdf:about="{$base}/em_detector/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_em_detector rdf:resource="{$base}/em_detector/{$entry_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_14_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_em_detector rdf:resource="{$base}/em_detector/{$entry_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_14_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2483,12 +2483,12 @@
       <PDBo:em_entity_assembly_molwt rdf:about="{$base}/em_entity_assembly_molwt/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
-	<PDBo:reference_to_em_entity_assembly>
-	  <rdf:Description rdf:about="{$base}/em_entity_assembly/">
-	    <PDBo:referenced_by_em_entity_assembly_molwt rdf:resource="{$base}/em_entity_assembly_molwt/{$entity_assembly_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_entity_assembly>
-	<!-- em_entity_assemblyKeyref_0_0_0_0 -->
+        <PDBo:reference_to_em_entity_assembly>
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','__')}">
+            <PDBo:referenced_by_em_entity_assembly_molwt rdf:resource="{$base}/em_entity_assembly_molwt/{$entity_assembly_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2507,12 +2507,12 @@
       <PDBo:em_entity_assembly_naturalsource rdf:about="{$base}/em_entity_assembly_naturalsource/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
-	<PDBo:reference_to_em_entity_assembly>
-	  <rdf:Description rdf:about="{$base}/em_entity_assembly/">
-	    <PDBo:referenced_by_em_entity_assembly_naturalsource rdf:resource="{$base}/em_entity_assembly_naturalsource/{$entity_assembly_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_entity_assembly>
-	<!-- em_entity_assemblyKeyref_0_0_1_0 -->
+        <PDBo:reference_to_em_entity_assembly>
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','__')}">
+            <PDBo:referenced_by_em_entity_assembly_naturalsource rdf:resource="{$base}/em_entity_assembly_naturalsource/{$entity_assembly_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2531,12 +2531,12 @@
       <PDBo:em_entity_assembly_recombinant rdf:about="{$base}/em_entity_assembly_recombinant/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
-	<PDBo:reference_to_em_entity_assembly>
-	  <rdf:Description rdf:about="{$base}/em_entity_assembly/">
-	    <PDBo:referenced_by_em_entity_assembly_recombinant rdf:resource="{$base}/em_entity_assembly_recombinant/{$entity_assembly_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_entity_assembly>
-	<!-- em_entity_assemblyKeyref_0_0_2_0 -->
+        <PDBo:reference_to_em_entity_assembly>
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','__')}">
+            <PDBo:referenced_by_em_entity_assembly_recombinant rdf:resource="{$base}/em_entity_assembly_recombinant/{$entity_assembly_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2555,12 +2555,12 @@
       <PDBo:em_entity_assembly_synthetic rdf:about="{$base}/em_entity_assembly_synthetic/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
-	<PDBo:reference_to_em_entity_assembly>
-	  <rdf:Description rdf:about="{$base}/em_entity_assembly/">
-	    <PDBo:referenced_by_em_entity_assembly_synthetic rdf:resource="{$base}/em_entity_assembly_synthetic/{$entity_assembly_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_entity_assembly>
-	<!-- em_entity_assemblyKeyref_0_0_3_0 -->
+        <PDBo:reference_to_em_entity_assembly>
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','__')}">
+            <PDBo:referenced_by_em_entity_assembly_synthetic rdf:resource="{$base}/em_entity_assembly_synthetic/{$entity_assembly_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2591,12 +2591,12 @@
       <PDBo:em_experiment rdf:about="{$base}/em_experiment/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_em_experiment rdf:resource="{$base}/em_experiment/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_15_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_em_experiment rdf:resource="{$base}/em_experiment/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_15_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2613,12 +2613,12 @@
       <PDBo:em_fiducial_markers rdf:about="{$base}/em_fiducial_markers/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:em_tomography_specimen_id!=''">
-	<PDBo:reference_to_em_tomography_specimen>
-	  <rdf:Description rdf:about="{$base}/em_tomography_specimen/{translate(PDBx:em_tomography_specimen_id,' ^','__')}">
-	    <PDBo:referenced_by_em_fiducial_markers rdf:resource="{$base}/em_fiducial_markers/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_tomography_specimen>
-	<!-- em_tomography_specimenKeyref_0_0_0_0 -->
+        <PDBo:reference_to_em_tomography_specimen>
+          <rdf:Description rdf:about="{$base}/em_tomography_specimen/">
+            <PDBo:referenced_by_em_fiducial_markers rdf:resource="{$base}/em_fiducial_markers/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_tomography_specimen>
+        <!-- em_tomography_specimenKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2663,12 +2663,12 @@
       <PDBo:em_focused_ion_beam rdf:about="{$base}/em_focused_ion_beam/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:em_tomography_specimen_id!=''">
-	<PDBo:reference_to_em_tomography_specimen>
-	  <rdf:Description rdf:about="{$base}/em_tomography_specimen/{translate(PDBx:em_tomography_specimen_id,' ^','__')}">
-	    <PDBo:referenced_by_em_focused_ion_beam rdf:resource="{$base}/em_focused_ion_beam/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_tomography_specimen>
-	<!-- em_tomography_specimenKeyref_0_0_1_0 -->
+        <PDBo:reference_to_em_tomography_specimen>
+          <rdf:Description rdf:about="{$base}/em_tomography_specimen/">
+            <PDBo:referenced_by_em_focused_ion_beam rdf:resource="{$base}/em_focused_ion_beam/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_tomography_specimen>
+        <!-- em_tomography_specimenKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2729,12 +2729,12 @@
       <PDBo:em_high_pressure_freezing rdf:about="{$base}/em_high_pressure_freezing/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:em_tomography_specimen_id!=''">
-	<PDBo:reference_to_em_tomography_specimen>
-	  <rdf:Description rdf:about="{$base}/em_tomography_specimen/{translate(PDBx:em_tomography_specimen_id,' ^','__')}">
-	    <PDBo:referenced_by_em_high_pressure_freezing rdf:resource="{$base}/em_high_pressure_freezing/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_tomography_specimen>
-	<!-- em_tomography_specimenKeyref_0_0_2_0 -->
+        <PDBo:reference_to_em_tomography_specimen>
+          <rdf:Description rdf:about="{$base}/em_tomography_specimen/">
+            <PDBo:referenced_by_em_high_pressure_freezing rdf:resource="{$base}/em_high_pressure_freezing/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_tomography_specimen>
+        <!-- em_tomography_specimenKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2785,12 +2785,12 @@
       <PDBo:em_image_scans rdf:about="{$base}/em_image_scans/{$id_encoded},{$image_recording_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/{translate(PDBx:entry_id,' ^','__')}">
-	    <PDBo:referenced_by_em_image_scans rdf:resource="{$base}/em_image_scans/{$id_encoded},{$image_recording_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_16_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/">
+            <PDBo:referenced_by_em_image_scans rdf:resource="{$base}/em_image_scans/{$id_encoded},{$image_recording_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_16_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2809,12 +2809,12 @@
       <PDBo:em_imaging rdf:about="{$base}/em_imaging/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_em_imaging rdf:resource="{$base}/em_imaging/{$entry_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_17_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_em_imaging rdf:resource="{$base}/em_imaging/{$entry_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_17_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2893,12 +2893,12 @@
       <PDBo:em_map rdf:about="{$base}/em_map/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_em_map rdf:resource="{$base}/em_map/{$entry_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_18_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_em_map rdf:resource="{$base}/em_map/{$entry_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_18_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2917,12 +2917,12 @@
       <PDBo:em_map_depositor_info rdf:about="{$base}/em_map_depositor_info/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_em_map_depositor_info rdf:resource="{$base}/em_map_depositor_info/{$entry_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_19_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_em_map_depositor_info rdf:resource="{$base}/em_map_depositor_info/{$entry_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_19_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2999,12 +2999,12 @@
       <PDBo:em_sample_preparation rdf:about="{$base}/em_sample_preparation/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_em_sample_preparation rdf:resource="{$base}/em_sample_preparation/{$entry_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_20_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_em_sample_preparation rdf:resource="{$base}/em_sample_preparation/{$entry_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_20_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3217,12 +3217,12 @@
       <PDBo:em_ultramicrotomy rdf:about="{$base}/em_ultramicrotomy/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:em_tomography_specimen_id!=''">
-	<PDBo:reference_to_em_tomography_specimen>
-	  <rdf:Description rdf:about="{$base}/em_tomography_specimen/{translate(PDBx:em_tomography_specimen_id,' ^','__')}">
-	    <PDBo:referenced_by_em_ultramicrotomy rdf:resource="{$base}/em_ultramicrotomy/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_tomography_specimen>
-	<!-- em_tomography_specimenKeyref_0_0_3_0 -->
+        <PDBo:reference_to_em_tomography_specimen>
+          <rdf:Description rdf:about="{$base}/em_tomography_specimen/">
+            <PDBo:referenced_by_em_ultramicrotomy rdf:resource="{$base}/em_ultramicrotomy/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_tomography_specimen>
+        <!-- em_tomography_specimenKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3241,12 +3241,12 @@
       <PDBo:em_virus_entity rdf:about="{$base}/em_virus_entity/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
-	<PDBo:reference_to_em_entity_assembly>
-	  <rdf:Description rdf:about="{$base}/em_entity_assembly/">
-	    <PDBo:referenced_by_em_virus_entity rdf:resource="{$base}/em_virus_entity/{$entity_assembly_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_entity_assembly>
-	<!-- em_entity_assemblyKeyref_0_0_4_0 -->
+        <PDBo:reference_to_em_entity_assembly>
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','__')}">
+            <PDBo:referenced_by_em_virus_entity rdf:resource="{$base}/em_virus_entity/{$entity_assembly_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3265,12 +3265,12 @@
       <PDBo:em_virus_natural_host rdf:about="{$base}/em_virus_natural_host/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
-	<PDBo:reference_to_em_entity_assembly>
-	  <rdf:Description rdf:about="{$base}/em_entity_assembly/">
-	    <PDBo:referenced_by_em_virus_natural_host rdf:resource="{$base}/em_virus_natural_host/{$entity_assembly_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_entity_assembly>
-	<!-- em_entity_assemblyKeyref_0_0_5_0 -->
+        <PDBo:reference_to_em_entity_assembly>
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','__')}">
+            <PDBo:referenced_by_em_virus_natural_host rdf:resource="{$base}/em_virus_natural_host/{$entity_assembly_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3289,12 +3289,12 @@
       <PDBo:em_virus_shell rdf:about="{$base}/em_virus_shell/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
-	<PDBo:reference_to_em_entity_assembly>
-	  <rdf:Description rdf:about="{$base}/em_entity_assembly/">
-	    <PDBo:referenced_by_em_virus_shell rdf:resource="{$base}/em_virus_shell/{$entity_assembly_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_entity_assembly>
-	<!-- em_entity_assemblyKeyref_0_0_6_0 -->
+        <PDBo:reference_to_em_entity_assembly>
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','__')}">
+            <PDBo:referenced_by_em_virus_shell rdf:resource="{$base}/em_virus_shell/{$entity_assembly_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_6_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3313,12 +3313,12 @@
       <PDBo:em_virus_synthetic rdf:about="{$base}/em_virus_synthetic/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
-	<PDBo:reference_to_em_entity_assembly>
-	  <rdf:Description rdf:about="{$base}/em_entity_assembly/">
-	    <PDBo:referenced_by_em_virus_synthetic rdf:resource="{$base}/em_virus_synthetic/{$entity_assembly_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_em_entity_assembly>
-	<!-- em_entity_assemblyKeyref_0_0_7_0 -->
+        <PDBo:reference_to_em_entity_assembly>
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','__')}">
+            <PDBo:referenced_by_em_virus_synthetic rdf:resource="{$base}/em_virus_synthetic/{$entity_assembly_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_7_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3337,12 +3337,12 @@
       <PDBo:em_vitrification rdf:about="{$base}/em_vitrification/{$id_encoded},{$specimen_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/{translate(PDBx:entry_id,' ^','__')}">
-	    <PDBo:referenced_by_em_vitrification rdf:resource="{$base}/em_vitrification/{$id_encoded},{$specimen_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_21_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/">
+            <PDBo:referenced_by_em_vitrification rdf:resource="{$base}/em_vitrification/{$id_encoded},{$specimen_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_21_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3389,12 +3389,12 @@
       <PDBo:entity_keywords rdf:about="{$base}/entity_keywords/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_entity_keywords rdf:resource="{$base}/entity_keywords/{$entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_1_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_entity_keywords rdf:resource="{$base}/entity_keywords/{$entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3411,28 +3411,28 @@
       <PDBo:entity_link rdf:about="{$base}/entity_link/{$link_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
-	<PDBo:reference_to_chem_link>
-	  <rdf:Description rdf:about="{$base}/chem_link/">
-	    <PDBo:referenced_by_entity_link rdf:resource="{$base}/entity_link/{$link_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_link>
-	<!-- chem_linkKeyref_0_0_6_0 -->
+        <PDBo:reference_to_chem_link>
+          <rdf:Description rdf:about="{$base}/chem_link/{translate(@link_id,' ^','__')}">
+            <PDBo:referenced_by_entity_link rdf:resource="{$base}/entity_link/{$link_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_link>
+        <!-- chem_linkKeyref_0_0_6_0 -->
       </xsl:if>
       <xsl:if test="PDBx:entity_id_1!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/{translate(PDBx:entity_id_1,' ^','__')}">
-	    <PDBo:referenced_by_entity_link rdf:resource="{$base}/entity_link/{$link_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_2_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/">
+            <PDBo:referenced_by_entity_link rdf:resource="{$base}/entity_link/{$link_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:if test="PDBx:entity_id_2!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/{translate(PDBx:entity_id_2,' ^','__')}">
-	    <PDBo:referenced_by_entity_link rdf:resource="{$base}/entity_link/{$link_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_2_1 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/">
+            <PDBo:referenced_by_entity_link rdf:resource="{$base}/entity_link/{$link_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_2_1 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3449,12 +3449,12 @@
       <PDBo:entity_name_com rdf:about="{$base}/entity_name_com/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_entity_name_com rdf:resource="{$base}/entity_name_com/{$entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_3_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_entity_name_com rdf:resource="{$base}/entity_name_com/{$entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3471,12 +3471,12 @@
       <PDBo:entity_name_sys rdf:about="{$base}/entity_name_sys/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_entity_name_sys rdf:resource="{$base}/entity_name_sys/{$entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_4_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_entity_name_sys rdf:resource="{$base}/entity_name_sys/{$entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3493,12 +3493,12 @@
       <PDBo:entity_poly rdf:about="{$base}/entity_poly/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_entity_poly rdf:resource="{$base}/entity_poly/{$entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_5_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_entity_poly rdf:resource="{$base}/entity_poly/{$entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3519,20 +3519,20 @@
       <PDBo:entity_poly_seq rdf:about="{$base}/entity_poly_seq/{$entity_id_encoded},{$mon_id_encoded},{$num_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@mon_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_entity_poly_seq rdf:resource="{$base}/entity_poly_seq/{$entity_id_encoded},{$mon_id_encoded},{$num_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_7_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@mon_id,' ^','__')}">
+            <PDBo:referenced_by_entity_poly_seq rdf:resource="{$base}/entity_poly_seq/{$entity_id_encoded},{$mon_id_encoded},{$num_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_7_0 -->
       </xsl:if>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity_poly>
-	  <rdf:Description rdf:about="{$base}/entity_poly/">
-	    <PDBo:referenced_by_entity_poly_seq rdf:resource="{$base}/entity_poly_seq/{$entity_id_encoded},{$mon_id_encoded},{$num_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity_poly>
-	<!-- entity_polyKeyref_0_0_0_0 -->
+        <PDBo:reference_to_entity_poly>
+          <rdf:Description rdf:about="{$base}/entity_poly/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_entity_poly_seq rdf:resource="{$base}/entity_poly_seq/{$entity_id_encoded},{$mon_id_encoded},{$num_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity_poly>
+        <!-- entity_polyKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3551,12 +3551,12 @@
       <PDBo:entity_src_gen rdf:about="{$base}/entity_src_gen/{$entity_id_encoded},{$pdbx_src_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_entity_src_gen rdf:resource="{$base}/entity_src_gen/{$entity_id_encoded},{$pdbx_src_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_6_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_entity_src_gen rdf:resource="{$base}/entity_src_gen/{$entity_id_encoded},{$pdbx_src_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_6_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3575,12 +3575,12 @@
       <PDBo:entity_src_nat rdf:about="{$base}/entity_src_nat/{$entity_id_encoded},{$pdbx_src_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_entity_src_nat rdf:resource="{$base}/entity_src_nat/{$entity_id_encoded},{$pdbx_src_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_7_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_entity_src_nat rdf:resource="{$base}/entity_src_nat/{$entity_id_encoded},{$pdbx_src_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_7_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3613,12 +3613,12 @@
       <PDBo:entry_link rdf:about="{$base}/entry_link/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_entry_link rdf:resource="{$base}/entry_link/{$entry_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_22_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_entry_link rdf:resource="{$base}/entry_link/{$entry_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_22_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3637,12 +3637,12 @@
       <PDBo:exptl rdf:about="{$base}/exptl/{$entry_id_encoded},{$method_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_exptl rdf:resource="{$base}/exptl/{$entry_id_encoded},{$method_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_23_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_exptl rdf:resource="{$base}/exptl/{$entry_id_encoded},{$method_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_23_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3679,12 +3679,12 @@
       <PDBo:exptl_crystal_face rdf:about="{$base}/exptl_crystal_face/{$crystal_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
-	<PDBo:reference_to_exptl_crystal>
-	  <rdf:Description rdf:about="{$base}/exptl_crystal/">
-	    <PDBo:referenced_by_exptl_crystal_face rdf:resource="{$base}/exptl_crystal_face/{$crystal_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_exptl_crystal>
-	<!-- exptl_crystalKeyref_0_0_1_0 -->
+        <PDBo:reference_to_exptl_crystal>
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{translate(@crystal_id,' ^','__')}">
+            <PDBo:referenced_by_exptl_crystal_face rdf:resource="{$base}/exptl_crystal_face/{$crystal_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_exptl_crystal>
+        <!-- exptl_crystalKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3701,12 +3701,12 @@
       <PDBo:exptl_crystal_grow rdf:about="{$base}/exptl_crystal_grow/{$crystal_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
-	<PDBo:reference_to_exptl_crystal>
-	  <rdf:Description rdf:about="{$base}/exptl_crystal/">
-	    <PDBo:referenced_by_exptl_crystal_grow rdf:resource="{$base}/exptl_crystal_grow/{$crystal_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_exptl_crystal>
-	<!-- exptl_crystalKeyref_0_0_2_0 -->
+        <PDBo:reference_to_exptl_crystal>
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{translate(@crystal_id,' ^','__')}">
+            <PDBo:referenced_by_exptl_crystal_grow rdf:resource="{$base}/exptl_crystal_grow/{$crystal_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_exptl_crystal>
+        <!-- exptl_crystalKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3725,12 +3725,12 @@
       <PDBo:exptl_crystal_grow_comp rdf:about="{$base}/exptl_crystal_grow_comp/{$crystal_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
-	<PDBo:reference_to_exptl_crystal>
-	  <rdf:Description rdf:about="{$base}/exptl_crystal/">
-	    <PDBo:referenced_by_exptl_crystal_grow_comp rdf:resource="{$base}/exptl_crystal_grow_comp/{$crystal_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_exptl_crystal>
-	<!-- exptl_crystalKeyref_0_0_3_0 -->
+        <PDBo:reference_to_exptl_crystal>
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{translate(@crystal_id,' ^','__')}">
+            <PDBo:referenced_by_exptl_crystal_grow_comp rdf:resource="{$base}/exptl_crystal_grow_comp/{$crystal_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_exptl_crystal>
+        <!-- exptl_crystalKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3747,12 +3747,12 @@
       <PDBo:geom rdf:about="{$base}/geom/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_geom rdf:resource="{$base}/geom/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_24_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_geom rdf:resource="{$base}/geom/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_24_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3885,12 +3885,12 @@
       <PDBo:journal rdf:about="{$base}/journal/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_journal rdf:resource="{$base}/journal/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_25_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_journal rdf:resource="{$base}/journal/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_25_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3939,12 +3939,12 @@
       <PDBo:ndb_struct_conf_na rdf:about="{$base}/ndb_struct_conf_na/{$entry_id_encoded},{$feature_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_ndb_struct_conf_na rdf:resource="{$base}/ndb_struct_conf_na/{$entry_id_encoded},{$feature_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_26_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_ndb_struct_conf_na rdf:resource="{$base}/ndb_struct_conf_na/{$entry_id_encoded},{$feature_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_26_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3963,12 +3963,12 @@
       <PDBo:ndb_struct_feature_na rdf:about="{$base}/ndb_struct_feature_na/{$entry_id_encoded},{$feature_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_ndb_struct_feature_na rdf:resource="{$base}/ndb_struct_feature_na/{$entry_id_encoded},{$feature_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_27_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_ndb_struct_feature_na rdf:resource="{$base}/ndb_struct_feature_na/{$entry_id_encoded},{$feature_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_27_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4077,12 +4077,12 @@
       <PDBo:pdbx_atlas rdf:about="{$base}/pdbx_atlas/{$entry_id_encoded},{$page_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_atlas rdf:resource="{$base}/pdbx_atlas/{$entry_id_encoded},{$page_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_28_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_atlas rdf:resource="{$base}/pdbx_atlas/{$entry_id_encoded},{$page_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_28_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4101,20 +4101,20 @@
       <PDBo:pdbx_atom_site_aniso_tls rdf:about="{$base}/pdbx_atom_site_aniso_tls/{$id_encoded},{$tls_group_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:label_alt_id!=''">
-	<PDBo:reference_to_atom_sites_alt>
-	  <rdf:Description rdf:about="{$base}/atom_sites_alt/{translate(PDBx:label_alt_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_atom_site_aniso_tls rdf:resource="{$base}/pdbx_atom_site_aniso_tls/{$id_encoded},{$tls_group_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_atom_sites_alt>
-	<!-- atom_sites_altKeyref_0_0_1_0 -->
+        <PDBo:reference_to_atom_sites_alt>
+          <rdf:Description rdf:about="{$base}/atom_sites_alt/">
+            <PDBo:referenced_by_pdbx_atom_site_aniso_tls rdf:resource="{$base}/pdbx_atom_site_aniso_tls/{$id_encoded},{$tls_group_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_atom_sites_alt>
+        <!-- atom_sites_altKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:if test="@tls_group_id!=''">
-	<PDBo:reference_to_pdbx_refine_tls>
-	  <rdf:Description rdf:about="{$base}/pdbx_refine_tls/">
-	    <PDBo:referenced_by_pdbx_atom_site_aniso_tls rdf:resource="{$base}/pdbx_atom_site_aniso_tls/{$id_encoded},{$tls_group_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_refine_tls>
-	<!-- pdbx_refine_tlsKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_refine_tls>
+          <rdf:Description rdf:about="{$base}/pdbx_refine_tls/{translate(@tls_group_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_atom_site_aniso_tls rdf:resource="{$base}/pdbx_atom_site_aniso_tls/{$id_encoded},{$tls_group_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_refine_tls>
+        <!-- pdbx_refine_tlsKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4131,20 +4131,20 @@
       <PDBo:pdbx_audit rdf:about="{$base}/pdbx_audit/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:current_version!=''">
-	<PDBo:reference_to_audit>
-	  <rdf:Description rdf:about="{$base}/audit/{translate(PDBx:current_version,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_audit rdf:resource="{$base}/pdbx_audit/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_audit>
-	<!-- auditKeyref_0_0_0_0 -->
+        <PDBo:reference_to_audit>
+          <rdf:Description rdf:about="{$base}/audit/">
+            <PDBo:referenced_by_pdbx_audit rdf:resource="{$base}/pdbx_audit/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_audit>
+        <!-- auditKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_audit rdf:resource="{$base}/pdbx_audit/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_29_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_audit rdf:resource="{$base}/pdbx_audit/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_29_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4211,12 +4211,12 @@
       <PDBo:pdbx_audit_revision_category rdf:about="{$base}/pdbx_audit_revision_category/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@data_content_type!='' and @revision_ordinal!=''">
-	<PDBo:reference_to_pdbx_audit_revision_history>
-	  <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/,">
-	    <PDBo:referenced_by_pdbx_audit_revision_category rdf:resource="{$base}/pdbx_audit_revision_category/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_audit_revision_history>
-	<!-- pdbx_audit_revision_historyKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_audit_revision_history>
+          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/{translate(@data_content_type,' ^','__')},{translate(@revision_ordinal,' ^','__')}">
+            <PDBo:referenced_by_pdbx_audit_revision_category rdf:resource="{$base}/pdbx_audit_revision_category/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_audit_revision_history>
+        <!-- pdbx_audit_revision_historyKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4237,12 +4237,12 @@
       <PDBo:pdbx_audit_revision_details rdf:about="{$base}/pdbx_audit_revision_details/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@data_content_type!='' and @revision_ordinal!=''">
-	<PDBo:reference_to_pdbx_audit_revision_history>
-	  <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/,">
-	    <PDBo:referenced_by_pdbx_audit_revision_details rdf:resource="{$base}/pdbx_audit_revision_details/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_audit_revision_history>
-	<!-- pdbx_audit_revision_historyKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_audit_revision_history>
+          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/{translate(@data_content_type,' ^','__')},{translate(@revision_ordinal,' ^','__')}">
+            <PDBo:referenced_by_pdbx_audit_revision_details rdf:resource="{$base}/pdbx_audit_revision_details/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_audit_revision_history>
+        <!-- pdbx_audit_revision_historyKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4263,12 +4263,12 @@
       <PDBo:pdbx_audit_revision_group rdf:about="{$base}/pdbx_audit_revision_group/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@data_content_type!='' and @revision_ordinal!=''">
-	<PDBo:reference_to_pdbx_audit_revision_history>
-	  <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/,">
-	    <PDBo:referenced_by_pdbx_audit_revision_group rdf:resource="{$base}/pdbx_audit_revision_group/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_audit_revision_history>
-	<!-- pdbx_audit_revision_historyKeyref_0_0_2_0 -->
+        <PDBo:reference_to_pdbx_audit_revision_history>
+          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/{translate(@data_content_type,' ^','__')},{translate(@revision_ordinal,' ^','__')}">
+            <PDBo:referenced_by_pdbx_audit_revision_group rdf:resource="{$base}/pdbx_audit_revision_group/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_audit_revision_history>
+        <!-- pdbx_audit_revision_historyKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4305,12 +4305,12 @@
       <PDBo:pdbx_audit_revision_item rdf:about="{$base}/pdbx_audit_revision_item/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@data_content_type!='' and @revision_ordinal!=''">
-	<PDBo:reference_to_pdbx_audit_revision_history>
-	  <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/,">
-	    <PDBo:referenced_by_pdbx_audit_revision_item rdf:resource="{$base}/pdbx_audit_revision_item/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_audit_revision_history>
-	<!-- pdbx_audit_revision_historyKeyref_0_0_3_0 -->
+        <PDBo:reference_to_pdbx_audit_revision_history>
+          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/{translate(@data_content_type,' ^','__')},{translate(@revision_ordinal,' ^','__')}">
+            <PDBo:referenced_by_pdbx_audit_revision_item rdf:resource="{$base}/pdbx_audit_revision_item/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_audit_revision_history>
+        <!-- pdbx_audit_revision_historyKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4363,12 +4363,12 @@
       <PDBo:pdbx_branch_scheme rdf:about="{$base}/pdbx_branch_scheme/{$asym_id_encoded},{$entity_id_encoded},{$mon_id_encoded},{$num_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_branch_scheme rdf:resource="{$base}/pdbx_branch_scheme/{$asym_id_encoded},{$entity_id_encoded},{$mon_id_encoded},{$num_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_8_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_branch_scheme rdf:resource="{$base}/pdbx_branch_scheme/{$asym_id_encoded},{$entity_id_encoded},{$mon_id_encoded},{$num_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_8_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4401,12 +4401,12 @@
       <PDBo:pdbx_buffer_components rdf:about="{$base}/pdbx_buffer_components/{$buffer_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@buffer_id!=''">
-	<PDBo:reference_to_pdbx_buffer>
-	  <rdf:Description rdf:about="{$base}/pdbx_buffer/">
-	    <PDBo:referenced_by_pdbx_buffer_components rdf:resource="{$base}/pdbx_buffer_components/{$buffer_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_buffer>
-	<!-- pdbx_bufferKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_buffer>
+          <rdf:Description rdf:about="{$base}/pdbx_buffer/{translate(@buffer_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_buffer_components rdf:resource="{$base}/pdbx_buffer_components/{$buffer_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_buffer>
+        <!-- pdbx_bufferKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4425,12 +4425,12 @@
       <PDBo:pdbx_chain_remapping rdf:about="{$base}/pdbx_chain_remapping/{$entity_id_encoded},{$label_asym_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_chain_remapping rdf:resource="{$base}/pdbx_chain_remapping/{$entity_id_encoded},{$label_asym_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_9_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chain_remapping rdf:resource="{$base}/pdbx_chain_remapping/{$entity_id_encoded},{$label_asym_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_9_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4447,12 +4447,12 @@
       <PDBo:pdbx_chem_comp_atom_edit rdf:about="{$base}/pdbx_chem_comp_atom_edit/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:comp_id!=''">
-	<PDBo:reference_to_pdbx_chem_comp_import>
-	  <rdf:Description rdf:about="{$base}/pdbx_chem_comp_import/{translate(PDBx:comp_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_chem_comp_atom_edit rdf:resource="{$base}/pdbx_chem_comp_atom_edit/{$ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_chem_comp_import>
-	<!-- pdbx_chem_comp_importKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_chem_comp_import>
+          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_import/">
+            <PDBo:referenced_by_pdbx_chem_comp_atom_edit rdf:resource="{$base}/pdbx_chem_comp_atom_edit/{$ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_chem_comp_import>
+        <!-- pdbx_chem_comp_importKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4473,12 +4473,12 @@
       <PDBo:pdbx_chem_comp_atom_feature rdf:about="{$base}/pdbx_chem_comp_atom_feature/{$atom_id_encoded},{$comp_id_encoded},{$feature_type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@atom_id!='' and @comp_id!=''">
-	<PDBo:reference_to_chem_comp_atom>
-	  <rdf:Description rdf:about="{$base}/chem_comp_atom/,">
-	    <PDBo:referenced_by_pdbx_chem_comp_atom_feature rdf:resource="{$base}/pdbx_chem_comp_atom_feature/{$atom_id_encoded},{$comp_id_encoded},{$feature_type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp_atom>
-	<!-- chem_comp_atomKeyref_0_0_3_0 -->
+        <PDBo:reference_to_chem_comp_atom>
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(@atom_id,' ^','__')},{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_atom_feature rdf:resource="{$base}/pdbx_chem_comp_atom_feature/{$atom_id_encoded},{$comp_id_encoded},{$feature_type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp_atom>
+        <!-- chem_comp_atomKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4499,12 +4499,12 @@
       <PDBo:pdbx_chem_comp_atom_related rdf:about="{$base}/pdbx_chem_comp_atom_related/{$comp_id_encoded},{$ordinal_encoded},{$related_comp_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_pdbx_chem_comp_atom_related rdf:resource="{$base}/pdbx_chem_comp_atom_related/{$comp_id_encoded},{$ordinal_encoded},{$related_comp_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_8_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_atom_related rdf:resource="{$base}/pdbx_chem_comp_atom_related/{$comp_id_encoded},{$ordinal_encoded},{$related_comp_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_8_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4525,12 +4525,12 @@
       <PDBo:pdbx_chem_comp_audit rdf:about="{$base}/pdbx_chem_comp_audit/{$action_type_encoded},{$comp_id_encoded},{$date_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_pdbx_chem_comp_audit rdf:resource="{$base}/pdbx_chem_comp_audit/{$action_type_encoded},{$comp_id_encoded},{$date_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_9_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_audit rdf:resource="{$base}/pdbx_chem_comp_audit/{$action_type_encoded},{$comp_id_encoded},{$date_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_9_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4553,12 +4553,12 @@
       <PDBo:pdbx_chem_comp_bond_edit rdf:about="{$base}/pdbx_chem_comp_bond_edit/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded},{$edit_op_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_pdbx_chem_comp_import>
-	  <rdf:Description rdf:about="{$base}/pdbx_chem_comp_import/">
-	    <PDBo:referenced_by_pdbx_chem_comp_bond_edit rdf:resource="{$base}/pdbx_chem_comp_bond_edit/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded},{$edit_op_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_chem_comp_import>
-	<!-- pdbx_chem_comp_importKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_chem_comp_import>
+          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_import/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_bond_edit rdf:resource="{$base}/pdbx_chem_comp_bond_edit/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded},{$edit_op_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_chem_comp_import>
+        <!-- pdbx_chem_comp_importKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4595,12 +4595,12 @@
       <PDBo:pdbx_chem_comp_descriptor rdf:about="{$base}/pdbx_chem_comp_descriptor/{$comp_id_encoded},{$program_encoded},{$program_version_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="{$base}/pdbx_chem_comp_descriptor/{$comp_id_encoded},{$program_encoded},{$program_version_encoded},{$type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_10_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="{$base}/pdbx_chem_comp_descriptor/{$comp_id_encoded},{$program_encoded},{$program_version_encoded},{$type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_10_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4623,12 +4623,12 @@
       <PDBo:pdbx_chem_comp_feature rdf:about="{$base}/pdbx_chem_comp_feature/{$comp_id_encoded},{$source_encoded},{$type_encoded},{$value_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_pdbx_chem_comp_feature rdf:resource="{$base}/pdbx_chem_comp_feature/{$comp_id_encoded},{$source_encoded},{$type_encoded},{$value_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_11_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_feature rdf:resource="{$base}/pdbx_chem_comp_feature/{$comp_id_encoded},{$source_encoded},{$type_encoded},{$value_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_11_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4651,12 +4651,12 @@
       <PDBo:pdbx_chem_comp_identifier rdf:about="{$base}/pdbx_chem_comp_identifier/{$comp_id_encoded},{$program_encoded},{$program_version_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_pdbx_chem_comp_identifier rdf:resource="{$base}/pdbx_chem_comp_identifier/{$comp_id_encoded},{$program_encoded},{$program_version_encoded},{$type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_12_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_identifier rdf:resource="{$base}/pdbx_chem_comp_identifier/{$comp_id_encoded},{$program_encoded},{$program_version_encoded},{$type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_12_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4673,12 +4673,12 @@
       <PDBo:pdbx_chem_comp_import rdf:about="{$base}/pdbx_chem_comp_import/{$comp_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_pdbx_chem_comp_import rdf:resource="{$base}/pdbx_chem_comp_import/{$comp_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_13_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_import rdf:resource="{$base}/pdbx_chem_comp_import/{$comp_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_13_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4725,12 +4725,12 @@
       <PDBo:pdbx_chem_comp_model_atom rdf:about="{$base}/pdbx_chem_comp_model_atom/{$atom_id_encoded},{$model_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@model_id!=''">
-	<PDBo:reference_to_pdbx_chem_comp_model>
-	  <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/">
-	    <PDBo:referenced_by_pdbx_chem_comp_model_atom rdf:resource="{$base}/pdbx_chem_comp_model_atom/{$atom_id_encoded},{$model_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_chem_comp_model>
-	<!-- pdbx_chem_comp_modelKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_chem_comp_model>
+          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/{translate(@model_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_model_atom rdf:resource="{$base}/pdbx_chem_comp_model_atom/{$atom_id_encoded},{$model_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_chem_comp_model>
+        <!-- pdbx_chem_comp_modelKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4785,12 +4785,12 @@
       <PDBo:pdbx_chem_comp_model_descriptor rdf:about="{$base}/pdbx_chem_comp_model_descriptor/{$model_id_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@model_id!=''">
-	<PDBo:reference_to_pdbx_chem_comp_model>
-	  <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/">
-	    <PDBo:referenced_by_pdbx_chem_comp_model_descriptor rdf:resource="{$base}/pdbx_chem_comp_model_descriptor/{$model_id_encoded},{$type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_chem_comp_model>
-	<!-- pdbx_chem_comp_modelKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_chem_comp_model>
+          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/{translate(@model_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_model_descriptor rdf:resource="{$base}/pdbx_chem_comp_model_descriptor/{$model_id_encoded},{$type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_chem_comp_model>
+        <!-- pdbx_chem_comp_modelKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4809,12 +4809,12 @@
       <PDBo:pdbx_chem_comp_model_feature rdf:about="{$base}/pdbx_chem_comp_model_feature/{$feature_name_encoded},{$model_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@model_id!=''">
-	<PDBo:reference_to_pdbx_chem_comp_model>
-	  <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/">
-	    <PDBo:referenced_by_pdbx_chem_comp_model_feature rdf:resource="{$base}/pdbx_chem_comp_model_feature/{$feature_name_encoded},{$model_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_chem_comp_model>
-	<!-- pdbx_chem_comp_modelKeyref_0_0_2_0 -->
+        <PDBo:reference_to_pdbx_chem_comp_model>
+          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/{translate(@model_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_model_feature rdf:resource="{$base}/pdbx_chem_comp_model_feature/{$feature_name_encoded},{$model_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_chem_comp_model>
+        <!-- pdbx_chem_comp_modelKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4835,12 +4835,12 @@
       <PDBo:pdbx_chem_comp_model_reference rdf:about="{$base}/pdbx_chem_comp_model_reference/{$db_code_encoded},{$db_name_encoded},{$model_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@model_id!=''">
-	<PDBo:reference_to_pdbx_chem_comp_model>
-	  <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/">
-	    <PDBo:referenced_by_pdbx_chem_comp_model_reference rdf:resource="{$base}/pdbx_chem_comp_model_reference/{$db_code_encoded},{$db_name_encoded},{$model_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_chem_comp_model>
-	<!-- pdbx_chem_comp_modelKeyref_0_0_3_0 -->
+        <PDBo:reference_to_pdbx_chem_comp_model>
+          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/{translate(@model_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_model_reference rdf:resource="{$base}/pdbx_chem_comp_model_reference/{$db_code_encoded},{$db_name_encoded},{$model_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_chem_comp_model>
+        <!-- pdbx_chem_comp_modelKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4859,12 +4859,12 @@
       <PDBo:pdbx_chem_comp_nonstandard rdf:about="{$base}/pdbx_chem_comp_nonstandard/{$comp_id_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_pdbx_chem_comp_nonstandard rdf:resource="{$base}/pdbx_chem_comp_nonstandard/{$comp_id_encoded},{$type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_14_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_nonstandard rdf:resource="{$base}/pdbx_chem_comp_nonstandard/{$comp_id_encoded},{$type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_14_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4881,12 +4881,12 @@
       <PDBo:pdbx_chem_comp_pcm rdf:about="{$base}/pdbx_chem_comp_pcm/{$pcm_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/{translate(PDBx:comp_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_chem_comp_pcm rdf:resource="{$base}/pdbx_chem_comp_pcm/{$pcm_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_15_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/">
+            <PDBo:referenced_by_pdbx_chem_comp_pcm rdf:resource="{$base}/pdbx_chem_comp_pcm/{$pcm_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_15_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4907,12 +4907,12 @@
       <PDBo:pdbx_chem_comp_related rdf:about="{$base}/pdbx_chem_comp_related/{$comp_id_encoded},{$related_comp_id_encoded},{$relationship_type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_pdbx_chem_comp_related rdf:resource="{$base}/pdbx_chem_comp_related/{$comp_id_encoded},{$related_comp_id_encoded},{$relationship_type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_16_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_related rdf:resource="{$base}/pdbx_chem_comp_related/{$comp_id_encoded},{$related_comp_id_encoded},{$relationship_type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_16_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4929,12 +4929,12 @@
       <PDBo:pdbx_chem_comp_subcomponent_entity_list rdf:about="{$base}/pdbx_chem_comp_subcomponent_entity_list/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:parent_comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/{translate(PDBx:parent_comp_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_chem_comp_subcomponent_entity_list rdf:resource="{$base}/pdbx_chem_comp_subcomponent_entity_list/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_17_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/">
+            <PDBo:referenced_by_pdbx_chem_comp_subcomponent_entity_list rdf:resource="{$base}/pdbx_chem_comp_subcomponent_entity_list/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_17_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4967,12 +4967,12 @@
       <PDBo:pdbx_chem_comp_synonyms rdf:about="{$base}/pdbx_chem_comp_synonyms/{$comp_id_encoded},{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_pdbx_chem_comp_synonyms rdf:resource="{$base}/pdbx_chem_comp_synonyms/{$comp_id_encoded},{$ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_18_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_chem_comp_synonyms rdf:resource="{$base}/pdbx_chem_comp_synonyms/{$comp_id_encoded},{$ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_18_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5079,12 +5079,12 @@
       <PDBo:pdbx_construct rdf:about="{$base}/pdbx_construct/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/{translate(PDBx:entry_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_construct rdf:resource="{$base}/pdbx_construct/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_30_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/">
+            <PDBo:referenced_by_pdbx_construct rdf:resource="{$base}/pdbx_construct/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_30_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5103,20 +5103,20 @@
       <PDBo:pdbx_construct_feature rdf:about="{$base}/pdbx_construct_feature/{$construct_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/{translate(PDBx:entry_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_construct_feature rdf:resource="{$base}/pdbx_construct_feature/{$construct_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_31_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/">
+            <PDBo:referenced_by_pdbx_construct_feature rdf:resource="{$base}/pdbx_construct_feature/{$construct_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_31_0 -->
       </xsl:if>
       <xsl:if test="@construct_id!=''">
-	<PDBo:reference_to_pdbx_construct>
-	  <rdf:Description rdf:about="{$base}/pdbx_construct/">
-	    <PDBo:referenced_by_pdbx_construct_feature rdf:resource="{$base}/pdbx_construct_feature/{$construct_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_construct>
-	<!-- pdbx_constructKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_construct>
+          <rdf:Description rdf:about="{$base}/pdbx_construct/{translate(@construct_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_construct_feature rdf:resource="{$base}/pdbx_construct_feature/{$construct_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_construct>
+        <!-- pdbx_constructKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5147,12 +5147,12 @@
       <PDBo:pdbx_coord rdf:about="{$base}/pdbx_coord/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_coord rdf:resource="{$base}/pdbx_coord/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_32_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_coord rdf:resource="{$base}/pdbx_coord/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_32_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5169,12 +5169,12 @@
       <PDBo:pdbx_coordinate_model rdf:about="{$base}/pdbx_coordinate_model/{$asym_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
-	<PDBo:reference_to_struct_asym>
-	  <rdf:Description rdf:about="{$base}/struct_asym/">
-	    <PDBo:referenced_by_pdbx_coordinate_model rdf:resource="{$base}/pdbx_coordinate_model/{$asym_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_asym>
-	<!-- struct_asymKeyref_1_0_0_0 -->
+        <PDBo:reference_to_struct_asym>
+          <rdf:Description rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_coordinate_model rdf:resource="{$base}/pdbx_coordinate_model/{$asym_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_1_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5205,12 +5205,12 @@
       <PDBo:pdbx_data_processing_cell rdf:about="{$base}/pdbx_data_processing_cell/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_data_processing_cell rdf:resource="{$base}/pdbx_data_processing_cell/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_33_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_data_processing_cell rdf:resource="{$base}/pdbx_data_processing_cell/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_33_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5227,12 +5227,12 @@
       <PDBo:pdbx_data_processing_detector rdf:about="{$base}/pdbx_data_processing_detector/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_data_processing_detector rdf:resource="{$base}/pdbx_data_processing_detector/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_34_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_data_processing_detector rdf:resource="{$base}/pdbx_data_processing_detector/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_34_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5249,12 +5249,12 @@
       <PDBo:pdbx_data_processing_reflns rdf:about="{$base}/pdbx_data_processing_reflns/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_data_processing_reflns rdf:resource="{$base}/pdbx_data_processing_reflns/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_35_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_data_processing_reflns rdf:resource="{$base}/pdbx_data_processing_reflns/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_35_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5301,12 +5301,12 @@
       <PDBo:pdbx_database_PDB_master rdf:about="{$base}/pdbx_database_PDB_master/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_database_PDB_master rdf:resource="{$base}/pdbx_database_PDB_master/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_36_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_database_PDB_master rdf:resource="{$base}/pdbx_database_PDB_master/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_36_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5355,12 +5355,12 @@
       <PDBo:pdbx_database_message rdf:about="{$base}/pdbx_database_message/{$entry_id_encoded},{$message_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_database_message rdf:resource="{$base}/pdbx_database_message/{$entry_id_encoded},{$message_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_37_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_database_message rdf:resource="{$base}/pdbx_database_message/{$entry_id_encoded},{$message_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_37_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5395,12 +5395,12 @@
       <PDBo:pdbx_database_proc rdf:about="{$base}/pdbx_database_proc/{$cycle_id_encoded},{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_database_proc rdf:resource="{$base}/pdbx_database_proc/{$cycle_id_encoded},{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_38_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_database_proc rdf:resource="{$base}/pdbx_database_proc/{$cycle_id_encoded},{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_38_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5449,12 +5449,12 @@
       <PDBo:pdbx_database_status rdf:about="{$base}/pdbx_database_status/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_database_status rdf:resource="{$base}/pdbx_database_status/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_39_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_database_status rdf:resource="{$base}/pdbx_database_status/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_39_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5473,12 +5473,12 @@
       <PDBo:pdbx_database_status_history rdf:about="{$base}/pdbx_database_status_history/{$entry_id_encoded},{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_database_status_history rdf:resource="{$base}/pdbx_database_status_history/{$entry_id_encoded},{$ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_40_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_database_status_history rdf:resource="{$base}/pdbx_database_status_history/{$entry_id_encoded},{$ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_40_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5631,12 +5631,12 @@
       <PDBo:pdbx_deposit_group_index rdf:about="{$base}/pdbx_deposit_group_index/{$group_id_encoded},{$ordinal_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@group_id!=''">
-	<PDBo:reference_to_pdbx_deposit_group>
-	  <rdf:Description rdf:about="{$base}/pdbx_deposit_group/">
-	    <PDBo:referenced_by_pdbx_deposit_group_index rdf:resource="{$base}/pdbx_deposit_group_index/{$group_id_encoded},{$ordinal_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_deposit_group>
-	<!-- pdbx_deposit_groupKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_deposit_group>
+          <rdf:Description rdf:about="{$base}/pdbx_deposit_group/{translate(@group_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_deposit_group_index rdf:resource="{$base}/pdbx_deposit_group_index/{$group_id_encoded},{$ordinal_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_deposit_group>
+        <!-- pdbx_deposit_groupKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5813,12 +5813,12 @@
       <PDBo:pdbx_diffrn_detector_panel_mapping rdf:about="{$base}/pdbx_diffrn_detector_panel_mapping/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:array_id!=''">
-	<PDBo:reference_to_array_structure>
-	  <rdf:Description rdf:about="{$base}/array_structure/{translate(PDBx:array_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_diffrn_detector_panel_mapping rdf:resource="{$base}/pdbx_diffrn_detector_panel_mapping/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_array_structure>
-	<!-- array_structureKeyref_0_0_4_0 -->
+        <PDBo:reference_to_array_structure>
+          <rdf:Description rdf:about="{$base}/array_structure/">
+            <PDBo:referenced_by_pdbx_diffrn_detector_panel_mapping rdf:resource="{$base}/pdbx_diffrn_detector_panel_mapping/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_array_structure>
+        <!-- array_structureKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5853,12 +5853,12 @@
       <PDBo:pdbx_diffrn_reflns_shell rdf:about="{$base}/pdbx_diffrn_reflns_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_pdbx_diffrn_reflns_shell rdf:resource="{$base}/pdbx_diffrn_reflns_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_10_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_diffrn_reflns_shell rdf:resource="{$base}/pdbx_diffrn_reflns_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_10_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5875,12 +5875,12 @@
       <PDBo:pdbx_distant_solvent_atoms rdf:about="{$base}/pdbx_distant_solvent_atoms/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:auth_comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/{translate(PDBx:auth_comp_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_distant_solvent_atoms rdf:resource="{$base}/pdbx_distant_solvent_atoms/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_19_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/">
+            <PDBo:referenced_by_pdbx_distant_solvent_atoms rdf:resource="{$base}/pdbx_distant_solvent_atoms/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_19_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5911,12 +5911,12 @@
       <PDBo:pdbx_domain_range rdf:about="{$base}/pdbx_domain_range/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:domain_id!=''">
-	<PDBo:reference_to_pdbx_domain>
-	  <rdf:Description rdf:about="{$base}/pdbx_domain/{translate(PDBx:domain_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_domain_range rdf:resource="{$base}/pdbx_domain_range/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_domain>
-	<!-- pdbx_domainKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_domain>
+          <rdf:Description rdf:about="{$base}/pdbx_domain/">
+            <PDBo:referenced_by_pdbx_domain_range rdf:resource="{$base}/pdbx_domain_range/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_domain>
+        <!-- pdbx_domainKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5951,20 +5951,20 @@
       <PDBo:pdbx_entity_assembly rdf:about="{$base}/pdbx_entity_assembly/{$entity_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_assembly rdf:resource="{$base}/pdbx_entity_assembly/{$entity_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_10_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_assembly rdf:resource="{$base}/pdbx_entity_assembly/{$entity_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_10_0 -->
       </xsl:if>
       <xsl:if test="PDBx:biol_id!=''">
-	<PDBo:reference_to_struct_biol>
-	  <rdf:Description rdf:about="{$base}/struct_biol/{translate(PDBx:biol_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_assembly rdf:resource="{$base}/pdbx_entity_assembly/{$entity_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_biol>
-	<!-- struct_biolKeyref_0_0_0_0 -->
+        <PDBo:reference_to_struct_biol>
+          <rdf:Description rdf:about="{$base}/struct_biol/">
+            <PDBo:referenced_by_pdbx_entity_assembly rdf:resource="{$base}/pdbx_entity_assembly/{$entity_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_biol>
+        <!-- struct_biolKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5981,12 +5981,12 @@
       <PDBo:pdbx_entity_branch rdf:about="{$base}/pdbx_entity_branch/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_branch rdf:resource="{$base}/pdbx_entity_branch/{$entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_11_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_branch rdf:resource="{$base}/pdbx_entity_branch/{$entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_11_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6003,12 +6003,12 @@
       <PDBo:pdbx_entity_branch_descriptor rdf:about="{$base}/pdbx_entity_branch_descriptor/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/{translate(PDBx:entity_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="{$base}/pdbx_entity_branch_descriptor/{$ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_12_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/">
+            <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="{$base}/pdbx_entity_branch_descriptor/{$ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_12_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6043,20 +6043,20 @@
       <PDBo:pdbx_entity_branch_list rdf:about="{$base}/pdbx_entity_branch_list/{$comp_id_encoded},{$entity_id_encoded},{$num_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/">
-	    <PDBo:referenced_by_pdbx_entity_branch_list rdf:resource="{$base}/pdbx_entity_branch_list/{$comp_id_encoded},{$entity_id_encoded},{$num_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_20_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/{translate(@comp_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_branch_list rdf:resource="{$base}/pdbx_entity_branch_list/{$comp_id_encoded},{$entity_id_encoded},{$num_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_20_0 -->
       </xsl:if>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_branch_list rdf:resource="{$base}/pdbx_entity_branch_list/{$comp_id_encoded},{$entity_id_encoded},{$num_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_13_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_branch_list rdf:resource="{$base}/pdbx_entity_branch_list/{$comp_id_encoded},{$entity_id_encoded},{$num_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_13_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6077,12 +6077,12 @@
       <PDBo:pdbx_entity_func_bind_mode rdf:about="{$base}/pdbx_entity_func_bind_mode/{$domain_id_encoded},{$entity_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_func_bind_mode rdf:resource="{$base}/pdbx_entity_func_bind_mode/{$domain_id_encoded},{$entity_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_14_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_func_bind_mode rdf:resource="{$base}/pdbx_entity_func_bind_mode/{$domain_id_encoded},{$entity_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_14_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6173,12 +6173,12 @@
       <PDBo:pdbx_entity_name rdf:about="{$base}/pdbx_entity_name/{$entity_id_encoded},{$name_encoded},{$name_type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_name rdf:resource="{$base}/pdbx_entity_name/{$entity_id_encoded},{$name_encoded},{$name_type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_15_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_name rdf:resource="{$base}/pdbx_entity_name/{$entity_id_encoded},{$name_encoded},{$name_type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_15_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6245,12 +6245,12 @@
       <PDBo:pdbx_entity_nonpoly rdf:about="{$base}/pdbx_entity_nonpoly/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_nonpoly rdf:resource="{$base}/pdbx_entity_nonpoly/{$entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_16_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_nonpoly rdf:resource="{$base}/pdbx_entity_nonpoly/{$entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_16_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6267,12 +6267,12 @@
       <PDBo:pdbx_entity_poly_comp_link_list rdf:about="{$base}/pdbx_entity_poly_comp_link_list/{$link_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:entity_id!='' and PDBx:comp_id_1!='' and PDBx:entity_comp_num_1!=''">
-	<PDBo:reference_to_entity_poly_seq>
-	  <rdf:Description rdf:about="{$base}/entity_poly_seq/{translate(PDBx:entity_id,' ^','__')},{translate(PDBx:comp_id_1,' ^','__')},{translate(PDBx:entity_comp_num_1,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_poly_comp_link_list rdf:resource="{$base}/pdbx_entity_poly_comp_link_list/{$link_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity_poly_seq>
-	<!-- entity_poly_seqKeyref_0_0_0_0 -->
+        <PDBo:reference_to_entity_poly_seq>
+          <rdf:Description rdf:about="{$base}/entity_poly_seq/,,">
+            <PDBo:referenced_by_pdbx_entity_poly_comp_link_list rdf:resource="{$base}/pdbx_entity_poly_comp_link_list/{$link_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity_poly_seq>
+        <!-- entity_poly_seqKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6291,12 +6291,12 @@
       <PDBo:pdbx_entity_poly_domain rdf:about="{$base}/pdbx_entity_poly_domain/{$entity_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_poly_domain rdf:resource="{$base}/pdbx_entity_poly_domain/{$entity_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_17_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_poly_domain rdf:resource="{$base}/pdbx_entity_poly_domain/{$entity_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_17_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6315,12 +6315,12 @@
       <PDBo:pdbx_entity_poly_na_nonstandard rdf:about="{$base}/pdbx_entity_poly_na_nonstandard/{$entity_id_encoded},{$feature_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_poly_na_nonstandard rdf:resource="{$base}/pdbx_entity_poly_na_nonstandard/{$entity_id_encoded},{$feature_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_18_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_poly_na_nonstandard rdf:resource="{$base}/pdbx_entity_poly_na_nonstandard/{$entity_id_encoded},{$feature_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_18_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6339,12 +6339,12 @@
       <PDBo:pdbx_entity_poly_na_type rdf:about="{$base}/pdbx_entity_poly_na_type/{$entity_id_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_poly_na_type rdf:resource="{$base}/pdbx_entity_poly_na_type/{$entity_id_encoded},{$type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_19_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_poly_na_type rdf:resource="{$base}/pdbx_entity_poly_na_type/{$entity_id_encoded},{$type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_19_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6363,12 +6363,12 @@
       <PDBo:pdbx_entity_poly_protein_class rdf:about="{$base}/pdbx_entity_poly_protein_class/{$class_encoded},{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_poly_protein_class rdf:resource="{$base}/pdbx_entity_poly_protein_class/{$class_encoded},{$entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_20_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_poly_protein_class rdf:resource="{$base}/pdbx_entity_poly_protein_class/{$class_encoded},{$entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_20_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6389,20 +6389,20 @@
       <PDBo:pdbx_entity_prod_protocol rdf:about="{$base}/pdbx_entity_prod_protocol/{$entity_id_encoded},{$entry_id_encoded},{$protocol_type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_prod_protocol rdf:resource="{$base}/pdbx_entity_prod_protocol/{$entity_id_encoded},{$entry_id_encoded},{$protocol_type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_21_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_prod_protocol rdf:resource="{$base}/pdbx_entity_prod_protocol/{$entity_id_encoded},{$entry_id_encoded},{$protocol_type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_21_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_prod_protocol rdf:resource="{$base}/pdbx_entity_prod_protocol/{$entity_id_encoded},{$entry_id_encoded},{$protocol_type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_41_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_prod_protocol rdf:resource="{$base}/pdbx_entity_prod_protocol/{$entity_id_encoded},{$entry_id_encoded},{$protocol_type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_41_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6419,12 +6419,12 @@
       <PDBo:pdbx_entity_remapping rdf:about="{$base}/pdbx_entity_remapping/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_remapping rdf:resource="{$base}/pdbx_entity_remapping/{$entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_22_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_remapping rdf:resource="{$base}/pdbx_entity_remapping/{$entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_22_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6445,20 +6445,20 @@
       <PDBo:pdbx_entity_src_gen_character rdf:about="{$base}/pdbx_entity_src_gen_character/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_character rdf:resource="{$base}/pdbx_entity_src_gen_character/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_23_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_character rdf:resource="{$base}/pdbx_entity_src_gen_character/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_23_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_character rdf:resource="{$base}/pdbx_entity_src_gen_character/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_42_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_character rdf:resource="{$base}/pdbx_entity_src_gen_character/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_42_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6479,36 +6479,36 @@
       <PDBo:pdbx_entity_src_gen_chrom rdf:about="{$base}/pdbx_entity_src_gen_chrom/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_chrom rdf:resource="{$base}/pdbx_entity_src_gen_chrom/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_24_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_chrom rdf:resource="{$base}/pdbx_entity_src_gen_chrom/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_24_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_chrom rdf:resource="{$base}/pdbx_entity_src_gen_chrom/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_43_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_chrom rdf:resource="{$base}/pdbx_entity_src_gen_chrom/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_43_0 -->
       </xsl:if>
       <xsl:if test="PDBx:elution_buffer_id!=''">
-	<PDBo:reference_to_pdbx_buffer>
-	  <rdf:Description rdf:about="{$base}/pdbx_buffer/{translate(PDBx:elution_buffer_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_chrom rdf:resource="{$base}/pdbx_entity_src_gen_chrom/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_buffer>
-	<!-- pdbx_bufferKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_buffer>
+          <rdf:Description rdf:about="{$base}/pdbx_buffer/">
+            <PDBo:referenced_by_pdbx_entity_src_gen_chrom rdf:resource="{$base}/pdbx_entity_src_gen_chrom/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_buffer>
+        <!-- pdbx_bufferKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:if test="PDBx:equilibration_buffer_id!=''">
-	<PDBo:reference_to_pdbx_buffer>
-	  <rdf:Description rdf:about="{$base}/pdbx_buffer/{translate(PDBx:equilibration_buffer_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_chrom rdf:resource="{$base}/pdbx_entity_src_gen_chrom/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_buffer>
-	<!-- pdbx_bufferKeyref_0_0_1_1 -->
+        <PDBo:reference_to_pdbx_buffer>
+          <rdf:Description rdf:about="{$base}/pdbx_buffer/">
+            <PDBo:referenced_by_pdbx_entity_src_gen_chrom rdf:resource="{$base}/pdbx_entity_src_gen_chrom/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_buffer>
+        <!-- pdbx_bufferKeyref_0_0_1_1 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6529,20 +6529,20 @@
       <PDBo:pdbx_entity_src_gen_clone rdf:about="{$base}/pdbx_entity_src_gen_clone/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_clone rdf:resource="{$base}/pdbx_entity_src_gen_clone/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_25_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_clone rdf:resource="{$base}/pdbx_entity_src_gen_clone/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_25_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_clone rdf:resource="{$base}/pdbx_entity_src_gen_clone/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_44_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_clone rdf:resource="{$base}/pdbx_entity_src_gen_clone/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_44_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6563,12 +6563,12 @@
       <PDBo:pdbx_entity_src_gen_clone_ligation rdf:about="{$base}/pdbx_entity_src_gen_clone_ligation/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!='' and @entry_id!='' and @step_id!=''">
-	<PDBo:reference_to_pdbx_entity_src_gen_clone>
-	  <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_clone/,,">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_clone_ligation rdf:resource="{$base}/pdbx_entity_src_gen_clone_ligation/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_entity_src_gen_clone>
-	<!-- pdbx_entity_src_gen_cloneKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_entity_src_gen_clone>
+          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_clone/{translate(@entity_id,' ^','__')},{translate(@entry_id,' ^','__')},{translate(@step_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_clone_ligation rdf:resource="{$base}/pdbx_entity_src_gen_clone_ligation/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_entity_src_gen_clone>
+        <!-- pdbx_entity_src_gen_cloneKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6589,12 +6589,12 @@
       <PDBo:pdbx_entity_src_gen_clone_recombination rdf:about="{$base}/pdbx_entity_src_gen_clone_recombination/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!='' and @entry_id!='' and @step_id!=''">
-	<PDBo:reference_to_pdbx_entity_src_gen_clone>
-	  <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_clone/,,">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_clone_recombination rdf:resource="{$base}/pdbx_entity_src_gen_clone_recombination/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_entity_src_gen_clone>
-	<!-- pdbx_entity_src_gen_cloneKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_entity_src_gen_clone>
+          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_clone/{translate(@entity_id,' ^','__')},{translate(@entry_id,' ^','__')},{translate(@step_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_clone_recombination rdf:resource="{$base}/pdbx_entity_src_gen_clone_recombination/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_entity_src_gen_clone>
+        <!-- pdbx_entity_src_gen_cloneKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6629,28 +6629,28 @@
       <PDBo:pdbx_entity_src_gen_express rdf:about="{$base}/pdbx_entity_src_gen_express/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_express rdf:resource="{$base}/pdbx_entity_src_gen_express/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_26_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_express rdf:resource="{$base}/pdbx_entity_src_gen_express/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_26_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_express rdf:resource="{$base}/pdbx_entity_src_gen_express/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_45_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_express rdf:resource="{$base}/pdbx_entity_src_gen_express/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_45_0 -->
       </xsl:if>
       <xsl:if test="PDBx:plasmid_id!=''">
-	<PDBo:reference_to_pdbx_construct>
-	  <rdf:Description rdf:about="{$base}/pdbx_construct/{translate(PDBx:plasmid_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_express rdf:resource="{$base}/pdbx_entity_src_gen_express/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_construct>
-	<!-- pdbx_constructKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_construct>
+          <rdf:Description rdf:about="{$base}/pdbx_construct/">
+            <PDBo:referenced_by_pdbx_entity_src_gen_express rdf:resource="{$base}/pdbx_entity_src_gen_express/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_construct>
+        <!-- pdbx_constructKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6673,12 +6673,12 @@
       <PDBo:pdbx_entity_src_gen_express_timepoint rdf:about="{$base}/pdbx_entity_src_gen_express_timepoint/{$entity_id_encoded},{$entry_id_encoded},{$serial_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!='' and @entry_id!='' and @step_id!=''">
-	<PDBo:reference_to_pdbx_entity_src_gen_express>
-	  <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_express/,,">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_express_timepoint rdf:resource="{$base}/pdbx_entity_src_gen_express_timepoint/{$entity_id_encoded},{$entry_id_encoded},{$serial_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_entity_src_gen_express>
-	<!-- pdbx_entity_src_gen_expressKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_entity_src_gen_express>
+          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_express/{translate(@entity_id,' ^','__')},{translate(@entry_id,' ^','__')},{translate(@step_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_express_timepoint rdf:resource="{$base}/pdbx_entity_src_gen_express_timepoint/{$entity_id_encoded},{$entry_id_encoded},{$serial_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_entity_src_gen_express>
+        <!-- pdbx_entity_src_gen_expressKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6699,20 +6699,20 @@
       <PDBo:pdbx_entity_src_gen_fract rdf:about="{$base}/pdbx_entity_src_gen_fract/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_fract rdf:resource="{$base}/pdbx_entity_src_gen_fract/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_27_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_fract rdf:resource="{$base}/pdbx_entity_src_gen_fract/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_27_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_fract rdf:resource="{$base}/pdbx_entity_src_gen_fract/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_46_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_fract rdf:resource="{$base}/pdbx_entity_src_gen_fract/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_46_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6733,28 +6733,28 @@
       <PDBo:pdbx_entity_src_gen_lysis rdf:about="{$base}/pdbx_entity_src_gen_lysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_lysis rdf:resource="{$base}/pdbx_entity_src_gen_lysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_28_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_lysis rdf:resource="{$base}/pdbx_entity_src_gen_lysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_28_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_lysis rdf:resource="{$base}/pdbx_entity_src_gen_lysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_47_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_lysis rdf:resource="{$base}/pdbx_entity_src_gen_lysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_47_0 -->
       </xsl:if>
       <xsl:if test="PDBx:buffer_id!=''">
-	<PDBo:reference_to_pdbx_buffer>
-	  <rdf:Description rdf:about="{$base}/pdbx_buffer/{translate(PDBx:buffer_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_lysis rdf:resource="{$base}/pdbx_entity_src_gen_lysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_buffer>
-	<!-- pdbx_bufferKeyref_0_0_2_0 -->
+        <PDBo:reference_to_pdbx_buffer>
+          <rdf:Description rdf:about="{$base}/pdbx_buffer/">
+            <PDBo:referenced_by_pdbx_entity_src_gen_lysis rdf:resource="{$base}/pdbx_entity_src_gen_lysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_buffer>
+        <!-- pdbx_bufferKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6775,20 +6775,20 @@
       <PDBo:pdbx_entity_src_gen_prod_digest rdf:about="{$base}/pdbx_entity_src_gen_prod_digest/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_digest rdf:resource="{$base}/pdbx_entity_src_gen_prod_digest/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_29_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_prod_digest rdf:resource="{$base}/pdbx_entity_src_gen_prod_digest/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_29_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_digest rdf:resource="{$base}/pdbx_entity_src_gen_prod_digest/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_48_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_prod_digest rdf:resource="{$base}/pdbx_entity_src_gen_prod_digest/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_48_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6809,20 +6809,20 @@
       <PDBo:pdbx_entity_src_gen_prod_other rdf:about="{$base}/pdbx_entity_src_gen_prod_other/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_other rdf:resource="{$base}/pdbx_entity_src_gen_prod_other/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_30_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_prod_other rdf:resource="{$base}/pdbx_entity_src_gen_prod_other/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_30_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_other rdf:resource="{$base}/pdbx_entity_src_gen_prod_other/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_49_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_prod_other rdf:resource="{$base}/pdbx_entity_src_gen_prod_other/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_49_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6845,12 +6845,12 @@
       <PDBo:pdbx_entity_src_gen_prod_other_parameter rdf:about="{$base}/pdbx_entity_src_gen_prod_other_parameter/{$entity_id_encoded},{$entry_id_encoded},{$parameter_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!='' and @entry_id!='' and @step_id!=''">
-	<PDBo:reference_to_pdbx_entity_src_gen_prod_other>
-	  <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_prod_other/,,">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_other_parameter rdf:resource="{$base}/pdbx_entity_src_gen_prod_other_parameter/{$entity_id_encoded},{$entry_id_encoded},{$parameter_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_entity_src_gen_prod_other>
-	<!-- pdbx_entity_src_gen_prod_otherKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_entity_src_gen_prod_other>
+          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_prod_other/{translate(@entity_id,' ^','__')},{translate(@entry_id,' ^','__')},{translate(@step_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_prod_other_parameter rdf:resource="{$base}/pdbx_entity_src_gen_prod_other_parameter/{$entity_id_encoded},{$entry_id_encoded},{$parameter_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_entity_src_gen_prod_other>
+        <!-- pdbx_entity_src_gen_prod_otherKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6871,36 +6871,36 @@
       <PDBo:pdbx_entity_src_gen_prod_pcr rdf:about="{$base}/pdbx_entity_src_gen_prod_pcr/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_pcr rdf:resource="{$base}/pdbx_entity_src_gen_prod_pcr/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_31_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_prod_pcr rdf:resource="{$base}/pdbx_entity_src_gen_prod_pcr/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_31_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_pcr rdf:resource="{$base}/pdbx_entity_src_gen_prod_pcr/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_50_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_prod_pcr rdf:resource="{$base}/pdbx_entity_src_gen_prod_pcr/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_50_0 -->
       </xsl:if>
       <xsl:if test="PDBx:forward_primer_id!=''">
-	<PDBo:reference_to_pdbx_construct>
-	  <rdf:Description rdf:about="{$base}/pdbx_construct/{translate(PDBx:forward_primer_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_pcr rdf:resource="{$base}/pdbx_entity_src_gen_prod_pcr/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_construct>
-	<!-- pdbx_constructKeyref_0_0_2_0 -->
+        <PDBo:reference_to_pdbx_construct>
+          <rdf:Description rdf:about="{$base}/pdbx_construct/">
+            <PDBo:referenced_by_pdbx_entity_src_gen_prod_pcr rdf:resource="{$base}/pdbx_entity_src_gen_prod_pcr/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_construct>
+        <!-- pdbx_constructKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:if test="PDBx:reverse_primer_id!=''">
-	<PDBo:reference_to_pdbx_construct>
-	  <rdf:Description rdf:about="{$base}/pdbx_construct/{translate(PDBx:reverse_primer_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_pcr rdf:resource="{$base}/pdbx_entity_src_gen_prod_pcr/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_construct>
-	<!-- pdbx_constructKeyref_0_0_2_1 -->
+        <PDBo:reference_to_pdbx_construct>
+          <rdf:Description rdf:about="{$base}/pdbx_construct/">
+            <PDBo:referenced_by_pdbx_entity_src_gen_prod_pcr rdf:resource="{$base}/pdbx_entity_src_gen_prod_pcr/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_construct>
+        <!-- pdbx_constructKeyref_0_0_2_1 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6921,20 +6921,20 @@
       <PDBo:pdbx_entity_src_gen_proteolysis rdf:about="{$base}/pdbx_entity_src_gen_proteolysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_proteolysis rdf:resource="{$base}/pdbx_entity_src_gen_proteolysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_32_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_proteolysis rdf:resource="{$base}/pdbx_entity_src_gen_proteolysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_32_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_proteolysis rdf:resource="{$base}/pdbx_entity_src_gen_proteolysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_51_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_proteolysis rdf:resource="{$base}/pdbx_entity_src_gen_proteolysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_51_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6955,28 +6955,28 @@
       <PDBo:pdbx_entity_src_gen_pure rdf:about="{$base}/pdbx_entity_src_gen_pure/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_pure rdf:resource="{$base}/pdbx_entity_src_gen_pure/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_33_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_pure rdf:resource="{$base}/pdbx_entity_src_gen_pure/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_33_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_pure rdf:resource="{$base}/pdbx_entity_src_gen_pure/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_52_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_pure rdf:resource="{$base}/pdbx_entity_src_gen_pure/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_52_0 -->
       </xsl:if>
       <xsl:if test="PDBx:storage_buffer_id!=''">
-	<PDBo:reference_to_pdbx_buffer>
-	  <rdf:Description rdf:about="{$base}/pdbx_buffer/{translate(PDBx:storage_buffer_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_pure rdf:resource="{$base}/pdbx_entity_src_gen_pure/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_buffer>
-	<!-- pdbx_bufferKeyref_0_0_3_0 -->
+        <PDBo:reference_to_pdbx_buffer>
+          <rdf:Description rdf:about="{$base}/pdbx_buffer/">
+            <PDBo:referenced_by_pdbx_entity_src_gen_pure rdf:resource="{$base}/pdbx_entity_src_gen_pure/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_buffer>
+        <!-- pdbx_bufferKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6997,44 +6997,44 @@
       <PDBo:pdbx_entity_src_gen_refold rdf:about="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_34_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_34_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_53_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_53_0 -->
       </xsl:if>
       <xsl:if test="PDBx:denature_buffer_id!=''">
-	<PDBo:reference_to_pdbx_buffer>
-	  <rdf:Description rdf:about="{$base}/pdbx_buffer/{translate(PDBx:denature_buffer_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_buffer>
-	<!-- pdbx_bufferKeyref_0_0_4_0 -->
+        <PDBo:reference_to_pdbx_buffer>
+          <rdf:Description rdf:about="{$base}/pdbx_buffer/">
+            <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_buffer>
+        <!-- pdbx_bufferKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:if test="PDBx:refold_buffer_id!=''">
-	<PDBo:reference_to_pdbx_buffer>
-	  <rdf:Description rdf:about="{$base}/pdbx_buffer/{translate(PDBx:refold_buffer_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_buffer>
-	<!-- pdbx_bufferKeyref_0_0_4_1 -->
+        <PDBo:reference_to_pdbx_buffer>
+          <rdf:Description rdf:about="{$base}/pdbx_buffer/">
+            <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_buffer>
+        <!-- pdbx_bufferKeyref_0_0_4_1 -->
       </xsl:if>
       <xsl:if test="PDBx:storage_buffer_id!=''">
-	<PDBo:reference_to_pdbx_buffer>
-	  <rdf:Description rdf:about="{$base}/pdbx_buffer/{translate(PDBx:storage_buffer_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_buffer>
-	<!-- pdbx_bufferKeyref_0_0_4_2 -->
+        <PDBo:reference_to_pdbx_buffer>
+          <rdf:Description rdf:about="{$base}/pdbx_buffer/">
+            <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_buffer>
+        <!-- pdbx_bufferKeyref_0_0_4_2 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7053,12 +7053,12 @@
       <PDBo:pdbx_entity_src_syn rdf:about="{$base}/pdbx_entity_src_syn/{$entity_id_encoded},{$pdbx_src_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_entity_src_syn rdf:resource="{$base}/pdbx_entity_src_syn/{$entity_id_encoded},{$pdbx_src_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_35_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entity_src_syn rdf:resource="{$base}/pdbx_entity_src_syn/{$entity_id_encoded},{$pdbx_src_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_35_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7075,12 +7075,12 @@
       <PDBo:pdbx_entry_details rdf:about="{$base}/pdbx_entry_details/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_entry_details rdf:resource="{$base}/pdbx_entry_details/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_54_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_entry_details rdf:resource="{$base}/pdbx_entry_details/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_54_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7097,12 +7097,12 @@
       <PDBo:pdbx_exptl_crystal_cryo_treatment rdf:about="{$base}/pdbx_exptl_crystal_cryo_treatment/{$crystal_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
-	<PDBo:reference_to_exptl_crystal>
-	  <rdf:Description rdf:about="{$base}/exptl_crystal/">
-	    <PDBo:referenced_by_pdbx_exptl_crystal_cryo_treatment rdf:resource="{$base}/pdbx_exptl_crystal_cryo_treatment/{$crystal_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_exptl_crystal>
-	<!-- exptl_crystalKeyref_0_0_4_0 -->
+        <PDBo:reference_to_exptl_crystal>
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{translate(@crystal_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_exptl_crystal_cryo_treatment rdf:resource="{$base}/pdbx_exptl_crystal_cryo_treatment/{$crystal_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_exptl_crystal>
+        <!-- exptl_crystalKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7121,12 +7121,12 @@
       <PDBo:pdbx_exptl_crystal_grow_comp rdf:about="{$base}/pdbx_exptl_crystal_grow_comp/{$comp_id_encoded},{$crystal_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
-	<PDBo:reference_to_exptl_crystal>
-	  <rdf:Description rdf:about="{$base}/exptl_crystal/">
-	    <PDBo:referenced_by_pdbx_exptl_crystal_grow_comp rdf:resource="{$base}/pdbx_exptl_crystal_grow_comp/{$comp_id_encoded},{$crystal_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_exptl_crystal>
-	<!-- exptl_crystalKeyref_0_0_5_0 -->
+        <PDBo:reference_to_exptl_crystal>
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{translate(@crystal_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_exptl_crystal_grow_comp rdf:resource="{$base}/pdbx_exptl_crystal_grow_comp/{$comp_id_encoded},{$crystal_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_exptl_crystal>
+        <!-- exptl_crystalKeyref_0_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7145,12 +7145,12 @@
       <PDBo:pdbx_exptl_crystal_grow_sol rdf:about="{$base}/pdbx_exptl_crystal_grow_sol/{$crystal_id_encoded},{$sol_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
-	<PDBo:reference_to_exptl_crystal>
-	  <rdf:Description rdf:about="{$base}/exptl_crystal/">
-	    <PDBo:referenced_by_pdbx_exptl_crystal_grow_sol rdf:resource="{$base}/pdbx_exptl_crystal_grow_sol/{$crystal_id_encoded},{$sol_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_exptl_crystal>
-	<!-- exptl_crystalKeyref_0_0_6_0 -->
+        <PDBo:reference_to_exptl_crystal>
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{translate(@crystal_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_exptl_crystal_grow_sol rdf:resource="{$base}/pdbx_exptl_crystal_grow_sol/{$crystal_id_encoded},{$sol_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_exptl_crystal>
+        <!-- exptl_crystalKeyref_0_0_6_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7167,12 +7167,12 @@
       <PDBo:pdbx_exptl_pd rdf:about="{$base}/pdbx_exptl_pd/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_exptl_pd rdf:resource="{$base}/pdbx_exptl_pd/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_55_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_exptl_pd rdf:resource="{$base}/pdbx_exptl_pd/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_55_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7209,12 +7209,12 @@
       <PDBo:pdbx_family_prd_audit rdf:about="{$base}/pdbx_family_prd_audit/{$action_type_encoded},{$date_encoded},{$family_prd_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@family_prd_id!=''">
-	<PDBo:reference_to_pdbx_reference_molecule_family>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_family/">
-	    <PDBo:referenced_by_pdbx_family_prd_audit rdf:resource="{$base}/pdbx_family_prd_audit/{$action_type_encoded},{$date_encoded},{$family_prd_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_molecule_family>
-	<!-- pdbx_reference_molecule_familyKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_reference_molecule_family>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_family/{translate(@family_prd_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_family_prd_audit rdf:resource="{$base}/pdbx_family_prd_audit/{$action_type_encoded},{$date_encoded},{$family_prd_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_molecule_family>
+        <!-- pdbx_reference_molecule_familyKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7231,12 +7231,12 @@
       <PDBo:pdbx_feature_assembly rdf:about="{$base}/pdbx_feature_assembly/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:assembly_id!=''">
-	<PDBo:reference_to_struct_biol>
-	  <rdf:Description rdf:about="{$base}/struct_biol/{translate(PDBx:assembly_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_feature_assembly rdf:resource="{$base}/pdbx_feature_assembly/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_biol>
-	<!-- struct_biolKeyref_0_0_1_0 -->
+        <PDBo:reference_to_struct_biol>
+          <rdf:Description rdf:about="{$base}/struct_biol/">
+            <PDBo:referenced_by_pdbx_feature_assembly rdf:resource="{$base}/pdbx_feature_assembly/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_biol>
+        <!-- struct_biolKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7253,12 +7253,12 @@
       <PDBo:pdbx_feature_domain rdf:about="{$base}/pdbx_feature_domain/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:domain_id!=''">
-	<PDBo:reference_to_pdbx_domain>
-	  <rdf:Description rdf:about="{$base}/pdbx_domain/{translate(PDBx:domain_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_feature_domain rdf:resource="{$base}/pdbx_feature_domain/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_domain>
-	<!-- pdbx_domainKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_domain>
+          <rdf:Description rdf:about="{$base}/pdbx_domain/">
+            <PDBo:referenced_by_pdbx_feature_domain rdf:resource="{$base}/pdbx_feature_domain/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_domain>
+        <!-- pdbx_domainKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7317,12 +7317,12 @@
       <PDBo:pdbx_helical_symmetry rdf:about="{$base}/pdbx_helical_symmetry/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_helical_symmetry rdf:resource="{$base}/pdbx_helical_symmetry/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_56_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_helical_symmetry rdf:resource="{$base}/pdbx_helical_symmetry/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_56_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7339,12 +7339,12 @@
       <PDBo:pdbx_helical_symmetry_depositor_info rdf:about="{$base}/pdbx_helical_symmetry_depositor_info/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_helical_symmetry_depositor_info rdf:resource="{$base}/pdbx_helical_symmetry_depositor_info/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_57_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_helical_symmetry_depositor_info rdf:resource="{$base}/pdbx_helical_symmetry_depositor_info/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_57_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7449,20 +7449,20 @@
       <PDBo:pdbx_linked_entity_instance_list rdf:about="{$base}/pdbx_linked_entity_instance_list/{$asym_id_encoded},{$instance_id_encoded},{$linked_entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@linked_entity_id!=''">
-	<PDBo:reference_to_pdbx_linked_entity>
-	  <rdf:Description rdf:about="{$base}/pdbx_linked_entity/">
-	    <PDBo:referenced_by_pdbx_linked_entity_instance_list rdf:resource="{$base}/pdbx_linked_entity_instance_list/{$asym_id_encoded},{$instance_id_encoded},{$linked_entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_linked_entity>
-	<!-- pdbx_linked_entityKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_linked_entity>
+          <rdf:Description rdf:about="{$base}/pdbx_linked_entity/{translate(@linked_entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_linked_entity_instance_list rdf:resource="{$base}/pdbx_linked_entity_instance_list/{$asym_id_encoded},{$instance_id_encoded},{$linked_entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_linked_entity>
+        <!-- pdbx_linked_entityKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:if test="@asym_id!=''">
-	<PDBo:reference_to_struct_asym>
-	  <rdf:Description rdf:about="{$base}/struct_asym/">
-	    <PDBo:referenced_by_pdbx_linked_entity_instance_list rdf:resource="{$base}/pdbx_linked_entity_instance_list/{$asym_id_encoded},{$instance_id_encoded},{$linked_entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_asym>
-	<!-- struct_asymKeyref_1_0_1_0 -->
+        <PDBo:reference_to_struct_asym>
+          <rdf:Description rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_linked_entity_instance_list rdf:resource="{$base}/pdbx_linked_entity_instance_list/{$asym_id_encoded},{$instance_id_encoded},{$linked_entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_1_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7481,12 +7481,12 @@
       <PDBo:pdbx_linked_entity_link_list rdf:about="{$base}/pdbx_linked_entity_link_list/{$link_id_encoded},{$linked_entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:component_1!='' and PDBx:entity_id_1!='' and @linked_entity_id!=''">
-	<PDBo:reference_to_pdbx_linked_entity_list>
-	  <rdf:Description rdf:about="{$base}/pdbx_linked_entity_list/{translate(PDBx:component_1,' ^','__')},{translate(PDBx:entity_id_1,' ^','__')},">
-	    <PDBo:referenced_by_pdbx_linked_entity_link_list rdf:resource="{$base}/pdbx_linked_entity_link_list/{$link_id_encoded},{$linked_entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_linked_entity_list>
-	<!-- pdbx_linked_entity_listKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_linked_entity_list>
+          <rdf:Description rdf:about="{$base}/pdbx_linked_entity_list/,,{translate(@linked_entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_linked_entity_link_list rdf:resource="{$base}/pdbx_linked_entity_link_list/{$link_id_encoded},{$linked_entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_linked_entity_list>
+        <!-- pdbx_linked_entity_listKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7507,20 +7507,20 @@
       <PDBo:pdbx_linked_entity_list rdf:about="{$base}/pdbx_linked_entity_list/{$component_id_encoded},{$entity_id_encoded},{$linked_entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_linked_entity_list rdf:resource="{$base}/pdbx_linked_entity_list/{$component_id_encoded},{$entity_id_encoded},{$linked_entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_36_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_linked_entity_list rdf:resource="{$base}/pdbx_linked_entity_list/{$component_id_encoded},{$entity_id_encoded},{$linked_entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_36_0 -->
       </xsl:if>
       <xsl:if test="@linked_entity_id!=''">
-	<PDBo:reference_to_pdbx_linked_entity>
-	  <rdf:Description rdf:about="{$base}/pdbx_linked_entity/">
-	    <PDBo:referenced_by_pdbx_linked_entity_list rdf:resource="{$base}/pdbx_linked_entity_list/{$component_id_encoded},{$entity_id_encoded},{$linked_entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_linked_entity>
-	<!-- pdbx_linked_entityKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_linked_entity>
+          <rdf:Description rdf:about="{$base}/pdbx_linked_entity/{translate(@linked_entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_linked_entity_list rdf:resource="{$base}/pdbx_linked_entity_list/{$component_id_encoded},{$entity_id_encoded},{$linked_entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_linked_entity>
+        <!-- pdbx_linked_entityKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7601,12 +7601,12 @@
       <PDBo:pdbx_molecule rdf:about="{$base}/pdbx_molecule/{$asym_id_encoded},{$instance_id_encoded},{$prd_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
-	<PDBo:reference_to_struct_asym>
-	  <rdf:Description rdf:about="{$base}/struct_asym/">
-	    <PDBo:referenced_by_pdbx_molecule rdf:resource="{$base}/pdbx_molecule/{$asym_id_encoded},{$instance_id_encoded},{$prd_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_asym>
-	<!-- struct_asymKeyref_1_0_2_0 -->
+        <PDBo:reference_to_struct_asym>
+          <rdf:Description rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_molecule rdf:resource="{$base}/pdbx_molecule/{$asym_id_encoded},{$instance_id_encoded},{$prd_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_1_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7665,12 +7665,12 @@
       <PDBo:pdbx_na_struct_keywds rdf:about="{$base}/pdbx_na_struct_keywds/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_na_struct_keywds rdf:resource="{$base}/pdbx_na_struct_keywds/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_58_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_na_struct_keywds rdf:resource="{$base}/pdbx_na_struct_keywds/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_58_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7763,12 +7763,12 @@
       <PDBo:pdbx_nmr_chem_shift_software rdf:about="{$base}/pdbx_nmr_chem_shift_software/{$assigned_chem_shift_list_id_encoded},{$entry_id_encoded},{$software_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@software_id!=''">
-	<PDBo:reference_to_pdbx_nmr_software>
-	  <rdf:Description rdf:about="{$base}/pdbx_nmr_software/">
-	    <PDBo:referenced_by_pdbx_nmr_chem_shift_software rdf:resource="{$base}/pdbx_nmr_chem_shift_software/{$assigned_chem_shift_list_id_encoded},{$entry_id_encoded},{$software_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_nmr_software>
-	<!-- pdbx_nmr_softwareKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_nmr_software>
+          <rdf:Description rdf:about="{$base}/pdbx_nmr_software/{translate(@software_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_nmr_chem_shift_software rdf:resource="{$base}/pdbx_nmr_chem_shift_software/{$assigned_chem_shift_list_id_encoded},{$entry_id_encoded},{$software_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_nmr_software>
+        <!-- pdbx_nmr_softwareKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7785,12 +7785,12 @@
       <PDBo:pdbx_nmr_computing rdf:about="{$base}/pdbx_nmr_computing/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_nmr_computing rdf:resource="{$base}/pdbx_nmr_computing/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_59_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_nmr_computing rdf:resource="{$base}/pdbx_nmr_computing/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_59_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7827,12 +7827,12 @@
       <PDBo:pdbx_nmr_constraints rdf:about="{$base}/pdbx_nmr_constraints/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_nmr_constraints rdf:resource="{$base}/pdbx_nmr_constraints/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_60_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_nmr_constraints rdf:resource="{$base}/pdbx_nmr_constraints/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_60_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7849,12 +7849,12 @@
       <PDBo:pdbx_nmr_details rdf:about="{$base}/pdbx_nmr_details/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_nmr_details rdf:resource="{$base}/pdbx_nmr_details/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_61_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_nmr_details rdf:resource="{$base}/pdbx_nmr_details/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_61_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7871,12 +7871,12 @@
       <PDBo:pdbx_nmr_ensemble rdf:about="{$base}/pdbx_nmr_ensemble/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_nmr_ensemble rdf:resource="{$base}/pdbx_nmr_ensemble/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_62_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_nmr_ensemble rdf:resource="{$base}/pdbx_nmr_ensemble/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_62_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7893,12 +7893,12 @@
       <PDBo:pdbx_nmr_ensemble_rms rdf:about="{$base}/pdbx_nmr_ensemble_rms/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_nmr_ensemble_rms rdf:resource="{$base}/pdbx_nmr_ensemble_rms/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_63_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_nmr_ensemble_rms rdf:resource="{$base}/pdbx_nmr_ensemble_rms/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_63_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7963,12 +7963,12 @@
       <PDBo:pdbx_nmr_force_constants rdf:about="{$base}/pdbx_nmr_force_constants/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_nmr_force_constants rdf:resource="{$base}/pdbx_nmr_force_constants/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_64_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_nmr_force_constants rdf:resource="{$base}/pdbx_nmr_force_constants/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_64_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7987,12 +7987,12 @@
       <PDBo:pdbx_nmr_refine rdf:about="{$base}/pdbx_nmr_refine/{$entry_id_encoded},{$software_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_nmr_refine rdf:resource="{$base}/pdbx_nmr_refine/{$entry_id_encoded},{$software_ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_65_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_nmr_refine rdf:resource="{$base}/pdbx_nmr_refine/{$entry_id_encoded},{$software_ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_65_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8009,12 +8009,12 @@
       <PDBo:pdbx_nmr_representative rdf:about="{$base}/pdbx_nmr_representative/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_nmr_representative rdf:resource="{$base}/pdbx_nmr_representative/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_66_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_nmr_representative rdf:resource="{$base}/pdbx_nmr_representative/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_66_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8119,12 +8119,12 @@
       <PDBo:pdbx_nmr_spectral_peak_software rdf:about="{$base}/pdbx_nmr_spectral_peak_software/{$entry_id_encoded},{$software_id_encoded},{$spectral_peak_list_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@software_id!=''">
-	<PDBo:reference_to_pdbx_nmr_software>
-	  <rdf:Description rdf:about="{$base}/pdbx_nmr_software/">
-	    <PDBo:referenced_by_pdbx_nmr_spectral_peak_software rdf:resource="{$base}/pdbx_nmr_spectral_peak_software/{$entry_id_encoded},{$software_id_encoded},{$spectral_peak_list_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_nmr_software>
-	<!-- pdbx_nmr_softwareKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_nmr_software>
+          <rdf:Description rdf:about="{$base}/pdbx_nmr_software/{translate(@software_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_nmr_spectral_peak_software rdf:resource="{$base}/pdbx_nmr_spectral_peak_software/{$entry_id_encoded},{$software_id_encoded},{$spectral_peak_list_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_nmr_software>
+        <!-- pdbx_nmr_softwareKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8353,12 +8353,12 @@
       <PDBo:pdbx_point_symmetry rdf:about="{$base}/pdbx_point_symmetry/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_point_symmetry rdf:resource="{$base}/pdbx_point_symmetry/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_67_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_point_symmetry rdf:resource="{$base}/pdbx_point_symmetry/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_67_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8375,12 +8375,12 @@
       <PDBo:pdbx_point_symmetry_depositor_info rdf:about="{$base}/pdbx_point_symmetry_depositor_info/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_point_symmetry_depositor_info rdf:resource="{$base}/pdbx_point_symmetry_depositor_info/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_68_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_point_symmetry_depositor_info rdf:resource="{$base}/pdbx_point_symmetry_depositor_info/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_68_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8403,20 +8403,20 @@
       <PDBo:pdbx_poly_seq_scheme rdf:about="{$base}/pdbx_poly_seq_scheme/{$asym_id_encoded},{$entity_id_encoded},{$mon_id_encoded},{$seq_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!='' and @mon_id!='' and @seq_id!=''">
-	<PDBo:reference_to_entity_poly_seq>
-	  <rdf:Description rdf:about="{$base}/entity_poly_seq/,,">
-	    <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="{$base}/pdbx_poly_seq_scheme/{$asym_id_encoded},{$entity_id_encoded},{$mon_id_encoded},{$seq_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity_poly_seq>
-	<!-- entity_poly_seqKeyref_0_0_1_0 -->
+        <PDBo:reference_to_entity_poly_seq>
+          <rdf:Description rdf:about="{$base}/entity_poly_seq/{translate(@entity_id,' ^','__')},{translate(@mon_id,' ^','__')},{translate(@seq_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="{$base}/pdbx_poly_seq_scheme/{$asym_id_encoded},{$entity_id_encoded},{$mon_id_encoded},{$seq_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity_poly_seq>
+        <!-- entity_poly_seqKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:if test="@entity_id!='' and @asym_id!=''">
-	<PDBo:reference_to_struct_asym>
-	  <rdf:Description rdf:about="{$base}/struct_asym/,">
-	    <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="{$base}/pdbx_poly_seq_scheme/{$asym_id_encoded},{$entity_id_encoded},{$mon_id_encoded},{$seq_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_asym>
-	<!-- struct_asymKeyref_0_1_1_0 -->
+        <PDBo:reference_to_struct_asym>
+          <rdf:Description rdf:about="{$base}/struct_asym/{translate(@entity_id,' ^','__')},{translate(@asym_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="{$base}/pdbx_poly_seq_scheme/{$asym_id_encoded},{$entity_id_encoded},{$mon_id_encoded},{$seq_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_0_1_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8433,12 +8433,12 @@
       <PDBo:pdbx_post_process_details rdf:about="{$base}/pdbx_post_process_details/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_post_process_details rdf:resource="{$base}/pdbx_post_process_details/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_69_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_post_process_details rdf:resource="{$base}/pdbx_post_process_details/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_69_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8457,12 +8457,12 @@
       <PDBo:pdbx_post_process_status rdf:about="{$base}/pdbx_post_process_status/{$cycle_id_encoded},{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_post_process_status rdf:resource="{$base}/pdbx_post_process_status/{$cycle_id_encoded},{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_70_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_post_process_status rdf:resource="{$base}/pdbx_post_process_status/{$cycle_id_encoded},{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_70_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8483,12 +8483,12 @@
       <PDBo:pdbx_prd_audit rdf:about="{$base}/pdbx_prd_audit/{$action_type_encoded},{$date_encoded},{$prd_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@prd_id!=''">
-	<PDBo:reference_to_pdbx_reference_molecule>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/">
-	    <PDBo:referenced_by_pdbx_prd_audit rdf:resource="{$base}/pdbx_prd_audit/{$action_type_encoded},{$date_encoded},{$prd_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_molecule>
-	<!-- pdbx_reference_moleculeKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_reference_molecule>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/{translate(@prd_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_prd_audit rdf:resource="{$base}/pdbx_prd_audit/{$action_type_encoded},{$date_encoded},{$prd_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_molecule>
+        <!-- pdbx_reference_moleculeKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8505,12 +8505,12 @@
       <PDBo:pdbx_prerelease_seq rdf:about="{$base}/pdbx_prerelease_seq/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/">
-	    <PDBo:referenced_by_pdbx_prerelease_seq rdf:resource="{$base}/pdbx_prerelease_seq/{$entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_37_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/{translate(@entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_prerelease_seq rdf:resource="{$base}/pdbx_prerelease_seq/{$entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_37_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8575,12 +8575,12 @@
       <PDBo:pdbx_reference_entity_list rdf:about="{$base}/pdbx_reference_entity_list/{$component_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@prd_id!=''">
-	<PDBo:reference_to_pdbx_reference_molecule>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/">
-	    <PDBo:referenced_by_pdbx_reference_entity_list rdf:resource="{$base}/pdbx_reference_entity_list/{$component_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_molecule>
-	<!-- pdbx_reference_moleculeKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_reference_molecule>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/{translate(@prd_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_reference_entity_list rdf:resource="{$base}/pdbx_reference_entity_list/{$component_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_molecule>
+        <!-- pdbx_reference_moleculeKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8635,20 +8635,20 @@
       <PDBo:pdbx_reference_entity_poly_link rdf:about="{$base}/pdbx_reference_entity_poly_link/{$component_id_encoded},{$link_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@component_id!='' and @prd_id!='' and @ref_entity_id!=''">
-	<PDBo:reference_to_pdbx_reference_entity_list>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_entity_list/,,">
-	    <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="{$base}/pdbx_reference_entity_poly_link/{$component_id_encoded},{$link_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_entity_list>
-	<!-- pdbx_reference_entity_listKeyref_3_0_0_0 -->
+        <PDBo:reference_to_pdbx_reference_entity_list>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_entity_list/{translate(@component_id,' ^','__')},{translate(@prd_id,' ^','__')},{translate(@ref_entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="{$base}/pdbx_reference_entity_poly_link/{$component_id_encoded},{$link_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_entity_list>
+        <!-- pdbx_reference_entity_listKeyref_3_0_0_0 -->
       </xsl:if>
       <xsl:if test="@prd_id!='' and @ref_entity_id!=''">
-	<PDBo:reference_to_pdbx_reference_entity_poly>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_entity_poly/,">
-	    <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="{$base}/pdbx_reference_entity_poly_link/{$component_id_encoded},{$link_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_entity_poly>
-	<!-- pdbx_reference_entity_polyKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_reference_entity_poly>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_entity_poly/{translate(@prd_id,' ^','__')},{translate(@ref_entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="{$base}/pdbx_reference_entity_poly_link/{$component_id_encoded},{$link_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_entity_poly>
+        <!-- pdbx_reference_entity_polyKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8673,12 +8673,12 @@
       <PDBo:pdbx_reference_entity_poly_seq rdf:about="{$base}/pdbx_reference_entity_poly_seq/{$hetero_encoded},{$mon_id_encoded},{$num_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@prd_id!='' and @ref_entity_id!=''">
-	<PDBo:reference_to_pdbx_reference_entity_poly>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_entity_poly/,">
-	    <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="{$base}/pdbx_reference_entity_poly_seq/{$hetero_encoded},{$mon_id_encoded},{$num_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_entity_poly>
-	<!-- pdbx_reference_entity_polyKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_reference_entity_poly>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_entity_poly/{translate(@prd_id,' ^','__')},{translate(@ref_entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="{$base}/pdbx_reference_entity_poly_seq/{$hetero_encoded},{$mon_id_encoded},{$num_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_entity_poly>
+        <!-- pdbx_reference_entity_polyKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8731,12 +8731,12 @@
       <PDBo:pdbx_reference_entity_subcomponents rdf:about="{$base}/pdbx_reference_entity_subcomponents/{$prd_id_encoded},{$seq_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@prd_id!=''">
-	<PDBo:reference_to_pdbx_reference_molecule>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/">
-	    <PDBo:referenced_by_pdbx_reference_entity_subcomponents rdf:resource="{$base}/pdbx_reference_entity_subcomponents/{$prd_id_encoded},{$seq_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_molecule>
-	<!-- pdbx_reference_moleculeKeyref_0_0_2_0 -->
+        <PDBo:reference_to_pdbx_reference_molecule>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/{translate(@prd_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_reference_entity_subcomponents rdf:resource="{$base}/pdbx_reference_entity_subcomponents/{$prd_id_encoded},{$seq_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_molecule>
+        <!-- pdbx_reference_moleculeKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8769,12 +8769,12 @@
       <PDBo:pdbx_reference_linked_entity_comp_link rdf:about="{$base}/pdbx_reference_linked_entity_comp_link/{$link_id_encoded},{$linked_entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@linked_entity_id!='' and PDBx:list_id_1!=''">
-	<PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity_comp_list/,{translate(PDBx:list_id_1,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_reference_linked_entity_comp_link rdf:resource="{$base}/pdbx_reference_linked_entity_comp_link/{$link_id_encoded},{$linked_entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
-	<!-- pdbx_reference_linked_entity_comp_listKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity_comp_list/{translate(@linked_entity_id,' ^','__')},">
+            <PDBo:referenced_by_pdbx_reference_linked_entity_comp_link rdf:resource="{$base}/pdbx_reference_linked_entity_comp_link/{$link_id_encoded},{$linked_entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
+        <!-- pdbx_reference_linked_entity_comp_listKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8793,12 +8793,12 @@
       <PDBo:pdbx_reference_linked_entity_comp_list rdf:about="{$base}/pdbx_reference_linked_entity_comp_list/{$linked_entity_id_encoded},{$list_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@linked_entity_id!=''">
-	<PDBo:reference_to_pdbx_reference_linked_entity>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity/">
-	    <PDBo:referenced_by_pdbx_reference_linked_entity_comp_list rdf:resource="{$base}/pdbx_reference_linked_entity_comp_list/{$linked_entity_id_encoded},{$list_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_linked_entity>
-	<!-- pdbx_reference_linked_entityKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_reference_linked_entity>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity/{translate(@linked_entity_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_reference_linked_entity_comp_list rdf:resource="{$base}/pdbx_reference_linked_entity_comp_list/{$linked_entity_id_encoded},{$list_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_linked_entity>
+        <!-- pdbx_reference_linked_entityKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8817,12 +8817,12 @@
       <PDBo:pdbx_reference_linked_entity_link rdf:about="{$base}/pdbx_reference_linked_entity_link/{$link_id_encoded},{$linked_entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@linked_entity_id!='' and PDBx:from_list_id!=''">
-	<PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity_comp_list/,{translate(PDBx:from_list_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_reference_linked_entity_link rdf:resource="{$base}/pdbx_reference_linked_entity_link/{$link_id_encoded},{$linked_entity_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
-	<!-- pdbx_reference_linked_entity_comp_listKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity_comp_list/{translate(@linked_entity_id,' ^','__')},">
+            <PDBo:referenced_by_pdbx_reference_linked_entity_link rdf:resource="{$base}/pdbx_reference_linked_entity_link/{$link_id_encoded},{$linked_entity_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
+        <!-- pdbx_reference_linked_entity_comp_listKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8903,12 +8903,12 @@
       <PDBo:pdbx_reference_molecule_features rdf:about="{$base}/pdbx_reference_molecule_features/{$family_prd_id_encoded},{$ordinal_encoded},{$prd_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@family_prd_id!='' and @prd_id!=''">
-	<PDBo:reference_to_pdbx_reference_molecule_list>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_list/,">
-	    <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="{$base}/pdbx_reference_molecule_features/{$family_prd_id_encoded},{$ordinal_encoded},{$prd_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_molecule_list>
-	<!-- pdbx_reference_molecule_listKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_reference_molecule_list>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_list/{translate(@family_prd_id,' ^','__')},{translate(@prd_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="{$base}/pdbx_reference_molecule_features/{$family_prd_id_encoded},{$ordinal_encoded},{$prd_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_molecule_list>
+        <!-- pdbx_reference_molecule_listKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8927,12 +8927,12 @@
       <PDBo:pdbx_reference_molecule_list rdf:about="{$base}/pdbx_reference_molecule_list/{$family_prd_id_encoded},{$prd_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@family_prd_id!=''">
-	<PDBo:reference_to_pdbx_reference_molecule_family>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_family/">
-	    <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="{$base}/pdbx_reference_molecule_list/{$family_prd_id_encoded},{$prd_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_molecule_family>
-	<!-- pdbx_reference_molecule_familyKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_reference_molecule_family>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_family/{translate(@family_prd_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="{$base}/pdbx_reference_molecule_list/{$family_prd_id_encoded},{$prd_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_molecule_family>
+        <!-- pdbx_reference_molecule_familyKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8969,12 +8969,12 @@
       <PDBo:pdbx_reference_molecule_synonyms rdf:about="{$base}/pdbx_reference_molecule_synonyms/{$family_prd_id_encoded},{$ordinal_encoded},{$prd_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@family_prd_id!='' and @prd_id!=''">
-	<PDBo:reference_to_pdbx_reference_molecule_list>
-	  <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_list/,">
-	    <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="{$base}/pdbx_reference_molecule_synonyms/{$family_prd_id_encoded},{$ordinal_encoded},{$prd_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_reference_molecule_list>
-	<!-- pdbx_reference_molecule_listKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_reference_molecule_list>
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_list/{translate(@family_prd_id,' ^','__')},{translate(@prd_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="{$base}/pdbx_reference_molecule_synonyms/{$family_prd_id_encoded},{$ordinal_encoded},{$prd_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_reference_molecule_list>
+        <!-- pdbx_reference_molecule_listKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9007,12 +9007,12 @@
       <PDBo:pdbx_refine rdf:about="{$base}/pdbx_refine/{$entry_id_encoded},{$pdbx_refine_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_refine rdf:resource="{$base}/pdbx_refine/{$entry_id_encoded},{$pdbx_refine_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_71_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_refine rdf:resource="{$base}/pdbx_refine/{$entry_id_encoded},{$pdbx_refine_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_71_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9093,12 +9093,12 @@
       <PDBo:pdbx_refine_tls_group rdf:about="{$base}/pdbx_refine_tls_group/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:refine_tls_id!=''">
-	<PDBo:reference_to_pdbx_refine_tls>
-	  <rdf:Description rdf:about="{$base}/pdbx_refine_tls/{translate(PDBx:refine_tls_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_refine_tls_group rdf:resource="{$base}/pdbx_refine_tls_group/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_refine_tls>
-	<!-- pdbx_refine_tlsKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_refine_tls>
+          <rdf:Description rdf:about="{$base}/pdbx_refine_tls/">
+            <PDBo:referenced_by_pdbx_refine_tls_group rdf:resource="{$base}/pdbx_refine_tls_group/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_refine_tls>
+        <!-- pdbx_refine_tlsKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9203,12 +9203,12 @@
       <PDBo:pdbx_rms_devs_covalent rdf:about="{$base}/pdbx_rms_devs_covalent/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_rms_devs_covalent rdf:resource="{$base}/pdbx_rms_devs_covalent/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_72_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_rms_devs_covalent rdf:resource="{$base}/pdbx_rms_devs_covalent/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_72_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9315,12 +9315,12 @@
       <PDBo:pdbx_serial_crystallography_data_reduction rdf:about="{$base}/pdbx_serial_crystallography_data_reduction/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_pdbx_serial_crystallography_data_reduction rdf:resource="{$base}/pdbx_serial_crystallography_data_reduction/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_11_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_serial_crystallography_data_reduction rdf:resource="{$base}/pdbx_serial_crystallography_data_reduction/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_11_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9337,12 +9337,12 @@
       <PDBo:pdbx_serial_crystallography_measurement rdf:about="{$base}/pdbx_serial_crystallography_measurement/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_pdbx_serial_crystallography_measurement rdf:resource="{$base}/pdbx_serial_crystallography_measurement/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_12_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_serial_crystallography_measurement rdf:resource="{$base}/pdbx_serial_crystallography_measurement/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_12_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9359,12 +9359,12 @@
       <PDBo:pdbx_serial_crystallography_sample_delivery rdf:about="{$base}/pdbx_serial_crystallography_sample_delivery/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_13_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_13_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9381,12 +9381,12 @@
       <PDBo:pdbx_serial_crystallography_sample_delivery_fixed_target rdf:about="{$base}/pdbx_serial_crystallography_sample_delivery_fixed_target/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery_fixed_target rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery_fixed_target/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_14_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery_fixed_target rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery_fixed_target/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_14_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9403,12 +9403,12 @@
       <PDBo:pdbx_serial_crystallography_sample_delivery_injection rdf:about="{$base}/pdbx_serial_crystallography_sample_delivery_injection/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
-	<PDBo:reference_to_diffrn>
-	  <rdf:Description rdf:about="{$base}/diffrn/">
-	    <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery_injection rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery_injection/{$diffrn_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_diffrn>
-	<!-- diffrnKeyref_0_0_15_0 -->
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(@diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery_injection rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery_injection/{$diffrn_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_15_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9433,12 +9433,12 @@
       <PDBo:pdbx_sifts_unp_segments rdf:about="{$base}/pdbx_sifts_unp_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$unp_acc_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
-	<PDBo:reference_to_struct_asym>
-	  <rdf:Description rdf:about="{$base}/struct_asym/">
-	    <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="{$base}/pdbx_sifts_unp_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$unp_acc_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_asym>
-	<!-- struct_asymKeyref_1_0_3_0 -->
+        <PDBo:reference_to_struct_asym>
+          <rdf:Description rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="{$base}/pdbx_sifts_unp_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$unp_acc_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_1_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9461,12 +9461,12 @@
       <PDBo:pdbx_sifts_xref_db rdf:about="{$base}/pdbx_sifts_xref_db/{$asym_id_encoded},{$entity_id_encoded},{$seq_id_encoded},{$seq_id_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
-	<PDBo:reference_to_struct_asym>
-	  <rdf:Description rdf:about="{$base}/struct_asym/">
-	    <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="{$base}/pdbx_sifts_xref_db/{$asym_id_encoded},{$entity_id_encoded},{$seq_id_encoded},{$seq_id_ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_asym>
-	<!-- struct_asymKeyref_1_0_4_0 -->
+        <PDBo:reference_to_struct_asym>
+          <rdf:Description rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="{$base}/pdbx_sifts_xref_db/{$asym_id_encoded},{$entity_id_encoded},{$seq_id_encoded},{$seq_id_ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_1_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9497,12 +9497,12 @@
       <PDBo:pdbx_sifts_xref_db_segments rdf:about="{$base}/pdbx_sifts_xref_db_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$seq_id_end_encoded},{$seq_id_start_encoded},{$xref_db_encoded},{$xref_db_acc_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
-	<PDBo:reference_to_struct_asym>
-	  <rdf:Description rdf:about="{$base}/struct_asym/">
-	    <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="{$base}/pdbx_sifts_xref_db_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$seq_id_end_encoded},{$seq_id_start_encoded},{$xref_db_encoded},{$xref_db_acc_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_asym>
-	<!-- struct_asymKeyref_1_0_5_0 -->
+        <PDBo:reference_to_struct_asym>
+          <rdf:Description rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="{$base}/pdbx_sifts_xref_db_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$seq_id_end_encoded},{$seq_id_start_encoded},{$xref_db_encoded},{$xref_db_acc_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_1_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9521,12 +9521,12 @@
       <PDBo:pdbx_soln_scatter rdf:about="{$base}/pdbx_soln_scatter/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_soln_scatter rdf:resource="{$base}/pdbx_soln_scatter/{$entry_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_73_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_soln_scatter rdf:resource="{$base}/pdbx_soln_scatter/{$entry_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_73_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9629,12 +9629,12 @@
       <PDBo:pdbx_struct_assembly_auth_classification rdf:about="{$base}/pdbx_struct_assembly_auth_classification/{$assembly_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@assembly_id!=''">
-	<PDBo:reference_to_pdbx_struct_assembly>
-	  <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/">
-	    <PDBo:referenced_by_pdbx_struct_assembly_auth_classification rdf:resource="{$base}/pdbx_struct_assembly_auth_classification/{$assembly_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_struct_assembly>
-	<!-- pdbx_struct_assemblyKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_struct_assembly>
+          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/{translate(@assembly_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_struct_assembly_auth_classification rdf:resource="{$base}/pdbx_struct_assembly_auth_classification/{$assembly_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_struct_assembly>
+        <!-- pdbx_struct_assemblyKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9653,12 +9653,12 @@
       <PDBo:pdbx_struct_assembly_auth_evidence rdf:about="{$base}/pdbx_struct_assembly_auth_evidence/{$assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@assembly_id!=''">
-	<PDBo:reference_to_pdbx_struct_assembly>
-	  <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/">
-	    <PDBo:referenced_by_pdbx_struct_assembly_auth_evidence rdf:resource="{$base}/pdbx_struct_assembly_auth_evidence/{$assembly_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_struct_assembly>
-	<!-- pdbx_struct_assemblyKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_struct_assembly>
+          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/{translate(@assembly_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_struct_assembly_auth_evidence rdf:resource="{$base}/pdbx_struct_assembly_auth_evidence/{$assembly_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_struct_assembly>
+        <!-- pdbx_struct_assemblyKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9677,12 +9677,12 @@
       <PDBo:pdbx_struct_assembly_auth_evidence_depositor_info rdf:about="{$base}/pdbx_struct_assembly_auth_evidence_depositor_info/{$assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@assembly_id!=''">
-	<PDBo:reference_to_pdbx_struct_assembly_depositor_info>
-	  <rdf:Description rdf:about="{$base}/pdbx_struct_assembly_depositor_info/">
-	    <PDBo:referenced_by_pdbx_struct_assembly_auth_evidence_depositor_info rdf:resource="{$base}/pdbx_struct_assembly_auth_evidence_depositor_info/{$assembly_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_struct_assembly_depositor_info>
-	<!-- pdbx_struct_assembly_depositor_infoKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_struct_assembly_depositor_info>
+          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly_depositor_info/{translate(@assembly_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_struct_assembly_auth_evidence_depositor_info rdf:resource="{$base}/pdbx_struct_assembly_auth_evidence_depositor_info/{$assembly_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_struct_assembly_depositor_info>
+        <!-- pdbx_struct_assembly_depositor_infoKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9717,12 +9717,12 @@
       <PDBo:pdbx_struct_assembly_gen rdf:about="{$base}/pdbx_struct_assembly_gen/{$assembly_id_encoded},{$asym_id_list_encoded},{$oper_expression_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@assembly_id!=''">
-	<PDBo:reference_to_pdbx_struct_assembly>
-	  <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/">
-	    <PDBo:referenced_by_pdbx_struct_assembly_gen rdf:resource="{$base}/pdbx_struct_assembly_gen/{$assembly_id_encoded},{$asym_id_list_encoded},{$oper_expression_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_struct_assembly>
-	<!-- pdbx_struct_assemblyKeyref_0_0_2_0 -->
+        <PDBo:reference_to_pdbx_struct_assembly>
+          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/{translate(@assembly_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_struct_assembly_gen rdf:resource="{$base}/pdbx_struct_assembly_gen/{$assembly_id_encoded},{$asym_id_list_encoded},{$oper_expression_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_struct_assembly>
+        <!-- pdbx_struct_assemblyKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9739,12 +9739,12 @@
       <PDBo:pdbx_struct_assembly_gen_depositor_info rdf:about="{$base}/pdbx_struct_assembly_gen_depositor_info/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:assembly_id!=''">
-	<PDBo:reference_to_pdbx_struct_assembly_depositor_info>
-	  <rdf:Description rdf:about="{$base}/pdbx_struct_assembly_depositor_info/{translate(PDBx:assembly_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_struct_assembly_gen_depositor_info rdf:resource="{$base}/pdbx_struct_assembly_gen_depositor_info/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_struct_assembly_depositor_info>
-	<!-- pdbx_struct_assembly_depositor_infoKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_struct_assembly_depositor_info>
+          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly_depositor_info/">
+            <PDBo:referenced_by_pdbx_struct_assembly_gen_depositor_info rdf:resource="{$base}/pdbx_struct_assembly_gen_depositor_info/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_struct_assembly_depositor_info>
+        <!-- pdbx_struct_assembly_depositor_infoKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9795,12 +9795,12 @@
       <PDBo:pdbx_struct_asym_gen rdf:about="{$base}/pdbx_struct_asym_gen/{$entity_inst_id_encoded},{$oper_expression_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_inst_id!=''">
-	<PDBo:reference_to_pdbx_struct_entity_inst>
-	  <rdf:Description rdf:about="{$base}/pdbx_struct_entity_inst/">
-	    <PDBo:referenced_by_pdbx_struct_asym_gen rdf:resource="{$base}/pdbx_struct_asym_gen/{$entity_inst_id_encoded},{$oper_expression_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_struct_entity_inst>
-	<!-- pdbx_struct_entity_instKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_struct_entity_inst>
+          <rdf:Description rdf:about="{$base}/pdbx_struct_entity_inst/{translate(@entity_inst_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_struct_asym_gen rdf:resource="{$base}/pdbx_struct_asym_gen/{$entity_inst_id_encoded},{$oper_expression_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_struct_entity_inst>
+        <!-- pdbx_struct_entity_instKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9819,12 +9819,12 @@
       <PDBo:pdbx_struct_biol_func rdf:about="{$base}/pdbx_struct_biol_func/{$biol_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@biol_id!=''">
-	<PDBo:reference_to_struct_biol>
-	  <rdf:Description rdf:about="{$base}/struct_biol/">
-	    <PDBo:referenced_by_pdbx_struct_biol_func rdf:resource="{$base}/pdbx_struct_biol_func/{$biol_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_biol>
-	<!-- struct_biolKeyref_0_0_2_0 -->
+        <PDBo:reference_to_struct_biol>
+          <rdf:Description rdf:about="{$base}/struct_biol/{translate(@biol_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_struct_biol_func rdf:resource="{$base}/pdbx_struct_biol_func/{$biol_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_biol>
+        <!-- struct_biolKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9897,12 +9897,12 @@
       <PDBo:pdbx_struct_group_component_range rdf:about="{$base}/pdbx_struct_group_component_range/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:struct_group_id!=''">
-	<PDBo:reference_to_pdbx_struct_group_list>
-	  <rdf:Description rdf:about="{$base}/pdbx_struct_group_list/{translate(PDBx:struct_group_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_struct_group_component_range rdf:resource="{$base}/pdbx_struct_group_component_range/{$ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_struct_group_list>
-	<!-- pdbx_struct_group_listKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_struct_group_list>
+          <rdf:Description rdf:about="{$base}/pdbx_struct_group_list/">
+            <PDBo:referenced_by_pdbx_struct_group_component_range rdf:resource="{$base}/pdbx_struct_group_component_range/{$ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_struct_group_list>
+        <!-- pdbx_struct_group_listKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9919,12 +9919,12 @@
       <PDBo:pdbx_struct_group_components rdf:about="{$base}/pdbx_struct_group_components/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:struct_group_id!=''">
-	<PDBo:reference_to_pdbx_struct_group_list>
-	  <rdf:Description rdf:about="{$base}/pdbx_struct_group_list/{translate(PDBx:struct_group_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_struct_group_components rdf:resource="{$base}/pdbx_struct_group_components/{$ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_struct_group_list>
-	<!-- pdbx_struct_group_listKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_struct_group_list>
+          <rdf:Description rdf:about="{$base}/pdbx_struct_group_list/">
+            <PDBo:referenced_by_pdbx_struct_group_components rdf:resource="{$base}/pdbx_struct_group_components/{$ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_struct_group_list>
+        <!-- pdbx_struct_group_listKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10017,12 +10017,12 @@
       <PDBo:pdbx_struct_msym_gen rdf:about="{$base}/pdbx_struct_msym_gen/{$entity_inst_id_encoded},{$msym_id_encoded},{$oper_expression_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_inst_id!=''">
-	<PDBo:reference_to_pdbx_struct_entity_inst>
-	  <rdf:Description rdf:about="{$base}/pdbx_struct_entity_inst/">
-	    <PDBo:referenced_by_pdbx_struct_msym_gen rdf:resource="{$base}/pdbx_struct_msym_gen/{$entity_inst_id_encoded},{$msym_id_encoded},{$oper_expression_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_struct_entity_inst>
-	<!-- pdbx_struct_entity_instKeyref_0_0_1_0 -->
+        <PDBo:reference_to_pdbx_struct_entity_inst>
+          <rdf:Description rdf:about="{$base}/pdbx_struct_entity_inst/{translate(@entity_inst_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_struct_msym_gen rdf:resource="{$base}/pdbx_struct_msym_gen/{$entity_inst_id_encoded},{$msym_id_encoded},{$oper_expression_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_struct_entity_inst>
+        <!-- pdbx_struct_entity_instKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10039,20 +10039,20 @@
       <PDBo:pdbx_struct_ncs_virus_gen rdf:about="{$base}/pdbx_struct_ncs_virus_gen/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:asym_id!=''">
-	<PDBo:reference_to_struct_asym>
-	  <rdf:Description rdf:about="{$base}/struct_asym/{translate(PDBx:asym_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_struct_ncs_virus_gen rdf:resource="{$base}/pdbx_struct_ncs_virus_gen/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_asym>
-	<!-- struct_asymKeyref_1_0_6_0 -->
+        <PDBo:reference_to_struct_asym>
+          <rdf:Description rdf:about="{$base}/struct_asym/">
+            <PDBo:referenced_by_pdbx_struct_ncs_virus_gen rdf:resource="{$base}/pdbx_struct_ncs_virus_gen/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_1_0_6_0 -->
       </xsl:if>
       <xsl:if test="PDBx:oper_id!=''">
-	<PDBo:reference_to_struct_ncs_oper>
-	  <rdf:Description rdf:about="{$base}/struct_ncs_oper/{translate(PDBx:oper_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_struct_ncs_virus_gen rdf:resource="{$base}/pdbx_struct_ncs_virus_gen/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_ncs_oper>
-	<!-- struct_ncs_operKeyref_0_0_0_0 -->
+        <PDBo:reference_to_struct_ncs_oper>
+          <rdf:Description rdf:about="{$base}/struct_ncs_oper/">
+            <PDBo:referenced_by_pdbx_struct_ncs_virus_gen rdf:resource="{$base}/pdbx_struct_ncs_virus_gen/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_ncs_oper>
+        <!-- struct_ncs_operKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10173,12 +10173,12 @@
       <PDBo:pdbx_struct_ref_seq_feature_prop rdf:about="{$base}/pdbx_struct_ref_seq_feature_prop/{$feature_id_encoded},{$property_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@feature_id!=''">
-	<PDBo:reference_to_pdbx_struct_ref_seq_feature>
-	  <rdf:Description rdf:about="{$base}/pdbx_struct_ref_seq_feature/">
-	    <PDBo:referenced_by_pdbx_struct_ref_seq_feature_prop rdf:resource="{$base}/pdbx_struct_ref_seq_feature_prop/{$feature_id_encoded},{$property_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_struct_ref_seq_feature>
-	<!-- pdbx_struct_ref_seq_featureKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_struct_ref_seq_feature>
+          <rdf:Description rdf:about="{$base}/pdbx_struct_ref_seq_feature/{translate(@feature_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_struct_ref_seq_feature_prop rdf:resource="{$base}/pdbx_struct_ref_seq_feature_prop/{$feature_id_encoded},{$property_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_struct_ref_seq_feature>
+        <!-- pdbx_struct_ref_seq_featureKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10213,12 +10213,12 @@
       <PDBo:pdbx_struct_sheet_hbond rdf:about="{$base}/pdbx_struct_sheet_hbond/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@sheet_id!=''">
-	<PDBo:reference_to_struct_sheet>
-	  <rdf:Description rdf:about="{$base}/struct_sheet/">
-	    <PDBo:referenced_by_pdbx_struct_sheet_hbond rdf:resource="{$base}/pdbx_struct_sheet_hbond/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_sheet>
-	<!-- struct_sheetKeyref_0_0_0_0 -->
+        <PDBo:reference_to_struct_sheet>
+          <rdf:Description rdf:about="{$base}/struct_sheet/{translate(@sheet_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_struct_sheet_hbond rdf:resource="{$base}/pdbx_struct_sheet_hbond/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_sheet>
+        <!-- struct_sheetKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10265,12 +10265,12 @@
       <PDBo:pdbx_summary_flags rdf:about="{$base}/pdbx_summary_flags/{$entry_id_encoded},{$flag_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_summary_flags rdf:resource="{$base}/pdbx_summary_flags/{$entry_id_encoded},{$flag_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_74_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_summary_flags rdf:resource="{$base}/pdbx_summary_flags/{$entry_id_encoded},{$flag_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_74_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10329,12 +10329,12 @@
       <PDBo:pdbx_unobs_or_zero_occ_atoms rdf:about="{$base}/pdbx_unobs_or_zero_occ_atoms/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:auth_comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/{translate(PDBx:auth_comp_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_unobs_or_zero_occ_atoms rdf:resource="{$base}/pdbx_unobs_or_zero_occ_atoms/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_21_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/">
+            <PDBo:referenced_by_pdbx_unobs_or_zero_occ_atoms rdf:resource="{$base}/pdbx_unobs_or_zero_occ_atoms/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_21_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10351,12 +10351,12 @@
       <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="{$base}/pdbx_unobs_or_zero_occ_residues/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:auth_comp_id!=''">
-	<PDBo:reference_to_chem_comp>
-	  <rdf:Description rdf:about="{$base}/chem_comp/{translate(PDBx:auth_comp_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="{$base}/pdbx_unobs_or_zero_occ_residues/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_22_0 -->
+        <PDBo:reference_to_chem_comp>
+          <rdf:Description rdf:about="{$base}/chem_comp/">
+            <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="{$base}/pdbx_unobs_or_zero_occ_residues/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_chem_comp>
+        <!-- chem_compKeyref_0_0_22_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10527,12 +10527,12 @@
       <PDBo:pdbx_validate_planes_atom rdf:about="{$base}/pdbx_validate_planes_atom/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:plane_id!=''">
-	<PDBo:reference_to_pdbx_validate_planes>
-	  <rdf:Description rdf:about="{$base}/pdbx_validate_planes/{translate(PDBx:plane_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_validate_planes_atom rdf:resource="{$base}/pdbx_validate_planes_atom/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_validate_planes>
-	<!-- pdbx_validate_planesKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_validate_planes>
+          <rdf:Description rdf:about="{$base}/pdbx_validate_planes/">
+            <PDBo:referenced_by_pdbx_validate_planes_atom rdf:resource="{$base}/pdbx_validate_planes_atom/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_validate_planes>
+        <!-- pdbx_validate_planesKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10625,12 +10625,12 @@
       <PDBo:pdbx_version rdf:about="{$base}/pdbx_version/{$entry_id_encoded},{$major_version_encoded},{$minor_version_encoded},{$revision_type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_pdbx_version rdf:resource="{$base}/pdbx_version/{$entry_id_encoded},{$major_version_encoded},{$minor_version_encoded},{$revision_type_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_75_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_version rdf:resource="{$base}/pdbx_version/{$entry_id_encoded},{$major_version_encoded},{$minor_version_encoded},{$revision_type_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_75_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10647,12 +10647,12 @@
       <PDBo:pdbx_view_category rdf:about="{$base}/pdbx_view_category/{$category_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:view_group_id!=''">
-	<PDBo:reference_to_pdbx_view_category_group>
-	  <rdf:Description rdf:about="{$base}/pdbx_view_category_group/{translate(PDBx:view_group_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_view_category rdf:resource="{$base}/pdbx_view_category/{$category_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_view_category_group>
-	<!-- pdbx_view_category_groupKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_view_category_group>
+          <rdf:Description rdf:about="{$base}/pdbx_view_category_group/">
+            <PDBo:referenced_by_pdbx_view_category rdf:resource="{$base}/pdbx_view_category/{$category_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_view_category_group>
+        <!-- pdbx_view_category_groupKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10683,12 +10683,12 @@
       <PDBo:pdbx_view_item rdf:about="{$base}/pdbx_view_item/{$item_name_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:category_id!=''">
-	<PDBo:reference_to_pdbx_view_category>
-	  <rdf:Description rdf:about="{$base}/pdbx_view_category/{translate(PDBx:category_id,' ^','__')}">
-	    <PDBo:referenced_by_pdbx_view_item rdf:resource="{$base}/pdbx_view_item/{$item_name_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_pdbx_view_category>
-	<!-- pdbx_view_categoryKeyref_0_0_0_0 -->
+        <PDBo:reference_to_pdbx_view_category>
+          <rdf:Description rdf:about="{$base}/pdbx_view_category/">
+            <PDBo:referenced_by_pdbx_view_item rdf:resource="{$base}/pdbx_view_item/{$item_name_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_view_category>
+        <!-- pdbx_view_categoryKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10813,12 +10813,12 @@
       <PDBo:phasing_MAD rdf:about="{$base}/phasing_MAD/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_phasing_MAD rdf:resource="{$base}/phasing_MAD/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_76_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_MAD rdf:resource="{$base}/phasing_MAD/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_76_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10837,12 +10837,12 @@
       <PDBo:phasing_MAD_clust rdf:about="{$base}/phasing_MAD_clust/{$expt_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@expt_id!=''">
-	<PDBo:reference_to_phasing_MAD_expt>
-	  <rdf:Description rdf:about="{$base}/phasing_MAD_expt/">
-	    <PDBo:referenced_by_phasing_MAD_clust rdf:resource="{$base}/phasing_MAD_clust/{$expt_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_phasing_MAD_expt>
-	<!-- phasing_MAD_exptKeyref_0_0_0_0 -->
+        <PDBo:reference_to_phasing_MAD_expt>
+          <rdf:Description rdf:about="{$base}/phasing_MAD_expt/{translate(@expt_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_MAD_clust rdf:resource="{$base}/phasing_MAD_clust/{$expt_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_phasing_MAD_expt>
+        <!-- phasing_MAD_exptKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10879,12 +10879,12 @@
       <PDBo:phasing_MAD_ratio rdf:about="{$base}/phasing_MAD_ratio/{$clust_id_encoded},{$expt_id_encoded},{$wavelength_1_encoded},{$wavelength_2_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@expt_id!=''">
-	<PDBo:reference_to_phasing_MAD_expt>
-	  <rdf:Description rdf:about="{$base}/phasing_MAD_expt/">
-	    <PDBo:referenced_by_phasing_MAD_ratio rdf:resource="{$base}/phasing_MAD_ratio/{$clust_id_encoded},{$expt_id_encoded},{$wavelength_1_encoded},{$wavelength_2_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_phasing_MAD_expt>
-	<!-- phasing_MAD_exptKeyref_0_0_1_0 -->
+        <PDBo:reference_to_phasing_MAD_expt>
+          <rdf:Description rdf:about="{$base}/phasing_MAD_expt/{translate(@expt_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_MAD_ratio rdf:resource="{$base}/phasing_MAD_ratio/{$clust_id_encoded},{$expt_id_encoded},{$wavelength_1_encoded},{$wavelength_2_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_phasing_MAD_expt>
+        <!-- phasing_MAD_exptKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10907,20 +10907,20 @@
       <PDBo:phasing_MAD_set rdf:about="{$base}/phasing_MAD_set/{$clust_id_encoded},{$expt_id_encoded},{$set_id_encoded},{$wavelength_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@expt_id!=''">
-	<PDBo:reference_to_phasing_MAD_expt>
-	  <rdf:Description rdf:about="{$base}/phasing_MAD_expt/">
-	    <PDBo:referenced_by_phasing_MAD_set rdf:resource="{$base}/phasing_MAD_set/{$clust_id_encoded},{$expt_id_encoded},{$set_id_encoded},{$wavelength_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_phasing_MAD_expt>
-	<!-- phasing_MAD_exptKeyref_0_0_2_0 -->
+        <PDBo:reference_to_phasing_MAD_expt>
+          <rdf:Description rdf:about="{$base}/phasing_MAD_expt/{translate(@expt_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_MAD_set rdf:resource="{$base}/phasing_MAD_set/{$clust_id_encoded},{$expt_id_encoded},{$set_id_encoded},{$wavelength_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_phasing_MAD_expt>
+        <!-- phasing_MAD_exptKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:if test="@set_id!=''">
-	<PDBo:reference_to_phasing_set>
-	  <rdf:Description rdf:about="{$base}/phasing_set/">
-	    <PDBo:referenced_by_phasing_MAD_set rdf:resource="{$base}/phasing_MAD_set/{$clust_id_encoded},{$expt_id_encoded},{$set_id_encoded},{$wavelength_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_phasing_set>
-	<!-- phasing_setKeyref_0_0_0_0 -->
+        <PDBo:reference_to_phasing_set>
+          <rdf:Description rdf:about="{$base}/phasing_set/{translate(@set_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_MAD_set rdf:resource="{$base}/phasing_MAD_set/{$clust_id_encoded},{$expt_id_encoded},{$set_id_encoded},{$wavelength_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_phasing_set>
+        <!-- phasing_setKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10937,12 +10937,12 @@
       <PDBo:phasing_MIR rdf:about="{$base}/phasing_MIR/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_phasing_MIR rdf:resource="{$base}/phasing_MIR/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_77_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_MIR rdf:resource="{$base}/phasing_MIR/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_77_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10959,12 +10959,12 @@
       <PDBo:phasing_MIR_der rdf:about="{$base}/phasing_MIR_der/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:der_set_id!=''">
-	<PDBo:reference_to_phasing_set>
-	  <rdf:Description rdf:about="{$base}/phasing_set/{translate(PDBx:der_set_id,' ^','__')}">
-	    <PDBo:referenced_by_phasing_MIR_der rdf:resource="{$base}/phasing_MIR_der/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_phasing_set>
-	<!-- phasing_setKeyref_0_0_1_0 -->
+        <PDBo:reference_to_phasing_set>
+          <rdf:Description rdf:about="{$base}/phasing_set/">
+            <PDBo:referenced_by_phasing_MIR_der rdf:resource="{$base}/phasing_MIR_der/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_phasing_set>
+        <!-- phasing_setKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10989,20 +10989,20 @@
       <PDBo:phasing_MIR_der_refln rdf:about="{$base}/phasing_MIR_der_refln/{$der_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@der_id!=''">
-	<PDBo:reference_to_phasing_MIR_der>
-	  <rdf:Description rdf:about="{$base}/phasing_MIR_der/">
-	    <PDBo:referenced_by_phasing_MIR_der_refln rdf:resource="{$base}/phasing_MIR_der_refln/{$der_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_phasing_MIR_der>
-	<!-- phasing_MIR_derKeyref_0_0_0_0 -->
+        <PDBo:reference_to_phasing_MIR_der>
+          <rdf:Description rdf:about="{$base}/phasing_MIR_der/{translate(@der_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_MIR_der_refln rdf:resource="{$base}/phasing_MIR_der_refln/{$der_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_phasing_MIR_der>
+        <!-- phasing_MIR_derKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:if test="@set_id!=''">
-	<PDBo:reference_to_phasing_set>
-	  <rdf:Description rdf:about="{$base}/phasing_set/">
-	    <PDBo:referenced_by_phasing_MIR_der_refln rdf:resource="{$base}/phasing_MIR_der_refln/{$der_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_phasing_set>
-	<!-- phasing_setKeyref_0_0_2_0 -->
+        <PDBo:reference_to_phasing_set>
+          <rdf:Description rdf:about="{$base}/phasing_set/{translate(@set_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_MIR_der_refln rdf:resource="{$base}/phasing_MIR_der_refln/{$der_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_phasing_set>
+        <!-- phasing_setKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11023,12 +11023,12 @@
       <PDBo:phasing_MIR_der_shell rdf:about="{$base}/phasing_MIR_der_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$der_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@der_id!=''">
-	<PDBo:reference_to_phasing_MIR_der>
-	  <rdf:Description rdf:about="{$base}/phasing_MIR_der/">
-	    <PDBo:referenced_by_phasing_MIR_der_shell rdf:resource="{$base}/phasing_MIR_der_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$der_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_phasing_MIR_der>
-	<!-- phasing_MIR_derKeyref_0_0_1_0 -->
+        <PDBo:reference_to_phasing_MIR_der>
+          <rdf:Description rdf:about="{$base}/phasing_MIR_der/{translate(@der_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_MIR_der_shell rdf:resource="{$base}/phasing_MIR_der_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$der_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_phasing_MIR_der>
+        <!-- phasing_MIR_derKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11047,12 +11047,12 @@
       <PDBo:phasing_MIR_der_site rdf:about="{$base}/phasing_MIR_der_site/{$der_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@der_id!=''">
-	<PDBo:reference_to_phasing_MIR_der>
-	  <rdf:Description rdf:about="{$base}/phasing_MIR_der/">
-	    <PDBo:referenced_by_phasing_MIR_der_site rdf:resource="{$base}/phasing_MIR_der_site/{$der_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_phasing_MIR_der>
-	<!-- phasing_MIR_derKeyref_0_0_2_0 -->
+        <PDBo:reference_to_phasing_MIR_der>
+          <rdf:Description rdf:about="{$base}/phasing_MIR_der/{translate(@der_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_MIR_der_site rdf:resource="{$base}/phasing_MIR_der_site/{$der_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_phasing_MIR_der>
+        <!-- phasing_MIR_derKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11085,12 +11085,12 @@
       <PDBo:phasing_averaging rdf:about="{$base}/phasing_averaging/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_phasing_averaging rdf:resource="{$base}/phasing_averaging/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_78_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_averaging rdf:resource="{$base}/phasing_averaging/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_78_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11107,12 +11107,12 @@
       <PDBo:phasing_isomorphous rdf:about="{$base}/phasing_isomorphous/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_phasing_isomorphous rdf:resource="{$base}/phasing_isomorphous/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_79_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_isomorphous rdf:resource="{$base}/phasing_isomorphous/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_79_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11149,12 +11149,12 @@
       <PDBo:phasing_set_refln rdf:about="{$base}/phasing_set_refln/{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@set_id!=''">
-	<PDBo:reference_to_phasing_set>
-	  <rdf:Description rdf:about="{$base}/phasing_set/">
-	    <PDBo:referenced_by_phasing_set_refln rdf:resource="{$base}/phasing_set_refln/{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_phasing_set>
-	<!-- phasing_setKeyref_0_0_3_0 -->
+        <PDBo:reference_to_phasing_set>
+          <rdf:Description rdf:about="{$base}/phasing_set/{translate(@set_id,' ^','__')}">
+            <PDBo:referenced_by_phasing_set_refln rdf:resource="{$base}/phasing_set_refln/{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_phasing_set>
+        <!-- phasing_setKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11171,12 +11171,12 @@
       <PDBo:publ rdf:about="{$base}/publ/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_publ rdf:resource="{$base}/publ/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_80_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_publ rdf:resource="{$base}/publ/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_80_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11223,12 +11223,12 @@
       <PDBo:publ_manuscript_incl rdf:about="{$base}/publ_manuscript_incl/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_publ_manuscript_incl rdf:resource="{$base}/publ_manuscript_incl/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_81_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_publ_manuscript_incl rdf:resource="{$base}/publ_manuscript_incl/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_81_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11247,12 +11247,12 @@
       <PDBo:refine rdf:about="{$base}/refine/{$entry_id_encoded},{$pdbx_refine_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_refine rdf:resource="{$base}/refine/{$entry_id_encoded},{$pdbx_refine_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_82_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_refine rdf:resource="{$base}/refine/{$entry_id_encoded},{$pdbx_refine_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_82_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11287,12 +11287,12 @@
       <PDBo:refine_analyze rdf:about="{$base}/refine_analyze/{$entry_id_encoded},{$pdbx_refine_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_refine_analyze rdf:resource="{$base}/refine_analyze/{$entry_id_encoded},{$pdbx_refine_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_83_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_refine_analyze rdf:resource="{$base}/refine_analyze/{$entry_id_encoded},{$pdbx_refine_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_83_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11467,12 +11467,12 @@
       <PDBo:reflns rdf:about="{$base}/reflns/{$pdbx_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/{translate(PDBx:entry_id,' ^','__')}">
-	    <PDBo:referenced_by_reflns rdf:resource="{$base}/reflns/{$pdbx_ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_84_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/">
+            <PDBo:referenced_by_reflns rdf:resource="{$base}/reflns/{$pdbx_ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_84_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11573,12 +11573,12 @@
       <PDBo:struct rdf:about="{$base}/struct/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_struct rdf:resource="{$base}/struct/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_85_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_struct rdf:resource="{$base}/struct/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_85_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11595,21 +11595,21 @@
       <PDBo:struct_asym rdf:about="{$base}/struct_asym/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:entity_id!='' and @id!=''">
-	<owl:sameAs>
+        <owl:sameAs>
       <xsl:variable name="PDBx_entity_id_truncated"><xsl:choose><xsl:when test="string-length(PDBx:entity_id)&lt;64"><xsl:value-of select="PDBx:entity_id"/></xsl:when><xsl:when test="contains(PDBx:entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(PDBx:entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(PDBx:entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
       <xsl:variable name="PDBx_entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($PDBx_entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-	  <PDBo:struct_asym rdf:about="{$base}/struct_asym/{$PDBx_entity_id_encoded},{$id_encoded}">
-	    <rdfs:label>struct_asymUnique_1</rdfs:label>
-	  </PDBo:struct_asym>
-	</owl:sameAs>
+          <PDBo:struct_asym rdf:about="{$base}/struct_asym/{$PDBx_entity_id_encoded},{$id_encoded}">
+            <rdfs:label>struct_asymUnique_1</rdfs:label>
+          </PDBo:struct_asym>
+        </owl:sameAs>
       </xsl:if>
       <xsl:if test="PDBx:entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/{translate(PDBx:entity_id,' ^','__')}">
-	    <PDBo:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_38_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/">
+            <PDBo:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_38_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11644,20 +11644,20 @@
       <PDBo:struct_biol_gen rdf:about="{$base}/struct_biol_gen/{$asym_id_encoded},{$biol_id_encoded},{$symmetry_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
-	<PDBo:reference_to_struct_asym>
-	  <rdf:Description rdf:about="{$base}/struct_asym/">
-	    <PDBo:referenced_by_struct_biol_gen rdf:resource="{$base}/struct_biol_gen/{$asym_id_encoded},{$biol_id_encoded},{$symmetry_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_asym>
-	<!-- struct_asymKeyref_1_0_7_0 -->
+        <PDBo:reference_to_struct_asym>
+          <rdf:Description rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','__')}">
+            <PDBo:referenced_by_struct_biol_gen rdf:resource="{$base}/struct_biol_gen/{$asym_id_encoded},{$biol_id_encoded},{$symmetry_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_1_0_7_0 -->
       </xsl:if>
       <xsl:if test="@biol_id!=''">
-	<PDBo:reference_to_struct_biol>
-	  <rdf:Description rdf:about="{$base}/struct_biol/">
-	    <PDBo:referenced_by_struct_biol_gen rdf:resource="{$base}/struct_biol_gen/{$asym_id_encoded},{$biol_id_encoded},{$symmetry_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_biol>
-	<!-- struct_biolKeyref_0_0_3_0 -->
+        <PDBo:reference_to_struct_biol>
+          <rdf:Description rdf:about="{$base}/struct_biol/{translate(@biol_id,' ^','__')}">
+            <PDBo:referenced_by_struct_biol_gen rdf:resource="{$base}/struct_biol_gen/{$asym_id_encoded},{$biol_id_encoded},{$symmetry_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_biol>
+        <!-- struct_biolKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11676,12 +11676,12 @@
       <PDBo:struct_biol_keywords rdf:about="{$base}/struct_biol_keywords/{$biol_id_encoded},{$text_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@biol_id!=''">
-	<PDBo:reference_to_struct_biol>
-	  <rdf:Description rdf:about="{$base}/struct_biol/">
-	    <PDBo:referenced_by_struct_biol_keywords rdf:resource="{$base}/struct_biol_keywords/{$biol_id_encoded},{$text_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_biol>
-	<!-- struct_biolKeyref_0_0_4_0 -->
+        <PDBo:reference_to_struct_biol>
+          <rdf:Description rdf:about="{$base}/struct_biol/{translate(@biol_id,' ^','__')}">
+            <PDBo:referenced_by_struct_biol_keywords rdf:resource="{$base}/struct_biol_keywords/{$biol_id_encoded},{$text_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_biol>
+        <!-- struct_biolKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11700,12 +11700,12 @@
       <PDBo:struct_biol_view rdf:about="{$base}/struct_biol_view/{$biol_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@biol_id!=''">
-	<PDBo:reference_to_struct_biol>
-	  <rdf:Description rdf:about="{$base}/struct_biol/">
-	    <PDBo:referenced_by_struct_biol_view rdf:resource="{$base}/struct_biol_view/{$biol_id_encoded},{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_biol>
-	<!-- struct_biolKeyref_0_0_5_0 -->
+        <PDBo:reference_to_struct_biol>
+          <rdf:Description rdf:about="{$base}/struct_biol/{translate(@biol_id,' ^','__')}">
+            <PDBo:referenced_by_struct_biol_view rdf:resource="{$base}/struct_biol_view/{$biol_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_biol>
+        <!-- struct_biolKeyref_0_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11722,12 +11722,12 @@
       <PDBo:struct_conf rdf:about="{$base}/struct_conf/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:conf_type_id!=''">
-	<PDBo:reference_to_struct_conf_type>
-	  <rdf:Description rdf:about="{$base}/struct_conf_type/{translate(PDBx:conf_type_id,' ^','__')}">
-	    <PDBo:referenced_by_struct_conf rdf:resource="{$base}/struct_conf/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_conf_type>
-	<!-- struct_conf_typeKeyref_0_0_0_0 -->
+        <PDBo:reference_to_struct_conf_type>
+          <rdf:Description rdf:about="{$base}/struct_conf_type/">
+            <PDBo:referenced_by_struct_conf rdf:resource="{$base}/struct_conf/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_conf_type>
+        <!-- struct_conf_typeKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11758,12 +11758,12 @@
       <PDBo:struct_conn rdf:about="{$base}/struct_conn/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:conn_type_id!=''">
-	<PDBo:reference_to_struct_conn_type>
-	  <rdf:Description rdf:about="{$base}/struct_conn_type/{translate(PDBx:conn_type_id,' ^','__')}">
-	    <PDBo:referenced_by_struct_conn rdf:resource="{$base}/struct_conn/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_conn_type>
-	<!-- struct_conn_typeKeyref_0_0_0_0 -->
+        <PDBo:reference_to_struct_conn_type>
+          <rdf:Description rdf:about="{$base}/struct_conn_type/">
+            <PDBo:referenced_by_struct_conn rdf:resource="{$base}/struct_conn/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_conn_type>
+        <!-- struct_conn_typeKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11794,12 +11794,12 @@
       <PDBo:struct_keywords rdf:about="{$base}/struct_keywords/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_struct_keywords rdf:resource="{$base}/struct_keywords/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_86_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_struct_keywords rdf:resource="{$base}/struct_keywords/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_86_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11816,12 +11816,12 @@
       <PDBo:struct_mon_details rdf:about="{$base}/struct_mon_details/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_struct_mon_details rdf:resource="{$base}/struct_mon_details/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_87_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_struct_mon_details rdf:resource="{$base}/struct_mon_details/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_87_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11894,12 +11894,12 @@
       <PDBo:struct_ncs_dom rdf:about="{$base}/struct_ncs_dom/{$id_encoded},{$pdbx_ens_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@pdbx_ens_id!=''">
-	<PDBo:reference_to_struct_ncs_ens>
-	  <rdf:Description rdf:about="{$base}/struct_ncs_ens/">
-	    <PDBo:referenced_by_struct_ncs_dom rdf:resource="{$base}/struct_ncs_dom/{$id_encoded},{$pdbx_ens_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_ncs_ens>
-	<!-- struct_ncs_ensKeyref_0_0_0_0 -->
+        <PDBo:reference_to_struct_ncs_ens>
+          <rdf:Description rdf:about="{$base}/struct_ncs_ens/{translate(@pdbx_ens_id,' ^','__')}">
+            <PDBo:referenced_by_struct_ncs_dom rdf:resource="{$base}/struct_ncs_dom/{$id_encoded},{$pdbx_ens_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_ncs_ens>
+        <!-- struct_ncs_ensKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11920,12 +11920,12 @@
       <PDBo:struct_ncs_dom_lim rdf:about="{$base}/struct_ncs_dom_lim/{$dom_id_encoded},{$pdbx_component_id_encoded},{$pdbx_ens_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@dom_id!='' and @pdbx_ens_id!=''">
-	<PDBo:reference_to_struct_ncs_dom>
-	  <rdf:Description rdf:about="{$base}/struct_ncs_dom/,">
-	    <PDBo:referenced_by_struct_ncs_dom_lim rdf:resource="{$base}/struct_ncs_dom_lim/{$dom_id_encoded},{$pdbx_component_id_encoded},{$pdbx_ens_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_ncs_dom>
-	<!-- struct_ncs_domKeyref_2_0_0_0 -->
+        <PDBo:reference_to_struct_ncs_dom>
+          <rdf:Description rdf:about="{$base}/struct_ncs_dom/{translate(@dom_id,' ^','__')},{translate(@pdbx_ens_id,' ^','__')}">
+            <PDBo:referenced_by_struct_ncs_dom_lim rdf:resource="{$base}/struct_ncs_dom_lim/{$dom_id_encoded},{$pdbx_component_id_encoded},{$pdbx_ens_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_ncs_dom>
+        <!-- struct_ncs_domKeyref_2_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -11962,20 +11962,20 @@
       <PDBo:struct_ncs_ens_gen rdf:about="{$base}/struct_ncs_ens_gen/{$dom_id_1_encoded},{$dom_id_2_encoded},{$ens_id_encoded},{$oper_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@ens_id!=''">
-	<PDBo:reference_to_struct_ncs_ens>
-	  <rdf:Description rdf:about="{$base}/struct_ncs_ens/">
-	    <PDBo:referenced_by_struct_ncs_ens_gen rdf:resource="{$base}/struct_ncs_ens_gen/{$dom_id_1_encoded},{$dom_id_2_encoded},{$ens_id_encoded},{$oper_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_ncs_ens>
-	<!-- struct_ncs_ensKeyref_0_0_1_0 -->
+        <PDBo:reference_to_struct_ncs_ens>
+          <rdf:Description rdf:about="{$base}/struct_ncs_ens/{translate(@ens_id,' ^','__')}">
+            <PDBo:referenced_by_struct_ncs_ens_gen rdf:resource="{$base}/struct_ncs_ens_gen/{$dom_id_1_encoded},{$dom_id_2_encoded},{$ens_id_encoded},{$oper_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_ncs_ens>
+        <!-- struct_ncs_ensKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:if test="@oper_id!=''">
-	<PDBo:reference_to_struct_ncs_oper>
-	  <rdf:Description rdf:about="{$base}/struct_ncs_oper/">
-	    <PDBo:referenced_by_struct_ncs_ens_gen rdf:resource="{$base}/struct_ncs_ens_gen/{$dom_id_1_encoded},{$dom_id_2_encoded},{$ens_id_encoded},{$oper_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_ncs_oper>
-	<!-- struct_ncs_operKeyref_0_0_1_0 -->
+        <PDBo:reference_to_struct_ncs_oper>
+          <rdf:Description rdf:about="{$base}/struct_ncs_oper/{translate(@oper_id,' ^','__')}">
+            <PDBo:referenced_by_struct_ncs_ens_gen rdf:resource="{$base}/struct_ncs_ens_gen/{$dom_id_1_encoded},{$dom_id_2_encoded},{$ens_id_encoded},{$oper_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_ncs_oper>
+        <!-- struct_ncs_operKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -12006,12 +12006,12 @@
       <PDBo:struct_ref rdf:about="{$base}/struct_ref/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:entity_id!=''">
-	<PDBo:reference_to_entity>
-	  <rdf:Description rdf:about="{$base}/entity/{translate(PDBx:entity_id,' ^','__')}">
-	    <PDBo:referenced_by_struct_ref rdf:resource="{$base}/struct_ref/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entity>
-	<!-- entityKeyref_0_0_39_0 -->
+        <PDBo:reference_to_entity>
+          <rdf:Description rdf:about="{$base}/entity/">
+            <PDBo:referenced_by_struct_ref rdf:resource="{$base}/struct_ref/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_39_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -12028,12 +12028,12 @@
       <PDBo:struct_ref_seq rdf:about="{$base}/struct_ref_seq/{$align_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:ref_id!=''">
-	<PDBo:reference_to_struct_ref>
-	  <rdf:Description rdf:about="{$base}/struct_ref/{translate(PDBx:ref_id,' ^','__')}">
-	    <PDBo:referenced_by_struct_ref_seq rdf:resource="{$base}/struct_ref_seq/{$align_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_ref>
-	<!-- struct_refKeyref_0_0_0_0 -->
+        <PDBo:reference_to_struct_ref>
+          <rdf:Description rdf:about="{$base}/struct_ref/">
+            <PDBo:referenced_by_struct_ref_seq rdf:resource="{$base}/struct_ref_seq/{$align_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_ref>
+        <!-- struct_refKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -12050,12 +12050,12 @@
       <PDBo:struct_ref_seq_dif rdf:about="{$base}/struct_ref_seq_dif/{$pdbx_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:align_id!=''">
-	<PDBo:reference_to_struct_ref_seq>
-	  <rdf:Description rdf:about="{$base}/struct_ref_seq/{translate(PDBx:align_id,' ^','__')}">
-	    <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="{$base}/struct_ref_seq_dif/{$pdbx_ordinal_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_ref_seq>
-	<!-- struct_ref_seqKeyref_0_0_0_0 -->
+        <PDBo:reference_to_struct_ref_seq>
+          <rdf:Description rdf:about="{$base}/struct_ref_seq/">
+            <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="{$base}/struct_ref_seq_dif/{$pdbx_ordinal_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_ref_seq>
+        <!-- struct_ref_seqKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -12090,12 +12090,12 @@
       <PDBo:struct_sheet_hbond rdf:about="{$base}/struct_sheet_hbond/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@sheet_id!=''">
-	<PDBo:reference_to_struct_sheet>
-	  <rdf:Description rdf:about="{$base}/struct_sheet/">
-	    <PDBo:referenced_by_struct_sheet_hbond rdf:resource="{$base}/struct_sheet_hbond/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_sheet>
-	<!-- struct_sheetKeyref_0_0_1_0 -->
+        <PDBo:reference_to_struct_sheet>
+          <rdf:Description rdf:about="{$base}/struct_sheet/{translate(@sheet_id,' ^','__')}">
+            <PDBo:referenced_by_struct_sheet_hbond rdf:resource="{$base}/struct_sheet_hbond/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_sheet>
+        <!-- struct_sheetKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -12116,12 +12116,12 @@
       <PDBo:struct_sheet_order rdf:about="{$base}/struct_sheet_order/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@sheet_id!=''">
-	<PDBo:reference_to_struct_sheet>
-	  <rdf:Description rdf:about="{$base}/struct_sheet/">
-	    <PDBo:referenced_by_struct_sheet_order rdf:resource="{$base}/struct_sheet_order/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_sheet>
-	<!-- struct_sheetKeyref_0_0_2_0 -->
+        <PDBo:reference_to_struct_sheet>
+          <rdf:Description rdf:about="{$base}/struct_sheet/{translate(@sheet_id,' ^','__')}">
+            <PDBo:referenced_by_struct_sheet_order rdf:resource="{$base}/struct_sheet_order/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_sheet>
+        <!-- struct_sheetKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -12140,12 +12140,12 @@
       <PDBo:struct_sheet_range rdf:about="{$base}/struct_sheet_range/{$id_encoded},{$sheet_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@sheet_id!=''">
-	<PDBo:reference_to_struct_sheet>
-	  <rdf:Description rdf:about="{$base}/struct_sheet/">
-	    <PDBo:referenced_by_struct_sheet_range rdf:resource="{$base}/struct_sheet_range/{$id_encoded},{$sheet_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_sheet>
-	<!-- struct_sheetKeyref_0_0_3_0 -->
+        <PDBo:reference_to_struct_sheet>
+          <rdf:Description rdf:about="{$base}/struct_sheet/{translate(@sheet_id,' ^','__')}">
+            <PDBo:referenced_by_struct_sheet_range rdf:resource="{$base}/struct_sheet_range/{$id_encoded},{$sheet_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_sheet>
+        <!-- struct_sheetKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -12166,12 +12166,12 @@
       <PDBo:struct_sheet_topology rdf:about="{$base}/struct_sheet_topology/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@sheet_id!=''">
-	<PDBo:reference_to_struct_sheet>
-	  <rdf:Description rdf:about="{$base}/struct_sheet/">
-	    <PDBo:referenced_by_struct_sheet_topology rdf:resource="{$base}/struct_sheet_topology/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_sheet>
-	<!-- struct_sheetKeyref_0_0_4_0 -->
+        <PDBo:reference_to_struct_sheet>
+          <rdf:Description rdf:about="{$base}/struct_sheet/{translate(@sheet_id,' ^','__')}">
+            <PDBo:referenced_by_struct_sheet_topology rdf:resource="{$base}/struct_sheet_topology/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_sheet>
+        <!-- struct_sheetKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -12204,12 +12204,12 @@
       <PDBo:struct_site_gen rdf:about="{$base}/struct_site_gen/{$id_encoded},{$site_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@site_id!=''">
-	<PDBo:reference_to_struct_site>
-	  <rdf:Description rdf:about="{$base}/struct_site/">
-	    <PDBo:referenced_by_struct_site_gen rdf:resource="{$base}/struct_site_gen/{$id_encoded},{$site_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_site>
-	<!-- struct_siteKeyref_0_0_0_0 -->
+        <PDBo:reference_to_struct_site>
+          <rdf:Description rdf:about="{$base}/struct_site/{translate(@site_id,' ^','__')}">
+            <PDBo:referenced_by_struct_site_gen rdf:resource="{$base}/struct_site_gen/{$id_encoded},{$site_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_site>
+        <!-- struct_siteKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -12228,12 +12228,12 @@
       <PDBo:struct_site_keywords rdf:about="{$base}/struct_site_keywords/{$site_id_encoded},{$text_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@site_id!=''">
-	<PDBo:reference_to_struct_site>
-	  <rdf:Description rdf:about="{$base}/struct_site/">
-	    <PDBo:referenced_by_struct_site_keywords rdf:resource="{$base}/struct_site_keywords/{$site_id_encoded},{$text_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_site>
-	<!-- struct_siteKeyref_0_0_1_0 -->
+        <PDBo:reference_to_struct_site>
+          <rdf:Description rdf:about="{$base}/struct_site/{translate(@site_id,' ^','__')}">
+            <PDBo:referenced_by_struct_site_keywords rdf:resource="{$base}/struct_site_keywords/{$site_id_encoded},{$text_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_site>
+        <!-- struct_siteKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -12250,12 +12250,12 @@
       <PDBo:struct_site_view rdf:about="{$base}/struct_site_view/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:site_id!=''">
-	<PDBo:reference_to_struct_site>
-	  <rdf:Description rdf:about="{$base}/struct_site/{translate(PDBx:site_id,' ^','__')}">
-	    <PDBo:referenced_by_struct_site_view rdf:resource="{$base}/struct_site_view/{$id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_struct_site>
-	<!-- struct_siteKeyref_0_0_2_0 -->
+        <PDBo:reference_to_struct_site>
+          <rdf:Description rdf:about="{$base}/struct_site/">
+            <PDBo:referenced_by_struct_site_view rdf:resource="{$base}/struct_site_view/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_struct_site>
+        <!-- struct_siteKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -12272,12 +12272,12 @@
       <PDBo:symmetry rdf:about="{$base}/symmetry/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
-	<PDBo:reference_to_entry>
-	  <rdf:Description rdf:about="{$base}/entry/">
-	    <PDBo:referenced_by_symmetry rdf:resource="{$base}/symmetry/{$entry_id_encoded}"/>
-	  </rdf:Description>
-	</PDBo:reference_to_entry>
-	<!-- entryKeyref_0_0_88_0 -->
+        <PDBo:reference_to_entry>
+          <rdf:Description rdf:about="{$base}/entry/{translate(@entry_id,' ^','__')}">
+            <PDBo:referenced_by_symmetry rdf:resource="{$base}/symmetry/{$entry_id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_entry>
+        <!-- entryKeyref_0_0_88_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>

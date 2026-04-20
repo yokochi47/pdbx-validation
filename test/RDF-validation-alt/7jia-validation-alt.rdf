@@ -50,7 +50,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -66,7 +66,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/2,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/2,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -82,7 +82,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/3,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/3,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -98,7 +98,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/4,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/4,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -114,7 +114,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/5,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/5,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -130,7 +130,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/6,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/6,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -146,7 +146,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/7,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/7,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -162,7 +162,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/8,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/8,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -178,7 +178,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/9,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/9,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -194,7 +194,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/10,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/10,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -210,7 +210,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/11,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/11,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -226,7 +226,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/12,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/12,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -242,7 +242,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/13,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/13,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -258,7 +258,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/14,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/14,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -274,7 +274,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/15,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/15,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -290,7 +290,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/16,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/16,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -306,7 +306,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/17,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/17,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -322,7 +322,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/18,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/18,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -338,7 +338,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/19,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/19,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -354,7 +354,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/20,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/20,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -370,7 +370,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/21,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/21,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -386,7 +386,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/22,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/22,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -402,7 +402,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/23,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/23,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -418,7 +418,7 @@
           <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/24,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_annotation/24,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -438,7 +438,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/sidechain,H,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/sidechain,H,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -457,7 +457,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/backbone,H,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/backbone,H,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -476,7 +476,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/overall,H,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/overall,H,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -495,7 +495,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/aromatic,H,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/aromatic,H,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -514,7 +514,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/sidechain,C,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/sidechain,C,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -533,7 +533,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/backbone,C,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/backbone,C,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -552,7 +552,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/overall,C,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/overall,C,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -571,7 +571,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/aromatic,C,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/aromatic,C,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -590,7 +590,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/sidechain,Total,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/sidechain,Total,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -609,7 +609,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/backbone,Total,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/backbone,Total,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -628,7 +628,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/overall,Total,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/overall,Total,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -647,7 +647,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/aromatic,Total,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/aromatic,Total,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -666,7 +666,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/sidechain,N,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/sidechain,N,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -685,7 +685,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/backbone,N,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/backbone,N,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -704,7 +704,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/overall,N,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/overall,N,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -723,7 +723,7 @@
           <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/aromatic,N,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_completeness rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_completeness/aromatic,N,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -746,7 +746,7 @@
           <PDBo:pdbx_nmr_chem_shift_re_offset rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_re_offset/CB,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_re_offset rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_re_offset/CB,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -762,7 +762,7 @@
           <PDBo:pdbx_nmr_chem_shift_re_offset rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_re_offset/C,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_re_offset rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_re_offset/C,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -778,7 +778,7 @@
           <PDBo:pdbx_nmr_chem_shift_re_offset rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_re_offset/CA,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_re_offset rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_re_offset/CA,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -794,7 +794,7 @@
           <PDBo:pdbx_nmr_chem_shift_re_offset rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_re_offset/N,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_nmr_chem_shift_re_offset rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_chem_shift_re_offset/N,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -814,7 +814,7 @@
           <PDBo:pdbx_validate_nmr_chem_shift rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_validate_nmr_chem_shift/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_assigned_chem_shift_list/1">
                 <PDBo:referenced_by_pdbx_validate_nmr_chem_shift rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_validate_nmr_chem_shift/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_nmr_assigned_chem_shift_list>
@@ -838,7 +838,7 @@
           <PDBo:pdbx_percentile_list rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_list/7JIA">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/7JIA">
                 <PDBo:referenced_by_pdbx_percentile_list rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_list/7JIA"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -854,12 +854,12 @@
           <PDBo:pdbx_percentile_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/1,7JIA,all_atom_clashscore">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/7JIA">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/1,7JIA,all_atom_clashscore"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/1">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/1,7JIA,all_atom_clashscore"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -874,12 +874,12 @@
           <PDBo:pdbx_percentile_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/2,7JIA,all_atom_clashscore">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/7JIA">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/2,7JIA,all_atom_clashscore"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/2">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/2,7JIA,all_atom_clashscore"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -894,12 +894,12 @@
           <PDBo:pdbx_percentile_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/3,7JIA,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/7JIA">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/3,7JIA,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/3,7JIA,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -914,12 +914,12 @@
           <PDBo:pdbx_percentile_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/4,7JIA,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/7JIA">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/4,7JIA,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/4,7JIA,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -934,12 +934,12 @@
           <PDBo:pdbx_percentile_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/5,7JIA,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/7JIA">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/5,7JIA,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/5,7JIA,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -954,12 +954,12 @@
           <PDBo:pdbx_percentile_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/6,7JIA,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/7JIA">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/6,7JIA,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_view/6,7JIA,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1024,7 +1024,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/1,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/1,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1042,7 +1042,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/1,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/1,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1060,7 +1060,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/1,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/1,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1078,7 +1078,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/1,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/1,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1096,7 +1096,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/2,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/2,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1114,7 +1114,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/2,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/2,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1132,7 +1132,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/2,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/2,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1150,7 +1150,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/2,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/2,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1168,7 +1168,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/3,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/3,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1186,7 +1186,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/3,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/3,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1204,7 +1204,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/3,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/3,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1222,7 +1222,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/3,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/3,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1240,7 +1240,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/4,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/4,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1258,7 +1258,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/4,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/4,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1276,7 +1276,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/4,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/4,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1294,7 +1294,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/4,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/4,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1312,7 +1312,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/5,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/5,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1330,7 +1330,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/5,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/5,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1348,7 +1348,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/5,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/5,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1366,7 +1366,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/5,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/5,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1384,7 +1384,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/6,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/6,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1402,7 +1402,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/6,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/6,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1420,7 +1420,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/6,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/6,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1438,7 +1438,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/6,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/6,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1456,7 +1456,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/7,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/7,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1474,7 +1474,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/7,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/7,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1492,7 +1492,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/7,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/7,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1510,7 +1510,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/7,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/7,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1528,7 +1528,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/8,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/8,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1546,7 +1546,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/8,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/8,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1564,7 +1564,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/8,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/8,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1582,7 +1582,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/8,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/8,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1600,7 +1600,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/9,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/9,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1618,7 +1618,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/9,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/9,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1636,7 +1636,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/9,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/9,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1654,7 +1654,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/9,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/9,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1672,7 +1672,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/10,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/10,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1690,7 +1690,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/10,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/10,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1708,7 +1708,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/10,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/10,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1726,7 +1726,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/10,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/10,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1744,7 +1744,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/11,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/11,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1762,7 +1762,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/11,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/11,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1780,7 +1780,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/11,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/11,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1798,7 +1798,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/11,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/11,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1816,7 +1816,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/12,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/12,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1834,7 +1834,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/12,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/12,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1852,7 +1852,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/12,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/12,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1870,7 +1870,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/12,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/12,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1888,7 +1888,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/13,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/13,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1906,7 +1906,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/13,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/13,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1924,7 +1924,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/13,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/13,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1942,7 +1942,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/13,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/13,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1960,7 +1960,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/14,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/14,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1978,7 +1978,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/14,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/14,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -1996,7 +1996,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/14,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/14,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2014,7 +2014,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/14,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/14,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2032,7 +2032,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/15,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/15,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2050,7 +2050,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/15,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/15,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2068,7 +2068,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/15,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/15,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2086,7 +2086,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/15,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/15,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2104,7 +2104,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/16,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/16,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2122,7 +2122,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/16,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/16,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2140,7 +2140,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/16,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/16,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2158,7 +2158,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/16,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/16,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2176,7 +2176,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/17,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/17,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2194,7 +2194,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/17,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/17,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2212,7 +2212,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/17,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/17,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2230,7 +2230,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/17,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/17,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2248,7 +2248,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/18,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/18,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2266,7 +2266,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/18,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/18,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2284,7 +2284,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/18,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/18,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2302,7 +2302,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/18,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/18,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2320,7 +2320,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/19,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/19,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2338,7 +2338,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/19,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/19,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2356,7 +2356,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/19,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/19,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2374,7 +2374,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/19,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/19,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2392,7 +2392,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/20,3,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/3">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/20,3,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2410,7 +2410,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/20,4,A,Ramachandran_outlier_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/4">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/20,4,A,Ramachandran_outlier_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2428,7 +2428,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/20,5,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/5">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/20,5,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2446,7 +2446,7 @@
           <PDBo:pdbx_percentile_entity_view rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/20,6,A,rotamer_outliers_percent">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_percentile_conditions>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_conditions/6">
                 <PDBo:referenced_by_pdbx_percentile_entity_view rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_percentile_entity_view/20,6,A,rotamer_outliers_percent"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_percentile_conditions>
@@ -2468,7 +2468,7 @@
           <PDBo:pdbx_dcc_geometry rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_dcc_geometry/7JIA">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/7JIA">
                 <PDBo:referenced_by_pdbx_dcc_geometry rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_dcc_geometry/7JIA"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -9261,7 +9261,7 @@
           <PDBo:pdbx_struct_nmr_ens_clust rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_struct_nmr_ens_clust/7JIA">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/7JIA">
                 <PDBo:referenced_by_pdbx_struct_nmr_ens_clust rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_struct_nmr_ens_clust/7JIA"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -9459,7 +9459,7 @@
           <PDBo:pdbx_struct_nmr_ens_dom_lim rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_struct_nmr_ens_dom_lim/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_pdbx_struct_nmr_ens_dom>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_struct_nmr_ens_dom/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_struct_nmr_ens_dom/1">
                 <PDBo:referenced_by_pdbx_struct_nmr_ens_dom_lim rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_struct_nmr_ens_dom_lim/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_struct_nmr_ens_dom>
@@ -9631,7 +9631,7 @@
           <PDBo:pdbx_nmr_restraint_summary rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_restraint_summary/7JIA">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entry/7JIA">
                 <PDBo:referenced_by_pdbx_nmr_restraint_summary rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA/pdbx_nmr_restraint_summary/7JIA"/>
               </rdf:Description>
             </PDBo:reference_to_entry>

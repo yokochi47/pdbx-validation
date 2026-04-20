@@ -2429,6 +2429,7 @@
       <data_item name="dev_ideal" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="dev_ideal_target" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="number" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="pdbx_Zscore" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="rejects" type="http://www.w3.org/2001/XMLSchema#int"/>
       <data_item name="weight" type="http://www.w3.org/2001/XMLSchema#decimal"/>
    </category_item>

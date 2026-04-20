@@ -907,6 +907,8 @@
                  type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="nominal_magnification"
                  type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="objective_aperture"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="recording_temperature_maximum"
                  type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="recording_temperature_minimum"
@@ -961,6 +963,7 @@
       <data_item name="pixel_spacing_y" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="pixel_spacing_z" type="http://www.w3.org/2001/XMLSchema#decimal"/>
    </category_item>
+   <category_item name="em_motion_correction"/>
    <category_item name="em_obsolete">
       <data_item name="date" type="http://www.w3.org/2001/XMLSchema#date"/>
    </category_item>
@@ -3756,6 +3759,7 @@
       <data_item name="dev_ideal" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="dev_ideal_target" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="number" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="pdbx_Zscore" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="rejects" type="http://www.w3.org/2001/XMLSchema#int"/>
       <data_item name="weight" type="http://www.w3.org/2001/XMLSchema#decimal"/>
    </category_item>

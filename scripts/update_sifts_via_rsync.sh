@@ -49,7 +49,8 @@ if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
    cp scripts/default_div_dirs $div_dirs
   fi
 
-  rm -f $SRC_DIR/*/.*
+  # rm -f $SRC_DIR/*/.*
+  find $SRC_DIR/* -name ".*" -type f -exec rm {} +
   cat $div_dirs | sort -R > $div_dirs~
 
   for proc_id in `seq 1 $max_connection` ; do
@@ -60,7 +61,9 @@ if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
 
   wait
 
-  rm -f $SRC_DIR/*/.* $div_dirs $div_dirs~
+  # rm -f $SRC_DIR/*/.* $div_dirs $div_dirs~
+  find $SRC_DIR/* -name ".*" -type f -exec rm {} +
+  rm -f $div_dirs $div_dirs~
 
  fi
 
