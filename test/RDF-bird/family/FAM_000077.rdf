@@ -16,7 +16,7 @@
             <PDBo:citation.page_first>2696</PDBo:citation.page_first>
             <PDBo:citation.page_last>2701</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1073/pnas.052709699</PDBo:citation.pdbx_database_id_DOI>
-            <PDBo:citation.title> Microcin E492, a channel-forming bacteriocin from Klebsiella pneumoniae, induces apoptosis in some human cell lines</PDBo:citation.title>
+            <PDBo:citation.title>Microcin E492, a channel-forming bacteriocin from Klebsiella pneumoniae, induces apoptosis in some human cell lines</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2002</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1073/pnas.052709699" rdfs:label="doi:10.1073/pnas.052709699"/>
           </PDBo:citation>
@@ -30,7 +30,7 @@
             <PDBo:citation.page_first>4088</PDBo:citation.page_first>
             <PDBo:citation.page_last>4096</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18616579</PDBo:citation.pdbx_database_id_PubMed>
-            <PDBo:citation.title> Microcin J25 induces the opening of the mitochondrial transition pore and cytochrome c release through superoxide generation.</PDBo:citation.title>
+            <PDBo:citation.title>Microcin J25 induces the opening of the mitochondrial transition pore and cytochrome c release through superoxide generation.</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2008</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/18616579" rdfs:label="pubmed:18616579"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/18616579" rdfs:label="pubmed:18616579"/>
@@ -45,7 +45,7 @@
             <PDBo:citation.page_first>1188</PDBo:citation.page_first>
             <PDBo:citation.page_last>1193</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1126/science.274.5290.1188</PDBo:citation.pdbx_database_id_DOI>
-            <PDBo:citation.title> From Peptide Precursors to Oxazole and Thiazole-Containing Peptide Antibiotics: Microcin B17 Synthase</PDBo:citation.title>
+            <PDBo:citation.title>From Peptide Precursors to Oxazole and Thiazole-Containing Peptide Antibiotics: Microcin B17 Synthase</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1996</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1126/science.274.5290.1188" rdfs:label="doi:10.1126/science.274.5290.1188"/>
           </PDBo:citation>
@@ -59,7 +59,7 @@
             <PDBo:citation.page_first>12464</PDBo:citation.page_first>
             <PDBo:citation.page_last>12474</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1021/ja0367703</PDBo:citation.pdbx_database_id_DOI>
-            <PDBo:citation.title> Microcin J25 Has a Threaded Sidechain-to-Backbone Ring Structure and Not a Head-to-Tail Cyclized Backbone</PDBo:citation.title>
+            <PDBo:citation.title>Microcin J25 Has a Threaded Sidechain-to-Backbone Ring Structure and Not a Head-to-Tail Cyclized Backbone</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2003</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1021/ja0367703" rdfs:label="doi:10.1021/ja0367703"/>
           </PDBo:citation>
@@ -73,7 +73,7 @@
             <PDBo:citation.page_first>74</PDBo:citation.page_first>
             <PDBo:citation.page_last>85</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.2174/138920109787048643</PDBo:citation.pdbx_database_id_DOI>
-            <PDBo:citation.title> Antibacterial and Antitumorigenic Properties of Microcin E492, a Pore-Forming Bacteriocin</PDBo:citation.title>
+            <PDBo:citation.title>Antibacterial and Antitumorigenic Properties of Microcin E492, a Pore-Forming Bacteriocin</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2009</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.2174/138920109787048643" rdfs:label="doi:10.2174/138920109787048643"/>
           </PDBo:citation>
@@ -87,7 +87,7 @@
             <PDBo:citation.page_first>118</PDBo:citation.page_first>
             <PDBo:citation.page_last>124</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1016/j.jcis.2004.11.025</PDBo:citation.pdbx_database_id_DOI>
-            <PDBo:citation.title> Penetration and interactions of the antimicrobial peptide, microcin J25, into uncharged phospholipid monolayers</PDBo:citation.title>
+            <PDBo:citation.title>Penetration and interactions of the antimicrobial peptide, microcin J25, into uncharged phospholipid monolayers</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2005</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1016/j.jcis.2004.11.025" rdfs:label="doi:10.1016/j.jcis.2004.11.025"/>
           </PDBo:citation>
@@ -101,7 +101,7 @@
             <PDBo:citation.page_first>1223</PDBo:citation.page_first>
             <PDBo:citation.page_last>1234</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1006/jmbi.2001.4562</PDBo:citation.pdbx_database_id_DOI>
-            <PDBo:citation.title> The Antibiotic Microcin B17 is a DNA Gyrase Poison: Characterisation of the Mode of Inhibition</PDBo:citation.title>
+            <PDBo:citation.title>The Antibiotic Microcin B17 is a DNA Gyrase Poison: Characterisation of the Mode of Inhibition</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2001</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1006/jmbi.2001.4562" rdfs:label="doi:10.1006/jmbi.2001.4562"/>
           </PDBo:citation>
@@ -145,7 +145,7 @@
             <PDBo:citation.page_first>305</PDBo:citation.page_first>
             <PDBo:citation.page_last>318</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10322125</PDBo:citation.pdbx_database_id_PubMed>
-            <PDBo:citation.title> In vivo processing and antibiotic activity of microcin B17 analogs with varying ring content and altered bisheterocyclic sites</PDBo:citation.title>
+            <PDBo:citation.title>In vivo processing and antibiotic activity of microcin B17 analogs with varying ring content and altered bisheterocyclic sites</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1999</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10322125" rdfs:label="pubmed:10322125"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/10322125" rdfs:label="pubmed:10322125"/>
@@ -203,7 +203,7 @@
             <PDBo:citation.page_first>12475</PDBo:citation.page_first>
             <PDBo:citation.page_last>12483</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14531691</PDBo:citation.pdbx_database_id_PubMed>
-            <PDBo:citation.title>Structure of microcin J25, a peptide inhibitor of bacterial RNA polymerase, is a lassoed tail </PDBo:citation.title>
+            <PDBo:citation.title>Structure of microcin J25, a peptide inhibitor of bacterial RNA polymerase, is a lassoed tail</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2003</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/14531691" rdfs:label="pubmed:14531691"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/14531691" rdfs:label="pubmed:14531691"/>
@@ -248,7 +248,7 @@
             <PDBo:citation.page_first>969</PDBo:citation.page_first>
             <PDBo:citation.page_last>972</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1128/AAC.45.3.969-972.2001</PDBo:citation.pdbx_database_id_DOI>
-            <PDBo:citation.title> The Structure, Function, and Origin of the Microcin H47 ATP-Binding Cassette Exporter Indicate Its Relatedness to That of Colicin V</PDBo:citation.title>
+            <PDBo:citation.title>The Structure, Function, and Origin of the Microcin H47 ATP-Binding Cassette Exporter Indicate Its Relatedness to That of Colicin V</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2001</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1128/AAC.45.3.969-972.2001" rdfs:label="doi:10.1128/AAC.45.3.969-972.2001"/>
           </PDBo:citation>

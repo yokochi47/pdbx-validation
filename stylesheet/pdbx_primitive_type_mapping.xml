@@ -1308,6 +1308,14 @@
    <category_item name="pdbx_buffer"/>
    <category_item name="pdbx_buffer_components"/>
    <category_item name="pdbx_chain_remapping"/>
+   <category_item name="pdbx_chem_comp_atom_coordination">
+      <data_item name="number" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="geometry_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+   </category_item>
+   <category_item name="pdbx_chem_comp_atom_coordination_sphere">
+      <data_item name="geometry_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="id" type="http://www.w3.org/2001/XMLSchema#int"/>
+   </category_item>
    <category_item name="pdbx_chem_comp_atom_edit">
       <data_item name="ordinal" type="http://www.w3.org/2001/XMLSchema#int"/>
    </category_item>
@@ -2317,6 +2325,37 @@
    </category_item>
    <category_item name="pdbx_nmr_upload">
       <data_item name="data_file_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+   </category_item>
+   <category_item name="pdbx_nonpoly_atom_coordination">
+      <data_item name="label_seq_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="number" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="geometry_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+   </category_item>
+   <category_item name="pdbx_nonpoly_atom_coordination_sphere">
+      <data_item name="geometry_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="label_seq_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="id" type="http://www.w3.org/2001/XMLSchema#int"/>
+   </category_item>
+   <category_item name="pdbx_nonpoly_atom_coordination_sphere_order">
+      <data_item name="label_seq_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="atom_place" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="sphere_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+   </category_item>
+   <category_item name="pdbx_nonpoly_atom_feature">
+      <data_item name="label_seq_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="ordinal" type="http://www.w3.org/2001/XMLSchema#int"/>
+   </category_item>
+   <category_item name="pdbx_nonpoly_atom_feature_evidence">
+      <data_item name="label_seq_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="ordinal" type="http://www.w3.org/2001/XMLSchema#int"/>
+   </category_item>
+   <category_item name="pdbx_nonpoly_feature">
+      <data_item name="label_seq_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="ordinal" type="http://www.w3.org/2001/XMLSchema#int"/>
+   </category_item>
+   <category_item name="pdbx_nonpoly_feature_evidence">
+      <data_item name="label_seq_id" type="http://www.w3.org/2001/XMLSchema#int"/>
+      <data_item name="ordinal" type="http://www.w3.org/2001/XMLSchema#int"/>
    </category_item>
    <category_item name="pdbx_nonpoly_scheme"/>
    <category_item name="pdbx_nonstandard_list">

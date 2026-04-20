@@ -125,7 +125,7 @@
           </xsl:choose>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="."/>
+          <xsl:value-of select="normalize-space(.)"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:element>
@@ -141,7 +141,7 @@
       <xsl:if test="$data_type!=''">
         <xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_type"/></xsl:attribute>
       </xsl:if>
-      <xsl:value-of select="."/>
+      <xsl:value-of select="normalize-space(.)"/>
     </xsl:element>
   </xsl:template>
 

@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Mon Apr 20 14:54:20 JST 2026
+# Date:  Mon Apr 20 15:23:27 JST 2026
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.410)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.411)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.07.xsd
 #         - a XML schema for wwPDB validation reports, v6.07, rev. 2026-03-30
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.410
+    _dictionary.version         4.411
 #
     loop_
     _dictionary_history.version
@@ -1485,6 +1485,13 @@ data_mmcif_pdbx_validation.dic
 >   + Add GisSPA to _em_software.name enumeration # merged
 >   + Include chemical component metallo extension # not mapped
 ;
+  4.411   2026-04-20
+;
+>   + For deposition, add a pdbx_wavelength_list data type # merged
+>   + Extend enumeration for _em_sample_support.grid_type to include
+>     "Quantifoil R1/1", "Quantifoil R1/2", "Quantifoil R3/5", "Quantifoil R1.2/20" # not mapped
+>   + Add SmartScope to _em_software.name enumeration # merged
+;
 
 #
 ###########################################################################
@@ -1899,6 +1906,7 @@ data_mmcif_pdbx_validation.dic
                citation_doi        char  '10\..*'                                           'Citation DOI specification.'
                exp_data_doi        char  '10\.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+'              'Experimental dataset DOI'
                deposition_email    uchar '[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9.-]+'   'code item types/single words  (case insensitive) ...'
+               pdbx_wavelength_list      char   '((([0-9]+(\.[0-9]*)?)|(\.[0-9]+))|(([0-9]+(\.[0-9]*)?)|(\.[0-9]+)) *- *(([0-9]+(\.[0-9]*)?)|(\.[0-9]+)) *) *(, *((([0-9]+(\.[0-9]*)?)|(\.[0-9]+))|(([0-9]+(\.[0-9]*)?)|(\.[0-9]+)) *- *(([0-9]+(\.[0-9]*)?)|(\.[0-9]+)) *) *)*'     'Comma separated list of wavelengths and ranges'
                entity_id_list      uchar '[0-9A-Za-z]+(,[0-9A-Za-z]+)*'                     'comma separated alphanumeric codes (no spaces)  ...'
 # Added by MY
                float-list     numb
@@ -25957,6 +25965,9 @@ save__diffrn_radiation.pdbx_wavelength_list
     _item.category_id             diffrn_radiation
     _item.mandatory_code          no
     _item_type.code               line
+    #
+    _pdbx_item_type.name        '_diffrn_radiation.pdbx_wavelength_list'
+    _pdbx_item_type.code          pdbx_wavelength_list
 save_
 
 save__diffrn_radiation.pdbx_wavelength
@@ -26032,6 +26043,9 @@ save__diffrn_source.pdbx_wavelength_list
 #      "_diffrn_source.pdbx_wavelength_list"  0.5  0.5
 #      "_diffrn_source.pdbx_wavelength_list"  0.5  2.0
 #      "_diffrn_source.pdbx_wavelength_list"  2.0  2.0
+    #
+    _pdbx_item_type.name        "_diffrn_source.pdbx_wavelength_list"
+    _pdbx_item_type.code          pdbx_wavelength_list
     #
     _pdbx_item_examples.name    "_diffrn_source.pdbx_wavelength_list"
     _pdbx_item_examples.case     "0.987 or 0.987, 0.988, 1.0 or 0.99-1.5"
@@ -39612,7 +39626,7 @@ save__reflns_shell.pdbx_Rrim_I_all
     _pdbx_item_range.name
     _pdbx_item_range.minimum
     _pdbx_item_range.maximum
-                           '_reflns_shell.pdbx_Rrim_I_all' 0.082 7.203
+                           '_reflns_shell.pdbx_Rrim_I_all' 0.0 7.203
 save_
 
 #-----------------------------------------------------------------------------
@@ -56174,6 +56188,7 @@ save__em_software.name
         '_em_software.name'  Signature                          .
         '_em_software.name'  SIMPLE                             .
         '_em_software.name'  Situs                              .
+        '_em_software.name'  SmartScope                         .
         '_em_software.name'  SPARX                              .
         '_em_software.name'  SPHIRE                             .
         '_em_software.name'  SPIDER                             .

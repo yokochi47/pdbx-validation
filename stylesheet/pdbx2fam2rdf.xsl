@@ -121,10 +121,18 @@
     &lt;xsl:variable name="tag_name"&gt;&lt;xsl:value-of select="concat($category_item,'.',$data_item)"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:variable name="data_type"&gt;&lt;xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:element name="PDBo:{$tag_name}"&gt;
-      &lt;xsl:if test="$data_type!=''"&gt;
-	&lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_type"/&gt;&lt;/xsl:attribute&gt;
-      &lt;/xsl:if&gt;
-      &lt;xsl:value-of select="."/&gt;
+      &lt;xsl:choose&gt;
+        &lt;xsl:when test="$data_type!=''"&gt;
+          &lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_type"/&gt;&lt;/xsl:attribute&gt;
+          &lt;xsl:value-of select="normalize-space(.)"/&gt;
+        &lt;/xsl:when&gt;
+        &lt;xsl:when test="$data_item='title'"&gt;
+          &lt;xsl:value-of select="normalize-space(.)"/&gt;
+        &lt;/xsl:when&gt;
+        &lt;xsl:otherwise&gt;
+          &lt;xsl:value-of select="."/&gt;
+        &lt;/xsl:otherwise&gt;
+      &lt;/xsl:choose&gt;
     &lt;/xsl:element&gt;
   &lt;/xsl:template&gt;
 
@@ -138,7 +146,7 @@
       &lt;xsl:if test="$data_type!=''"&gt;
 	&lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_type"/&gt;&lt;/xsl:attribute&gt;
       &lt;/xsl:if&gt;
-      &lt;xsl:value-of select="."/&gt;
+      &lt;xsl:value-of select="normalize-space(.)"/&gt;
     &lt;/xsl:element&gt;
   &lt;/xsl:template&gt;
 
