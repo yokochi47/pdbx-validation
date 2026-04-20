@@ -1374,6 +1374,7 @@ pdbx_reflns_twin.operator
 pdbx_reflns_twin.type
 pdbx_related_exp_data_set.data_reference
 pdbx_related_exp_data_set.data_set_type
+pdbx_related_exp_data_set.db_source
 pdbx_related_exp_data_set.details
 pdbx_related_exp_data_set.metadata_reference
 pdbx_related_exp_data_set.ordinal

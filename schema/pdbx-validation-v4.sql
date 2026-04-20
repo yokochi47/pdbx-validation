@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 283 tables (3745 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 283 tables (3746 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v4.xsd
 --      improper_torsion_angle_rms_dev_error, mean_guiner_radius, angle_value, bond_angle_rms_dev, "B_iso", diff_density_max_esd, "L22", "B_calc", distance_rms_dev, "B_calc_au", pdbx_phase_calc_part_solvent, improper_torsion_angle_rms_dev, "S22_esd", atom_deviation, "S31", "A_meas", "pdbx_F_calc_part_solvent", upper_limit, psi, "L23", prot_cis, "L11", "L23_esd", "T23_esd", "F_meas_au", "sigmaI", omega, "S32", "Luzzati_sigma_a_free", "F_squared_calc", "L12", distance_rms_dev_medoid, pdbx_solvent_shrinkage_radii, current, chi1, pdbx_rotation_angle, chi2, chi3, chi4, chi5, "S21", "S33", scan_time_backgd, maximum_upper_distance_constraint_violation, pdbx_scan_angle, "L13", "A_calc", "T12_esd", "S12_esd", "Luzzati_d_res_low_free", value, "B_meas", "S22", value_esd, "Cartn_y_esd", pdbx_solvent_vdw_probe_radii, "S13_esd", "B_meas_au", origin_y, origin_z, origin_x, "Cartn_z_esd", peptide_planarity_rms_dev, "P", phi, pdbx_collection_time_total, dihedral_angle_value, "B_iso_Wilson_estimate", zeta, maximum_lower_distance_constraint_violation, energyfilter_lower, "S11", "S23", nu1, "F_meas_sigma", nu2, nu3, "L12_esd", "F_calc_au", diff_density_min, nu4, nu0, "T33", tilt_angle_min, phase_meas, nominal_defocus_min, "S32_esd", "S12", calibrated_defocus_min, rise_per_n_subunits, "aniso_B33", "Luzzati_d_res_low_obs", pdbx_solvent_ion_probe_radii, "Luzzati_coordinate_error_free", "T22", lower_limit, "Luzzati_coordinate_error_obs", "S13", "T11_esd", "L11_esd", "aniso_B22", "S23_esd", concentration_range, "T23", max_mean_cross_sectional_radii_gyration_esd, "T11", clash_magnitude, angle_target_value, dihedral_angles_rms_dev, min_mean_cross_sectional_radii_gyration_esd, "L22_esd", neighbor_ligand_distance, tau0, "S21_esd", tau1, "aniso_B11", "aniso_B23", average_distance_constraint_violation, "B_iso_esd", maximum_distance_constraint_violation, "T12", max_mean_cross_sectional_radii_gyration, "A_calc_au", "S33_esd", "pdbx_F_calc_with_solvent", phase_calc, bond_angle_rms_dev_error, nominal_defocus_max, "aniso_B12", "B_iso_max", bond_deviation, angle_phi, min_mean_cross_sectional_radii_gyration, "T13", delta, distance_rms_dev_error, "B_iso_mean", energyfilter_upper, covalent_bond_rms_dev, "F_squared_meas", epsilon, "aniso_B13", angle_theta, "F_meas_sigma_au", mean_guiner_radius_esd, angle_deviation, dihedral_angles_rms_dev_error, "T22_esd", peptide_planarity_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Cartn_z", detector_distance, "S31_esd", beta, "L13_esd", "F_squared_sigma", voltage, angle_kappa, ambient_pressure_esd, "T13_esd", gamma, rotation_per_n_subunits, "Cartn_y", temp, covalent_bond_rms_dev_error, rmsd, "S11_esd", temperature, "A_meas_au", alpha, "Cartn_x_esd", "Cartn_x", "F_calc", power, diff_density_min_esd, ambient_temp_esd, neighbor_macromolecule_distance, "I", diff_density_max, angle_psi, "L33_esd", dihedral_angle_target_value, taum, angle_omega, pdbx_dist_value, scan_rate, "T33_esd", tau2, tau3, tau4, "B_iso_min", pdbx_phase_calc_with_solvent, tilt_angle_max, "F_meas", angle_chi, diff_density_rms_esd, average_torsion_angle_constraint_violation, maximum_torsion_angle_constraint_violation, "L33", diff_density_rms, dist, improper_torsion_angle, "pdbx_res_netI_over_av_sigmaI_2"
@@ -36,7 +36,7 @@
 --   User keys:
 --    235 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    488 attributes (43 in-place document keys), 3022 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    488 attributes (43 in-place document keys), 3023 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.406
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.406, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.407
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.407, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -2376,7 +2376,7 @@ CREATE TYPE ENUM_em_imaging_cryogen AS ENUM ( 'NITROGEN', 'HELIUM' );
 DROP TYPE IF EXISTS ENUM_em_imaging_illumination_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_illumination_mode AS ENUM ( 'FLOOD BEAM', 'SPOT SCAN', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_microscope_model CASCADE;
-CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H3000 UHVEM', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1010', 'JEOL 1000EES', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 1400/HR + YPS FEG', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'TFS TALOS', 'TFS TALOS F200C', 'TFS TALOS L120C', 'TFS TITAN THEMIS', 'TFS TUNDRA', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
+CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H3000 UHVEM', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1010', 'JEOL 1000EES', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 1400/HR + YPS FEG', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SHUIMU TOTEM 120s', 'SHUIMU TOTEM 200s', 'SHUIMU TOTEM 300s', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'TFS TALOS', 'TFS TALOS F200C', 'TFS TALOS L120C', 'TFS TITAN THEMIS', 'TFS TUNDRA', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
 DROP TYPE IF EXISTS ENUM_em_imaging_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_mode AS ENUM ( '4D-STEM', 'BRIGHT FIELD', 'DARK FIELD', 'DIFFRACTION', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_specimen_holder_model CASCADE;
@@ -5612,11 +5612,14 @@ CREATE TABLE pdbx_reflns_twin (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_pdbx_related_exp_data_set_db_source CASCADE;
+CREATE TYPE ENUM_pdbx_related_exp_data_set_db_source AS ENUM ( 'ProteinDiffraction', 'CXIDB', 'SBGrid', 'XRDa', 'EMPIAR' );
 CREATE TABLE pdbx_related_exp_data_set (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	data_reference TEXT ,
 	data_set_type TEXT ,
+	db_source ENUM_pdbx_related_exp_data_set_db_source ,
 	details TEXT ,
 	metadata_reference TEXT ,
 -- ATTRIBUTE

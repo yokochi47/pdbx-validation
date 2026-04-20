@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pdbml.pdb.org/schema/pdbx-v50.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xsd:annotation>
-    <xsd:appinfo>PDBML Schema v5.406</xsd:appinfo>
+    <xsd:appinfo>PDBML Schema v5.407</xsd:appinfo>
     <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xml:lang="en">
 
-PDBML Schema translated from the PDBx/mmCIF Dictionary v5.406:
+PDBML Schema translated from the PDBx/mmCIF Dictionary v5.407:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
 	</xsd:documentation>
@@ -21493,6 +21493,9 @@ The name of the model of microscope.
                   <xsd:enumeration value="JEOL 4000EX"/>
                   <xsd:enumeration value="JEOL CRYO ARM 200"/>
                   <xsd:enumeration value="JEOL CRYO ARM 300"/>
+                  <xsd:enumeration value="SHUIMU TOTEM 120s"/>
+                  <xsd:enumeration value="SHUIMU TOTEM 200s"/>
+                  <xsd:enumeration value="SHUIMU TOTEM 300s"/>
                   <xsd:enumeration value="SIEMENS SULEIKA"/>
                   <xsd:enumeration value="TFS GLACIOS"/>
                   <xsd:enumeration value="TFS KRIOS"/>
@@ -24099,6 +24102,7 @@ The support material covering the em grid.
                   <xsd:enumeration value="GRAPHENE"/>
                   <xsd:enumeration value="GRAPHENE OXIDE"/>
                   <xsd:enumeration value="SILICON DIOXIDE"/>
+                  <xsd:enumeration value="NICKEL TITANIUM"/>
                 </xsd:restriction>
               </xsd:simpleType>
             </xsd:element>
@@ -64526,6 +64530,22 @@ diffraction image data
 NMR free induction decay data
                         </xsd:documentation>
               </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="db_source" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+For external sources, the name of the resource.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="ProteinDiffraction"/>
+                  <xsd:enumeration value="CXIDB"/>
+                  <xsd:enumeration value="SBGrid"/>
+                  <xsd:enumeration value="XRDa"/>
+                  <xsd:enumeration value="EMPIAR"/>
+                </xsd:restriction>
+              </xsd:simpleType>
             </xsd:element>
             <xsd:element name="details" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
               <xsd:annotation>

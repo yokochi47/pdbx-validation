@@ -60,11 +60,7 @@ do
 
   if [ ! -e $lock_file ] && [ ! -e $done_file ] ; then
 
-   touch $lock_file
-
-   rsync -a --delete $SRC_DIR/$div_dir/ $DST_DIR/$div_dir
-
-   touch $done_file
+   touch $lock_file 2> /dev/null && rsync -a --delete $SRC_DIR/$div_dir/ $DST_DIR/$div_dir 2> /dev/null && touch $done_file 2> /dev/null
 
    if [ $proc_id_mod -eq 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
@@ -94,11 +90,7 @@ do
 
   if [ ! -e $lock_file ] && [ ! -e $done_file ] ; then
 
-   touch $lock_file
-
-   rsync -a --delete $SRC_DIR/$div_dir/ $DST_DIR/$div_dir
-
-   touch $done_file
+   touch $lock_file 2> /dev/null && rsync -a --delete $SRC_DIR/$div_dir/ $DST_DIR/$div_dir 2> /dev/null && touch $done_file 2> /dev/null
 
    rm -f $lock_file
 

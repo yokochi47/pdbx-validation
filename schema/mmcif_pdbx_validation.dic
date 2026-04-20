@@ -1,11 +1,11 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Oct 15 18:36:25 JST 2025
+# Date:  Mon Apr 20 13:04:30 JST 2026
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.406)
-#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.06.xsd
-#         - a XML schema for wwPDB validation reports, v6.06, rev. 2025-09-11
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.407)
+#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.07.xsd
+#         - a XML schema for wwPDB validation reports, v6.07, rev. 2026-03-30
 #
 ###########################################################################
 
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.406
+    _dictionary.version         4.407
 #
     loop_
     _dictionary_history.version
@@ -1442,7 +1442,7 @@ data_mmcif_pdbx_validation.dic
 >   + Add 'Modify metal description' to _pdbx_chem_comp_audit.action_type
 >     eumeration # not mapped
 >   + Add "EMS Formvar Carbon" to _em_sample_support.grid_type # not mapped
->   + Add Velox, EPU-D, 'CrystFEL partialator', MemBrain-pick,
+>   + Add Velox, EPU-D, CrystFEL, TOMOMAN to _em_software.name enumeration
 >     TILTCTF, TOMOMAN to _em_software.name enumeration # merged
 >   + Add Laueprocess to _software.name enumeration # not mapped
 ;
@@ -1456,7 +1456,16 @@ data_mmcif_pdbx_validation.dic
 >   + Add NanoTerasu to _diffrn_source.pdbx_synchrotron_site
     + Add support for Q-score percentile slider in wwPDB validation report XML Schema v6.06
 ;
-
+  4.407   2026-04-20
+;
+>   + Add MemBrain, AreTomo, DataSMART, CryoSMART to _em_software.name enumeration
+>   + Add "TFS FALCON C (2k x 2k) to _em_image_recording.film_or_detector_model # merged
+>   + Add 'DECTRIS PILATUS 1M' detector to _diffrn_detector.type # merged
+>   + Add ANTcryo ANTA grids to _em_sample_support.grid_type # not mapped
+>   + Add SHUIUMU TOTEM microscopes to _em_imgaing.microscope_model enumeration # merged
+>   + Add AutoPD to _software.name enumeration # not mapped
+>   + Add _pdbx_related_exp_data_set.db_source # merged
+;
 
 #
 ###########################################################################
@@ -2642,6 +2651,7 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "DECTRIS MYTHEN2 R 1D"            PIXEL
       "_diffrn_detector.type"  "DECTRIS MYTHEN2 X 1K"            PIXEL
       "_diffrn_detector.type"  "DECTRIS MYTHEN2 X 1D"            PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS 1M"              PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS 200K"            PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS 300K"            PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS 2M"              PIXEL
@@ -50168,6 +50178,30 @@ save__pdbx_related_exp_data_set.details
    #
 save_
 #
+save__pdbx_related_exp_data_set.db_source
+   _item_description.description
+;
+         For external sources, the name of the resource.
+;
+
+   #
+   _item.name            "_pdbx_related_exp_data_set.db_source"
+   _item.category_id     pdbx_related_exp_data_set
+   _item.mandatory_code  no
+   #
+   _item_type.code  line
+   #
+   loop_
+   _item_enumeration.value
+   _item_enumeration.detail
+     ProteinDiffraction  .
+     CXIDB               .
+     SBGrid              .
+     XRDa                .
+     EMPIAR              .
+   #
+save_
+#
 save__refine.overall_SU_B
     _item_description.description
 ;              The overall standard uncertainty (estimated standard deviation)
@@ -51594,13 +51628,16 @@ save__em_imaging.microscope_model
   '_em_imaging.microscope_model'  "JEOL 4000EX"    .
   '_em_imaging.microscope_model'  "JEOL CRYO ARM 200"    .
   '_em_imaging.microscope_model'  "JEOL CRYO ARM 300"    .
+  '_em_imaging.microscope_model'  "SHUIMU TOTEM 120s"    .
+  '_em_imaging.microscope_model'  "SHUIMU TOTEM 200s"    .
+  '_em_imaging.microscope_model'  "SHUIMU TOTEM 300s"    .
   '_em_imaging.microscope_model'  "SIEMENS SULEIKA"    .
   '_em_imaging.microscope_model'  "TFS GLACIOS"           .
   '_em_imaging.microscope_model'  "TFS KRIOS"             .
   '_em_imaging.microscope_model'  "TFS TALOS"             .
   '_em_imaging.microscope_model'  "TFS TALOS F200C"       .
   '_em_imaging.microscope_model'  "TFS TALOS L120C"       .
-  "_em_imaging.microscope_model"  "TFS TITAN THEMIS"      .
+  '_em_imaging.microscope_model'  "TFS TITAN THEMIS"      .
   '_em_imaging.microscope_model'  "TFS TUNDRA"            .
   '_em_imaging.microscope_model'  "ZEISS LEO912"    .
   '_em_imaging.microscope_model'  "ZEISS LIBRA120PLUS"    .
@@ -55562,6 +55599,7 @@ save__em_image_recording.film_or_detector_model
   '_em_image_recording.film_or_detector_model'    "PROSCAN TEM-PIV (2k x 2k)"   .
   '_em_image_recording.film_or_detector_model'    "SIA 15C (3k x 3k)"   .
   '_em_image_recording.film_or_detector_model'    "TFS FALCON 4i (4k x 4k)"    .
+  '_em_image_recording.film_or_detector_model'    "TFS FALCON C (2k x 2k)"    .
   '_em_image_recording.film_or_detector_model'    "TVIPS TEMCAM-F816 (8k x 8k)"   .
   '_em_image_recording.film_or_detector_model'    "TVIPS TEMCAM-F415 (4k x 4k)"   .
   '_em_image_recording.film_or_detector_model'    "TVIPS TEMCAM-F416 (4k x 4k)"   .
@@ -55982,6 +56020,7 @@ save__em_software.name
         '_em_software.name'  AmiraFPM                           .
         '_em_software.name'  Appion                             .
         '_em_software.name'  ARP/wARP                           .
+        '_em_software.name'  AreTomo                            .
         '_em_software.name'  ASTRA-TOOLBOX                      .
         '_em_software.name'  Auto3DEM                           .
         '_em_software.name'  AV3                                .
@@ -55998,12 +56037,14 @@ save__em_software.name
         '_em_software.name'  crYOLO                             .
         '_em_software.name'  cryoDRGN                           .
         '_em_software.name'  cryoDRGN2                          .
+        '_em_software.name'  CryoSMART                          .
         '_em_software.name'  cryoSPARC                          .
-        '_em_software.name'  'CrystFEL partialator'             .
+        '_em_software.name'  CrystFEL                           .
         '_em_software.name'  CTFFIND                            .
         '_em_software.name'  ctfit                              .
         '_em_software.name'  CTFPHASEFLIP                       .
         '_em_software.name'  CTFTILT                            .
+        '_em_software.name'  DataSMART                          .
         '_em_software.name'  DE-IM                              .
         '_em_software.name'  DeepEMhancer                       .
         '_em_software.name'  DIALS                              .
@@ -56065,7 +56106,7 @@ save__em_software.name
         '_em_software.name'  M                                  .
         '_em_software.name'  MATLAB                             .
         '_em_software.name'  MDFF                               .
-        '_em_software.name'  MemBrain-pick                      .
+        '_em_software.name'  MemBrain                           .
         '_em_software.name'  MODELLER                           .
         '_em_software.name'  MOLREP                             .
         '_em_software.name'  MPSA                               .
@@ -56115,7 +56156,6 @@ save__em_software.name
         '_em_software.name'  SUPER                              .
         '_em_software.name'  'Super-sampling SART'              .
         '_em_software.name'  TEMPy                              .
-        '_em_software.name'  TILTCTF                            .
         '_em_software.name'  TOM                                .
         '_em_software.name'  'TOM Toolbox'                      .
         '_em_software.name'  TOMO3D                             .
