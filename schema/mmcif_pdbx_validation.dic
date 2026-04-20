@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Mon Apr 20 14:02:35 JST 2026
+# Date:  Mon Apr 20 14:54:20 JST 2026
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.409)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.410)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.07.xsd
 #         - a XML schema for wwPDB validation reports, v6.07, rev. 2026-03-30
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.409
+    _dictionary.version         4.410
 #
     loop_
     _dictionary_history.version
@@ -1474,9 +1474,16 @@ data_mmcif_pdbx_validation.dic
 ;
   4.409   2026-04-20
 ;
->   + Add new DECTRIS detectors to _diffrn_detector.type enumeraton"
->   + Add ModelAngelo to _em_software.name enumeration
->   + Add "ALBA BEAMLINE XAIRA" to _diffrn_source.type enumeration
+>   + Add new DECTRIS detectors to _diffrn_detector.type enumeraton" # merged
+>   + Add ModelAngelo to _em_software.name enumeration # merged
+>   + Add "ALBA BEAMLINE XAIRA" to _diffrn_source.type enumeration # merged
+;
+  4.410   2026-04-20
+;
+>   + Remove upper limit for reflns.pdbx_Rrim_I_all # merged
+>   + Remove pdbx_item_type from _pdbx_database_related.db_id as item_type already includes. # merged
+>   + Add GisSPA to _em_software.name enumeration # merged
+>   + Include chemical component metallo extension # not mapped
 ;
 
 #
@@ -25691,9 +25698,6 @@ save__pdbx_database_related.db_id
     _item_examples.case          '1ABC' 'BDL001'
     _pdbx_item.name             "_pdbx_database_related.db_id"
     _pdbx_item.mandatory_code     no
-    #
-    _pdbx_item_type.name        '_pdbx_database_related.db_id'
-    _pdbx_item_type.code          pdbx_related_db_id
     #
     _pdbx_item_description.name         "_pdbx_database_related.db_id"
     _pdbx_item_description.description  "The identifying code in the related database"
@@ -56099,6 +56103,7 @@ save__em_software.name
         '_em_software.name'  FREALIX                            .
         '_em_software.name'  Gautomatch                         .
         '_em_software.name'  Gctf                               .
+        '_em_software.name'  GisSPA                             .
         '_em_software.name'  Gorgon                             .
         '_em_software.name'  HADDOCK                            .
         '_em_software.name'  HARUSPEX                           .

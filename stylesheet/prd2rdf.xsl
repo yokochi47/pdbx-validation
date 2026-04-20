@@ -4330,6 +4330,52 @@
       </PDBo:has_pdbx_chain_remapping>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_chem_comp_atom_coordinationCategory/PDBx:pdbx_chem_comp_atom_coordination">
+      <xsl:variable name="geometry_id_truncated"><xsl:choose><xsl:when test="string-length(@geometry_id)&lt;64"><xsl:value-of select="@geometry_id"/></xsl:when><xsl:when test="contains(@geometry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@geometry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@geometry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="geometry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($geometry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="provenance_truncated"><xsl:choose><xsl:when test="string-length(@provenance)&lt;64"><xsl:value-of select="@provenance"/></xsl:when><xsl:when test="contains(@provenance,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@provenance,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@provenance,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="provenance_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($provenance_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_chem_comp_atom_coordination>
+      <PDBo:pdbx_chem_comp_atom_coordination rdf:about="{$base}/pdbx_chem_comp_atom_coordination/{$geometry_id_encoded},{$provenance_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="PDBx:atom_id!='' and PDBx:comp_id!=''">
+	<PDBo:reference_to_chem_comp_atom>
+	  <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(PDBx:atom_id,' ^','__')},{translate(PDBx:comp_id,' ^','__')}">
+	    <PDBo:referenced_by_pdbx_chem_comp_atom_coordination rdf:resource="{$base}/pdbx_chem_comp_atom_coordination/{$geometry_id_encoded},{$provenance_encoded}"/>
+	  </rdf:Description>
+	</PDBo:reference_to_chem_comp_atom>
+	<!-- chem_comp_atomKeyref_0_0_3_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_chem_comp_atom_coordination>
+      </PDBo:has_pdbx_chem_comp_atom_coordination>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_chem_comp_atom_coordination_sphereCategory/PDBx:pdbx_chem_comp_atom_coordination_sphere">
+      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_chem_comp_atom_coordination_sphere>
+      <PDBo:pdbx_chem_comp_atom_coordination_sphere rdf:about="{$base}/pdbx_chem_comp_atom_coordination_sphere/{$id_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="PDBx:atom_id!='' and PDBx:comp_id!=''">
+	<PDBo:reference_to_chem_comp_atom>
+	  <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(PDBx:atom_id,' ^','__')},{translate(PDBx:comp_id,' ^','__')}">
+	    <PDBo:referenced_by_pdbx_chem_comp_atom_coordination_sphere rdf:resource="{$base}/pdbx_chem_comp_atom_coordination_sphere/{$id_encoded}"/>
+	  </rdf:Description>
+	</PDBo:reference_to_chem_comp_atom>
+	<!-- chem_comp_atomKeyref_0_0_4_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_chem_comp_atom_coordination_sphere>
+      </PDBo:has_pdbx_chem_comp_atom_coordination_sphere>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:pdbx_chem_comp_atom_editCategory/PDBx:pdbx_chem_comp_atom_edit">
       <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
       <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
@@ -4368,7 +4414,7 @@
 	    <PDBo:referenced_by_pdbx_chem_comp_atom_feature rdf:resource="{$base}/pdbx_chem_comp_atom_feature/{$atom_id_encoded},{$comp_id_encoded},{$feature_type_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp_atom>
-	<!-- chem_comp_atomKeyref_0_0_3_0 -->
+	<!-- chem_comp_atomKeyref_0_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -8066,6 +8112,118 @@
       <xsl:apply-templates mode="linked"/>
       </PDBo:pdbx_nmr_upload>
       </PDBo:has_pdbx_nmr_upload>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_nonpoly_atom_coordinationCategory/PDBx:pdbx_nonpoly_atom_coordination">
+      <xsl:variable name="geometry_id_truncated"><xsl:choose><xsl:when test="string-length(@geometry_id)&lt;64"><xsl:value-of select="@geometry_id"/></xsl:when><xsl:when test="contains(@geometry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@geometry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@geometry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="geometry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($geometry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="provenance_truncated"><xsl:choose><xsl:when test="string-length(@provenance)&lt;64"><xsl:value-of select="@provenance"/></xsl:when><xsl:when test="contains(@provenance,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@provenance,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@provenance,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="provenance_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($provenance_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_nonpoly_atom_coordination>
+      <PDBo:pdbx_nonpoly_atom_coordination rdf:about="{$base}/pdbx_nonpoly_atom_coordination/{$geometry_id_encoded},{$provenance_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_nonpoly_atom_coordination>
+      </PDBo:has_pdbx_nonpoly_atom_coordination>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_nonpoly_atom_coordination_sphereCategory/PDBx:pdbx_nonpoly_atom_coordination_sphere">
+      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_asym_id_truncated"><xsl:choose><xsl:when test="string-length(@label_asym_id)&lt;64"><xsl:value-of select="@label_asym_id"/></xsl:when><xsl:when test="contains(@label_asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="label_asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_atom_id_truncated"><xsl:choose><xsl:when test="string-length(@label_atom_id)&lt;64"><xsl:value-of select="@label_atom_id"/></xsl:when><xsl:when test="contains(@label_atom_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_atom_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_atom_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="label_atom_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_atom_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_comp_id_truncated"><xsl:choose><xsl:when test="string-length(@label_comp_id)&lt;64"><xsl:value-of select="@label_comp_id"/></xsl:when><xsl:when test="contains(@label_comp_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_comp_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_comp_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="label_comp_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_comp_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_nonpoly_atom_coordination_sphere>
+      <PDBo:pdbx_nonpoly_atom_coordination_sphere rdf:about="{$base}/pdbx_nonpoly_atom_coordination_sphere/{$id_encoded},{$label_asym_id_encoded},{$label_atom_id_encoded},{$label_comp_id_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_nonpoly_atom_coordination_sphere>
+      </PDBo:has_pdbx_nonpoly_atom_coordination_sphere>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_nonpoly_atom_coordination_sphere_orderCategory/PDBx:pdbx_nonpoly_atom_coordination_sphere_order">
+      <xsl:variable name="atom_place_truncated"><xsl:choose><xsl:when test="string-length(@atom_place)&lt;64"><xsl:value-of select="@atom_place"/></xsl:when><xsl:when test="contains(@atom_place,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@atom_place,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@atom_place,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="atom_place_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($atom_place_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_atom_id_truncated"><xsl:choose><xsl:when test="string-length(@label_atom_id)&lt;64"><xsl:value-of select="@label_atom_id"/></xsl:when><xsl:when test="contains(@label_atom_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_atom_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_atom_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="label_atom_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_atom_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_comp_id_truncated"><xsl:choose><xsl:when test="string-length(@label_comp_id)&lt;64"><xsl:value-of select="@label_comp_id"/></xsl:when><xsl:when test="contains(@label_comp_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_comp_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_comp_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="label_comp_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_comp_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="sphere_id_truncated"><xsl:choose><xsl:when test="string-length(@sphere_id)&lt;64"><xsl:value-of select="@sphere_id"/></xsl:when><xsl:when test="contains(@sphere_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@sphere_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@sphere_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="sphere_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($sphere_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_nonpoly_atom_coordination_sphere_order>
+      <PDBo:pdbx_nonpoly_atom_coordination_sphere_order rdf:about="{$base}/pdbx_nonpoly_atom_coordination_sphere_order/{$atom_place_encoded},{$label_atom_id_encoded},{$label_comp_id_encoded},{$sphere_id_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_nonpoly_atom_coordination_sphere_order>
+      </PDBo:has_pdbx_nonpoly_atom_coordination_sphere_order>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_nonpoly_atom_featureCategory/PDBx:pdbx_nonpoly_atom_feature">
+      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_nonpoly_atom_feature>
+      <PDBo:pdbx_nonpoly_atom_feature rdf:about="{$base}/pdbx_nonpoly_atom_feature/{$ordinal_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_nonpoly_atom_feature>
+      </PDBo:has_pdbx_nonpoly_atom_feature>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_nonpoly_atom_feature_evidenceCategory/PDBx:pdbx_nonpoly_atom_feature_evidence">
+      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_nonpoly_atom_feature_evidence>
+      <PDBo:pdbx_nonpoly_atom_feature_evidence rdf:about="{$base}/pdbx_nonpoly_atom_feature_evidence/{$ordinal_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_nonpoly_atom_feature_evidence>
+      </PDBo:has_pdbx_nonpoly_atom_feature_evidence>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_nonpoly_featureCategory/PDBx:pdbx_nonpoly_feature">
+      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_nonpoly_feature>
+      <PDBo:pdbx_nonpoly_feature rdf:about="{$base}/pdbx_nonpoly_feature/{$ordinal_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_nonpoly_feature>
+      </PDBo:has_pdbx_nonpoly_feature>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_nonpoly_feature_evidenceCategory/PDBx:pdbx_nonpoly_feature_evidence">
+      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_nonpoly_feature_evidence>
+      <PDBo:pdbx_nonpoly_feature_evidence rdf:about="{$base}/pdbx_nonpoly_feature_evidence/{$ordinal_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_nonpoly_feature_evidence>
+      </PDBo:has_pdbx_nonpoly_feature_evidence>
   </xsl:template>
 
   <xsl:template match="PDBx:datablock/PDBx:pdbx_nonstandard_listCategory/PDBx:pdbx_nonstandard_list">

@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 595 tables (7247 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 604 tables (7370 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-v50.xsd
 --      temperature, final_thickness, "B_calc", zeta, "L23", "L11", "pdbx_F_calc_with_solvent", radial_pitch, time, angle_increment, "model_Cartn_y_esd", diffr_phi, "B_iso_or_equiv", pdbx_solvent_vdw_probe_radii, maximum_torsion_angle_constraint_violation, "A_meas_au", lower_limit, "F_meas", "S31", "F_meas_au", "Cartn_x_esd", length_a_esd, "L22", "F_squared_calc", volume_three, mean_guiner_radius, reciprocal_angle_beta_esd, beta_tolerance, maximum_upper_distance_constraint_violation, bond_deviation, nominal_defocus_min, "B33", angle, "B_iso_min", "U_equiv_geom_mean_esd", crossfire_y, psi, crossfire_x, "U33_esd", bond_angle_rms_dev, "S33_esd", angle_gamma_esd, pdbx_crystal_direction_3, dihedral_angles_rms_dev, pdbx_crystal_direction_2, "angle_DHA_esd", epsilon, pdbx_crystal_direction_1, bond, "aniso_U22", induction_temperature, average_torsion_angle_constraint_violation, "L33", angle_phi, "aniso_B11_esd", pdbx_solvent_ion_probe_radii, "aniso_B33_esd", "dist_HA_esd", "B_calc_au", culture_temperature, "S23_esd", sample_volume, diffr_kappa, reciprocal_length_a_esd, peptide_planarity_rms_dev, "sigmaI", pdbx_solvent_shrinkage_radii, displacement, "aniso_U33", maximum_lower_distance_constraint_violation, culture_time, "aniso_U22_esd", column_volume, translation_width, tilt_angle_min, prot_cis, electron_dose, scan_time_backgd, "aniso_B23_esd", protein_yield, "B_equiv_geom_mean_esd", calibrated_defocus_min, underload, "F_squared_meas", "B22_esd", "aniso_U12", pdbx_dist_value, "U11_esd", induction_timepoint, "L12_esd", "T11_esd", "model_Cartn_y", energyfilter_lower, alpha, pressure, atom_deviation, "U13", improper_torsion_angle_rms_dev_error, "B12_esd", "T12_esd", "aniso_U13_esd", "pdbx_model_Cartn_y_ideal", "A_calc_au", pdbx_phase_calc_part_solvent, reciprocal_angle_gamma_esd, "aniso_U11", "aniso_U23", angle_value, "F_squared_sigma", buffer_volume, covalent_bond_rms_dev, reciprocal_angle_alpha_esd, "L13_esd", "model_Cartn_x", angle_range, "T13_esd", rotation_per_n_subunits, diff_density_min, "B_iso", "U12", angle_omega, energyfilter_upper, mean_guiner_radius_esd, crossfire_x_esd, "A_meas", "aniso_U23_esd", storage_temperature, reference_displacement, mol_wt_theo, tau1, distance_rms_dev, tau2, tau3, tau4, "U23", "I", flow_rate, dist, "A_calc", angle_deviation, temperature_decomposition_esd, nominal_defocus_max, "B_iso_mean", "U11", "aniso_U33_esd", dist_esd, "aniso_U13", value_esd, upper_limit, "B_meas", cleavage_time, "pdbx_res_netI_over_av_sigmaI_2", displacement_start, "model_Cartn_z", displacement_increment, density_meas_temp_esd, "T13", maximum_distance_constraint_violation, tau0, "B11_esd", angle_beta_esd, "L22_esd", "T22_esd", "U22", gamma_tolerance, temp, "U_tls22", phase_calc, angle_chi, "aniso_B22_esd", improper_torsion_angle_rms_dev, diff_density_max_esd, sample_concentration, rmsd, "pdbx_F_calc_part_solvent", cleavage_temperature, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Luzzati_coordinate_error_free", temperature_sublimation_esd, "F_meas_sigma", "U33", "model_Cartn_z_esd", "T12", dihedral_angles_rms_dev_error, pdbx_scan_angle, "B_iso_or_equiv_esd", angle_target_value, "Cartn_y_esd", angle_psi, "U_tls11", bond_angle_rms_dev_error, "B23_esd", "U_iso_or_equiv_esd", volume_esd, "U_tls23", crossfire_y_esd, pdbx_phase_calc_with_solvent, taum, "S22_esd", diffr_chi, "T23", "B", pressure_esd, column_temperature, "T11", min_mean_cross_sectional_radii_gyration_esd, "Luzzati_d_res_low_free", chi2, chi1, "L23_esd", chi4, chi3, "aniso_B22", pdbx_collection_time_total, crossfire_xy_esd, chi5, angle_alpha_esd, scan_rate, neighbor_ligand_distance, length_b_esd, "T23_esd", pdbx_crystal_diffrn_lifetime, peptide_planarity_rms_dev_error, "S13", "Ro", "T22", voltage, "S32_esd", fract_displacement_increment, beta, average_distance_constraint_violation, "aniso_B33", energy_window, crossfire_xy, dev, "U_tls33", "S13_esd", "model_Cartn_x_esd", "L11_esd", volume_three_esd, protein_volume, value, "T33_esd", angle_kappa, rise_per_n_subunits, reciprocal_length_c_esd, "L33_esd", "S12", scat_length_neutron, "T33", "S11_esd", improper_torsion_angle, current, "aniso_B12", alpha_tolerance, "Luzzati_coordinate_error_obs", "P", gamma, diff_density_rms_esd, "B13_esd", displacement_range, phi, "aniso_U12_esd", neighbor_macromolecule_distance, "pre_Cartn_x", "B_iso_Wilson_estimate", "B12", ambient_temp_esd, "Cartn_z", "F_calc", "pdbx_model_Cartn_x_ideal", ambient_pressure_esd, pdbx_crystal_diffrn_limit, displacement_rstrt_incr, yield_pooled_fractions, "U12_esd", "S12_esd", phase_meas, "pdbx_model_Cartn_z_ideal", "S23", diff_density_max, "aniso_B13_esd", tilt_angle_max, "S11", origin_y, origin_x, nu4, nu3, nu2, nu1, "aniso_B11", nu0, "aniso_B23", max_mean_cross_sectional_radii_gyration, overload, angle_theta, covalent_bond_rms_dev_error, "Luzzati_d_res_low_obs", origin_z, power, "dist_DA_esd", "B13", min_mean_cross_sectional_radii_gyration, temp_esd, culture_volume, inducer_concentration, objective_aperture, "S22", "B_meas_au", "U22_esd", omega, length_c_esd, pdbx_rotation_angle, diff_density_min_esd, "S31_esd", angle_rstrt_incr, "pre_Cartn_z", "U_tls12", volume_pooled_fractions, "B_iso_esd", "U13_esd", delta, detector_distance, "Cartn_x", "B22", "U23_esd", diffr_psi, distance_rms_dev_error, "S21", max_mean_cross_sectional_radii_gyration_esd, "S33", angular_pitch, "L12", "B_iso_max", reference_angle, "aniso_B13", reciprocal_length_b_esd, diff_density_rms, "Luzzati_sigma_a_free", "aniso_B12_esd", protein_concentration, mol_wt_exp, concentration_range, "pre_Cartn_y", "S21_esd", "F_calc_au", "U_tls13", "Cartn_z_esd", "B33_esd", "B23", "B11", angle_start, "Cartn_y", "aniso_U11_esd", density_meas_esd, "dist_DH_esd", multiplicity_of_infection, "L13", "F_meas_sigma_au", "S32"
@@ -30,22 +30,22 @@
 --   Schema locations:
 --    pdbx-v50.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 595 admin children
+--    0 root, 0 root children, 0 admin roots, 604 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    595 document keys, 0 serial keys, 0 xpath keys
+--    604 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1081 attributes (0 in-place document keys), 5571 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1098 attributes (0 in-place document keys), 5668 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    595 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 359 foreign key constraints from xsd:keyref
+--    604 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 363 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML Schema v5.409
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.409: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.410
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.410: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -226,6 +226,8 @@ DROP TABLE IF EXISTS pdbx_bond_distance_limits CASCADE;
 DROP TABLE IF EXISTS pdbx_branch_scheme CASCADE;
 DROP TABLE IF EXISTS pdbx_buffer_components CASCADE;
 DROP TABLE IF EXISTS pdbx_chain_remapping CASCADE;
+DROP TABLE IF EXISTS pdbx_chem_comp_atom_coordination CASCADE;
+DROP TABLE IF EXISTS pdbx_chem_comp_atom_coordination_sphere CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_atom_edit CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_atom_feature CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_atom_related CASCADE;
@@ -393,6 +395,13 @@ DROP TABLE IF EXISTS pdbx_nmr_spectral_peak_software CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_spectrometer CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_systematic_chem_shift_offset CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_upload CASCADE;
+DROP TABLE IF EXISTS pdbx_nonpoly_atom_coordination CASCADE;
+DROP TABLE IF EXISTS pdbx_nonpoly_atom_coordination_sphere CASCADE;
+DROP TABLE IF EXISTS pdbx_nonpoly_atom_coordination_sphere_order CASCADE;
+DROP TABLE IF EXISTS pdbx_nonpoly_atom_feature CASCADE;
+DROP TABLE IF EXISTS pdbx_nonpoly_atom_feature_evidence CASCADE;
+DROP TABLE IF EXISTS pdbx_nonpoly_feature CASCADE;
+DROP TABLE IF EXISTS pdbx_nonpoly_feature_evidence CASCADE;
 DROP TABLE IF EXISTS pdbx_nonpoly_scheme CASCADE;
 DROP TABLE IF EXISTS pdbx_nonstandard_list CASCADE;
 DROP TABLE IF EXISTS pdbx_pdb_compnd CASCADE;
@@ -630,10 +639,10 @@ DROP TABLE IF EXISTS pdbx_reference_molecule CASCADE;
 DROP TABLE IF EXISTS pdbx_reference_molecule_family CASCADE;
 DROP TABLE IF EXISTS array_structure CASCADE;
 DROP TABLE IF EXISTS atom_type CASCADE;
-DROP TABLE IF EXISTS chem_comp_atom CASCADE;
 DROP TABLE IF EXISTS pdbx_construct CASCADE;
 DROP TABLE IF EXISTS struct_sheet CASCADE;
 DROP TABLE IF EXISTS struct_biol CASCADE;
+DROP TABLE IF EXISTS chem_comp_atom CASCADE;
 DROP TABLE IF EXISTS chem_link CASCADE;
 DROP TABLE IF EXISTS phasing_set CASCADE;
 DROP TABLE IF EXISTS em_entity_assembly CASCADE;
@@ -992,6 +1001,80 @@ CREATE TABLE struct_asym (
 );
 
 --
+-- (quoted from chem_comp_atomType)
+-- Data items in the CHEM_COMP_ATOM category record details about the atoms in a chemical component. Specifying the atomic coordinates for the components in this category is an alternative to specifying the structure of the component via bonds, angles, planes etc. in the appropriate CHEM_COMP subcategories. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_atomCategory> <PDBx:chem_comp_atom atom_id="N" comp_id="phe"> <PDBx:model_Cartn_x>1.20134</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.84658</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CA" comp_id="phe"> <PDBx:model_Cartn_x>0.00000</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.00000</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="C" comp_id="phe"> <PDBx:model_Cartn_x>-1.25029</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.88107</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="O" comp_id="phe"> <PDBx:model_Cartn_x>-2.18525</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.66029</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>-0.78409</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CB" comp_id="phe"> <PDBx:model_Cartn_x>0.00662</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-1.03603</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>1.11081</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG" comp_id="phe"> <PDBx:model_Cartn_x>0.03254</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.49711</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>2.50951</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CD1" comp_id="phe"> <PDBx:model_Cartn_x>-1.15813</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.12084</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>3.13467</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CE1" comp_id="phe"> <PDBx:model_Cartn_x>-1.15720</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.38038</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>4.42732</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CZ" comp_id="phe"> <PDBx:model_Cartn_x>0.05385</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.51332</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>5.11032</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CE2" comp_id="phe"> <PDBx:model_Cartn_x>1.26137</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.11613</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>4.50975</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CD2" comp_id="phe"> <PDBx:model_Cartn_x>1.23668</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.38351</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>3.20288</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="N" comp_id="val"> <PDBx:model_Cartn_x>1.20134</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.84658</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CA" comp_id="val"> <PDBx:model_Cartn_x>0.00000</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.00000</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="C" comp_id="val"> <PDBx:model_Cartn_x>-1.25029</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.88107</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="O" comp_id="val"> <PDBx:model_Cartn_x>-2.18525</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.66029</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>-0.78409</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CB" comp_id="val"> <PDBx:model_Cartn_x>0.05260</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.99339</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>1.17429</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG1" comp_id="val"> <PDBx:model_Cartn_x>-0.13288</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.31545</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>2.52668</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG2" comp_id="val"> <PDBx:model_Cartn_x>-0.94265</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-2.12930</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.99811</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> </PDBx:chem_comp_atomCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_aromatic_flag CASCADE;
+CREATE TYPE ENUM_chem_comp_atom_pdbx_aromatic_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_backbone_atom_flag CASCADE;
+CREATE TYPE ENUM_chem_comp_atom_pdbx_backbone_atom_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_c_terminal_atom_flag CASCADE;
+CREATE TYPE ENUM_chem_comp_atom_pdbx_c_terminal_atom_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_leaving_atom_flag CASCADE;
+CREATE TYPE ENUM_chem_comp_atom_pdbx_leaving_atom_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_n_terminal_atom_flag CASCADE;
+CREATE TYPE ENUM_chem_comp_atom_pdbx_n_terminal_atom_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_polymer_type CASCADE;
+CREATE TYPE ENUM_chem_comp_atom_pdbx_polymer_type AS ENUM ( 'polymer', 'non-polymer' );
+DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_stereo_config CASCADE;
+CREATE TYPE ENUM_chem_comp_atom_pdbx_stereo_config AS ENUM ( 'R', 'S', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_atom_substruct_code CASCADE;
+CREATE TYPE ENUM_chem_comp_atom_substruct_code AS ENUM ( 'main', 'side', 'base', 'phos', 'sugar', 'none' );
+CREATE TABLE chem_comp_atom (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	alt_atom_id TEXT ,
+-- xsd:restriction/xsd:maxInclusive="8"
+-- xsd:restriction/xsd:minInclusive="-8"
+	charge INTEGER CHECK ( charge >= -8 AND charge <= 8 ) ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	"model_Cartn_x" DECIMAL ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	"model_Cartn_x_esd" DECIMAL ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	"model_Cartn_y" DECIMAL ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	"model_Cartn_y_esd" DECIMAL ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	"model_Cartn_z" DECIMAL ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	"model_Cartn_z_esd" DECIMAL ,
+	partial_charge DECIMAL ,
+	pdbx_align INTEGER ,
+	pdbx_alt_atom_id TEXT ,
+	pdbx_alt_comp_id TEXT ,
+	pdbx_aromatic_flag ENUM_chem_comp_atom_pdbx_aromatic_flag ,
+	pdbx_backbone_atom_flag ENUM_chem_comp_atom_pdbx_backbone_atom_flag ,
+	pdbx_c_terminal_atom_flag ENUM_chem_comp_atom_pdbx_c_terminal_atom_flag ,
+	pdbx_component_atom_id TEXT ,
+	pdbx_component_comp_id TEXT ,
+	pdbx_component_entity_id INTEGER ,
+	pdbx_component_id INTEGER ,
+	pdbx_leaving_atom_flag ENUM_chem_comp_atom_pdbx_leaving_atom_flag ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	"pdbx_model_Cartn_x_ideal" DECIMAL ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	"pdbx_model_Cartn_y_ideal" DECIMAL ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	"pdbx_model_Cartn_z_ideal" DECIMAL ,
+	pdbx_n_terminal_atom_flag ENUM_chem_comp_atom_pdbx_n_terminal_atom_flag ,
+	pdbx_ordinal INTEGER ,
+	pdbx_polymer_type ENUM_chem_comp_atom_pdbx_polymer_type ,
+	pdbx_ref_id TEXT ,
+	pdbx_residue_numbering INTEGER ,
+	pdbx_stereo_config ENUM_chem_comp_atom_pdbx_stereo_config ,
+	pdbx_stnd_atom_id TEXT ,
+	substruct_code ENUM_chem_comp_atom_substruct_code ,
+	type_symbol TEXT ,
+-- ATTRIBUTE
+	atom_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	comp_id TEXT NOT NULL
+);
+
+--
 -- (quoted from chem_linkType)
 -- Data items in the CHEM_LINK category give details about the links between chemical components.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
@@ -1139,80 +1222,6 @@ CREATE TABLE atom_type (
 	scat_versus_stol_list TEXT ,
 -- ATTRIBUTE
 	symbol TEXT NOT NULL
-);
-
---
--- (quoted from chem_comp_atomType)
--- Data items in the CHEM_COMP_ATOM category record details about the atoms in a chemical component. Specifying the atomic coordinates for the components in this category is an alternative to specifying the structure of the component via bonds, angles, planes etc. in the appropriate CHEM_COMP subcategories. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_atomCategory> <PDBx:chem_comp_atom atom_id="N" comp_id="phe"> <PDBx:model_Cartn_x>1.20134</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.84658</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CA" comp_id="phe"> <PDBx:model_Cartn_x>0.00000</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.00000</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="C" comp_id="phe"> <PDBx:model_Cartn_x>-1.25029</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.88107</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="O" comp_id="phe"> <PDBx:model_Cartn_x>-2.18525</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.66029</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>-0.78409</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CB" comp_id="phe"> <PDBx:model_Cartn_x>0.00662</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-1.03603</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>1.11081</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG" comp_id="phe"> <PDBx:model_Cartn_x>0.03254</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.49711</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>2.50951</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CD1" comp_id="phe"> <PDBx:model_Cartn_x>-1.15813</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.12084</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>3.13467</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CE1" comp_id="phe"> <PDBx:model_Cartn_x>-1.15720</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.38038</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>4.42732</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CZ" comp_id="phe"> <PDBx:model_Cartn_x>0.05385</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.51332</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>5.11032</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CE2" comp_id="phe"> <PDBx:model_Cartn_x>1.26137</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.11613</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>4.50975</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CD2" comp_id="phe"> <PDBx:model_Cartn_x>1.23668</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.38351</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>3.20288</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="N" comp_id="val"> <PDBx:model_Cartn_x>1.20134</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.84658</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CA" comp_id="val"> <PDBx:model_Cartn_x>0.00000</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.00000</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="C" comp_id="val"> <PDBx:model_Cartn_x>-1.25029</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.88107</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="O" comp_id="val"> <PDBx:model_Cartn_x>-2.18525</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.66029</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>-0.78409</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CB" comp_id="val"> <PDBx:model_Cartn_x>0.05260</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.99339</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>1.17429</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG1" comp_id="val"> <PDBx:model_Cartn_x>-0.13288</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.31545</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>2.52668</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG2" comp_id="val"> <PDBx:model_Cartn_x>-0.94265</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-2.12930</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.99811</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> </PDBx:chem_comp_atomCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_aromatic_flag CASCADE;
-CREATE TYPE ENUM_chem_comp_atom_pdbx_aromatic_flag AS ENUM ( 'Y', 'N' );
-DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_backbone_atom_flag CASCADE;
-CREATE TYPE ENUM_chem_comp_atom_pdbx_backbone_atom_flag AS ENUM ( 'Y', 'N' );
-DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_c_terminal_atom_flag CASCADE;
-CREATE TYPE ENUM_chem_comp_atom_pdbx_c_terminal_atom_flag AS ENUM ( 'Y', 'N' );
-DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_leaving_atom_flag CASCADE;
-CREATE TYPE ENUM_chem_comp_atom_pdbx_leaving_atom_flag AS ENUM ( 'Y', 'N' );
-DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_n_terminal_atom_flag CASCADE;
-CREATE TYPE ENUM_chem_comp_atom_pdbx_n_terminal_atom_flag AS ENUM ( 'Y', 'N' );
-DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_polymer_type CASCADE;
-CREATE TYPE ENUM_chem_comp_atom_pdbx_polymer_type AS ENUM ( 'polymer', 'non-polymer' );
-DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_stereo_config CASCADE;
-CREATE TYPE ENUM_chem_comp_atom_pdbx_stereo_config AS ENUM ( 'R', 'S', 'N' );
-DROP TYPE IF EXISTS ENUM_chem_comp_atom_substruct_code CASCADE;
-CREATE TYPE ENUM_chem_comp_atom_substruct_code AS ENUM ( 'main', 'side', 'base', 'phos', 'sugar', 'none' );
-CREATE TABLE chem_comp_atom (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	alt_atom_id TEXT ,
--- xsd:restriction/xsd:maxInclusive="8"
--- xsd:restriction/xsd:minInclusive="-8"
-	charge INTEGER CHECK ( charge >= -8 AND charge <= 8 ) ,
--- omit an attribute having a fixed value: @units="angstroms"
-	"model_Cartn_x" DECIMAL ,
--- omit an attribute having a fixed value: @units="angstroms"
-	"model_Cartn_x_esd" DECIMAL ,
--- omit an attribute having a fixed value: @units="angstroms"
-	"model_Cartn_y" DECIMAL ,
--- omit an attribute having a fixed value: @units="angstroms"
-	"model_Cartn_y_esd" DECIMAL ,
--- omit an attribute having a fixed value: @units="angstroms"
-	"model_Cartn_z" DECIMAL ,
--- omit an attribute having a fixed value: @units="angstroms"
-	"model_Cartn_z_esd" DECIMAL ,
-	partial_charge DECIMAL ,
-	pdbx_align INTEGER ,
-	pdbx_alt_atom_id TEXT ,
-	pdbx_alt_comp_id TEXT ,
-	pdbx_aromatic_flag ENUM_chem_comp_atom_pdbx_aromatic_flag ,
-	pdbx_backbone_atom_flag ENUM_chem_comp_atom_pdbx_backbone_atom_flag ,
-	pdbx_c_terminal_atom_flag ENUM_chem_comp_atom_pdbx_c_terminal_atom_flag ,
-	pdbx_component_atom_id TEXT ,
-	pdbx_component_comp_id TEXT ,
-	pdbx_component_entity_id INTEGER ,
-	pdbx_component_id INTEGER ,
-	pdbx_leaving_atom_flag ENUM_chem_comp_atom_pdbx_leaving_atom_flag ,
--- omit an attribute having a fixed value: @units="angstroms"
-	"pdbx_model_Cartn_x_ideal" DECIMAL ,
--- omit an attribute having a fixed value: @units="angstroms"
-	"pdbx_model_Cartn_y_ideal" DECIMAL ,
--- omit an attribute having a fixed value: @units="angstroms"
-	"pdbx_model_Cartn_z_ideal" DECIMAL ,
-	pdbx_n_terminal_atom_flag ENUM_chem_comp_atom_pdbx_n_terminal_atom_flag ,
-	pdbx_ordinal INTEGER ,
-	pdbx_polymer_type ENUM_chem_comp_atom_pdbx_polymer_type ,
-	pdbx_ref_id TEXT ,
-	pdbx_residue_numbering INTEGER ,
-	pdbx_stereo_config ENUM_chem_comp_atom_pdbx_stereo_config ,
-	pdbx_stnd_atom_id TEXT ,
-	substruct_code ENUM_chem_comp_atom_substruct_code ,
-	type_symbol TEXT ,
--- ATTRIBUTE
-	atom_id TEXT NOT NULL ,
--- ATTRIBUTE
-	comp_id TEXT NOT NULL
 );
 
 --
@@ -3181,6 +3190,10 @@ CREATE TABLE chem_comp_angle (
 --
 DROP TYPE IF EXISTS ENUM_chem_comp_bond_pdbx_aromatic_flag CASCADE;
 CREATE TYPE ENUM_chem_comp_bond_pdbx_aromatic_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_bond_pdbx_metal_coordination_flag CASCADE;
+CREATE TYPE ENUM_chem_comp_bond_pdbx_metal_coordination_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_bond_pdbx_metal_pi_flag CASCADE;
+CREATE TYPE ENUM_chem_comp_bond_pdbx_metal_pi_flag AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_chem_comp_bond_pdbx_stereo_config CASCADE;
 CREATE TYPE ENUM_chem_comp_bond_pdbx_stereo_config AS ENUM ( 'E', 'Z', 'N' );
 DROP TYPE IF EXISTS ENUM_chem_comp_bond_value_order CASCADE;
@@ -3189,6 +3202,8 @@ CREATE TABLE chem_comp_bond (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	pdbx_aromatic_flag ENUM_chem_comp_bond_pdbx_aromatic_flag ,
+	pdbx_metal_coordination_flag ENUM_chem_comp_bond_pdbx_metal_coordination_flag ,
+	pdbx_metal_pi_flag ENUM_chem_comp_bond_pdbx_metal_pi_flag ,
 	pdbx_ordinal INTEGER ,
 	pdbx_stereo_config ENUM_chem_comp_bond_pdbx_stereo_config ,
 -- xsd:restriction/xsd:minInclusive="0.0"
@@ -7425,6 +7440,55 @@ CREATE TABLE pdbx_chain_remapping (
 );
 
 --
+-- (quoted from pdbx_chem_comp_atom_coordinationType)
+-- Data items in the PDBX_CHEM_COMP_ATOM_COORDINATION category provide coordination information on selected atoms Example 1 - <PDBx:pdbx_chem_comp_atom_coordinationCategory> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="1" provenance="FindGeo"> <PDBx:atom_id>V</PDBx:atom_id> <PDBx:comp_id>VO4</PDBx:comp_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedron</PDBx:geometry_calculated> <PDBx:geometry_generic>tetrahedral</PDBx:geometry_generic> <PDBx:number>4</PDBx:number> <PDBx:representative_entry_id>1VNH</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="1" provenance="MetalCoord"> <PDBx:atom_id>V</PDBx:atom_id> <PDBx:comp_id>VO4</PDBx:comp_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedral</PDBx:geometry_calculated> <PDBx:geometry_generic>tetrahedral</PDBx:geometry_generic> <PDBx:number>4</PDBx:number> <PDBx:representative_entry_id>1VNH</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="2" provenance="FindGeo"> <PDBx:atom_id>V</PDBx:atom_id> <PDBx:comp_id>VO4</PDBx:comp_id> <PDBx:geometry_abbr>TBP</PDBx:geometry_abbr> <PDBx:geometry_calculated>trigonal bipyramid</PDBx:geometry_calculated> <PDBx:geometry_generic>trigonal bipyramidal</PDBx:geometry_generic> <PDBx:number>5</PDBx:number> <PDBx:representative_entry_id>1RPT</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="2" provenance="MetalCoord"> <PDBx:atom_id>V</PDBx:atom_id> <PDBx:comp_id>VO4</PDBx:comp_id> <PDBx:geometry_abbr>TBP</PDBx:geometry_abbr> <PDBx:geometry_calculated>trigonal-bipyramid</PDBx:geometry_calculated> <PDBx:geometry_generic>trigonal bipyramidal</PDBx:geometry_generic> <PDBx:number>5</PDBx:number> <PDBx:representative_entry_id>1RPT</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> </PDBx:pdbx_chem_comp_atom_coordinationCategory> Example 2 - <PDBx:pdbx_chem_comp_atom_coordinationCategory> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="1" provenance="FindGeo"> <PDBx:atom_id>FE1</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedron</PDBx:geometry_calculated> <PDBx:geometry_generic>tetrahedral</PDBx:geometry_generic> <PDBx:number>4</PDBx:number> <PDBx:representative_entry_id>7NPA</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="1" provenance="MetalCoord"> <PDBx:atom_id>FE1</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedral</PDBx:geometry_calculated> <PDBx:geometry_generic>tetrahedral</PDBx:geometry_generic> <PDBx:number>4</PDBx:number> <PDBx:representative_entry_id>2C42</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="2" provenance="FindGeo"> <PDBx:atom_id>FE2</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedron</PDBx:geometry_calculated> <PDBx:geometry_generic>tetrahedral</PDBx:geometry_generic> <PDBx:number>4</PDBx:number> <PDBx:representative_entry_id>7NPA</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="2" provenance="MetalCoord"> <PDBx:atom_id>FE2</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedral</PDBx:geometry_calculated> <PDBx:geometry_generic>tetrahedral</PDBx:geometry_generic> <PDBx:number>4</PDBx:number> <PDBx:representative_entry_id>8RIU</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="3" provenance="FindGeo"> <PDBx:atom_id>FE3</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedron</PDBx:geometry_calculated> <PDBx:geometry_generic>tetrahedral</PDBx:geometry_generic> <PDBx:number>4</PDBx:number> <PDBx:representative_entry_id>1GTE</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="3" provenance="MetalCoord"> <PDBx:atom_id>FE3</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedral</PDBx:geometry_calculated> <PDBx:geometry_generic>tetrahedral</PDBx:geometry_generic> <PDBx:number>4</PDBx:number> <PDBx:representative_entry_id>7NPA</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="4" provenance="FindGeo"> <PDBx:atom_id>FE4</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedron</PDBx:geometry_calculated> <PDBx:geometry_generic>tetrahedral</PDBx:geometry_generic> <PDBx:number>4</PDBx:number> <PDBx:representative_entry_id>2FD2</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> <PDBx:pdbx_chem_comp_atom_coordination geometry_id="4" provenance="MetalCoord"> <PDBx:atom_id>FE4</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedral</PDBx:geometry_calculated> <PDBx:geometry_generic>tetrahedral</PDBx:geometry_generic> <PDBx:number>4</PDBx:number> <PDBx:representative_entry_id>2FD2</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination> </PDBx:pdbx_chem_comp_atom_coordinationCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_atom_coordination_geometry_generic CASCADE;
+CREATE TYPE ENUM_pdbx_chem_comp_atom_coordination_geometry_generic AS ENUM ( 'linear', 'bent', 'trigonal planar', 'pyramidal', 't shape', 'linear monocapped', 'tetrahedral', 'square planar', 'trigonal pyramidal', 'trigonal bipyramidal with vacancy', 'square pyramidal with vacancy', 'trigonal planar monocapped', 'linear bicapped', 'square non-planar', 'square pyramidal', 'trigonal bipyramidal', 'trigonal prismatic with vacancy', 'square planar monocapped', 'trigonal planar bicapped', 'trigonal planar tricapped', 'octahedral', 'trigonal prismatic', 'pentagonal bipyramidal with vacancy', 'octahedral monocapped with vacancy', 'trigonal prismatic monocapped with vacancy', 'sandwich 4h 2', 'sandwich 4 2', 'sandwich 5 1', 'square planar bicapped', 'hexagonal planar', 'pentagonal bipyramidal', 'trigonal prismatic monocapped', 'octahedral monocapped', 'hexagonal bipyramidal with vacancy', 'cubic with vacancy', 'square antiprismatic with vacancy', 'sandwich 6 1', 'sandwich 4 3', 'sandwich 4h 3', 'sandwich 5 2', 'hexagonal bipyramidal', 'cubic', 'square antiprismatic', 'octahedral bicapped', 'trigonal prismatic bicapped', 'sandwich 4h 4h', 'sandwich 7 1', 'sandwich 4h 4', 'sandwich 5 capped 1', 'sandwich 5 3', 'sandwich 5h 3', 'sandwich 6 2', 'dodecahedral', 'trigonal prism tricapped', 'square antiprismatic monocapped', 'sandwich 7 2', 'sandwich 5 tricapped i', 'sandwich 5 4h', 'sandwich 5 4', 'sandwich 6 3', 'pentagonal prismatic', 'square antiprismatic bicapped', 'sandwich 5 5o', 'sandwich 6 trigonal pyramidal', 'sandwich 6 4', 'sandwich 5 4 i', 'pentagonal antiprismatic', 'sandwich 7 3', 'sandwich 5 tricapped v', 'sandwich 5 square pyramidal', 'sandwich 5 5', 'sandwich 5 pentagonal pyramidal', 'trigonal prismatic all face capped', 'sandwich 5 square pyramidal monocapped', 'sandwich 8 3', 'sandwich 5 4h v', 'sandwich 5 5 i', 'sandwich 6 5', 'seamine', 'cuboctahedral', 'sandwich 5 hexagonal pyramidal', 'sandwich 8 4', 'paired octahedral', 'sandwich 7 5', 'sandwich 6 6', 'sandwich 5 5 v', 'sandwich 6 5 v', 'sandwich 8 5', 'sandwich 5 5 v i', 'sandwich 5 5 v v 3d', 'sandwich 6 6 v', 'sandwich c5 5 i', 'sandwich 5 5 v v', 'sandwich 8 5 i', 'sandwich 5 5 4', 'sandwich 6 6 triangle', 'sandwich 5 5 star', 'penta trigonal planar', 'penta trigonal planar i', 'sandwich 8 8', 'penta trigonal planar v', 'penta trigonal planar i i', 'sandwich 8 8 i', 'sandwich 8 8 v', 'ball', 'irregular' );
+DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_atom_coordination_provenance CASCADE;
+CREATE TYPE ENUM_pdbx_chem_comp_atom_coordination_provenance AS ENUM ( 'PDB', 'FindGeo', 'MetalCoord', 'Author' );
+CREATE TABLE pdbx_chem_comp_atom_coordination (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	atom_id TEXT ,
+	comp_id TEXT ,
+	geometry_abbr TEXT ,
+	geometry_calculated TEXT ,
+	geometry_generic ENUM_pdbx_chem_comp_atom_coordination_geometry_generic ,
+-- xsd:restriction/xsd:maxInclusive="24"
+-- xsd:restriction/xsd:minInclusive="2"
+	number INTEGER CHECK ( number >= 2 AND number <= 24 ) ,
+	representative_entry_id TEXT ,
+-- ATTRIBUTE
+	geometry_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	provenance ENUM_pdbx_chem_comp_atom_coordination_provenance NOT NULL
+);
+
+--
+-- (quoted from pdbx_chem_comp_atom_coordination_sphereType)
+-- Data items in the PDBX_CHEM_COMP_ATOM_COORDINATION_SPHERE category provide geometric coordination information on selected atoms Example 1 - <PDBx:pdbx_chem_comp_atom_coordination_sphereCategory> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="1"> <PDBx:atom_id>V</PDBx:atom_id> <PDBx:comp_id>VO4</PDBx:comp_id> <PDBx:descriptor>@TET{V,O,O,O,O}</PDBx:descriptor> <PDBx:geometry_id>1</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>1VNH</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="2"> <PDBx:atom_id>V</PDBx:atom_id> <PDBx:comp_id>VO4</PDBx:comp_id> <PDBx:descriptor>@TBP{V,N,O,O,O,O}</PDBx:descriptor> <PDBx:geometry_id>2</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>1RPT</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> </PDBx:pdbx_chem_comp_atom_coordination_sphereCategory> Example 2 - <PDBx:pdbx_chem_comp_atom_coordination_sphereCategory> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="1"> <PDBx:atom_id>FE1</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,S,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>1</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>2C42</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="2"> <PDBx:atom_id>FE1</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,N,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>1</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>7LJT</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="3"> <PDBx:atom_id>FE1</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,O,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>1</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>8VPO</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="4"> <PDBx:atom_id>FE2</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,S,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>2</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>8RIU</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="5"> <PDBx:atom_id>FE2</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,N,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>2</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>6Z7R</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="6"> <PDBx:atom_id>FE2</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,O,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>2</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>8RIU</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="7"> <PDBx:atom_id>FE2</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,S,S,S,Cl}</PDBx:descriptor> <PDBx:geometry_id>2</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>8CP4</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="8"> <PDBx:atom_id>FE3</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,S,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>3</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>7NPA</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="9"> <PDBx:atom_id>FE3</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,N,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>3</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>6GAL</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="10"> <PDBx:atom_id>FE3</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,O,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>3</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>7M31</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="11"> <PDBx:atom_id>FE3</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,S,S,S,Cl}</PDBx:descriptor> <PDBx:geometry_id>3</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>7P4M</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="12"> <PDBx:atom_id>FE4</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,S,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>4</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>2FD2</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="13"> <PDBx:atom_id>FE4</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,N,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>4</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>8POW</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="14"> <PDBx:atom_id>FE4</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,O,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>4</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>5EXJ</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> <PDBx:pdbx_chem_comp_atom_coordination_sphere id="15"> <PDBx:atom_id>FE4</PDBx:atom_id> <PDBx:comp_id>SF4</PDBx:comp_id> <PDBx:descriptor>@TET{Fe,S,S,S,Cl}</PDBx:descriptor> <PDBx:geometry_id>4</PDBx:geometry_id> <PDBx:provenance>MetalCoord</PDBx:provenance> <PDBx:representative_entry_id>4S28</PDBx:representative_entry_id> </PDBx:pdbx_chem_comp_atom_coordination_sphere> </PDBx:pdbx_chem_comp_atom_coordination_sphereCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_atom_coordination_sphere_provenance CASCADE;
+CREATE TYPE ENUM_pdbx_chem_comp_atom_coordination_sphere_provenance AS ENUM ( 'PDB', 'FindGeo', 'MetalCoord' );
+CREATE TABLE pdbx_chem_comp_atom_coordination_sphere (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	atom_id TEXT ,
+	comp_id TEXT ,
+	descriptor TEXT ,
+	geometry_id INTEGER ,
+	provenance ENUM_pdbx_chem_comp_atom_coordination_sphere_provenance ,
+	representative_entry_id TEXT ,
+-- ATTRIBUTE
+	id INTEGER NOT NULL
+);
+
+--
 -- (quoted from pdbx_chem_comp_atom_editType)
 -- Data items in the PDBX_CHEM_COMP_ATOM_EDIT category provide atom level editing instructions to be applied to imported chemical components. Example 1 - <PDBx:pdbx_chem_comp_atom_editCategory> <PDBx:pdbx_chem_comp_atom_edit ordinal="1"> <PDBx:atom_id>HN2</PDBx:atom_id> <PDBx:comp_id>LYS</PDBx:comp_id> <PDBx:edit_op>DELETE</PDBx:edit_op> </PDBx:pdbx_chem_comp_atom_edit> </PDBx:pdbx_chem_comp_atom_editCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
@@ -9108,6 +9172,8 @@ DROP TYPE IF EXISTS ENUM_pdbx_depui_status_flags_is_sas_deposited CASCADE;
 CREATE TYPE ENUM_pdbx_depui_status_flags_is_sas_deposited AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_depui_status_flags_merged_fail CASCADE;
 CREATE TYPE ENUM_pdbx_depui_status_flags_merged_fail AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_depui_status_flags_metal_experiment_evidence CASCADE;
+CREATE TYPE ENUM_pdbx_depui_status_flags_metal_experiment_evidence AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_depui_status_flags_post_rel_replacement_reason CASCADE;
 CREATE TYPE ENUM_pdbx_depui_status_flags_post_rel_replacement_reason AS ENUM ( 'Chirality error', 'Polymer geometry', 'Ligand geometry', 'Ligand identity', 'Model completeness', 'Model orientation/position', 'Polymer backbone linkage', 'Atomic clashes', 'Sequence discrepancy', 'Atoms with unrealistic or zero occupancies', 'Real space R-factor', 'Occupancy of atoms on special symmetry positions', 'Missing anisotropic B-factor' );
 DROP TYPE IF EXISTS ENUM_pdbx_depui_status_flags_prediction_target CASCADE;
@@ -9138,6 +9204,7 @@ CREATE TABLE pdbx_depui_status_flags (
 	merge_prior_model_file_name TEXT ,
 	merge_replace_model_file_name TEXT ,
 	merged_fail ENUM_pdbx_depui_status_flags_merged_fail ,
+	metal_experiment_evidence ENUM_pdbx_depui_status_flags_metal_experiment_evidence ,
 	post_rel_replacement_reason ENUM_pdbx_depui_status_flags_post_rel_replacement_reason ,
 	post_rel_replacement_reason_details TEXT ,
 	prediction_target ENUM_pdbx_depui_status_flags_prediction_target ,
@@ -11619,6 +11686,218 @@ CREATE TABLE pdbx_nmr_upload (
 	data_file_id INTEGER NOT NULL ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_nonpoly_atom_coordinationType)
+-- Data items in the PDBX_NONPOLY_ATOM_COORDINATION category provide coordination information on selected atoms Example 1 - based on 1RPT <PDBx:pdbx_nonpoly_atom_coordinationCategory> <PDBx:pdbx_nonpoly_atom_coordination geometry_id="1" provenance="FindGeo"> <PDBx:assessment>Expected</PDBx:assessment> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>V</PDBx:auth_atom_id> <PDBx:auth_comp_id>VO4</PDBx:auth_comp_id> <PDBx:auth_seq_id>343</PDBx:auth_seq_id> <PDBx:geometry_abbr xsi:nil="true" /> <PDBx:geometry_calculated>trigonal bipyramid</PDBx:geometry_calculated> <PDBx:geometry_generic>trigonal bipyramidal</PDBx:geometry_generic> <PDBx:label_asym_id>D</PDBx:label_asym_id> <PDBx:label_atom_id>V</PDBx:label_atom_id> <PDBx:label_comp_id>VO4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:number>5</PDBx:number> <PDBx:software_remark>regular</PDBx:software_remark> </PDBx:pdbx_nonpoly_atom_coordination> <PDBx:pdbx_nonpoly_atom_coordination geometry_id="1" provenance="MetalCoord"> <PDBx:assessment>Expected</PDBx:assessment> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>V</PDBx:auth_atom_id> <PDBx:auth_comp_id>VO4</PDBx:auth_comp_id> <PDBx:auth_seq_id>343</PDBx:auth_seq_id> <PDBx:geometry_abbr>TBP</PDBx:geometry_abbr> <PDBx:geometry_calculated>trigonal-bipyramid</PDBx:geometry_calculated> <PDBx:geometry_generic>trigonal bipyramidal</PDBx:geometry_generic> <PDBx:label_asym_id>D</PDBx:label_asym_id> <PDBx:label_atom_id>V</PDBx:label_atom_id> <PDBx:label_comp_id>VO4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:number>5</PDBx:number> <PDBx:software_remark xsi:nil="true" /> </PDBx:pdbx_nonpoly_atom_coordination> </PDBx:pdbx_nonpoly_atom_coordinationCategory> Example 2 - based on 1HIP: <PDBx:pdbx_nonpoly_atom_coordinationCategory> <PDBx:pdbx_nonpoly_atom_coordination geometry_id="1" provenance="tetrahedral"> <PDBx:assessment>Expected</PDBx:assessment> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE1</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:geometry_abbr xsi:nil="true" /> <PDBx:geometry_calculated>tetrahedron</PDBx:geometry_calculated> <PDBx:geometry_generic>FindGeo</PDBx:geometry_generic> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_atom_id>FE1</PDBx:label_atom_id> <PDBx:label_comp_id>SF4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:number>4</PDBx:number> <PDBx:software_remark>regular</PDBx:software_remark> </PDBx:pdbx_nonpoly_atom_coordination> <PDBx:pdbx_nonpoly_atom_coordination geometry_id="1" provenance="tetrahedral"> <PDBx:assessment>Expected</PDBx:assessment> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE1</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedral</PDBx:geometry_calculated> <PDBx:geometry_generic>MetalCoord</PDBx:geometry_generic> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_atom_id>FE1</PDBx:label_atom_id> <PDBx:label_comp_id>SF4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:number>4</PDBx:number> <PDBx:software_remark xsi:nil="true" /> </PDBx:pdbx_nonpoly_atom_coordination> <PDBx:pdbx_nonpoly_atom_coordination geometry_id="2" provenance="tetrahedral"> <PDBx:assessment>Expected</PDBx:assessment> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE2</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:geometry_abbr xsi:nil="true" /> <PDBx:geometry_calculated>tetrahedron</PDBx:geometry_calculated> <PDBx:geometry_generic>FindGeo</PDBx:geometry_generic> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_atom_id>FE2</PDBx:label_atom_id> <PDBx:label_comp_id>SF4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:number>4</PDBx:number> <PDBx:software_remark>regular</PDBx:software_remark> </PDBx:pdbx_nonpoly_atom_coordination> <PDBx:pdbx_nonpoly_atom_coordination geometry_id="2" provenance="tetrahedral"> <PDBx:assessment>Expected</PDBx:assessment> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE2</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedral</PDBx:geometry_calculated> <PDBx:geometry_generic>MetalCoord</PDBx:geometry_generic> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_atom_id>FE2</PDBx:label_atom_id> <PDBx:label_comp_id>SF4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:number>4</PDBx:number> <PDBx:software_remark xsi:nil="true" /> </PDBx:pdbx_nonpoly_atom_coordination> <PDBx:pdbx_nonpoly_atom_coordination geometry_id="3" provenance="tetrahedral"> <PDBx:assessment>Expected</PDBx:assessment> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE3</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:geometry_abbr xsi:nil="true" /> <PDBx:geometry_calculated>tetrahedron</PDBx:geometry_calculated> <PDBx:geometry_generic>FindGeo</PDBx:geometry_generic> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_atom_id>FE3</PDBx:label_atom_id> <PDBx:label_comp_id>SF4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:number>4</PDBx:number> <PDBx:software_remark>regular</PDBx:software_remark> </PDBx:pdbx_nonpoly_atom_coordination> <PDBx:pdbx_nonpoly_atom_coordination geometry_id="3" provenance="tetrahedral"> <PDBx:assessment>Expected</PDBx:assessment> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE3</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedral</PDBx:geometry_calculated> <PDBx:geometry_generic>MetalCoord</PDBx:geometry_generic> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_atom_id>FE3</PDBx:label_atom_id> <PDBx:label_comp_id>SF4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:number>4</PDBx:number> <PDBx:software_remark xsi:nil="true" /> </PDBx:pdbx_nonpoly_atom_coordination> <PDBx:pdbx_nonpoly_atom_coordination geometry_id="4" provenance="tetrahedral"> <PDBx:assessment>Expected</PDBx:assessment> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE4</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:geometry_abbr xsi:nil="true" /> <PDBx:geometry_calculated>tetrahedron</PDBx:geometry_calculated> <PDBx:geometry_generic>FindGeo</PDBx:geometry_generic> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_atom_id>FE4</PDBx:label_atom_id> <PDBx:label_comp_id>SF4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:number>4</PDBx:number> <PDBx:software_remark>regular</PDBx:software_remark> </PDBx:pdbx_nonpoly_atom_coordination> <PDBx:pdbx_nonpoly_atom_coordination geometry_id="4" provenance="tetrahedral"> <PDBx:assessment>Expected</PDBx:assessment> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE4</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:geometry_abbr>TET</PDBx:geometry_abbr> <PDBx:geometry_calculated>tetrahedral</PDBx:geometry_calculated> <PDBx:geometry_generic>MetalCoord</PDBx:geometry_generic> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_atom_id>FE4</PDBx:label_atom_id> <PDBx:label_comp_id>SF4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:number>4</PDBx:number> <PDBx:software_remark xsi:nil="true" /> </PDBx:pdbx_nonpoly_atom_coordination> </PDBx:pdbx_nonpoly_atom_coordinationCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_atom_coordination_assessment CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_atom_coordination_assessment AS ENUM ( 'Expected', 'Unexpected', 'No reference' );
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_atom_coordination_geometry_generic CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_atom_coordination_geometry_generic AS ENUM ( 'linear', 'bent', 'trigonal planar', 'pyramidal', 't shape', 'linear monocapped', 'tetrahedral', 'square planar', 'trigonal pyramidal', 'trigonal bipyramidal with vacancy', 'square pyramidal with vacancy', 'trigonal planar monocapped', 'linear bicapped', 'square non-planar', 'square pyramidal', 'trigonal bipyramidal', 'trigonal prismatic with vacancy', 'square planar monocapped', 'trigonal planar bicapped', 'trigonal planar tricapped', 'octahedral', 'trigonal prismatic', 'pentagonal bipyramidal with vacancy', 'octahedral monocapped with vacancy', 'trigonal prismatic monocapped with vacancy', 'sandwich 4h 2', 'sandwich 4 2', 'sandwich 5 1', 'square planar bicapped', 'hexagonal planar', 'pentagonal bipyramidal', 'trigonal prismatic monocapped', 'octahedral monocapped', 'hexagonal bipyramidal with vacancy', 'cubic with vacancy', 'square antiprismatic with vacancy', 'sandwich 6 1', 'sandwich 4 3', 'sandwich 4h 3', 'sandwich 5 2', 'hexagonal bipyramidal', 'cubic', 'square antiprismatic', 'octahedral bicapped', 'trigonal prismatic bicapped', 'sandwich 4h 4h', 'sandwich 7 1', 'sandwich 4h 4', 'sandwich 5 capped 1', 'sandwich 5 3', 'sandwich 5h 3', 'sandwich 6 2', 'dodecahedral', 'trigonal prism tricapped', 'square antiprismatic monocapped', 'sandwich 7 2', 'sandwich 5 tricapped i', 'sandwich 5 4h', 'sandwich 5 4', 'sandwich 6 3', 'pentagonal prismatic', 'square antiprismatic bicapped', 'sandwich 5 5o', 'sandwich 6 trigonal pyramidal', 'sandwich 6 4', 'sandwich 5 4 i', 'pentagonal antiprismatic', 'sandwich 7 3', 'sandwich 5 tricapped v', 'sandwich 5 square pyramidal', 'sandwich 5 5', 'sandwich 5 pentagonal pyramidal', 'trigonal prismatic all face capped', 'sandwich 5 square pyramidal monocapped', 'sandwich 8 3', 'sandwich 5 4h v', 'sandwich 5 5 i', 'sandwich 6 5', 'seamine', 'cuboctahedral', 'sandwich 5 hexagonal pyramidal', 'sandwich 8 4', 'paired octahedral', 'sandwich 7 5', 'sandwich 6 6', 'sandwich 5 5 v', 'sandwich 6 5 v', 'sandwich 8 5', 'sandwich 5 5 v i', 'sandwich 5 5 v v 3d', 'sandwich 6 6 v', 'sandwich c5 5 i', 'sandwich 5 5 v v', 'sandwich 8 5 i', 'sandwich 5 5 4', 'sandwich 6 6 triangle', 'sandwich 5 5 star', 'penta trigonal planar', 'penta trigonal planar i', 'sandwich 8 8', 'penta trigonal planar v', 'penta trigonal planar i i', 'sandwich 8 8 i', 'sandwich 8 8 v', 'ball', 'irregular' );
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_atom_coordination_provenance CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_atom_coordination_provenance AS ENUM ( 'PDB', 'FindGeo', 'MetalCoord', 'Author' );
+CREATE TABLE pdbx_nonpoly_atom_coordination (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	"PDB_ins_code" TEXT ,
+	assessment ENUM_pdbx_nonpoly_atom_coordination_assessment ,
+	auth_asym_id TEXT ,
+	auth_atom_id TEXT ,
+	auth_comp_id TEXT ,
+	auth_seq_id TEXT ,
+	geometry_abbr TEXT ,
+	geometry_calculated TEXT ,
+	geometry_generic ENUM_pdbx_nonpoly_atom_coordination_geometry_generic ,
+	label_alt_id TEXT ,
+	label_asym_id TEXT ,
+	label_atom_id TEXT ,
+	label_comp_id TEXT ,
+	label_seq_id INTEGER ,
+-- xsd:restriction/xsd:maxInclusive="24"
+-- xsd:restriction/xsd:minInclusive="2"
+	number INTEGER CHECK ( number >= 2 AND number <= 24 ) ,
+	software_remark TEXT ,
+-- ATTRIBUTE
+	geometry_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	provenance ENUM_pdbx_nonpoly_atom_coordination_provenance NOT NULL
+);
+
+--
+-- (quoted from pdbx_nonpoly_atom_coordination_sphereType)
+-- Data items in the PDBX_NONPOLY_ATOM_COORDINATION_SPHERE category provide geometric coordination information on selected atoms Example 1 - based on 1RPT <PDBx:pdbx_nonpoly_atom_coordination_sphereCategory> <PDBx:pdbx_nonpoly_atom_coordination_sphere id="1" label_asym_id="D" label_atom_id="V" label_comp_id="VO4"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>V</PDBx:auth_atom_id> <PDBx:auth_comp_id>VO4</PDBx:auth_comp_id> <PDBx:auth_seq_id>343</PDBx:auth_seq_id> <PDBx:descriptor>@TBP{V,N,O,O,O,O}</PDBx:descriptor> <PDBx:geometry_id>1</PDBx:geometry_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:provenance>MetalCoord</PDBx:provenance> </PDBx:pdbx_nonpoly_atom_coordination_sphere> </PDBx:pdbx_nonpoly_atom_coordination_sphereCategory> Example 2 - based on 1HIP <PDBx:pdbx_nonpoly_atom_coordination_sphereCategory> <PDBx:pdbx_nonpoly_atom_coordination_sphere id="1" label_asym_id="B" label_atom_id="FE1" label_comp_id="SF4"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE1</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:descriptor>@TET{Fe,S,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>1</PDBx:geometry_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:provenance>MetalCoord</PDBx:provenance> </PDBx:pdbx_nonpoly_atom_coordination_sphere> <PDBx:pdbx_nonpoly_atom_coordination_sphere id="2" label_asym_id="B" label_atom_id="FE1" label_comp_id="SF4"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE1</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:descriptor>@TET{Fe,S,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>2</PDBx:geometry_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:provenance>MetalCoord</PDBx:provenance> </PDBx:pdbx_nonpoly_atom_coordination_sphere> <PDBx:pdbx_nonpoly_atom_coordination_sphere id="3" label_asym_id="B" label_atom_id="FE1" label_comp_id="SF4"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE1</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:descriptor>@TET{Fe,S,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>3</PDBx:geometry_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:provenance>MetalCoord</PDBx:provenance> </PDBx:pdbx_nonpoly_atom_coordination_sphere> <PDBx:pdbx_nonpoly_atom_coordination_sphere id="4" label_asym_id="B" label_atom_id="FE1" label_comp_id="SF4"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE1</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:descriptor>@TET{Fe,S,S,S,S}</PDBx:descriptor> <PDBx:geometry_id>4</PDBx:geometry_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:provenance>MetalCoord</PDBx:provenance> </PDBx:pdbx_nonpoly_atom_coordination_sphere> </PDBx:pdbx_nonpoly_atom_coordination_sphereCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_atom_coordination_sphere_provenance CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_atom_coordination_sphere_provenance AS ENUM ( 'PDB', 'FindGeo', 'MetalCoord' );
+CREATE TABLE pdbx_nonpoly_atom_coordination_sphere (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	"PDB_ins_code" TEXT ,
+	auth_asym_id TEXT ,
+	auth_atom_id TEXT ,
+	auth_comp_id TEXT ,
+	auth_seq_id TEXT ,
+	descriptor TEXT ,
+	geometry_id INTEGER ,
+	label_alt_id TEXT ,
+	label_seq_id INTEGER ,
+	provenance ENUM_pdbx_nonpoly_atom_coordination_sphere_provenance ,
+-- ATTRIBUTE
+	id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	label_asym_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	label_atom_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	label_comp_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_nonpoly_atom_coordination_sphere_orderType)
+-- This category describes the order of the atoms in the coordination sphere category: pdbx_nonpoly_atom_coordination_sphere. The order of the atoms is the encoding of the 3D arrangement of atoms for a particular coordination geometry. Example 1 - based on 1RPT <PDBx:pdbx_nonpoly_atom_coordination_sphere_orderCategory> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="1" label_atom_id="NE2" label_comp_id="HIS" sphere_id="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>NE2</PDBx:auth_atom_id> <PDBx:auth_comp_id>HIS</PDBx:auth_comp_id> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="2" label_atom_id="O1" label_comp_id="VO4" sphere_id="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>O1</PDBx:auth_atom_id> <PDBx:auth_comp_id>VO4</PDBx:auth_comp_id> <PDBx:auth_seq_id>343</PDBx:auth_seq_id> <PDBx:label_asym_id>D</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="3" label_atom_id="O2" label_comp_id="VO4" sphere_id="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>O2</PDBx:auth_atom_id> <PDBx:auth_comp_id>VO4</PDBx:auth_comp_id> <PDBx:auth_seq_id>343</PDBx:auth_seq_id> <PDBx:label_asym_id>D</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="4" label_atom_id="O3" label_comp_id="VO4" sphere_id="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>O3</PDBx:auth_atom_id> <PDBx:auth_comp_id>VO4</PDBx:auth_comp_id> <PDBx:auth_seq_id>343</PDBx:auth_seq_id> <PDBx:label_asym_id>D</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="5" label_atom_id="O4" label_comp_id="VO4" sphere_id="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>O4</PDBx:auth_atom_id> <PDBx:auth_comp_id>VO4</PDBx:auth_comp_id> <PDBx:auth_seq_id>343</PDBx:auth_seq_id> <PDBx:label_asym_id>D</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> </PDBx:pdbx_nonpoly_atom_coordination_sphere_orderCategory> Example 2 - based on 1HIP <PDBx:pdbx_nonpoly_atom_coordination_sphere_orderCategory> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="1" label_atom_id="FE1" label_comp_id="SF4" sphere_id="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE1</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="2" label_atom_id="FE1" label_comp_id="SF4" sphere_id="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE1</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="3" label_atom_id="FE1" label_comp_id="SF4" sphere_id="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE1</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="4" label_atom_id="SG" label_comp_id="CYS" sphere_id="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>SG</PDBx:auth_atom_id> <PDBx:auth_comp_id>CYS</PDBx:auth_comp_id> <PDBx:auth_seq_id>43</PDBx:auth_seq_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_seq_id>43</PDBx:label_seq_id> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="1" label_atom_id="FE2" label_comp_id="SF4" sphere_id="2"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE2</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="2" label_atom_id="FE2" label_comp_id="SF4" sphere_id="2"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE2</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="3" label_atom_id="FE2" label_comp_id="SF4" sphere_id="2"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE2</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="4" label_atom_id="SG" label_comp_id="CYS" sphere_id="2"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>SG</PDBx:auth_atom_id> <PDBx:auth_comp_id>CYS</PDBx:auth_comp_id> <PDBx:auth_seq_id>46</PDBx:auth_seq_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_seq_id>46</PDBx:label_seq_id> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="1" label_atom_id="FE3" label_comp_id="SF4" sphere_id="3"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE3</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="2" label_atom_id="FE3" label_comp_id="SF4" sphere_id="3"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE3</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="3" label_atom_id="FE3" label_comp_id="SF4" sphere_id="3"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE3</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="4" label_atom_id="SG" label_comp_id="CYS" sphere_id="3"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>SG</PDBx:auth_atom_id> <PDBx:auth_comp_id>CYS</PDBx:auth_comp_id> <PDBx:auth_seq_id>63</PDBx:auth_seq_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_seq_id>63</PDBx:label_seq_id> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="1" label_atom_id="FE4" label_comp_id="SF4" sphere_id="4"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE4</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="2" label_atom_id="FE4" label_comp_id="SF4" sphere_id="4"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE4</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="3" label_atom_id="FE4" label_comp_id="SF4" sphere_id="4"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>FE4</PDBx:auth_atom_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> <PDBx:pdbx_nonpoly_atom_coordination_sphere_order atom_place="4" label_atom_id="SG" label_comp_id="CYS" sphere_id="4"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>SG</PDBx:auth_atom_id> <PDBx:auth_comp_id>CYS</PDBx:auth_comp_id> <PDBx:auth_seq_id>77</PDBx:auth_seq_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_seq_id>77</PDBx:label_seq_id> <PDBx:symmetry_operation>x,y,z</PDBx:symmetry_operation> </PDBx:pdbx_nonpoly_atom_coordination_sphere_order> </PDBx:pdbx_nonpoly_atom_coordination_sphere_orderCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_nonpoly_atom_coordination_sphere_order (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	"PDB_ins_code" TEXT ,
+	auth_asym_id TEXT ,
+	auth_atom_id TEXT ,
+	auth_comp_id TEXT ,
+	auth_seq_id TEXT ,
+	label_alt_id TEXT ,
+	label_asym_id TEXT ,
+	label_seq_id INTEGER ,
+	symmetry_operation TEXT ,
+-- ATTRIBUTE
+	atom_place INTEGER NOT NULL ,
+-- ATTRIBUTE
+	label_atom_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	label_comp_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	sphere_id INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_nonpoly_atom_featureType)
+-- Data items in the PDBX_NONPOLY_ATOM_FEATURE category provide a selected list of atom level features for the chemical component. Example 1 - based on 1RPT <PDBx:pdbx_nonpoly_atom_featureCategory> <PDBx:pdbx_nonpoly_atom_feature ordinal="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>V</PDBx:auth_atom_id> <PDBx:auth_comp_id>VO4</PDBx:auth_comp_id> <PDBx:auth_seq_id>343</PDBx:auth_seq_id> <PDBx:label_asym_id>D</PDBx:label_asym_id> <PDBx:label_atom_id>V</PDBx:label_atom_id> <PDBx:label_comp_id>VO4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:provenance>Author</PDBx:provenance> <PDBx:type>Oxidation state</PDBx:type> <PDBx:value>5</PDBx:value> </PDBx:pdbx_nonpoly_atom_feature> </PDBx:pdbx_nonpoly_atom_featureCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_atom_feature_provenance CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_atom_feature_provenance AS ENUM ( 'PDB', 'Author' );
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_atom_feature_type CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_atom_feature_type AS ENUM ( 'Oxidation state' );
+CREATE TABLE pdbx_nonpoly_atom_feature (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	"PDB_ins_code" TEXT ,
+	auth_asym_id TEXT ,
+	auth_atom_id TEXT ,
+	auth_comp_id TEXT ,
+	auth_seq_id TEXT ,
+	label_alt_id TEXT ,
+	label_asym_id TEXT ,
+	label_atom_id TEXT ,
+	label_comp_id TEXT ,
+	label_seq_id INTEGER ,
+	provenance ENUM_pdbx_nonpoly_atom_feature_provenance ,
+	type ENUM_pdbx_nonpoly_atom_feature_type ,
+	value TEXT ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_nonpoly_atom_feature_evidenceType)
+-- Data items in the PDBX_NONPOLY_ATOM_FEATURE_EVIDENCE category provide a selected list of atom level features for the chemical component. Example 1 - based on 1RPT <PDBx:pdbx_nonpoly_atom_feature_evidenceCategory> <PDBx:pdbx_nonpoly_atom_feature_evidence ordinal="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>V</PDBx:auth_atom_id> <PDBx:auth_comp_id>VO4</PDBx:auth_comp_id> <PDBx:auth_seq_id>343</PDBx:auth_seq_id> <PDBx:experimental_support>Anomalous scattering</PDBx:experimental_support> <PDBx:label_asym_id>D</PDBx:label_asym_id> <PDBx:label_atom_id>V</PDBx:label_atom_id> <PDBx:label_comp_id>VO4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:type>Metal identity</PDBx:type> </PDBx:pdbx_nonpoly_atom_feature_evidence> <PDBx:pdbx_nonpoly_atom_feature_evidence ordinal="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>V</PDBx:auth_atom_id> <PDBx:auth_comp_id>VO4</PDBx:auth_comp_id> <PDBx:auth_seq_id>343</PDBx:auth_seq_id> <PDBx:experimental_support>UV-Vis spectroscopy</PDBx:experimental_support> <PDBx:label_asym_id>D</PDBx:label_asym_id> <PDBx:label_atom_id>V</PDBx:label_atom_id> <PDBx:label_comp_id>VO4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:type>Oxidation state</PDBx:type> </PDBx:pdbx_nonpoly_atom_feature_evidence> </PDBx:pdbx_nonpoly_atom_feature_evidenceCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_atom_feature_evidence_experimental_support CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_atom_feature_evidence_experimental_support AS ENUM ( 'Anomalous scattering', 'Inductively coupled plasma mass spectrometry', 'Infrared spectroscopy', 'Electron paramagnetic resonance spectroscopy', 'Mossbauer spectroscopy', 'Raman spectroscopy', 'UV-Vis spectroscopy', 'X-ray absorption spectroscopy', 'X-ray fluorescence', 'Other' );
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_atom_feature_evidence_type CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_atom_feature_evidence_type AS ENUM ( 'Oxidation state', 'Metal identity' );
+CREATE TABLE pdbx_nonpoly_atom_feature_evidence (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	"PDB_ins_code" TEXT ,
+	auth_asym_id TEXT ,
+	auth_atom_id TEXT ,
+	auth_comp_id TEXT ,
+	auth_seq_id TEXT ,
+	details TEXT ,
+	experimental_support ENUM_pdbx_nonpoly_atom_feature_evidence_experimental_support ,
+	label_alt_id TEXT ,
+	label_asym_id TEXT ,
+	label_atom_id TEXT ,
+	label_comp_id TEXT ,
+	label_seq_id INTEGER ,
+	type ENUM_pdbx_nonpoly_atom_feature_evidence_type ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_nonpoly_featureType)
+-- Data items in the PDBX_NONPOLY_FEATURE category provide a selected list of atom level features for the chemical component. Example 1 - based on 1HIP <PDBx:pdbx_nonpoly_featureCategory> <PDBx:pdbx_nonpoly_feature ordinal="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_comp_id>SF4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:provenance>Author</PDBx:provenance> <PDBx:type>Group charge</PDBx:type> <PDBx:value>2</PDBx:value> </PDBx:pdbx_nonpoly_feature> </PDBx:pdbx_nonpoly_featureCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_feature_provenance CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_feature_provenance AS ENUM ( 'PDB', 'Author' );
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_feature_type CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_feature_type AS ENUM ( 'Group charge' );
+CREATE TABLE pdbx_nonpoly_feature (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	"PDB_ins_code" TEXT ,
+	auth_asym_id TEXT ,
+	auth_comp_id TEXT ,
+	auth_seq_id TEXT ,
+	label_asym_id TEXT ,
+	label_comp_id TEXT ,
+	label_seq_id INTEGER ,
+	provenance ENUM_pdbx_nonpoly_feature_provenance ,
+	type ENUM_pdbx_nonpoly_feature_type ,
+	value TEXT ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_nonpoly_feature_evidenceType)
+-- Data items in the PDBX_NONPOLY_FEATURE_EVIDENCE category provide a selected list of asym level features for the chemical component. Example 1 - <PDBx:pdbx_nonpoly_feature_evidenceCategory> <PDBx:pdbx_nonpoly_feature_evidence ordinal="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>SF4</PDBx:auth_comp_id> <PDBx:auth_seq_id>86</PDBx:auth_seq_id> <PDBx:experimental_support>Electron paramagnetic resonance spectrometry</PDBx:experimental_support> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_comp_id>SF4</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:type>Group charge</PDBx:type> </PDBx:pdbx_nonpoly_feature_evidence> </PDBx:pdbx_nonpoly_feature_evidenceCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_feature_evidence_experimental_support CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_feature_evidence_experimental_support AS ENUM ( 'Electron paramagnetic resonance spectroscopy', 'Mossbauer spectroscopy', 'UV-Vis spectroscopy', 'Other' );
+DROP TYPE IF EXISTS ENUM_pdbx_nonpoly_feature_evidence_type CASCADE;
+CREATE TYPE ENUM_pdbx_nonpoly_feature_evidence_type AS ENUM ( 'Group charge' );
+CREATE TABLE pdbx_nonpoly_feature_evidence (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	"PDB_ins_code" TEXT ,
+	auth_asym_id TEXT ,
+	auth_comp_id TEXT ,
+	auth_seq_id TEXT ,
+	details TEXT ,
+	experimental_support ENUM_pdbx_nonpoly_feature_evidence_experimental_support ,
+	label_asym_id TEXT ,
+	label_comp_id TEXT ,
+	label_seq_id INTEGER ,
+	type ENUM_pdbx_nonpoly_feature_evidence_type ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -17851,6 +18130,12 @@ CREATE TABLE valence_ref (
 -- (derived from xsd:key[@name='pdbx_chain_remappingKey_0'])
 --ALTER TABLE pdbx_chain_remapping ADD CONSTRAINT UNQ_pdbx_chain_remapping UNIQUE ( document_id, entity_id, label_asym_id );
 
+-- (derived from xsd:key[@name='pdbx_chem_comp_atom_coordinationKey_0'])
+--ALTER TABLE pdbx_chem_comp_atom_coordination ADD CONSTRAINT UNQ_pdbx_chem_comp_atom_coordination UNIQUE ( document_id, geometry_id, provenance );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_atom_coordination_sphereKey_0'])
+--ALTER TABLE pdbx_chem_comp_atom_coordination_sphere ADD CONSTRAINT UNQ_pdbx_chem_comp_atom_coordination_sphere UNIQUE ( document_id, id );
+
 -- (derived from xsd:key[@name='pdbx_chem_comp_atom_editKey_0'])
 --ALTER TABLE pdbx_chem_comp_atom_edit ADD CONSTRAINT UNQ_pdbx_chem_comp_atom_edit UNIQUE ( document_id, ordinal );
 
@@ -18384,6 +18669,27 @@ CREATE TABLE valence_ref (
 
 -- (derived from xsd:key[@name='pdbx_nmr_uploadKey_0'])
 --ALTER TABLE pdbx_nmr_upload ADD CONSTRAINT UNQ_pdbx_nmr_upload UNIQUE ( document_id, data_file_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_nonpoly_atom_coordinationKey_0'])
+--ALTER TABLE pdbx_nonpoly_atom_coordination ADD CONSTRAINT UNQ_pdbx_nonpoly_atom_coordination UNIQUE ( document_id, geometry_id, provenance );
+
+-- (derived from xsd:key[@name='pdbx_nonpoly_atom_coordination_sphereKey_0'])
+--ALTER TABLE pdbx_nonpoly_atom_coordination_sphere ADD CONSTRAINT UNQ_pdbx_nonpoly_atom_coordination_sphere UNIQUE ( document_id, id, label_asym_id, label_atom_id, label_comp_id );
+
+-- (derived from xsd:key[@name='pdbx_nonpoly_atom_coordination_sphere_orderKey_0'])
+--ALTER TABLE pdbx_nonpoly_atom_coordination_sphere_order ADD CONSTRAINT UNQ_pdbx_nonpoly_atom_coordination_sphere_order UNIQUE ( document_id, atom_place, label_atom_id, label_comp_id, sphere_id );
+
+-- (derived from xsd:key[@name='pdbx_nonpoly_atom_featureKey_0'])
+--ALTER TABLE pdbx_nonpoly_atom_feature ADD CONSTRAINT UNQ_pdbx_nonpoly_atom_feature UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_nonpoly_atom_feature_evidenceKey_0'])
+--ALTER TABLE pdbx_nonpoly_atom_feature_evidence ADD CONSTRAINT UNQ_pdbx_nonpoly_atom_feature_evidence UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_nonpoly_featureKey_0'])
+--ALTER TABLE pdbx_nonpoly_feature ADD CONSTRAINT UNQ_pdbx_nonpoly_feature UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_nonpoly_feature_evidenceKey_0'])
+--ALTER TABLE pdbx_nonpoly_feature_evidence ADD CONSTRAINT UNQ_pdbx_nonpoly_feature_evidence UNIQUE ( document_id, ordinal );
 
 -- (derived from xsd:key[@name='pdbx_nonpoly_schemeKey_0'])
 --ALTER TABLE pdbx_nonpoly_scheme ADD CONSTRAINT UNQ_pdbx_nonpoly_scheme UNIQUE ( document_id, asym_id, ndb_seq_num );
@@ -19169,10 +19475,22 @@ CREATE TABLE valence_ref (
 --ALTER TABLE chem_comp_tor ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_2_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_3_0'])
---ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_3_0_0 FOREIGN KEY ( atom_id ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_atom_coordination ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_3_0_0 FOREIGN KEY ( atom_id ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_3_0'])
---ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_3_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_atom_coordination ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_3_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_4_0'])
+--ALTER TABLE pdbx_chem_comp_atom_coordination_sphere ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_4_0_0 FOREIGN KEY ( atom_id ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_4_0'])
+--ALTER TABLE pdbx_chem_comp_atom_coordination_sphere ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_4_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_5_0'])
+--ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_5_0_0 FOREIGN KEY ( atom_id ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_5_0'])
+--ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_5_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_linkKeyref_0_0_0_0'])
 --ALTER TABLE chem_comp_link ADD CONSTRAINT KR_chem_linkKeyref_0_0_0_0 FOREIGN KEY ( link_id ) REFERENCES chem_link ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

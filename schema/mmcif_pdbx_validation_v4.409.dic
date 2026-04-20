@@ -1474,9 +1474,9 @@ data_mmcif_pdbx_validation.dic
 ;
   4.409   2026-04-20
 ;
->   + Add new DECTRIS detectors to _diffrn_detector.type enumeraton"
->   + Add ModelAngelo to _em_software.name enumeration
->   + Add "ALBA BEAMLINE XAIRA" to _diffrn_source.type enumeration
+>   + Add new DECTRIS detectors to _diffrn_detector.type enumeraton" # merged
+>   + Add ModelAngelo to _em_software.name enumeration # merged
+>   + Add "ALBA BEAMLINE XAIRA" to _diffrn_source.type enumeration # merged
 ;
 
 #
