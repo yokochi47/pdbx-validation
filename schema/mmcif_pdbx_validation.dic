@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Mon Apr 20 13:39:51 JST 2026
+# Date:  Mon Apr 20 14:02:35 JST 2026
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.408)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.409)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.07.xsd
 #         - a XML schema for wwPDB validation reports, v6.07, rev. 2026-03-30
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.408
+    _dictionary.version         4.409
 #
     loop_
     _dictionary_history.version
@@ -1468,9 +1468,15 @@ data_mmcif_pdbx_validation.dic
 ;
   4.408   2026-04-20
 ;
->   + Correct SHUIUMU TOTEM microscope names in _em_imgaing.microscope_model enumeration
->   + Correct symmetry_operation regular expression to include lower case z
->   + Adjust advisory limits for _reflns_shell.pdbx_Rrim_I_all
+>   + Correct SHUIUMU TOTEM microscope names in _em_imgaing.microscope_model enumeration # merged
+>   + Correct symmetry_operation regular expression to include lower case z # merged
+>   + Adjust advisory limits for _reflns_shell.pdbx_Rrim_I_all # merged
+;
+  4.409   2026-04-20
+;
+>   + Add new DECTRIS detectors to _diffrn_detector.type enumeraton"
+>   + Add ModelAngelo to _em_software.name enumeration
+>   + Add "ALBA BEAMLINE XAIRA" to _diffrn_source.type enumeration
 ;
 
 #
@@ -2628,6 +2634,8 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "CS-PAD CXI-2"                    PIXEL
       "_diffrn_detector.type"  "CS-PAD XPP"                      PIXEL
       "_diffrn_detector.type"  "Cyberstar LaBr3"                 SCINTILLATION
+      "_diffrn_detector.type"  "DECTRIS ARINA"                   PIXEL
+      "_diffrn_detector.type"  "DECTRIS ELA"                     PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER R 1M"              PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER R 4M"              PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER X 500K"            PIXEL
@@ -2665,6 +2673,7 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "DECTRIS PILATUS 6M"              PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS 6M-F"            PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS 12M"             PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS 12M-DSL"         PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS3 100K-M"         PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS3 2M"             PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS3 6M"             PIXEL
@@ -2701,6 +2710,8 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "DECTRIS PILATUS4 XE 4M"          PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS4 XE CdTe 2M"     PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS4 XE CdTe 4M"     PIXEL
+      "_diffrn_detector.type"  "DECTRIS QUADRO"                  PIXEL
+      "_diffrn_detector.type"  "DECTRIS SINGLA"                  PIXEL
       "_diffrn_detector.type"  ENRAF-NONIUS                      .
       "_diffrn_detector.type"  "ENRAF-NONIUS CAD4"               DIFFRACTOMETER
       "_diffrn_detector.type"  "ENRAF-NONIUS FAST"               DIFFRACTOMETER
@@ -4825,6 +4836,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "AichiSR BEAMLINE BL2S1"                         SYNCHROTRON
      "_diffrn_source.type"  "Agilent SuperNova"                              "SEALED TUBE"
      "_diffrn_source.type"  "ALBA BEAMLINE XALOC"                            SYNCHROTRON
+     "_diffrn_source.type"  "ALBA BEAMLINE XAIRA"                            SYNCHROTRON
      "_diffrn_source.type"  "ALS BEAMLINE 2.0.1"                             SYNCHROTRON
      "_diffrn_source.type"  "ALS BEAMLINE 4.2.2"                             SYNCHROTRON
      "_diffrn_source.type"  "ALS BEAMLINE 5.0.1"                             SYNCHROTRON
@@ -26294,6 +26306,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  X9A             .
      "_diffrn_source.pdbx_synchrotron_beamline"  X9B             .
      "_diffrn_source.pdbx_synchrotron_beamline"  XALOC           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  XAIRA           .
      "_diffrn_source.pdbx_synchrotron_beamline"  XPP             .
    #
 save_
@@ -39552,7 +39565,7 @@ save__reflns.pdbx_Rrim_I_all
     _item.mandatory_code          no
     _item_type.code               float
     _item_range.minimum           0.0
-    _item_range.maximum           5.0
+    _item_range.maximum           .
     loop_
     _pdbx_item_range.name
     _pdbx_item_range.minimum
@@ -56115,6 +56128,7 @@ save__em_software.name
         '_em_software.name'  MATLAB                             .
         '_em_software.name'  MDFF                               .
         '_em_software.name'  MemBrain                           .
+        '_em_software.name'  ModelAngelo                        .
         '_em_software.name'  MODELLER                           .
         '_em_software.name'  MOLREP                             .
         '_em_software.name'  MPSA                               .

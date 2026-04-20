@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.408
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.408: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.409
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.409: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -16157,9 +16157,8 @@ CREATE TABLE reflns (
 	"pdbx_Rpim_I_all" DECIMAL CHECK ( "pdbx_Rpim_I_all" >= 0.0 ) ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_Rpim_I_all_anomalous" DECIMAL CHECK ( "pdbx_Rpim_I_all_anomalous" >= 0.0 ) ,
--- xsd:restriction/xsd:maxInclusive="5.0"
 -- xsd:restriction/xsd:minInclusive="0.0"
-	"pdbx_Rrim_I_all" DECIMAL CHECK ( "pdbx_Rrim_I_all" >= 0.0 AND "pdbx_Rrim_I_all" <= 5.0 ) ,
+	"pdbx_Rrim_I_all" DECIMAL CHECK ( "pdbx_Rrim_I_all" >= 0.0 ) ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_Rrim_I_all_anomalous" DECIMAL CHECK ( "pdbx_Rrim_I_all_anomalous" >= 0.0 ) ,
 	"pdbx_Rsym_value" DECIMAL ,

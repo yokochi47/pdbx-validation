@@ -1468,9 +1468,9 @@ data_mmcif_pdbx_validation.dic
 ;
   4.408   2026-04-20
 ;
->   + Correct SHUIUMU TOTEM microscope names in _em_imgaing.microscope_model enumeration
->   + Correct symmetry_operation regular expression to include lower case z
->   + Adjust advisory limits for _reflns_shell.pdbx_Rrim_I_all
+>   + Correct SHUIUMU TOTEM microscope names in _em_imgaing.microscope_model enumeration # merged
+>   + Correct symmetry_operation regular expression to include lower case z # merged
+>   + Adjust advisory limits for _reflns_shell.pdbx_Rrim_I_all # merged
 ;
 
 #

@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.408
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.408, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.409
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.409, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -7897,9 +7897,8 @@ CREATE TABLE reflns (
 	"pdbx_Rmerge_I_obs" DECIMAL CHECK ( "pdbx_Rmerge_I_obs" >= 0.0 AND "pdbx_Rmerge_I_obs" <= 10.0 ) ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_Rpim_I_all" DECIMAL CHECK ( "pdbx_Rpim_I_all" >= 0.0 ) ,
--- xsd:restriction/xsd:maxInclusive="5.0"
 -- xsd:restriction/xsd:minInclusive="0.0"
-	"pdbx_Rrim_I_all" DECIMAL CHECK ( "pdbx_Rrim_I_all" >= 0.0 AND "pdbx_Rrim_I_all" <= 5.0 ) ,
+	"pdbx_Rrim_I_all" DECIMAL CHECK ( "pdbx_Rrim_I_all" >= 0.0 ) ,
 	"pdbx_Rsym_value" DECIMAL ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_absDiff_over_sigma_anomalous" DECIMAL CHECK ( "pdbx_absDiff_over_sigma_anomalous" >= 0.0 ) ,
