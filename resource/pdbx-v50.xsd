@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pdbml.pdb.org/schema/pdbx-v50.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xsd:annotation>
-    <xsd:appinfo>PDBML Schema v5.411</xsd:appinfo>
+    <xsd:appinfo>PDBML Schema v5.412</xsd:appinfo>
     <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xml:lang="en">
 
-PDBML Schema translated from the PDBx/mmCIF Dictionary v5.411:
+PDBML Schema translated from the PDBx/mmCIF Dictionary v5.412:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
-	</xsd:documentation>
+        </xsd:documentation>
   </xsd:annotation>
   <xsd:complexType name="array_dataType">
     <xsd:annotation>
@@ -20466,7 +20466,7 @@ Final sample thickness
               <xsd:complexType>
                 <xsd:simpleContent>
                   <xsd:extension base="xsd:string">
-                    <xsd:attribute fixed="nanometers" name="units" type="xsd:string" use="optional"/>
+                    <xsd:attribute fixed="nanometres" name="units" type="xsd:string" use="optional"/>
                   </xsd:extension>
                 </xsd:simpleContent>
               </xsd:complexType>
@@ -21268,7 +21268,7 @@ in microns.
             <xsd:element name="calibrated_defocus_max" minOccurs="0" maxOccurs="1" nillable="true">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
-The maximum calibrated defocus value of the objective lens (in nanometers) used
+The maximum calibrated defocus value of the objective lens (in nanometres) used
 to obtain the recorded images. Negative values refer to overfocus.
 5000
                         </xsd:documentation>
@@ -21283,7 +21283,7 @@ to obtain the recorded images. Negative values refer to overfocus.
             <xsd:element name="calibrated_defocus_min" minOccurs="0" maxOccurs="1" nillable="true">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
-The minimum calibrated defocus value of the objective lens (in nanometers) used
+The minimum calibrated defocus value of the objective lens (in nanometres) used
 to obtain the recorded images. Negative values refer to overfocus.
 1200
                         </xsd:documentation>
@@ -21291,7 +21291,7 @@ to obtain the recorded images. Negative values refer to overfocus.
               <xsd:complexType>
                 <xsd:simpleContent>
                   <xsd:extension base="xsd:decimal">
-                    <xsd:attribute fixed="nanometers" name="units" type="xsd:string" use="optional"/>
+                    <xsd:attribute fixed="nanometres" name="units" type="xsd:string" use="optional"/>
                   </xsd:extension>
                 </xsd:simpleContent>
               </xsd:complexType>
@@ -21586,7 +21586,7 @@ of the objective lens.
             <xsd:element name="nominal_defocus_max" minOccurs="0" maxOccurs="1" nillable="true">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
-The maximum defocus value of the objective lens (in nanometers) used
+The maximum defocus value of the objective lens (in nanometres) used
 to obtain the recorded images. Negative values refer to overfocus.
 5000
                         </xsd:documentation>
@@ -21594,7 +21594,7 @@ to obtain the recorded images. Negative values refer to overfocus.
               <xsd:complexType>
                 <xsd:simpleContent>
                   <xsd:extension base="xsd:decimal">
-                    <xsd:attribute fixed="nanometers" name="units" type="xsd:string" use="optional"/>
+                    <xsd:attribute fixed="nanometres" name="units" type="xsd:string" use="optional"/>
                   </xsd:extension>
                 </xsd:simpleContent>
               </xsd:complexType>
@@ -21602,7 +21602,7 @@ to obtain the recorded images. Negative values refer to overfocus.
             <xsd:element name="nominal_defocus_min" minOccurs="0" maxOccurs="1" nillable="true">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
-The minimum defocus value of the objective lens (in nanometers) used
+The minimum defocus value of the objective lens (in nanometres) used
 to obtain the recorded images. Negative values refer to overfocus.
 1200
                         </xsd:documentation>
@@ -21610,7 +21610,7 @@ to obtain the recorded images. Negative values refer to overfocus.
               <xsd:complexType>
                 <xsd:simpleContent>
                   <xsd:extension base="xsd:decimal">
-                    <xsd:attribute fixed="nanometers" name="units" type="xsd:string" use="optional"/>
+                    <xsd:attribute fixed="nanometres" name="units" type="xsd:string" use="optional"/>
                   </xsd:extension>
                 </xsd:simpleContent>
               </xsd:complexType>
@@ -24440,14 +24440,14 @@ Foreign key relationship to the EM TOMOGRAPHY SPECIMEN category
             <xsd:element name="final_thickness" minOccurs="1" maxOccurs="1">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
-Final thickness of the sectioned sample, in nanometers
+Final thickness of the sectioned sample, in nanometres
 60
                         </xsd:documentation>
               </xsd:annotation>
               <xsd:complexType>
                 <xsd:simpleContent>
                   <xsd:extension base="xsd:string">
-                    <xsd:attribute fixed="nanometers" name="units" type="xsd:string" use="optional"/>
+                    <xsd:attribute fixed="nanometres" name="units" type="xsd:string" use="optional"/>
                   </xsd:extension>
                 </xsd:simpleContent>
               </xsd:complexType>
@@ -66795,11 +66795,27 @@ For external sources, the name of the resource.
               </xsd:annotation>
               <xsd:simpleType>
                 <xsd:restriction base="xsd:string">
-                  <xsd:enumeration value="ProteinDiffraction"/>
+                  <xsd:enumeration value="Apollo - University of Cambridge Repository"/>
                   <xsd:enumeration value="CXIDB"/>
-                  <xsd:enumeration value="SBGrid"/>
-                  <xsd:enumeration value="XRDa"/>
+                  <xsd:enumeration value="DRYAD Database"/>
                   <xsd:enumeration value="EMPIAR"/>
+                  <xsd:enumeration value="ESRF Data Portal"/>
+                  <xsd:enumeration value="ETH Zurich Research Collection"/>
+                  <xsd:enumeration value="Etsin"/>
+                  <xsd:enumeration value="Integrated Resource for Reproducibility in Macromolecular Crystallography"/>
+                  <xsd:enumeration value="International Union of Crystallography"/>
+                  <xsd:enumeration value="KAUST Repository"/>
+                  <xsd:enumeration value="Keele Data Repository"/>
+                  <xsd:enumeration value="Manchester eScholar Services"/>
+                  <xsd:enumeration value="MAXIV Public Data Repository"/>
+                  <xsd:enumeration value="Mendeley Data"/>
+                  <xsd:enumeration value="MX-RDR (Macromolecular Xtallography Raw Data Repository)"/>
+                  <xsd:enumeration value="ProteinDiffraction"/>
+                  <xsd:enumeration value="PSI Public Data Repository"/>
+                  <xsd:enumeration value="RMIT University Figshare"/>
+                  <xsd:enumeration value="SBGrid Data Bank"/>
+                  <xsd:enumeration value="Xtal Raw Data Archive"/>
+                  <xsd:enumeration value="Zenodo"/>
                 </xsd:restriction>
               </xsd:simpleType>
             </xsd:element>
@@ -71135,6 +71151,9 @@ PDBX_STRUCT_ASSEMBLY_GEN_DEPOSITOR_INFO list.
     <xsd:annotation>
       <xsd:documentation xml:lang="en">
 Properties and features of structural assemblies.
+ABSA (A^2) is the "Total buried surface are [A^2}"
+SSA (A^2) is the "Surface area for the complex [A^2]"
+MORE is "Internal energy [kcal/mol]"
 
     Example 1 -
 &lt;PDBx:pdbx_struct_assembly_propCategory&gt;

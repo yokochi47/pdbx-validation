@@ -3,7 +3,7 @@
 # File:  mmcif_pdbx_validation-v4.dic
 # Date:  Mon Apr 20 15:23:27 JST 2026
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.411)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.412)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.07.xsd
 #         - a XML schema for wwPDB validation reports, v6.07, rev. 2026-03-30
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.411
+    _dictionary.version         4.412
 #
     loop_
     _dictionary_history.version
@@ -1492,6 +1492,16 @@ data_mmcif_pdbx_validation.dic
 >     "Quantifoil R1/1", "Quantifoil R1/2", "Quantifoil R3/5", "Quantifoil R1.2/20" # not mapped
 >   + Add SmartScope to _em_software.name enumeration # merged
 ;
+  4.412   2026-04-22
+;
+>   + Change datatype nanometer(s) to nanometre(s) to be consistent throughout
+>   + _diffrn_source.type add "HEPS BEAMLINE ID02U1A",
+>     _diffrn_source.pdbx_synchrotron_site add "HEPS",
+>     _diffrn_source.pdbx_synchrotron_beamlin add "ID02U1A"
+>   + Extend description of _pdbx_struct_assembly_prop
+>   + Extend enumeration of pdbx_related_exp_data_set.db_source
+>   + Add "raw EM image data" to _pdbx_related_exp_data_set.data_set_type and remove EMPIAR
+;
 
 #
 ###########################################################################
@@ -1928,7 +1938,6 @@ data_mmcif_pdbx_validation.dic
      'millimetres'            'millimetres (metres * 10^( -3)^)'
      'micrometres'            'micrometres (metres * 10^( -6)^)'
      'nanometres'             'nanometres  (metres * 10^( -9)^)'
-     'nanometers'             'nanometers  (metres * 10^( -9)^)'
      'angstroms'              'angstroms   (metres * 10^(-10)^)'
      'picometres'             'picometres  (metres * 10^(-12)^)'
      'femtometres'            'femtometres (metres * 10^(-15)^)'
@@ -1986,7 +1995,7 @@ data_mmcif_pdbx_validation.dic
 ; electrons per picometres cubed (electrons/(metres * 10^(-12)^)^(-3)^)
 ;
      'ions_per_cm_squared_per_sec'
-; ions per centimetre squared per second (ions/(meters * 10^(-2)^)^(-2)/second^)
+; ions per centimetre squared per second (ions/(metres * 10^(-2)^)^(-2)/second^)
 ;
      'kilowatts'              'kilowatts'
      'milliamperes'           'milliamperes'
@@ -2012,7 +2021,7 @@ data_mmcif_pdbx_validation.dic
 #
      'megadaltons'            'megadaltons'
      'kilodaltons'            'kilodaltons'
-     "kilodaltons/nanometer"  "kilodaltons/nanometer"
+     "kilodaltons/nanometre"  "kilodaltons/nanometre"
 #
      'microns_squared'        'micrometres squared (metres * 10^( -6)^)^2^'
      'microns'                'micrometres  (metres * 10^( -6)^)'
@@ -4970,7 +4979,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "Excillum MetalJet D2+ 160 kV"                   "LIQUID ANODE"
      "_diffrn_source.type"  "FRM II BEAMLINE ANTARES"                        "NUCLEAR REACTOR"
      "_diffrn_source.type"  "FRM II BEAMLINE BIODIFF"                        "NUCLEAR REACTOR"
-     "_diffrn_source.type"  "KURCHATOV SNC BEAMLINE K4.4"                    SYNCHROTRON
+     "_diffrn_source.type"  "HEPS BEAMLINE ID02U1A"                          SYNCHROTRON
      "_diffrn_source.type"  "ILL BEAMLINE D11"                               "NUCLEAR REACTOR"
      "_diffrn_source.type"  "ILL BEAMLINE D16"                               "NUCLEAR REACTOR"
      "_diffrn_source.type"  "ILL BEAMLINE D19"                               "NUCLEAR REACTOR"
@@ -4984,6 +4993,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-A"                           "NUCLEAR REACTOR"
      "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-B"                           "NUCLEAR REACTOR"
      "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-C"                           "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "KURCHATOV SNC BEAMLINE K4.4"                    SYNCHROTRON
      "_diffrn_source.type"  "LaB6 thermoionic"                               .
      "_diffrn_source.type"  "LANSCE BEAMLINE BL03"                           "NUCLEAR REACTOR"
      "_diffrn_source.type"  "LANSCE BEAMLINE PCS"                            "NUCLEAR REACTOR"
@@ -26252,6 +26262,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  I911-3          .
      "_diffrn_source.pdbx_synchrotron_beamline"  I911-4          .
      "_diffrn_source.pdbx_synchrotron_beamline"  I911-5          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID02U1A         .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID09            .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID13            .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID14-1          .
@@ -26363,10 +26374,11 @@ save__diffrn_source.pdbx_synchrotron_site
       "_diffrn_source.pdbx_synchrotron_site"  ESRF                              .
       "_diffrn_source.pdbx_synchrotron_site"  'European XFEL'                   .
       "_diffrn_source.pdbx_synchrotron_site"  "FRM II"                          .
-      "_diffrn_source.pdbx_synchrotron_site"  "KURCHATOV SNC"                   .
+      "_diffrn_source.pdbx_synchrotron_site"  HEPS                              .
       "_diffrn_source.pdbx_synchrotron_site"  "JPARC MLF"                       .
       "_diffrn_source.pdbx_synchrotron_site"  JRR-3M                            .
       "_diffrn_source.pdbx_synchrotron_site"  KCSRNT                            .
+      "_diffrn_source.pdbx_synchrotron_site"  "KURCHATOV SNC"                   .
       "_diffrn_source.pdbx_synchrotron_site"  ILL                               .
       "_diffrn_source.pdbx_synchrotron_site"  ISIS                              .
       "_diffrn_source.pdbx_synchrotron_site"  LANSCE                            .
@@ -32650,7 +32662,7 @@ save__pdbx_nmr_force_constants.exptl_distance_term_units
     _item_enumeration.value
     _item_enumeration.detail
         'kcal/mol/A**2'  'kilocalories per mole per square angstrom'
-        'kJ/mol/nm**2'   'kilojoules per mole per square nanometer'
+        'kJ/mol/nm**2'   'kilojoules per mole per square nanometre'
         'other'          'author added units'
 save_
 
@@ -32714,8 +32726,8 @@ save__pdbx_nmr_force_constants.exptl_J_coupling_term_units
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-        'kcal/mol/Hz**2'  'kilocalories per mole per square angstrom'
-        'kJ/mol/Hz**2'   'kilojoules per mole per square nanometer'
+        'kcal/mol/Hz**2'  'kilocalories per mole per Hertz squared'
+        'kJ/mol/Hz**2'   'kilojoules per mole per Hertz squared'
         'other'                'author added units'
 save_
 
@@ -32880,7 +32892,7 @@ save__pdbx_nmr_force_constants.covalent_geom_bond_term_units
     _item_enumeration.value
     _item_enumeration.detail
     'kcal/mol/A**2'  'kilocalories per mole per square angstrom'
-    'kJ/mol/nm**2'   'kilojoules per mole per square nanometer'
+    'kJ/mol/nm**2'   'kilojoules per mole per square nanometre'
     'other'                'author added units'
 save_
 
@@ -32994,7 +33006,7 @@ save__pdbx_nmr_force_constants.non-bonded_inter_van_der_Waals_term_units
     _item_enumeration.value
     _item_enumeration.detail
      'kcal/mol/A**4'  'kilocalories per mole per angstrom to the 4th power'
-     'kJ/mol/nm**4'   'kilojoules per mole per nanometer to the 4th power'
+     'kJ/mol/nm**4'   'kilojoules per mole per nanometre to the 4th power'
      'other'           'author added units'
 save_
 
@@ -33040,7 +33052,7 @@ save__pdbx_nmr_force_constants.non-bonded_inter_radius_of_gyration_term_units
     _item_enumeration.value
     _item_enumeration.detail
         'kcal/mol/ A**2'  'kilocalories per mole per square angstrom'
-        'kJ/mol/ nm**4'   'kilojoules per mole per square nanometer'
+        'kJ/mol/ nm**4'   'kilojoules per mole per square nanometre'
         'other'                'author added units'
 save_
 
@@ -39264,6 +39276,9 @@ save_
 save_pdbx_struct_assembly_prop
     _category.description
 ;              Properties and features of structural assemblies.
+               ABSA (A^2) is the "Total buried surface are [A^2}"
+               SSA (A^2) is the "Surface area for the complex [A^2]"
+               MORE is "Internal energy [kcal/mol]"
 ;
     _category.id                  pdbx_struct_assembly_prop
     _category.mandatory_code      no
@@ -50190,7 +50205,7 @@ save__pdbx_related_exp_data_set.data_set_type
    _pdbx_item_enumeration.detail
      "_pdbx_related_exp_data_set.data_set_type"  "diffraction image data"         .
      "_pdbx_related_exp_data_set.data_set_type"  "small-angle scattering data"    .
-     "_pdbx_related_exp_data_set.data_set_type"  EMPIAR                           .
+     "_pdbx_related_exp_data_set.data_set_type"  "raw EM image data"              .
      "_pdbx_related_exp_data_set.data_set_type"  "NMR free induction decay data"  .
      "_pdbx_related_exp_data_set.data_set_type"  "other data"                     .
    #
@@ -50230,11 +50245,27 @@ save__pdbx_related_exp_data_set.db_source
    loop_
    _item_enumeration.value
    _item_enumeration.detail
-     ProteinDiffraction  .
-     CXIDB               .
-     SBGrid              .
-     XRDa                .
-     EMPIAR              .
+     "Apollo - University of Cambridge Repository"                                .
+     CXIDB                                                                        .
+     "DRYAD Database"                                                             .
+     EMPIAR                                                                       .
+     "ESRF Data Portal"                                                           .
+     "ETH Zurich Research Collection"                                             .
+     Etsin                                                                        .
+     "Integrated Resource for Reproducibility in Macromolecular Crystallography"  .
+     "International Union of Crystallography"                                     .
+     "KAUST Repository"                                                           .
+     "Keele Data Repository"                                                      .
+     "Manchester eScholar Services"                                               .
+     "MAXIV Public Data Repository"                                               .
+     "Mendeley Data"                                                              .
+     "MX-RDR (Macromolecular Xtallography Raw Data Repository)"                   .
+     ProteinDiffraction                                                           .
+     "PSI Public Data Repository"                                                 .
+     "RMIT University Figshare"                                                   .
+     "SBGrid Data Bank"                                                           .
+     "Xtal Raw Data Archive"                                                      .
+     Zenodo                                                                       .
    #
 save_
 #
@@ -51904,7 +51935,7 @@ save_
 
 save__em_imaging.nominal_cs
     _item_description.description
-;              The spherical aberration coefficient (Cs) in millimeters,
+;              The spherical aberration coefficient (Cs) in millimetres,
                of the objective lens.
 ;
     _item.name                  '_em_imaging.nominal_cs'
@@ -51923,14 +51954,14 @@ save_
 
 save__em_imaging.nominal_defocus_min
     _item_description.description
-;              The minimum defocus value of the objective lens (in nanometers) used
+;              The minimum defocus value of the objective lens (in nanometres) used
                to obtain the recorded images. Negative values refer to overfocus.
 ;
     _item.name                  '_em_imaging.nominal_defocus_min'
     _item.category_id             em_imaging
     _item.mandatory_code          no
     _item_type.code               float
-    _item_units.code              nanometers
+    _item_units.code              nanometres
     _item_examples.case           1200
     _pdbx_item_type.name        "_em_imaging.nominal_defocus_min"
     _pdbx_item_type.code          int
@@ -51943,14 +51974,14 @@ save_
 
 save__em_imaging.nominal_defocus_max
     _item_description.description
-;              The maximum defocus value of the objective lens (in nanometers) used
+;              The maximum defocus value of the objective lens (in nanometres) used
                to obtain the recorded images. Negative values refer to overfocus.
 ;
     _item.name                  '_em_imaging.nominal_defocus_max'
     _item.category_id             em_imaging
     _item.mandatory_code          no
     _item_type.code               float
-    _item_units.code              nanometers
+    _item_units.code              nanometres
     _item_examples.case           5000
     _pdbx_item_type.name        "_em_imaging.nominal_defocus_max"
     _pdbx_item_type.code          int
@@ -51965,14 +51996,14 @@ save_
 save__em_imaging.calibrated_defocus_min
 #new V5
     _item_description.description
-;              The minimum calibrated defocus value of the objective lens (in nanometers) used
+;              The minimum calibrated defocus value of the objective lens (in nanometres) used
                to obtain the recorded images. Negative values refer to overfocus.
 ;
     _item.name                  '_em_imaging.calibrated_defocus_min'
     _item.category_id             em_imaging
     _item.mandatory_code          no
     _item_type.code               float
-    _item_units.code              nanometers
+    _item_units.code              nanometres
     _item_examples.case           1200
     loop_
     _pdbx_item_range.name
@@ -51985,14 +52016,14 @@ save_
 save__em_imaging.calibrated_defocus_max
 #new V5
     _item_description.description
-;              The maximum calibrated defocus value of the objective lens (in nanometers) used
+;              The maximum calibrated defocus value of the objective lens (in nanometres) used
                to obtain the recorded images. Negative values refer to overfocus.
 ;
     _item.name                  '_em_imaging.calibrated_defocus_max'
     _item.category_id             em_imaging
     _item.mandatory_code          no
     _item_type.code               float
-    _item_units.code              nanometers
+    _item_units.code              nanometres
     _item_examples.case           5000
     loop_
     _item_range.minimum
@@ -52111,7 +52142,7 @@ save_
 
 save__em_imaging.detector_distance
     _item_description.description
-;              The camera length (in millimeters). The camera length is the
+;              The camera length (in millimetres). The camera length is the
                product of the objective focal length and the combined magnification
                of the intermediate and projector lenses when the microscope is
                operated in the diffraction mode.
@@ -55061,7 +55092,7 @@ save_
 
 save__em_diffraction.camera_length
     _item_description.description
-;              The camera length (in millimeters). The camera length is the
+;              The camera length (in millimetres). The camera length is the
                product of the objective focal length and the combined magnification
                of the intermediate and projector lenses when the microscope is
                operated in the diffraction mode.

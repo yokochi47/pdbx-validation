@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.411
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.411: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.412
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.412: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -5226,7 +5226,7 @@ CREATE TABLE em_focused_ion_beam (
 -- xsd:restriction/xsd:minInclusive="0.0"
 	duration DECIMAL CHECK ( duration >= 0.0 ) ,
 	em_tomography_specimen_id TEXT ,
--- omit an attribute having a fixed value: @units="nanometers"
+-- omit an attribute having a fixed value: @units="nanometres"
 	final_thickness TEXT ,
 -- xsd:restriction/xsd:maxInclusive="100000"
 -- xsd:restriction/xsd:minInclusive="10"
@@ -5429,7 +5429,7 @@ CREATE TABLE em_imaging (
 -- xsd:restriction/xsd:maxInclusive="30000"
 -- xsd:restriction/xsd:minInclusive="-30000"
 	calibrated_defocus_max DECIMAL CHECK ( calibrated_defocus_max >= -30000 AND calibrated_defocus_max <= 30000 ) ,
--- omit an attribute having a fixed value: @units="nanometers"
+-- omit an attribute having a fixed value: @units="nanometres"
 	calibrated_defocus_min DECIMAL ,
 -- xsd:restriction/xsd:minInclusive="1"
 	calibrated_magnification INTEGER CHECK ( calibrated_magnification >= 1 ) ,
@@ -5457,9 +5457,9 @@ CREATE TABLE em_imaging (
 -- xsd:restriction/xsd:maxInclusive="20"
 -- xsd:restriction/xsd:minInclusive="0"
 	nominal_cs DECIMAL CHECK ( nominal_cs >= 0 AND nominal_cs <= 20 ) ,
--- omit an attribute having a fixed value: @units="nanometers"
+-- omit an attribute having a fixed value: @units="nanometres"
 	nominal_defocus_max DECIMAL ,
--- omit an attribute having a fixed value: @units="nanometers"
+-- omit an attribute having a fixed value: @units="nanometres"
 	nominal_defocus_min DECIMAL ,
 -- xsd:restriction/xsd:maxInclusive="500000"
 -- xsd:restriction/xsd:minInclusive="1000"
@@ -6074,7 +6074,7 @@ CREATE TABLE em_ultramicrotomy (
 	document_id TEXT ,
 	details TEXT ,
 	em_tomography_specimen_id TEXT ,
--- omit an attribute having a fixed value: @units="nanometers"
+-- omit an attribute having a fixed value: @units="nanometres"
 	final_thickness TEXT ,
 	instrument TEXT ,
 -- omit an attribute having a fixed value: @units="kelvins"
@@ -12902,7 +12902,7 @@ CREATE TABLE pdbx_reflns_twin (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_related_exp_data_set_db_source CASCADE;
-CREATE TYPE ENUM_pdbx_related_exp_data_set_db_source AS ENUM ( 'ProteinDiffraction', 'CXIDB', 'SBGrid', 'XRDa', 'EMPIAR' );
+CREATE TYPE ENUM_pdbx_related_exp_data_set_db_source AS ENUM ( 'Apollo - University of Cambridge Repository', 'CXIDB', 'DRYAD Database', 'EMPIAR', 'ESRF Data Portal', 'ETH Zurich Research Collection', 'Etsin', 'Integrated Resource for Reproducibility in Macromolecular Cryst', 'International Union of Crystallography', 'KAUST Repository', 'Keele Data Repository', 'Manchester eScholar Services', 'MAXIV Public Data Repository', 'Mendeley Data', 'MX-RDR (Macromolecular Xtallography Raw Data Repository)', 'ProteinDiffraction', 'PSI Public Data Repository', 'RMIT University Figshare', 'SBGrid Data Bank', 'Xtal Raw Data Archive', 'Zenodo' );
 CREATE TABLE pdbx_related_exp_data_set (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -13647,7 +13647,7 @@ CREATE TABLE pdbx_struct_assembly_gen_depositor_info (
 
 --
 -- (quoted from pdbx_struct_assembly_propType)
--- Properties and features of structural assemblies. Example 1 - <PDBx:pdbx_struct_assembly_propCategory> <PDBx:pdbx_struct_assembly_prop biol_id="1" type="ABSA"> <PDBx:details> </PDBx:details> <PDBx:value>1456.7</PDBx:value> </PDBx:pdbx_struct_assembly_prop> </PDBx:pdbx_struct_assembly_propCategory>
+-- Properties and features of structural assemblies. ABSA (A^2) is the "Total buried surface are [A^2}" SSA (A^2) is the "Surface area for the complex [A^2]" MORE is "Internal energy [kcal/mol]" Example 1 - <PDBx:pdbx_struct_assembly_propCategory> <PDBx:pdbx_struct_assembly_prop biol_id="1" type="ABSA"> <PDBx:details> </PDBx:details> <PDBx:value>1456.7</PDBx:value> </PDBx:pdbx_struct_assembly_prop> </PDBx:pdbx_struct_assembly_propCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
