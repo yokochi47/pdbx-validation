@@ -3,15 +3,19 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/pdb/1GA3">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb1ga3/pdb" rdfs:label="doi:10.2210/pdb1ga3/pdb"/>
     <dcterms:identifier>1GA3</dcterms:identifier>
+    <skos:altLabel>pdb_00001ga3</skos:altLabel>
     <skos:altLabel>1ga3</skos:altLabel>
     <dc:title>NMR STRUCTURE OF INTERLEUKIN-13</dc:title>
     <PDBo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/1ga3.xml.gz"/>
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/1ga3-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/1ga3-extatom.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/ga/pdb_00001ga3/structures/pdb_00001ga3.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/ga/pdb_00001ga3/structures/pdb_00001ga3-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/ga/pdb_00001ga3/structures/pdb_00001ga3-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/1GA3"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/1ga3"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/1GA3"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/1GA3"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/1GA3"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/1GA3"/>
     <PDBo:datablockName>1GA3-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>

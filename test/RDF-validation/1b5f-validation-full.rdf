@@ -3,6 +3,7 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/vrpt/1B5F">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb1b5f/pdb" rdfs:label="doi:10.2210/pdb1b5f/pdb"/>
     <dcterms:identifier>1B5F-validation</dcterms:identifier>
+    <skos:altLabel>pdb_00001b5f-validation</skos:altLabel>
     <skos:altLabel>1b5f-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 1B5F</dc:title>
     <PDBo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
@@ -10,9 +11,13 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/1b5f-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/1b5f-extatom.xml.gz"/>
     <PDBo:link_to_xml_vrpt rdf:resource="http://files.wwpdb.org/pub/pdb/validation_reports/b5/1b5f/1b5f_validation.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/b5/pdb_00001b5f/structures/pdb_00001b5f.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/b5/pdb_00001b5f/structures/pdb_00001b5f-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/b5/pdb_00001b5f/structures/pdb_00001b5f-extatom.xml.gz"/>
+    <PDBo:link_to_xml_vrpt rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/b5/pdb_00001b5f/validation_reports/pdb_00001b5f_validation.xml.gz"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/1b5f"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/1B5F"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/1B5F"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/1B5F"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/1B5F"/>
     <PDBo:datablockName>1B5F-validation-full</PDBo:datablockName>
     <PDBo:has_diffrnCategory>

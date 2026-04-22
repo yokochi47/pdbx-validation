@@ -3,15 +3,19 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/pdb/6RJH">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb6rjh/pdb" rdfs:label="doi:10.2210/pdb6rjh/pdb"/>
     <dcterms:identifier>6RJH</dcterms:identifier>
+    <skos:altLabel>pdb_00006rjh</skos:altLabel>
     <skos:altLabel>6rjh</skos:altLabel>
     <dc:title>3D structure of horse spleen apoferritin determined using multifunctional graphene supports for electron cryomicroscopy</dc:title>
     <PDBo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/6rjh.xml.gz"/>
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/6rjh-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/6rjh-extatom.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/rj/pdb_00006rjh/structures/pdb_00006rjh.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/rj/pdb_00006rjh/structures/pdb_00006rjh-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/rj/pdb_00006rjh/structures/pdb_00006rjh-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/6rjh"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/6RJH"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/6RJH"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/6RJH"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/6RJH"/>
     <PDBo:datablockName>6RJH-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>

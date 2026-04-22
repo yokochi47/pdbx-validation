@@ -3,6 +3,7 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/vrpt/8BOR">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb8bor/pdb" rdfs:label="doi:10.2210/pdb8bor/pdb"/>
     <dcterms:identifier>8BOR-validation</dcterms:identifier>
+    <skos:altLabel>pdb_00008bor-validation</skos:altLabel>
     <skos:altLabel>8bor-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 8BOR</dc:title>
     <PDBo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/8BOR"/>
@@ -10,9 +11,13 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/8bor-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/8bor-extatom.xml.gz"/>
     <PDBo:link_to_xml_vrpt rdf:resource="http://files.wwpdb.org/pub/pdb/validation_reports/bo/8bor/8bor_validation.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/bo/pdb_00008bor/structures/pdb_00008bor.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/bo/pdb_00008bor/structures/pdb_00008bor-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/bo/pdb_00008bor/structures/pdb_00008bor-extatom.xml.gz"/>
+    <PDBo:link_to_xml_vrpt rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/bo/pdb_00008bor/validation_reports/pdb_00008bor_validation.xml.gz"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/8bor"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/8BOR"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/8BOR"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/8BOR"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/8BOR"/>
     <PDBo:datablockName>8BOR-validation-full</PDBo:datablockName>
     <PDBo:has_diffrnCategory>

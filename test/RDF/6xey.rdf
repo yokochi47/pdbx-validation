@@ -3,15 +3,19 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/pdb/6XEY">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb6xey/pdb" rdfs:label="doi:10.2210/pdb6xey/pdb"/>
     <dcterms:identifier>6XEY</dcterms:identifier>
+    <skos:altLabel>pdb_00006xey</skos:altLabel>
     <skos:altLabel>6xey</skos:altLabel>
     <dc:title>Cryo-EM structure of the SARS-CoV-2 spike glycoprotein bound to Fab 2-4</dc:title>
     <PDBo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/6xey.xml.gz"/>
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/6xey-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/6xey-extatom.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/xe/pdb_00006xey/structures/pdb_00006xey.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/xe/pdb_00006xey/structures/pdb_00006xey-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/xe/pdb_00006xey/structures/pdb_00006xey-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/6XEY"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/6xey"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/6XEY"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/6XEY"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/6XEY"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/6XEY"/>
     <PDBo:datablockName>6XEY-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>

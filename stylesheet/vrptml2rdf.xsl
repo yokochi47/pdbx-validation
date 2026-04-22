@@ -14,6 +14,7 @@
   xmlns:ext="http://exslt.org/common" exclude-result-prefixes="VRPTx ext">
 
   <xsl:include href="url-encode.xsl"/>
+  <xsl:include href="compatible-pdb-id.xsl"/>
 
   <xsl:param name="wurcs2glytoucan" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/wurcs2glytoucan/glytoucan.xml'" required="no"/>
   <xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/>
@@ -26,19 +27,63 @@
 
   <xsl:variable name="PDB_ID"><xsl:value-of select="/VRPTx:datablock/VRPTx:entryCategory/VRPTx:entry/@id"/></xsl:variable>
   <xsl:variable name="pdb_id"><xsl:value-of select="translate($PDB_ID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:variable>
-  <xsl:variable name="pdb_doi"><xsl:value-of select="concat('10.2210/pdb',$pdb_id,'/pdb')"/></xsl:variable>
-  <xsl:variable name="base">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$PDB_ID"/></xsl:variable>
-  <xsl:variable name="base_lower">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$pdb_id"/></xsl:variable>
+  <xsl:variable name="extended_pdb_id">
+    <xsl:choose>
+      <xsl:when test="string-length($PDB_ID)=4">
+        <xsl:value-of select="concat('pdb_0000',$pdb_id)"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$pdb_id"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+  <xsl:variable name="legacy_pdb_id">
+    <xsl:choose>
+      <xsl:when test="starts-with($extended_pdb_id,'pdb_0000')">
+        <xsl:value-of select="translate(substring-after($extended_pdb_id,'pdb_0000'),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$extended_pdb_id"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+  <xsl:variable name="compatible_PDB_ID">
+    <xsl:choose>
+      <xsl:when test="$extended_pdb_id=$legacy_pdb_id">
+        <xsl:value-of select="$extended_pdb_id"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$legacy_pdb_id"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+  <xsl:variable name="compatible_pdb_id"><xsl:value-of select="translate($compatible_PDB_ID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:variable>
+  <xsl:variable name="pdb_doi">
+    <xsl:choose>
+      <xsl:when test="$extended_pdb_id=$legacy_pdb_id">
+        <xsl:value-of select="concat('10.2210/',$extended_pdb_id,'/pdb')"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="concat('10.2210/pdb',$pdb_id,'/pdb')"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+  <xsl:variable name="base">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$compatible_PDB_ID"/></xsl:variable>
+  <xsl:variable name="base_lower">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$compatible_pdb_id"/></xsl:variable>
   <xsl:variable name="pdb_link">http://rdf.wwpdb.org/pdb/</xsl:variable>
   <xsl:variable name="chem_comp">http://rdf.wwpdb.org/cc/</xsl:variable>
   <xsl:variable name="prd">http://rdf.wwpdb.org/prd/</xsl:variable>
   <xsl:variable name="pdbj">http://pdbj.org/pdb/</xsl:variable>
-  <xsl:variable name="rcsb">http://www.rcsb.org/pdb/structure/</xsl:variable>
+  <xsl:variable name="rcsb">http://www.rcsb.org/structure/</xsl:variable>
   <xsl:variable name="pdbe">http://www.ebi.ac.uk/pdbe/entry/pdb/</xsl:variable>
   <xsl:variable name="pdbml">http://files.wwpdb.org/pub/pdb/data/structures/all/XML/</xsl:variable>
   <xsl:variable name="pdbml_noatom">http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/</xsl:variable>
   <xsl:variable name="pdbml_extatom">http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/</xsl:variable>
-  <xsl:variable name="vrpt">http://files.wwpdb.org/pub/pdb/validation_reports/<xsl:value-of select="substring($pdb_id,2,2)"/>/<xsl:value-of select="$pdb_id"/>/</xsl:variable>
+  <xsl:variable name="pdb_hash_code"><xsl:value-of select="substring($extended_pdb_id,10,2)"/></xsl:variable>
+  <xsl:variable name="beta_entries">http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/</xsl:variable>
+  <xsl:variable name="beta_structures"><xsl:value-of select="concat($beta_entries,$pdb_hash_code,'/',$extended_pdb_id,'/structures/')"/></xsl:variable>
+  <xsl:variable name="beta_validation_reports"><xsl:value-of select="concat($beta_entries,$pdb_hash_code,'/',$extended_pdb_id,'/validation_reports/')"/></xsl:variable>
+  <xsl:variable name="vrpt">http://files.wwpdb.org/pub/pdb/validation_reports/<xsl:value-of select="$pdb_hash_code"/>/<xsl:value-of select="$compatible_pdb_id"/>/</xsl:variable>
   <xsl:variable name="bmrb">http://bmrbpub.pdbj.org/rdf/bmr</xsl:variable>
   <xsl:variable name="emdb">http://www.ebi.ac.uk/emdb/</xsl:variable>
   <xsl:variable name="sasbdb">http://www.sasbdb.org/data/</xsl:variable>
@@ -72,18 +117,34 @@
   <xsl:template match="/VRPTx:datablock">
     <PDBo:datablock rdf:about="{$base}">
       <dcterms:references rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/>
-      <dcterms:identifier><xsl:value-of select="concat($PDB_ID,'-validation')"/></dcterms:identifier>
-      <skos:altLabel><xsl:value-of select="concat($pdb_id,'-validation')"/></skos:altLabel>
-      <dc:title><xsl:value-of select="concat('wwPDB validation report of PDB entry ',$PDB_ID)"/></dc:title>
-      <PDBo:link_to_pdb_src rdf:resource="{$pdb_link}{$PDB_ID}"/>
-      <PDBo:link_to_pdbml rdf:resource="{$pdbml}{$pdb_id}.xml.gz"/>
-      <PDBo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdb_id}-noatom.xml.gz"/>
-      <PDBo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdb_id}-extatom.xml.gz"/>
-      <PDBo:link_to_xml_vrpt rdf:resource="{$vrpt}{$pdb_id}_validation.xml.gz"/>
-      <owl:sameAs rdf:resource="{$base_lower}"/>
-      <rdfs:seeAlso rdf:resource="{$pdbj}{$PDB_ID}"/>
-      <rdfs:seeAlso rdf:resource="{$rcsb}{$PDB_ID}"/>
-      <rdfs:seeAlso rdf:resource="{$pdbe}{$PDB_ID}"/>
+      <dcterms:identifier><xsl:value-of select="concat($compatible_PDB_ID,'-validation')"/></dcterms:identifier>
+      <xsl:choose>
+        <xsl:when test="$extended_pdb_id=$legacy_pdb_id">
+          <skos:altLabel><xsl:value-of select="concat(translate($extended_pdb_id,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'-validation')"/></skos:altLabel>
+        </xsl:when>
+        <xsl:otherwise>
+          <skos:altLabel><xsl:value-of select="concat($extended_pdb_id,'-validation')"/></skos:altLabel>
+          <skos:altLabel><xsl:value-of select="concat($pdb_id,'-validation')"/></skos:altLabel>
+        </xsl:otherwise>
+      </xsl:choose>
+      <dc:title><xsl:value-of select="concat('wwPDB validation report of PDB entry ',$compatible_PDB_ID)"/></dc:title>
+      <PDBo:link_to_pdb_src rdf:resource="{$pdb_link}{$compatible_PDB_ID}"/>
+      <xsl:if test="$extended_pdb_id!=$legacy_pdb_id">
+        <PDBo:link_to_pdbml rdf:resource="{$pdbml}{$compatible_pdb_id}.xml.gz"/>
+        <PDBo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$compatible_pdb_id}-noatom.xml.gz"/>
+        <PDBo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$compatible_pdb_id}-extatom.xml.gz"/>
+        <PDBo:link_to_xml_vrpt rdf:resource="{$vrpt}{$compatible_pdb_id}_validation.xml.gz"/>
+      </xsl:if>
+      <PDBo:link_to_pdbml rdf:resource="{$beta_structures}{$extended_pdb_id}.xml.gz"/>
+      <PDBo:link_to_pdbml_noatom rdf:resource="{$beta_structures}{$extended_pdb_id}-noatom.xml.gz"/>
+      <PDBo:link_to_pdbml_extatom rdf:resource="{$beta_structures}{$extended_pdb_id}-extatom.xml.gz"/>
+      <PDBo:link_to_xml_vrpt rdf:resource="{$beta_validation_reports}{$extended_pdb_id}_validation.xml.gz"/>
+      <xsl:if test="$extended_pdb_id!=$legacy_pdb_id">
+        <owl:sameAs rdf:resource="{$base_lower}"/>
+      </xsl:if>
+      <rdfs:seeAlso rdf:resource="{$pdbj}{$compatible_PDB_ID}"/>
+      <rdfs:seeAlso rdf:resource="{$rcsb}{$compatible_PDB_ID}"/>
+      <rdfs:seeAlso rdf:resource="{$pdbe}{$compatible_PDB_ID}"/>
 
       <PDBo:datablockName><xsl:value-of select="@datablockName"/></PDBo:datablockName>
       <xsl:apply-templates select="./*"/>
@@ -111,11 +172,8 @@
     <xsl:variable name="tag_name"><xsl:value-of select="concat($category_item,'.',$data_item)"/></xsl:variable>
     <xsl:variable name="data_type"><xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/></xsl:variable>
     <xsl:element name="PDBo:{$tag_name}">
-      <xsl:if test="$data_type!=''">
-        <xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_type"/></xsl:attribute>
-      </xsl:if>
       <xsl:choose>
-        <xsl:when test="contains(local-name(),'one_letter_code')">
+        <xsl:when test="contains($data_item,'one_letter_code')">
           <xsl:choose>
             <xsl:when test=".='?' or .='.'"/>
             <xsl:otherwise>
@@ -125,7 +183,18 @@
           </xsl:choose>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="normalize-space(.)"/>
+          <xsl:choose>
+            <xsl:when test="$data_type!=''">
+              <xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_type"/></xsl:attribute>
+              <xsl:value-of select="normalize-space(.)"/>
+            </xsl:when>
+            <xsl:when test="$data_item='title'">
+              <xsl:value-of select="normalize-space(.)"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="."/>
+            </xsl:otherwise>
+          </xsl:choose>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:element>
@@ -395,15 +464,18 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_database_related[@db_name='PDB' and @content_type!='split']/@db_id" mode="linked">
-    <PDBo:link_to_pdb rdf:resource="{$pdb_link}{.}"/>
+    <xsl:variable name="normalized_pdb_id"><xsl:call-template name="compatible-pdb-id"><xsl:with-param name="str" select="."/></xsl:call-template></xsl:variable>
+    <PDBo:link_to_pdb rdf:resource="{$pdb_link}{$normalized_pdb_id}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_database_related[@db_name='PDB' and @content_type='split']/@db_id" mode="linked">
-    <PDBo:link_to_pdb_split rdf:resource="{$pdb_link}{.}"/>
+    <xsl:variable name="normalized_pdb_id"><xsl:call-template name="compatible-pdb-id"><xsl:with-param name="str" select="."/></xsl:call-template></xsl:variable>
+    <PDBo:link_to_pdb_split rdf:resource="{$pdb_link}{$normalized_pdb_id}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:chem_comp/VRPTx:pdbx_model_coordinates_db_code" mode="linked">
-    <PDBo:link_to_pdb rdf:resource="{$pdb_link}{translate(text(),' ','')}"/>
+    <xsl:variable name="normalized_pdb_id"><xsl:call-template name="compatible-pdb-id"><xsl:with-param name="str" select="text()"/></xsl:call-template></xsl:variable>
+    <PDBo:link_to_pdb rdf:resource="{$pdb_link}{$normalized_pdb_id}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_database_related[@db_name='BMRB']/@db_id" mode="linked">

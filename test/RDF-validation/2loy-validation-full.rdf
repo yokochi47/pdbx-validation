@@ -3,6 +3,7 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/vrpt/2LOY">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb2loy/pdb" rdfs:label="doi:10.2210/pdb2loy/pdb"/>
     <dcterms:identifier>2LOY-validation</dcterms:identifier>
+    <skos:altLabel>pdb_00002loy-validation</skos:altLabel>
     <skos:altLabel>2loy-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 2LOY</dc:title>
     <PDBo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
@@ -10,9 +11,13 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/2loy-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/2loy-extatom.xml.gz"/>
     <PDBo:link_to_xml_vrpt rdf:resource="http://files.wwpdb.org/pub/pdb/validation_reports/lo/2loy/2loy_validation.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/lo/pdb_00002loy/structures/pdb_00002loy.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/lo/pdb_00002loy/structures/pdb_00002loy-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/lo/pdb_00002loy/structures/pdb_00002loy-extatom.xml.gz"/>
+    <PDBo:link_to_xml_vrpt rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/lo/pdb_00002loy/validation_reports/pdb_00002loy_validation.xml.gz"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/2loy"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/2LOY"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/2LOY"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/2LOY"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/2LOY"/>
     <PDBo:datablockName>2LOY-validation-full</PDBo:datablockName>
     <PDBo:has_entityCategory>

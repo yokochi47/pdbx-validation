@@ -3,15 +3,19 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/pdb/7Z9E">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb7z9e/pdb" rdfs:label="doi:10.2210/pdb7z9e/pdb"/>
     <dcterms:identifier>7Z9E</dcterms:identifier>
+    <skos:altLabel>pdb_00007z9e</skos:altLabel>
     <skos:altLabel>7z9e</skos:altLabel>
     <dc:title>Deinococcus radiodurans BphP PAS-GAF H260A/Y263F mutant</dc:title>
     <PDBo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/7z9e.xml.gz"/>
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7z9e-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7z9e-extatom.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/z9/pdb_00007z9e/structures/pdb_00007z9e.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/z9/pdb_00007z9e/structures/pdb_00007z9e-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/z9/pdb_00007z9e/structures/pdb_00007z9e-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/7Z9E"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/7z9e"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7Z9E"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/7Z9E"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/7Z9E"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7Z9E"/>
     <PDBo:datablockName>7Z9E-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>

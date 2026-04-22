@@ -3,6 +3,7 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/vrpt/2KM8">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb2km8/pdb" rdfs:label="doi:10.2210/pdb2km8/pdb"/>
     <dcterms:identifier>2KM8-validation</dcterms:identifier>
+    <skos:altLabel>pdb_00002km8-validation</skos:altLabel>
     <skos:altLabel>2km8-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 2KM8</dc:title>
     <PDBo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/2KM8"/>
@@ -10,9 +11,13 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/2km8-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/2km8-extatom.xml.gz"/>
     <PDBo:link_to_xml_vrpt rdf:resource="http://files.wwpdb.org/pub/pdb/validation_reports/km/2km8/2km8_validation.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/km/pdb_00002km8/structures/pdb_00002km8.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/km/pdb_00002km8/structures/pdb_00002km8-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/km/pdb_00002km8/structures/pdb_00002km8-extatom.xml.gz"/>
+    <PDBo:link_to_xml_vrpt rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/km/pdb_00002km8/validation_reports/pdb_00002km8_validation.xml.gz"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/2km8"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/2KM8"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/2KM8"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/2KM8"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/2KM8"/>
     <PDBo:datablockName>2KM8-validation-full</PDBo:datablockName>
     <PDBo:has_entityCategory>

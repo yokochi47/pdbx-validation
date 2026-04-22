@@ -3,6 +3,7 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/vrpt/6RJH">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb6rjh/pdb" rdfs:label="doi:10.2210/pdb6rjh/pdb"/>
     <dcterms:identifier>6RJH-validation</dcterms:identifier>
+    <skos:altLabel>pdb_00006rjh-validation</skos:altLabel>
     <skos:altLabel>6rjh-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 6RJH</dc:title>
     <PDBo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
@@ -10,9 +11,13 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/6rjh-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/6rjh-extatom.xml.gz"/>
     <PDBo:link_to_xml_vrpt rdf:resource="http://files.wwpdb.org/pub/pdb/validation_reports/rj/6rjh/6rjh_validation.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/rj/pdb_00006rjh/structures/pdb_00006rjh.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/rj/pdb_00006rjh/structures/pdb_00006rjh-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/rj/pdb_00006rjh/structures/pdb_00006rjh-extatom.xml.gz"/>
+    <PDBo:link_to_xml_vrpt rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/rj/pdb_00006rjh/validation_reports/pdb_00006rjh_validation.xml.gz"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/6rjh"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/6RJH"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/6RJH"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/6RJH"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/6RJH"/>
     <PDBo:datablockName>6RJH-validation-alt</PDBo:datablockName>
     <PDBo:has_entryCategory>

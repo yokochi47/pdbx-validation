@@ -3,6 +3,7 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/vrpt/7JIA">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb7jia/pdb" rdfs:label="doi:10.2210/pdb7jia/pdb"/>
     <dcterms:identifier>7JIA-validation</dcterms:identifier>
+    <skos:altLabel>pdb_00007jia-validation</skos:altLabel>
     <skos:altLabel>7jia-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 7JIA</dc:title>
     <PDBo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
@@ -10,9 +11,13 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7jia-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7jia-extatom.xml.gz"/>
     <PDBo:link_to_xml_vrpt rdf:resource="http://files.wwpdb.org/pub/pdb/validation_reports/ji/7jia/7jia_validation.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/ji/pdb_00007jia/structures/pdb_00007jia.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/ji/pdb_00007jia/structures/pdb_00007jia-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/ji/pdb_00007jia/structures/pdb_00007jia-extatom.xml.gz"/>
+    <PDBo:link_to_xml_vrpt rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/ji/pdb_00007jia/validation_reports/pdb_00007jia_validation.xml.gz"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/7jia"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7JIA"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/7JIA"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/7JIA"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7JIA"/>
     <PDBo:datablockName>7JIA-validation-alt</PDBo:datablockName>
     <PDBo:has_entryCategory>

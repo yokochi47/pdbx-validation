@@ -3,15 +3,19 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/pdb/5B1L">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb5b1l/pdb" rdfs:label="doi:10.2210/pdb5b1l/pdb"/>
     <dcterms:identifier>5B1L</dcterms:identifier>
+    <skos:altLabel>pdb_00005b1l</skos:altLabel>
     <skos:altLabel>5b1l</skos:altLabel>
     <dc:title>The mouse nucleosome structure containing H3t</dc:title>
     <PDBo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/5b1l.xml.gz"/>
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/5b1l-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/5b1l-extatom.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/b1/pdb_00005b1l/structures/pdb_00005b1l.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/b1/pdb_00005b1l/structures/pdb_00005b1l-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/b1/pdb_00005b1l/structures/pdb_00005b1l-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/5B1L"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/5b1l"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/5B1L"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/5B1L"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/5B1L"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/5B1L"/>
     <PDBo:datablockName>5B1L-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>

@@ -25,33 +25,33 @@
     <xsl:if test="$str">
       <xsl:variable name="first-char" select="substring($str,1,1)"/>
       <xsl:choose>
-	<xsl:when test="contains($safe,$first-char)">
-	  <xsl:value-of select="$first-char"/>
-	</xsl:when>
-	<xsl:otherwise>
-	  <xsl:variable name="codepoint">
-	    <xsl:choose>
-	      <xsl:when test="contains($ascii,$first-char)">
-		<xsl:value-of select="string-length(substring-before($ascii,$first-char)) + 32"/>
-	      </xsl:when>
-	      <xsl:when test="contains($latin1,$first-char)">
-		<xsl:value-of select="string-length(substring-before($latin1,$first-char)) + 160"/>
-	      </xsl:when>
-	      <xsl:otherwise>
-		<xsl:message terminate="no">Warning: string contains a character that is out of range! Substituting "?".</xsl:message>
-		<xsl:text>63</xsl:text>
-	      </xsl:otherwise>
-	    </xsl:choose>
-	  </xsl:variable>
-	  <xsl:variable name="hex-digit1" select="substring($hex,floor($codepoint div 16) + 1,1)"/>
-	  <xsl:variable name="hex-digit2" select="substring($hex,$codepoint mod 16 + 1,1)"/>
-	  <xsl:value-of select="concat('%',$hex-digit1,$hex-digit2)"/>
-	</xsl:otherwise>
+        <xsl:when test="contains($safe,$first-char)">
+          <xsl:value-of select="$first-char"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:variable name="codepoint">
+            <xsl:choose>
+              <xsl:when test="contains($ascii,$first-char)">
+                <xsl:value-of select="string-length(substring-before($ascii,$first-char)) + 32"/>
+              </xsl:when>
+              <xsl:when test="contains($latin1,$first-char)">
+                <xsl:value-of select="string-length(substring-before($latin1,$first-char)) + 160"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:message terminate="no">Warning: string contains a character that is out of range! Substituting "?".</xsl:message>
+                <xsl:text>63</xsl:text>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:variable>
+          <xsl:variable name="hex-digit1" select="substring($hex,floor($codepoint div 16) + 1,1)"/>
+          <xsl:variable name="hex-digit2" select="substring($hex,$codepoint mod 16 + 1,1)"/>
+          <xsl:value-of select="concat('%',$hex-digit1,$hex-digit2)"/>
+        </xsl:otherwise>
       </xsl:choose>
       <xsl:if test="string-length($str)&gt;1">
-	<xsl:call-template name="url-encode">
-	  <xsl:with-param name="str" select="substring($str,2)"/>
-	</xsl:call-template>
+        <xsl:call-template name="url-encode">
+          <xsl:with-param name="str" select="substring($str,2)"/>
+        </xsl:call-template>
       </xsl:if>
     </xsl:if>
   </xsl:template>
@@ -65,11 +65,11 @@
       <xsl:variable name="temp" select="substring-after($str,$substr)"/>
       <xsl:value-of select="substring-before($str,$substr)"/>
       <xsl:if test="contains($temp,$substr)">
-	<xsl:value-of select="$substr"/>
-	<xsl:call-template name="substring-before-last">
-	  <xsl:with-param name="str" select="$temp"/>
-	  <xsl:with-param name="substr" select="$substr"/>
-	</xsl:call-template>
+        <xsl:value-of select="$substr"/>
+        <xsl:call-template name="substring-before-last">
+          <xsl:with-param name="str" select="$temp"/>
+          <xsl:with-param name="substr" select="$substr"/>
+        </xsl:call-template>
       </xsl:if>
     </xsl:if>
   </xsl:template>
@@ -82,16 +82,16 @@
     <xsl:param name="with"/>
     <xsl:choose>
       <xsl:when test="contains($str,$replace)">
-	<xsl:value-of select="substring-before($str,$replace)"/>
-	<xsl:value-of select="$with"/>
-	<xsl:call-template name="replace-string">
-	  <xsl:with-param name="str" select="substring-after($str,$replace)"/>
-	  <xsl:with-param name="replace" select="$replace"/>
-	  <xsl:with-param name="with" select="$with"/>
-	</xsl:call-template>
+        <xsl:value-of select="substring-before($str,$replace)"/>
+        <xsl:value-of select="$with"/>
+        <xsl:call-template name="replace-string">
+          <xsl:with-param name="str" select="substring-after($str,$replace)"/>
+          <xsl:with-param name="replace" select="$replace"/>
+          <xsl:with-param name="with" select="$with"/>
+        </xsl:call-template>
       </xsl:when>
       <xsl:otherwise>
-	<xsl:value-of select="$str"/>
+        <xsl:value-of select="$str"/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -103,18 +103,18 @@
     <xsl:param name="substr"/>
     <xsl:choose>
       <xsl:when test="$substr and contains($str,$substr)">
-	<token>
-	  <xsl:value-of select="substring-before($str,$substr)"/>
-	</token>
-	<xsl:call-template name="tokenize">
-	  <xsl:with-param name="str" select="substring-after($str,$substr)"/>
-	  <xsl:with-param name="substr" select="$substr"/>
-	</xsl:call-template>
+        <token>
+          <xsl:value-of select="substring-before($str,$substr)"/>
+        </token>
+        <xsl:call-template name="tokenize">
+          <xsl:with-param name="str" select="substring-after($str,$substr)"/>
+          <xsl:with-param name="substr" select="$substr"/>
+        </xsl:call-template>
       </xsl:when>
       <xsl:otherwise>
-	<token>
-	  <xsl:value-of select="$str"/>
-	</token>
+        <token>
+          <xsl:value-of select="$str"/>
+        </token>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>

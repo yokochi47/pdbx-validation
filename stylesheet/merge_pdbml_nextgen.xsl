@@ -20,10 +20,10 @@
 
     <xsl:if test="$entry_id!=$pdb_id">
       <xsl:call-template name="error_handler">
-	<xsl:with-param name="terminate">yes</xsl:with-param>
-	<xsl:with-param name="error_message">
+        <xsl:with-param name="terminate">yes</xsl:with-param>
+        <xsl:with-param name="error_message">
 Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xsl:value-of select="$pdb_id"/>).
-	</xsl:with-param>
+        </xsl:with-param>
       </xsl:call-template>
     </xsl:if>
 
@@ -3687,16 +3687,16 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     <xsl:param name="terminate">no</xsl:param>
     <xsl:choose>
       <xsl:when test="$terminate='yes'">
-	<xsl:message terminate="yes">
-	  <xsl:text>ERROR in merge_pdbml_info.xsl: </xsl:text>
-	  <xsl:value-of select="$error_message"/>
-	</xsl:message>
+        <xsl:message terminate="yes">
+          <xsl:text>ERROR in merge_pdbml_info.xsl: </xsl:text>
+          <xsl:value-of select="$error_message"/>
+        </xsl:message>
       </xsl:when>
       <xsl:otherwise>
-	<span style="font-weight: bold; color: red">
-	  <xsl:text>ERROR: </xsl:text>
-	  <xsl:value-of select="$error_message"/>
-	</span>
+        <span style="font-weight: bold; color: red">
+          <xsl:text>ERROR: </xsl:text>
+          <xsl:value-of select="$error_message"/>
+        </span>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>

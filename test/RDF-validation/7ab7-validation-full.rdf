@@ -3,6 +3,7 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/vrpt/7AB7">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb7ab7/pdb" rdfs:label="doi:10.2210/pdb7ab7/pdb"/>
     <dcterms:identifier>7AB7-validation</dcterms:identifier>
+    <skos:altLabel>pdb_00007ab7-validation</skos:altLabel>
     <skos:altLabel>7ab7-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 7AB7</dc:title>
     <PDBo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/7AB7"/>
@@ -10,9 +11,13 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7ab7-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7ab7-extatom.xml.gz"/>
     <PDBo:link_to_xml_vrpt rdf:resource="http://files.wwpdb.org/pub/pdb/validation_reports/ab/7ab7/7ab7_validation.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/ab/pdb_00007ab7/structures/pdb_00007ab7.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/ab/pdb_00007ab7/structures/pdb_00007ab7-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/ab/pdb_00007ab7/structures/pdb_00007ab7-extatom.xml.gz"/>
+    <PDBo:link_to_xml_vrpt rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/ab/pdb_00007ab7/validation_reports/pdb_00007ab7_validation.xml.gz"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/7ab7"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7AB7"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/7AB7"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/7AB7"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7AB7"/>
     <PDBo:datablockName>7AB7-validation-full</PDBo:datablockName>
     <PDBo:has_diffrnCategory>

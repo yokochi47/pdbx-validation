@@ -3,15 +3,19 @@
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/pdb/5H0S">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb5h0s/pdb" rdfs:label="doi:10.2210/pdb5h0s/pdb"/>
     <dcterms:identifier>5H0S</dcterms:identifier>
+    <skos:altLabel>pdb_00005h0s</skos:altLabel>
     <skos:altLabel>5h0s</skos:altLabel>
     <dc:title>EM Structure of VP1A and VP1B</dc:title>
     <PDBo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/5h0s.xml.gz"/>
     <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/5h0s-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/5h0s-extatom.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/h0/pdb_00005h0s/structures/pdb_00005h0s.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/h0/pdb_00005h0s/structures/pdb_00005h0s-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files-beta.wwpdb.org/pub/wwpdb/pdb/data/entries/h0/pdb_00005h0s/structures/pdb_00005h0s-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/5h0s"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/5H0S"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/5H0S"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/structure/5H0S"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/5H0S"/>
     <PDBo:datablockName>5H0S-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>
