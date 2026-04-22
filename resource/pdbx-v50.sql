@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.412
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.412: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.413
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.413: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -8331,7 +8331,7 @@ CREATE TABLE pdbx_data_processing_reflns (
 
 --
 -- (quoted from pdbx_data_processing_statusType)
--- Data items in the PDBX_DATA_PROCESSING_STATUS category record data processing instructions for workflow processing tasks. Example 1 - <PDBx:pdbx_data_processing_statusCategory> <PDBx:pdbx_data_processing_status status="skip" task_name="site"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="link"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="helix"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="solvent position"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="ssbond"></PDBx:pdbx_data_processing_status> </PDBx:pdbx_data_processing_statusCategory>
+-- Data items in the PDBX_DATA_PROCESSING_STATUS category record data processing instructions for workflow processing tasks. Example 1 - <PDBx:pdbx_data_processing_statusCategory> <PDBx:pdbx_data_processing_status status="skip" task_name="site"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="link"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="helix"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="solvent position"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="ssbond"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="metal coordination"></PDBx:pdbx_data_processing_status> </PDBx:pdbx_data_processing_statusCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --

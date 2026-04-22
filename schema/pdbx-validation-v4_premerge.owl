@@ -2530,7 +2530,7 @@
       <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
       <rdfs:comment xml:lang="en">
 
-VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.412, which is backward compatible with the PDBx/mmCIF Dictionary v5.370:
+VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413, which is backward compatible with the PDBx/mmCIF Dictionary v5.370:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </rdfs:comment>
@@ -46039,10 +46039,10 @@ gyration term employed in the target function used for simulated annealing.
          <owl:DataRange>
             <owl:oneOf>
                <rdf:List>
-                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kcal/mol/ A**2</rdf:first>
+                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kcal/mol/A**2</rdf:first>
                   <rdf:rest>
                      <rdf:List>
-                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kJ/mol/ nm**4</rdf:first>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kJ/mol/nm**2</rdf:first>
                         <rdf:rest>
                            <rdf:List>
                               <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other</rdf:first>
@@ -58695,10 +58695,10 @@ groups applied from right to left)
    <owl:Class rdf:ID="pdbx_struct_assembly_prop">
       <rdfs:label>pdbx_struct_assembly_prop</rdfs:label>
       <rdfs:comment xml:lang="en">
-Properties and features of structural assemblies.
-ABSA (A^2) is the "Total buried surface are [A^2}"
-SSA (A^2) is the "Surface area for the complex [A^2]"
-MORE is "Internal energy [kcal/mol]"
+The property type for the assembly.
+ABSA (A^2) is the "Total buried surface area (A^2)"
+SSA (A^2) is "Surface area for the complex (A^2)"
+MORE is "Internal energy (kcal/mol)"
 
     Example 1 -
 &lt;VRPTx:pdbx_struct_assembly_propCategory&gt;

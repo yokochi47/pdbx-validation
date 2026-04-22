@@ -11,7 +11,7 @@
       <rdfs:comment xml:lang="en">The OWL ontology for PDB/RDF, generated from the PDBML Schema.</rdfs:comment>
       <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic"/>
       <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/schema/pdbx-v50.xsd"/>
-      <owl:versionIRI rdf:resource="http://rdf.wwpdb.org/schema/pdbx-v50.owl/5.412"/>
+      <owl:versionIRI rdf:resource="http://rdf.wwpdb.org/schema/pdbx-v50.owl/5.413"/>
    </owl:Ontology>
    <owl:Class rdf:ID="Category">
       <rdfs:label>Category</rdfs:label>
@@ -5097,7 +5097,7 @@
       <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
       <rdfs:comment xml:lang="en">
 
-PDBML Schema translated from the PDBx/mmCIF Dictionary v5.412:
+PDBML Schema translated from the PDBx/mmCIF Dictionary v5.413:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </rdfs:comment>
@@ -81590,6 +81590,7 @@ data processing instructions for workflow processing tasks.
    &lt;PDBx:pdbx_data_processing_status status="skip" task_name="helix"&gt;&lt;/PDBx:pdbx_data_processing_status&gt;
    &lt;PDBx:pdbx_data_processing_status status="skip" task_name="solvent position"&gt;&lt;/PDBx:pdbx_data_processing_status&gt;
    &lt;PDBx:pdbx_data_processing_status status="skip" task_name="ssbond"&gt;&lt;/PDBx:pdbx_data_processing_status&gt;
+   &lt;PDBx:pdbx_data_processing_status status="skip" task_name="metal coordination"&gt;&lt;/PDBx:pdbx_data_processing_status&gt;
 &lt;/PDBx:pdbx_data_processing_statusCategory&gt;
 
 
@@ -81666,6 +81667,7 @@ A data processing workflow task name.
 site
 link
 helix
+metal coordination
 sheet
 solvent position
 ssbond
@@ -148464,6 +148466,9 @@ The identifier for the assembly used in category PDBX_STRUCT_ASSEMBLY.
       </rdfs:range>
       <rdfs:comment xml:lang="en">
 The property type for the assembly.
+ABSA (A^2) is the "Total buried surface area (A^2)"
+SSA (A^2) is "Surface area for the complex (A^2)"
+MORE is "Internal energy (kcal/mol)"
                      </rdfs:comment>
    </owl:DatatypeProperty>
    <owl:Class rdf:ID="pdbx_struct_assembly_prop_depositor_infoCategory">

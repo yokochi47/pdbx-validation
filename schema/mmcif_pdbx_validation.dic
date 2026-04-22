@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Mon Apr 20 15:23:27 JST 2026
+# Date:  Wed Apr 22 11:35:25 JST 2026
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.412)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.413)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.07.xsd
 #         - a XML schema for wwPDB validation reports, v6.07, rev. 2026-03-30
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.412
+    _dictionary.version         4.413
 #
     loop_
     _dictionary_history.version
@@ -1494,13 +1494,17 @@ data_mmcif_pdbx_validation.dic
 ;
   4.412   2026-04-22
 ;
->   + Change datatype nanometer(s) to nanometre(s) to be consistent throughout
+>   + Change datatype nanometer(s) to nanometre(s) to be consistent throughout # merged
 >   + _diffrn_source.type add "HEPS BEAMLINE ID02U1A",
 >     _diffrn_source.pdbx_synchrotron_site add "HEPS",
->     _diffrn_source.pdbx_synchrotron_beamlin add "ID02U1A"
->   + Extend description of _pdbx_struct_assembly_prop
->   + Extend enumeration of pdbx_related_exp_data_set.db_source
->   + Add "raw EM image data" to _pdbx_related_exp_data_set.data_set_type and remove EMPIAR
+>     _diffrn_source.pdbx_synchrotron_beamlin add "ID02U1A" # merged
+>   + Extend enumeration of pdbx_related_exp_data_set.db_source # merged
+>   + Add "raw EM image data" to _pdbx_related_exp_data_set.data_set_type and remove EMPIAR # merged
+;
+  4.413   2026-04-22
+;
+>   + Extend description of _pdbx_struct_assembly_prop # merged
+>   + Add "metal coordination" to enumeration for _pdbx_data_processing_status.task_name # not mapped
 ;
 
 #
@@ -32727,8 +32731,8 @@ save__pdbx_nmr_force_constants.exptl_J_coupling_term_units
     _item_enumeration.value
     _item_enumeration.detail
         'kcal/mol/Hz**2'  'kilocalories per mole per Hertz squared'
-        'kJ/mol/Hz**2'   'kilojoules per mole per Hertz squared'
-        'other'                'author added units'
+        'kJ/mol/Hz**2'    'kilojoules per mole per Hertz squared'
+        'other'           'author added units'
 save_
 
 
@@ -32759,9 +32763,9 @@ save__pdbx_nmr_force_constants.exptl_13C_shift_term_units
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-    'kcal/mol/ppm**2' 'kilocalories per mole per part per million squared'
-    'kJ/mol/ppm**2'   'kilojoules per mole per part per million squared'
-    'other'                'author added units'
+    'kcal/mol/ppm**2'  'kilocalories per mole per part per million squared'
+    'kJ/mol/ppm**2'    'kilojoules per mole per part per million squared'
+    'other'            'author added units'
 save_
 
 ##
@@ -32791,9 +32795,9 @@ save__pdbx_nmr_force_constants.exptl_1H_shift_term_units
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-     'kcal/mol/ppm**2' 'kilocalories per mole per part per million squared'
-     'kJ/mol/ppm**2'   'kilojoules per mole per part per million squared'
-     'other'                'author added units'
+     'kcal/mol/ppm**2'  'kilocalories per mole per part per million squared'
+     'kJ/mol/ppm**2'    'kilojoules per mole per part per million squared'
+     'other'            'author added units'
 save_
 
 save__pdbx_nmr_force_constants.exptl_dipolar_coupling_term
@@ -32893,7 +32897,7 @@ save__pdbx_nmr_force_constants.covalent_geom_bond_term_units
     _item_enumeration.detail
     'kcal/mol/A**2'  'kilocalories per mole per square angstrom'
     'kJ/mol/nm**2'   'kilojoules per mole per square nanometre'
-    'other'                'author added units'
+    'other'          'author added units'
 save_
 
 save__pdbx_nmr_force_constants.covalent_geom_angles_term
@@ -32924,8 +32928,8 @@ save__pdbx_nmr_force_constants.covalent_geom_angles_term_units
     _item_enumeration.value
     _item_enumeration.detail
     'kcal/mol/rad**2'  'kilocalories per mole per radian squared'
-    'kJ/mol/rad**2'   'kilojoules per mole per radian squared'
-    'other'                'author added units'
+    'kJ/mol/rad**2'    'kilojoules per mole per radian squared'
+    'other'            'author added units'
 save_
 
 save__pdbx_nmr_force_constants.covalent_geom_impropers_term
@@ -33007,7 +33011,7 @@ save__pdbx_nmr_force_constants.non-bonded_inter_van_der_Waals_term_units
     _item_enumeration.detail
      'kcal/mol/A**4'  'kilocalories per mole per angstrom to the 4th power'
      'kJ/mol/nm**4'   'kilojoules per mole per nanometre to the 4th power'
-     'other'           'author added units'
+     'other'          'author added units'
 save_
 
 save__pdbx_nmr_force_constants.non-bonded_inter_conf_db_potential_term
@@ -33051,9 +33055,9 @@ save__pdbx_nmr_force_constants.non-bonded_inter_radius_of_gyration_term_units
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-        'kcal/mol/ A**2'  'kilocalories per mole per square angstrom'
-        'kJ/mol/ nm**4'   'kilojoules per mole per square nanometre'
-        'other'                'author added units'
+        'kcal/mol/A**2'  'kilocalories per mole per square angstrom'
+        'kJ/mol/nm**2'   'kilojoules per mole per square nanometre'
+        'other'          'author added units'
 save_
 
 ###########################################################################
@@ -39275,10 +39279,10 @@ save_
 #
 save_pdbx_struct_assembly_prop
     _category.description
-;              Properties and features of structural assemblies.
-               ABSA (A^2) is the "Total buried surface are [A^2}"
-               SSA (A^2) is the "Surface area for the complex [A^2]"
-               MORE is "Internal energy [kcal/mol]"
+;              The property type for the assembly.
+               ABSA (A^2) is the "Total buried surface area (A^2)"
+               SSA (A^2) is "Surface area for the complex (A^2)"
+               MORE is "Internal energy (kcal/mol)"
 ;
     _category.id                  pdbx_struct_assembly_prop
     _category.mandatory_code      no

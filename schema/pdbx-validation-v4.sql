@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.412
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.412, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.413
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -4867,7 +4867,7 @@ CREATE TYPE ENUM_pdbx_nmr_force_constants_exptl_distance_term_units AS ENUM ( 'k
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_torsion_angles_term_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_exptl_torsion_angles_term_units AS ENUM ( 'kcal/mol/rad**2', 'kJ/mol/rad**2', 'author' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_non_bonded_inter_radius_of_gyrati CASCADE;
-CREATE TYPE ENUM_pdbx_nmr_force_constants_non_bonded_inter_radius_of_gyrati AS ENUM ( 'kcal/mol/ A**2', 'kJ/mol/ nm**4', 'other' );
+CREATE TYPE ENUM_pdbx_nmr_force_constants_non_bonded_inter_radius_of_gyrati AS ENUM ( 'kcal/mol/A**2', 'kJ/mol/nm**2', 'other' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te AS ENUM ( 'quartic', 'other' );
 CREATE TABLE pdbx_nmr_force_constants (
@@ -5852,7 +5852,7 @@ CREATE TABLE pdbx_struct_assembly_gen (
 
 --
 -- (quoted from pdbx_struct_assembly_propType)
--- Properties and features of structural assemblies. ABSA (A^2) is the "Total buried surface are [A^2}" SSA (A^2) is the "Surface area for the complex [A^2]" MORE is "Internal energy [kcal/mol]" Example 1 - <VRPTx:pdbx_struct_assembly_propCategory> <VRPTx:pdbx_struct_assembly_prop biol_id="1" type="ABSA"> <VRPTx:details> </VRPTx:details> <VRPTx:value>1456.7</VRPTx:value> </VRPTx:pdbx_struct_assembly_prop> </VRPTx:pdbx_struct_assembly_propCategory>
+-- The property type for the assembly. ABSA (A^2) is the "Total buried surface area (A^2)" SSA (A^2) is "Surface area for the complex (A^2)" MORE is "Internal energy (kcal/mol)" Example 1 - <VRPTx:pdbx_struct_assembly_propCategory> <VRPTx:pdbx_struct_assembly_prop biol_id="1" type="ABSA"> <VRPTx:details> </VRPTx:details> <VRPTx:value>1456.7</VRPTx:value> </VRPTx:pdbx_struct_assembly_prop> </VRPTx:pdbx_struct_assembly_propCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_struct_assembly_prop.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false

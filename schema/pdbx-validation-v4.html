@@ -1555,7 +1555,7 @@ div#legend div.hint {
             <th>Documentation</th>
             <td>
 
-VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.412, which is backward compatible with the PDBx/mmCIF Dictionary v5.370:
+VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413, which is backward compatible with the PDBx/mmCIF Dictionary v5.370:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         <br/> More information at: <a title="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
@@ -1563,7 +1563,7 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.412
          </tr>
          <tr>
             <th>Application Data</th>
-            <td>VRPT PDBML Schema v4.412</td>
+            <td>VRPT PDBML Schema v4.413</td>
          </tr>
       </table>
       <h3>Declared Namespaces</h3>
@@ -37859,7 +37859,7 @@ Radius of gyration.
                   </div>
                   <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:non-bonded_inter_radius_of_gyration_term_units&gt; <span class="constraint">
                         <span class="type">
-                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> (<em>value</em> comes from list: {'kcal/mol/ A**2'|'kJ/mol/ nm**4'|'other'})</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:non-bonded_inter_radius_of_gyration_term_units&gt; <span class="occurs">[0..1]</span>
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> (<em>value</em> comes from list: {'kcal/mol/A**2'|'kJ/mol/nm**2'|'other'})</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:non-bonded_inter_radius_of_gyration_term_units&gt; <span class="occurs">[0..1]</span>
                   </div>
                   <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:non-bonded_inter_van_der_Waals_term&gt; <span class="type">
                         <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:non-bonded_inter_van_der_Waals_term&gt; <span class="occurs">[0..1]</span>
@@ -38059,9 +38059,9 @@ Radius of gyration.
                                        <span class="type">
                                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
                                     </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
-                                       <span class="scTag">value</span>="<span class="scContent">kcal/mol/ A**2</span>"/&gt;</div>
+                                       <span class="scTag">value</span>="<span class="scContent">kcal/mol/A**2</span>"/&gt;</div>
                                     <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
-                                       <span class="scTag">value</span>="<span class="scContent">kJ/mol/ nm**4</span>"/&gt;</div>
+                                       <span class="scTag">value</span>="<span class="scContent">kJ/mol/nm**2</span>"/&gt;</div>
                                     <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
                                        <span class="scTag">value</span>="<span class="scContent">other</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
                            <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
@@ -45655,10 +45655,10 @@ constitute that assembly in terms of cartesian transformations.
          <tr>
             <th>Documentation</th>
             <td>
-Properties and features of structural assemblies.
-ABSA (A^2) is the "Total buried surface are [A^2}"
-SSA (A^2) is the "Surface area for the complex [A^2]"
-MORE is "Internal energy [kcal/mol]"
+The property type for the assembly.
+ABSA (A^2) is the "Total buried surface area (A^2)"
+SSA (A^2) is "Surface area for the complex (A^2)"
+MORE is "Internal energy (kcal/mol)"
 
     Example 1 -
 &lt;VRPTx:pdbx_struct_assembly_propCategory&gt;

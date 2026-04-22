@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pdbml.pdb.org/schema/pdbx-v50.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xsd:annotation>
-    <xsd:appinfo>PDBML Schema v5.412</xsd:appinfo>
+    <xsd:appinfo>PDBML Schema v5.413</xsd:appinfo>
     <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xml:lang="en">
 
-PDBML Schema translated from the PDBx/mmCIF Dictionary v5.412:
+PDBML Schema translated from the PDBx/mmCIF Dictionary v5.413:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </xsd:documentation>
@@ -39529,6 +39529,7 @@ data processing instructions for workflow processing tasks.
    &lt;PDBx:pdbx_data_processing_status status="skip" task_name="helix"&gt;&lt;/PDBx:pdbx_data_processing_status&gt;
    &lt;PDBx:pdbx_data_processing_status status="skip" task_name="solvent position"&gt;&lt;/PDBx:pdbx_data_processing_status&gt;
    &lt;PDBx:pdbx_data_processing_status status="skip" task_name="ssbond"&gt;&lt;/PDBx:pdbx_data_processing_status&gt;
+   &lt;PDBx:pdbx_data_processing_status status="skip" task_name="metal coordination"&gt;&lt;/PDBx:pdbx_data_processing_status&gt;
 &lt;/PDBx:pdbx_data_processing_statusCategory&gt;
 
 
@@ -39552,6 +39553,7 @@ A data processing workflow task name.
 site
 link
 helix
+metal coordination
 sheet
 solvent position
 ssbond
@@ -71196,6 +71198,9 @@ The identifier for the assembly used in category PDBX_STRUCT_ASSEMBLY.
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
 The property type for the assembly.
+ABSA (A^2) is the "Total buried surface area (A^2)"
+SSA (A^2) is "Surface area for the complex (A^2)"
+MORE is "Internal energy (kcal/mol)"
                      </xsd:documentation>
             </xsd:annotation>
             <xsd:simpleType>
