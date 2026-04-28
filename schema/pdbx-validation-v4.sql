@@ -21,31 +21,31 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 283 tables (3746 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 285 tables (3773 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v4.xsd
---      improper_torsion_angle_rms_dev_error, mean_guiner_radius, angle_value, bond_angle_rms_dev, "B_iso", diff_density_max_esd, "L22", "B_calc", distance_rms_dev, "B_calc_au", pdbx_phase_calc_part_solvent, improper_torsion_angle_rms_dev, "S22_esd", atom_deviation, "S31", "A_meas", "pdbx_F_calc_part_solvent", upper_limit, psi, "L23", prot_cis, "L11", "L23_esd", "T23_esd", "F_meas_au", "sigmaI", omega, "S32", "Luzzati_sigma_a_free", "F_squared_calc", "L12", distance_rms_dev_medoid, pdbx_solvent_shrinkage_radii, current, chi1, pdbx_rotation_angle, chi2, chi3, chi4, chi5, "S21", "S33", scan_time_backgd, maximum_upper_distance_constraint_violation, pdbx_scan_angle, "L13", "A_calc", "T12_esd", "S12_esd", "Luzzati_d_res_low_free", value, "B_meas", "S22", value_esd, "Cartn_y_esd", pdbx_solvent_vdw_probe_radii, "S13_esd", "B_meas_au", origin_y, origin_z, origin_x, "Cartn_z_esd", peptide_planarity_rms_dev, "P", phi, pdbx_collection_time_total, dihedral_angle_value, "B_iso_Wilson_estimate", zeta, maximum_lower_distance_constraint_violation, energyfilter_lower, "S11", "S23", nu1, "F_meas_sigma", nu2, nu3, "L12_esd", "F_calc_au", diff_density_min, nu4, nu0, "T33", tilt_angle_min, phase_meas, nominal_defocus_min, "S32_esd", "S12", calibrated_defocus_min, rise_per_n_subunits, "aniso_B33", "Luzzati_d_res_low_obs", pdbx_solvent_ion_probe_radii, "Luzzati_coordinate_error_free", "T22", lower_limit, "Luzzati_coordinate_error_obs", "S13", "T11_esd", "L11_esd", "aniso_B22", "S23_esd", concentration_range, "T23", max_mean_cross_sectional_radii_gyration_esd, "T11", clash_magnitude, angle_target_value, dihedral_angles_rms_dev, min_mean_cross_sectional_radii_gyration_esd, "L22_esd", neighbor_ligand_distance, tau0, "S21_esd", tau1, "aniso_B11", "aniso_B23", average_distance_constraint_violation, "B_iso_esd", maximum_distance_constraint_violation, "T12", max_mean_cross_sectional_radii_gyration, "A_calc_au", "S33_esd", "pdbx_F_calc_with_solvent", phase_calc, bond_angle_rms_dev_error, nominal_defocus_max, "aniso_B12", "B_iso_max", bond_deviation, angle_phi, min_mean_cross_sectional_radii_gyration, "T13", delta, distance_rms_dev_error, "B_iso_mean", energyfilter_upper, covalent_bond_rms_dev, "F_squared_meas", epsilon, "aniso_B13", angle_theta, "F_meas_sigma_au", mean_guiner_radius_esd, angle_deviation, dihedral_angles_rms_dev_error, "T22_esd", peptide_planarity_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Cartn_z", detector_distance, "S31_esd", beta, "L13_esd", "F_squared_sigma", voltage, angle_kappa, ambient_pressure_esd, "T13_esd", gamma, rotation_per_n_subunits, "Cartn_y", temp, covalent_bond_rms_dev_error, rmsd, "S11_esd", temperature, "A_meas_au", alpha, "Cartn_x_esd", "Cartn_x", "F_calc", power, diff_density_min_esd, ambient_temp_esd, neighbor_macromolecule_distance, "I", diff_density_max, angle_psi, "L33_esd", dihedral_angle_target_value, taum, angle_omega, pdbx_dist_value, scan_rate, "T33_esd", tau2, tau3, tau4, "B_iso_min", pdbx_phase_calc_with_solvent, tilt_angle_max, "F_meas", angle_chi, diff_density_rms_esd, average_torsion_angle_constraint_violation, maximum_torsion_angle_constraint_violation, "L33", diff_density_rms, dist, improper_torsion_angle, "pdbx_res_netI_over_av_sigmaI_2"
+--      improper_torsion_angle_rms_dev_error, mean_guiner_radius, pdbx_angle_end, angle_value, bond_angle_rms_dev, "B_iso", diff_density_max_esd, "L22", "B_calc", distance_rms_dev, "B_calc_au", pdbx_phase_calc_part_solvent, improper_torsion_angle_rms_dev, "S22_esd", atom_deviation, "S31", "A_meas", "pdbx_F_calc_part_solvent", upper_limit, psi, "L23", prot_cis, "L11", "L23_esd", "T23_esd", "F_meas_au", "sigmaI", omega, "S32", "Luzzati_sigma_a_free", "F_squared_calc", "L12", distance_rms_dev_medoid, pdbx_solvent_shrinkage_radii, current, chi1, pdbx_rotation_angle, chi2, chi3, chi4, chi5, "S21", "S33", scan_time_backgd, maximum_upper_distance_constraint_violation, pdbx_scan_angle, "L13", "A_calc", "T12_esd", "S12_esd", "Luzzati_d_res_low_free", value, "B_meas", "S22", value_esd, "Cartn_y_esd", pdbx_solvent_vdw_probe_radii, "S13_esd", "B_meas_au", origin_y, origin_z, origin_x, "Cartn_z_esd", peptide_planarity_rms_dev, "P", phi, pdbx_collection_time_total, dihedral_angle_value, "B_iso_Wilson_estimate", zeta, maximum_lower_distance_constraint_violation, energyfilter_lower, "S11", "S23", nu1, "F_meas_sigma", nu2, nu3, "L12_esd", "F_calc_au", diff_density_min, nu4, nu0, pdbx_rotation_rate, "T33", tilt_angle_min, phase_meas, nominal_defocus_min, "S32_esd", "S12", calibrated_defocus_min, rise_per_n_subunits, "aniso_B33", "Luzzati_d_res_low_obs", pdbx_solvent_ion_probe_radii, "Luzzati_coordinate_error_free", "T22", lower_limit, "Luzzati_coordinate_error_obs", "S13", "T11_esd", "L11_esd", "aniso_B22", beam_diameter_sample_plane, "S23_esd", concentration_range, "T23", max_mean_cross_sectional_radii_gyration_esd, "T11", clash_magnitude, angle_target_value, dihedral_angles_rms_dev, min_mean_cross_sectional_radii_gyration_esd, "L22_esd", neighbor_ligand_distance, tau0, "S21_esd", tau1, "aniso_B11", "aniso_B23", average_distance_constraint_violation, "B_iso_esd", maximum_distance_constraint_violation, "T12", max_mean_cross_sectional_radii_gyration, "A_calc_au", "S33_esd", "pdbx_F_calc_with_solvent", phase_calc, bond_angle_rms_dev_error, nominal_defocus_max, "aniso_B12", "B_iso_max", bond_deviation, angle_phi, min_mean_cross_sectional_radii_gyration, "T13", delta, distance_rms_dev_error, "B_iso_mean", energyfilter_upper, pdbx_exposure_time_per_image, covalent_bond_rms_dev, "F_squared_meas", epsilon, "aniso_B13", angle_theta, "F_meas_sigma_au", mean_guiner_radius_esd, angle_deviation, dihedral_angles_rms_dev_error, "T22_esd", peptide_planarity_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Cartn_z", detector_distance, "S31_esd", pdbx_angle_start, beta, "L13_esd", "F_squared_sigma", voltage, angle_kappa, ambient_pressure_esd, "T13_esd", gamma, rotation_per_n_subunits, "Cartn_y", temp, covalent_bond_rms_dev_error, rmsd, "S11_esd", temperature, "A_meas_au", alpha, "Cartn_x_esd", "Cartn_x", "F_calc", power, diff_density_min_esd, ambient_temp_esd, neighbor_macromolecule_distance, "I", details, diff_density_max, angle_psi, "L33_esd", dihedral_angle_target_value, taum, angle_omega, pdbx_dist_value, scan_rate, "T33_esd", tau2, tau3, tau4, "B_iso_min", pdbx_phase_calc_with_solvent, tilt_angle_max, "F_meas", angle_chi, diff_density_rms_esd, average_torsion_angle_constraint_violation, maximum_torsion_angle_constraint_violation, "L33", diff_density_rms, dist, improper_torsion_angle, "pdbx_res_netI_over_av_sigmaI_2"
 --   Namespaces:
 --    http://www.w3.org/2001/XMLSchema (xsd), http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx)
 --   Schema locations:
 --    pdbx-validation-v4.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 283 admin children
+--    0 root, 0 root children, 0 admin roots, 285 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    235 document keys, 0 serial keys, 0 xpath keys
+--    237 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    488 attributes (43 in-place document keys), 3023 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    491 attributes (43 in-place document keys), 3045 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    283 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 148 foreign key constraints from xsd:keyref
+--    285 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 149 foreign key constraints from xsd:keyref
 --
 
 --
--- VRPT PDBML Schema v4.413
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.414
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.414, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -126,6 +126,7 @@ DROP TABLE IF EXISTS pdbx_dcc_mapman CASCADE;
 DROP TABLE IF EXISTS pdbx_dcc_mon_geometry CASCADE;
 DROP TABLE IF EXISTS pdbx_dcc_rscc_mapman CASCADE;
 DROP TABLE IF EXISTS pdbx_dcc_rscc_mapman_overall CASCADE;
+DROP TABLE IF EXISTS pdbx_diffrn_ed CASCADE;
 DROP TABLE IF EXISTS pdbx_diffrn_reflns_shell CASCADE;
 DROP TABLE IF EXISTS pdbx_distant_solvent_atoms CASCADE;
 DROP TABLE IF EXISTS pdbx_domain_range CASCADE;
@@ -149,6 +150,7 @@ DROP TABLE IF EXISTS pdbx_entity_descriptor CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_nonpoly CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_poly_comp_link_list CASCADE;
 DROP TABLE IF EXISTS pdbx_entry_details CASCADE;
+DROP TABLE IF EXISTS pdbx_exptl_subtype CASCADE;
 DROP TABLE IF EXISTS pdbx_helical_symmetry CASCADE;
 DROP TABLE IF EXISTS pdbx_missing_nmr_star_item CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_chem_shift_annotation CASCADE;
@@ -1384,6 +1386,12 @@ CREATE TABLE diffrn_detector (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_diffrn_measurement_method_precession CASCADE;
+CREATE TYPE ENUM_diffrn_measurement_method_precession AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_diffrn_measurement_rotation_mode CASCADE;
+CREATE TYPE ENUM_diffrn_measurement_rotation_mode AS ENUM ( 'rotation', 'stepwise' );
+DROP TYPE IF EXISTS ENUM_diffrn_measurement_sample_tracking CASCADE;
+CREATE TYPE ENUM_diffrn_measurement_sample_tracking AS ENUM ( 'Y', 'N' );
 CREATE TABLE diffrn_measurement (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
@@ -1392,6 +1400,18 @@ CREATE TABLE diffrn_measurement (
 	device_details TEXT ,
 	device_type TEXT ,
 	method TEXT ,
+	method_precession ENUM_diffrn_measurement_method_precession ,
+-- omit an attribute having a fixed value: @units="degrees"
+	pdbx_angle_end DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees"
+	pdbx_angle_start DECIMAL ,
+-- omit an attribute having a fixed value: @units="seconds"
+	pdbx_exposure_time_per_image DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees_per_second"
+	pdbx_rotation_rate DECIMAL ,
+	rotation_mode ENUM_diffrn_measurement_rotation_mode ,
+	sample_tracking ENUM_diffrn_measurement_sample_tracking ,
+	sample_tracking_method TEXT ,
 	specimen_support TEXT ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL
@@ -3563,6 +3583,46 @@ CREATE TABLE pdbx_dcc_rscc_mapman_overall (
 );
 
 --
+-- (quoted from pdbx_diffrn_edType)
+-- Data items in the PDBX_DIFFRN_ED record details specific to electron diffraction method. Example 1 - based on PDB entry 9DHO <VRPTx:pdbx_diffrn_edCategory> <VRPTx:pdbx_diffrn_ed id="1"> <VRPTx:beam_diameter_sample_plane>3.5</VRPTx:beam_diameter_sample_plane> <VRPTx:c2_aperture_diameter>50</VRPTx:c2_aperture_diameter> <VRPTx:camera_length>1402</VRPTx:camera_length> <VRPTx:details>The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10&amp;#8201;eV, with the zero-loss peak centered in defocused diffraction</VRPTx:details> <VRPTx:diffrn_id>1</VRPTx:diffrn_id> <VRPTx:electron_source>FIELD EMISSION GUN</VRPTx:electron_source> <VRPTx:energyfilter_name>TFS Selectris</VRPTx:energyfilter_name> <VRPTx:fluence_accumulated>0.84</VRPTx:fluence_accumulated> <VRPTx:fluence_rate>0.002</VRPTx:fluence_rate> <VRPTx:recording_mode>Electron Counting</VRPTx:recording_mode> <VRPTx:sa_aperture_diameter>150</VRPTx:sa_aperture_diameter> </VRPTx:pdbx_diffrn_ed> </VRPTx:pdbx_diffrn_edCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_diffrn_ed.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_diffrn_ed_electron_source CASCADE;
+CREATE TYPE ENUM_pdbx_diffrn_ed_electron_source AS ENUM ( 'FIELD EMISSION GUN', 'LAB6', 'OTHER' );
+DROP TYPE IF EXISTS ENUM_pdbx_diffrn_ed_recording_mode CASCADE;
+CREATE TYPE ENUM_pdbx_diffrn_ed_recording_mode AS ENUM ( 'Electron Counting', 'Integrating', 'Other' );
+CREATE TABLE pdbx_diffrn_ed (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+-- omit an attribute having a fixed value: @units="micrometres"
+	beam_diameter_sample_plane DECIMAL ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	c2_aperture_diameter DECIMAL CHECK ( c2_aperture_diameter >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	camera_length DECIMAL CHECK ( camera_length >= 0.0 ) ,
+-- omit an attribute having a fixed value: @units="electron_volts"
+	details TEXT ,
+	diffrn_id TEXT ,
+	electron_source ENUM_pdbx_diffrn_ed_electron_source ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	energyfilter_lower DECIMAL CHECK ( energyfilter_lower >= 0.0 ) ,
+	energyfilter_name TEXT ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	energyfilter_upper DECIMAL CHECK ( energyfilter_upper >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	fluence_accumulated DECIMAL CHECK ( fluence_accumulated >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	fluence_rate DECIMAL CHECK ( fluence_rate >= 0.0 ) ,
+	recording_mode ENUM_pdbx_diffrn_ed_recording_mode ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	sa_aperture_diameter DECIMAL CHECK ( sa_aperture_diameter >= 0.0 ) ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
+);
+
+--
 -- (quoted from pdbx_diffrn_reflns_shellType)
 -- Data items in the DIFFRN_REFLNS_SHELL category record details about the reflection data set within shells of resolution. Example 1 - diffraction properties with shells <VRPTx:pdbx_diffrn_reflns_shellCategory> <VRPTx:pdbx_diffrn_reflns_shell d_res_high="5.18" d_res_low="50.00" diffrn_id="1"> <VRPTx:Rmerge_I_obs>0.029</VRPTx:Rmerge_I_obs> <VRPTx:chi_squared>1.154</VRPTx:chi_squared> <VRPTx:number_obs>11791</VRPTx:number_obs> <VRPTx:percent_possible_obs>100.000</VRPTx:percent_possible_obs> </VRPTx:pdbx_diffrn_reflns_shell> <VRPTx:pdbx_diffrn_reflns_shell d_res_high="4.11" d_res_low="5.18" diffrn_id="1"> <VRPTx:Rmerge_I_obs>0.033</VRPTx:Rmerge_I_obs> <VRPTx:chi_squared>1.098</VRPTx:chi_squared> <VRPTx:number_obs>11717</VRPTx:number_obs> <VRPTx:percent_possible_obs>100.000</VRPTx:percent_possible_obs> </VRPTx:pdbx_diffrn_reflns_shell> <VRPTx:pdbx_diffrn_reflns_shell d_res_high="3.59" d_res_low="4.11" diffrn_id="1"> <VRPTx:Rmerge_I_obs>0.043</VRPTx:Rmerge_I_obs> <VRPTx:chi_squared>1.044</VRPTx:chi_squared> <VRPTx:number_obs>11792</VRPTx:number_obs> <VRPTx:percent_possible_obs>100.000</VRPTx:percent_possible_obs> </VRPTx:pdbx_diffrn_reflns_shell> <VRPTx:pdbx_diffrn_reflns_shell d_res_high="3.26" d_res_low="3.59" diffrn_id="1"> <VRPTx:Rmerge_I_obs>0.059</VRPTx:Rmerge_I_obs> <VRPTx:chi_squared>1.104</VRPTx:chi_squared> <VRPTx:number_obs>11718</VRPTx:number_obs> <VRPTx:percent_possible_obs>100.000</VRPTx:percent_possible_obs> </VRPTx:pdbx_diffrn_reflns_shell> <VRPTx:pdbx_diffrn_reflns_shell d_res_high="3.03" d_res_low="3.26" diffrn_id="1"> <VRPTx:Rmerge_I_obs>0.087</VRPTx:Rmerge_I_obs> <VRPTx:chi_squared>1.160</VRPTx:chi_squared> <VRPTx:number_obs>11753</VRPTx:number_obs> <VRPTx:percent_possible_obs>100.000</VRPTx:percent_possible_obs> </VRPTx:pdbx_diffrn_reflns_shell> <VRPTx:pdbx_diffrn_reflns_shell d_res_high="2.85" d_res_low="3.03" diffrn_id="1"> <VRPTx:Rmerge_I_obs>0.130</VRPTx:Rmerge_I_obs> <VRPTx:chi_squared>1.169</VRPTx:chi_squared> <VRPTx:number_obs>11811</VRPTx:number_obs> <VRPTx:percent_possible_obs>100.000</VRPTx:percent_possible_obs> </VRPTx:pdbx_diffrn_reflns_shell> <VRPTx:pdbx_diffrn_reflns_shell d_res_high="2.71" d_res_low="2.85" diffrn_id="1"> <VRPTx:Rmerge_I_obs>0.174</VRPTx:Rmerge_I_obs> <VRPTx:chi_squared>1.170</VRPTx:chi_squared> <VRPTx:number_obs>11752</VRPTx:number_obs> <VRPTx:percent_possible_obs>100.000</VRPTx:percent_possible_obs> </VRPTx:pdbx_diffrn_reflns_shell> <VRPTx:pdbx_diffrn_reflns_shell d_res_high="2.59" d_res_low="2.71" diffrn_id="1"> <VRPTx:Rmerge_I_obs>0.227</VRPTx:Rmerge_I_obs> <VRPTx:chi_squared>1.165</VRPTx:chi_squared> <VRPTx:number_obs>11767</VRPTx:number_obs> <VRPTx:percent_possible_obs>100.000</VRPTx:percent_possible_obs> </VRPTx:pdbx_diffrn_reflns_shell> </VRPTx:pdbx_diffrn_reflns_shellCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_diffrn_reflns_shell.html
@@ -4063,6 +4123,25 @@ CREATE TABLE pdbx_entry_details (
 	source_details TEXT ,
 -- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_exptl_subtypeType)
+-- Data items in the PDBX_EXPTL_SUBTYPE category record details about the method subtype under the primary method recorded in attribute method in category exptl Example 1 <VRPTx:pdbx_exptl_subtypeCategory> <VRPTx:pdbx_exptl_subtype exptl_method="ELECTRON CRYSTALLOGRAPHY" method_type="Microcrystal Electron Diffraction"> </VRPTx:pdbx_exptl_subtype> </VRPTx:pdbx_exptl_subtypeCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_exptl_subtype.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_exptl_subtype_method_type CASCADE;
+CREATE TYPE ENUM_pdbx_exptl_subtype_method_type AS ENUM ( 'Microcrystal Electron Diffraction', '2-Dimensional Electron Crystallography' );
+CREATE TABLE pdbx_exptl_subtype (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	details TEXT ,
+-- ATTRIBUTE
+	exptl_method TEXT NOT NULL ,
+-- ATTRIBUTE
+	method_type ENUM_pdbx_exptl_subtype_method_type NOT NULL
 );
 
 --
@@ -9115,6 +9194,9 @@ CREATE TABLE symmetry_equiv (
 -- (derived from xsd:key[@name='pdbx_dcc_rscc_mapman_overallKey_0'])
 --ALTER TABLE pdbx_dcc_rscc_mapman_overall ADD CONSTRAINT UNQ_pdbx_dcc_rscc_mapman_overall UNIQUE ( entry_id );
 
+-- (derived from xsd:key[@name='pdbx_diffrn_edKey_0'])
+--ALTER TABLE pdbx_diffrn_ed ADD CONSTRAINT UNQ_pdbx_diffrn_ed UNIQUE ( entry_id, id );
+
 -- (derived from xsd:key[@name='pdbx_diffrn_reflns_shellKey_0'])
 --ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT UNQ_pdbx_diffrn_reflns_shell UNIQUE ( entry_id, d_res_high, d_res_low, diffrn_id );
 
@@ -9207,6 +9289,9 @@ CREATE TABLE symmetry_equiv (
 
 -- (derived from xsd:key[@name='pdbx_entry_detailsKey_0'])
 --ALTER TABLE pdbx_entry_details ADD CONSTRAINT UNQ_pdbx_entry_details UNIQUE ( entry_id );
+
+-- (derived from xsd:key[@name='pdbx_exptl_subtypeKey_0'])
+--ALTER TABLE pdbx_exptl_subtype ADD CONSTRAINT UNQ_pdbx_exptl_subtype UNIQUE ( entry_id, exptl_method, method_type );
 
 -- (derived from xsd:key[@name='pdbx_helical_symmetryKey_0'])
 --ALTER TABLE pdbx_helical_symmetry ADD CONSTRAINT UNQ_pdbx_helical_symmetry UNIQUE ( entry_id );
@@ -9746,7 +9831,10 @@ CREATE TABLE symmetry_equiv (
 --ALTER TABLE diffrn_standards ADD CONSTRAINT KR_diffrnKeyref_0_0_9_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='diffrnKeyref_0_0_10_0'])
---ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT KR_diffrnKeyref_0_0_10_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_diffrn_ed ADD CONSTRAINT KR_diffrnKeyref_0_0_10_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_11_0'])
+--ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT KR_diffrnKeyref_0_0_11_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='em_entity_assemblyKeyref_0_0_0_0'])
 --ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_0_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

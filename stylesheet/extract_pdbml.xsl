@@ -571,6 +571,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBx:pdbx_diffrn_edCategory">
+    <xsl:element name="VRPTx:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBx:pdbx_diffrn_reflns_shellCategory">
     <xsl:element name="VRPTx:{local-name()}">
       <xsl:apply-templates mode="category-element"/>
@@ -752,6 +758,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_entry_detailsCategory">
+    <xsl:element name="VRPTx:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_exptl_subtypeCategory">
     <xsl:element name="VRPTx:{local-name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>

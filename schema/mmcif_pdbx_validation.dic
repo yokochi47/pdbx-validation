@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Apr 22 11:35:25 JST 2026
+# Date:  Tue Apr 28 11:23:31 JST 2026
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.413)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.414)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.07.xsd
 #         - a XML schema for wwPDB validation reports, v6.07, rev. 2026-03-30
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.413
+    _dictionary.version         4.414
 #
     loop_
     _dictionary_history.version
@@ -1506,6 +1506,14 @@ data_mmcif_pdbx_validation.dic
 >   + Extend description of _pdbx_struct_assembly_prop # merged
 >   + Add "metal coordination" to enumeration for _pdbx_data_processing_status.task_name # not mapped
 ;
+  4.414   2026-04-28
+;
+>   + MicroED extension added to dictionary
+>   + Add electron diffraction software to _software.name (2DX, IPLT).  Change EPU to EPU-D.
+>   + Add ELECTRON MICROSCOPE names to _diffrn_source.type
+>   + Add "ELECTRON DETECTOR" to _diffrn_detector.detctor enumeration
+>   + Add electron detectors to _diffrn_detector.type and update types.
+;
 
 #
 ###########################################################################
@@ -1936,245 +1944,177 @@ data_mmcif_pdbx_validation.dic
     loop_
     _item_units_list.code
     _item_units_list.detail
-#
-     'metres'                 'metres (metres)'
-     'centimetres'            'centimetres (metres * 10^( -2)^)'
-     'millimetres'            'millimetres (metres * 10^( -3)^)'
-     'micrometres'            'micrometres (metres * 10^( -6)^)'
-     'nanometres'             'nanometres  (metres * 10^( -9)^)'
-     'angstroms'              'angstroms   (metres * 10^(-10)^)'
-     'picometres'             'picometres  (metres * 10^(-12)^)'
-     'femtometres'            'femtometres (metres * 10^(-15)^)'
-#
-     'reciprocal_metres'      'reciprocal metres (metres^(-1)^)'
-     'reciprocal_centimetres'
-        'reciprocal centimetres ((metres * 10^( -2))^(-1))'
-     'reciprocal_millimetres'
-        'reciprocal millimetres ((metres * 10^( -3)^)^(-1)^)'
-     'reciprocal_nanometres'
-        'reciprocal nanometres  ((metres * 10^( -9)^)^(-1)^)'
-     'reciprocal_angstroms'
-        'reciprocal angstroms   ((metres * 10^(-10)^)^(-1)^)'
-     'reciprocal_picometres'
-        'reciprocal picometres  ((metres * 10^(-12)^)^(-1)^)'
-#
-     'micrometres_squared'    'micrometres squared (metres * 10^( -6)^)^2^'
-     'nanometres_squared'     'nanometres squared (metres * 10^( -9)^)^2^'
-     'angstroms_squared'      'angstroms squared  (metres * 10^(-10)^)^2^'
-     '8pi2_angstroms_squared' '8pi^2^ * angstroms squared (metres * 10^(-10)^)^2^'
-     'picometres_squared'     'picometres squared (metres * 10^(-12)^)^2^'
-#
-     'nanometres_cubed'       'nanometres cubed (metres * 10^( -9)^)^3^'
-     'angstroms_cubed'        'angstroms cubed  (metres * 10^(-10)^)^3^'
-     'picometres_cubed'       'picometres cubed (metres * 10^(-12)^)^3^'
-#
-     'kilopascals'            'kilopascals'
-     'gigapascals'            'gigapascals'
-#
-     'hours'                  'hours'
-     'minutes'                'minutes'
-     'seconds'                'seconds'
-     'microseconds'           'microseconds (seconds * 10^( -6)^)'
-     'femtoseconds'           'femtoseconds (seconds * 10^( -15)^)'
-#
-     'degrees'                'degrees (of arc)'
-     'milliradians'           'milliradians (of arc)'
-#
-     'degrees_per_minute'     'degrees (of arc) per minute'
-#
-     'celsius'                'degrees (of temperature) Celsius'
-     'kelvins'                'temperature in kelvins'
-#
-     'electrons'              'electrons'
-#
-     'electrons_squared'      'electrons squared'
-#
-     'electrons_per_nanometres_cubed'
-; electrons per nanometres cubed (electrons/(metres * 10^( -9)^)^(-3)^)
-;
-     'electrons_per_angstroms_cubed'
-; electrons per angstroms cubed (electrons/(metres * 10^(-10)^)^(-3)^)
-;
-     'electrons_per_picometres_cubed'
-; electrons per picometres cubed (electrons/(metres * 10^(-12)^)^(-3)^)
-;
-     'ions_per_cm_squared_per_sec'
-; ions per centimetre squared per second (ions/(metres * 10^(-2)^)^(-2)/second^)
-;
-     'kilowatts'              'kilowatts'
-     'milliamperes'           'milliamperes'
-     'kilovolts'              'kilovolts'
-     'volts'                  'volts'
-#
-     'arbitrary'
-; arbitrary system of units.
-;
-#
-     'angstroms_degrees'      'angstroms * degrees'
-#
-     'degrees_squared'        'degrees squared'
-#
-     'mg_per_ml'              'milliliter per milligram'
-#
-     'ml_per_min'             'milliliters per minute'
-     'microliters_per_min'     'microliters per minute'
-#
-     'milliliters'             'liter / 1000'
-#
-     'milligrams'             'grams / 1000'
-#
-     'megadaltons'            'megadaltons'
-     'kilodaltons'            'kilodaltons'
-     "kilodaltons/nanometre"  "kilodaltons/nanometre"
-#
-     'microns_squared'        'micrometres squared (metres * 10^( -6)^)^2^'
-     'microns'                'micrometres  (metres * 10^( -6)^)'
-#
-     'electrons_angstrom_squared'   'electrons square angstrom'
-     'electron_volts'         'electron volts'
-     'kiloelectron_volts'     'KeV (electron volts * 10^( 3)^)'
-#     'mg/ml'                  'mg per milliliter'
-     'millimolar'             'millimolar'
-     'megagrams_per_cubic_metre'       'megagrams per cubic metre'
-     'pixels_per_millimetre'      'pixels per millimetre'
-     'counts'                 'counts'
-     'counts_per_photon'      'counts per photon'
-     'pascals'                'pascals'
-     'teraphotons_per_pulse'  '(photons * 10^( 12)^) per pulse'
-     'joules'                 'Joules'
-     'microjoules'             'joules * 10^( -6)^'
-     'hertz'                   'reciprocal seconds'
+metres                                      "metres (metres)"
+centimetres                                 "centimetres (metres * 10^( -2)^)"
+millimetres                                 "millimetres (metres * 10^( -3)^)"
+micrometres                                 "micrometres (metres * 10^( -6)^)"
+nanometres                                  "nanometres  (metres * 10^( -9)^)"
+angstroms                                   "angstroms   (metres * 10^(-10)^)"
+picometres                                  "picometres  (metres * 10^(-12)^)"
+femtometres                                 "femtometres (metres * 10^(-15)^)"
+reciprocal_metres                           "reciprocal metres (metres^(-1)^)"
+reciprocal_centimetres                      "reciprocal centimetres ((metres * 10^( -2))^(-1))"
+reciprocal_millimetres                      "reciprocal millimetres ((metres * 10^( -3)^)^(-1)^)"
+reciprocal_nanometres                       "reciprocal nanometres  ((metres * 10^( -9)^)^(-1)^)"
+reciprocal_angstroms                        "reciprocal angstroms   ((metres * 10^(-10)^)^(-1)^)"
+reciprocal_picometres                       "reciprocal picometres  ((metres * 10^(-12)^)^(-1)^)"
+micrometres_squared                         "micrometres squared (metres * 10^( -6)^)^2^"
+nanometres_squared                          "nanometres squared (metres * 10^( -9)^)^2^"
+angstroms_squared                           "angstroms squared  (metres * 10^(-10)^)^2^"
+8pi2_angstroms_squared                      "8pi^2^ * angstroms squared (metres * 10^(-10)^)^2^"
+picometres_squared                          "picometres squared (metres * 10^(-12)^)^2^"
+nanometres_cubed                            "nanometres cubed (metres * 10^( -9)^)^3^"
+angstroms_cubed                             "angstroms cubed  (metres * 10^(-10)^)^3^"
+picometres_cubed                            "picometres cubed (metres * 10^(-12)^)^3^"
+kilopascals                                 kilopascals
+gigapascals                                 gigapascals
+hours                                       hours
+minutes                                     minutes
+seconds                                     seconds
+microseconds                                "microseconds (seconds * 10^( -6)^)"
+femtoseconds                                "femtoseconds (seconds * 10^( -15)^)"
+degrees                                     "degrees (of arc)"
+milliradians                                "milliradians (of arc)"
+degrees_per_minute                          "degrees (of arc) per minute"
+celsius                                     "degrees (of temperature) Celsius"
+kelvins                                     "temperature in Kelvin"
+electrons                                   electrons
+electrons_squared                           "electrons squared"
+electrons_per_nanometres_cubed              " electrons per nanometres cubed (electrons/(metres * 10^( -9)^)^(-3)^)"
+electrons_per_angstroms_cubed               " electrons per angstroms cubed (electrons/(metres * 10^(-10)^)^(-3)^)"
+electrons_per_picometres_cubed              " electrons per picometres cubed (electrons/(metres * 10^(-12)^)^(-3)^)"
+ions_per_cm_squared_per_sec                 " ions per centimetre squared per second (ions/(meters * 10^(-2)^)^(-2)/second^)"
+kilowatts                                   kilowatts
+milliamperes                                milliamperes
+kilovolts                                   kilovolts
+volts                                       volts
+arbitrary                                   " arbitrary system of units."
+angstroms_degrees                           "angstroms * degrees"
+degrees_squared                             "degrees squared"
+mg_per_ml                                   "milliliter per milligram"
+ml_per_min                                  "milliliters per minute"
+microliters_per_min                         "microliters per minute"
+milliliters                                 "liter / 1000"
+milligrams                                  "grams / 1000"
+megadaltons                                 megadaltons
+kilodaltons                                 kilodaltons
+kilodaltons/nanometre                       kilodaltons/nanometre
+microns_squared                             "micrometres squared (metres * 10^( -6)^)^2^"
+microns                                     "micrometres  (metres * 10^( -6)^)"
+electrons_angstrom_squared                  "electrons square angstrom"
+electron_volts                              "electron volts"
+kiloelectron_volts                          "KeV (electron volts * 10^( 3)^)"
+millimolar                                  millimolar
+megagrams_per_cubic_metre                   "megagrams per cubic metre"
+pixels_per_millimetre                       "pixels per millimetre"
+counts                                      counts
+counts_per_photon                           "counts per photon"
+pascals                                     pascals
+teraphotons_per_pulse                       "(photons * 10^( 12)^) per pulse"
+joules                                      Joules
+microjoules                                 "joules * 10^( -6)^"
+hertz                                       "reciprocal seconds"
+pixels_per_element                          "(image) pixels per (array) element"
+degrees_per_second                          "degrees (of arc) per second"
+electrons_per_angstroms_squared             "electrons per angstroms squared (electrons/(metres * 10^(-10)^)^(-2)^)"
+electrons_per_angstroms_squared_per_second  "electrons per angstroms squared (electrons/(metres * 10^(-10)^)^(-2)/second^)"
 #
     loop_
     _item_units_conversion.from_code
     _item_units_conversion.to_code
     _item_units_conversion.operator
     _item_units_conversion.factor
-###
-     'metres'                   'centimetres'              '*'   1.0E+02
-     'metres'                   'millimetres'              '*'   1.0E+03
-     'metres'                   'nanometres'               '*'   1.0E+09
-     'metres'                   'angstroms'                '*'   1.0E+10
-     'metres'                   'picometres'               '*'   1.0E+12
-     'metres'                   'femtometres'              '*'   1.0E+15
-
-     'centimetres'              'millimetres'              '*'   1.0E+01
-     'centimetres'              'nanometres'               '*'   1.0E+07
-     'centimetres'              'angstroms'                '*'   1.0E+08
-     'centimetres'              'picometres'               '*'   1.0E+10
-     'centimetres'              'femtometres'              '*'   1.0E+13
-#
-     'millimetres'              'centimetres'              '*'   1.0E-01
-     'millimetres'              'nanometres'               '*'   1.0E+06
-     'millimetres'              'angstroms'                '*'   1.0E+07
-     'millimetres'              'picometres'               '*'   1.0E+09
-     'millimetres'              'femtometres'              '*'   1.0E+12
-#
-     'nanometres'               'centimetres'              '*'   1.0E-07
-     'nanometres'               'millimetres'              '*'   1.0E-06
-     'nanometres'               'angstroms'                '*'   1.0E+01
-     'nanometres'               'picometres'               '*'   1.0E+03
-     'nanometres'               'femtometres'              '*'   1.0E+06
-#
-     'angstroms'                'centimetres'              '*'   1.0E-08
-     'angstroms'                'millimetres'              '*'   1.0E-07
-     'angstroms'                'nanometres'               '*'   1.0E-01
-     'angstroms'                'picometres'               '*'   1.0E+02
-     'angstroms'                'femtometres'              '*'   1.0E+05
-#
-     'picometres'               'centimetres'              '*'   1.0E-10
-     'picometres'               'millimetres'              '*'   1.0E-09
-     'picometres'               'nanometres'               '*'   1.0E-03
-     'picometres'               'angstroms'                '*'   1.0E-02
-     'picometres'               'femtometres'              '*'   1.0E+03
-#
-     'femtometres'              'centimetres'              '*'   1.0E-13
-     'femtometres'              'millimetres'              '*'   1.0E-12
-     'femtometres'              'nanometres'               '*'   1.0E-06
-     'femtometres'              'angstroms'                '*'   1.0E-05
-     'femtometres'              'picometres'               '*'   1.0E-03
-###
-     'reciprocal_centimetres'   'reciprocal_millimetres'   '*'   1.0E-01
-     'reciprocal_centimetres'   'reciprocal_nanometres'    '*'   1.0E-07
-     'reciprocal_centimetres'   'reciprocal_angstroms'     '*'   1.0E-08
-     'reciprocal_centimetres'   'reciprocal_picometres'    '*'   1.0E-10
-#
-     'reciprocal_millimetres'   'reciprocal_centimetres'   '*'   1.0E+01
-     'reciprocal_millimetres'   'reciprocal_nanometres'    '*'   1.0E-06
-     'reciprocal_millimetres'   'reciprocal_angstroms'     '*'   1.0E-07
-     'reciprocal_millimetres'   'reciprocal_picometres'    '*'   1.0E-09
-#
-     'reciprocal_nanometres'    'reciprocal_centimetres'   '*'   1.0E+07
-     'reciprocal_nanometres'    'reciprocal_millimetres'   '*'   1.0E+06
-     'reciprocal_nanometres'    'reciprocal_angstroms'     '*'   1.0E-01
-     'reciprocal_nanometres'    'reciprocal_picometres'    '*'   1.0E-03
-#
-     'reciprocal_angstroms'     'reciprocal_centimetres'   '*'   1.0E+08
-     'reciprocal_angstroms'     'reciprocal_millimetres'   '*'   1.0E+07
-     'reciprocal_angstroms'     'reciprocal_nanometres'    '*'   1.0E+01
-     'reciprocal_angstroms'     'reciprocal_picometres'    '*'   1.0E-02
-#
-     'reciprocal_picometres'    'reciprocal_centimetres'   '*'   1.0E+10
-     'reciprocal_picometres'    'reciprocal_millimetres'   '*'   1.0E+09
-     'reciprocal_picometres'    'reciprocal_nanometres'    '*'   1.0E+03
-     'reciprocal_picometres'    'reciprocal_angstroms'     '*'   1.0E+01
-###
-     'nanometres_squared'       'angstroms_squared'        '*'   1.0E+02
-     'nanometres_squared'       'picometres_squared'       '*'   1.0E+06
-#
-     'angstroms_squared'        'nanometres_squared'       '*'   1.0E-02
-     'angstroms_squared'        'picometres_squared'       '*'   1.0E+04
-     'angstroms_squared'        '8pi2_angstroms_squared'   '*'   78.9568
-
-#
-     'picometres_squared'       'nanometres_squared'       '*'   1.0E-06
-     'picometres_squared'       'angstroms_squared'        '*'   1.0E-04
-###
-     'nanometres_cubed'         'angstroms_cubed'          '*'   1.0E+03
-     'nanometres_cubed'         'picometres_cubed'         '*'   1.0E+09
-#
-     'angstroms_cubed'          'nanometres_cubed'         '*'   1.0E-03
-     'angstroms_cubed'          'picometres_cubed'         '*'   1.0E+06
-#
-     'picometres_cubed'         'nanometres_cubed'         '*'   1.0E-09
-     'picometres_cubed'         'angstroms_cubed'          '*'   1.0E-06
-###
-     'kilopascals'              'gigapascals'              '*'   1.0E-06
-     'gigapascals'              'kilopascals'              '*'   1.0E+06
-###
-     'hours'                    'minutes'                  '*'   6.0E+01
-     'hours'                    'seconds'                  '*'   3.6E+03
-     'hours'                    'microseconds'             '*'   3.6E+09
-#
-     'minutes'                  'hours'                    '/'   6.0E+01
-     'minutes'                  'seconds'                  '*'   6.0E+01
-     'minutes'                  'microseconds'             '*'   6.0E+07
-#
-     'seconds'                  'hours'                    '/'   3.6E+03
-     'seconds'                  'minutes'                  '/'   6.0E+01
-     'seconds'                  'microseconds'             '*'   1.0E+06
-#
-     'microseconds'             'hours'                    '/'   3.6E+09
-     'microseconds'             'minutes'                  '/'   6.0E+07
-     'microseconds'             'seconds'                  '/'   1.0E+06
-###
-     'celsius'                  'kelvins'                  '-'     273.0
-     'kelvins'                  'celsius'                  '+'     273.0
-###
-     'electrons_per_nanometres_cubed'
-     'electrons_per_angstroms_cubed'                       '*'   1.0E+03
-     'electrons_per_nanometres_cubed'
-     'electrons_per_picometres_cubed'                      '*'   1.0E+09
-#
-     'electrons_per_angstroms_cubed'
-     'electrons_per_nanometres_cubed'                      '*'   1.0E-03
-     'electrons_per_angstroms_cubed'
-     'electrons_per_picometres_cubed'                      '*'   1.0E+06
-#
-     'electrons_per_picometres_cubed'
-     'electrons_per_nanometres_cubed'                      '*'   1.0E-09
-     'electrons_per_picometres_cubed'
-     'electrons_per_angstroms_cubed'                       '*'   1.0E-06
+metres                          centimetres                     *  1.0E+02
+metres                          millimetres                     *  1.0E+03
+metres                          nanometres                      *  1.0E+09
+metres                          angstroms                       *  1.0E+10
+metres                          picometres                      *  1.0E+12
+metres                          femtometres                     *  1.0E+15
+centimetres                     millimetres                     *  1.0E+01
+centimetres                     nanometres                      *  1.0E+07
+centimetres                     angstroms                       *  1.0E+08
+centimetres                     picometres                      *  1.0E+10
+centimetres                     femtometres                     *  1.0E+13
+millimetres                     centimetres                     *  1.0E-01
+millimetres                     nanometres                      *  1.0E+06
+millimetres                     angstroms                       *  1.0E+07
+millimetres                     picometres                      *  1.0E+09
+millimetres                     femtometres                     *  1.0E+12
+nanometres                      centimetres                     *  1.0E-07
+nanometres                      millimetres                     *  1.0E-06
+nanometres                      angstroms                       *  1.0E+01
+nanometres                      picometres                      *  1.0E+03
+nanometres                      femtometres                     *  1.0E+06
+angstroms                       centimetres                     *  1.0E-08
+angstroms                       millimetres                     *  1.0E-07
+angstroms                       nanometres                      *  1.0E-01
+angstroms                       picometres                      *  1.0E+02
+angstroms                       femtometres                     *  1.0E+05
+picometres                      centimetres                     *  1.0E-10
+picometres                      millimetres                     *  1.0E-09
+picometres                      nanometres                      *  1.0E-03
+picometres                      angstroms                       *  1.0E-02
+picometres                      femtometres                     *  1.0E+03
+femtometres                     centimetres                     *  1.0E-13
+femtometres                     millimetres                     *  1.0E-12
+femtometres                     nanometres                      *  1.0E-06
+femtometres                     angstroms                       *  1.0E-05
+femtometres                     picometres                      *  1.0E-03
+reciprocal_centimetres          reciprocal_millimetres          *  1.0E-01
+reciprocal_centimetres          reciprocal_nanometres           *  1.0E-07
+reciprocal_centimetres          reciprocal_angstroms            *  1.0E-08
+reciprocal_centimetres          reciprocal_picometres           *  1.0E-10
+reciprocal_millimetres          reciprocal_centimetres          *  1.0E+01
+reciprocal_millimetres          reciprocal_nanometres           *  1.0E-06
+reciprocal_millimetres          reciprocal_angstroms            *  1.0E-07
+reciprocal_millimetres          reciprocal_picometres           *  1.0E-09
+reciprocal_nanometres           reciprocal_centimetres          *  1.0E+07
+reciprocal_nanometres           reciprocal_millimetres          *  1.0E+06
+reciprocal_nanometres           reciprocal_angstroms            *  1.0E-01
+reciprocal_nanometres           reciprocal_picometres           *  1.0E-03
+reciprocal_angstroms            reciprocal_centimetres          *  1.0E+08
+reciprocal_angstroms            reciprocal_millimetres          *  1.0E+07
+reciprocal_angstroms            reciprocal_nanometres           *  1.0E+01
+reciprocal_angstroms            reciprocal_picometres           *  1.0E-02
+reciprocal_picometres           reciprocal_centimetres          *  1.0E+10
+reciprocal_picometres           reciprocal_millimetres          *  1.0E+09
+reciprocal_picometres           reciprocal_nanometres           *  1.0E+03
+reciprocal_picometres           reciprocal_angstroms            *  1.0E+01
+nanometres_squared              angstroms_squared               *  1.0E+02
+nanometres_squared              picometres_squared              *  1.0E+06
+angstroms_squared               nanometres_squared              *  1.0E-02
+angstroms_squared               picometres_squared              *  1.0E+04
+angstroms_squared               8pi2_angstroms_squared          *  78.9568
+picometres_squared              nanometres_squared              *  1.0E-06
+picometres_squared              angstroms_squared               *  1.0E-04
+nanometres_cubed                angstroms_cubed                 *  1.0E+03
+nanometres_cubed                picometres_cubed                *  1.0E+09
+angstroms_cubed                 nanometres_cubed                *  1.0E-03
+angstroms_cubed                 picometres_cubed                *  1.0E+06
+picometres_cubed                nanometres_cubed                *  1.0E-09
+picometres_cubed                angstroms_cubed                 *  1.0E-06
+kilopascals                     gigapascals                     *  1.0E-06
+gigapascals                     kilopascals                     *  1.0E+06
+hours                           minutes                         *  6.0E+01
+hours                           seconds                         *  3.6E+03
+hours                           microseconds                    *  3.6E+09
+minutes                         hours                           /  6.0E+01
+minutes                         seconds                         *  6.0E+01
+minutes                         microseconds                    *  6.0E+07
+seconds                         hours                           /  3.6E+03
+seconds                         minutes                         /  6.0E+01
+seconds                         microseconds                    *  1.0E+06
+microseconds                    hours                           /  3.6E+09
+microseconds                    minutes                         /  6.0E+07
+microseconds                    seconds                         /  1.0E+06
+celsius                         kelvins                         -    273.0
+kelvins                         celsius                         +    273.0
+electrons_per_nanometres_cubed  electrons_per_angstroms_cubed   *  1.0E+03
+electrons_per_nanometres_cubed  electrons_per_picometres_cubed  *  1.0E+09
+electrons_per_angstroms_cubed   electrons_per_nanometres_cubed  *  1.0E-03
+electrons_per_angstroms_cubed   electrons_per_picometres_cubed  *  1.0E+06
+electrons_per_picometres_cubed  electrons_per_nanometres_cubed  *  1.0E-09
+electrons_per_picometres_cubed  electrons_per_angstroms_cubed   *  1.0E-06
 ###
 
 ###########################################################################
@@ -2570,19 +2510,20 @@ save__diffrn_detector.detector
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
     _pdbx_item_enumeration.detail
-      "_diffrn_detector.detector"  "AREA DETECTOR"       .
-      "_diffrn_detector.detector"  CCD                   .
-      "_diffrn_detector.detector"  CMOS                  .
-      "_diffrn_detector.detector"  DIFFRACTOMETER        .
-      "_diffrn_detector.detector"  FILM                  .
-      "_diffrn_detector.detector"  "FLAT PANEL"          .
-      "_diffrn_detector.detector"  "IMAGE PLATE"         .
-      "_diffrn_detector.detector"  MICROGAP              .
-      "_diffrn_detector.detector"  "OSCILLATION CAMERA"  .
+      "_diffrn_detector.detector"  "AREA DETECTOR"                .
+      "_diffrn_detector.detector"  CCD                            .
+      "_diffrn_detector.detector"  CMOS                           .
+      "_diffrn_detector.detector"  DIFFRACTOMETER                 .
+      "_diffrn_detector.detector"  "ELECTRON DETECTOR"            .
+      "_diffrn_detector.detector"  FILM                           .
+      "_diffrn_detector.detector"  "FLAT PANEL"                   .
+      "_diffrn_detector.detector"  "IMAGE PLATE"                  .
+      "_diffrn_detector.detector"  MICROGAP                       .
+      "_diffrn_detector.detector"  "OSCILLATION CAMERA"           .
       "_diffrn_detector.detector"  "POSITION SENSITIVE DETECTOR"  .
-      "_diffrn_detector.detector"  PIXEL                 .
-      "_diffrn_detector.detector"  SCINTILLATION         .
-      "_diffrn_detector.detector"  "STORAGE PHOSPHORS"   .
+      "_diffrn_detector.detector"  PIXEL                          .
+      "_diffrn_detector.detector"  SCINTILLATION                  .
+      "_diffrn_detector.detector"  "STORAGE PHOSPHORS"            .
     #
 save_
 
@@ -2644,6 +2585,7 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "AGILENT TITAN CCD"               CCD
       "_diffrn_detector.type"  AGIPD                             PIXEL
       "_diffrn_detector.type"  "APEX II CCD"                     CCD
+      "_diffrn_detector.type"  "ASI Timepix"                     "ELECTRON DETECTOR"
       "_diffrn_detector.type"  BIODIFF                           "IMAGE PLATE"
       "_diffrn_detector.type"  BIX-3                             "IMAGE PLATE"
       "_diffrn_detector.type"  BIX-4                             "IMAGE PLATE"
@@ -2662,8 +2604,8 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "CS-PAD CXI-2"                    PIXEL
       "_diffrn_detector.type"  "CS-PAD XPP"                      PIXEL
       "_diffrn_detector.type"  "Cyberstar LaBr3"                 SCINTILLATION
-      "_diffrn_detector.type"  "DECTRIS ARINA"                   PIXEL
-      "_diffrn_detector.type"  "DECTRIS ELA"                     PIXEL
+      "_diffrn_detector.type"  "DECTRIS ARINA"                   "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "DECTRIS ELA"                     "ELECTRON DETECTOR"
       "_diffrn_detector.type"  "DECTRIS EIGER R 1M"              PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER R 4M"              PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER X 500K"            PIXEL
@@ -2738,17 +2680,40 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "DECTRIS PILATUS4 XE 4M"          PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS4 XE CdTe 2M"     PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS4 XE CdTe 4M"     PIXEL
-      "_diffrn_detector.type"  "DECTRIS QUADRO"                  PIXEL
-      "_diffrn_detector.type"  "DECTRIS SINGLA"                  PIXEL
+      "_diffrn_detector.type"  "DECTRIS QUADRO"                  "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "DECTRIS SINGLA"                  "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "DIRECT ELECTRON APOLLO"          "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "DIRECT ELECTRON DE-20"           "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "DIRECT ELECTRON DE-64"           "ELECTRON DETECTOR"
       "_diffrn_detector.type"  ENRAF-NONIUS                      .
       "_diffrn_detector.type"  "ENRAF-NONIUS CAD4"               DIFFRACTOMETER
       "_diffrn_detector.type"  "ENRAF-NONIUS FAST"               DIFFRACTOMETER
+      "_diffrn_detector.type"  "FEI CETA"                        "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "FEI EAGLE"                       "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "FEI FALCON III"                  "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "FEI FALCON IV"                   "ELECTRON DETECTOR"
       "_diffrn_detector.type"  "ESRF FreLoN"                     CCD
       "_diffrn_detector.type"  FUJI                              "IMAGE PLATE"
+      "_diffrn_detector.type"  "GATAN ALPINE VISTA"              "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN CLEARVIEW"                 "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN K2 BASE"                   "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN K2 IS"                     "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN K2 SUMMIT"                 "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN K3"                        "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN K3 IS BASE"                "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN K3 IS"                     "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN METRO"                     "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN ONEVIEW"                   "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN RIO 4"                     "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN RIO 9"                     "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN RIO 16"                    "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN ULTRASCAN 1000"            "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "GATAN ULTRASCAN 4000"            "ELECTRON DETECTOR"
       "_diffrn_detector.type"  HENDRIX-LENTFER                   .
       "_diffrn_detector.type"  "Hamamatsu C10158DK"              .
       "_diffrn_detector.type"  iBIX                              DIFFRACTOMETER
       "_diffrn_detector.type"  KODAK                             .
+      "_diffrn_detector.type"  "KODAK SO-163 FILM"               "ELECTRON DETECTOR"
       "_diffrn_detector.type"  "LADI III"                        .
       "_diffrn_detector.type"  "MAATEL BIODIFF"                  .
       "_diffrn_detector.type"  "MAATEL IMAGINE"                  .
@@ -2854,7 +2819,10 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  STOE                              .
       "_diffrn_detector.type"  "STOE-SIEMENS AED2"               .
       "_diffrn_detector.type"  SYNTEX                            .
-      "_diffrn_detector.type"  "TVIPS TEMCAM-F416"               .
+      "_diffrn_detector.type"  "TFS FALCON 4i"                   "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "TVIPS TEMCAM-F224"               "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "TVIPS TEMCAM-F415"               "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "TVIPS TEMCAM-F416"               "ELECTRON DETECTOR"
       "_diffrn_detector.type"  "UCSD MARK II"                    .
       "_diffrn_detector.type"  "UCSD MARK III"                   .
       "_diffrn_detector.type"  WEISSENBERG                       .
@@ -4981,9 +4949,24 @@ save__diffrn_source.type
      "_diffrn_source.type"  "Excillum MetalJet D2 70 kV"                     "LIQUID ANODE"
      "_diffrn_source.type"  "Excillum MetalJet D2+ 70 kV"                    "LIQUID ANODE"
      "_diffrn_source.type"  "Excillum MetalJet D2+ 160 kV"                   "LIQUID ANODE"
+     "_diffrn_source.type"  "FEI POLARA 300"                                 "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI TALOS ARCTICA"                              "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI TECNAI 12"                                  "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI TECNAI 20"                                  "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI TECNAI F20"                                 "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI TECNAI F30"                                 "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI TITAN"                                      "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI TITAN KRIOS"                                "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI/PHILIPS CM12"                               "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI/PHILIPS CM200FEG"                           "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI/PHILIPS CM300FEG/ST"                        "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI/PHILIPS CM300FEG/T"                         "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "FEI/PHILIPS EM420"                              "ELECTRON MICROSCOPE"
      "_diffrn_source.type"  "FRM II BEAMLINE ANTARES"                        "NUCLEAR REACTOR"
      "_diffrn_source.type"  "FRM II BEAMLINE BIODIFF"                        "NUCLEAR REACTOR"
      "_diffrn_source.type"  "HEPS BEAMLINE ID02U1A"                          SYNCHROTRON
+     "_diffrn_source.type"  "HITACHI EF3000"                                 "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "HITACHI HF3000"                                 "ELECTRON MICROSCOPE"
      "_diffrn_source.type"  "ILL BEAMLINE D11"                               "NUCLEAR REACTOR"
      "_diffrn_source.type"  "ILL BEAMLINE D16"                               "NUCLEAR REACTOR"
      "_diffrn_source.type"  "ILL BEAMLINE D19"                               "NUCLEAR REACTOR"
@@ -4994,6 +4977,15 @@ save__diffrn_source.type
      "_diffrn_source.type"  "ILL BEAMLINE LADI III"                          "NUCLEAR REACTOR"
      "_diffrn_source.type"  "ISIS BEAMLINE LOQ"                              "SPALLATION SOURCE"
      "_diffrn_source.type"  "J-PARC MLF BEAMLINE BL-03"                      "SPALLATION SOURCE"
+     "_diffrn_source.type"  "JEOL 100B"                                      "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "JEOL 2010F"                                     "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "JEOL 2100"                                      "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "JEOL 2100F"                                     "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "JEOL 3000SFF"                                   "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "JEOL 4000"                                      "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "JEOL 4000EX"                                    "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "JEOL CRYO ARM 300"                              "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "JEOL KYOTO-3000SFF"                             "ELECTRON MICROSCOPE"
      "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-A"                           "NUCLEAR REACTOR"
      "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-B"                           "NUCLEAR REACTOR"
      "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-C"                           "NUCLEAR REACTOR"
@@ -5108,6 +5100,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "SACLA BEAMLINE BL3"                             "FREE ELECTRON LASER"
      "_diffrn_source.type"  "SAGA-LS BEAMLINE BL07"                          SYNCHROTRON
      "_diffrn_source.type"  SIEMENS                                          "ROTATING ANODE"
+     "_diffrn_source.type"  "SIEMENS SULEIKA"                                "ELECTRON MICROSCOPE"
      "_diffrn_source.type"  "SLAC LCLS BEAMLINE AMO"                         "FREE ELECTRON LASER"
      "_diffrn_source.type"  "SLAC LCLS BEAMLINE CXI"                         "FREE ELECTRON LASER"
      "_diffrn_source.type"  "SLAC LCLS BEAMLINE MFX"                         "FREE ELECTRON LASER"
@@ -5161,7 +5154,12 @@ save__diffrn_source.type
      "_diffrn_source.type"  "SwissFEL ARAMIS BEAMLINE ESA"                   "FREE ELECTRON LASER"
      "_diffrn_source.type"  "SwissFEL ARAMIS BEAMLINE ESB"                   "FREE ELECTRON LASER"
      "_diffrn_source.type"  "SwissFEL ARAMIS BEAMLINE ESC"                   "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "TFS GLACIOS"                                    "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "TFS KRIOS"                                      "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "TFS TALOS"                                      "ELECTRON MICROSCOPE"
+     "_diffrn_source.type"  "TFS TALOS F200C"                                "ELECTRON MICROSCOPE"
      "_diffrn_source.type"  "Xenocs GeniX 3D Cu HF"                          "SEALED TUBE"
+     "_diffrn_source.type"  "ZEISS LIBRA120PLUS"                             "ELECTRON MICROSCOPE"
      "_diffrn_source.type"  OTHER                                            .
    #
 save_
@@ -76487,6 +76485,517 @@ save__pdbx_sifts_unp_segments.identity
                                   0.0   0.0
 save_
 
+# MicroED extension
+
+save_pdbx_exptl_subtype
+   _category.description
+;              Data items in the PDBX_EXPTL_SUBTYPE category record
+               details about the method subtype under the primary
+               method recorded in _exptl.method
+;
+
+   _category.id              pdbx_exptl_subtype
+   _category.mandatory_code  no
+   #
+   loop_
+   _category_key.name
+     "_pdbx_exptl_subtype.exptl_method"
+     "_pdbx_exptl_subtype.method_type"
+   #
+   loop_
+   _category_group.id
+     inclusive_group
+     exptl_group
+   #
+   _category_examples.detail
+;
+    Example 1
+;
+
+   _category_examples.case
+;
+    _pdbx_exptl_subtype.exptl_method                    "ELECTRON CRYSTALLOGRAPHY"
+    _pdbx_exptl_subtype.method_type                     "Microcrystal Electron Diffraction"
+    _pdbx_exptl_subtype.details		                ?
+;
+
+   #
+save_
+#
+save__pdbx_exptl_subtype.exptl_method
+   _item_description.description  "              This data item is a pointer to _exptl.method in the EXPTL category."
+   #
+   _item.name            "_pdbx_exptl_subtype.exptl_method"
+   _item.category_id     pdbx_exptl_subtype
+   _item.mandatory_code  yes
+   #
+   _item_type.code  line
+   #
+   _item_examples.case  "X-RAY CRYSTALLOGRAPHY"
+   #
+   _item_linked.child_name   "_pdbx_exptl_subtype.exptl_method"
+   _item_linked.parent_name  "_exptl.method"
+   #
+save_
+#
+save__pdbx_exptl_subtype.method_type
+   _item_description.description
+;              The subtype of the method used in the experiment. The
+               subtype should be a variance of the primary method
+               recorded in the _exptl.method item, with distinctive
+               technical applications and significant scientific
+               impacts.
+;
+
+   #
+   _item.name            "_pdbx_exptl_subtype.method_type"
+   _item.category_id     pdbx_exptl_subtype
+   _item.mandatory_code  yes
+   #
+   _item_type.code  line
+   #
+   _item_examples.case  "Microcrystal Electron Diffraction"
+   #
+   loop_
+   _item_enumeration.value
+   _item_enumeration.detail
+     "Microcrystal Electron Diffraction"       .
+     "2-Dimensional Electron Crystallography"  .
+   #
+save_
+#
+save__pdbx_exptl_subtype.details
+   _item_description.description  "               Details about the method subtype."
+   #
+   _item.name            "_pdbx_exptl_subtype.details"
+   _item.category_id     pdbx_exptl_subtype
+   _item.mandatory_code  no
+   #
+   _item_type.code  text
+   #
+save_
+#
+save_pdbx_diffrn_ed
+   _category.description     "              Data items in the PDBX_DIFFRN_ED record details specific to electron diffraction method."
+   _category.id              pdbx_diffrn_ed
+   _category.mandatory_code  no
+   #
+   _category_key.name  "_pdbx_diffrn_ed.id"
+   #
+   loop_
+   _category_group.id
+     inclusive_group
+     diffrn_group
+   #
+   _category_examples.detail
+;
+    Example 1 - based on PDB entry 9DHO
+;
+
+   _category_examples.case
+;
+    _pdbx_diffrn_ed.id                          1
+    _pdbx_diffrn_ed.diffrn_id                   1
+    _pdbx_diffrn_ed.beam_diameter_sample_plane  3.5
+    _pdbx_diffrn_ed.camera_length               1402
+    _pdbx_diffrn_ed.c2_aperture_diameter        50
+    _pdbx_diffrn_ed.details                     "The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10&#8201;eV, with the zero-loss peak centered in defocused diffraction"
+    _pdbx_diffrn_ed.fluence_accumulated         0.84
+    _pdbx_diffrn_ed.fluence_rate                0.002
+    _pdbx_diffrn_ed.electron_source             "FIELD EMISSION GUN"
+    _pdbx_diffrn_ed.energyfilter_name           "TFS Selectris"
+    _pdbx_diffrn_ed.energyfilter_upper          ?
+    _pdbx_diffrn_ed.energyfilter_lower          ?
+    _pdbx_diffrn_ed.recording_mode              "Electron Counting"
+    _pdbx_diffrn_ed.sa_aperture_diameter        150
+;
+
+   #
+save_
+#
+save__pdbx_diffrn_ed.id
+   _item_description.description  "              This ordinal identifier for the category"
+   #
+   _item.name            "_pdbx_diffrn_ed.id"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  yes
+   #
+   _item_type.code  code
+   #
+save_
+#
+save__pdbx_diffrn_ed.diffrn_id
+   _item_description.description  "              This data item is a pointer to the _diffrn.id"
+   #
+   _item.name            "_pdbx_diffrn_ed.diffrn_id"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  yes
+   #
+   _item_type.code  code
+   #
+   _item_linked.child_name   "_pdbx_diffrn_ed.diffrn_id"
+   _item_linked.parent_name  "_diffrn.id"
+   #
+save_
+#
+save__pdbx_diffrn_ed.electron_source
+   _item_description.description  "               The source of electrons, i.e. the electron gun"
+   #
+   _item.name            "_pdbx_diffrn_ed.electron_source"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  line
+   #
+   loop_
+   _item_enumeration.value
+   _item_enumeration.detail
+     "FIELD EMISSION GUN"  .
+     LAB6                  .
+     OTHER                 .
+   #
+save_
+#
+save__pdbx_diffrn_ed.beam_diameter_sample_plane
+   _item_description.description  "               The electron beam diameter at the sample plane"
+   #
+   _item.name            "_pdbx_diffrn_ed.beam_diameter_sample_plane"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  micrometres
+   #
+save_
+#
+save__pdbx_diffrn_ed.camera_length
+   _item_description.description
+;              The product of the objective focal length and the
+               combined magnification of the intermediate and projector
+               lenses when the microscope is operated in the
+               diffraction mode.
+;
+
+   #
+   _item.name            "_pdbx_diffrn_ed.camera_length"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  millimetres
+   #
+   _item_range.minimum  0.0
+   _item_range.maximum  .
+   #
+save_
+#
+save__pdbx_diffrn_ed.recording_mode
+   _item_description.description
+;              The mode of the detector for electron diffraction recording, e.g.
+               Electron Counting (Event) mode, Linear (Integrating) mode
+;
+
+   #
+   _item.name            "_pdbx_diffrn_ed.recording_mode"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  line
+   #
+   loop_
+   _item_enumeration.value
+   _item_enumeration.detail
+     "Electron Counting"  .
+     Integrating          .
+     Other                .
+   #
+save_
+#
+save__pdbx_diffrn_ed.fluence_rate
+   _item_description.description  "               Fluence rate, or flux density at the sample plane"
+   #
+   _item.name            "_pdbx_diffrn_ed.fluence_rate"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  electrons_per_angstroms_squared_per_second
+   #
+   _item_range.minimum  0.0
+   _item_range.maximum  .
+   #
+save_
+#
+save__pdbx_diffrn_ed.fluence_accumulated
+   _item_description.description  "               Total fluence at the sample plane"
+   #
+   _item.name            "_pdbx_diffrn_ed.fluence_accumulated"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  electrons_per_angstroms_squared
+   #
+   _item_range.minimum  0.0
+   _item_range.maximum  .
+   #
+save_
+#
+save__pdbx_diffrn_ed.c2_aperture_diameter
+   _item_description.description  "               C2 aperture diameter"
+   #
+   _item.name            "_pdbx_diffrn_ed.c2_aperture_diameter"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  micrometres
+   #
+   _item_range.minimum  0.0
+   _item_range.maximum  .
+   #
+save_
+#
+save__pdbx_diffrn_ed.sa_aperture_diameter
+   _item_description.description  "               Select Area aperture diameter"
+   #
+   _item.name            "_pdbx_diffrn_ed.sa_aperture_diameter"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  micrometres
+   #
+   _item_range.minimum  0.0
+   _item_range.maximum  .
+   #
+save_
+#
+save__pdbx_diffrn_ed.energyfilter_name
+   _item_description.description  "               The name of the energy filter"
+   #
+   _item.name            "_pdbx_diffrn_ed.energyfilter_name"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  line
+   #
+   _item_examples.case  "TFS Selectris"
+   #
+save_
+#
+save__pdbx_diffrn_ed.energyfilter_upper
+   _item_description.description
+;               The energy filter range upper value in electron volts (eV)
+                set by the specrometer
+;
+
+   #
+   _item.name            "_pdbx_diffrn_ed.energyfilter_upper"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  electron_volts
+   #
+   _item_range.minimum  0.0
+   _item_range.maximum  .
+   #
+save_
+#
+save__pdbx_diffrn_ed.energyfilter_lower
+   _item_description.description
+;               The energy filter range lower value in electron volts (eV)
+                set by the specrometer
+;
+
+   #
+   _item.name            "_pdbx_diffrn_ed.energyfilter_lower"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  electron_volts
+   #
+   _item_range.minimum  0.0
+   _item_range.maximum  .
+   #
+save_
+#
+save__pdbx_diffrn_ed.details
+   _item_description.description  "               Details of the electron diffration process"
+   #
+   _item.name            "_pdbx_diffrn_ed.details"
+   _item.category_id     pdbx_diffrn_ed
+   _item.mandatory_code  no
+   #
+   _item_type.code  text
+   #
+   _item_units.code  electron_volts
+   #
+save_
+#
+save__diffrn_measurement.pdbx_angle_start
+   _item_description.description  "              The starting angle for crystal rotation."
+   #
+   _item.name            "_diffrn_measurement.pdbx_angle_start"
+   _item.category_id     diffrn_measurement
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  degrees
+   #
+   _item_examples.case  -30
+   #
+save_
+#
+save__diffrn_measurement.pdbx_angle_end
+   _item_description.description  "              The ending angle for crystal rotation."
+   #
+   _item.name            "_diffrn_measurement.pdbx_angle_end"
+   _item.category_id     diffrn_measurement
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  degrees
+   #
+   _item_examples.case  30
+   #
+save_
+#
+save__diffrn_measurement.pdbx_rotation_rate
+   _item_description.description  "              The speed of crystal rotation."
+   #
+   _item.name            "_diffrn_measurement.pdbx_rotation_rate"
+   _item.category_id     diffrn_measurement
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  degrees_per_second
+   #
+save_
+#
+save__diffrn_measurement.pdbx_exposure_time_per_image
+   _item_description.description
+;              The exposure time per image for the crystal and
+               detector/camera.
+;
+
+   #
+   _item.name            "_diffrn_measurement.pdbx_exposure_time_per_image"
+   _item.category_id     diffrn_measurement
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   _item_units.code  seconds
+   #
+save_
+#
+save__diffrn_measurement.rotation_mode
+   _item_description.description
+;               Originated from IUCr Electron Diffraction CIF
+                extension. Code describing the technique used to
+                sample as completely as possible the accessible range
+                of reciprocal space. Rotation mode indicates the
+                detector records diffracted intensities continuously
+                while the sample is rotated. Stepwise model indicates
+                the detector records diffracted intensities while the
+                sample is stationary.
+;
+
+   #
+   _item.name            "_diffrn_measurement.rotation_mode"
+   _item.category_id     diffrn_measurement
+   _item.mandatory_code  no
+   #
+   _item_type.code  code
+   #
+   loop_
+   _item_enumeration.value
+   _item_enumeration.detail
+     rotation  .
+     stepwise  .
+   #
+save_
+#
+save__diffrn_measurement.method_precession
+   _item_description.description
+;               Originated from IUCr Electron Diffraction CIF
+                extension. Flag indicating if the radiation beam
+                illuminates the sample at an angle that is rotated
+                about a precession axis.
+;
+
+   #
+   _item.name            "_diffrn_measurement.method_precession"
+   _item.category_id     diffrn_measurement
+   _item.mandatory_code  no
+   #
+   _item_type.code  code
+   #
+   loop_
+   _item_enumeration.value
+   _item_enumeration.detail
+     Y  .
+     N  .
+   #
+save_
+#
+save__diffrn_measurement.sample_tracking
+   _item_description.description
+;               Originated from IUCr Electron Diffraction CIF
+                extension. Flag indicating if a tracking method to
+                follow the crystal was used in the data
+                acquisition. Typically used to track very small
+                crystals in electron diffraction experiments.
+;
+
+   #
+   _item.name            "_diffrn_measurement.sample_tracking"
+   _item.category_id     diffrn_measurement
+   _item.mandatory_code  no
+   #
+   _item_type.code  code
+   #
+   loop_
+   _item_enumeration.value
+   _item_enumeration.detail
+     Y  .
+     N  .
+   #
+save_
+#
+save__diffrn_measurement.sample_tracking_method
+   _item_description.description
+;               Originated from IUCr Electron Diffraction CIF
+                extension. Description of the method used to follow
+                the crystal during data collection.
+;
+
+   #
+   _item.name            "_diffrn_measurement.sample_tracking_method"
+   _item.category_id     diffrn_measurement
+   _item.mandatory_code  no
+   #
+   _item_type.code  line
+   #
+   _item_examples.case  "Electron-beam tracking by PyFast-ADT"
+   #
+save_
+#
+
 loop_
 _pdbx_item_linked_group.category_id
 _pdbx_item_linked_group.link_group_id
@@ -76508,6 +77017,9 @@ diffrn_reflns                       1   diffrn_reflns:diffrn:1                  
 diffrn_source                       1   diffrn_source:diffrn:1                                                    . .
 diffrn_standard_refln               1   diffrn_standard_refln:diffrn:1                                            . .
 diffrn_standards                    1   diffrn_standards:diffrn:1                                                 . .
+# MicroED extension
+pdbx_diffrn_ed                      1  pdbx_diffrn_ed:diffrn:1                                                    . .
+pdbx_exptl_subtype                  1  pdbx_exptl_subtype:exptl:1                                                 . .
 # EM related
 em_2d_crystal_entity                1   em_2d_crystal_entity:em_image_processing:1                                . .
 em_3d_crystal_entity                1   em_3d_crystal_entity:em_image_processing:1                                . .
@@ -76804,6 +77316,9 @@ diffrn_reflns                       1   '_diffrn_reflns.diffrn_id'              
 diffrn_source                       1   '_diffrn_source.diffrn_id'                             '_diffrn.id'                                       diffrn
 diffrn_standard_refln               1   '_diffrn_standard_refln.diffrn_id'                     '_diffrn.id'                                       diffrn
 diffrn_standards                    1   '_diffrn_standards.diffrn_id'                          '_diffrn.id'                                       diffrn
+# MicroED extension
+pdbx_diffrn_ed                      1   '_pdbx_diffrn_ed.diffrn_id'                            '_diffrn.id'                                       diffrn
+pdbx_exptl_subtype                  1   '_pdbx_exptl_subtype.exptl_method'                     '_exptl.method'                                    exptl
 # EM related
 em_2d_crystal_entity                1   '_em_2d_crystal_entity.image_processing_id'            '_em_image_processing.id'                          em_image_processing
 em_3d_crystal_entity                1   '_em_3d_crystal_entity.image_processing_id'            '_em_image_processing.id'                          em_image_processing

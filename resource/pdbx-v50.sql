@@ -21,31 +21,31 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 604 tables (7370 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 607 tables (7407 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-v50.xsd
---      temperature, final_thickness, "B_calc", zeta, "L23", "L11", "pdbx_F_calc_with_solvent", radial_pitch, time, angle_increment, "model_Cartn_y_esd", diffr_phi, "B_iso_or_equiv", pdbx_solvent_vdw_probe_radii, maximum_torsion_angle_constraint_violation, "A_meas_au", lower_limit, "F_meas", "S31", "F_meas_au", "Cartn_x_esd", length_a_esd, "L22", "F_squared_calc", volume_three, mean_guiner_radius, reciprocal_angle_beta_esd, beta_tolerance, maximum_upper_distance_constraint_violation, bond_deviation, nominal_defocus_min, "B33", angle, "B_iso_min", "U_equiv_geom_mean_esd", crossfire_y, psi, crossfire_x, "U33_esd", bond_angle_rms_dev, "S33_esd", angle_gamma_esd, pdbx_crystal_direction_3, dihedral_angles_rms_dev, pdbx_crystal_direction_2, "angle_DHA_esd", epsilon, pdbx_crystal_direction_1, bond, "aniso_U22", induction_temperature, average_torsion_angle_constraint_violation, "L33", angle_phi, "aniso_B11_esd", pdbx_solvent_ion_probe_radii, "aniso_B33_esd", "dist_HA_esd", "B_calc_au", culture_temperature, "S23_esd", sample_volume, diffr_kappa, reciprocal_length_a_esd, peptide_planarity_rms_dev, "sigmaI", pdbx_solvent_shrinkage_radii, displacement, "aniso_U33", maximum_lower_distance_constraint_violation, culture_time, "aniso_U22_esd", column_volume, translation_width, tilt_angle_min, prot_cis, electron_dose, scan_time_backgd, "aniso_B23_esd", protein_yield, "B_equiv_geom_mean_esd", calibrated_defocus_min, underload, "F_squared_meas", "B22_esd", "aniso_U12", pdbx_dist_value, "U11_esd", induction_timepoint, "L12_esd", "T11_esd", "model_Cartn_y", energyfilter_lower, alpha, pressure, atom_deviation, "U13", improper_torsion_angle_rms_dev_error, "B12_esd", "T12_esd", "aniso_U13_esd", "pdbx_model_Cartn_y_ideal", "A_calc_au", pdbx_phase_calc_part_solvent, reciprocal_angle_gamma_esd, "aniso_U11", "aniso_U23", angle_value, "F_squared_sigma", buffer_volume, covalent_bond_rms_dev, reciprocal_angle_alpha_esd, "L13_esd", "model_Cartn_x", angle_range, "T13_esd", rotation_per_n_subunits, diff_density_min, "B_iso", "U12", angle_omega, energyfilter_upper, mean_guiner_radius_esd, crossfire_x_esd, "A_meas", "aniso_U23_esd", storage_temperature, reference_displacement, mol_wt_theo, tau1, distance_rms_dev, tau2, tau3, tau4, "U23", "I", flow_rate, dist, "A_calc", angle_deviation, temperature_decomposition_esd, nominal_defocus_max, "B_iso_mean", "U11", "aniso_U33_esd", dist_esd, "aniso_U13", value_esd, upper_limit, "B_meas", cleavage_time, "pdbx_res_netI_over_av_sigmaI_2", displacement_start, "model_Cartn_z", displacement_increment, density_meas_temp_esd, "T13", maximum_distance_constraint_violation, tau0, "B11_esd", angle_beta_esd, "L22_esd", "T22_esd", "U22", gamma_tolerance, temp, "U_tls22", phase_calc, angle_chi, "aniso_B22_esd", improper_torsion_angle_rms_dev, diff_density_max_esd, sample_concentration, rmsd, "pdbx_F_calc_part_solvent", cleavage_temperature, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Luzzati_coordinate_error_free", temperature_sublimation_esd, "F_meas_sigma", "U33", "model_Cartn_z_esd", "T12", dihedral_angles_rms_dev_error, pdbx_scan_angle, "B_iso_or_equiv_esd", angle_target_value, "Cartn_y_esd", angle_psi, "U_tls11", bond_angle_rms_dev_error, "B23_esd", "U_iso_or_equiv_esd", volume_esd, "U_tls23", crossfire_y_esd, pdbx_phase_calc_with_solvent, taum, "S22_esd", diffr_chi, "T23", "B", pressure_esd, column_temperature, "T11", min_mean_cross_sectional_radii_gyration_esd, "Luzzati_d_res_low_free", chi2, chi1, "L23_esd", chi4, chi3, "aniso_B22", pdbx_collection_time_total, crossfire_xy_esd, chi5, angle_alpha_esd, scan_rate, neighbor_ligand_distance, length_b_esd, "T23_esd", pdbx_crystal_diffrn_lifetime, peptide_planarity_rms_dev_error, "S13", "Ro", "T22", voltage, "S32_esd", fract_displacement_increment, beta, average_distance_constraint_violation, "aniso_B33", energy_window, crossfire_xy, dev, "U_tls33", "S13_esd", "model_Cartn_x_esd", "L11_esd", volume_three_esd, protein_volume, value, "T33_esd", angle_kappa, rise_per_n_subunits, reciprocal_length_c_esd, "L33_esd", "S12", scat_length_neutron, "T33", "S11_esd", improper_torsion_angle, current, "aniso_B12", alpha_tolerance, "Luzzati_coordinate_error_obs", "P", gamma, diff_density_rms_esd, "B13_esd", displacement_range, phi, "aniso_U12_esd", neighbor_macromolecule_distance, "pre_Cartn_x", "B_iso_Wilson_estimate", "B12", ambient_temp_esd, "Cartn_z", "F_calc", "pdbx_model_Cartn_x_ideal", ambient_pressure_esd, pdbx_crystal_diffrn_limit, displacement_rstrt_incr, yield_pooled_fractions, "U12_esd", "S12_esd", phase_meas, "pdbx_model_Cartn_z_ideal", "S23", diff_density_max, "aniso_B13_esd", tilt_angle_max, "S11", origin_y, origin_x, nu4, nu3, nu2, nu1, "aniso_B11", nu0, "aniso_B23", max_mean_cross_sectional_radii_gyration, overload, angle_theta, covalent_bond_rms_dev_error, "Luzzati_d_res_low_obs", origin_z, power, "dist_DA_esd", "B13", min_mean_cross_sectional_radii_gyration, temp_esd, culture_volume, inducer_concentration, objective_aperture, "S22", "B_meas_au", "U22_esd", omega, length_c_esd, pdbx_rotation_angle, diff_density_min_esd, "S31_esd", angle_rstrt_incr, "pre_Cartn_z", "U_tls12", volume_pooled_fractions, "B_iso_esd", "U13_esd", delta, detector_distance, "Cartn_x", "B22", "U23_esd", diffr_psi, distance_rms_dev_error, "S21", max_mean_cross_sectional_radii_gyration_esd, "S33", angular_pitch, "L12", "B_iso_max", reference_angle, "aniso_B13", reciprocal_length_b_esd, diff_density_rms, "Luzzati_sigma_a_free", "aniso_B12_esd", protein_concentration, mol_wt_exp, concentration_range, "pre_Cartn_y", "S21_esd", "F_calc_au", "U_tls13", "Cartn_z_esd", "B33_esd", "B23", "B11", angle_start, "Cartn_y", "aniso_U11_esd", density_meas_esd, "dist_DH_esd", multiplicity_of_infection, "L13", "F_meas_sigma_au", "S32"
+--      temperature, final_thickness, "B_calc", zeta, "L23", "L11", "pdbx_F_calc_with_solvent", radial_pitch, time, angle_increment, "model_Cartn_y_esd", diffr_phi, "B_iso_or_equiv", pdbx_solvent_vdw_probe_radii, maximum_torsion_angle_constraint_violation, "A_meas_au", lower_limit, "F_meas", "S31", "F_meas_au", "Cartn_x_esd", length_a_esd, "L22", "F_squared_calc", volume_three, mean_guiner_radius, reciprocal_angle_beta_esd, beta_tolerance, maximum_upper_distance_constraint_violation, bond_deviation, nominal_defocus_min, "B33", angle, "B_iso_min", "U_equiv_geom_mean_esd", crossfire_y, psi, crossfire_x, "U33_esd", bond_angle_rms_dev, "S33_esd", angle_gamma_esd, pdbx_crystal_direction_3, dihedral_angles_rms_dev, pdbx_crystal_direction_2, "angle_DHA_esd", epsilon, pdbx_crystal_direction_1, bond, "aniso_U22", induction_temperature, average_torsion_angle_constraint_violation, "L33", angle_phi, "aniso_B11_esd", pdbx_solvent_ion_probe_radii, "aniso_B33_esd", "dist_HA_esd", pdbx_exposure_time_per_image, "B_calc_au", culture_temperature, "S23_esd", sample_volume, diffr_kappa, reciprocal_length_a_esd, peptide_planarity_rms_dev, "sigmaI", pdbx_solvent_shrinkage_radii, displacement, "aniso_U33", maximum_lower_distance_constraint_violation, beam_diameter_sample_plane, culture_time, "aniso_U22_esd", column_volume, translation_width, tilt_angle_min, prot_cis, electron_dose, pdbx_angle_start, scan_time_backgd, "aniso_B23_esd", protein_yield, "B_equiv_geom_mean_esd", calibrated_defocus_min, underload, "F_squared_meas", "B22_esd", "aniso_U12", pdbx_dist_value, "U11_esd", induction_timepoint, "L12_esd", "T11_esd", "model_Cartn_y", energyfilter_lower, alpha, pressure, atom_deviation, "U13", improper_torsion_angle_rms_dev_error, "B12_esd", "T12_esd", "aniso_U13_esd", "pdbx_model_Cartn_y_ideal", "A_calc_au", pdbx_phase_calc_part_solvent, reciprocal_angle_gamma_esd, "aniso_U11", "aniso_U23", angle_value, "F_squared_sigma", buffer_volume, covalent_bond_rms_dev, reciprocal_angle_alpha_esd, "L13_esd", "model_Cartn_x", angle_range, "T13_esd", rotation_per_n_subunits, diff_density_min, "B_iso", "U12", angle_omega, energyfilter_upper, mean_guiner_radius_esd, crossfire_x_esd, "A_meas", "aniso_U23_esd", storage_temperature, reference_displacement, mol_wt_theo, tau1, distance_rms_dev, tau2, tau3, tau4, "U23", "I", flow_rate, dist, "A_calc", angle_deviation, temperature_decomposition_esd, nominal_defocus_max, "B_iso_mean", "U11", "aniso_U33_esd", dist_esd, "aniso_U13", value_esd, upper_limit, "B_meas", cleavage_time, "pdbx_res_netI_over_av_sigmaI_2", displacement_start, "model_Cartn_z", displacement_increment, density_meas_temp_esd, "T13", maximum_distance_constraint_violation, tau0, "B11_esd", angle_beta_esd, "L22_esd", "T22_esd", "U22", gamma_tolerance, temp, "U_tls22", phase_calc, angle_chi, "aniso_B22_esd", improper_torsion_angle_rms_dev, diff_density_max_esd, sample_concentration, rmsd, "pdbx_F_calc_part_solvent", cleavage_temperature, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Luzzati_coordinate_error_free", temperature_sublimation_esd, "F_meas_sigma", "U33", "model_Cartn_z_esd", "T12", microcrystal_min_dim, dihedral_angles_rms_dev_error, pdbx_scan_angle, "B_iso_or_equiv_esd", angle_target_value, "Cartn_y_esd", angle_psi, "U_tls11", bond_angle_rms_dev_error, "B23_esd", "U_iso_or_equiv_esd", volume_esd, "U_tls23", crossfire_y_esd, pdbx_phase_calc_with_solvent, taum, "S22_esd", diffr_chi, "T23", "B", pressure_esd, column_temperature, "T11", min_mean_cross_sectional_radii_gyration_esd, "Luzzati_d_res_low_free", chi2, chi1, "L23_esd", chi4, chi3, "aniso_B22", pdbx_collection_time_total, crossfire_xy_esd, chi5, angle_alpha_esd, scan_rate, neighbor_ligand_distance, length_b_esd, "T23_esd", pdbx_crystal_diffrn_lifetime, peptide_planarity_rms_dev_error, "S13", "Ro", pdbx_rotation_rate, "T22", voltage, "S32_esd", fract_displacement_increment, beta, average_distance_constraint_violation, "aniso_B33", energy_window, details, crossfire_xy, dev, "U_tls33", "S13_esd", "model_Cartn_x_esd", "L11_esd", volume_three_esd, protein_volume, value, "T33_esd", angle_kappa, rise_per_n_subunits, reciprocal_length_c_esd, "L33_esd", "S12", scat_length_neutron, "T33", "S11_esd", improper_torsion_angle, current, "aniso_B12", alpha_tolerance, "Luzzati_coordinate_error_obs", "P", gamma, diff_density_rms_esd, "B13_esd", displacement_range, phi, "aniso_U12_esd", neighbor_macromolecule_distance, "pre_Cartn_x", "B_iso_Wilson_estimate", "B12", ambient_temp_esd, "Cartn_z", "F_calc", "pdbx_model_Cartn_x_ideal", ambient_pressure_esd, pdbx_crystal_diffrn_limit, displacement_rstrt_incr, yield_pooled_fractions, "U12_esd", "S12_esd", phase_meas, "pdbx_model_Cartn_z_ideal", "S23", diff_density_max, "aniso_B13_esd", tilt_angle_max, "S11", origin_y, origin_x, nu4, nu3, nu2, nu1, "aniso_B11", nu0, "aniso_B23", max_mean_cross_sectional_radii_gyration, overload, angle_theta, covalent_bond_rms_dev_error, "Luzzati_d_res_low_obs", origin_z, power, "dist_DA_esd", "B13", min_mean_cross_sectional_radii_gyration, temp_esd, culture_volume, inducer_concentration, objective_aperture, "S22", "B_meas_au", "U22_esd", omega, length_c_esd, pdbx_rotation_angle, diff_density_min_esd, "S31_esd", angle_rstrt_incr, "pre_Cartn_z", "U_tls12", volume_pooled_fractions, "B_iso_esd", "U13_esd", delta, detector_distance, "Cartn_x", "B22", "U23_esd", diffr_psi, microcrystal_max_dim, distance_rms_dev_error, "S21", max_mean_cross_sectional_radii_gyration_esd, "S33", angular_pitch, "L12", "B_iso_max", reference_angle, "aniso_B13", reciprocal_length_b_esd, diff_density_rms, "Luzzati_sigma_a_free", "aniso_B12_esd", protein_concentration, mol_wt_exp, concentration_range, "pre_Cartn_y", "S21_esd", "F_calc_au", "U_tls13", "Cartn_z_esd", "B33_esd", "B23", "B11", angle_start, "Cartn_y", "aniso_U11_esd", density_meas_esd, "dist_DH_esd", multiplicity_of_infection, "L13", "F_meas_sigma_au", "S32", pdbx_angle_end
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
 --    pdbx-v50.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 604 admin children
+--    0 root, 0 root children, 0 admin roots, 607 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    604 document keys, 0 serial keys, 0 xpath keys
+--    607 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1098 attributes (0 in-place document keys), 5668 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1103 attributes (0 in-place document keys), 5697 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    604 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 363 foreign key constraints from xsd:keyref
+--    607 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 365 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML Schema v5.413
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.413: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.414
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.414: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -297,6 +297,7 @@ DROP TABLE IF EXISTS pdbx_diffrn_batch CASCADE;
 DROP TABLE IF EXISTS pdbx_diffrn_batch_scan CASCADE;
 DROP TABLE IF EXISTS pdbx_diffrn_cell CASCADE;
 DROP TABLE IF EXISTS pdbx_diffrn_detector_panel_mapping CASCADE;
+DROP TABLE IF EXISTS pdbx_diffrn_ed CASCADE;
 DROP TABLE IF EXISTS pdbx_diffrn_orientation CASCADE;
 DROP TABLE IF EXISTS pdbx_diffrn_reflns_shell CASCADE;
 DROP TABLE IF EXISTS pdbx_distant_solvent_atoms CASCADE;
@@ -344,7 +345,9 @@ DROP TABLE IF EXISTS pdbx_entry_details CASCADE;
 DROP TABLE IF EXISTS pdbx_exptl_crystal_cryo_treatment CASCADE;
 DROP TABLE IF EXISTS pdbx_exptl_crystal_grow_comp CASCADE;
 DROP TABLE IF EXISTS pdbx_exptl_crystal_grow_sol CASCADE;
+DROP TABLE IF EXISTS pdbx_exptl_crystal_process CASCADE;
 DROP TABLE IF EXISTS pdbx_exptl_pd CASCADE;
+DROP TABLE IF EXISTS pdbx_exptl_subtype CASCADE;
 DROP TABLE IF EXISTS pdbx_family_group_index CASCADE;
 DROP TABLE IF EXISTS pdbx_family_prd_audit CASCADE;
 DROP TABLE IF EXISTS pdbx_feature_assembly CASCADE;
@@ -3945,6 +3948,12 @@ CREATE TABLE diffrn_detector_element (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_diffrn_measurement_method_precession CASCADE;
+CREATE TYPE ENUM_diffrn_measurement_method_precession AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_diffrn_measurement_rotation_mode CASCADE;
+CREATE TYPE ENUM_diffrn_measurement_rotation_mode AS ENUM ( 'rotation', 'stepwise' );
+DROP TYPE IF EXISTS ENUM_diffrn_measurement_sample_tracking CASCADE;
+CREATE TYPE ENUM_diffrn_measurement_sample_tracking AS ENUM ( 'Y', 'N' );
 CREATE TABLE diffrn_measurement (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -3953,8 +3962,20 @@ CREATE TABLE diffrn_measurement (
 	device_details TEXT ,
 	device_type TEXT ,
 	method TEXT ,
+	method_precession ENUM_diffrn_measurement_method_precession ,
+-- omit an attribute having a fixed value: @units="degrees"
+	pdbx_angle_end DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees"
+	pdbx_angle_start DECIMAL ,
 -- map XSD date (xsd:date) to SQL DATE
 	pdbx_date DATE ,
+-- omit an attribute having a fixed value: @units="seconds"
+	pdbx_exposure_time_per_image DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees_per_second"
+	pdbx_rotation_rate DECIMAL ,
+	rotation_mode ENUM_diffrn_measurement_rotation_mode ,
+	sample_tracking ENUM_diffrn_measurement_sample_tracking ,
+	sample_tracking_method TEXT ,
 	specimen_support TEXT ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL
@@ -9358,6 +9379,45 @@ CREATE TABLE pdbx_diffrn_detector_panel_mapping (
 );
 
 --
+-- (quoted from pdbx_diffrn_edType)
+-- Data items in the PDBX_DIFFRN_ED record details specific to electron diffraction method. Example 1 - based on PDB entry 9DHO <PDBx:pdbx_diffrn_edCategory> <PDBx:pdbx_diffrn_ed id="1"> <PDBx:beam_diameter_sample_plane>3.5</PDBx:beam_diameter_sample_plane> <PDBx:c2_aperture_diameter>50</PDBx:c2_aperture_diameter> <PDBx:camera_length>1402</PDBx:camera_length> <PDBx:details>The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10&amp;#8201;eV, with the zero-loss peak centered in defocused diffraction</PDBx:details> <PDBx:diffrn_id>1</PDBx:diffrn_id> <PDBx:electron_source>FIELD EMISSION GUN</PDBx:electron_source> <PDBx:energyfilter_name>TFS Selectris</PDBx:energyfilter_name> <PDBx:fluence_accumulated>0.84</PDBx:fluence_accumulated> <PDBx:fluence_rate>0.002</PDBx:fluence_rate> <PDBx:recording_mode>Electron Counting</PDBx:recording_mode> <PDBx:sa_aperture_diameter>150</PDBx:sa_aperture_diameter> </PDBx:pdbx_diffrn_ed> </PDBx:pdbx_diffrn_edCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_diffrn_ed_electron_source CASCADE;
+CREATE TYPE ENUM_pdbx_diffrn_ed_electron_source AS ENUM ( 'FIELD EMISSION GUN', 'LAB6', 'OTHER' );
+DROP TYPE IF EXISTS ENUM_pdbx_diffrn_ed_recording_mode CASCADE;
+CREATE TYPE ENUM_pdbx_diffrn_ed_recording_mode AS ENUM ( 'Electron Counting', 'Integrating', 'Other' );
+CREATE TABLE pdbx_diffrn_ed (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- omit an attribute having a fixed value: @units="micrometres"
+	beam_diameter_sample_plane DECIMAL ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	c2_aperture_diameter DECIMAL CHECK ( c2_aperture_diameter >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	camera_length DECIMAL CHECK ( camera_length >= 0.0 ) ,
+-- omit an attribute having a fixed value: @units="electron_volts"
+	details TEXT ,
+	diffrn_id TEXT ,
+	electron_source ENUM_pdbx_diffrn_ed_electron_source ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	energyfilter_lower DECIMAL CHECK ( energyfilter_lower >= 0.0 ) ,
+	energyfilter_name TEXT ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	energyfilter_upper DECIMAL CHECK ( energyfilter_upper >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	fluence_accumulated DECIMAL CHECK ( fluence_accumulated >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	fluence_rate DECIMAL CHECK ( fluence_rate >= 0.0 ) ,
+	recording_mode ENUM_pdbx_diffrn_ed_recording_mode ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	sa_aperture_diameter DECIMAL CHECK ( sa_aperture_diameter >= 0.0 ) ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
+);
+
+--
 -- (quoted from pdbx_diffrn_orientationType)
 -- Data items in the PDBX_DIFFRN_ORIENTATION category record details about a particular crystal orientation. Example 1 - based on 6W01. <PDBx:pdbx_diffrn_orientationCategory> <PDBx:pdbx_diffrn_orientation id="1"> <PDBx:matrix11>69.373940</PDBx:matrix11> <PDBx:matrix12>-130.908295</PDBx:matrix12> <PDBx:matrix13>27.435501</PDBx:matrix13> <PDBx:matrix21>79.867874</PDBx:matrix21> <PDBx:matrix22>119.642296</PDBx:matrix22> <PDBx:matrix23>-44.824940</PDBx:matrix23> <PDBx:matrix31>14.660122</PDBx:matrix31> <PDBx:matrix32>30.056683</PDBx:matrix32> <PDBx:matrix33>106.345345</PDBx:matrix33> <PDBx:type>Unit cell axis directions</PDBx:type> </PDBx:pdbx_diffrn_orientation> <PDBx:pdbx_diffrn_orientation id="2"> <PDBx:matrix11>0.04013</PDBx:matrix11> <PDBx:matrix12>-0.296</PDBx:matrix12> <PDBx:matrix13>0.9543</PDBx:matrix13> <PDBx:matrix21>-0.5429</PDBx:matrix21> <PDBx:matrix22>0.7953</PDBx:matrix22> <PDBx:matrix23>0.2695</PDBx:matrix23> <PDBx:matrix31>-0.8388</PDBx:matrix31> <PDBx:matrix32>-0.529</PDBx:matrix32> <PDBx:matrix33>-0.1288</PDBx:matrix33> <PDBx:type>U matrix</PDBx:type> </PDBx:pdbx_diffrn_orientation> </PDBx:pdbx_diffrn_orientationCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
@@ -10366,11 +10426,14 @@ CREATE TABLE pdbx_entry_details (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_pdbx_exptl_crystal_cryo_treatment_cryogen CASCADE;
+CREATE TYPE ENUM_pdbx_exptl_crystal_cryo_treatment_cryogen AS ENUM ( 'ETHANE', 'NITROGEN', 'OTHER' );
 CREATE TABLE pdbx_exptl_crystal_cryo_treatment (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	annealing_details TEXT ,
 	cooling_details TEXT ,
+	cryogen ENUM_pdbx_exptl_crystal_cryo_treatment_cryogen ,
 	final_solution_details TEXT ,
 	soaking_details TEXT ,
 -- ATTRIBUTE
@@ -10422,6 +10485,31 @@ CREATE TABLE pdbx_exptl_crystal_grow_sol (
 );
 
 --
+-- (quoted from pdbx_exptl_crystal_processType)
+-- Data items in the pdbx_exptl_crystal_process category record details of the post-crystallization process to prepare specific crystal samples such as microcrystals for subsequent diffraction experiments. Example 1 - based on PDB entry 9dho <PDBx:pdbx_exptl_crystal_processCategory> <PDBx:pdbx_exptl_crystal_process crystal_id="1" id="1"> <PDBx:details>stepwise protocol to an optimal thickness of approximately 300&amp;#8201;nm using a 30&amp;#8201;kV Argon plasma ion beam</PDBx:details> <PDBx:microcrystal_description>lamella</PDBx:microcrystal_description> <PDBx:microcrystal_instrument>Helios Hydra 5 CX dual-beam plasma FIB/SEM (Thermo Fisher Scientific)</PDBx:microcrystal_instrument> <PDBx:microcrystal_max_dim>5</PDBx:microcrystal_max_dim> <PDBx:microcrystal_method>FIB milling</PDBx:microcrystal_method> <PDBx:microcrystal_min_dim>0.3</PDBx:microcrystal_min_dim> </PDBx:pdbx_exptl_crystal_process> </PDBx:pdbx_exptl_crystal_processCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_exptl_crystal_process_microcrystal_method CASCADE;
+CREATE TYPE ENUM_pdbx_exptl_crystal_process_microcrystal_method AS ENUM ( 'FIB milling', 'Naturally grown', 'Sonication', 'Vortexing', 'Other' );
+CREATE TABLE pdbx_exptl_crystal_process (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+	microcrystal_description TEXT ,
+	microcrystal_instrument TEXT ,
+-- omit an attribute having a fixed value: @units="micrometres"
+	microcrystal_max_dim DECIMAL ,
+	microcrystal_method ENUM_pdbx_exptl_crystal_process_microcrystal_method ,
+-- omit an attribute having a fixed value: @units="micrometres"
+	microcrystal_min_dim DECIMAL ,
+-- ATTRIBUTE
+	crystal_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
+);
+
+--
 -- (quoted from pdbx_exptl_pdType)
 -- Data items in the pdbx_exptl_pd record information about powder sample preparations.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
@@ -10436,6 +10524,24 @@ CREATE TABLE pdbx_exptl_pd (
 	"spec_preparation_pH_range" TEXT ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_exptl_subtypeType)
+-- Data items in the PDBX_EXPTL_SUBTYPE category record details about the method subtype under the primary method recorded in attribute method in category exptl Example 1 <PDBx:pdbx_exptl_subtypeCategory> <PDBx:pdbx_exptl_subtype exptl_method="ELECTRON CRYSTALLOGRAPHY" method_type="Microcrystal Electron Diffraction"> </PDBx:pdbx_exptl_subtype> </PDBx:pdbx_exptl_subtypeCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_exptl_subtype_method_type CASCADE;
+CREATE TYPE ENUM_pdbx_exptl_subtype_method_type AS ENUM ( 'Microcrystal Electron Diffraction', '2-Dimensional Electron Crystallography' );
+CREATE TABLE pdbx_exptl_subtype (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+-- ATTRIBUTE
+	exptl_method TEXT NOT NULL ,
+-- ATTRIBUTE
+	method_type ENUM_pdbx_exptl_subtype_method_type NOT NULL
 );
 
 --
@@ -18355,6 +18461,9 @@ CREATE TABLE valence_ref (
 -- (derived from xsd:key[@name='pdbx_diffrn_detector_panel_mappingKey_0'])
 --ALTER TABLE pdbx_diffrn_detector_panel_mapping ADD CONSTRAINT UNQ_pdbx_diffrn_detector_panel_mapping UNIQUE ( document_id, id );
 
+-- (derived from xsd:key[@name='pdbx_diffrn_edKey_0'])
+--ALTER TABLE pdbx_diffrn_ed ADD CONSTRAINT UNQ_pdbx_diffrn_ed UNIQUE ( document_id, id );
+
 -- (derived from xsd:key[@name='pdbx_diffrn_orientationKey_0'])
 --ALTER TABLE pdbx_diffrn_orientation ADD CONSTRAINT UNQ_pdbx_diffrn_orientation UNIQUE ( document_id, id );
 
@@ -18508,8 +18617,14 @@ CREATE TABLE valence_ref (
 -- (derived from xsd:key[@name='pdbx_exptl_crystal_grow_solKey_0'])
 --ALTER TABLE pdbx_exptl_crystal_grow_sol ADD CONSTRAINT UNQ_pdbx_exptl_crystal_grow_sol UNIQUE ( document_id, crystal_id, sol_id );
 
+-- (derived from xsd:key[@name='pdbx_exptl_crystal_processKey_0'])
+--ALTER TABLE pdbx_exptl_crystal_process ADD CONSTRAINT UNQ_pdbx_exptl_crystal_process UNIQUE ( document_id, crystal_id, id );
+
 -- (derived from xsd:key[@name='pdbx_exptl_pdKey_0'])
 --ALTER TABLE pdbx_exptl_pd ADD CONSTRAINT UNQ_pdbx_exptl_pd UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_exptl_subtypeKey_0'])
+--ALTER TABLE pdbx_exptl_subtype ADD CONSTRAINT UNQ_pdbx_exptl_subtype UNIQUE ( document_id, exptl_method, method_type );
 
 -- (derived from xsd:key[@name='pdbx_family_group_indexKey_0'])
 --ALTER TABLE pdbx_family_group_index ADD CONSTRAINT UNQ_pdbx_family_group_index UNIQUE ( document_id, family_prd_id, id );
@@ -19559,22 +19674,25 @@ CREATE TABLE valence_ref (
 --ALTER TABLE diffrn_standards ADD CONSTRAINT KR_diffrnKeyref_0_0_9_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='diffrnKeyref_0_0_10_0'])
---ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT KR_diffrnKeyref_0_0_10_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_diffrn_ed ADD CONSTRAINT KR_diffrnKeyref_0_0_10_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='diffrnKeyref_0_0_11_0'])
---ALTER TABLE pdbx_serial_crystallography_data_reduction ADD CONSTRAINT KR_diffrnKeyref_0_0_11_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT KR_diffrnKeyref_0_0_11_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='diffrnKeyref_0_0_12_0'])
---ALTER TABLE pdbx_serial_crystallography_measurement ADD CONSTRAINT KR_diffrnKeyref_0_0_12_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_serial_crystallography_data_reduction ADD CONSTRAINT KR_diffrnKeyref_0_0_12_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='diffrnKeyref_0_0_13_0'])
---ALTER TABLE pdbx_serial_crystallography_sample_delivery ADD CONSTRAINT KR_diffrnKeyref_0_0_13_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_serial_crystallography_measurement ADD CONSTRAINT KR_diffrnKeyref_0_0_13_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='diffrnKeyref_0_0_14_0'])
---ALTER TABLE pdbx_serial_crystallography_sample_delivery_fixed_target ADD CONSTRAINT KR_diffrnKeyref_0_0_14_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_serial_crystallography_sample_delivery ADD CONSTRAINT KR_diffrnKeyref_0_0_14_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='diffrnKeyref_0_0_15_0'])
---ALTER TABLE pdbx_serial_crystallography_sample_delivery_injection ADD CONSTRAINT KR_diffrnKeyref_0_0_15_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_serial_crystallography_sample_delivery_fixed_target ADD CONSTRAINT KR_diffrnKeyref_0_0_15_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_16_0'])
+--ALTER TABLE pdbx_serial_crystallography_sample_delivery_injection ADD CONSTRAINT KR_diffrnKeyref_0_0_16_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='diffrn_data_frameKeyref_0_0_0_0'])
 --ALTER TABLE diffrn_scan ADD CONSTRAINT KR_diffrn_data_frameKeyref_0_0_0_0_0 FOREIGN KEY ( frame_id_end ) REFERENCES diffrn_data_frame ( detector_element_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
@@ -20055,6 +20173,9 @@ CREATE TABLE valence_ref (
 
 -- (derived from xsd:keyref[@name='exptl_crystalKeyref_0_0_6_0'])
 --ALTER TABLE pdbx_exptl_crystal_grow_sol ADD CONSTRAINT KR_exptl_crystalKeyref_0_0_6_0 FOREIGN KEY ( crystal_id ) REFERENCES exptl_crystal ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='exptl_crystalKeyref_0_0_7_0'])
+--ALTER TABLE pdbx_exptl_crystal_process ADD CONSTRAINT KR_exptl_crystalKeyref_0_0_7_0 FOREIGN KEY ( crystal_id ) REFERENCES exptl_crystal ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_audit_revision_category ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_0_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

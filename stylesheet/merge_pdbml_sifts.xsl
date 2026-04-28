@@ -1695,6 +1695,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBx:pdbx_diffrn_edCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBx:pdbx_diffrn_orientationCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
@@ -2001,7 +2007,19 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBx:pdbx_exptl_crystal_processCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBx:pdbx_exptl_pdCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_exptl_subtypeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>

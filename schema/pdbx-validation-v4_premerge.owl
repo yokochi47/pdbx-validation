@@ -930,6 +930,14 @@
                   <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
                </owl:Restriction>
                <owl:Restriction>
+                  <owl:onProperty rdf:resource="#has_pdbx_diffrn_edCategory"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#has_pdbx_diffrn_edCategory"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
                   <owl:onProperty rdf:resource="#has_pdbx_diffrn_reflns_shellCategory"/>
                   <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
                </owl:Restriction>
@@ -1175,6 +1183,14 @@
                </owl:Restriction>
                <owl:Restriction>
                   <owl:onProperty rdf:resource="#has_pdbx_entry_detailsCategory"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#has_pdbx_exptl_subtypeCategory"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#has_pdbx_exptl_subtypeCategory"/>
                   <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
                </owl:Restriction>
                <owl:Restriction>
@@ -2530,7 +2546,7 @@
       <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
       <rdfs:comment xml:lang="en">
 
-VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413, which is backward compatible with the PDBx/mmCIF Dictionary v5.370:
+VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.414, which is backward compatible with the PDBx/mmCIF Dictionary v5.370:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </rdfs:comment>
@@ -3441,6 +3457,70 @@ detector angle 22.5 degrees&lt;/VRPTx:details&gt;
                   <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
                </owl:Restriction>
                <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.method_precession"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.method_precession"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.pdbx_angle_end"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.pdbx_angle_end"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.pdbx_angle_start"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.pdbx_angle_start"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.pdbx_exposure_time_per_image"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.pdbx_exposure_time_per_image"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.pdbx_rotation_rate"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.pdbx_rotation_rate"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.rotation_mode"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.rotation_mode"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.sample_tracking"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.sample_tracking"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.sample_tracking_method"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#diffrn_measurement.sample_tracking_method"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
                   <owl:onProperty rdf:resource="#diffrn_measurement.specimen_support"/>
                   <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
                </owl:Restriction>
@@ -3555,6 +3635,140 @@ Method used to measure intensities.
 profile data from theta/2theta scans
                         </rdfs:comment>
       <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_diffrn_measurement.method.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="diffrn_measurement.method_precession">
+      <rdfs:subPropertyOf rdf:resource="#diffrn_measurementItem"/>
+      <rdfs:domain rdf:resource="#diffrn_measurement"/>
+      <rdfs:range>
+         <owl:DataRange>
+            <owl:oneOf>
+               <rdf:List>
+                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y</rdf:first>
+                  <rdf:rest>
+                     <rdf:List>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N</rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                     </rdf:List>
+                  </rdf:rest>
+               </rdf:List>
+            </owl:oneOf>
+         </owl:DataRange>
+      </rdfs:range>
+      <rdfs:comment xml:lang="en">
+Originated from IUCr Electron Diffraction CIF
+extension. Flag indicating if the radiation beam
+illuminates the sample at an angle that is rotated
+about a precession axis.
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_diffrn_measurement.method_precession.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="diffrn_measurement.pdbx_angle_end">
+      <rdfs:subPropertyOf rdf:resource="#diffrn_measurementItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>diffrn_measurement.pdbx_angle_end</rdfs:label>
+      <rdfs:comment xml:lang="en">
+The ending angle for crystal rotation.
+30
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_diffrn_measurement.pdbx_angle_end.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="diffrn_measurement.pdbx_angle_start">
+      <rdfs:subPropertyOf rdf:resource="#diffrn_measurementItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>diffrn_measurement.pdbx_angle_start</rdfs:label>
+      <rdfs:comment xml:lang="en">
+The starting angle for crystal rotation.
+-30
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_diffrn_measurement.pdbx_angle_start.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="diffrn_measurement.pdbx_exposure_time_per_image">
+      <rdfs:subPropertyOf rdf:resource="#diffrn_measurementItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>diffrn_measurement.pdbx_exposure_time_per_image</rdfs:label>
+      <rdfs:comment xml:lang="en">
+The exposure time per image for the crystal and
+detector/camera.
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_diffrn_measurement.pdbx_exposure_time_per_image.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="diffrn_measurement.pdbx_rotation_rate">
+      <rdfs:subPropertyOf rdf:resource="#diffrn_measurementItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>diffrn_measurement.pdbx_rotation_rate</rdfs:label>
+      <rdfs:comment xml:lang="en">
+The speed of crystal rotation.
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_diffrn_measurement.pdbx_rotation_rate.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="diffrn_measurement.rotation_mode">
+      <rdfs:subPropertyOf rdf:resource="#diffrn_measurementItem"/>
+      <rdfs:domain rdf:resource="#diffrn_measurement"/>
+      <rdfs:range>
+         <owl:DataRange>
+            <owl:oneOf>
+               <rdf:List>
+                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rotation</rdf:first>
+                  <rdf:rest>
+                     <rdf:List>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stepwise</rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                     </rdf:List>
+                  </rdf:rest>
+               </rdf:List>
+            </owl:oneOf>
+         </owl:DataRange>
+      </rdfs:range>
+      <rdfs:comment xml:lang="en">
+Originated from IUCr Electron Diffraction CIF
+extension. Code describing the technique used to
+sample as completely as possible the accessible range
+of reciprocal space. Rotation mode indicates the
+detector records diffracted intensities continuously
+while the sample is rotated. Stepwise model indicates
+the detector records diffracted intensities while the
+sample is stationary.
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_diffrn_measurement.rotation_mode.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="diffrn_measurement.sample_tracking">
+      <rdfs:subPropertyOf rdf:resource="#diffrn_measurementItem"/>
+      <rdfs:domain rdf:resource="#diffrn_measurement"/>
+      <rdfs:range>
+         <owl:DataRange>
+            <owl:oneOf>
+               <rdf:List>
+                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y</rdf:first>
+                  <rdf:rest>
+                     <rdf:List>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N</rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                     </rdf:List>
+                  </rdf:rest>
+               </rdf:List>
+            </owl:oneOf>
+         </owl:DataRange>
+      </rdfs:range>
+      <rdfs:comment xml:lang="en">
+Originated from IUCr Electron Diffraction CIF
+extension. Flag indicating if a tracking method to
+follow the crystal was used in the data
+acquisition. Typically used to track very small
+crystals in electron diffraction experiments.
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_diffrn_measurement.sample_tracking.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="diffrn_measurement.sample_tracking_method">
+      <rdfs:subPropertyOf rdf:resource="#diffrn_measurementItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      <rdfs:label>diffrn_measurement.sample_tracking_method</rdfs:label>
+      <rdfs:comment xml:lang="en">
+Originated from IUCr Electron Diffraction CIF
+extension. Description of the method used to follow
+the crystal during data collection.
+Electron-beam tracking by PyFast-ADT
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_diffrn_measurement.sample_tracking_method.html"/>
    </owl:DatatypeProperty>
    <owl:DatatypeProperty rdf:ID="diffrn_measurement.specimen_support">
       <rdfs:subPropertyOf rdf:resource="#diffrn_measurementItem"/>
@@ -29864,6 +30078,369 @@ for the structure.
 This data item is a pointer to attribute id in category entry in the ENTRY category. 
                      </rdfs:comment>
    </owl:DatatypeProperty>
+   <owl:Class rdf:ID="pdbx_diffrn_edCategory">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class rdf:about="#Category"/>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#has_pdbx_diffrn_ed"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:ID="pdbx_diffrn_ed">
+      <rdfs:label>pdbx_diffrn_ed</rdfs:label>
+      <rdfs:comment xml:lang="en">
+Data items in the PDBX_DIFFRN_ED record details specific to electron diffraction method.
+
+    Example 1 - based on PDB entry 9DHO
+&lt;VRPTx:pdbx_diffrn_edCategory&gt;
+   &lt;VRPTx:pdbx_diffrn_ed id="1"&gt;
+      &lt;VRPTx:beam_diameter_sample_plane&gt;3.5&lt;/VRPTx:beam_diameter_sample_plane&gt;
+      &lt;VRPTx:c2_aperture_diameter&gt;50&lt;/VRPTx:c2_aperture_diameter&gt;
+      &lt;VRPTx:camera_length&gt;1402&lt;/VRPTx:camera_length&gt;
+      &lt;VRPTx:details&gt;The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10&amp;amp;#8201;eV, with the zero-loss peak centered in defocused diffraction&lt;/VRPTx:details&gt;
+      &lt;VRPTx:diffrn_id&gt;1&lt;/VRPTx:diffrn_id&gt;
+      &lt;VRPTx:electron_source&gt;FIELD EMISSION GUN&lt;/VRPTx:electron_source&gt;
+      &lt;VRPTx:energyfilter_name&gt;TFS Selectris&lt;/VRPTx:energyfilter_name&gt;
+      &lt;VRPTx:fluence_accumulated&gt;0.84&lt;/VRPTx:fluence_accumulated&gt;
+      &lt;VRPTx:fluence_rate&gt;0.002&lt;/VRPTx:fluence_rate&gt;
+      &lt;VRPTx:recording_mode&gt;Electron Counting&lt;/VRPTx:recording_mode&gt;
+      &lt;VRPTx:sa_aperture_diameter&gt;150&lt;/VRPTx:sa_aperture_diameter&gt;
+   &lt;/VRPTx:pdbx_diffrn_ed&gt;
+&lt;/VRPTx:pdbx_diffrn_edCategory&gt;
+
+
+         </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_diffrn_ed.html"/>
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class rdf:about="#CategoryElement"/>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.beam_diameter_sample_plane"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.beam_diameter_sample_plane"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.c2_aperture_diameter"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.c2_aperture_diameter"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.camera_length"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.camera_length"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.details"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.details"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.diffrn_id"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.diffrn_id"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.electron_source"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.electron_source"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.energyfilter_lower"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.energyfilter_lower"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.energyfilter_name"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.energyfilter_name"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.energyfilter_upper"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.energyfilter_upper"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.fluence_accumulated"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.fluence_accumulated"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.fluence_rate"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.fluence_rate"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.recording_mode"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.recording_mode"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.sa_aperture_diameter"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.sa_aperture_diameter"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_diffrn_ed.id"/>
+                  <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+               </owl:Restriction>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:InverseFunctionalProperty rdf:ID="has_pdbx_diffrn_edCategory">
+      <rdfs:label>pdbx_diffrn_edCategory</rdfs:label>
+      <rdfs:comment xml:lang="en">
+        This property indicates that datablock
+        has a category holder pdbx_diffrn_edCategory.
+      </rdfs:comment>
+      <rdfs:subPropertyOf rdf:resource="#hasCategory"/>
+      <rdfs:seeAlso rdf:resource="#pdbx_diffrn_ed"/>
+   </owl:InverseFunctionalProperty>
+   <owl:InverseFunctionalProperty rdf:ID="has_pdbx_diffrn_ed">
+      <rdfs:label>pdbx_diffrn_edCategory</rdfs:label>
+      <rdfs:comment xml:lang="en">
+        This property indicates that pdbx_diffrn_edCategory.
+        has a category pdbx_diffrn_ed.
+      </rdfs:comment>
+      <rdfs:subPropertyOf rdf:resource="#hasCategoryElement"/>
+      <rdfs:seeAlso rdf:resource="#pdbx_diffrn_ed"/>
+      <rdfs:domain rdf:resource="#pdbx_diffrn_edCategory"/>
+      <rdfs:range rdf:resource="#pdbx_diffrn_ed"/>
+   </owl:InverseFunctionalProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_edItem">
+      <rdfs:label>pdbx_diffrn_edItem</rdfs:label>
+      <rdfs:comment xml:lang="en">Abstract datatype property for pdbx_diffrn_ed items.</rdfs:comment>
+      <rdfs:subPropertyOf rdf:resource="#categoryItem"/>
+      <rdfs:domain rdf:resource="#pdbx_diffrn_ed"/>
+   </owl:DatatypeProperty>
+   <owl:ObjectProperty rdf:ID="reference_to_pdbx_diffrn_ed">
+      <rdfs:label>reference_to_pdbx_diffrn_ed</rdfs:label>
+      <rdfs:comment xml:lang="en">cross-reference to pdbx_diffrn_ed.</rdfs:comment>
+      <rdfs:subPropertyOf rdf:resource="#reference_to"/>
+      <rdfs:domain rdf:resource="#pdbx_diffrn_ed"/>
+   </owl:ObjectProperty>
+   <owl:ObjectProperty rdf:ID="referenced_by_pdbx_diffrn_ed">
+      <rdfs:label>referenced_by_pdbx_diffrn_ed</rdfs:label>
+      <rdfs:comment xml:lang="en">cross-reference from pdbx_diffrn_ed.</rdfs:comment>
+      <rdfs:subPropertyOf rdf:resource="#referenced_by"/>
+      <rdfs:range rdf:resource="#pdbx_diffrn_ed"/>
+   </owl:ObjectProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.beam_diameter_sample_plane">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>pdbx_diffrn_ed.beam_diameter_sample_plane</rdfs:label>
+      <rdfs:comment xml:lang="en">
+The electron beam diameter at the sample plane
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.beam_diameter_sample_plane.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.c2_aperture_diameter">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>pdbx_diffrn_ed.c2_aperture_diameter</rdfs:label>
+      <rdfs:comment xml:lang="en">
+C2 aperture diameter
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.c2_aperture_diameter.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.camera_length">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>pdbx_diffrn_ed.camera_length</rdfs:label>
+      <rdfs:comment xml:lang="en">
+The product of the objective focal length and the
+combined magnification of the intermediate and projector
+lenses when the microscope is operated in the
+diffraction mode.
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.camera_length.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.details">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      <rdfs:label>pdbx_diffrn_ed.details</rdfs:label>
+      <rdfs:comment xml:lang="en">
+Details of the electron diffration process
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.details.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.diffrn_id">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      <rdfs:label>pdbx_diffrn_ed.diffrn_id</rdfs:label>
+      <rdfs:comment xml:lang="en">
+This data item is a pointer to the attribute id in category diffrn 
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.diffrn_id.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.electron_source">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:domain rdf:resource="#pdbx_diffrn_ed"/>
+      <rdfs:range>
+         <owl:DataRange>
+            <owl:oneOf>
+               <rdf:List>
+                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIELD EMISSION GUN</rdf:first>
+                  <rdf:rest>
+                     <rdf:List>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LAB6</rdf:first>
+                        <rdf:rest>
+                           <rdf:List>
+                              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTHER</rdf:first>
+                              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                           </rdf:List>
+                        </rdf:rest>
+                     </rdf:List>
+                  </rdf:rest>
+               </rdf:List>
+            </owl:oneOf>
+         </owl:DataRange>
+      </rdfs:range>
+      <rdfs:comment xml:lang="en">
+The source of electrons, i.e. the electron gun
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.electron_source.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.energyfilter_lower">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>pdbx_diffrn_ed.energyfilter_lower</rdfs:label>
+      <rdfs:comment xml:lang="en">
+The energy filter range lower value in electron volts (eV)
+set by the specrometer
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.energyfilter_lower.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.energyfilter_name">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      <rdfs:label>pdbx_diffrn_ed.energyfilter_name</rdfs:label>
+      <rdfs:comment xml:lang="en">
+The name of the energy filter
+TFS Selectris
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.energyfilter_name.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.energyfilter_upper">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>pdbx_diffrn_ed.energyfilter_upper</rdfs:label>
+      <rdfs:comment xml:lang="en">
+The energy filter range upper value in electron volts (eV)
+set by the specrometer
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.energyfilter_upper.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.fluence_accumulated">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>pdbx_diffrn_ed.fluence_accumulated</rdfs:label>
+      <rdfs:comment xml:lang="en">
+Total fluence at the sample plane
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.fluence_accumulated.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.fluence_rate">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>pdbx_diffrn_ed.fluence_rate</rdfs:label>
+      <rdfs:comment xml:lang="en">
+Fluence rate, or flux density at the sample plane
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.fluence_rate.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.recording_mode">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:domain rdf:resource="#pdbx_diffrn_ed"/>
+      <rdfs:range>
+         <owl:DataRange>
+            <owl:oneOf>
+               <rdf:List>
+                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron Counting</rdf:first>
+                  <rdf:rest>
+                     <rdf:List>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integrating</rdf:first>
+                        <rdf:rest>
+                           <rdf:List>
+                              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</rdf:first>
+                              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                           </rdf:List>
+                        </rdf:rest>
+                     </rdf:List>
+                  </rdf:rest>
+               </rdf:List>
+            </owl:oneOf>
+         </owl:DataRange>
+      </rdfs:range>
+      <rdfs:comment xml:lang="en">
+The mode of the detector for electron diffraction recording, e.g.
+Electron Counting (Event) mode, Linear (Integrating) mode
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.recording_mode.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.sa_aperture_diameter">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <rdfs:label>pdbx_diffrn_ed.sa_aperture_diameter</rdfs:label>
+      <rdfs:comment xml:lang="en">
+Select Area aperture diameter
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.sa_aperture_diameter.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_diffrn_ed.id">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_diffrn_edItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      <rdfs:label>pdbx_diffrn_ed.id</rdfs:label>
+      <rdfs:comment xml:lang="en">
+This ordinal identifier for the category
+                     </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_diffrn_ed.id.html"/>
+   </owl:DatatypeProperty>
    <owl:Class rdf:ID="pdbx_diffrn_reflns_shellCategory">
       <rdfs:subClassOf>
          <owl:Class>
@@ -36619,6 +37196,144 @@ components in this entry.
 This item identifies the entry. This is a reference to attribute id in category entry. 
                      </rdfs:comment>
       <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_entry_details.entry_id.html"/>
+   </owl:DatatypeProperty>
+   <owl:Class rdf:ID="pdbx_exptl_subtypeCategory">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class rdf:about="#Category"/>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#has_pdbx_exptl_subtype"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:ID="pdbx_exptl_subtype">
+      <rdfs:label>pdbx_exptl_subtype</rdfs:label>
+      <rdfs:comment xml:lang="en">
+Data items in the PDBX_EXPTL_SUBTYPE category record
+details about the method subtype under the primary
+method recorded in attribute method in category exptl 
+
+    Example 1
+&lt;VRPTx:pdbx_exptl_subtypeCategory&gt;
+   &lt;VRPTx:pdbx_exptl_subtype exptl_method="ELECTRON CRYSTALLOGRAPHY" method_type="Microcrystal Electron Diffraction"&gt;
+   &lt;/VRPTx:pdbx_exptl_subtype&gt;
+&lt;/VRPTx:pdbx_exptl_subtypeCategory&gt;
+
+
+         </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_exptl_subtype.html"/>
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class rdf:about="#CategoryElement"/>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_exptl_subtype.details"/>
+                  <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_exptl_subtype.details"/>
+                  <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_exptl_subtype.exptl_method"/>
+                  <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+               </owl:Restriction>
+               <owl:Restriction>
+                  <owl:onProperty rdf:resource="#pdbx_exptl_subtype.method_type"/>
+                  <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+               </owl:Restriction>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:InverseFunctionalProperty rdf:ID="has_pdbx_exptl_subtypeCategory">
+      <rdfs:label>pdbx_exptl_subtypeCategory</rdfs:label>
+      <rdfs:comment xml:lang="en">
+        This property indicates that datablock
+        has a category holder pdbx_exptl_subtypeCategory.
+      </rdfs:comment>
+      <rdfs:subPropertyOf rdf:resource="#hasCategory"/>
+      <rdfs:seeAlso rdf:resource="#pdbx_exptl_subtype"/>
+   </owl:InverseFunctionalProperty>
+   <owl:InverseFunctionalProperty rdf:ID="has_pdbx_exptl_subtype">
+      <rdfs:label>pdbx_exptl_subtypeCategory</rdfs:label>
+      <rdfs:comment xml:lang="en">
+        This property indicates that pdbx_exptl_subtypeCategory.
+        has a category pdbx_exptl_subtype.
+      </rdfs:comment>
+      <rdfs:subPropertyOf rdf:resource="#hasCategoryElement"/>
+      <rdfs:seeAlso rdf:resource="#pdbx_exptl_subtype"/>
+      <rdfs:domain rdf:resource="#pdbx_exptl_subtypeCategory"/>
+      <rdfs:range rdf:resource="#pdbx_exptl_subtype"/>
+   </owl:InverseFunctionalProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_exptl_subtypeItem">
+      <rdfs:label>pdbx_exptl_subtypeItem</rdfs:label>
+      <rdfs:comment xml:lang="en">Abstract datatype property for pdbx_exptl_subtype items.</rdfs:comment>
+      <rdfs:subPropertyOf rdf:resource="#categoryItem"/>
+      <rdfs:domain rdf:resource="#pdbx_exptl_subtype"/>
+   </owl:DatatypeProperty>
+   <owl:ObjectProperty rdf:ID="reference_to_pdbx_exptl_subtype">
+      <rdfs:label>reference_to_pdbx_exptl_subtype</rdfs:label>
+      <rdfs:comment xml:lang="en">cross-reference to pdbx_exptl_subtype.</rdfs:comment>
+      <rdfs:subPropertyOf rdf:resource="#reference_to"/>
+      <rdfs:domain rdf:resource="#pdbx_exptl_subtype"/>
+   </owl:ObjectProperty>
+   <owl:ObjectProperty rdf:ID="referenced_by_pdbx_exptl_subtype">
+      <rdfs:label>referenced_by_pdbx_exptl_subtype</rdfs:label>
+      <rdfs:comment xml:lang="en">cross-reference from pdbx_exptl_subtype.</rdfs:comment>
+      <rdfs:subPropertyOf rdf:resource="#referenced_by"/>
+      <rdfs:range rdf:resource="#pdbx_exptl_subtype"/>
+   </owl:ObjectProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_exptl_subtype.details">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_exptl_subtypeItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      <rdfs:label>pdbx_exptl_subtype.details</rdfs:label>
+      <rdfs:comment xml:lang="en">
+Details about the method subtype.
+                        </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_exptl_subtype.details.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_exptl_subtype.exptl_method">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_exptl_subtypeItem"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      <rdfs:label>pdbx_exptl_subtype.exptl_method</rdfs:label>
+      <rdfs:comment xml:lang="en">
+This data item is a pointer to attribute method in category exptl in the EXPTL category. 
+X-RAY CRYSTALLOGRAPHY
+                     </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_exptl_subtype.exptl_method.html"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:ID="pdbx_exptl_subtype.method_type">
+      <rdfs:subPropertyOf rdf:resource="#pdbx_exptl_subtypeItem"/>
+      <rdfs:domain rdf:resource="#pdbx_exptl_subtype"/>
+      <rdfs:range>
+         <owl:DataRange>
+            <owl:oneOf>
+               <rdf:List>
+                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microcrystal Electron Diffraction</rdf:first>
+                  <rdf:rest>
+                     <rdf:List>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-Dimensional Electron Crystallography</rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                     </rdf:List>
+                  </rdf:rest>
+               </rdf:List>
+            </owl:oneOf>
+         </owl:DataRange>
+      </rdfs:range>
+      <rdfs:comment xml:lang="en">
+The subtype of the method used in the experiment. The
+subtype should be a variance of the primary method
+recorded in the attribute method in category exptl item, with distinctive
+ technical applications and significant scientific
+impacts.
+Microcrystal Electron Diffraction
+                     </rdfs:comment>
+      <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_exptl_subtype.method_type.html"/>
    </owl:DatatypeProperty>
    <owl:Class rdf:ID="pdbx_helical_symmetryCategory">
       <rdfs:subClassOf>

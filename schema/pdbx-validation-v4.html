@@ -729,6 +729,10 @@ div#legend div.hint {
                   </a>
                </li>
                <li>
+                  <a href="#type_pdbx_diffrn_edType">Complex Type: <strong>pdbx_diffrn_edType</strong>
+                  </a>
+               </li>
+               <li>
                   <a href="#type_pdbx_diffrn_reflns_shellType">Complex Type: <strong>pdbx_diffrn_reflns_shellType</strong>
                   </a>
                </li>
@@ -850,6 +854,10 @@ div#legend div.hint {
                </li>
                <li>
                   <a href="#type_pdbx_entry_detailsType">Complex Type: <strong>pdbx_entry_detailsType</strong>
+                  </a>
+               </li>
+               <li>
+                  <a href="#type_pdbx_exptl_subtypeType">Complex Type: <strong>pdbx_exptl_subtypeType</strong>
                   </a>
                </li>
                <li>
@@ -1555,7 +1563,7 @@ div#legend div.hint {
             <th>Documentation</th>
             <td>
 
-VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413, which is backward compatible with the PDBx/mmCIF Dictionary v5.370:
+VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.414, which is backward compatible with the PDBx/mmCIF Dictionary v5.370:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         <br/> More information at: <a title="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
@@ -1563,7 +1571,7 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
          </tr>
          <tr>
             <th>Application Data</th>
-            <td>VRPT PDBML Schema v4.413</td>
+            <td>VRPT PDBML Schema v4.414</td>
          </tr>
       </table>
       <h3>Declared Namespaces</h3>
@@ -1709,6 +1717,12 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                      href="#key_diffrnKey_0">diffrnKey_0</a>
                   <br/>--&gt;</div>
                <div class="other" style="margin-left: 1.5em">&lt;!-- <br/>Key Reference Constraint - <strong>diffrnKeyref_0_0_10_0</strong>
+                  <br/>Selector - <strong>VRPTx:pdbx_diffrn_edCategory/VRPTx:pdbx_diffrn_ed</strong>
+                  <br/>Field(s) - <strong>VRPTx:diffrn_id</strong>
+                  <br/>Refers to - <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;diffrnKey_0&#34; uniqueness/key constraint definition."
+                     href="#key_diffrnKey_0">diffrnKey_0</a>
+                  <br/>--&gt;</div>
+               <div class="other" style="margin-left: 1.5em">&lt;!-- <br/>Key Reference Constraint - <strong>diffrnKeyref_0_0_11_0</strong>
                   <br/>Selector - <strong>VRPTx:pdbx_diffrn_reflns_shellCategory/VRPTx:pdbx_diffrn_reflns_shell</strong>
                   <br/>Field(s) - <strong>@diffrn_id</strong>
                   <br/>Refers to - <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;diffrnKey_0&#34; uniqueness/key constraint definition."
@@ -2627,6 +2641,12 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                   <br/>Field(s) - <strong>@entry_id</strong>
                   <br/>--&gt;</div>
                <div class="other" style="margin-left: 1.5em">&lt;!-- <br/>Key Constraint - <strong>
+                     <a name="key_pdbx_diffrn_edKey_0">pdbx_diffrn_edKey_0</a>
+                  </strong>
+                  <br/>Selector - <strong>VRPTx:pdbx_diffrn_edCategory/VRPTx:pdbx_diffrn_ed</strong>
+                  <br/>Field(s) - <strong>@id</strong>
+                  <br/>--&gt;</div>
+               <div class="other" style="margin-left: 1.5em">&lt;!-- <br/>Key Constraint - <strong>
                      <a name="key_pdbx_diffrn_reflns_shellKey_0">pdbx_diffrn_reflns_shellKey_0</a>
                   </strong>
                   <br/>Selector - <strong>VRPTx:pdbx_diffrn_reflns_shellCategory/VRPTx:pdbx_diffrn_reflns_shell</strong>
@@ -2871,6 +2891,12 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                   </strong>
                   <br/>Selector - <strong>VRPTx:pdbx_entry_detailsCategory/VRPTx:pdbx_entry_details</strong>
                   <br/>Field(s) - <strong>@entry_id</strong>
+                  <br/>--&gt;</div>
+               <div class="other" style="margin-left: 1.5em">&lt;!-- <br/>Key Constraint - <strong>
+                     <a name="key_pdbx_exptl_subtypeKey_0">pdbx_exptl_subtypeKey_0</a>
+                  </strong>
+                  <br/>Selector - <strong>VRPTx:pdbx_exptl_subtypeCategory/VRPTx:pdbx_exptl_subtype</strong>
+                  <br/>Field(s) - <strong>@exptl_method</strong>, <strong>@method_type</strong>
                   <br/>--&gt;</div>
                <div class="other" style="margin-left: 1.5em">&lt;!-- <br/>Key Constraint - <strong>
                      <a name="key_pdbx_helical_symmetryKey_0">pdbx_helical_symmetryKey_0</a>
@@ -4606,6 +4632,11 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                         href="#type_pdbx_dcc_rscc_mapman_overallType">pdbx_dcc_rscc_mapman_overallType</a>
                   </span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_dcc_rscc_mapman_overallCategory&gt; <span class="occurs">[0..1]</span>
                </div>
+               <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_diffrn_edCategory&gt; <span class="type">
+                     <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_diffrn_edType&#34; type definition."
+                        href="#type_pdbx_diffrn_edType">pdbx_diffrn_edType</a>
+                  </span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_diffrn_edCategory&gt; <span class="occurs">[0..1]</span>
+               </div>
                <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_diffrn_reflns_shellCategory&gt; <span class="type">
                      <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_diffrn_reflns_shellType&#34; type definition."
                         href="#type_pdbx_diffrn_reflns_shellType">pdbx_diffrn_reflns_shellType</a>
@@ -4760,6 +4791,11 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                      <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_entry_detailsType&#34; type definition."
                         href="#type_pdbx_entry_detailsType">pdbx_entry_detailsType</a>
                   </span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_entry_detailsCategory&gt; <span class="occurs">[0..1]</span>
+               </div>
+               <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_exptl_subtypeCategory&gt; <span class="type">
+                     <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_exptl_subtypeType&#34; type definition."
+                        href="#type_pdbx_exptl_subtypeType">pdbx_exptl_subtypeType</a>
+                  </span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_exptl_subtypeCategory&gt; <span class="occurs">[0..1]</span>
                </div>
                <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_helical_symmetryCategory&gt; <span class="type">
                      <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_helical_symmetryType&#34; type definition."
@@ -5698,6 +5734,14 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                      <span class="scTag">xpath</span>="<span class="scContent">@diffrn_id</span>"/&gt;</div>&lt;/<span class="scTag">xsd:keyref</span>&gt;</div>
                <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:keyref</span>
                   <span class="scTag">name</span>="<span class="scContent">diffrnKeyref_0_0_10_0</span>" <span class="scTag">refer</span>="<span class="scContent">
+                     <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;diffrnKey_0&#34; uniqueness/key constraint definition."
+                        href="#key_diffrnKey_0">diffrnKey_0</a>
+                  </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:selector</span>
+                     <span class="scTag">xpath</span>="<span class="scContent">VRPTx:pdbx_diffrn_edCategory/VRPTx:pdbx_diffrn_ed</span>"/&gt;</div>
+                  <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:field</span>
+                     <span class="scTag">xpath</span>="<span class="scContent">VRPTx:diffrn_id</span>"/&gt;</div>&lt;/<span class="scTag">xsd:keyref</span>&gt;</div>
+               <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:keyref</span>
+                  <span class="scTag">name</span>="<span class="scContent">diffrnKeyref_0_0_11_0</span>" <span class="scTag">refer</span>="<span class="scContent">
                      <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;diffrnKey_0&#34; uniqueness/key constraint definition."
                         href="#key_diffrnKey_0">diffrnKey_0</a>
                   </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:selector</span>
@@ -6840,6 +6884,11 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                   <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:field</span>
                      <span class="scTag">xpath</span>="<span class="scContent">@entry_id</span>"/&gt;</div>&lt;/<span class="scTag">xsd:key</span>&gt;</div>
                <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:key</span>
+                  <span class="scTag">name</span>="<span class="scContent">pdbx_diffrn_edKey_0</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:selector</span>
+                     <span class="scTag">xpath</span>="<span class="scContent">VRPTx:pdbx_diffrn_edCategory/VRPTx:pdbx_diffrn_ed</span>"/&gt;</div>
+                  <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:field</span>
+                     <span class="scTag">xpath</span>="<span class="scContent">@id</span>"/&gt;</div>&lt;/<span class="scTag">xsd:key</span>&gt;</div>
+               <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:key</span>
                   <span class="scTag">name</span>="<span class="scContent">pdbx_diffrn_reflns_shellKey_0</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:selector</span>
                      <span class="scTag">xpath</span>="<span class="scContent">VRPTx:pdbx_diffrn_reflns_shellCategory/VRPTx:pdbx_diffrn_reflns_shell</span>"/&gt;</div>
                   <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:field</span>
@@ -7102,6 +7151,13 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                      <span class="scTag">xpath</span>="<span class="scContent">VRPTx:pdbx_entry_detailsCategory/VRPTx:pdbx_entry_details</span>"/&gt;</div>
                   <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:field</span>
                      <span class="scTag">xpath</span>="<span class="scContent">@entry_id</span>"/&gt;</div>&lt;/<span class="scTag">xsd:key</span>&gt;</div>
+               <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:key</span>
+                  <span class="scTag">name</span>="<span class="scContent">pdbx_exptl_subtypeKey_0</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:selector</span>
+                     <span class="scTag">xpath</span>="<span class="scContent">VRPTx:pdbx_exptl_subtypeCategory/VRPTx:pdbx_exptl_subtype</span>"/&gt;</div>
+                  <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:field</span>
+                     <span class="scTag">xpath</span>="<span class="scContent">@exptl_method</span>"/&gt;</div>
+                  <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:field</span>
+                     <span class="scTag">xpath</span>="<span class="scContent">@method_type</span>"/&gt;</div>&lt;/<span class="scTag">xsd:key</span>&gt;</div>
                <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:key</span>
                   <span class="scTag">name</span>="<span class="scContent">pdbx_helical_symmetryKey_0</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:selector</span>
                      <span class="scTag">xpath</span>="<span class="scContent">VRPTx:pdbx_helical_symmetryCategory/VRPTx:pdbx_helical_symmetry</span>"/&gt;</div>
@@ -9042,6 +9098,11 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                         href="#type_pdbx_dcc_rscc_mapman_overallType">pdbx_dcc_rscc_mapman_overallType</a>
                   </span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_dcc_rscc_mapman_overallCategory&gt; <span class="occurs">[0..1]</span>
                </div>
+               <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_diffrn_edCategory&gt; <span class="type">
+                     <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_diffrn_edType&#34; type definition."
+                        href="#type_pdbx_diffrn_edType">pdbx_diffrn_edType</a>
+                  </span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_diffrn_edCategory&gt; <span class="occurs">[0..1]</span>
+               </div>
                <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_diffrn_reflns_shellCategory&gt; <span class="type">
                      <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_diffrn_reflns_shellType&#34; type definition."
                         href="#type_pdbx_diffrn_reflns_shellType">pdbx_diffrn_reflns_shellType</a>
@@ -9196,6 +9257,11 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                      <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_entry_detailsType&#34; type definition."
                         href="#type_pdbx_entry_detailsType">pdbx_entry_detailsType</a>
                   </span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_entry_detailsCategory&gt; <span class="occurs">[0..1]</span>
+               </div>
+               <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_exptl_subtypeCategory&gt; <span class="type">
+                     <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_exptl_subtypeType&#34; type definition."
+                        href="#type_pdbx_exptl_subtypeType">pdbx_exptl_subtypeType</a>
+                  </span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_exptl_subtypeCategory&gt; <span class="occurs">[0..1]</span>
                </div>
                <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_helical_symmetryCategory&gt; <span class="type">
                      <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_helical_symmetryType&#34; type definition."
@@ -10627,6 +10693,13 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                         </span>
                      </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div>
                   <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                     <span class="scTag">name</span>="<span class="scContent">pdbx_diffrn_edCategory</span>" <span class="scTag">type</span>="<span class="scContent">
+                        <span class="type">
+                           <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_diffrn_edType&#34; type definition."
+                              href="#type_pdbx_diffrn_edType">pdbx_diffrn_edType</a>
+                        </span>
+                     </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div>
+                  <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
                      <span class="scTag">name</span>="<span class="scContent">pdbx_diffrn_reflns_shellCategory</span>" <span class="scTag">type</span>="<span class="scContent">
                         <span class="type">
                            <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_diffrn_reflns_shellType&#34; type definition."
@@ -10841,6 +10914,13 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.413
                         <span class="type">
                            <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_entry_detailsType&#34; type definition."
                               href="#type_pdbx_entry_detailsType">pdbx_entry_detailsType</a>
+                        </span>
+                     </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div>
+                  <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                     <span class="scTag">name</span>="<span class="scContent">pdbx_exptl_subtypeCategory</span>" <span class="scTag">type</span>="<span class="scContent">
+                        <span class="type">
+                           <a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:<a title="Jump to &#34;pdbx_exptl_subtypeType&#34; type definition."
+                              href="#type_pdbx_exptl_subtypeType">pdbx_exptl_subtypeType</a>
                         </span>
                      </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div>
                   <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
@@ -12634,6 +12714,57 @@ detector angle 22.5 degrees&lt;/VRPTx:details&gt;
                   <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:method&gt; <span class="type">
                         <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:method&gt; <span class="occurs">[0..1]</span>
                   </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:method_precession&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> (<em>value</em> comes from list: {'Y'|'N'})</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:method_precession&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_angle_end<br/>
+                     <span style="margin-left: 0.5em"> units="<span class="fixed">degrees</span>
+                        <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[0..1]</span>
+                     <br/>
+                     <span style="margin-left: 1.5em">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                     </span>
+                     <br/>&lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_angle_end&gt;</div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_angle_start<br/>
+                     <span style="margin-left: 0.5em"> units="<span class="fixed">degrees</span>
+                        <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[0..1]</span>
+                     <br/>
+                     <span style="margin-left: 1.5em">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                     </span>
+                     <br/>&lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_angle_start&gt;</div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_exposure_time_per_image<br/>
+                     <span style="margin-left: 0.5em"> units="<span class="fixed">seconds</span>
+                        <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[0..1]</span>
+                     <br/>
+                     <span style="margin-left: 1.5em">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                     </span>
+                     <br/>&lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_exposure_time_per_image&gt;</div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_rotation_rate<br/>
+                     <span style="margin-left: 0.5em"> units="<span class="fixed">degrees_per_second</span>
+                        <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[0..1]</span>
+                     <br/>
+                     <span style="margin-left: 1.5em">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                     </span>
+                     <br/>&lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_rotation_rate&gt;</div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:rotation_mode&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> (<em>value</em> comes from list: {'rotation'|'stepwise'})</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:rotation_mode&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:sample_tracking&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> (<em>value</em> comes from list: {'Y'|'N'})</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:sample_tracking&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:sample_tracking_method&gt; <span class="type">
+                        <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:sample_tracking_method&gt; <span class="occurs">[0..1]</span>
+                  </div>
                   <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:specimen_support&gt; <span class="type">
                         <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:specimen_support&gt; <span class="occurs">[0..1]</span>
                   </div>
@@ -12670,6 +12801,78 @@ detector angle 22.5 degrees&lt;/VRPTx:details&gt;
                               </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"/&gt;</div>
                            <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
                               <span class="scTag">name</span>="<span class="scContent">method</span>" <span class="scTag">type</span>="<span class="scContent">
+                                 <span class="type">
+                                    <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                              </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"/&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">method_precession</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">Y</span>"/&gt;</div>
+                                    <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">N</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">pdbx_angle_end</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleContent</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:extension</span>
+                                       <span class="scTag">base</span>="<span class="scContent">
+                                          <span class="type">
+                                             <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                       </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:attribute</span>
+                                          <span class="scTag">name</span>="<span class="scContent">units</span>" <span class="scTag">type</span>="<span class="scContent">
+                                             <span class="type">
+                                                <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                          </span>" <span class="scTag">fixed</span>="<span class="scContent">degrees</span>" <span class="scTag">use</span>="<span class="scContent">optional</span>"/&gt;</div>&lt;/<span class="scTag">xsd:extension</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleContent</span>&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">pdbx_angle_start</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleContent</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:extension</span>
+                                       <span class="scTag">base</span>="<span class="scContent">
+                                          <span class="type">
+                                             <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                       </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:attribute</span>
+                                          <span class="scTag">name</span>="<span class="scContent">units</span>" <span class="scTag">type</span>="<span class="scContent">
+                                             <span class="type">
+                                                <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                          </span>" <span class="scTag">fixed</span>="<span class="scContent">degrees</span>" <span class="scTag">use</span>="<span class="scContent">optional</span>"/&gt;</div>&lt;/<span class="scTag">xsd:extension</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleContent</span>&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">pdbx_exposure_time_per_image</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleContent</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:extension</span>
+                                       <span class="scTag">base</span>="<span class="scContent">
+                                          <span class="type">
+                                             <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                       </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:attribute</span>
+                                          <span class="scTag">name</span>="<span class="scContent">units</span>" <span class="scTag">type</span>="<span class="scContent">
+                                             <span class="type">
+                                                <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                          </span>" <span class="scTag">fixed</span>="<span class="scContent">seconds</span>" <span class="scTag">use</span>="<span class="scContent">optional</span>"/&gt;</div>&lt;/<span class="scTag">xsd:extension</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleContent</span>&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">pdbx_rotation_rate</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleContent</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:extension</span>
+                                       <span class="scTag">base</span>="<span class="scContent">
+                                          <span class="type">
+                                             <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                       </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:attribute</span>
+                                          <span class="scTag">name</span>="<span class="scContent">units</span>" <span class="scTag">type</span>="<span class="scContent">
+                                             <span class="type">
+                                                <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                          </span>" <span class="scTag">fixed</span>="<span class="scContent">degrees_per_second</span>" <span class="scTag">use</span>="<span class="scContent">optional</span>"/&gt;</div>&lt;/<span class="scTag">xsd:extension</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleContent</span>&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">rotation_mode</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">rotation</span>"/&gt;</div>
+                                    <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">stepwise</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">sample_tracking</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">Y</span>"/&gt;</div>
+                                    <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">N</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">sample_tracking_method</span>" <span class="scTag">type</span>="<span class="scContent">
                                  <span class="type">
                                     <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
                               </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"/&gt;</div>
@@ -28062,6 +28265,251 @@ from refmac and mapman.
          <a href="#top">top</a>
       </div>
       <hr/>
+      <h3>Complex Type: <a name="type_pdbx_diffrn_edType" class="name">pdbx_diffrn_edType</a>
+      </h3>
+      <table class="hierarchy">
+         <tr>
+            <th>Super-types:</th>
+            <td>None</td>
+         </tr>
+         <tr>
+            <th>Sub-types:</th>
+            <td>None</td>
+         </tr>
+      </table>
+      <table class="properties">
+         <tr>
+            <th>Name</th>
+            <td>pdbx_diffrn_edType</td>
+         </tr>
+         <tr>
+            <th>Abstract</th>
+            <td>no</td>
+         </tr>
+         <tr>
+            <th>Documentation</th>
+            <td>
+Data items in the PDBX_DIFFRN_ED record details specific to electron diffraction method.
+
+    Example 1 - based on PDB entry 9DHO
+&lt;VRPTx:pdbx_diffrn_edCategory&gt;
+   &lt;VRPTx:pdbx_diffrn_ed id="1"&gt;
+      &lt;VRPTx:beam_diameter_sample_plane&gt;3.5&lt;/VRPTx:beam_diameter_sample_plane&gt;
+      &lt;VRPTx:c2_aperture_diameter&gt;50&lt;/VRPTx:c2_aperture_diameter&gt;
+      &lt;VRPTx:camera_length&gt;1402&lt;/VRPTx:camera_length&gt;
+      &lt;VRPTx:details&gt;The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10&amp;amp;#8201;eV, with the zero-loss peak centered in defocused diffraction&lt;/VRPTx:details&gt;
+      &lt;VRPTx:diffrn_id&gt;1&lt;/VRPTx:diffrn_id&gt;
+      &lt;VRPTx:electron_source&gt;FIELD EMISSION GUN&lt;/VRPTx:electron_source&gt;
+      &lt;VRPTx:energyfilter_name&gt;TFS Selectris&lt;/VRPTx:energyfilter_name&gt;
+      &lt;VRPTx:fluence_accumulated&gt;0.84&lt;/VRPTx:fluence_accumulated&gt;
+      &lt;VRPTx:fluence_rate&gt;0.002&lt;/VRPTx:fluence_rate&gt;
+      &lt;VRPTx:recording_mode&gt;Electron Counting&lt;/VRPTx:recording_mode&gt;
+      &lt;VRPTx:sa_aperture_diameter&gt;150&lt;/VRPTx:sa_aperture_diameter&gt;
+   &lt;/VRPTx:pdbx_diffrn_ed&gt;
+&lt;/VRPTx:pdbx_diffrn_edCategory&gt;
+
+
+         <br/> More information at: <a title="http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_diffrn_ed.html"
+                  href="http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_diffrn_ed.html">http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_diffrn_ed.html</a>.</td>
+         </tr>
+      </table>
+      <div class="sample box">
+         <div>
+            <span class="caption">XML Instance Representation</span>
+         </div>
+         <div id="type_pdbx_diffrn_edType_xibox" class="contents">
+            <div style="margin-left: 0em">&lt;...&gt; <br/>
+               <div style="margin-left: 1.5em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_diffrn_ed<br/>
+                  <span style="margin-left: 0.5em"> id="<span class="type">
+                        <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                     <span class="occurs">[1]</span>"</span>&gt;  <span class="occurs">[0..*]</span>
+                  <br/>
+                  <span class="group" style="margin-left: 1.5em">Start All <span class="occurs">[1]</span>
+                  </span>
+                  <br/>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:beam_diameter_sample_plane<br/>
+                     <span style="margin-left: 0.5em"> units="<span class="fixed">micrometres</span>
+                        <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[0..1]</span>
+                     <br/>
+                     <span style="margin-left: 1.5em">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                     </span>
+                     <br/>&lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:beam_diameter_sample_plane&gt;</div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:c2_aperture_diameter&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span> (<em>value</em> &gt;= 0.0)</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:c2_aperture_diameter&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:camera_length&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span> (<em>value</em> &gt;= 0.0)</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:camera_length&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:details<br/>
+                     <span style="margin-left: 0.5em"> units="<span class="fixed">electron_volts</span>
+                        <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[0..1]</span>
+                     <br/>
+                     <span style="margin-left: 1.5em">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                     </span>
+                     <br/>&lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:details&gt;</div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:diffrn_id&gt; <span class="type">
+                        <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:diffrn_id&gt; <span class="occurs">[1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:electron_source&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> (<em>value</em> comes from list: {'FIELD EMISSION GUN'|'LAB6'|'OTHER'})</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:electron_source&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:energyfilter_lower&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span> (<em>value</em> &gt;= 0.0)</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:energyfilter_lower&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:energyfilter_name&gt; <span class="type">
+                        <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:energyfilter_name&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:energyfilter_upper&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span> (<em>value</em> &gt;= 0.0)</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:energyfilter_upper&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:fluence_accumulated&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span> (<em>value</em> &gt;= 0.0)</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:fluence_accumulated&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:fluence_rate&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span> (<em>value</em> &gt;= 0.0)</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:fluence_rate&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:recording_mode&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> (<em>value</em> comes from list: {'Electron Counting'|'Integrating'|'Other'})</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:recording_mode&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:sa_aperture_diameter&gt; <span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span> (<em>value</em> &gt;= 0.0)</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:sa_aperture_diameter&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <span class="group" style="margin-left: 1.5em">End All</span>
+                  <br/>&lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_diffrn_ed&gt;</div>&lt;/...&gt;</div>
+         </div>
+      </div>
+      <div class="schemaComponent box">
+         <div>
+            <span class="caption">Schema Component Representation</span>
+         </div>
+         <div id="type_pdbx_diffrn_edType_scbox" class="contents">
+            <div style="margin-left: 0em">&lt;<span class="scTag">xsd:complexType</span>
+               <span class="scTag">name</span>="<span class="scContent">pdbx_diffrn_edType</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                     <span class="scTag">name</span>="<span class="scContent">pdbx_diffrn_ed</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:all</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">beam_diameter_sample_plane</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleContent</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:extension</span>
+                                       <span class="scTag">base</span>="<span class="scContent">
+                                          <span class="type">
+                                             <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                       </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:attribute</span>
+                                          <span class="scTag">name</span>="<span class="scContent">units</span>" <span class="scTag">type</span>="<span class="scContent">
+                                             <span class="type">
+                                                <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                          </span>" <span class="scTag">fixed</span>="<span class="scContent">micrometres</span>" <span class="scTag">use</span>="<span class="scContent">optional</span>"/&gt;</div>&lt;/<span class="scTag">xsd:extension</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleContent</span>&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">c2_aperture_diameter</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:minInclusive</span>
+                                       <span class="scTag">value</span>="<span class="scContent">0.0</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">camera_length</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:minInclusive</span>
+                                       <span class="scTag">value</span>="<span class="scContent">0.0</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">details</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleContent</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:extension</span>
+                                       <span class="scTag">base</span>="<span class="scContent">
+                                          <span class="type">
+                                             <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                       </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:attribute</span>
+                                          <span class="scTag">name</span>="<span class="scContent">units</span>" <span class="scTag">type</span>="<span class="scContent">
+                                             <span class="type">
+                                                <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                          </span>" <span class="scTag">fixed</span>="<span class="scContent">electron_volts</span>" <span class="scTag">use</span>="<span class="scContent">optional</span>"/&gt;</div>&lt;/<span class="scTag">xsd:extension</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleContent</span>&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">diffrn_id</span>" <span class="scTag">type</span>="<span class="scContent">
+                                 <span class="type">
+                                    <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                              </span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">electron_source</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">FIELD EMISSION GUN</span>"/&gt;</div>
+                                    <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">LAB6</span>"/&gt;</div>
+                                    <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">OTHER</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">energyfilter_lower</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:minInclusive</span>
+                                       <span class="scTag">value</span>="<span class="scContent">0.0</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">energyfilter_name</span>" <span class="scTag">type</span>="<span class="scContent">
+                                 <span class="type">
+                                    <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                              </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"/&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">energyfilter_upper</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:minInclusive</span>
+                                       <span class="scTag">value</span>="<span class="scContent">0.0</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">fluence_accumulated</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:minInclusive</span>
+                                       <span class="scTag">value</span>="<span class="scContent">0.0</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">fluence_rate</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:minInclusive</span>
+                                       <span class="scTag">value</span>="<span class="scContent">0.0</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">recording_mode</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">Electron Counting</span>"/&gt;</div>
+                                    <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">Integrating</span>"/&gt;</div>
+                                    <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                       <span class="scTag">value</span>="<span class="scContent">Other</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>
+                           <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">sa_aperture_diameter</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                    <span class="scTag">base</span>="<span class="scContent">
+                                       <span class="type">
+                                          <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:decimal</span>
+                                    </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:minInclusive</span>
+                                       <span class="scTag">value</span>="<span class="scContent">0.0</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>&lt;/<span class="scTag">xsd:all</span>&gt;</div>
+                        <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:attribute</span>
+                           <span class="scTag">name</span>="<span class="scContent">id</span>" <span class="scTag">type</span>="<span class="scContent">
+                              <span class="type">
+                                 <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                           </span>" <span class="scTag">use</span>="<span class="scContent">required</span>"/&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>&lt;/<span class="scTag">xsd:sequence</span>&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>
+         </div>
+      </div>
+      <div style="text-align: right; clear: both;">
+         <a href="#top">top</a>
+      </div>
+      <hr/>
       <h3>Complex Type: <a name="type_pdbx_diffrn_reflns_shellType" class="name">pdbx_diffrn_reflns_shellType</a>
       </h3>
       <table class="hierarchy">
@@ -32486,6 +32934,103 @@ about C32 inorder to fit into the cleft about the active site.&lt;/VRPTx:nonpoly
                               <span class="type">
                                  <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
                            </span>" <span class="scTag">use</span>="<span class="scContent">required</span>"/&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>&lt;/<span class="scTag">xsd:sequence</span>&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>
+         </div>
+      </div>
+      <div style="text-align: right; clear: both;">
+         <a href="#top">top</a>
+      </div>
+      <hr/>
+      <h3>Complex Type: <a name="type_pdbx_exptl_subtypeType" class="name">pdbx_exptl_subtypeType</a>
+      </h3>
+      <table class="hierarchy">
+         <tr>
+            <th>Super-types:</th>
+            <td>None</td>
+         </tr>
+         <tr>
+            <th>Sub-types:</th>
+            <td>None</td>
+         </tr>
+      </table>
+      <table class="properties">
+         <tr>
+            <th>Name</th>
+            <td>pdbx_exptl_subtypeType</td>
+         </tr>
+         <tr>
+            <th>Abstract</th>
+            <td>no</td>
+         </tr>
+         <tr>
+            <th>Documentation</th>
+            <td>
+Data items in the PDBX_EXPTL_SUBTYPE category record
+details about the method subtype under the primary
+method recorded in attribute method in category exptl 
+
+    Example 1
+&lt;VRPTx:pdbx_exptl_subtypeCategory&gt;
+   &lt;VRPTx:pdbx_exptl_subtype exptl_method="ELECTRON CRYSTALLOGRAPHY" method_type="Microcrystal Electron Diffraction"&gt;
+   &lt;/VRPTx:pdbx_exptl_subtype&gt;
+&lt;/VRPTx:pdbx_exptl_subtypeCategory&gt;
+
+
+         <br/> More information at: <a title="http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_exptl_subtype.html"
+                  href="http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_exptl_subtype.html">http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_exptl_subtype.html</a>.</td>
+         </tr>
+      </table>
+      <div class="sample box">
+         <div>
+            <span class="caption">XML Instance Representation</span>
+         </div>
+         <div id="type_pdbx_exptl_subtypeType_xibox" class="contents">
+            <div style="margin-left: 0em">&lt;...&gt; <br/>
+               <div style="margin-left: 1.5em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_exptl_subtype<br/>
+                  <span style="margin-left: 0.5em"> exptl_method="<span class="type">
+                        <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                     <span class="occurs">[1]</span>"</span>
+                  <br/>
+                  <span style="margin-left: 0.5em"> method_type="<span class="constraint">
+                        <span class="type">
+                           <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> (<em>value</em> comes from list: {'Microcrystal Electron Diffraction'|'2-Dimensional Electron Crystallography'})</span>
+                     <span class="occurs">[1]</span>"</span>&gt;  <span class="occurs">[0..*]</span>
+                  <br/>
+                  <span class="group" style="margin-left: 1.5em">Start All <span class="occurs">[1]</span>
+                  </span>
+                  <br/>
+                  <div style="margin-left: 3em">&lt;<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:details&gt; <span class="type">
+                        <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span> &lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:details&gt; <span class="occurs">[0..1]</span>
+                  </div>
+                  <span class="group" style="margin-left: 1.5em">End All</span>
+                  <br/>&lt;/<a href="#ns_VRPTx" title="Find out namespace of 'VRPTx' prefix">VRPTx</a>:pdbx_exptl_subtype&gt;</div>&lt;/...&gt;</div>
+         </div>
+      </div>
+      <div class="schemaComponent box">
+         <div>
+            <span class="caption">Schema Component Representation</span>
+         </div>
+         <div id="type_pdbx_exptl_subtypeType_scbox" class="contents">
+            <div style="margin-left: 0em">&lt;<span class="scTag">xsd:complexType</span>
+               <span class="scTag">name</span>="<span class="scContent">pdbx_exptl_subtypeType</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                     <span class="scTag">name</span>="<span class="scContent">pdbx_exptl_subtype</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:all</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:element</span>
+                              <span class="scTag">name</span>="<span class="scContent">details</span>" <span class="scTag">type</span>="<span class="scContent">
+                                 <span class="type">
+                                    <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                              </span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>" <span class="scTag">nillable</span>="<span class="scContent">true</span>"/&gt;</div>&lt;/<span class="scTag">xsd:all</span>&gt;</div>
+                        <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:attribute</span>
+                           <span class="scTag">name</span>="<span class="scContent">exptl_method</span>" <span class="scTag">type</span>="<span class="scContent">
+                              <span class="type">
+                                 <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                           </span>" <span class="scTag">use</span>="<span class="scContent">required</span>"/&gt;</div>
+                        <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:attribute</span>
+                           <span class="scTag">name</span>="<span class="scContent">method_type</span>" <span class="scTag">use</span>="<span class="scContent">required</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:simpleType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:restriction</span>
+                                 <span class="scTag">base</span>="<span class="scContent">
+                                    <span class="type">
+                                       <a href="#ns_xsd" title="Find out namespace of 'xsd' prefix">xsd</a>:string</span>
+                                 </span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                    <span class="scTag">value</span>="<span class="scContent">Microcrystal Electron Diffraction</span>"/&gt;</div>
+                                 <div style="margin-left: 1.5em">&lt;<span class="scTag">xsd:enumeration</span>
+                                    <span class="scTag">value</span>="<span class="scContent">2-Dimensional Electron Crystallography</span>"/&gt;</div>&lt;/<span class="scTag">xsd:restriction</span>&gt;</div>&lt;/<span class="scTag">xsd:simpleType</span>&gt;</div>&lt;/<span class="scTag">xsd:attribute</span>&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>&lt;/<span class="scTag">xsd:element</span>&gt;</div>&lt;/<span class="scTag">xsd:sequence</span>&gt;</div>&lt;/<span class="scTag">xsd:complexType</span>&gt;</div>
          </div>
       </div>
       <div style="text-align: right; clear: both;">

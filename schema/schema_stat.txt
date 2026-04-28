@@ -1,21 +1,21 @@
 statistics of mmcif_pdbx_validation.dic:
- has 283 categories.
+ has 285 categories.
   55 new categories (see schema_stat/new_categories.txt for details).
-  228 shared categories from mmcif_pdbx_v50.dic (CHEM_COMP_INT:1, CHEM_COMP_INT,EMDB_PUBLIC:4, EMDB_PUBLIC:37, WWPDB_LOCAL:8, see schema_stat/shared_categories.txt for details).
-  376 dropped categories from mmcif_pdbx_v50.dic (EMDB_PUBLIC:12, RCSB_LOCAL:1, WWPDB_DEPRECATED:2, WWPDB_LOCAL:129, WWPDB_LOCAL,EMDB_PUBLIC:21, see schema_stat/dropped_categories.txt for details).
- has 3511 items.
+  230 shared categories from mmcif_pdbx_v50.dic (CHEM_COMP_INT:1, CHEM_COMP_INT,EMDB_PUBLIC:4, EMDB_PUBLIC:37, WWPDB_LOCAL:8, see schema_stat/shared_categories.txt for details).
+  377 dropped categories from mmcif_pdbx_v50.dic (EMDB_PUBLIC:12, RCSB_LOCAL:1, WWPDB_DEPRECATED:2, WWPDB_LOCAL:129, WWPDB_LOCAL,EMDB_PUBLIC:21, see schema_stat/dropped_categories.txt for details).
+ has 3536 items.
   580 new items (see schema_stat/new_items.txt for details).
   64 extended items in shared categories (see schema_stat/extended_items.txt for details).
-  2931 shared items from mmcif_pdbx_v50.dic (see schema_stat/shared_items.txt for details).
+  2956 shared items from mmcif_pdbx_v50.dic (see schema_stat/shared_items.txt for details).
   214 dropped items from mmcif_pdbx_v50.dic (see schema_stat/dropped_items.txt for details).
   713 items linked to wwpdb_validation_v6.07.xsd.
 
 statistics of pdbx-validation-v4.owl:
- has 569 classes.
+ has 573 classes.
   2 same classes of PDB/OWL.
-  457 equivalent classes of PDB/OWL.
- has 4417 properties (object: 621, datatype: 3796).
+  461 equivalent classes of PDB/OWL.
+ has 4448 properties (object: 625, datatype: 3823).
   44 same properties of PDB/OWL.
-  4078 equivalent properties of PDB/OWL.
+  4113 equivalent properties of PDB/OWL.
   134 equivalent properties of BMRB/OWL.
 

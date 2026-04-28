@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pdbml.pdb.org/schema/pdbx-v50.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xsd:annotation>
-    <xsd:appinfo>PDBML Schema v5.413</xsd:appinfo>
+    <xsd:appinfo>PDBML Schema v5.414</xsd:appinfo>
     <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xml:lang="en">
 
-PDBML Schema translated from the PDBx/mmCIF Dictionary v5.413:
+PDBML Schema translated from the PDBx/mmCIF Dictionary v5.414:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </xsd:documentation>
@@ -13447,11 +13447,133 @@ profile data from theta/2theta scans
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="method_precession" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Originated from IUCr Electron Diffraction CIF
+extension. Flag indicating if the radiation beam
+illuminates the sample at an angle that is rotated
+about a precession axis.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="Y"/>
+                  <xsd:enumeration value="N"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="pdbx_angle_end" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The ending angle for crystal rotation.
+30
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:complexType>
+                <xsd:simpleContent>
+                  <xsd:extension base="xsd:decimal">
+                    <xsd:attribute fixed="degrees" name="units" type="xsd:string" use="optional"/>
+                  </xsd:extension>
+                </xsd:simpleContent>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="pdbx_angle_start" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The starting angle for crystal rotation.
+-30
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:complexType>
+                <xsd:simpleContent>
+                  <xsd:extension base="xsd:decimal">
+                    <xsd:attribute fixed="degrees" name="units" type="xsd:string" use="optional"/>
+                  </xsd:extension>
+                </xsd:simpleContent>
+              </xsd:complexType>
+            </xsd:element>
             <xsd:element name="pdbx_date" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:date">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
 The date of data measurement
 yyyy-mm-dd
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="pdbx_exposure_time_per_image" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The exposure time per image for the crystal and
+detector/camera.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:complexType>
+                <xsd:simpleContent>
+                  <xsd:extension base="xsd:decimal">
+                    <xsd:attribute fixed="seconds" name="units" type="xsd:string" use="optional"/>
+                  </xsd:extension>
+                </xsd:simpleContent>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="pdbx_rotation_rate" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The speed of crystal rotation.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:complexType>
+                <xsd:simpleContent>
+                  <xsd:extension base="xsd:decimal">
+                    <xsd:attribute fixed="degrees_per_second" name="units" type="xsd:string" use="optional"/>
+                  </xsd:extension>
+                </xsd:simpleContent>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="rotation_mode" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Originated from IUCr Electron Diffraction CIF
+extension. Code describing the technique used to
+sample as completely as possible the accessible range
+of reciprocal space. Rotation mode indicates the
+detector records diffracted intensities continuously
+while the sample is rotated. Stepwise model indicates
+the detector records diffracted intensities while the
+sample is stationary.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="rotation"/>
+                  <xsd:enumeration value="stepwise"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="sample_tracking" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Originated from IUCr Electron Diffraction CIF
+extension. Flag indicating if a tracking method to
+follow the crystal was used in the data
+acquisition. Typically used to track very small
+crystals in electron diffraction experiments.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="Y"/>
+                  <xsd:enumeration value="N"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="sample_tracking_method" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Originated from IUCr Electron Diffraction CIF
+extension. Description of the method used to follow
+the crystal during data collection.
+Electron-beam tracking by PyFast-ADT
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -44659,6 +44781,208 @@ categories.
       </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
+  <xsd:complexType name="pdbx_diffrn_edType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">
+Data items in the PDBX_DIFFRN_ED record details specific to electron diffraction method.
+
+    Example 1 - based on PDB entry 9DHO
+&lt;PDBx:pdbx_diffrn_edCategory&gt;
+   &lt;PDBx:pdbx_diffrn_ed id="1"&gt;
+      &lt;PDBx:beam_diameter_sample_plane&gt;3.5&lt;/PDBx:beam_diameter_sample_plane&gt;
+      &lt;PDBx:c2_aperture_diameter&gt;50&lt;/PDBx:c2_aperture_diameter&gt;
+      &lt;PDBx:camera_length&gt;1402&lt;/PDBx:camera_length&gt;
+      &lt;PDBx:details&gt;The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10&amp;amp;#8201;eV, with the zero-loss peak centered in defocused diffraction&lt;/PDBx:details&gt;
+      &lt;PDBx:diffrn_id&gt;1&lt;/PDBx:diffrn_id&gt;
+      &lt;PDBx:electron_source&gt;FIELD EMISSION GUN&lt;/PDBx:electron_source&gt;
+      &lt;PDBx:energyfilter_name&gt;TFS Selectris&lt;/PDBx:energyfilter_name&gt;
+      &lt;PDBx:fluence_accumulated&gt;0.84&lt;/PDBx:fluence_accumulated&gt;
+      &lt;PDBx:fluence_rate&gt;0.002&lt;/PDBx:fluence_rate&gt;
+      &lt;PDBx:recording_mode&gt;Electron Counting&lt;/PDBx:recording_mode&gt;
+      &lt;PDBx:sa_aperture_diameter&gt;150&lt;/PDBx:sa_aperture_diameter&gt;
+   &lt;/PDBx:pdbx_diffrn_ed&gt;
+&lt;/PDBx:pdbx_diffrn_edCategory&gt;
+
+
+         </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="pdbx_diffrn_ed" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="beam_diameter_sample_plane" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The electron beam diameter at the sample plane
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:complexType>
+                <xsd:simpleContent>
+                  <xsd:extension base="xsd:decimal">
+                    <xsd:attribute fixed="micrometres" name="units" type="xsd:string" use="optional"/>
+                  </xsd:extension>
+                </xsd:simpleContent>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="c2_aperture_diameter" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+C2 aperture diameter
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
+                  <xsd:minInclusive value="0.0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="camera_length" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The product of the objective focal length and the
+combined magnification of the intermediate and projector
+lenses when the microscope is operated in the
+diffraction mode.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
+                  <xsd:minInclusive value="0.0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="details" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Details of the electron diffration process
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:complexType>
+                <xsd:simpleContent>
+                  <xsd:extension base="xsd:string">
+                    <xsd:attribute fixed="electron_volts" name="units" type="xsd:string" use="optional"/>
+                  </xsd:extension>
+                </xsd:simpleContent>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="diffrn_id" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+This data item is a pointer to the attribute id in category diffrn 
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="electron_source" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The source of electrons, i.e. the electron gun
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="FIELD EMISSION GUN"/>
+                  <xsd:enumeration value="LAB6"/>
+                  <xsd:enumeration value="OTHER"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="energyfilter_lower" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The energy filter range lower value in electron volts (eV)
+set by the specrometer
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
+                  <xsd:minInclusive value="0.0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="energyfilter_name" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The name of the energy filter
+TFS Selectris
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="energyfilter_upper" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The energy filter range upper value in electron volts (eV)
+set by the specrometer
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
+                  <xsd:minInclusive value="0.0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="fluence_accumulated" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Total fluence at the sample plane
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
+                  <xsd:minInclusive value="0.0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="fluence_rate" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Fluence rate, or flux density at the sample plane
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
+                  <xsd:minInclusive value="0.0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="recording_mode" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The mode of the detector for electron diffraction recording, e.g.
+Electron Counting (Event) mode, Linear (Integrating) mode
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="Electron Counting"/>
+                  <xsd:enumeration value="Integrating"/>
+                  <xsd:enumeration value="Other"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="sa_aperture_diameter" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Select Area aperture diameter
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
+                  <xsd:minInclusive value="0.0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:all>
+          <xsd:attribute name="id" use="required" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">
+This ordinal identifier for the category
+                     </xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
   <xsd:complexType name="pdbx_diffrn_orientationType">
     <xsd:annotation>
       <xsd:documentation xml:lang="en">
@@ -49971,6 +50295,20 @@ Details of the cooling treatment applied to this crystal.
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="cryogen" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The name of cryogen used for vitrification
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="ETHANE"/>
+                  <xsd:enumeration value="NITROGEN"/>
+                  <xsd:enumeration value="OTHER"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
             <xsd:element name="final_solution_details" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -50235,6 +50573,128 @@ An identifier for this solution (e.g. precipitant, reservoir, macromolecule)
       </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
+  <xsd:complexType name="pdbx_exptl_crystal_processType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">
+Data items in the pdbx_exptl_crystal_process category
+record details of the post-crystallization process to
+prepare specific crystal samples such as microcrystals
+for subsequent diffraction experiments.
+
+    Example 1 - based on PDB entry 9dho
+&lt;PDBx:pdbx_exptl_crystal_processCategory&gt;
+   &lt;PDBx:pdbx_exptl_crystal_process crystal_id="1" id="1"&gt;
+      &lt;PDBx:details&gt;stepwise protocol to an optimal thickness of approximately 300&amp;amp;#8201;nm using a 30&amp;amp;#8201;kV Argon plasma ion beam&lt;/PDBx:details&gt;
+      &lt;PDBx:microcrystal_description&gt;lamella&lt;/PDBx:microcrystal_description&gt;
+      &lt;PDBx:microcrystal_instrument&gt;Helios Hydra 5 CX dual-beam plasma FIB/SEM (Thermo Fisher Scientific)&lt;/PDBx:microcrystal_instrument&gt;
+      &lt;PDBx:microcrystal_max_dim&gt;5&lt;/PDBx:microcrystal_max_dim&gt;
+      &lt;PDBx:microcrystal_method&gt;FIB milling&lt;/PDBx:microcrystal_method&gt;
+      &lt;PDBx:microcrystal_min_dim&gt;0.3&lt;/PDBx:microcrystal_min_dim&gt;
+   &lt;/PDBx:pdbx_exptl_crystal_process&gt;
+&lt;/PDBx:pdbx_exptl_crystal_processCategory&gt;
+
+
+         </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="pdbx_exptl_crystal_process" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="details" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The details about the crystal process.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="microcrystal_description" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Characteristics of the final crystal ready for diffraction experiments, e.g. shape.
+Lamella
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="microcrystal_instrument" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The instrument used to produce microcrystals for the experiments, if applicable.
+Thermo Fisher Helios Hydra dual-beam plasma beam FIB/SEM
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="microcrystal_max_dim" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The maximal dimension of the final crystal ready for
+diffraction experiments. For example, for
+microcrystals processed by FIB milling, this item
+refers to the length of the thin lamella.
+60
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:complexType>
+                <xsd:simpleContent>
+                  <xsd:extension base="xsd:decimal">
+                    <xsd:attribute fixed="micrometres" name="units" type="xsd:string" use="optional"/>
+                  </xsd:extension>
+                </xsd:simpleContent>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="microcrystal_method" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The method used to produce microcrystals for
+diffraction experiments, if applicable.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="FIB milling"/>
+                  <xsd:enumeration value="Naturally grown"/>
+                  <xsd:enumeration value="Sonication"/>
+                  <xsd:enumeration value="Vortexing"/>
+                  <xsd:enumeration value="Other"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="microcrystal_min_dim" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The minimal dimension of the final crystal ready for
+diffraction experiments. For example, for
+microcrystals processed by FIB milling, this item
+refers to the thickness of the thin lamella.
+0.5
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:complexType>
+                <xsd:simpleContent>
+                  <xsd:extension base="xsd:decimal">
+                    <xsd:attribute fixed="micrometres" name="units" type="xsd:string" use="optional"/>
+                  </xsd:extension>
+                </xsd:simpleContent>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:all>
+          <xsd:attribute name="crystal_id" use="required" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">
+This data item is a pointer to the attribute id in category exptl_crystal 
+                     </xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+          <xsd:attribute name="id" use="required" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">
+The ordinal identifier for the category
+                     </xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
   <xsd:complexType name="pdbx_exptl_pdType">
     <xsd:annotation>
       <xsd:documentation xml:lang="en">
@@ -50289,6 +50749,64 @@ The value of attribute entry_id in category pdbx_exptl_pd uniquely identifies a
  record in the PDBX_EXPTL_PD category.
                      </xsd:documentation>
             </xsd:annotation>
+          </xsd:attribute>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="pdbx_exptl_subtypeType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">
+Data items in the PDBX_EXPTL_SUBTYPE category record
+details about the method subtype under the primary
+method recorded in attribute method in category exptl 
+
+    Example 1
+&lt;PDBx:pdbx_exptl_subtypeCategory&gt;
+   &lt;PDBx:pdbx_exptl_subtype exptl_method="ELECTRON CRYSTALLOGRAPHY" method_type="Microcrystal Electron Diffraction"&gt;
+   &lt;/PDBx:pdbx_exptl_subtype&gt;
+&lt;/PDBx:pdbx_exptl_subtypeCategory&gt;
+
+
+         </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="pdbx_exptl_subtype" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="details" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Details about the method subtype.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:all>
+          <xsd:attribute name="exptl_method" use="required" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">
+This data item is a pointer to attribute method in category exptl in the EXPTL category. 
+X-RAY CRYSTALLOGRAPHY
+                     </xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+          <xsd:attribute name="method_type" use="required">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">
+The subtype of the method used in the experiment. The
+subtype should be a variance of the primary method
+recorded in the attribute method in category exptl item, with distinctive
+ technical applications and significant scientific
+impacts.
+Microcrystal Electron Diffraction
+                     </xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="Microcrystal Electron Diffraction"/>
+                <xsd:enumeration value="2-Dimensional Electron Crystallography"/>
+              </xsd:restriction>
+            </xsd:simpleType>
           </xsd:attribute>
         </xsd:complexType>
       </xsd:element>
@@ -103331,6 +103849,7 @@ attribute ref_id in category valence_param, which must have the same value.
       <xsd:element name="pdbx_diffrn_batch_scanCategory" type="PDBx:pdbx_diffrn_batch_scanType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_diffrn_cellCategory" type="PDBx:pdbx_diffrn_cellType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_diffrn_detector_panel_mappingCategory" type="PDBx:pdbx_diffrn_detector_panel_mappingType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="pdbx_diffrn_edCategory" type="PDBx:pdbx_diffrn_edType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_diffrn_orientationCategory" type="PDBx:pdbx_diffrn_orientationType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_diffrn_reflns_shellCategory" type="PDBx:pdbx_diffrn_reflns_shellType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_distant_solvent_atomsCategory" type="PDBx:pdbx_distant_solvent_atomsType" minOccurs="0" maxOccurs="1"/>
@@ -103382,7 +103901,9 @@ attribute ref_id in category valence_param, which must have the same value.
       <xsd:element name="pdbx_exptl_crystal_cryo_treatmentCategory" type="PDBx:pdbx_exptl_crystal_cryo_treatmentType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_exptl_crystal_grow_compCategory" type="PDBx:pdbx_exptl_crystal_grow_compType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_exptl_crystal_grow_solCategory" type="PDBx:pdbx_exptl_crystal_grow_solType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="pdbx_exptl_crystal_processCategory" type="PDBx:pdbx_exptl_crystal_processType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_exptl_pdCategory" type="PDBx:pdbx_exptl_pdType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="pdbx_exptl_subtypeCategory" type="PDBx:pdbx_exptl_subtypeType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_family_group_indexCategory" type="PDBx:pdbx_family_group_indexType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_family_prd_auditCategory" type="PDBx:pdbx_family_prd_auditType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_feature_assemblyCategory" type="PDBx:pdbx_feature_assemblyType" minOccurs="0" maxOccurs="1"/>
@@ -104205,26 +104726,30 @@ attribute ref_id in category valence_param, which must have the same value.
       <xsd:field xpath="@diffrn_id"/>
     </xsd:keyref>
     <xsd:keyref name="diffrnKeyref_0_0_10_0" refer="PDBx:diffrnKey_0">
+      <xsd:selector xpath="PDBx:pdbx_diffrn_edCategory/PDBx:pdbx_diffrn_ed"/>
+      <xsd:field xpath="PDBx:diffrn_id"/>
+    </xsd:keyref>
+    <xsd:keyref name="diffrnKeyref_0_0_11_0" refer="PDBx:diffrnKey_0">
       <xsd:selector xpath="PDBx:pdbx_diffrn_reflns_shellCategory/PDBx:pdbx_diffrn_reflns_shell"/>
       <xsd:field xpath="@diffrn_id"/>
     </xsd:keyref>
-    <xsd:keyref name="diffrnKeyref_0_0_11_0" refer="PDBx:diffrnKey_0">
+    <xsd:keyref name="diffrnKeyref_0_0_12_0" refer="PDBx:diffrnKey_0">
       <xsd:selector xpath="PDBx:pdbx_serial_crystallography_data_reductionCategory/PDBx:pdbx_serial_crystallography_data_reduction"/>
       <xsd:field xpath="@diffrn_id"/>
     </xsd:keyref>
-    <xsd:keyref name="diffrnKeyref_0_0_12_0" refer="PDBx:diffrnKey_0">
+    <xsd:keyref name="diffrnKeyref_0_0_13_0" refer="PDBx:diffrnKey_0">
       <xsd:selector xpath="PDBx:pdbx_serial_crystallography_measurementCategory/PDBx:pdbx_serial_crystallography_measurement"/>
       <xsd:field xpath="@diffrn_id"/>
     </xsd:keyref>
-    <xsd:keyref name="diffrnKeyref_0_0_13_0" refer="PDBx:diffrnKey_0">
+    <xsd:keyref name="diffrnKeyref_0_0_14_0" refer="PDBx:diffrnKey_0">
       <xsd:selector xpath="PDBx:pdbx_serial_crystallography_sample_deliveryCategory/PDBx:pdbx_serial_crystallography_sample_delivery"/>
       <xsd:field xpath="@diffrn_id"/>
     </xsd:keyref>
-    <xsd:keyref name="diffrnKeyref_0_0_14_0" refer="PDBx:diffrnKey_0">
+    <xsd:keyref name="diffrnKeyref_0_0_15_0" refer="PDBx:diffrnKey_0">
       <xsd:selector xpath="PDBx:pdbx_serial_crystallography_sample_delivery_fixed_targetCategory/PDBx:pdbx_serial_crystallography_sample_delivery_fixed_target"/>
       <xsd:field xpath="@diffrn_id"/>
     </xsd:keyref>
-    <xsd:keyref name="diffrnKeyref_0_0_15_0" refer="PDBx:diffrnKey_0">
+    <xsd:keyref name="diffrnKeyref_0_0_16_0" refer="PDBx:diffrnKey_0">
       <xsd:selector xpath="PDBx:pdbx_serial_crystallography_sample_delivery_injectionCategory/PDBx:pdbx_serial_crystallography_sample_delivery_injection"/>
       <xsd:field xpath="@diffrn_id"/>
     </xsd:keyref>
@@ -105335,6 +105860,10 @@ attribute ref_id in category valence_param, which must have the same value.
       <xsd:selector xpath="PDBx:pdbx_exptl_crystal_grow_solCategory/PDBx:pdbx_exptl_crystal_grow_sol"/>
       <xsd:field xpath="@crystal_id"/>
     </xsd:keyref>
+    <xsd:keyref name="exptl_crystalKeyref_0_0_7_0" refer="PDBx:exptl_crystalKey_0">
+      <xsd:selector xpath="PDBx:pdbx_exptl_crystal_processCategory/PDBx:pdbx_exptl_crystal_process"/>
+      <xsd:field xpath="@crystal_id"/>
+    </xsd:keyref>
     <xsd:key name="exptl_crystal_faceKey_0">
       <xsd:selector xpath="PDBx:exptl_crystal_faceCategory/PDBx:exptl_crystal_face"/>
       <xsd:field xpath="@crystal_id"/>
@@ -105992,6 +106521,10 @@ attribute ref_id in category valence_param, which must have the same value.
       <xsd:selector xpath="PDBx:pdbx_diffrn_detector_panel_mappingCategory/PDBx:pdbx_diffrn_detector_panel_mapping"/>
       <xsd:field xpath="@id"/>
     </xsd:key>
+    <xsd:key name="pdbx_diffrn_edKey_0">
+      <xsd:selector xpath="PDBx:pdbx_diffrn_edCategory/PDBx:pdbx_diffrn_ed"/>
+      <xsd:field xpath="@id"/>
+    </xsd:key>
     <xsd:key name="pdbx_diffrn_orientationKey_0">
       <xsd:selector xpath="PDBx:pdbx_diffrn_orientationCategory/PDBx:pdbx_diffrn_orientation"/>
       <xsd:field xpath="@id"/>
@@ -106285,9 +106818,19 @@ attribute ref_id in category valence_param, which must have the same value.
       <xsd:field xpath="@crystal_id"/>
       <xsd:field xpath="@sol_id"/>
     </xsd:key>
+    <xsd:key name="pdbx_exptl_crystal_processKey_0">
+      <xsd:selector xpath="PDBx:pdbx_exptl_crystal_processCategory/PDBx:pdbx_exptl_crystal_process"/>
+      <xsd:field xpath="@crystal_id"/>
+      <xsd:field xpath="@id"/>
+    </xsd:key>
     <xsd:key name="pdbx_exptl_pdKey_0">
       <xsd:selector xpath="PDBx:pdbx_exptl_pdCategory/PDBx:pdbx_exptl_pd"/>
       <xsd:field xpath="@entry_id"/>
+    </xsd:key>
+    <xsd:key name="pdbx_exptl_subtypeKey_0">
+      <xsd:selector xpath="PDBx:pdbx_exptl_subtypeCategory/PDBx:pdbx_exptl_subtype"/>
+      <xsd:field xpath="@exptl_method"/>
+      <xsd:field xpath="@method_type"/>
     </xsd:key>
     <xsd:key name="pdbx_family_group_indexKey_0">
       <xsd:selector xpath="PDBx:pdbx_family_group_indexCategory/PDBx:pdbx_family_group_index"/>

@@ -82,6 +82,7 @@ pdbx_dcc_map_overall
 pdbx_dcc_mon_geometry
 pdbx_dcc_rscc_mapman
 pdbx_dcc_rscc_mapman_overall
+pdbx_diffrn_ed
 pdbx_diffrn_reflns_shell
 pdbx_distant_solvent_atoms
 pdbx_domain
@@ -113,6 +114,7 @@ pdbx_entity_descriptor
 pdbx_entity_nonpoly
 pdbx_entity_poly_comp_link_list
 pdbx_entry_details
+pdbx_exptl_subtype
 pdbx_helical_symmetry
 pdbx_missing_nmr_star_item
 pdbx_nmr_assigned_chem_shift_list

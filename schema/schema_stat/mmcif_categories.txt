@@ -272,6 +272,7 @@ pdbx_diffrn_batch
 pdbx_diffrn_batch_scan
 pdbx_diffrn_cell
 pdbx_diffrn_detector_panel_mapping
+pdbx_diffrn_ed
 pdbx_diffrn_orientation
 pdbx_diffrn_reflns_shell
 pdbx_distant_solvent_atoms
@@ -323,7 +324,9 @@ pdbx_entry_details
 pdbx_exptl_crystal_cryo_treatment
 pdbx_exptl_crystal_grow_comp
 pdbx_exptl_crystal_grow_sol
+pdbx_exptl_crystal_process
 pdbx_exptl_pd
+pdbx_exptl_subtype
 pdbx_family_group_index
 pdbx_family_prd_audit
 pdbx_feature_assembly

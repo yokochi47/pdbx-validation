@@ -79,6 +79,7 @@ pdbx_dcc_map WWPDB_LOCAL
 pdbx_dcc_mapman WWPDB_LOCAL
 pdbx_dcc_rscc_mapman WWPDB_LOCAL
 pdbx_dcc_rscc_mapman_overall WWPDB_LOCAL
+pdbx_diffrn_ed
 pdbx_diffrn_reflns_shell
 pdbx_distant_solvent_atoms
 pdbx_domain
@@ -91,6 +92,7 @@ pdbx_entity_branch_list
 pdbx_entity_nonpoly EMDB_PUBLIC
 pdbx_entity_poly_comp_link_list
 pdbx_entry_details
+pdbx_exptl_subtype
 pdbx_helical_symmetry
 pdbx_nmr_assigned_chem_shift_list WWPDB_LOCAL
 pdbx_nmr_constraints

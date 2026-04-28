@@ -5701,6 +5701,28 @@
       </PDBo:has_pdbx_diffrn_detector_panel_mapping>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_diffrn_edCategory/PDBx:pdbx_diffrn_ed">
+      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_diffrn_ed>
+      <PDBo:pdbx_diffrn_ed rdf:about="{$base}/pdbx_diffrn_ed/{$id_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="PDBx:diffrn_id!=''">
+        <PDBo:reference_to_diffrn>
+          <rdf:Description rdf:about="{$base}/diffrn/{translate(PDBx:diffrn_id,' ^','__')}">
+            <PDBo:referenced_by_pdbx_diffrn_ed rdf:resource="{$base}/pdbx_diffrn_ed/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_diffrn>
+        <!-- diffrnKeyref_0_0_10_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_diffrn_ed>
+      </PDBo:has_pdbx_diffrn_ed>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:pdbx_diffrn_orientationCategory/PDBx:pdbx_diffrn_orientation">
       <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
       <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
@@ -5731,7 +5753,7 @@
             <PDBo:referenced_by_pdbx_diffrn_reflns_shell rdf:resource="{$base}/pdbx_diffrn_reflns_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
-        <!-- diffrnKeyref_0_0_10_0 -->
+        <!-- diffrnKeyref_0_0_11_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7033,6 +7055,30 @@
       </PDBo:has_pdbx_exptl_crystal_grow_sol>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_exptl_crystal_processCategory/PDBx:pdbx_exptl_crystal_process">
+      <xsl:variable name="crystal_id_truncated"><xsl:choose><xsl:when test="string-length(@crystal_id)&lt;64"><xsl:value-of select="@crystal_id"/></xsl:when><xsl:when test="contains(@crystal_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@crystal_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@crystal_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="crystal_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($crystal_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_exptl_crystal_process>
+      <PDBo:pdbx_exptl_crystal_process rdf:about="{$base}/pdbx_exptl_crystal_process/{$crystal_id_encoded},{$id_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@crystal_id!=''">
+        <PDBo:reference_to_exptl_crystal>
+          <rdf:Description rdf:about="{$base}/exptl_crystal/">
+            <PDBo:referenced_by_pdbx_exptl_crystal_process rdf:resource="{$base}/pdbx_exptl_crystal_process/{$crystal_id_encoded},{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_exptl_crystal>
+        <!-- exptl_crystalKeyref_0_0_7_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_exptl_crystal_process>
+      </PDBo:has_pdbx_exptl_crystal_process>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:pdbx_exptl_pdCategory/PDBx:pdbx_exptl_pd">
       <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
       <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
@@ -7053,6 +7099,22 @@
       <xsl:apply-templates mode="linked"/>
       </PDBo:pdbx_exptl_pd>
       </PDBo:has_pdbx_exptl_pd>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_exptl_subtypeCategory/PDBx:pdbx_exptl_subtype">
+      <xsl:variable name="exptl_method_truncated"><xsl:choose><xsl:when test="string-length(@exptl_method)&lt;64"><xsl:value-of select="@exptl_method"/></xsl:when><xsl:when test="contains(@exptl_method,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@exptl_method,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@exptl_method,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="exptl_method_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($exptl_method_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="method_type_truncated"><xsl:choose><xsl:when test="string-length(@method_type)&lt;64"><xsl:value-of select="@method_type"/></xsl:when><xsl:when test="contains(@method_type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@method_type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@method_type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="method_type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($method_type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_exptl_subtype>
+      <PDBo:pdbx_exptl_subtype rdf:about="{$base}/pdbx_exptl_subtype/{$exptl_method_encoded},{$method_type_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_exptl_subtype>
+      </PDBo:has_pdbx_exptl_subtype>
   </xsl:template>
 
   <xsl:template match="PDBx:datablock/PDBx:pdbx_family_group_indexCategory/PDBx:pdbx_family_group_index">
@@ -9253,7 +9315,7 @@
             <PDBo:referenced_by_pdbx_serial_crystallography_data_reduction rdf:resource="{$base}/pdbx_serial_crystallography_data_reduction/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
-        <!-- diffrnKeyref_0_0_11_0 -->
+        <!-- diffrnKeyref_0_0_12_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9275,7 +9337,7 @@
             <PDBo:referenced_by_pdbx_serial_crystallography_measurement rdf:resource="{$base}/pdbx_serial_crystallography_measurement/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
-        <!-- diffrnKeyref_0_0_12_0 -->
+        <!-- diffrnKeyref_0_0_13_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9297,7 +9359,7 @@
             <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
-        <!-- diffrnKeyref_0_0_13_0 -->
+        <!-- diffrnKeyref_0_0_14_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9319,7 +9381,7 @@
             <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery_fixed_target rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery_fixed_target/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
-        <!-- diffrnKeyref_0_0_14_0 -->
+        <!-- diffrnKeyref_0_0_15_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9341,7 +9403,7 @@
             <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery_injection rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery_injection/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
-        <!-- diffrnKeyref_0_0_15_0 -->
+        <!-- diffrnKeyref_0_0_16_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
