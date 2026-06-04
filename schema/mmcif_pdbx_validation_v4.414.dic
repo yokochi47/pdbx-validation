@@ -1508,11 +1508,11 @@ data_mmcif_pdbx_validation.dic
 ;
   4.414   2026-04-28
 ;
->   + MicroED extension added to dictionary
->   + Add electron diffraction software to _software.name (2DX, IPLT).  Change EPU to EPU-D.
->   + Add ELECTRON MICROSCOPE names to _diffrn_source.type
->   + Add "ELECTRON DETECTOR" to _diffrn_detector.detctor enumeration
->   + Add electron detectors to _diffrn_detector.type and update types.
+>   + MicroED extension added to dictionary # merged
+>   + Add electron diffraction software to _software.name (2DX, IPLT).  Change EPU to EPU-D. # not mapped
+>   + Add ELECTRON MICROSCOPE names to _diffrn_source.type # merged
+>   + Add "ELECTRON DETECTOR" to _diffrn_detector.detctor enumeration # merged
+>   + Add electron detectors to _diffrn_detector.type and update types. # merged
 ;
 
 #

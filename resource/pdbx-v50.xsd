@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pdbml.pdb.org/schema/pdbx-v50.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xsd:annotation>
-    <xsd:appinfo>PDBML Schema v5.414</xsd:appinfo>
+    <xsd:appinfo>PDBML Schema v5.415</xsd:appinfo>
     <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xml:lang="en">
 
-PDBML Schema translated from the PDBx/mmCIF Dictionary v5.414:
+PDBML Schema translated from the PDBx/mmCIF Dictionary v5.415:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </xsd:documentation>
@@ -67273,13 +67273,16 @@ to experimental data sets related to the entry.
    &lt;PDBx:pdbx_related_exp_data_set ordinal="1"&gt;
       &lt;PDBx:data_reference&gt;10.000/10002/image_data/cif&lt;/PDBx:data_reference&gt;
       &lt;PDBx:data_set_type&gt;diffraction image data&lt;/PDBx:data_set_type&gt;
+      &lt;PDBx:db_source&gt;Zenodo&lt;/PDBx:db_source&gt;
       &lt;PDBx:details&gt;imgCIF data set containing 500 frames&lt;/PDBx:details&gt;
       &lt;PDBx:metadata_reference&gt;10.000/10002/image_data/txt&lt;/PDBx:metadata_reference&gt;
    &lt;/PDBx:pdbx_related_exp_data_set&gt;
    &lt;PDBx:pdbx_related_exp_data_set ordinal="2"&gt;
-      &lt;PDBx:data_reference&gt;10.6019/EMPIAR-11866&lt;/PDBx:data_reference&gt;
-      &lt;PDBx:data_set_type&gt;EMPIAR&lt;/PDBx:data_set_type&gt;
-      &lt;PDBx:metadata_reference&gt;10.6019/EMPIAR-11866&lt;/PDBx:metadata_reference&gt;
+      &lt;PDBx:data_reference&gt;10.6019/EMPIAR-1297&lt;/PDBx:data_reference&gt;
+      &lt;PDBx:data_set_type&gt;raw EM image data&lt;/PDBx:data_set_type&gt;
+      &lt;PDBx:db_source&gt;EMPIAR&lt;/PDBx:db_source&gt;
+      &lt;PDBx:details&gt;Single particle cryo-EM dataset of the 50S ribosomal subunit jetted control sample&lt;/PDBx:details&gt;
+      &lt;PDBx:metadata_reference&gt;10.6019/EMPIAR-1297&lt;/PDBx:metadata_reference&gt;
    &lt;/PDBx:pdbx_related_exp_data_set&gt;
 &lt;/PDBx:pdbx_related_exp_data_setCategory&gt;
 

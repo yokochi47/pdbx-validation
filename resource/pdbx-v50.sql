@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.414
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.414: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.415
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.415: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -13003,7 +13003,7 @@ CREATE TABLE pdbx_reflns_twin (
 
 --
 -- (quoted from pdbx_related_exp_data_setType)
--- Data items in the PDBX_RELATED_DATA_SET category record references to experimental data sets related to the entry. Example 1 - <PDBx:pdbx_related_exp_data_setCategory> <PDBx:pdbx_related_exp_data_set ordinal="1"> <PDBx:data_reference>10.000/10002/image_data/cif</PDBx:data_reference> <PDBx:data_set_type>diffraction image data</PDBx:data_set_type> <PDBx:details>imgCIF data set containing 500 frames</PDBx:details> <PDBx:metadata_reference>10.000/10002/image_data/txt</PDBx:metadata_reference> </PDBx:pdbx_related_exp_data_set> <PDBx:pdbx_related_exp_data_set ordinal="2"> <PDBx:data_reference>10.6019/EMPIAR-11866</PDBx:data_reference> <PDBx:data_set_type>EMPIAR</PDBx:data_set_type> <PDBx:metadata_reference>10.6019/EMPIAR-11866</PDBx:metadata_reference> </PDBx:pdbx_related_exp_data_set> </PDBx:pdbx_related_exp_data_setCategory>
+-- Data items in the PDBX_RELATED_DATA_SET category record references to experimental data sets related to the entry. Example 1 - <PDBx:pdbx_related_exp_data_setCategory> <PDBx:pdbx_related_exp_data_set ordinal="1"> <PDBx:data_reference>10.000/10002/image_data/cif</PDBx:data_reference> <PDBx:data_set_type>diffraction image data</PDBx:data_set_type> <PDBx:db_source>Zenodo</PDBx:db_source> <PDBx:details>imgCIF data set containing 500 frames</PDBx:details> <PDBx:metadata_reference>10.000/10002/image_data/txt</PDBx:metadata_reference> </PDBx:pdbx_related_exp_data_set> <PDBx:pdbx_related_exp_data_set ordinal="2"> <PDBx:data_reference>10.6019/EMPIAR-1297</PDBx:data_reference> <PDBx:data_set_type>raw EM image data</PDBx:data_set_type> <PDBx:db_source>EMPIAR</PDBx:db_source> <PDBx:details>Single particle cryo-EM dataset of the 50S ribosomal subunit jetted control sample</PDBx:details> <PDBx:metadata_reference>10.6019/EMPIAR-1297</PDBx:metadata_reference> </PDBx:pdbx_related_exp_data_set> </PDBx:pdbx_related_exp_data_setCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --

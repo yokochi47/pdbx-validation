@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.414
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.414, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.415
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.415, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -5686,7 +5686,7 @@ CREATE TABLE pdbx_reflns_twin (
 
 --
 -- (quoted from pdbx_related_exp_data_setType)
--- Data items in the PDBX_RELATED_DATA_SET category record references to experimental data sets related to the entry. Example 1 - <VRPTx:pdbx_related_exp_data_setCategory> <VRPTx:pdbx_related_exp_data_set ordinal="1"> <VRPTx:data_reference>10.000/10002/image_data/cif</VRPTx:data_reference> <VRPTx:data_set_type>diffraction image data</VRPTx:data_set_type> <VRPTx:details>imgCIF data set containing 500 frames</VRPTx:details> <VRPTx:metadata_reference>10.000/10002/image_data/txt</VRPTx:metadata_reference> </VRPTx:pdbx_related_exp_data_set> <VRPTx:pdbx_related_exp_data_set ordinal="2"> <VRPTx:data_reference>10.6019/EMPIAR-11866</VRPTx:data_reference> <VRPTx:data_set_type>EMPIAR</VRPTx:data_set_type> <VRPTx:metadata_reference>10.6019/EMPIAR-11866</VRPTx:metadata_reference> </VRPTx:pdbx_related_exp_data_set> </VRPTx:pdbx_related_exp_data_setCategory>
+-- Data items in the PDBX_RELATED_DATA_SET category record references to experimental data sets related to the entry. Example 1 - <VRPTx:pdbx_related_exp_data_setCategory> <VRPTx:pdbx_related_exp_data_set ordinal="1"> <VRPTx:data_reference>10.000/10002/image_data/cif</VRPTx:data_reference> <VRPTx:data_set_type>diffraction image data</VRPTx:data_set_type> <VRPTx:db_source>Zenodo</VRPTx:db_source> <VRPTx:details>imgCIF data set containing 500 frames</VRPTx:details> <VRPTx:metadata_reference>10.000/10002/image_data/txt</VRPTx:metadata_reference> </VRPTx:pdbx_related_exp_data_set> <VRPTx:pdbx_related_exp_data_set ordinal="2"> <VRPTx:data_reference>10.6019/EMPIAR-1297</VRPTx:data_reference> <VRPTx:data_set_type>raw EM image data</VRPTx:data_set_type> <VRPTx:db_source>EMPIAR</VRPTx:db_source> <VRPTx:details>Single particle cryo-EM dataset of the 50S ribosomal subunit jetted control sample</VRPTx:details> <VRPTx:metadata_reference>10.6019/EMPIAR-1297</VRPTx:metadata_reference> </VRPTx:pdbx_related_exp_data_set> </VRPTx:pdbx_related_exp_data_setCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_related_exp_data_set.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false

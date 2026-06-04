@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Tue Apr 28 11:23:31 JST 2026
+# Date:  Thu Jun  4 15:37:10 JST 2026
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.414)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.415)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.07.xsd
 #         - a XML schema for wwPDB validation reports, v6.07, rev. 2026-03-30
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.414
+    _dictionary.version         4.415
 #
     loop_
     _dictionary_history.version
@@ -1508,11 +1508,19 @@ data_mmcif_pdbx_validation.dic
 ;
   4.414   2026-04-28
 ;
->   + MicroED extension added to dictionary
->   + Add electron diffraction software to _software.name (2DX, IPLT).  Change EPU to EPU-D.
->   + Add ELECTRON MICROSCOPE names to _diffrn_source.type
->   + Add "ELECTRON DETECTOR" to _diffrn_detector.detctor enumeration
->   + Add electron detectors to _diffrn_detector.type and update types.
+>   + MicroED extension added to dictionary # merged
+>   + Add electron diffraction software to _software.name (2DX, IPLT).  Change EPU to EPU-D. # not mapped
+>   + Add ELECTRON MICROSCOPE names to _diffrn_source.type # merged
+>   + Add "ELECTRON DETECTOR" to _diffrn_detector.detctor enumeration # merged
+>   + Add electron detectors to _diffrn_detector.type and update types. # merged
+;
+  4.415   2026-06-04
+;
+>   + Correct advisory ranges (comma to period correction) in
+>     _refine.correlation_coeff_I_to_Fcsqd_work, _refine.correlation_coeff_I_to_Fcsqd_free,
+>     _refine_ls_shell.correlation_coeff_I_to_Fcsqd_work, _refine_ls_shell.correlation_coeff_I_to_Fcsqd_free # merged
+>   + Add "HEPS BPIX40-6M" detector to _diffrn_detector.type enumeration. # merged
+>   + Update example for _pdbx_related_exp_data_set # merge
 ;
 
 #
@@ -2586,6 +2594,7 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  AGIPD                             PIXEL
       "_diffrn_detector.type"  "APEX II CCD"                     CCD
       "_diffrn_detector.type"  "ASI Timepix"                     "ELECTRON DETECTOR"
+      "_diffrn_detector.type"  "HEPS BPIX40-6M"                  PIXEL
       "_diffrn_detector.type"  BIODIFF                           "IMAGE PLATE"
       "_diffrn_detector.type"  BIX-3                             "IMAGE PLATE"
       "_diffrn_detector.type"  BIX-4                             "IMAGE PLATE"
@@ -11825,7 +11834,7 @@ save__refine.correlation_coeff_I_to_Fcsqd_work
    _pdbx_item_range.minimum
    _pdbx_item_range.maximum
      "_refine.correlation_coeff_I_to_Fcsqd_work"  0.5  0.5
-     "_refine.correlation_coeff_I_to_Fcsqd_work"  0,5  1.0
+     "_refine.correlation_coeff_I_to_Fcsqd_work"  0.5  1.0
      "_refine.correlation_coeff_I_to_Fcsqd_work"  1.0  1.0
    #
 save_
@@ -11868,7 +11877,7 @@ save__refine.correlation_coeff_I_to_Fcsqd_free
    _pdbx_item_range.minimum
    _pdbx_item_range.maximum
      "_refine.correlation_coeff_I_to_Fcsqd_free"  0.5  0.5
-     "_refine.correlation_coeff_I_to_Fcsqd_free"  0,5  1.0
+     "_refine.correlation_coeff_I_to_Fcsqd_free"  0.5  1.0
      "_refine.correlation_coeff_I_to_Fcsqd_free"  1.0  1.0
    #
 save_
@@ -14210,7 +14219,7 @@ save__refine_ls_shell.correlation_coeff_I_to_Fcsqd_work
    _pdbx_item_range.minimum
    _pdbx_item_range.maximum
      "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_work"  0.5  0.5
-     "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_work"  0,5  1.0
+     "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_work"  0.5  1.0
      "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_work"  1.0  1.0
    #
 save_
@@ -14253,7 +14262,7 @@ save__refine_ls_shell.correlation_coeff_I_to_Fcsqd_free
    _pdbx_item_range.minimum
    _pdbx_item_range.maximum
      "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_free"  0.5  0.5
-     "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_free"  0,5  1.0
+     "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_free"  0.5  1.0
      "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_free"  1.0  1.0
    #
 save_
@@ -50121,9 +50130,10 @@ save_pdbx_related_exp_data_set
      _pdbx_related_exp_data_set.data_reference
      _pdbx_related_exp_data_set.metadata_reference
      _pdbx_related_exp_data_set.data_set_type
+     _pdbx_related_exp_data_set.db_source
      _pdbx_related_exp_data_set.details
-     1  '10.000/10002/image_data/cif'   '10.000/10002/image_data/txt' 'diffraction image data'  'imgCIF data set containing 500 frames'
-     2  10.6019/EMPIAR-11866 10.6019/EMPIAR-11866  EMPIAR ?
+     1  10.000/10002/image_data/cif 10.000/10002/image_data/txt 'diffraction image data' Zenodo 'imgCIF data set containing 500 frames'
+     2  10.6019/EMPIAR-1297         10.6019/EMPIAR-1297         'raw EM image data'      EMPIAR 'Single particle cryo-EM dataset of the 50S ribosomal subunit jetted control sample'
 ;
 
    #
