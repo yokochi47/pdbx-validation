@@ -5115,7 +5115,7 @@
             <PDBo:pdbx_reference_molecule_related_structures.db_code>ETUYOH</PDBo:pdbx_reference_molecule_related_structures.db_code>
             <PDBo:pdbx_reference_molecule_related_structures.db_name>CCDC</PDBo:pdbx_reference_molecule_related_structures.db_name>
             <PDBo:pdbx_reference_molecule_related_structures.formula>C82 H127 N17 O20, C2 H6 O, 11(H2 O)</PDBo:pdbx_reference_molecule_related_structures.formula>
-            <PDBo:pdbx_reference_molecule_related_structures.name> Cephaibol A ethonol solvate undecahydrate, seqres A16 PHE*-AIB-AIB-AIB-AIB-GLY-LEU-IVA-AIB-PRO*-GLN-IVA-PRO*-AIB-PRO-PHE*</PDBo:pdbx_reference_molecule_related_structures.name>
+            <PDBo:pdbx_reference_molecule_related_structures.name>Cephaibol A ethonol solvate undecahydrate, seqres A16 PHE*-AIB-AIB-AIB-AIB-GLY-LEU-IVA-AIB-PRO*-GLN-IVA-PRO*-AIB-PRO-PHE*</PDBo:pdbx_reference_molecule_related_structures.name>
             <PDBo:link_to_ccdc rdf:resource="http://www.ccdc.cam.ac.uk/structures/search?ccdcid=ETUYOH"/>
           </PDBo:pdbx_reference_molecule_related_structures>
         </PDBo:has_pdbx_reference_molecule_related_structures>
@@ -5128,7 +5128,7 @@
             <PDBo:pdbx_reference_molecule_related_structures.db_code>ETUYUN</PDBo:pdbx_reference_molecule_related_structures.db_code>
             <PDBo:pdbx_reference_molecule_related_structures.db_name>CCDC</PDBo:pdbx_reference_molecule_related_structures.db_name>
             <PDBo:pdbx_reference_molecule_related_structures.formula>C83 H129 N17 O20, 1.75(C2 H6 O), 8.5(H2 O)</PDBo:pdbx_reference_molecule_related_structures.formula>
-            <PDBo:pdbx_reference_molecule_related_structures.name> Cephaibol B ethanol solvate hydrate, seqres A16 PHE*-AIB-AIB-AIB-IVA-GLY-LEU-IVA-AIB-PRO*-GLN-IVA-PRO*-AIB-PRO-PHE*</PDBo:pdbx_reference_molecule_related_structures.name>
+            <PDBo:pdbx_reference_molecule_related_structures.name>Cephaibol B ethanol solvate hydrate, seqres A16 PHE*-AIB-AIB-AIB-IVA-GLY-LEU-IVA-AIB-PRO*-GLN-IVA-PRO*-AIB-PRO-PHE*</PDBo:pdbx_reference_molecule_related_structures.name>
             <PDBo:link_to_ccdc rdf:resource="http://www.ccdc.cam.ac.uk/structures/search?ccdcid=ETUYUN"/>
           </PDBo:pdbx_reference_molecule_related_structures>
         </PDBo:has_pdbx_reference_molecule_related_structures>
@@ -5141,7 +5141,7 @@
             <PDBo:pdbx_reference_molecule_related_structures.db_code>ETUZAU</PDBo:pdbx_reference_molecule_related_structures.db_code>
             <PDBo:pdbx_reference_molecule_related_structures.db_name>CCDC</PDBo:pdbx_reference_molecule_related_structures.db_name>
             <PDBo:pdbx_reference_molecule_related_structures.formula>C81 H125 N17 O20, 2.25(C2 H6 O), 9.75(H2 O)</PDBo:pdbx_reference_molecule_related_structures.formula>
-            <PDBo:pdbx_reference_molecule_related_structures.name> Cephaibol C ethanol solvate hydrate, seqres A16 PHE*-AIB-AIB-AIB-AIB-GLY-LEU-IVA-AIB-PRO*-GLN-AIB-PRO*-AIB-PRO-PHE*</PDBo:pdbx_reference_molecule_related_structures.name>
+            <PDBo:pdbx_reference_molecule_related_structures.name>Cephaibol C ethanol solvate hydrate, seqres A16 PHE*-AIB-AIB-AIB-AIB-GLY-LEU-IVA-AIB-PRO*-GLN-AIB-PRO*-AIB-PRO-PHE*</PDBo:pdbx_reference_molecule_related_structures.name>
             <PDBo:link_to_ccdc rdf:resource="http://www.ccdc.cam.ac.uk/structures/search?ccdcid=ETUZAU"/>
           </PDBo:pdbx_reference_molecule_related_structures>
         </PDBo:has_pdbx_reference_molecule_related_structures>
@@ -5154,7 +5154,7 @@
             <PDBo:pdbx_reference_molecule_related_structures.db_code>KIYPUD</PDBo:pdbx_reference_molecule_related_structures.db_code>
             <PDBo:pdbx_reference_molecule_related_structures.db_name>CCDC</PDBo:pdbx_reference_molecule_related_structures.db_name>
             <PDBo:pdbx_reference_molecule_related_structures.formula>C85 H140 N18 O22, 10(H2 O)</PDBo:pdbx_reference_molecule_related_structures.formula>
-            <PDBo:pdbx_reference_molecule_related_structures.name> Acetyl-leucyl-isoleucyl-glutaminyl-isovalyl-isoleucyl-threonyl-alpha-aminoisobutyryl-leucyl-alpha-aminoisobutyryl-4-hydroxyprolyl-glutaminyl-alpha-aminoisobutyryl-4-hydroxyprolyl-alpha-aminoisobutyryl-prolyl-phenylalaninol decahydrate, (Leucyl)zervamicin decahydrate, seqres A16 LEU*-ILE-GLN-IVA-ILE-THR-AIB-LEU-AIB-PRO*-GLN-AIB-PRO*-AIB-PRO-PHE*</PDBo:pdbx_reference_molecule_related_structures.name>
+            <PDBo:pdbx_reference_molecule_related_structures.name>Acetyl-leucyl-isoleucyl-glutaminyl-isovalyl-isoleucyl-threonyl-alpha-aminoisobutyryl-leucyl-alpha-aminoisobutyryl-4-hydroxyprolyl-glutaminyl-alpha-aminoisobutyryl-4-hydroxyprolyl-alpha-aminoisobutyryl-prolyl-phenylalaninol decahydrate, (Leucyl)zervamicin decahydrate, seqres A16 LEU*-ILE-GLN-IVA-ILE-THR-AIB-LEU-AIB-PRO*-GLN-AIB-PRO*-AIB-PRO-PHE*</PDBo:pdbx_reference_molecule_related_structures.name>
             <PDBo:link_to_ccdc rdf:resource="http://www.ccdc.cam.ac.uk/structures/search?ccdcid=KIYPUD"/>
           </PDBo:pdbx_reference_molecule_related_structures>
         </PDBo:has_pdbx_reference_molecule_related_structures>
@@ -5167,7 +5167,7 @@
             <PDBo:pdbx_reference_molecule_related_structures.db_code>BEKZIB</PDBo:pdbx_reference_molecule_related_structures.db_code>
             <PDBo:pdbx_reference_molecule_related_structures.db_name>CCDC</PDBo:pdbx_reference_molecule_related_structures.db_name>
             <PDBo:pdbx_reference_molecule_related_structures.formula>C77 H127 N19 O19, C2 H3 N, 2(H2 O)</PDBo:pdbx_reference_molecule_related_structures.formula>
-            <PDBo:pdbx_reference_molecule_related_structures.name> acetyl-L-tryptophyl-L-alanyl-bis(alpha-aminoisobutyryl)-L-leucyl-alpha-aminoisobutyryl-L-glutaminyl-tris(alpha-aminoisobutyryl)-L-glutaminyl-L-leucyl-alpha-aminoisobutyryl-L-glutaminyl-L-leucinol, Ampullosporin A acetonitrile solvate dihydrate, seqres A15 TRP*-ALA-AIB-AIB-LEU-AIB-GLN-AIB-AIB-AIB-GLN-LEU-AIB-GLN-LEU*</PDBo:pdbx_reference_molecule_related_structures.name>
+            <PDBo:pdbx_reference_molecule_related_structures.name>acetyl-L-tryptophyl-L-alanyl-bis(alpha-aminoisobutyryl)-L-leucyl-alpha-aminoisobutyryl-L-glutaminyl-tris(alpha-aminoisobutyryl)-L-glutaminyl-L-leucyl-alpha-aminoisobutyryl-L-glutaminyl-L-leucinol, Ampullosporin A acetonitrile solvate dihydrate, seqres A15 TRP*-ALA-AIB-AIB-LEU-AIB-GLN-AIB-AIB-AIB-GLN-LEU-AIB-GLN-LEU*</PDBo:pdbx_reference_molecule_related_structures.name>
             <PDBo:link_to_ccdc rdf:resource="http://www.ccdc.cam.ac.uk/structures/search?ccdcid=BEKZIB"/>
           </PDBo:pdbx_reference_molecule_related_structures>
         </PDBo:has_pdbx_reference_molecule_related_structures>
@@ -5180,7 +5180,7 @@
             <PDBo:pdbx_reference_molecule_related_structures.db_code>ICAJEB</PDBo:pdbx_reference_molecule_related_structures.db_code>
             <PDBo:pdbx_reference_molecule_related_structures.db_name>CCDC</PDBo:pdbx_reference_molecule_related_structures.db_name>
             <PDBo:pdbx_reference_molecule_related_structures.formula>C22 H31 N3 O7, C2 H6 O</PDBo:pdbx_reference_molecule_related_structures.formula>
-            <PDBo:pdbx_reference_molecule_related_structures.name> methyl 1-(N-(N-(benzyloxycarbonyl)-alpha-aminoisobutyryl)-alpha-aminoisobutyryl)-4-hydroxypyrrolidine-2-carboxylate, segment of peptaibol antibiotics (antiamoebins and emericins IIIIV), seqres A3 AIB*-AIB-PRO*</PDBo:pdbx_reference_molecule_related_structures.name>
+            <PDBo:pdbx_reference_molecule_related_structures.name>methyl 1-(N-(N-(benzyloxycarbonyl)-alpha-aminoisobutyryl)-alpha-aminoisobutyryl)-4-hydroxypyrrolidine-2-carboxylate, segment of peptaibol antibiotics (antiamoebins and emericins IIIIV), seqres A3 AIB*-AIB-PRO*</PDBo:pdbx_reference_molecule_related_structures.name>
             <PDBo:link_to_ccdc rdf:resource="http://www.ccdc.cam.ac.uk/structures/search?ccdcid=ICAJEB"/>
           </PDBo:pdbx_reference_molecule_related_structures>
         </PDBo:has_pdbx_reference_molecule_related_structures>
@@ -5193,7 +5193,7 @@
             <PDBo:pdbx_reference_molecule_related_structures.db_code>HIKKUH</PDBo:pdbx_reference_molecule_related_structures.db_code>
             <PDBo:pdbx_reference_molecule_related_structures.db_name>CCDC</PDBo:pdbx_reference_molecule_related_structures.db_name>
             <PDBo:pdbx_reference_molecule_related_structures.formula>C65 H115 N13 O15, C H3 N O2, H2 O</PDBo:pdbx_reference_molecule_related_structures.formula>
-            <PDBo:pdbx_reference_molecule_related_structures.name> N-octanoyl-alpha-aminoisobutyryl-glycyl-leucyl-(2,2,6,6-tetramethylpiperidine-1-oxyl-4-amino-4-carboxyl)-glycyl-glycyl-leucyl-(2,2,6,6-tetramethylpiperidine-1-oxyl-4-amino-4-carboxyl)-glycyl-isoleucyl-leucine methyl ester, Lipopeptaibol, seqres A11 AIB*-GLY-LEU-GLY*-GLY-GLY-LEU-GLY*-GLY-ILE-LEU*</PDBo:pdbx_reference_molecule_related_structures.name>
+            <PDBo:pdbx_reference_molecule_related_structures.name>N-octanoyl-alpha-aminoisobutyryl-glycyl-leucyl-(2,2,6,6-tetramethylpiperidine-1-oxyl-4-amino-4-carboxyl)-glycyl-glycyl-leucyl-(2,2,6,6-tetramethylpiperidine-1-oxyl-4-amino-4-carboxyl)-glycyl-isoleucyl-leucine methyl ester, Lipopeptaibol, seqres A11 AIB*-GLY-LEU-GLY*-GLY-GLY-LEU-GLY*-GLY-ILE-LEU*</PDBo:pdbx_reference_molecule_related_structures.name>
             <PDBo:link_to_ccdc rdf:resource="http://www.ccdc.cam.ac.uk/structures/search?ccdcid=HIKKUH"/>
           </PDBo:pdbx_reference_molecule_related_structures>
         </PDBo:has_pdbx_reference_molecule_related_structures>
@@ -5206,7 +5206,7 @@
             <PDBo:pdbx_reference_molecule_related_structures.db_code>SUWKEA</PDBo:pdbx_reference_molecule_related_structures.db_code>
             <PDBo:pdbx_reference_molecule_related_structures.db_name>CCDC</PDBo:pdbx_reference_molecule_related_structures.db_name>
             <PDBo:pdbx_reference_molecule_related_structures.formula>C31 H51 N5 O6</PDBo:pdbx_reference_molecule_related_structures.formula>
-            <PDBo:pdbx_reference_molecule_related_structures.name> acetyl-L-leucyl-alpha-aminoisobutyryl-L-leucyl-alpha-aminoisobutyryl-L-phenylalaninol, Peptaibolin, AC-L-LEU-AIB-L-LEU-AIB-L-PHOL, seqres A5 LEU*-AIB-LEU-AIB*-PHE*</PDBo:pdbx_reference_molecule_related_structures.name>
+            <PDBo:pdbx_reference_molecule_related_structures.name>acetyl-L-leucyl-alpha-aminoisobutyryl-L-leucyl-alpha-aminoisobutyryl-L-phenylalaninol, Peptaibolin, AC-L-LEU-AIB-L-LEU-AIB-L-PHOL, seqres A5 LEU*-AIB-LEU-AIB*-PHE*</PDBo:pdbx_reference_molecule_related_structures.name>
             <PDBo:link_to_ccdc rdf:resource="http://www.ccdc.cam.ac.uk/structures/search?ccdcid=SUWKEA"/>
           </PDBo:pdbx_reference_molecule_related_structures>
         </PDBo:has_pdbx_reference_molecule_related_structures>
@@ -5219,7 +5219,7 @@
             <PDBo:pdbx_reference_molecule_related_structures.db_code>FEJQOA</PDBo:pdbx_reference_molecule_related_structures.db_code>
             <PDBo:pdbx_reference_molecule_related_structures.db_name>CCDC</PDBo:pdbx_reference_molecule_related_structures.db_name>
             <PDBo:pdbx_reference_molecule_related_structures.formula>C82 H127 N17 O20, 3(C8 H18 O)</PDBo:pdbx_reference_molecule_related_structures.formula>
-            <PDBo:pdbx_reference_molecule_related_structures.name> Antiamoebin I tri-n-octanol clathrate, seqres A16 PHE*-AIB-AIB-AIB-IVA-GLY-LEU-AIB-AIB-PRO*-GLN-IVA-PRO*-AIB-PRO-ALA*</PDBo:pdbx_reference_molecule_related_structures.name>
+            <PDBo:pdbx_reference_molecule_related_structures.name>Antiamoebin I tri-n-octanol clathrate, seqres A16 PHE*-AIB-AIB-AIB-IVA-GLY-LEU-AIB-AIB-PRO*-GLN-IVA-PRO*-AIB-PRO-ALA*</PDBo:pdbx_reference_molecule_related_structures.name>
             <PDBo:link_to_ccdc rdf:resource="http://www.ccdc.cam.ac.uk/structures/search?ccdcid=FEJQOA"/>
           </PDBo:pdbx_reference_molecule_related_structures>
         </PDBo:has_pdbx_reference_molecule_related_structures>
@@ -5232,8 +5232,7 @@
             <PDBo:pdbx_reference_molecule_related_structures.db_code>IVIGOJ</PDBo:pdbx_reference_molecule_related_structures.db_code>
             <PDBo:pdbx_reference_molecule_related_structures.db_name>CCDC</PDBo:pdbx_reference_molecule_related_structures.db_name>
             <PDBo:pdbx_reference_molecule_related_structures.formula>C51 H77 N9 O11, 3(H2 O)</PDBo:pdbx_reference_molecule_related_structures.formula>
-            <PDBo:pdbx_reference_molecule_related_structures.name>N-Acetylphenylalanyl-(alpha-aminoisobutyryl)-(alpha-aminoisobutyryl)-(alpha-aminoisobutyryl)-valyl-glycyl-leucyl-(alpha-aminoisobutyryl)-alpha-aminoisobutyric acid benzyl ester trihydrate, Emerimicin-(1-9) benzyl ester
- seqres A9 PHE*-AIB-AIB-AIB-VAL-GLY-LEU-AIB-AIB*</PDBo:pdbx_reference_molecule_related_structures.name>
+            <PDBo:pdbx_reference_molecule_related_structures.name>N-Acetylphenylalanyl-(alpha-aminoisobutyryl)-(alpha-aminoisobutyryl)-(alpha-aminoisobutyryl)-valyl-glycyl-leucyl-(alpha-aminoisobutyryl)-alpha-aminoisobutyric acid benzyl ester trihydrate, Emerimicin-(1-9) benzyl ester seqres A9 PHE*-AIB-AIB-AIB-VAL-GLY-LEU-AIB-AIB*</PDBo:pdbx_reference_molecule_related_structures.name>
             <PDBo:link_to_ccdc rdf:resource="http://www.ccdc.cam.ac.uk/structures/search?ccdcid=IVIGOJ"/>
           </PDBo:pdbx_reference_molecule_related_structures>
         </PDBo:has_pdbx_reference_molecule_related_structures>
@@ -5246,7 +5245,7 @@
             <PDBo:pdbx_reference_molecule_related_structures.db_code>MORHUW</PDBo:pdbx_reference_molecule_related_structures.db_code>
             <PDBo:pdbx_reference_molecule_related_structures.db_name>CCDC</PDBo:pdbx_reference_molecule_related_structures.db_name>
             <PDBo:pdbx_reference_molecule_related_structures.formula>2(C52 H95 N11 O12), 9(H2 O)</PDBo:pdbx_reference_molecule_related_structures.formula>
-            <PDBo:pdbx_reference_molecule_related_structures.name> rac-trichogin A IV nonahydrate, bis(octanoyl-L-a-amino-isobutyryl-L-glycyl-L-leucyl-L-a-amino-isobutyryl-L-glycyl-L-glycyl-L-leucyl-L-a-amino-isobutyryl-L-glycyl-L-isoleucyl-leucinol) nonahydrate, seqres A11 AIB*-GLY-LEU-AIB-GLY-GLY-LEU-AIB-GLY-ILE-LEU*</PDBo:pdbx_reference_molecule_related_structures.name>
+            <PDBo:pdbx_reference_molecule_related_structures.name>rac-trichogin A IV nonahydrate, bis(octanoyl-L-a-amino-isobutyryl-L-glycyl-L-leucyl-L-a-amino-isobutyryl-L-glycyl-L-glycyl-L-leucyl-L-a-amino-isobutyryl-L-glycyl-L-isoleucyl-leucinol) nonahydrate, seqres A11 AIB*-GLY-LEU-AIB-GLY-GLY-LEU-AIB-GLY-ILE-LEU*</PDBo:pdbx_reference_molecule_related_structures.name>
             <PDBo:link_to_ccdc rdf:resource="http://www.ccdc.cam.ac.uk/structures/search?ccdcid=MORHUW"/>
           </PDBo:pdbx_reference_molecule_related_structures>
         </PDBo:has_pdbx_reference_molecule_related_structures>

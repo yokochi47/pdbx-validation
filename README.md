@@ -211,6 +211,7 @@ File path | Document
 - **Aug 24, 2026**: Release v4.5.16
 	- Update wwPDB Validation Information Dictionary to 4.416.
 	- Correct RDF resource URI in cross-references using PDBx:reference_to_* ontology classes.
+	- Normalizes the whitespace in the value of the "name" data item.
 
 - **Jun 04, 2026**: Release v4.5.15
 	- Update wwPDB Validation Information Dictionary to 4.415.

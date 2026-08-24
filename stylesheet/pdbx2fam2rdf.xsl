@@ -127,7 +127,7 @@
           &lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_type"/&gt;&lt;/xsl:attribute&gt;
           &lt;xsl:value-of select="normalize-space(.)"/&gt;
         &lt;/xsl:when&gt;
-        &lt;xsl:when test="$data_item='title'"&gt;
+        &lt;xsl:when test="$data_item='title' or $data_item='name'"&gt;
           &lt;xsl:value-of select="normalize-space(.)"/&gt;
         &lt;/xsl:when&gt;
         &lt;xsl:otherwise&gt;

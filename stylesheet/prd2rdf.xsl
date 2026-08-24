@@ -90,7 +90,7 @@
           <xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_type"/></xsl:attribute>
           <xsl:value-of select="normalize-space(.)"/>
         </xsl:when>
-        <xsl:when test="$data_item='title'">
+        <xsl:when test="$data_item='title' or $data_item='name'">
           <xsl:value-of select="normalize-space(.)"/>
         </xsl:when>
         <xsl:otherwise>

@@ -206,7 +206,7 @@
               &lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_type"/&gt;&lt;/xsl:attribute&gt;
               &lt;xsl:value-of select="normalize-space(.)"/&gt;
             &lt;/xsl:when&gt;
-            &lt;xsl:when test="$data_item='title'"&gt;
+            &lt;xsl:when test="$data_item='title' or $data_item='name'"&gt;
               &lt;xsl:value-of select="normalize-space(.)"/&gt;
             &lt;/xsl:when&gt;
             &lt;xsl:otherwise&gt;
@@ -676,7 +676,9 @@
       <xsl2:variable name="refer" select="../xsd:key[@name=$keyname] | ../xsd:unique[@name=$keyname]"/>
       <xsl2:variable name="refname" select="replace($refer/xsd:selector/@xpath,'.*/PDBx:','')"/>
         <xsl2:variable name="resource"><xsl2:value-of select="$refname"/>/<xsl2:call-template name="concat_fields2">
-            <xsl2:with-param name="field1" select="$refering/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
+            <xsl2:with-param name="field1" select="$refering/xsd:field[1]"/>
+            <xsl2:with-param name="selector2" select="substring-after($refer/xsd:selector/@xpath,'/')"/>
+            <xsl2:with-param name="field2" select="$refer/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
         <xsl2:variable name="check"><xsl2:call-template name="check_fields"><xsl2:with-param name="field" select="$refering/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
         <xsl2:variable name="check2"><xsl2:call-template name="check_fields2"><xsl2:with-param name="field" select="$refering/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
         <xsl2:text disable-output-escaping="yes">
