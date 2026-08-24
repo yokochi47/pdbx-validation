@@ -26,7 +26,7 @@
           <PDBo:em_3d_reconstruction rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/em_3d_reconstruction/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entry/5H0S">
                 <PDBo:referenced_by_em_3d_reconstruction rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/em_3d_reconstruction/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -147,7 +147,7 @@
           <PDBo:em_image_scans rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/em_image_scans/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entry/5H0S">
                 <PDBo:referenced_by_em_image_scans rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/em_image_scans/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -323,7 +323,7 @@
           <PDBo:em_vitrification rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/em_vitrification/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entry/5H0S">
                 <PDBo:referenced_by_em_vitrification rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/em_vitrification/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -97057,7 +97057,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_asym/A"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -97076,7 +97076,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_asym/B"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -97094,7 +97094,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97121,7 +97121,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97148,7 +97148,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97175,7 +97175,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97202,7 +97202,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P5"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97229,7 +97229,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P6"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97256,7 +97256,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P7"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97283,7 +97283,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P8"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97310,7 +97310,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97337,7 +97337,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97364,7 +97364,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P11"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97391,7 +97391,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P12"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97418,7 +97418,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P13"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97445,7 +97445,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P14"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97472,7 +97472,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P15"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97499,7 +97499,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P16"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97526,7 +97526,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P17"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97553,7 +97553,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P18"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97580,7 +97580,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P19">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P19"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97607,7 +97607,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P20">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P20"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97634,7 +97634,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P21">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P21"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97661,7 +97661,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P22">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P22"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97688,7 +97688,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P23">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P23"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97715,7 +97715,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P24">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P24"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97742,7 +97742,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P25">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P25"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97769,7 +97769,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P26">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P26"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97796,7 +97796,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P27">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P27"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97823,7 +97823,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P28">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P28"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97850,7 +97850,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P29">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P29"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97877,7 +97877,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P30">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P30"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97904,7 +97904,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P31">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P31"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97931,7 +97931,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P32">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P32"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97958,7 +97958,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P33">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P33"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -97985,7 +97985,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P34">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P34"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98012,7 +98012,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P35">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P35"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98039,7 +98039,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P36">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P36"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98066,7 +98066,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P37">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P37"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98093,7 +98093,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P38">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P38"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98120,7 +98120,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P39">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P39"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98147,7 +98147,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P40">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P40"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98174,7 +98174,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P41">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P41"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98201,7 +98201,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P42">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P42"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98228,7 +98228,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P43">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P43"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98255,7 +98255,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P44">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P44"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98282,7 +98282,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P45">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P45"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98309,7 +98309,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P46">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P46"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98336,7 +98336,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P47">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P47"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98363,7 +98363,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P48">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P48"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98390,7 +98390,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P49">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P49"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98417,7 +98417,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P50">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P50"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98444,7 +98444,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P51">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P51"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98471,7 +98471,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P52">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P52"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98498,7 +98498,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P53">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P53"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98525,7 +98525,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P54">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P54"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98552,7 +98552,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P55">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P55"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98579,7 +98579,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P56">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P56"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98606,7 +98606,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P57">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P57"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98633,7 +98633,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P58">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P58"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98660,7 +98660,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P59">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P59"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98687,7 +98687,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P60">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P60"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98714,7 +98714,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P61">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P61"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98741,7 +98741,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P62">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P62"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98768,7 +98768,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P63">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P63"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98795,7 +98795,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P64">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P64"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98822,7 +98822,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P65">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P65"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98849,7 +98849,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P66">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P66"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98876,7 +98876,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P67">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P67"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98903,7 +98903,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P68">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P68"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98930,7 +98930,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P69">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P69"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98957,7 +98957,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P70">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P70"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -98984,7 +98984,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P71">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P71"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -99011,7 +99011,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P72">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P72"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -99038,7 +99038,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P73">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P73"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -99065,7 +99065,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P74">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P74"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -99092,7 +99092,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P75">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P75"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -99119,7 +99119,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P76">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P76"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -99146,7 +99146,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P77">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P77"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -99173,7 +99173,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P78">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_conf/HELX_P78"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -99932,7 +99932,7 @@
           <PDBo:struct_ref rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_ref/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/entity/1">
                 <PDBo:referenced_by_struct_ref rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_ref/1"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -99955,7 +99955,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_ref_seq/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_ref_seq/1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -99976,7 +99976,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_ref_seq/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/5H0S/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/vrpt/5H0S/struct_ref_seq/2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>

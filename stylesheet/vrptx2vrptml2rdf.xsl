@@ -527,6 +527,10 @@
     <xsl2:param name="field"/><xsl2:value-of select="$field/@xpath"/>!=''<xsl2:if test="$field/following-sibling::node()[1]/@xpath!=''"><xsl2:text> and </xsl2:text><xsl2:call-template name="check_fields"><xsl2:with-param name="field" select="$field/following-sibling::node()[1]"/></xsl2:call-template></xsl2:if>
   </xsl2:template>
 
+  <xsl2:template name="check_fields2">
+    <xsl2:param name="field"/><xsl2:if test="starts-with($field/@xpath,'@')"><xsl2:value-of select="concat('{$',substring($field/@xpath,2),'_encoded}')"/></xsl2:if><xsl2:if test="$field/following-sibling::node()[1]/@xpath!=''"><xsl2:text>,</xsl2:text><xsl2:call-template name="check_fields2"><xsl2:with-param name="field" select="$field/following-sibling::node()[1]"/></xsl2:call-template></xsl2:if>
+  </xsl2:template>
+
   <xsl2:template name="concat_fields">
     <xsl2:param name="selector"/><xsl2:param name="field"/>{$<xsl2:value-of select="concat(translate($field/@xpath,':/@','_'),'_encoded')"/>}<xsl2:if test="$field/following-sibling::node()[1]/@xpath!=''"><xsl2:text>,</xsl2:text><xsl2:call-template name="concat_fields"><xsl2:with-param name="selector" select="$selector"/><xsl2:with-param name="field" select="$field/following-sibling::node()[1]"/></xsl2:call-template></xsl2:if>
   </xsl2:template>
@@ -547,13 +551,7 @@
   </xsl2:template>
 
   <xsl2:template name="concat_fields2">
-    <xsl2:param name="field1"/>
-    <xsl2:if test="starts-with($field1/@xpath,'@')">{translate(<xsl2:value-of select="$field1/@xpath"/>,' ^','__')}</xsl2:if>
-    <xsl2:if test="$field1/following-sibling::node()[1]/@xpath!=''"><xsl2:text>,</xsl2:text>
-      <xsl2:call-template name="concat_fields2">
-        <xsl2:with-param name="field1" select="$field1/following-sibling::node()[1]"/>
-      </xsl2:call-template>
-    </xsl2:if>
+    <xsl2:param name="field1"/><xsl2:param name="selector2"/><xsl2:param name="field2"/><xsl2:if test="not(starts-with($field1/@xpath,'@'))">{translate(<xsl2:value-of select="$field1/@xpath"/>,' ^','__')}</xsl2:if><xsl2:if test="$field1/following-sibling::node()[1]/@xpath!=''"><xsl2:call-template name="concat_fields2"><xsl2:with-param name="field1" select="$field1/following-sibling::node()[1]"/><xsl2:with-param name="selector2" select="$selector2"/><xsl2:with-param name="field2" select="$field2/following-sibling::node()[1]"/></xsl2:call-template></xsl2:if>
   </xsl2:template>
 
   <xsl2:template name="key_category">
@@ -658,10 +656,11 @@
         <xsl2:variable name="resource"><xsl2:value-of select="$refname"/>/<xsl2:call-template name="concat_fields2">
             <xsl2:with-param name="field1" select="$refering/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
         <xsl2:variable name="check"><xsl2:call-template name="check_fields"><xsl2:with-param name="field" select="$refering/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
+        <xsl2:variable name="check2"><xsl2:call-template name="check_fields2"><xsl2:with-param name="field" select="$refering/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
         <xsl2:text disable-output-escaping="yes">
       &lt;xsl:if test=</xsl2:text>"<xsl2:value-of select='$check'/>"<xsl2:text disable-output-escaping='yes'>&gt;
         &lt;</xsl2:text>PDBo:reference_to_<xsl2:value-of select="$refname"/><xsl2:text disable-output-escaping="yes">&gt;
-          &lt;</xsl2:text>rdf:Description rdf:about="{$base}/<xsl2:value-of select='$resource'/>"<xsl2:text disable-output-escaping="yes">&gt;
+          &lt;</xsl2:text>rdf:Description rdf:about="{$base}/<xsl2:value-of select='$resource'/><xsl2:value-of select="$check2"/>"<xsl2:text disable-output-escaping="yes">&gt;
             &lt;</xsl2:text>PDBo:referenced_by_<xsl2:value-of select="$name"/> rdf:resource="{$base}/<xsl2:value-of select='$pathname'/>"<xsl2:text disable-output-escaping="yes">/&gt;
           &lt;</xsl2:text>/rdf:Description<xsl2:text disable-output-escaping="yes">&gt;
         &lt;</xsl2:text>/PDBo:reference_to_<xsl2:value-of select="$refname"/><xsl2:text disable-output-escaping="yes">&gt;</xsl2:text>

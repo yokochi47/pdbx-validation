@@ -10319,7 +10319,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/1"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10339,7 +10339,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/2"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10359,7 +10359,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/3"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10379,7 +10379,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/4"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10399,7 +10399,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/5"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10419,7 +10419,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/6"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10439,7 +10439,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/7"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10459,7 +10459,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/8"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10479,7 +10479,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/9"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10499,7 +10499,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/10"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10519,7 +10519,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/11"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10539,7 +10539,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/12"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10559,7 +10559,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/13"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10579,7 +10579,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/14"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10599,7 +10599,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/15"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10619,7 +10619,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/16"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10639,7 +10639,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/17"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10659,7 +10659,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/18"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10679,7 +10679,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/19">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/19"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10699,7 +10699,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/20">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/20"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10719,7 +10719,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/21">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/21"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10739,7 +10739,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/22">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/22"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10759,7 +10759,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/23">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/23"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10779,7 +10779,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/24">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/24"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10799,7 +10799,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/25">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/25"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10819,7 +10819,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/26">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/26"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10839,7 +10839,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/27">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/27"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10859,7 +10859,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/28">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/28"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10879,7 +10879,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/29">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/29"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10899,7 +10899,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/30">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/30"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10919,7 +10919,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/31">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/31"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10939,7 +10939,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/32">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/32"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10959,7 +10959,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/33">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/33"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10979,7 +10979,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/34">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/34"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -10999,7 +10999,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/35">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/35"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11019,7 +11019,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/36">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/36"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11039,7 +11039,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/37">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/37"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11059,7 +11059,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/38">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/38"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11079,7 +11079,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/39">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/39"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11099,7 +11099,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/40">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/40"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11119,7 +11119,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/41">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/41"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11139,7 +11139,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/42">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/42"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11159,7 +11159,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/43">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/43"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11179,7 +11179,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/44">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/44"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11199,7 +11199,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/45">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/45"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11219,7 +11219,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/46">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/46"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11239,7 +11239,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/47">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/47"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11259,7 +11259,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/48">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/48"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11279,7 +11279,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/49">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/49"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11299,7 +11299,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/50">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/50"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11319,7 +11319,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/51">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/51"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11339,7 +11339,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/52">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/52"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11359,7 +11359,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/53">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/53"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11379,7 +11379,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/54">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/54"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11399,7 +11399,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/55">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/55"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11419,7 +11419,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/56">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/56"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11439,7 +11439,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/57">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/57"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11459,7 +11459,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/58">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/58"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11479,7 +11479,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/59">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/59"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11499,7 +11499,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/60">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/60"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11519,7 +11519,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/61">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/61"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11539,7 +11539,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/62">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/62"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11559,7 +11559,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/63">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/63"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11579,7 +11579,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/64">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/64"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11599,7 +11599,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/65">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/65"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11619,7 +11619,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/66">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/66"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11639,7 +11639,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/67">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/67"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11659,7 +11659,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/68">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/68"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11679,7 +11679,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/69">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/69"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11699,7 +11699,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/70">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/70"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11719,7 +11719,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/71">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/71"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11739,7 +11739,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/72">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/72"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11759,7 +11759,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/73">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/73"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11779,7 +11779,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/74">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/74"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11799,7 +11799,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/75">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/75"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11819,7 +11819,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/76">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/76"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11839,7 +11839,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/77">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/77"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11859,7 +11859,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/78">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/78"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11879,7 +11879,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/79">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/79"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11899,7 +11899,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/80">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/80"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11919,7 +11919,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/81">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/81"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11939,7 +11939,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/82">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/82"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11959,7 +11959,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/83">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/83"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11979,7 +11979,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/84">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/84"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -11999,7 +11999,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/85">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/85"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12019,7 +12019,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/86">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/86"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12039,7 +12039,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/87">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/87"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12059,7 +12059,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/88">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/88"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12079,7 +12079,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/89">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/89"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12099,7 +12099,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/90">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/90"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12119,7 +12119,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/91">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/91"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12139,7 +12139,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/92">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/92"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12159,7 +12159,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/93">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/93"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12179,7 +12179,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/94">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/94"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12199,7 +12199,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/95">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/95"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12219,7 +12219,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/96">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/96"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12239,7 +12239,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/97">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/97"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12259,7 +12259,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/98">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/98"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12279,7 +12279,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/99">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/99"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12299,7 +12299,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/100">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/100"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12319,7 +12319,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/101">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/101"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12339,7 +12339,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/102">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/102"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12359,7 +12359,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/103">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/103"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12379,7 +12379,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/104">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/104"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12399,7 +12399,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/105">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/105"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12419,7 +12419,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/106">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/106"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12439,7 +12439,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/107">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/107"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12459,7 +12459,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/108">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/108"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12479,7 +12479,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/109">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/109"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12499,7 +12499,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/110">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/110"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12519,7 +12519,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/111">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/111"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12539,7 +12539,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/112">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/112"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12559,7 +12559,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/113">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/113"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12579,7 +12579,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/114">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/114"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12599,7 +12599,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/115">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/115"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12619,7 +12619,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/116">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/116"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12639,7 +12639,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/117">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/117"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12659,7 +12659,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/118">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/118"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12679,7 +12679,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/119">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/119"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -12699,7 +12699,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/120">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/chem_comp/HIS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/pdbx_unobs_or_zero_occ_residues/120"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -15858,7 +15858,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_asym/A"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -15886,7 +15886,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf/HELX_P1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_conf/HELX_P1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -15913,7 +15913,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf/HELX_P2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_conf/HELX_P2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -15940,7 +15940,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf/HELX_P3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_conf/HELX_P3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -15967,7 +15967,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf/HELX_P4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_conf/HELX_P4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -16025,7 +16025,7 @@
           <PDBo:struct_ref rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/entity/1">
                 <PDBo:referenced_by_struct_ref rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_ref/1"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -16048,7 +16048,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -16073,7 +16073,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -16093,7 +16093,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -16113,7 +16113,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -16133,7 +16133,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -16153,7 +16153,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/5"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -16173,7 +16173,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/6"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -16193,7 +16193,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/7"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -16213,7 +16213,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/2LOY"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/pdb/2LOY/struct_ref_seq_dif/8"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>

@@ -904,7 +904,7 @@
           <PDBo:diffrn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/diffrn/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_exptl_crystal>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/exptl_crystal/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/exptl_crystal/1">
                 <PDBo:referenced_by_diffrn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/diffrn/1"/>
               </rdf:Description>
             </PDBo:reference_to_exptl_crystal>
@@ -9108,7 +9108,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/3">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/1"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -9124,7 +9124,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/3">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/2"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -9142,7 +9142,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/3">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/3"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -9157,7 +9157,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/4">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/4"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -9173,7 +9173,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/4">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/5"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -9191,7 +9191,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/4">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/6"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -9206,7 +9206,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/5">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/7"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -9222,7 +9222,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/5">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/8"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -9240,7 +9240,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/5">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/9"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -9255,7 +9255,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/6">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/10"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -9271,7 +9271,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/6">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/11"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -9289,7 +9289,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
           <PDBo:pdbx_entity_branch_descriptor rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/6">
                 <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_entity_branch_descriptor/12"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -35335,7 +35335,7 @@ HAVE BEEN ASSIGNED CHAIN INDICATORS *C* AND *D*.</PDBo:pdbx_entry_details.compou
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/1B5F/pdbx_unobs_or_zero_occ_residues/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/chem_comp/GLY">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/pdbx_unobs_or_zero_occ_residues/1"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -35836,7 +35836,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:reflns rdf:about="http://rdf.wwpdb.org/pdb/1B5F/reflns/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entry/1B5F">
                 <PDBo:referenced_by_reflns rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/reflns/1"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -35935,7 +35935,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/A"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -35954,7 +35954,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/2">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/B"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -35973,7 +35973,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/C"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -35992,7 +35992,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/2">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/D"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -36011,7 +36011,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/3">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/E"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -36030,7 +36030,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/4">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/F"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -36049,7 +36049,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/5">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/G"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -36068,7 +36068,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/6">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/H"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -36087,7 +36087,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/7">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/I"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -36106,7 +36106,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/7">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/J"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -36125,7 +36125,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/7">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/K"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -36144,7 +36144,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/7">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_asym/L"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -36172,7 +36172,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36199,7 +36199,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36226,7 +36226,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36253,7 +36253,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36280,7 +36280,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P5"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36307,7 +36307,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P6"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36334,7 +36334,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P7"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36361,7 +36361,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P8"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36388,7 +36388,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36415,7 +36415,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36442,7 +36442,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P11"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36469,7 +36469,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P12"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36496,7 +36496,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P13"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36523,7 +36523,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P14"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36550,7 +36550,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P15"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36577,7 +36577,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P16"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36604,7 +36604,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P17"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36631,7 +36631,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conf/HELX_P18"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -36672,7 +36672,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/disulf">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -36703,7 +36703,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/disulf">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -36734,7 +36734,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/disulf">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -36763,7 +36763,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/disulf">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -36792,7 +36792,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/disulf">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf5"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -36821,7 +36821,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/disulf">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf6"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -36850,7 +36850,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/disulf">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/disulf7"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -36879,7 +36879,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -36909,7 +36909,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -36939,7 +36939,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -36969,7 +36969,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -36999,7 +36999,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale5"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37027,7 +37027,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale6"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37055,7 +37055,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale7"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37083,7 +37083,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale8"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37111,7 +37111,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37139,7 +37139,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37167,7 +37167,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale11"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37195,7 +37195,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale12"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37223,7 +37223,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale13"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37251,7 +37251,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale14"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37279,7 +37279,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale15"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37307,7 +37307,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale16"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37335,7 +37335,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale17"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37363,7 +37363,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale18"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37392,7 +37392,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale19">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale19"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37421,7 +37421,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale20">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_conn_type/covale">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_conn/covale20"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -37553,7 +37553,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_ref rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/1">
                 <PDBo:referenced_by_struct_ref rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/1"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -37570,7 +37570,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_ref rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/entity/2">
                 <PDBo:referenced_by_struct_ref rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/2"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -37591,7 +37591,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref_seq/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_ref_seq/1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -37612,7 +37612,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref_seq/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/2">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_ref_seq/2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -37633,7 +37633,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref_seq/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_ref_seq/3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -37654,7 +37654,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref_seq/4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/1B5F/struct_ref/2">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/1B5F/struct_ref_seq/4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>

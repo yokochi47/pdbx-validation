@@ -24,7 +24,14 @@
       <data_item name="pdbx_frames_total" type="http://www.w3.org/2001/XMLSchema#int"/>
       <data_item name="pdbx_frequency" type="http://www.w3.org/2001/XMLSchema#decimal"/>
    </category_item>
-   <category_item name="diffrn_measurement"/>
+   <category_item name="diffrn_measurement">
+      <data_item name="pdbx_angle_end" type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="pdbx_angle_start" type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="pdbx_exposure_time_per_image"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="pdbx_rotation_rate"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+   </category_item>
    <category_item name="diffrn_orient_matrix">
       <data_item name="UB11" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="UB12" type="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -698,6 +705,22 @@
       <data_item name="real_space_R_sigma"
                  type="http://www.w3.org/2001/XMLSchema#decimal"/>
    </category_item>
+   <category_item name="pdbx_diffrn_ed">
+      <data_item name="beam_diameter_sample_plane"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="c2_aperture_diameter"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="camera_length" type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="energyfilter_lower"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="energyfilter_upper"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="fluence_accumulated"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="fluence_rate" type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="sa_aperture_diameter"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+   </category_item>
    <category_item name="pdbx_diffrn_reflns_shell">
       <data_item name="Rmerge_I_obs" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="Rsym_value" type="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -848,6 +871,7 @@
       <data_item name="link_id" type="http://www.w3.org/2001/XMLSchema#int"/>
    </category_item>
    <category_item name="pdbx_entry_details"/>
+   <category_item name="pdbx_exptl_subtype"/>
    <category_item name="pdbx_helical_symmetry">
       <data_item name="circular_symmetry" type="http://www.w3.org/2001/XMLSchema#int"/>
       <data_item name="n_subunits_divisor" type="http://www.w3.org/2001/XMLSchema#int"/>

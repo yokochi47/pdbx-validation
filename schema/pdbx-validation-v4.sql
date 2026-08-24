@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.415
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.415, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.416
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.416, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -2396,7 +2396,7 @@ CREATE TYPE ENUM_em_imaging_cryogen AS ENUM ( 'NITROGEN', 'HELIUM' );
 DROP TYPE IF EXISTS ENUM_em_imaging_illumination_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_illumination_mode AS ENUM ( 'FLOOD BEAM', 'SPOT SCAN', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_microscope_model CASCADE;
-CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H3000 UHVEM', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1010', 'JEOL 1000EES', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 1400/HR + YPS FEG', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SHUIMU TOTEM 120S', 'SHUIMU TOTEM 200S', 'SHUIMU TOTEM 300S', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'TFS TALOS', 'TFS TALOS F200C', 'TFS TALOS L120C', 'TFS TITAN THEMIS', 'TFS TUNDRA', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
+CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H3000 UHVEM', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1010', 'JEOL 1000EES', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 1400/HR + YPS FEG', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL JEM-F200', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SHUIMU TOTEM 120S', 'SHUIMU TOTEM 200S', 'SHUIMU TOTEM 300S', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'TFS TALOS', 'TFS TALOS F200C', 'TFS TALOS L120C', 'TFS TITAN THEMIS', 'TFS TUNDRA', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
 DROP TYPE IF EXISTS ENUM_em_imaging_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_mode AS ENUM ( '4D-STEM', 'BRIGHT FIELD', 'DARK FIELD', 'DIFFRACTION', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_specimen_holder_model CASCADE;
@@ -2697,7 +2697,7 @@ CREATE TABLE em_virus_synthetic (
 DROP TYPE IF EXISTS ENUM_em_vitrification_cryogen_name CASCADE;
 CREATE TYPE ENUM_em_vitrification_cryogen_name AS ENUM ( 'HELIUM', 'NITROGEN', 'PROPANE', 'ETHANE', 'ETHANE-PROPANE', 'METHANE', 'FREON 22', 'FREON 12', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_vitrification_instrument CASCADE;
-CREATE TYPE ENUM_em_vitrification_instrument AS ENUM ( 'CRYOSOL VITROJET', 'EMS-002 RAPID IMMERSION FREEZER', 'FEI VITROBOT MARK I', 'FEI VITROBOT MARK II', 'FEI VITROBOT MARK III', 'FEI VITROBOT MARK IV', 'GATAN CRYOPLUNGE 3', 'HOMEMADE PLUNGER', 'LEICA PLUNGER', 'LEICA EM GP', 'LEICA EM CPC', 'LEICA KF80', 'REICHERT-JUNG PLUNGER', 'SPOTITON', 'SPT LABTECH CHAMELEON', 'ZEISS PLUNGE FREEZER CRYOBOX' );
+CREATE TYPE ENUM_em_vitrification_instrument AS ENUM ( 'CHAMELEON', 'CRYOGENIUM', 'CRYOSOL VITROJET', 'CRYOWRITER', 'EMS-002 RAPID IMMERSION FREEZER', 'FEI VITROBOT MARK I', 'FEI VITROBOT MARK II', 'FEI VITROBOT MARK III', 'FEI VITROBOT MARK IV', 'GATAN CRYOPLUNGE 3', 'HOMEMADE PLUNGER', 'LEICA PLUNGER', 'LEICA EM GP', 'LEICA EM GP2', 'LEICA EM CPC', 'LEICA KF80', 'REICHERT-JUNG PLUNGER', 'SPOTITON', 'SPT LABTECH CHAMELEON', 'ZEISS PLUNGE FREEZER CRYOBOX' );
 CREATE TABLE em_vitrification (
 -- xsd:restriction/xsd:minInclusive="0.0"
 	chamber_temperature DECIMAL CHECK ( chamber_temperature >= 0.0 ) ,
@@ -3139,7 +3139,7 @@ CREATE TABLE pdbx_coordinate_model (
 
 --
 -- (quoted from pdbx_database_relatedType)
--- Data items in PDBX_DATABASE_RELATED contain references to entries that are related to the this entry. <VRPTx:pdbx_database_relatedCategory> <VRPTx:pdbx_database_related content_type="native structure" db_id="1ABC" db_name="PDB"></VRPTx:pdbx_database_related> </VRPTx:pdbx_database_relatedCategory>
+-- Data items in PDBX_DATABASE_RELATED contain references to related entries. <VRPTx:pdbx_database_relatedCategory> <VRPTx:pdbx_database_related content_type="native structure" db_id="1ABC" db_name="PDB"></VRPTx:pdbx_database_related> </VRPTx:pdbx_database_relatedCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_database_related.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -3584,7 +3584,7 @@ CREATE TABLE pdbx_dcc_rscc_mapman_overall (
 
 --
 -- (quoted from pdbx_diffrn_edType)
--- Data items in the PDBX_DIFFRN_ED record details specific to electron diffraction method. Example 1 - based on PDB entry 9DHO <VRPTx:pdbx_diffrn_edCategory> <VRPTx:pdbx_diffrn_ed id="1"> <VRPTx:beam_diameter_sample_plane>3.5</VRPTx:beam_diameter_sample_plane> <VRPTx:c2_aperture_diameter>50</VRPTx:c2_aperture_diameter> <VRPTx:camera_length>1402</VRPTx:camera_length> <VRPTx:details>The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10&amp;#8201;eV, with the zero-loss peak centered in defocused diffraction</VRPTx:details> <VRPTx:diffrn_id>1</VRPTx:diffrn_id> <VRPTx:electron_source>FIELD EMISSION GUN</VRPTx:electron_source> <VRPTx:energyfilter_name>TFS Selectris</VRPTx:energyfilter_name> <VRPTx:fluence_accumulated>0.84</VRPTx:fluence_accumulated> <VRPTx:fluence_rate>0.002</VRPTx:fluence_rate> <VRPTx:recording_mode>Electron Counting</VRPTx:recording_mode> <VRPTx:sa_aperture_diameter>150</VRPTx:sa_aperture_diameter> </VRPTx:pdbx_diffrn_ed> </VRPTx:pdbx_diffrn_edCategory>
+-- Data items in the PDBX_DIFFRN_ED record details specific to electron diffraction method. Example 1 - based on PDB entry 9DHO <VRPTx:pdbx_diffrn_edCategory> <VRPTx:pdbx_diffrn_ed id="1"> <VRPTx:beam_diameter_sample_plane>3.5</VRPTx:beam_diameter_sample_plane> <VRPTx:c2_aperture_diameter>50</VRPTx:c2_aperture_diameter> <VRPTx:camera_length>1402</VRPTx:camera_length> <VRPTx:details>The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10 eV, with the zero-loss peak centered in defocused diffraction</VRPTx:details> <VRPTx:diffrn_id>1</VRPTx:diffrn_id> <VRPTx:electron_source>FIELD EMISSION GUN</VRPTx:electron_source> <VRPTx:energyfilter_name>TFS Selectris</VRPTx:energyfilter_name> <VRPTx:fluence_accumulated>0.84</VRPTx:fluence_accumulated> <VRPTx:fluence_rate>0.002</VRPTx:fluence_rate> <VRPTx:recording_mode>Electron Counting</VRPTx:recording_mode> <VRPTx:sa_aperture_diameter>150</VRPTx:sa_aperture_diameter> </VRPTx:pdbx_diffrn_ed> </VRPTx:pdbx_diffrn_edCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_diffrn_ed.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -7959,8 +7959,8 @@ CREATE TABLE reflns (
 	"observed_criterion_sigma_F" DECIMAL ,
 	"observed_criterion_sigma_I" DECIMAL ,
 -- xsd:restriction/xsd:maxInclusive="1"
--- xsd:restriction/xsd:minInclusive="0"
-	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= 0 AND "pdbx_CC_half" <= 1 ) ,
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= -1 AND "pdbx_CC_half" <= 1 ) ,
 -- xsd:restriction/xsd:maxInclusive="1.0"
 -- xsd:restriction/xsd:minInclusive="-1.0"
 	"pdbx_CC_half_anomalous" DECIMAL CHECK ( "pdbx_CC_half_anomalous" >= -1.0 AND "pdbx_CC_half_anomalous" <= 1.0 ) ,
@@ -8193,8 +8193,8 @@ CREATE TABLE reflns_shell (
 	number_unique_gt INTEGER CHECK ( number_unique_gt >= 0 ) ,
 	number_unique_obs INTEGER ,
 -- xsd:restriction/xsd:maxInclusive="1"
--- xsd:restriction/xsd:minInclusive="0"
-	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= 0 AND "pdbx_CC_half" <= 1 ) ,
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= -1 AND "pdbx_CC_half" <= 1 ) ,
 -- xsd:restriction/xsd:maxInclusive="1.0"
 -- xsd:restriction/xsd:minInclusive="-1.0"
 	"pdbx_CC_half_anomalous" DECIMAL CHECK ( "pdbx_CC_half_anomalous" >= -1.0 AND "pdbx_CC_half_anomalous" <= 1.0 ) ,

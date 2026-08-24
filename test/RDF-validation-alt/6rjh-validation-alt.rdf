@@ -130559,12 +130559,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/one-bit,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/one-bit,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/one-bit,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130583,12 +130583,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.143,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.143,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.143,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130607,12 +130607,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.5,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.5,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/3">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.5,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130631,12 +130631,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.333,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.333,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/4">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.333,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130655,12 +130655,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/half-bit,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/half-bit,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/5">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/half-bit,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130679,12 +130679,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/3sigma,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/3sigma,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/6">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/3sigma,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130703,12 +130703,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/3sigma,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/3sigma,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/7">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/3sigma,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130727,12 +130727,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/one-bit,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/one-bit,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/8">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/one-bit,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130751,12 +130751,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.143,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.143,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/9">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.143,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130775,12 +130775,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.5,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.5,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/10">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.5,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130799,12 +130799,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.333,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.333,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/11">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/0.333,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130823,12 +130823,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/half-bit,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/half-bit,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_cutoff_curve/12">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/6RJH/pdbx_em_fsc_resolution/half-bit,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>

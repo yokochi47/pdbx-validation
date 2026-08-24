@@ -2099,7 +2099,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/A"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -2117,7 +2117,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_conf/HELX_P1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/struct_conf/HELX_P1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -2158,7 +2158,7 @@
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_conn/disulf1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_conn_type/disulf">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/struct_conn/disulf1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -2187,7 +2187,7 @@
           <PDBo:struct_conn rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_conn/disulf2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_struct_conn_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_conn_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_conn_type/disulf">
                 <PDBo:referenced_by_struct_conn rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/struct_conn/disulf2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conn_type>
@@ -2247,7 +2247,7 @@
           <PDBo:struct_ref rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_ref/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity/1">
                 <PDBo:referenced_by_struct_ref rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/struct_ref/1"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -2267,7 +2267,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_ref_seq/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/struct_ref_seq/1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>

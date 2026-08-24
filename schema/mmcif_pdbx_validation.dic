@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Thu Jun  4 15:37:10 JST 2026
+# Date:  Fri Aug 21 20:10:59 JST 2026
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.415)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.416)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.07.xsd
 #         - a XML schema for wwPDB validation reports, v6.07, rev. 2026-03-30
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.415
+    _dictionary.version         4.416
 #
     loop_
     _dictionary_history.version
@@ -1521,6 +1521,25 @@ data_mmcif_pdbx_validation.dic
 >     _refine_ls_shell.correlation_coeff_I_to_Fcsqd_work, _refine_ls_shell.correlation_coeff_I_to_Fcsqd_free # merged
 >   + Add "HEPS BPIX40-6M" detector to _diffrn_detector.type enumeration. # merged
 >   + Update example for _pdbx_related_exp_data_set # merge
+>   + Add _pdbx_nmr_constraint_file.constraint_subsubtype # not mapped
+>   + Add "APS BEAMLINE 15-ID-B" and "APS BEAMLINE 15-ID-D" to _diffrn_source.type enumeration. # merged
+>   + Add "15-ID-B" and "15-ID-D" to _diffrn_source.pdbx_synchrotron_beamline enumeration. # merged
+>   + Allow full range of correlation coefficients for _reflns*.pdbx_CC_half items # merged
+;
+  4.416   2026-08-21
+;
+>   + Extend enumeration for _em_vitrification.instrument to include CHAMELEON, CRYOGENIUM,
+>     CRYOWRITER and "LEICA EM GP2" # merged
+>   + Add Leginon to _software.name enumeration # not mapped
+>   + Extend eumeration of _em_image_recording.film_or_detector_model with new GATAN equipment. # merged
+>   + Extend _em_imaging_optics.energyfilter_name enumeration with "GIF CONTINUUM HR",
+>     "BIOCONTINUUM", "BIOCONTINUUM HD" # merged
+>   + Updated description of _pdbx_database_related category # merged
+>   + Add "JEOL JEM-F200" to _em_imaging.microscope_model enumeration # merged
+>   + Update enumeratons for _pdbx_chem_comp_atom_coordination.geometry_generic
+>     and _pdbx_nonpoly_atom_coordination.geometry_generic # not mapped
+>   + Add Isobutyrylation to _pdbx_chem_comp_pcm.type and _pdbx_modification_feature.type enumerations # not mapped
+>   + Add ModelAngelo to to _pdbx_initial_refinement_model.source_name enumeration # not mapped
 ;
 
 #
@@ -4857,6 +4876,8 @@ save__diffrn_source.type
      "_diffrn_source.type"  "APS BEAMLINE 14-BM-C"                           SYNCHROTRON
      "_diffrn_source.type"  "APS BEAMLINE 14-BM-D"                           SYNCHROTRON
      "_diffrn_source.type"  "APS BEAMLINE 14-ID-B"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 15-ID-B"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 15-ID-D"                           SYNCHROTRON
      "_diffrn_source.type"  "APS BEAMLINE 17-BM"                             SYNCHROTRON
      "_diffrn_source.type"  "APS BEAMLINE 17-ID"                             SYNCHROTRON
      "_diffrn_source.type"  "APS BEAMLINE 18-ID"                             SYNCHROTRON
@@ -25625,8 +25646,7 @@ save_
 
 save_pdbx_database_related
     _category.description
-;              Data items in PDBX_DATABASE_RELATED contain references to entries
-               that are related to the this entry.
+;              Data items in PDBX_DATABASE_RELATED contain references to related entries.
 ;
     _category.id                 pdbx_database_related
     _category.mandatory_code      no
@@ -26120,6 +26140,8 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  14-BM-C         .
      "_diffrn_source.pdbx_synchrotron_beamline"  14-BM-D         .
      "_diffrn_source.pdbx_synchrotron_beamline"  14-ID-B         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  15-ID-B         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  15-ID-D         .
      "_diffrn_source.pdbx_synchrotron_beamline"  17-BM           .
      "_diffrn_source.pdbx_synchrotron_beamline"  17-ID           .
      "_diffrn_source.pdbx_synchrotron_beamline"  17-ID-1         .
@@ -50609,7 +50631,8 @@ save__reflns.pdbx_CC_half
     _item_range.name
     _item_range.minimum
     _item_range.maximum
-      "_reflns.pdbx_CC_half"   0   1
+      "_reflns.pdbx_CC_half"  -1  -1
+      "_reflns.pdbx_CC_half"  -1   1
       "_reflns.pdbx_CC_half"   1   1
     loop_
     _pdbx_item_range.name
@@ -50684,7 +50707,8 @@ save__reflns_shell.pdbx_CC_half
     _item_range.name
     _item_range.minimum
     _item_range.maximum
-      "_reflns_shell.pdbx_CC_half"   0   1
+      "_reflns_shell.pdbx_CC_half"  -1  -1
+      "_reflns_shell.pdbx_CC_half"  -1   1
       "_reflns_shell.pdbx_CC_half"   1   1
 save_
 
@@ -51456,7 +51480,10 @@ save__em_vitrification.instrument
     _item_enumeration.name    #V5
     _item_enumeration.value   #V5
     _item_enumeration.detail  #V5
+  '_em_vitrification.instrument'        CHAMELEON                          .
+  '_em_vitrification.instrument'        CRYOGENIUM                         .
   '_em_vitrification.instrument'       "CRYOSOL VITROJET"                  .
+  '_em_vitrification.instrument'        CRYOWRITER                         .
   '_em_vitrification.instrument'       "EMS-002 RAPID IMMERSION FREEZER"   .
   '_em_vitrification.instrument'       "FEI VITROBOT MARK I"               .
   '_em_vitrification.instrument'       "FEI VITROBOT MARK II"              .
@@ -51466,6 +51493,7 @@ save__em_vitrification.instrument
   '_em_vitrification.instrument'       "HOMEMADE PLUNGER"                  .
   '_em_vitrification.instrument'       "LEICA PLUNGER"                     .
   '_em_vitrification.instrument'       "LEICA EM GP"                       .
+  '_em_vitrification.instrument'       "LEICA EM GP2"                      .
   '_em_vitrification.instrument'       "LEICA EM CPC"                      .
   '_em_vitrification.instrument'       "LEICA KF80"                        .
   '_em_vitrification.instrument'       "REICHERT-JUNG PLUNGER"             .
@@ -51701,6 +51729,7 @@ save__em_imaging.microscope_model
   '_em_imaging.microscope_model'  "JEOL 3100FFC"    .
   '_em_imaging.microscope_model'  "JEOL 3200FS"    .
   '_em_imaging.microscope_model'  "JEOL 3200FSC"    .
+  '_em_imaging.microscope_model'  "JEOL JEM-F200"    .
   '_em_imaging.microscope_model'  "JEOL KYOTO-3000SFF"    .
   '_em_imaging.microscope_model'  "JEOL 3200FSC"    .
   '_em_imaging.microscope_model'  "JEOL 4000"    .
@@ -55659,22 +55688,33 @@ save__em_image_recording.film_or_detector_model
   '_em_image_recording.film_or_detector_model'    "FEI FALCON II (4k x 4k)"    .
   '_em_image_recording.film_or_detector_model'    "FEI FALCON III (4k x 4k)"   .
   '_em_image_recording.film_or_detector_model'    "FEI FALCON IV (4k x 4k)"    .
-  '_em_image_recording.film_or_detector_model'    "GATAN ALPINE (2.3k x 3.2k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN MULTISCAN"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN ORIUS SC200 (2k x 2k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN ORIUS SC600 (2.7k x 2.7k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN ORIUS SC1000 (4k x 2.7k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN ULTRASCAN 1000 (2k x 2k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN ULTRASCAN 4000 (4k x 4k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN ULTRASCAN 10000 (10k x 10k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN K2 (4k x 4k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN K2 BASE (4k x 4k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN K2 IS (4k x 4k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN K2 QUANTUM (4k x 4k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN K3 (6k x 4k)"   .
+  '_em_image_recording.film_or_detector_model'    "GATAN ALPINE (2.3k x 3.2k)"         .
+  '_em_image_recording.film_or_detector_model'    "GATAN ALPINE VISTA (5.7k x 4k)"     .
+  '_em_image_recording.film_or_detector_model'    "GATAN CLEARVIEW (4k x 4k)"          .
+  '_em_image_recording.film_or_detector_model'    "GATAN K2 (4k x 4k)"                 .
+  '_em_image_recording.film_or_detector_model'    "GATAN K2 BASE (4k x 4k)"            .
+  '_em_image_recording.film_or_detector_model'    "GATAN K2 IS (4k x 4k)"              .
+  '_em_image_recording.film_or_detector_model'    "GATAN K2 QUANTUM (4k x 4k)"         .
+  '_em_image_recording.film_or_detector_model'    "GATAN K2 SUMMIT (4k x 4k)"          .
+  '_em_image_recording.film_or_detector_model'    "GATAN K3 (6k x 4k)"                 .
   '_em_image_recording.film_or_detector_model'    "GATAN K3 BIOCONTINUUM (6k x 4k)"    .
-  '_em_image_recording.film_or_detector_model'    "GATAN K3 BIOQUANTUM (6k x 4k)"    .
-  '_em_image_recording.film_or_detector_model'    "GATAN K2 SUMMIT (4k x 4k)"   .
+  '_em_image_recording.film_or_detector_model'    "GATAN K3 BIOQUANTUM (6k x 4k)"      .
+  '_em_image_recording.film_or_detector_model'    "GATAN K3 IS BASE (3.4k x 4k)"       .
+  '_em_image_recording.film_or_detector_model'    "GATAN K3 IS (5.7k x 4k)"            .
+  '_em_image_recording.film_or_detector_model'    "GATAN METRO (2k x 2k)"              .
+  '_em_image_recording.film_or_detector_model'    "GATAN MULTISCAN"                    .
+  '_em_image_recording.film_or_detector_model'    "GATAN ONEVIEW (4k x 4k)"            .
+  '_em_image_recording.film_or_detector_model'    "GATAN ORIUS SC200 (2k x 2k)"        .
+  '_em_image_recording.film_or_detector_model'    "GATAN ORIUS SC600 (2.7k x 2.7k)"    .
+  '_em_image_recording.film_or_detector_model'    "GATAN ORIUS SC1000 (4k x 2.7k)"     .
+  '_em_image_recording.film_or_detector_model'    "GATAN RIO16 (4k x 4k)"              .
+  '_em_image_recording.film_or_detector_model'    "GATAN RIO 9 (3k x 3k)"              .
+  '_em_image_recording.film_or_detector_model'    "GATAN RIO 4 (2k x 2k)"              .
+  '_em_image_recording.film_or_detector_model'    "GATAN ULTRASCAN 1000 (2k x 2k)"     .
+  '_em_image_recording.film_or_detector_model'    "GATAN ULTRASCAN 4000 (4k x 4k)"     .
+  '_em_image_recording.film_or_detector_model'    "GATAN ULTRASCAN 10000 (10k x 10k)"  .
+  '_em_image_recording.film_or_detector_model'    "GATAN STELLA (0.5k x 0.5k)"         .
+  '_em_image_recording.film_or_detector_model'    "GATAN STELLA (1k x 0.5k)"           .
   '_em_image_recording.film_or_detector_model'    "GENERIC GATAN (2k x 2k)"   .
   '_em_image_recording.film_or_detector_model'    "GENERIC GATAN (4k x 4k)"   .
   '_em_image_recording.film_or_detector_model'    "GENERIC GATAN"   .
@@ -55840,8 +55880,11 @@ save__em_imaging_optics.energyfilter_name
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
     _pdbx_item_enumeration.detail
+         '_em_imaging_optics.energyfilter_name'   BIOCONTINUUM            .
+         '_em_imaging_optics.energyfilter_name'  'BIOCONTINUUM HD'        .
          '_em_imaging_optics.energyfilter_name'  'CEOS CEFID'             .
          '_em_imaging_optics.energyfilter_name'  'GIF Bioquantum'         .
+         '_em_imaging_optics.energyfilter_name'  'GIF CONTINUUM HR'       .
          '_em_imaging_optics.energyfilter_name'  'GIF Quantum ERS'        .
          '_em_imaging_optics.energyfilter_name'  'GIF Quantum ER'         .
          '_em_imaging_optics.energyfilter_name'  'GIF Quantum SE'         .
@@ -76609,7 +76652,7 @@ save_pdbx_diffrn_ed
     _pdbx_diffrn_ed.beam_diameter_sample_plane  3.5
     _pdbx_diffrn_ed.camera_length               1402
     _pdbx_diffrn_ed.c2_aperture_diameter        50
-    _pdbx_diffrn_ed.details                     "The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10&#8201;eV, with the zero-loss peak centered in defocused diffraction"
+    _pdbx_diffrn_ed.details                     "The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10 eV, with the zero-loss peak centered in defocused diffraction"
     _pdbx_diffrn_ed.fluence_accumulated         0.84
     _pdbx_diffrn_ed.fluence_rate                0.002
     _pdbx_diffrn_ed.electron_source             "FIELD EMISSION GUN"

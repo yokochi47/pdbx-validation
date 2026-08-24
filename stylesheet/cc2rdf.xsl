@@ -271,7 +271,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@array_id!=''">
         <PDBo:reference_to_array_structure>
-          <rdf:Description rdf:about="{$base}/array_structure/">
+          <rdf:Description rdf:about="{$base}/array_structure/{$array_id_encoded}">
             <PDBo:referenced_by_array_data rdf:resource="{$base}/array_data/{$array_id_encoded},{$binary_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_array_structure>
@@ -295,7 +295,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@array_id!=''">
         <PDBo:reference_to_array_structure>
-          <rdf:Description rdf:about="{$base}/array_structure/">
+          <rdf:Description rdf:about="{$base}/array_structure/{$array_id_encoded}">
             <PDBo:referenced_by_array_intensities rdf:resource="{$base}/array_intensities/{$array_id_encoded},{$binary_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_array_structure>
@@ -333,7 +333,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@array_id!=''">
         <PDBo:reference_to_array_structure>
-          <rdf:Description rdf:about="{$base}/array_structure/">
+          <rdf:Description rdf:about="{$base}/array_structure/{$array_id_encoded}">
             <PDBo:referenced_by_array_structure_list rdf:resource="{$base}/array_structure_list/{$array_id_encoded},{$index_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_array_structure>
@@ -375,7 +375,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@array_id!=''">
         <PDBo:reference_to_array_structure>
-          <rdf:Description rdf:about="{$base}/array_structure/">
+          <rdf:Description rdf:about="{$base}/array_structure/{$array_id_encoded}">
             <PDBo:referenced_by_array_structure_list_section rdf:resource="{$base}/array_structure_list_section/{$array_id_encoded},{$id_encoded},{$index_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_array_structure>
@@ -421,7 +421,7 @@
       </xsl:if>
       <xsl:if test="PDBx:label_entity_id!='' and PDBx:label_asym_id!=''">
         <PDBo:reference_to_struct_asym>
-          <rdf:Description rdf:about="{$base}/struct_asym/{translate(PDBx:label_entity_id,' ^','__')},{translate(PDBx:label_asym_id,' ^','__')}">
+          <rdf:Description rdf:about="{$base}/struct_asym/{translate(PDBx:label_entity_id,' ^','__')}{translate(PDBx:label_asym_id,' ^','__')},">
             <PDBo:referenced_by_atom_site rdf:resource="{$base}/atom_site/{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_asym>
@@ -465,7 +465,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_atom_sites rdf:resource="{$base}/atom_sites/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -517,7 +517,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@alt_id!=''">
         <PDBo:reference_to_atom_sites_alt>
-          <rdf:Description rdf:about="{$base}/atom_sites_alt/">
+          <rdf:Description rdf:about="{$base}/atom_sites_alt/{$alt_id_encoded}">
             <PDBo:referenced_by_atom_sites_alt_gen rdf:resource="{$base}/atom_sites_alt_gen/{$alt_id_encoded},{$ens_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_atom_sites_alt>
@@ -525,7 +525,7 @@
       </xsl:if>
       <xsl:if test="@ens_id!=''">
         <PDBo:reference_to_atom_sites_alt_ens>
-          <rdf:Description rdf:about="{$base}/atom_sites_alt_ens/">
+          <rdf:Description rdf:about="{$base}/atom_sites_alt_ens/{$ens_id_encoded}">
             <PDBo:referenced_by_atom_sites_alt_gen rdf:resource="{$base}/atom_sites_alt_gen/{$alt_id_encoded},{$ens_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_atom_sites_alt_ens>
@@ -649,7 +649,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_cell rdf:resource="{$base}/cell/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -671,7 +671,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_cell_measurement rdf:resource="{$base}/cell_measurement/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -731,7 +731,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@atom_id_1!='' and @comp_id!=''">
         <PDBo:reference_to_chem_comp_atom>
-          <rdf:Description rdf:about="{$base}/chem_comp_atom/,">
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/{$atom_id_1_encoded},{$comp_id_encoded}">
             <PDBo:referenced_by_chem_comp_angle rdf:resource="{$base}/chem_comp_angle/{$atom_id_1_encoded},{$atom_id_2_encoded},{$atom_id_3_encoded},{$comp_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp_atom>
@@ -755,7 +755,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_chem_comp_atom rdf:resource="{$base}/chem_comp_atom/{$atom_id_encoded},{$comp_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -781,7 +781,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_chem_comp_bond rdf:resource="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -789,7 +789,7 @@
       </xsl:if>
       <xsl:if test="@atom_id_1!='' and @comp_id!=''">
         <PDBo:reference_to_chem_comp_atom>
-          <rdf:Description rdf:about="{$base}/chem_comp_atom/,">
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/{$atom_id_1_encoded},{$comp_id_encoded}">
             <PDBo:referenced_by_chem_comp_bond rdf:resource="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp_atom>
@@ -797,7 +797,7 @@
       </xsl:if>
       <xsl:if test="@atom_id_2!='' and @comp_id!=''">
         <PDBo:reference_to_chem_comp_atom>
-          <rdf:Description rdf:about="{$base}/chem_comp_atom/,">
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/{$atom_id_2_encoded},{$comp_id_encoded}">
             <PDBo:referenced_by_chem_comp_bond rdf:resource="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp_atom>
@@ -821,7 +821,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_chem_comp_chir rdf:resource="{$base}/chem_comp_chir/{$comp_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -847,7 +847,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_chem_comp_chir_atom rdf:resource="{$base}/chem_comp_chir_atom/{$atom_id_encoded},{$chir_id_encoded},{$comp_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -869,7 +869,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
         <PDBo:reference_to_chem_link>
-          <rdf:Description rdf:about="{$base}/chem_link/">
+          <rdf:Description rdf:about="{$base}/chem_link/{$link_id_encoded}">
             <PDBo:referenced_by_chem_comp_link rdf:resource="{$base}/chem_comp_link/{$link_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_link>
@@ -893,7 +893,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_chem_comp_plane rdf:resource="{$base}/chem_comp_plane/{$comp_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -919,7 +919,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_chem_comp_plane_atom rdf:resource="{$base}/chem_comp_plane_atom/{$atom_id_encoded},{$comp_id_encoded},{$plane_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -943,7 +943,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:atom_id_1!='' and @comp_id!=''">
         <PDBo:reference_to_chem_comp_atom>
-          <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(PDBx:atom_id_1,' ^','__')},">
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(PDBx:atom_id_1,' ^','__')},{$comp_id_encoded}">
             <PDBo:referenced_by_chem_comp_tor rdf:resource="{$base}/chem_comp_tor/{$comp_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp_atom>
@@ -1001,7 +1001,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
         <PDBo:reference_to_chem_link>
-          <rdf:Description rdf:about="{$base}/chem_link/">
+          <rdf:Description rdf:about="{$base}/chem_link/{$link_id_encoded}">
             <PDBo:referenced_by_chem_link_angle rdf:resource="{$base}/chem_link_angle/{$atom_id_1_encoded},{$atom_id_2_encoded},{$atom_id_3_encoded},{$link_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_link>
@@ -1027,7 +1027,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
         <PDBo:reference_to_chem_link>
-          <rdf:Description rdf:about="{$base}/chem_link/">
+          <rdf:Description rdf:about="{$base}/chem_link/{$link_id_encoded}">
             <PDBo:referenced_by_chem_link_bond rdf:resource="{$base}/chem_link_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$link_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_link>
@@ -1051,7 +1051,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
         <PDBo:reference_to_chem_link>
-          <rdf:Description rdf:about="{$base}/chem_link/">
+          <rdf:Description rdf:about="{$base}/chem_link/{$link_id_encoded}">
             <PDBo:referenced_by_chem_link_chir rdf:resource="{$base}/chem_link_chir/{$id_encoded},{$link_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_link>
@@ -1091,7 +1091,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
         <PDBo:reference_to_chem_link>
-          <rdf:Description rdf:about="{$base}/chem_link/">
+          <rdf:Description rdf:about="{$base}/chem_link/{$link_id_encoded}">
             <PDBo:referenced_by_chem_link_plane rdf:resource="{$base}/chem_link_plane/{$id_encoded},{$link_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_link>
@@ -1131,7 +1131,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
         <PDBo:reference_to_chem_link>
-          <rdf:Description rdf:about="{$base}/chem_link/">
+          <rdf:Description rdf:about="{$base}/chem_link/{$link_id_encoded}">
             <PDBo:referenced_by_chem_link_tor rdf:resource="{$base}/chem_link_tor/{$id_encoded},{$link_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_link>
@@ -1167,7 +1167,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_chemical rdf:resource="{$base}/chemical/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -1213,7 +1213,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@atom_1!=''">
         <PDBo:reference_to_chemical_conn_atom>
-          <rdf:Description rdf:about="{$base}/chemical_conn_atom/">
+          <rdf:Description rdf:about="{$base}/chemical_conn_atom/{$atom_1_encoded}">
             <PDBo:referenced_by_chemical_conn_bond rdf:resource="{$base}/chemical_conn_bond/{$atom_1_encoded},{$atom_2_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chemical_conn_atom>
@@ -1221,7 +1221,7 @@
       </xsl:if>
       <xsl:if test="@atom_2!=''">
         <PDBo:reference_to_chemical_conn_atom>
-          <rdf:Description rdf:about="{$base}/chemical_conn_atom/">
+          <rdf:Description rdf:about="{$base}/chemical_conn_atom/{$atom_2_encoded}">
             <PDBo:referenced_by_chemical_conn_bond rdf:resource="{$base}/chemical_conn_bond/{$atom_1_encoded},{$atom_2_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chemical_conn_atom>
@@ -1243,7 +1243,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_chemical_formula rdf:resource="{$base}/chemical_formula/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -1283,7 +1283,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@citation_id!=''">
         <PDBo:reference_to_citation>
-          <rdf:Description rdf:about="{$base}/citation/">
+          <rdf:Description rdf:about="{$base}/citation/{$citation_id_encoded}">
             <PDBo:referenced_by_citation_author rdf:resource="{$base}/citation_author/{$citation_id_encoded},{$name_encoded},{$ordinal_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_citation>
@@ -1307,7 +1307,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@citation_id!=''">
         <PDBo:reference_to_citation>
-          <rdf:Description rdf:about="{$base}/citation/">
+          <rdf:Description rdf:about="{$base}/citation/{$citation_id_encoded}">
             <PDBo:referenced_by_citation_editor rdf:resource="{$base}/citation_editor/{$citation_id_encoded},{$name_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_citation>
@@ -1329,7 +1329,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_computing rdf:resource="{$base}/computing/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -1351,7 +1351,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_database rdf:resource="{$base}/database/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -1403,7 +1403,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_database_PDB_matrix rdf:resource="{$base}/database_PDB_matrix/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -1455,7 +1455,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@rev_num!=''">
         <PDBo:reference_to_database_PDB_rev>
-          <rdf:Description rdf:about="{$base}/database_PDB_rev/">
+          <rdf:Description rdf:about="{$base}/database_PDB_rev/{$rev_num_encoded}">
             <PDBo:referenced_by_database_PDB_rev_record rdf:resource="{$base}/database_PDB_rev_record/{$rev_num_encoded},{$type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_database_PDB_rev>
@@ -1543,7 +1543,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_diffrn_detector rdf:resource="{$base}/diffrn_detector/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -1597,7 +1597,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_diffrn_measurement rdf:resource="{$base}/diffrn_measurement/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -1619,7 +1619,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_diffrn_orient_matrix rdf:resource="{$base}/diffrn_orient_matrix/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -1647,7 +1647,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_diffrn_orient_refln rdf:resource="{$base}/diffrn_orient_refln/{$diffrn_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -1669,7 +1669,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_diffrn_radiation rdf:resource="{$base}/diffrn_radiation/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -1707,7 +1707,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_diffrn_refln rdf:resource="{$base}/diffrn_refln/{$diffrn_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -1729,7 +1729,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_diffrn_reflns rdf:resource="{$base}/diffrn_reflns/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -1779,7 +1779,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:frame_id_end!='' and PDBx:frame_id_start!=''">
         <PDBo:reference_to_diffrn_data_frame>
-          <rdf:Description rdf:about="{$base}/diffrn_data_frame/{translate(PDBx:frame_id_end,' ^','__')},{translate(PDBx:frame_id_start,' ^','__')}">
+          <rdf:Description rdf:about="{$base}/diffrn_data_frame/{translate(PDBx:frame_id_end,' ^','__')}{translate(PDBx:frame_id_start,' ^','__')},">
             <PDBo:referenced_by_diffrn_scan rdf:resource="{$base}/diffrn_scan/{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn_data_frame>
@@ -1803,7 +1803,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@scan_id!=''">
         <PDBo:reference_to_diffrn_scan>
-          <rdf:Description rdf:about="{$base}/diffrn_scan/">
+          <rdf:Description rdf:about="{$base}/diffrn_scan/{$scan_id_encoded}">
             <PDBo:referenced_by_diffrn_scan_axis rdf:resource="{$base}/diffrn_scan_axis/{$axis_id_encoded},{$scan_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn_scan>
@@ -1841,7 +1841,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@scan_id!=''">
         <PDBo:reference_to_diffrn_scan>
-          <rdf:Description rdf:about="{$base}/diffrn_scan/">
+          <rdf:Description rdf:about="{$base}/diffrn_scan/{$scan_id_encoded}">
             <PDBo:referenced_by_diffrn_scan_frame rdf:resource="{$base}/diffrn_scan_frame/{$frame_id_encoded},{$scan_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn_scan>
@@ -1879,7 +1879,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_diffrn_source rdf:resource="{$base}/diffrn_source/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -1903,7 +1903,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_diffrn_standard_refln rdf:resource="{$base}/diffrn_standard_refln/{$code_encoded},{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -1925,7 +1925,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_diffrn_standards rdf:resource="{$base}/diffrn_standards/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -1963,7 +1963,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_em_2d_projection_selection rdf:resource="{$base}/em_2d_projection_selection/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -2003,7 +2003,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_em_3d_fitting rdf:resource="{$base}/em_3d_fitting/{$entry_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -2065,7 +2065,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_em_admin rdf:resource="{$base}/em_admin/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -2089,7 +2089,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_em_assembly rdf:resource="{$base}/em_assembly/{$entry_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -2213,7 +2213,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_em_depositor_info rdf:resource="{$base}/em_depositor_info/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -2251,7 +2251,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_em_detector rdf:resource="{$base}/em_detector/{$entry_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -2345,7 +2345,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
         <PDBo:reference_to_em_entity_assembly>
-          <rdf:Description rdf:about="{$base}/em_entity_assembly/">
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{$entity_assembly_id_encoded}">
             <PDBo:referenced_by_em_entity_assembly_molwt rdf:resource="{$base}/em_entity_assembly_molwt/{$entity_assembly_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_em_entity_assembly>
@@ -2369,7 +2369,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
         <PDBo:reference_to_em_entity_assembly>
-          <rdf:Description rdf:about="{$base}/em_entity_assembly/">
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{$entity_assembly_id_encoded}">
             <PDBo:referenced_by_em_entity_assembly_naturalsource rdf:resource="{$base}/em_entity_assembly_naturalsource/{$entity_assembly_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_em_entity_assembly>
@@ -2393,7 +2393,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
         <PDBo:reference_to_em_entity_assembly>
-          <rdf:Description rdf:about="{$base}/em_entity_assembly/">
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{$entity_assembly_id_encoded}">
             <PDBo:referenced_by_em_entity_assembly_recombinant rdf:resource="{$base}/em_entity_assembly_recombinant/{$entity_assembly_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_em_entity_assembly>
@@ -2417,7 +2417,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
         <PDBo:reference_to_em_entity_assembly>
-          <rdf:Description rdf:about="{$base}/em_entity_assembly/">
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{$entity_assembly_id_encoded}">
             <PDBo:referenced_by_em_entity_assembly_synthetic rdf:resource="{$base}/em_entity_assembly_synthetic/{$entity_assembly_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_em_entity_assembly>
@@ -2453,7 +2453,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_em_experiment rdf:resource="{$base}/em_experiment/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -2671,7 +2671,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_em_imaging rdf:resource="{$base}/em_imaging/{$entry_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -2755,7 +2755,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_em_map rdf:resource="{$base}/em_map/{$entry_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -2779,7 +2779,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_em_map_depositor_info rdf:resource="{$base}/em_map_depositor_info/{$entry_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -2861,7 +2861,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_em_sample_preparation rdf:resource="{$base}/em_sample_preparation/{$entry_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -3103,7 +3103,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
         <PDBo:reference_to_em_entity_assembly>
-          <rdf:Description rdf:about="{$base}/em_entity_assembly/">
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{$entity_assembly_id_encoded}">
             <PDBo:referenced_by_em_virus_entity rdf:resource="{$base}/em_virus_entity/{$entity_assembly_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_em_entity_assembly>
@@ -3127,7 +3127,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
         <PDBo:reference_to_em_entity_assembly>
-          <rdf:Description rdf:about="{$base}/em_entity_assembly/">
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{$entity_assembly_id_encoded}">
             <PDBo:referenced_by_em_virus_natural_host rdf:resource="{$base}/em_virus_natural_host/{$entity_assembly_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_em_entity_assembly>
@@ -3151,7 +3151,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
         <PDBo:reference_to_em_entity_assembly>
-          <rdf:Description rdf:about="{$base}/em_entity_assembly/">
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{$entity_assembly_id_encoded}">
             <PDBo:referenced_by_em_virus_shell rdf:resource="{$base}/em_virus_shell/{$entity_assembly_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_em_entity_assembly>
@@ -3175,7 +3175,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_assembly_id!=''">
         <PDBo:reference_to_em_entity_assembly>
-          <rdf:Description rdf:about="{$base}/em_entity_assembly/">
+          <rdf:Description rdf:about="{$base}/em_entity_assembly/{$entity_assembly_id_encoded}">
             <PDBo:referenced_by_em_virus_synthetic rdf:resource="{$base}/em_virus_synthetic/{$entity_assembly_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_em_entity_assembly>
@@ -3251,7 +3251,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_entity_keywords rdf:resource="{$base}/entity_keywords/{$entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -3273,7 +3273,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@link_id!=''">
         <PDBo:reference_to_chem_link>
-          <rdf:Description rdf:about="{$base}/chem_link/">
+          <rdf:Description rdf:about="{$base}/chem_link/{$link_id_encoded}">
             <PDBo:referenced_by_entity_link rdf:resource="{$base}/entity_link/{$link_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_link>
@@ -3311,7 +3311,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_entity_name_com rdf:resource="{$base}/entity_name_com/{$entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -3333,7 +3333,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_entity_name_sys rdf:resource="{$base}/entity_name_sys/{$entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -3355,7 +3355,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_entity_poly rdf:resource="{$base}/entity_poly/{$entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -3379,7 +3379,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_entity_src_gen rdf:resource="{$base}/entity_src_gen/{$entity_id_encoded},{$pdbx_src_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -3403,7 +3403,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_entity_src_nat rdf:resource="{$base}/entity_src_nat/{$entity_id_encoded},{$pdbx_src_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -3441,7 +3441,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_entry_link rdf:resource="{$base}/entry_link/{$entry_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -3465,7 +3465,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_exptl rdf:resource="{$base}/exptl/{$entry_id_encoded},{$method_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -3507,7 +3507,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
         <PDBo:reference_to_exptl_crystal>
-          <rdf:Description rdf:about="{$base}/exptl_crystal/">
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{$crystal_id_encoded}">
             <PDBo:referenced_by_exptl_crystal_face rdf:resource="{$base}/exptl_crystal_face/{$crystal_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_exptl_crystal>
@@ -3529,7 +3529,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
         <PDBo:reference_to_exptl_crystal>
-          <rdf:Description rdf:about="{$base}/exptl_crystal/">
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{$crystal_id_encoded}">
             <PDBo:referenced_by_exptl_crystal_grow rdf:resource="{$base}/exptl_crystal_grow/{$crystal_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_exptl_crystal>
@@ -3553,7 +3553,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
         <PDBo:reference_to_exptl_crystal>
-          <rdf:Description rdf:about="{$base}/exptl_crystal/">
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{$crystal_id_encoded}">
             <PDBo:referenced_by_exptl_crystal_grow_comp rdf:resource="{$base}/exptl_crystal_grow_comp/{$crystal_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_exptl_crystal>
@@ -3575,7 +3575,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_geom rdf:resource="{$base}/geom/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -3713,7 +3713,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_journal rdf:resource="{$base}/journal/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -3767,7 +3767,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_ndb_struct_conf_na rdf:resource="{$base}/ndb_struct_conf_na/{$entry_id_encoded},{$feature_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -3791,7 +3791,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_ndb_struct_feature_na rdf:resource="{$base}/ndb_struct_feature_na/{$entry_id_encoded},{$feature_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -3905,7 +3905,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_atlas rdf:resource="{$base}/pdbx_atlas/{$entry_id_encoded},{$page_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -3937,7 +3937,7 @@
       </xsl:if>
       <xsl:if test="@tls_group_id!=''">
         <PDBo:reference_to_pdbx_refine_tls>
-          <rdf:Description rdf:about="{$base}/pdbx_refine_tls/">
+          <rdf:Description rdf:about="{$base}/pdbx_refine_tls/{$tls_group_id_encoded}">
             <PDBo:referenced_by_pdbx_atom_site_aniso_tls rdf:resource="{$base}/pdbx_atom_site_aniso_tls/{$id_encoded},{$tls_group_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_refine_tls>
@@ -3967,7 +3967,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_audit rdf:resource="{$base}/pdbx_audit/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -4039,7 +4039,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@data_content_type!='' and @revision_ordinal!=''">
         <PDBo:reference_to_pdbx_audit_revision_history>
-          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/,">
+          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/{$data_content_type_encoded},{$revision_ordinal_encoded}">
             <PDBo:referenced_by_pdbx_audit_revision_category rdf:resource="{$base}/pdbx_audit_revision_category/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_audit_revision_history>
@@ -4065,7 +4065,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@data_content_type!='' and @revision_ordinal!=''">
         <PDBo:reference_to_pdbx_audit_revision_history>
-          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/,">
+          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/{$data_content_type_encoded},{$revision_ordinal_encoded}">
             <PDBo:referenced_by_pdbx_audit_revision_details rdf:resource="{$base}/pdbx_audit_revision_details/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_audit_revision_history>
@@ -4091,7 +4091,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@data_content_type!='' and @revision_ordinal!=''">
         <PDBo:reference_to_pdbx_audit_revision_history>
-          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/,">
+          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/{$data_content_type_encoded},{$revision_ordinal_encoded}">
             <PDBo:referenced_by_pdbx_audit_revision_group rdf:resource="{$base}/pdbx_audit_revision_group/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_audit_revision_history>
@@ -4133,7 +4133,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@data_content_type!='' and @revision_ordinal!=''">
         <PDBo:reference_to_pdbx_audit_revision_history>
-          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/,">
+          <rdf:Description rdf:about="{$base}/pdbx_audit_revision_history/{$data_content_type_encoded},{$revision_ordinal_encoded}">
             <PDBo:referenced_by_pdbx_audit_revision_item rdf:resource="{$base}/pdbx_audit_revision_item/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_audit_revision_history>
@@ -4191,7 +4191,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_branch_scheme rdf:resource="{$base}/pdbx_branch_scheme/{$asym_id_encoded},{$entity_id_encoded},{$mon_id_encoded},{$num_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -4229,7 +4229,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@buffer_id!=''">
         <PDBo:reference_to_pdbx_buffer>
-          <rdf:Description rdf:about="{$base}/pdbx_buffer/">
+          <rdf:Description rdf:about="{$base}/pdbx_buffer/{$buffer_id_encoded}">
             <PDBo:referenced_by_pdbx_buffer_components rdf:resource="{$base}/pdbx_buffer_components/{$buffer_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_buffer>
@@ -4253,7 +4253,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_chain_remapping rdf:resource="{$base}/pdbx_chain_remapping/{$entity_id_encoded},{$label_asym_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -4277,7 +4277,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:atom_id!='' and PDBx:comp_id!=''">
         <PDBo:reference_to_chem_comp_atom>
-          <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(PDBx:atom_id,' ^','__')},{translate(PDBx:comp_id,' ^','__')}">
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(PDBx:atom_id,' ^','__')}{translate(PDBx:comp_id,' ^','__')},">
             <PDBo:referenced_by_pdbx_chem_comp_atom_coordination rdf:resource="{$base}/pdbx_chem_comp_atom_coordination/{$geometry_id_encoded},{$provenance_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp_atom>
@@ -4299,7 +4299,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:atom_id!='' and PDBx:comp_id!=''">
         <PDBo:reference_to_chem_comp_atom>
-          <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(PDBx:atom_id,' ^','__')},{translate(PDBx:comp_id,' ^','__')}">
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/{translate(PDBx:atom_id,' ^','__')}{translate(PDBx:comp_id,' ^','__')},">
             <PDBo:referenced_by_pdbx_chem_comp_atom_coordination_sphere rdf:resource="{$base}/pdbx_chem_comp_atom_coordination_sphere/{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp_atom>
@@ -4347,7 +4347,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@atom_id!='' and @comp_id!=''">
         <PDBo:reference_to_chem_comp_atom>
-          <rdf:Description rdf:about="{$base}/chem_comp_atom/,">
+          <rdf:Description rdf:about="{$base}/chem_comp_atom/{$atom_id_encoded},{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_atom_feature rdf:resource="{$base}/pdbx_chem_comp_atom_feature/{$atom_id_encoded},{$comp_id_encoded},{$feature_type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp_atom>
@@ -4373,7 +4373,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_atom_related rdf:resource="{$base}/pdbx_chem_comp_atom_related/{$comp_id_encoded},{$ordinal_encoded},{$related_comp_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -4399,7 +4399,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_audit rdf:resource="{$base}/pdbx_chem_comp_audit/{$action_type_encoded},{$comp_id_encoded},{$date_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -4427,7 +4427,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_pdbx_chem_comp_import>
-          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_import/">
+          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_import/{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_bond_edit rdf:resource="{$base}/pdbx_chem_comp_bond_edit/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded},{$edit_op_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_chem_comp_import>
@@ -4469,7 +4469,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="{$base}/pdbx_chem_comp_descriptor/{$comp_id_encoded},{$program_encoded},{$program_version_encoded},{$type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -4497,7 +4497,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_feature rdf:resource="{$base}/pdbx_chem_comp_feature/{$comp_id_encoded},{$source_encoded},{$type_encoded},{$value_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -4525,7 +4525,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_identifier rdf:resource="{$base}/pdbx_chem_comp_identifier/{$comp_id_encoded},{$program_encoded},{$program_version_encoded},{$type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -4547,7 +4547,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_import rdf:resource="{$base}/pdbx_chem_comp_import/{$comp_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -4599,7 +4599,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@model_id!=''">
         <PDBo:reference_to_pdbx_chem_comp_model>
-          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/">
+          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/{$model_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_model_atom rdf:resource="{$base}/pdbx_chem_comp_model_atom/{$atom_id_encoded},{$model_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_chem_comp_model>
@@ -4659,7 +4659,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@model_id!=''">
         <PDBo:reference_to_pdbx_chem_comp_model>
-          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/">
+          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/{$model_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_model_descriptor rdf:resource="{$base}/pdbx_chem_comp_model_descriptor/{$model_id_encoded},{$type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_chem_comp_model>
@@ -4683,7 +4683,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@model_id!=''">
         <PDBo:reference_to_pdbx_chem_comp_model>
-          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/">
+          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/{$model_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_model_feature rdf:resource="{$base}/pdbx_chem_comp_model_feature/{$feature_name_encoded},{$model_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_chem_comp_model>
@@ -4709,7 +4709,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@model_id!=''">
         <PDBo:reference_to_pdbx_chem_comp_model>
-          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/">
+          <rdf:Description rdf:about="{$base}/pdbx_chem_comp_model/{$model_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_model_reference rdf:resource="{$base}/pdbx_chem_comp_model_reference/{$db_code_encoded},{$db_name_encoded},{$model_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_chem_comp_model>
@@ -4733,7 +4733,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_nonstandard rdf:resource="{$base}/pdbx_chem_comp_nonstandard/{$comp_id_encoded},{$type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -4781,7 +4781,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_related rdf:resource="{$base}/pdbx_chem_comp_related/{$comp_id_encoded},{$related_comp_id_encoded},{$relationship_type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -4841,7 +4841,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_chem_comp_synonyms rdf:resource="{$base}/pdbx_chem_comp_synonyms/{$comp_id_encoded},{$ordinal_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -4985,7 +4985,7 @@
       </xsl:if>
       <xsl:if test="@construct_id!=''">
         <PDBo:reference_to_pdbx_construct>
-          <rdf:Description rdf:about="{$base}/pdbx_construct/">
+          <rdf:Description rdf:about="{$base}/pdbx_construct/{$construct_id_encoded}">
             <PDBo:referenced_by_pdbx_construct_feature rdf:resource="{$base}/pdbx_construct_feature/{$construct_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_construct>
@@ -5021,7 +5021,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_coord rdf:resource="{$base}/pdbx_coord/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -5043,7 +5043,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
         <PDBo:reference_to_struct_asym>
-          <rdf:Description rdf:about="{$base}/struct_asym/">
+          <rdf:Description rdf:about="{$base}/struct_asym/{$asym_id_encoded}">
             <PDBo:referenced_by_pdbx_coordinate_model rdf:resource="{$base}/pdbx_coordinate_model/{$asym_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_asym>
@@ -5079,7 +5079,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_data_processing_cell rdf:resource="{$base}/pdbx_data_processing_cell/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -5101,7 +5101,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_data_processing_detector rdf:resource="{$base}/pdbx_data_processing_detector/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -5123,7 +5123,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_data_processing_reflns rdf:resource="{$base}/pdbx_data_processing_reflns/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -5175,7 +5175,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_database_PDB_master rdf:resource="{$base}/pdbx_database_PDB_master/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -5229,7 +5229,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_database_message rdf:resource="{$base}/pdbx_database_message/{$entry_id_encoded},{$message_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -5269,7 +5269,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_database_proc rdf:resource="{$base}/pdbx_database_proc/{$cycle_id_encoded},{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -5323,7 +5323,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_database_status rdf:resource="{$base}/pdbx_database_status/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -5347,7 +5347,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_database_status_history rdf:resource="{$base}/pdbx_database_status_history/{$entry_id_encoded},{$ordinal_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -5505,7 +5505,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@group_id!=''">
         <PDBo:reference_to_pdbx_deposit_group>
-          <rdf:Description rdf:about="{$base}/pdbx_deposit_group/">
+          <rdf:Description rdf:about="{$base}/pdbx_deposit_group/{$group_id_encoded}">
             <PDBo:referenced_by_pdbx_deposit_group_index rdf:resource="{$base}/pdbx_deposit_group_index/{$group_id_encoded},{$ordinal_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_deposit_group>
@@ -5749,7 +5749,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_pdbx_diffrn_reflns_shell rdf:resource="{$base}/pdbx_diffrn_reflns_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -5847,7 +5847,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_assembly rdf:resource="{$base}/pdbx_entity_assembly/{$entity_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -5877,7 +5877,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_branch rdf:resource="{$base}/pdbx_entity_branch/{$entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -5939,7 +5939,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@comp_id!=''">
         <PDBo:reference_to_chem_comp>
-          <rdf:Description rdf:about="{$base}/chem_comp/">
+          <rdf:Description rdf:about="{$base}/chem_comp/{$comp_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_branch_list rdf:resource="{$base}/pdbx_entity_branch_list/{$comp_id_encoded},{$entity_id_encoded},{$num_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_chem_comp>
@@ -5947,7 +5947,7 @@
       </xsl:if>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_branch_list rdf:resource="{$base}/pdbx_entity_branch_list/{$comp_id_encoded},{$entity_id_encoded},{$num_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -5973,7 +5973,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_func_bind_mode rdf:resource="{$base}/pdbx_entity_func_bind_mode/{$domain_id_encoded},{$entity_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6069,7 +6069,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_name rdf:resource="{$base}/pdbx_entity_name/{$entity_id_encoded},{$name_encoded},{$name_type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6141,7 +6141,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_nonpoly rdf:resource="{$base}/pdbx_entity_nonpoly/{$entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6163,7 +6163,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:entity_id!='' and PDBx:comp_id_1!='' and PDBx:entity_comp_num_1!=''">
         <PDBo:reference_to_entity_poly_seq>
-          <rdf:Description rdf:about="{$base}/entity_poly_seq/{translate(PDBx:entity_id,' ^','__')},{translate(PDBx:comp_id_1,' ^','__')},{translate(PDBx:entity_comp_num_1,' ^','__')}">
+          <rdf:Description rdf:about="{$base}/entity_poly_seq/{translate(PDBx:entity_id,' ^','__')}{translate(PDBx:comp_id_1,' ^','__')}{translate(PDBx:entity_comp_num_1,' ^','__')},,">
             <PDBo:referenced_by_pdbx_entity_poly_comp_link_list rdf:resource="{$base}/pdbx_entity_poly_comp_link_list/{$link_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity_poly_seq>
@@ -6187,7 +6187,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_poly_domain rdf:resource="{$base}/pdbx_entity_poly_domain/{$entity_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6211,7 +6211,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_poly_na_nonstandard rdf:resource="{$base}/pdbx_entity_poly_na_nonstandard/{$entity_id_encoded},{$feature_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6235,7 +6235,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_poly_na_type rdf:resource="{$base}/pdbx_entity_poly_na_type/{$entity_id_encoded},{$type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6259,7 +6259,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_poly_protein_class rdf:resource="{$base}/pdbx_entity_poly_protein_class/{$class_encoded},{$entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6285,7 +6285,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_prod_protocol rdf:resource="{$base}/pdbx_entity_prod_protocol/{$entity_id_encoded},{$entry_id_encoded},{$protocol_type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6293,7 +6293,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_prod_protocol rdf:resource="{$base}/pdbx_entity_prod_protocol/{$entity_id_encoded},{$entry_id_encoded},{$protocol_type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6315,7 +6315,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_remapping rdf:resource="{$base}/pdbx_entity_remapping/{$entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6341,7 +6341,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_character rdf:resource="{$base}/pdbx_entity_src_gen_character/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6349,7 +6349,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_character rdf:resource="{$base}/pdbx_entity_src_gen_character/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6375,7 +6375,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_chrom rdf:resource="{$base}/pdbx_entity_src_gen_chrom/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6383,7 +6383,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_chrom rdf:resource="{$base}/pdbx_entity_src_gen_chrom/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6425,7 +6425,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_clone rdf:resource="{$base}/pdbx_entity_src_gen_clone/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6433,7 +6433,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_clone rdf:resource="{$base}/pdbx_entity_src_gen_clone/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6459,7 +6459,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!='' and @entry_id!='' and @step_id!=''">
         <PDBo:reference_to_pdbx_entity_src_gen_clone>
-          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_clone/,,">
+          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_clone/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_clone_ligation rdf:resource="{$base}/pdbx_entity_src_gen_clone_ligation/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_entity_src_gen_clone>
@@ -6485,7 +6485,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!='' and @entry_id!='' and @step_id!=''">
         <PDBo:reference_to_pdbx_entity_src_gen_clone>
-          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_clone/,,">
+          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_clone/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_clone_recombination rdf:resource="{$base}/pdbx_entity_src_gen_clone_recombination/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_entity_src_gen_clone>
@@ -6525,7 +6525,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_express rdf:resource="{$base}/pdbx_entity_src_gen_express/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6533,7 +6533,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_express rdf:resource="{$base}/pdbx_entity_src_gen_express/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6569,7 +6569,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!='' and @entry_id!='' and @step_id!=''">
         <PDBo:reference_to_pdbx_entity_src_gen_express>
-          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_express/,,">
+          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_express/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_express_timepoint rdf:resource="{$base}/pdbx_entity_src_gen_express_timepoint/{$entity_id_encoded},{$entry_id_encoded},{$serial_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_entity_src_gen_express>
@@ -6595,7 +6595,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_fract rdf:resource="{$base}/pdbx_entity_src_gen_fract/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6603,7 +6603,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_fract rdf:resource="{$base}/pdbx_entity_src_gen_fract/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6629,7 +6629,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_lysis rdf:resource="{$base}/pdbx_entity_src_gen_lysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6637,7 +6637,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_lysis rdf:resource="{$base}/pdbx_entity_src_gen_lysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6671,7 +6671,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_prod_digest rdf:resource="{$base}/pdbx_entity_src_gen_prod_digest/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6679,7 +6679,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_prod_digest rdf:resource="{$base}/pdbx_entity_src_gen_prod_digest/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6705,7 +6705,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_prod_other rdf:resource="{$base}/pdbx_entity_src_gen_prod_other/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6713,7 +6713,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_prod_other rdf:resource="{$base}/pdbx_entity_src_gen_prod_other/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6741,7 +6741,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!='' and @entry_id!='' and @step_id!=''">
         <PDBo:reference_to_pdbx_entity_src_gen_prod_other>
-          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_prod_other/,,">
+          <rdf:Description rdf:about="{$base}/pdbx_entity_src_gen_prod_other/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_prod_other_parameter rdf:resource="{$base}/pdbx_entity_src_gen_prod_other_parameter/{$entity_id_encoded},{$entry_id_encoded},{$parameter_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_entity_src_gen_prod_other>
@@ -6767,7 +6767,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_prod_pcr rdf:resource="{$base}/pdbx_entity_src_gen_prod_pcr/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6775,7 +6775,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_prod_pcr rdf:resource="{$base}/pdbx_entity_src_gen_prod_pcr/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6817,7 +6817,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_proteolysis rdf:resource="{$base}/pdbx_entity_src_gen_proteolysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6825,7 +6825,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_proteolysis rdf:resource="{$base}/pdbx_entity_src_gen_proteolysis/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6851,7 +6851,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_pure rdf:resource="{$base}/pdbx_entity_src_gen_pure/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6859,7 +6859,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_pure rdf:resource="{$base}/pdbx_entity_src_gen_pure/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6893,7 +6893,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6901,7 +6901,7 @@
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{$entity_id_encoded},{$entry_id_encoded},{$step_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6949,7 +6949,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_entity_src_syn rdf:resource="{$base}/pdbx_entity_src_syn/{$entity_id_encoded},{$pdbx_src_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -6971,7 +6971,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_entry_details rdf:resource="{$base}/pdbx_entry_details/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -6993,7 +6993,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
         <PDBo:reference_to_exptl_crystal>
-          <rdf:Description rdf:about="{$base}/exptl_crystal/">
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{$crystal_id_encoded}">
             <PDBo:referenced_by_pdbx_exptl_crystal_cryo_treatment rdf:resource="{$base}/pdbx_exptl_crystal_cryo_treatment/{$crystal_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_exptl_crystal>
@@ -7017,7 +7017,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
         <PDBo:reference_to_exptl_crystal>
-          <rdf:Description rdf:about="{$base}/exptl_crystal/">
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{$crystal_id_encoded}">
             <PDBo:referenced_by_pdbx_exptl_crystal_grow_comp rdf:resource="{$base}/pdbx_exptl_crystal_grow_comp/{$comp_id_encoded},{$crystal_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_exptl_crystal>
@@ -7041,7 +7041,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
         <PDBo:reference_to_exptl_crystal>
-          <rdf:Description rdf:about="{$base}/exptl_crystal/">
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{$crystal_id_encoded}">
             <PDBo:referenced_by_pdbx_exptl_crystal_grow_sol rdf:resource="{$base}/pdbx_exptl_crystal_grow_sol/{$crystal_id_encoded},{$sol_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_exptl_crystal>
@@ -7065,7 +7065,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@crystal_id!=''">
         <PDBo:reference_to_exptl_crystal>
-          <rdf:Description rdf:about="{$base}/exptl_crystal/">
+          <rdf:Description rdf:about="{$base}/exptl_crystal/{$crystal_id_encoded}">
             <PDBo:referenced_by_pdbx_exptl_crystal_process rdf:resource="{$base}/pdbx_exptl_crystal_process/{$crystal_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_exptl_crystal>
@@ -7087,7 +7087,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_exptl_pd rdf:resource="{$base}/pdbx_exptl_pd/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -7145,7 +7145,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@family_prd_id!=''">
         <PDBo:reference_to_pdbx_reference_molecule_family>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_family/">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_family/{$family_prd_id_encoded}">
             <PDBo:referenced_by_pdbx_family_prd_audit rdf:resource="{$base}/pdbx_family_prd_audit/{$action_type_encoded},{$date_encoded},{$family_prd_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -7253,7 +7253,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_helical_symmetry rdf:resource="{$base}/pdbx_helical_symmetry/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -7275,7 +7275,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_helical_symmetry_depositor_info rdf:resource="{$base}/pdbx_helical_symmetry_depositor_info/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -7385,7 +7385,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@linked_entity_id!=''">
         <PDBo:reference_to_pdbx_linked_entity>
-          <rdf:Description rdf:about="{$base}/pdbx_linked_entity/">
+          <rdf:Description rdf:about="{$base}/pdbx_linked_entity/{$linked_entity_id_encoded}">
             <PDBo:referenced_by_pdbx_linked_entity_instance_list rdf:resource="{$base}/pdbx_linked_entity_instance_list/{$asym_id_encoded},{$instance_id_encoded},{$linked_entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_linked_entity>
@@ -7393,7 +7393,7 @@
       </xsl:if>
       <xsl:if test="@asym_id!=''">
         <PDBo:reference_to_struct_asym>
-          <rdf:Description rdf:about="{$base}/struct_asym/">
+          <rdf:Description rdf:about="{$base}/struct_asym/{$asym_id_encoded}">
             <PDBo:referenced_by_pdbx_linked_entity_instance_list rdf:resource="{$base}/pdbx_linked_entity_instance_list/{$asym_id_encoded},{$instance_id_encoded},{$linked_entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_asym>
@@ -7417,7 +7417,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="PDBx:component_1!='' and PDBx:entity_id_1!='' and @linked_entity_id!=''">
         <PDBo:reference_to_pdbx_linked_entity_list>
-          <rdf:Description rdf:about="{$base}/pdbx_linked_entity_list/{translate(PDBx:component_1,' ^','__')},{translate(PDBx:entity_id_1,' ^','__')},">
+          <rdf:Description rdf:about="{$base}/pdbx_linked_entity_list/{translate(PDBx:component_1,' ^','__')}{translate(PDBx:entity_id_1,' ^','__')},,{$linked_entity_id_encoded}">
             <PDBo:referenced_by_pdbx_linked_entity_link_list rdf:resource="{$base}/pdbx_linked_entity_link_list/{$link_id_encoded},{$linked_entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_linked_entity_list>
@@ -7443,7 +7443,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_linked_entity_list rdf:resource="{$base}/pdbx_linked_entity_list/{$component_id_encoded},{$entity_id_encoded},{$linked_entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -7451,7 +7451,7 @@
       </xsl:if>
       <xsl:if test="@linked_entity_id!=''">
         <PDBo:reference_to_pdbx_linked_entity>
-          <rdf:Description rdf:about="{$base}/pdbx_linked_entity/">
+          <rdf:Description rdf:about="{$base}/pdbx_linked_entity/{$linked_entity_id_encoded}">
             <PDBo:referenced_by_pdbx_linked_entity_list rdf:resource="{$base}/pdbx_linked_entity_list/{$component_id_encoded},{$entity_id_encoded},{$linked_entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_linked_entity>
@@ -7537,7 +7537,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
         <PDBo:reference_to_struct_asym>
-          <rdf:Description rdf:about="{$base}/struct_asym/">
+          <rdf:Description rdf:about="{$base}/struct_asym/{$asym_id_encoded}">
             <PDBo:referenced_by_pdbx_molecule rdf:resource="{$base}/pdbx_molecule/{$asym_id_encoded},{$instance_id_encoded},{$prd_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_asym>
@@ -7601,7 +7601,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_na_struct_keywds rdf:resource="{$base}/pdbx_na_struct_keywds/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -7699,7 +7699,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@software_id!=''">
         <PDBo:reference_to_pdbx_nmr_software>
-          <rdf:Description rdf:about="{$base}/pdbx_nmr_software/">
+          <rdf:Description rdf:about="{$base}/pdbx_nmr_software/{$software_id_encoded}">
             <PDBo:referenced_by_pdbx_nmr_chem_shift_software rdf:resource="{$base}/pdbx_nmr_chem_shift_software/{$assigned_chem_shift_list_id_encoded},{$entry_id_encoded},{$software_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_nmr_software>
@@ -7721,7 +7721,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_nmr_computing rdf:resource="{$base}/pdbx_nmr_computing/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -7763,7 +7763,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_nmr_constraints rdf:resource="{$base}/pdbx_nmr_constraints/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -7785,7 +7785,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_nmr_details rdf:resource="{$base}/pdbx_nmr_details/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -7807,7 +7807,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_nmr_ensemble rdf:resource="{$base}/pdbx_nmr_ensemble/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -7829,7 +7829,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_nmr_ensemble_rms rdf:resource="{$base}/pdbx_nmr_ensemble_rms/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -7899,7 +7899,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_nmr_force_constants rdf:resource="{$base}/pdbx_nmr_force_constants/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -7923,7 +7923,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_nmr_refine rdf:resource="{$base}/pdbx_nmr_refine/{$entry_id_encoded},{$software_ordinal_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -7945,7 +7945,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_nmr_representative rdf:resource="{$base}/pdbx_nmr_representative/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -8055,7 +8055,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@software_id!=''">
         <PDBo:reference_to_pdbx_nmr_software>
-          <rdf:Description rdf:about="{$base}/pdbx_nmr_software/">
+          <rdf:Description rdf:about="{$base}/pdbx_nmr_software/{$software_id_encoded}">
             <PDBo:referenced_by_pdbx_nmr_spectral_peak_software rdf:resource="{$base}/pdbx_nmr_spectral_peak_software/{$entry_id_encoded},{$software_id_encoded},{$spectral_peak_list_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_nmr_software>
@@ -8385,7 +8385,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_point_symmetry rdf:resource="{$base}/pdbx_point_symmetry/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -8407,7 +8407,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_point_symmetry_depositor_info rdf:resource="{$base}/pdbx_point_symmetry_depositor_info/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -8429,7 +8429,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_post_process_details rdf:resource="{$base}/pdbx_post_process_details/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -8453,7 +8453,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_post_process_status rdf:resource="{$base}/pdbx_post_process_status/{$cycle_id_encoded},{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -8479,7 +8479,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@prd_id!=''">
         <PDBo:reference_to_pdbx_reference_molecule>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/{$prd_id_encoded}">
             <PDBo:referenced_by_pdbx_prd_audit rdf:resource="{$base}/pdbx_prd_audit/{$action_type_encoded},{$date_encoded},{$prd_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_molecule>
@@ -8501,7 +8501,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_id!=''">
         <PDBo:reference_to_entity>
-          <rdf:Description rdf:about="{$base}/entity/">
+          <rdf:Description rdf:about="{$base}/entity/{$entity_id_encoded}">
             <PDBo:referenced_by_pdbx_prerelease_seq rdf:resource="{$base}/pdbx_prerelease_seq/{$entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entity>
@@ -8571,7 +8571,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@prd_id!=''">
         <PDBo:reference_to_pdbx_reference_molecule>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/{$prd_id_encoded}">
             <PDBo:referenced_by_pdbx_reference_entity_list rdf:resource="{$base}/pdbx_reference_entity_list/{$component_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_molecule>
@@ -8631,7 +8631,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@component_id!='' and @prd_id!='' and @ref_entity_id!=''">
         <PDBo:reference_to_pdbx_reference_entity_list>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_entity_list/,,">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_entity_list/{$component_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}">
             <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="{$base}/pdbx_reference_entity_poly_link/{$component_id_encoded},{$link_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_entity_list>
@@ -8639,7 +8639,7 @@
       </xsl:if>
       <xsl:if test="@prd_id!='' and @ref_entity_id!=''">
         <PDBo:reference_to_pdbx_reference_entity_poly>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_entity_poly/,">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_entity_poly/{$prd_id_encoded},{$ref_entity_id_encoded}">
             <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="{$base}/pdbx_reference_entity_poly_link/{$component_id_encoded},{$link_id_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -8669,7 +8669,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@prd_id!='' and @ref_entity_id!=''">
         <PDBo:reference_to_pdbx_reference_entity_poly>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_entity_poly/,">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_entity_poly/{$prd_id_encoded},{$ref_entity_id_encoded}">
             <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="{$base}/pdbx_reference_entity_poly_seq/{$hetero_encoded},{$mon_id_encoded},{$num_encoded},{$prd_id_encoded},{$ref_entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -8727,7 +8727,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@prd_id!=''">
         <PDBo:reference_to_pdbx_reference_molecule>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule/{$prd_id_encoded}">
             <PDBo:referenced_by_pdbx_reference_entity_subcomponents rdf:resource="{$base}/pdbx_reference_entity_subcomponents/{$prd_id_encoded},{$seq_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_molecule>
@@ -8765,7 +8765,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@linked_entity_id!='' and PDBx:list_id_1!=''">
         <PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity_comp_list/,{translate(PDBx:list_id_1,' ^','__')}">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity_comp_list/{translate(PDBx:list_id_1,' ^','__')}{$linked_entity_id_encoded},">
             <PDBo:referenced_by_pdbx_reference_linked_entity_comp_link rdf:resource="{$base}/pdbx_reference_linked_entity_comp_link/{$link_id_encoded},{$linked_entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
@@ -8789,7 +8789,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@linked_entity_id!=''">
         <PDBo:reference_to_pdbx_reference_linked_entity>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity/">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity/{$linked_entity_id_encoded}">
             <PDBo:referenced_by_pdbx_reference_linked_entity_comp_list rdf:resource="{$base}/pdbx_reference_linked_entity_comp_list/{$linked_entity_id_encoded},{$list_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_linked_entity>
@@ -8813,7 +8813,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@linked_entity_id!='' and PDBx:from_list_id!=''">
         <PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity_comp_list/,{translate(PDBx:from_list_id,' ^','__')}">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_linked_entity_comp_list/{translate(PDBx:from_list_id,' ^','__')}{$linked_entity_id_encoded},">
             <PDBo:referenced_by_pdbx_reference_linked_entity_link rdf:resource="{$base}/pdbx_reference_linked_entity_link/{$link_id_encoded},{$linked_entity_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
@@ -8899,7 +8899,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@family_prd_id!='' and @prd_id!=''">
         <PDBo:reference_to_pdbx_reference_molecule_list>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_list/,">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_list/{$family_prd_id_encoded},{$prd_id_encoded}">
             <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="{$base}/pdbx_reference_molecule_features/{$family_prd_id_encoded},{$ordinal_encoded},{$prd_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -8923,7 +8923,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@family_prd_id!=''">
         <PDBo:reference_to_pdbx_reference_molecule_family>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_family/">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_family/{$family_prd_id_encoded}">
             <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="{$base}/pdbx_reference_molecule_list/{$family_prd_id_encoded},{$prd_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -8965,7 +8965,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@family_prd_id!='' and @prd_id!=''">
         <PDBo:reference_to_pdbx_reference_molecule_list>
-          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_list/,">
+          <rdf:Description rdf:about="{$base}/pdbx_reference_molecule_list/{$family_prd_id_encoded},{$prd_id_encoded}">
             <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="{$base}/pdbx_reference_molecule_synonyms/{$family_prd_id_encoded},{$ordinal_encoded},{$prd_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -9003,7 +9003,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_refine rdf:resource="{$base}/pdbx_refine/{$entry_id_encoded},{$pdbx_refine_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -9199,7 +9199,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_rms_devs_covalent rdf:resource="{$base}/pdbx_rms_devs_covalent/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -9311,7 +9311,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_pdbx_serial_crystallography_data_reduction rdf:resource="{$base}/pdbx_serial_crystallography_data_reduction/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -9333,7 +9333,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_pdbx_serial_crystallography_measurement rdf:resource="{$base}/pdbx_serial_crystallography_measurement/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -9355,7 +9355,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -9377,7 +9377,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery_fixed_target rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery_fixed_target/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -9399,7 +9399,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@diffrn_id!=''">
         <PDBo:reference_to_diffrn>
-          <rdf:Description rdf:about="{$base}/diffrn/">
+          <rdf:Description rdf:about="{$base}/diffrn/{$diffrn_id_encoded}">
             <PDBo:referenced_by_pdbx_serial_crystallography_sample_delivery_injection rdf:resource="{$base}/pdbx_serial_crystallography_sample_delivery_injection/{$diffrn_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_diffrn>
@@ -9429,7 +9429,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
         <PDBo:reference_to_struct_asym>
-          <rdf:Description rdf:about="{$base}/struct_asym/">
+          <rdf:Description rdf:about="{$base}/struct_asym/{$asym_id_encoded}">
             <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="{$base}/pdbx_sifts_unp_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$unp_acc_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_asym>
@@ -9457,7 +9457,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
         <PDBo:reference_to_struct_asym>
-          <rdf:Description rdf:about="{$base}/struct_asym/">
+          <rdf:Description rdf:about="{$base}/struct_asym/{$asym_id_encoded}">
             <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="{$base}/pdbx_sifts_xref_db/{$asym_id_encoded},{$entity_id_encoded},{$seq_id_encoded},{$seq_id_ordinal_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_asym>
@@ -9493,7 +9493,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
         <PDBo:reference_to_struct_asym>
-          <rdf:Description rdf:about="{$base}/struct_asym/">
+          <rdf:Description rdf:about="{$base}/struct_asym/{$asym_id_encoded}">
             <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="{$base}/pdbx_sifts_xref_db_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$seq_id_end_encoded},{$seq_id_start_encoded},{$xref_db_encoded},{$xref_db_acc_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_asym>
@@ -9517,7 +9517,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_soln_scatter rdf:resource="{$base}/pdbx_soln_scatter/{$entry_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -9625,7 +9625,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@assembly_id!=''">
         <PDBo:reference_to_pdbx_struct_assembly>
-          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/">
+          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/{$assembly_id_encoded}">
             <PDBo:referenced_by_pdbx_struct_assembly_auth_classification rdf:resource="{$base}/pdbx_struct_assembly_auth_classification/{$assembly_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_struct_assembly>
@@ -9649,7 +9649,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@assembly_id!=''">
         <PDBo:reference_to_pdbx_struct_assembly>
-          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/">
+          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/{$assembly_id_encoded}">
             <PDBo:referenced_by_pdbx_struct_assembly_auth_evidence rdf:resource="{$base}/pdbx_struct_assembly_auth_evidence/{$assembly_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_struct_assembly>
@@ -9673,7 +9673,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@assembly_id!=''">
         <PDBo:reference_to_pdbx_struct_assembly_depositor_info>
-          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly_depositor_info/">
+          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly_depositor_info/{$assembly_id_encoded}">
             <PDBo:referenced_by_pdbx_struct_assembly_auth_evidence_depositor_info rdf:resource="{$base}/pdbx_struct_assembly_auth_evidence_depositor_info/{$assembly_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_struct_assembly_depositor_info>
@@ -9713,7 +9713,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@assembly_id!=''">
         <PDBo:reference_to_pdbx_struct_assembly>
-          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/">
+          <rdf:Description rdf:about="{$base}/pdbx_struct_assembly/{$assembly_id_encoded}">
             <PDBo:referenced_by_pdbx_struct_assembly_gen rdf:resource="{$base}/pdbx_struct_assembly_gen/{$assembly_id_encoded},{$asym_id_list_encoded},{$oper_expression_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_struct_assembly>
@@ -9791,7 +9791,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_inst_id!=''">
         <PDBo:reference_to_pdbx_struct_entity_inst>
-          <rdf:Description rdf:about="{$base}/pdbx_struct_entity_inst/">
+          <rdf:Description rdf:about="{$base}/pdbx_struct_entity_inst/{$entity_inst_id_encoded}">
             <PDBo:referenced_by_pdbx_struct_asym_gen rdf:resource="{$base}/pdbx_struct_asym_gen/{$entity_inst_id_encoded},{$oper_expression_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_struct_entity_inst>
@@ -9815,7 +9815,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@biol_id!=''">
         <PDBo:reference_to_struct_biol>
-          <rdf:Description rdf:about="{$base}/struct_biol/">
+          <rdf:Description rdf:about="{$base}/struct_biol/{$biol_id_encoded}">
             <PDBo:referenced_by_pdbx_struct_biol_func rdf:resource="{$base}/pdbx_struct_biol_func/{$biol_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_biol>
@@ -10013,7 +10013,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entity_inst_id!=''">
         <PDBo:reference_to_pdbx_struct_entity_inst>
-          <rdf:Description rdf:about="{$base}/pdbx_struct_entity_inst/">
+          <rdf:Description rdf:about="{$base}/pdbx_struct_entity_inst/{$entity_inst_id_encoded}">
             <PDBo:referenced_by_pdbx_struct_msym_gen rdf:resource="{$base}/pdbx_struct_msym_gen/{$entity_inst_id_encoded},{$msym_id_encoded},{$oper_expression_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_struct_entity_inst>
@@ -10169,7 +10169,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@feature_id!=''">
         <PDBo:reference_to_pdbx_struct_ref_seq_feature>
-          <rdf:Description rdf:about="{$base}/pdbx_struct_ref_seq_feature/">
+          <rdf:Description rdf:about="{$base}/pdbx_struct_ref_seq_feature/{$feature_id_encoded}">
             <PDBo:referenced_by_pdbx_struct_ref_seq_feature_prop rdf:resource="{$base}/pdbx_struct_ref_seq_feature_prop/{$feature_id_encoded},{$property_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_pdbx_struct_ref_seq_feature>
@@ -10209,7 +10209,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@sheet_id!=''">
         <PDBo:reference_to_struct_sheet>
-          <rdf:Description rdf:about="{$base}/struct_sheet/">
+          <rdf:Description rdf:about="{$base}/struct_sheet/{$sheet_id_encoded}">
             <PDBo:referenced_by_pdbx_struct_sheet_hbond rdf:resource="{$base}/pdbx_struct_sheet_hbond/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_sheet>
@@ -10261,7 +10261,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_summary_flags rdf:resource="{$base}/pdbx_summary_flags/{$entry_id_encoded},{$flag_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -10621,7 +10621,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_pdbx_version rdf:resource="{$base}/pdbx_version/{$entry_id_encoded},{$major_version_encoded},{$minor_version_encoded},{$revision_type_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -10809,7 +10809,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_phasing_MAD rdf:resource="{$base}/phasing_MAD/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -10833,7 +10833,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@expt_id!=''">
         <PDBo:reference_to_phasing_MAD_expt>
-          <rdf:Description rdf:about="{$base}/phasing_MAD_expt/">
+          <rdf:Description rdf:about="{$base}/phasing_MAD_expt/{$expt_id_encoded}">
             <PDBo:referenced_by_phasing_MAD_clust rdf:resource="{$base}/phasing_MAD_clust/{$expt_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_phasing_MAD_expt>
@@ -10875,7 +10875,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@expt_id!=''">
         <PDBo:reference_to_phasing_MAD_expt>
-          <rdf:Description rdf:about="{$base}/phasing_MAD_expt/">
+          <rdf:Description rdf:about="{$base}/phasing_MAD_expt/{$expt_id_encoded}">
             <PDBo:referenced_by_phasing_MAD_ratio rdf:resource="{$base}/phasing_MAD_ratio/{$clust_id_encoded},{$expt_id_encoded},{$wavelength_1_encoded},{$wavelength_2_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_phasing_MAD_expt>
@@ -10903,7 +10903,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@expt_id!=''">
         <PDBo:reference_to_phasing_MAD_expt>
-          <rdf:Description rdf:about="{$base}/phasing_MAD_expt/">
+          <rdf:Description rdf:about="{$base}/phasing_MAD_expt/{$expt_id_encoded}">
             <PDBo:referenced_by_phasing_MAD_set rdf:resource="{$base}/phasing_MAD_set/{$clust_id_encoded},{$expt_id_encoded},{$set_id_encoded},{$wavelength_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_phasing_MAD_expt>
@@ -10911,7 +10911,7 @@
       </xsl:if>
       <xsl:if test="@set_id!=''">
         <PDBo:reference_to_phasing_set>
-          <rdf:Description rdf:about="{$base}/phasing_set/">
+          <rdf:Description rdf:about="{$base}/phasing_set/{$set_id_encoded}">
             <PDBo:referenced_by_phasing_MAD_set rdf:resource="{$base}/phasing_MAD_set/{$clust_id_encoded},{$expt_id_encoded},{$set_id_encoded},{$wavelength_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_phasing_set>
@@ -10933,7 +10933,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_phasing_MIR rdf:resource="{$base}/phasing_MIR/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -10985,7 +10985,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@der_id!=''">
         <PDBo:reference_to_phasing_MIR_der>
-          <rdf:Description rdf:about="{$base}/phasing_MIR_der/">
+          <rdf:Description rdf:about="{$base}/phasing_MIR_der/{$der_id_encoded}">
             <PDBo:referenced_by_phasing_MIR_der_refln rdf:resource="{$base}/phasing_MIR_der_refln/{$der_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_phasing_MIR_der>
@@ -10993,7 +10993,7 @@
       </xsl:if>
       <xsl:if test="@set_id!=''">
         <PDBo:reference_to_phasing_set>
-          <rdf:Description rdf:about="{$base}/phasing_set/">
+          <rdf:Description rdf:about="{$base}/phasing_set/{$set_id_encoded}">
             <PDBo:referenced_by_phasing_MIR_der_refln rdf:resource="{$base}/phasing_MIR_der_refln/{$der_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_phasing_set>
@@ -11019,7 +11019,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@der_id!=''">
         <PDBo:reference_to_phasing_MIR_der>
-          <rdf:Description rdf:about="{$base}/phasing_MIR_der/">
+          <rdf:Description rdf:about="{$base}/phasing_MIR_der/{$der_id_encoded}">
             <PDBo:referenced_by_phasing_MIR_der_shell rdf:resource="{$base}/phasing_MIR_der_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$der_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_phasing_MIR_der>
@@ -11043,7 +11043,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@der_id!=''">
         <PDBo:reference_to_phasing_MIR_der>
-          <rdf:Description rdf:about="{$base}/phasing_MIR_der/">
+          <rdf:Description rdf:about="{$base}/phasing_MIR_der/{$der_id_encoded}">
             <PDBo:referenced_by_phasing_MIR_der_site rdf:resource="{$base}/phasing_MIR_der_site/{$der_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_phasing_MIR_der>
@@ -11081,7 +11081,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_phasing_averaging rdf:resource="{$base}/phasing_averaging/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -11103,7 +11103,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_phasing_isomorphous rdf:resource="{$base}/phasing_isomorphous/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -11145,7 +11145,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@set_id!=''">
         <PDBo:reference_to_phasing_set>
-          <rdf:Description rdf:about="{$base}/phasing_set/">
+          <rdf:Description rdf:about="{$base}/phasing_set/{$set_id_encoded}">
             <PDBo:referenced_by_phasing_set_refln rdf:resource="{$base}/phasing_set_refln/{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_phasing_set>
@@ -11167,7 +11167,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_publ rdf:resource="{$base}/publ/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -11219,7 +11219,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_publ_manuscript_incl rdf:resource="{$base}/publ_manuscript_incl/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -11243,7 +11243,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_refine rdf:resource="{$base}/refine/{$entry_id_encoded},{$pdbx_refine_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -11283,7 +11283,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_refine_analyze rdf:resource="{$base}/refine_analyze/{$entry_id_encoded},{$pdbx_refine_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -11569,7 +11569,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_struct rdf:resource="{$base}/struct/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -11640,7 +11640,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
         <PDBo:reference_to_struct_asym>
-          <rdf:Description rdf:about="{$base}/struct_asym/">
+          <rdf:Description rdf:about="{$base}/struct_asym/{$asym_id_encoded}">
             <PDBo:referenced_by_struct_biol_gen rdf:resource="{$base}/struct_biol_gen/{$asym_id_encoded},{$biol_id_encoded},{$symmetry_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_asym>
@@ -11648,7 +11648,7 @@
       </xsl:if>
       <xsl:if test="@biol_id!=''">
         <PDBo:reference_to_struct_biol>
-          <rdf:Description rdf:about="{$base}/struct_biol/">
+          <rdf:Description rdf:about="{$base}/struct_biol/{$biol_id_encoded}">
             <PDBo:referenced_by_struct_biol_gen rdf:resource="{$base}/struct_biol_gen/{$asym_id_encoded},{$biol_id_encoded},{$symmetry_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_biol>
@@ -11672,7 +11672,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@biol_id!=''">
         <PDBo:reference_to_struct_biol>
-          <rdf:Description rdf:about="{$base}/struct_biol/">
+          <rdf:Description rdf:about="{$base}/struct_biol/{$biol_id_encoded}">
             <PDBo:referenced_by_struct_biol_keywords rdf:resource="{$base}/struct_biol_keywords/{$biol_id_encoded},{$text_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_biol>
@@ -11696,7 +11696,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@biol_id!=''">
         <PDBo:reference_to_struct_biol>
-          <rdf:Description rdf:about="{$base}/struct_biol/">
+          <rdf:Description rdf:about="{$base}/struct_biol/{$biol_id_encoded}">
             <PDBo:referenced_by_struct_biol_view rdf:resource="{$base}/struct_biol_view/{$biol_id_encoded},{$id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_biol>
@@ -11790,7 +11790,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_struct_keywords rdf:resource="{$base}/struct_keywords/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -11812,7 +11812,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_struct_mon_details rdf:resource="{$base}/struct_mon_details/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>
@@ -11890,7 +11890,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@pdbx_ens_id!=''">
         <PDBo:reference_to_struct_ncs_ens>
-          <rdf:Description rdf:about="{$base}/struct_ncs_ens/">
+          <rdf:Description rdf:about="{$base}/struct_ncs_ens/{$pdbx_ens_id_encoded}">
             <PDBo:referenced_by_struct_ncs_dom rdf:resource="{$base}/struct_ncs_dom/{$id_encoded},{$pdbx_ens_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_ncs_ens>
@@ -11916,7 +11916,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@dom_id!='' and @pdbx_ens_id!=''">
         <PDBo:reference_to_struct_ncs_dom>
-          <rdf:Description rdf:about="{$base}/struct_ncs_dom/,">
+          <rdf:Description rdf:about="{$base}/struct_ncs_dom/{$dom_id_encoded},{$pdbx_ens_id_encoded}">
             <PDBo:referenced_by_struct_ncs_dom_lim rdf:resource="{$base}/struct_ncs_dom_lim/{$dom_id_encoded},{$pdbx_component_id_encoded},{$pdbx_ens_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_ncs_dom>
@@ -11958,7 +11958,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@ens_id!=''">
         <PDBo:reference_to_struct_ncs_ens>
-          <rdf:Description rdf:about="{$base}/struct_ncs_ens/">
+          <rdf:Description rdf:about="{$base}/struct_ncs_ens/{$ens_id_encoded}">
             <PDBo:referenced_by_struct_ncs_ens_gen rdf:resource="{$base}/struct_ncs_ens_gen/{$dom_id_1_encoded},{$dom_id_2_encoded},{$ens_id_encoded},{$oper_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_ncs_ens>
@@ -11966,7 +11966,7 @@
       </xsl:if>
       <xsl:if test="@oper_id!=''">
         <PDBo:reference_to_struct_ncs_oper>
-          <rdf:Description rdf:about="{$base}/struct_ncs_oper/">
+          <rdf:Description rdf:about="{$base}/struct_ncs_oper/{$oper_id_encoded}">
             <PDBo:referenced_by_struct_ncs_ens_gen rdf:resource="{$base}/struct_ncs_ens_gen/{$dom_id_1_encoded},{$dom_id_2_encoded},{$ens_id_encoded},{$oper_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_ncs_oper>
@@ -12086,7 +12086,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@sheet_id!=''">
         <PDBo:reference_to_struct_sheet>
-          <rdf:Description rdf:about="{$base}/struct_sheet/">
+          <rdf:Description rdf:about="{$base}/struct_sheet/{$sheet_id_encoded}">
             <PDBo:referenced_by_struct_sheet_hbond rdf:resource="{$base}/struct_sheet_hbond/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_sheet>
@@ -12112,7 +12112,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@sheet_id!=''">
         <PDBo:reference_to_struct_sheet>
-          <rdf:Description rdf:about="{$base}/struct_sheet/">
+          <rdf:Description rdf:about="{$base}/struct_sheet/{$sheet_id_encoded}">
             <PDBo:referenced_by_struct_sheet_order rdf:resource="{$base}/struct_sheet_order/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_sheet>
@@ -12136,7 +12136,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@sheet_id!=''">
         <PDBo:reference_to_struct_sheet>
-          <rdf:Description rdf:about="{$base}/struct_sheet/">
+          <rdf:Description rdf:about="{$base}/struct_sheet/{$sheet_id_encoded}">
             <PDBo:referenced_by_struct_sheet_range rdf:resource="{$base}/struct_sheet_range/{$id_encoded},{$sheet_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_sheet>
@@ -12162,7 +12162,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@sheet_id!=''">
         <PDBo:reference_to_struct_sheet>
-          <rdf:Description rdf:about="{$base}/struct_sheet/">
+          <rdf:Description rdf:about="{$base}/struct_sheet/{$sheet_id_encoded}">
             <PDBo:referenced_by_struct_sheet_topology rdf:resource="{$base}/struct_sheet_topology/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_sheet>
@@ -12200,7 +12200,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@site_id!=''">
         <PDBo:reference_to_struct_site>
-          <rdf:Description rdf:about="{$base}/struct_site/">
+          <rdf:Description rdf:about="{$base}/struct_site/{$site_id_encoded}">
             <PDBo:referenced_by_struct_site_gen rdf:resource="{$base}/struct_site_gen/{$id_encoded},{$site_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_site>
@@ -12224,7 +12224,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@site_id!=''">
         <PDBo:reference_to_struct_site>
-          <rdf:Description rdf:about="{$base}/struct_site/">
+          <rdf:Description rdf:about="{$base}/struct_site/{$site_id_encoded}">
             <PDBo:referenced_by_struct_site_keywords rdf:resource="{$base}/struct_site_keywords/{$site_id_encoded},{$text_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_struct_site>
@@ -12268,7 +12268,7 @@
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
-          <rdf:Description rdf:about="{$base}/entry/">
+          <rdf:Description rdf:about="{$base}/entry/{$entry_id_encoded}">
             <PDBo:referenced_by_symmetry rdf:resource="{$base}/symmetry/{$entry_id_encoded}"/>
           </rdf:Description>
         </PDBo:reference_to_entry>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pdbml.pdb.org/schema/pdbx-v50.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xsd:annotation>
-    <xsd:appinfo>PDBML Schema v5.415</xsd:appinfo>
+    <xsd:appinfo>PDBML Schema v5.416</xsd:appinfo>
     <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xml:lang="en">
 
-PDBML Schema translated from the PDBx/mmCIF Dictionary v5.415:
+PDBML Schema translated from the PDBx/mmCIF Dictionary v5.416:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </xsd:documentation>
@@ -21638,6 +21638,7 @@ The name of the model of microscope.
                   <xsd:enumeration value="JEOL 3100FFC"/>
                   <xsd:enumeration value="JEOL 3200FS"/>
                   <xsd:enumeration value="JEOL 3200FSC"/>
+                  <xsd:enumeration value="JEOL JEM-F200"/>
                   <xsd:enumeration value="JEOL KYOTO-3000SFF"/>
                   <xsd:enumeration value="JEOL 4000"/>
                   <xsd:enumeration value="JEOL 4000EX"/>
@@ -25076,7 +25077,10 @@ The type of instrument used in the vitrification process.
               </xsd:annotation>
               <xsd:simpleType>
                 <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="CHAMELEON"/>
+                  <xsd:enumeration value="CRYOGENIUM"/>
                   <xsd:enumeration value="CRYOSOL VITROJET"/>
+                  <xsd:enumeration value="CRYOWRITER"/>
                   <xsd:enumeration value="EMS-002 RAPID IMMERSION FREEZER"/>
                   <xsd:enumeration value="FEI VITROBOT MARK I"/>
                   <xsd:enumeration value="FEI VITROBOT MARK II"/>
@@ -25086,6 +25090,7 @@ The type of instrument used in the vitrification process.
                   <xsd:enumeration value="HOMEMADE PLUNGER"/>
                   <xsd:enumeration value="LEICA PLUNGER"/>
                   <xsd:enumeration value="LEICA EM GP"/>
+                  <xsd:enumeration value="LEICA EM GP2"/>
                   <xsd:enumeration value="LEICA EM CPC"/>
                   <xsd:enumeration value="LEICA KF80"/>
                   <xsd:enumeration value="REICHERT-JUNG PLUNGER"/>
@@ -34656,9 +34661,12 @@ from observed geometries in atomic coordinate files.
                   <xsd:enumeration value="trigonal planar tricapped"/>
                   <xsd:enumeration value="octahedral"/>
                   <xsd:enumeration value="trigonal prismatic"/>
-                  <xsd:enumeration value="pentagonal bipyramidal with vacancy"/>
-                  <xsd:enumeration value="octahedral monocapped with vacancy"/>
-                  <xsd:enumeration value="trigonal prismatic monocapped with vacancy"/>
+                  <xsd:enumeration value="pentagonal bipyramidal with axial vacancy"/>
+                  <xsd:enumeration value="pentagonal bipyramidal with equatorial vacancy"/>
+                  <xsd:enumeration value="octahedral monocapped with capped face vacancy"/>
+                  <xsd:enumeration value="octahedral monocapped with non-capped face vacancy"/>
+                  <xsd:enumeration value="trigonal prismatic monocapped with capped face vacancy"/>
+                  <xsd:enumeration value="trigonal prismatic monocapped with non-capped face vacancy"/>
                   <xsd:enumeration value="sandwich 4h 2"/>
                   <xsd:enumeration value="sandwich 4 2"/>
                   <xsd:enumeration value="sandwich 5 1"/>
@@ -34666,8 +34674,10 @@ from observed geometries in atomic coordinate files.
                   <xsd:enumeration value="hexagonal planar"/>
                   <xsd:enumeration value="pentagonal bipyramidal"/>
                   <xsd:enumeration value="trigonal prismatic monocapped"/>
-                  <xsd:enumeration value="octahedral monocapped"/>
-                  <xsd:enumeration value="hexagonal bipyramidal with vacancy"/>
+                  <xsd:enumeration value="octahedral edge monocapped"/>
+                  <xsd:enumeration value="octahedral face monocapped"/>
+                  <xsd:enumeration value="hexagonal bipyramidal with axial vacancy"/>
+                  <xsd:enumeration value="hexagonal bipyramidal with equatorial vacancy"/>
                   <xsd:enumeration value="cubic with vacancy"/>
                   <xsd:enumeration value="square antiprismatic with vacancy"/>
                   <xsd:enumeration value="sandwich 6 1"/>
@@ -34677,8 +34687,10 @@ from observed geometries in atomic coordinate files.
                   <xsd:enumeration value="hexagonal bipyramidal"/>
                   <xsd:enumeration value="cubic"/>
                   <xsd:enumeration value="square antiprismatic"/>
-                  <xsd:enumeration value="octahedral bicapped"/>
-                  <xsd:enumeration value="trigonal prismatic bicapped"/>
+                  <xsd:enumeration value="octahedral cis bicapped"/>
+                  <xsd:enumeration value="octahedral trans bicapped"/>
+                  <xsd:enumeration value="trigonal prismatic square-face bicapped"/>
+                  <xsd:enumeration value="trigonal prismatic triangular-face bicapped"/>
                   <xsd:enumeration value="sandwich 4h 4h"/>
                   <xsd:enumeration value="sandwich 7 1"/>
                   <xsd:enumeration value="sandwich 4h 4"/>
@@ -37218,6 +37230,7 @@ Phosphorylation
                   <xsd:enumeration value="Hydroxysulfanylation"/>
                   <xsd:enumeration value="Hypusine"/>
                   <xsd:enumeration value="Iodination"/>
+                  <xsd:enumeration value="Isobutyrylation"/>
                   <xsd:enumeration value="Isoleucylation"/>
                   <xsd:enumeration value="Lactoylation"/>
                   <xsd:enumeration value="Laurylation"/>
@@ -40228,8 +40241,7 @@ BDL001
   <xsd:complexType name="pdbx_database_relatedType">
     <xsd:annotation>
       <xsd:documentation xml:lang="en">
-Data items in PDBX_DATABASE_RELATED contain references to entries
-that are related to the this entry.
+Data items in PDBX_DATABASE_RELATED contain references to related entries.
 &lt;PDBx:pdbx_database_relatedCategory&gt;
    &lt;PDBx:pdbx_database_related content_type="native structure" db_id="1ABC" db_name="PDB"&gt;&lt;/PDBx:pdbx_database_related&gt;
 &lt;/PDBx:pdbx_database_relatedCategory&gt;
@@ -44792,7 +44804,7 @@ Data items in the PDBX_DIFFRN_ED record details specific to electron diffraction
       &lt;PDBx:beam_diameter_sample_plane&gt;3.5&lt;/PDBx:beam_diameter_sample_plane&gt;
       &lt;PDBx:c2_aperture_diameter&gt;50&lt;/PDBx:c2_aperture_diameter&gt;
       &lt;PDBx:camera_length&gt;1402&lt;/PDBx:camera_length&gt;
-      &lt;PDBx:details&gt;The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10&amp;amp;#8201;eV, with the zero-loss peak centered in defocused diffraction&lt;/PDBx:details&gt;
+      &lt;PDBx:details&gt;The microscope was aligned for low flux density using spot size 11, and gun lens setting 8 for a less bright but more coherent illumination. The energy filter was tuned to pass electrons with energy losses less than 10 eV, with the zero-loss peak centered in defocused diffraction&lt;/PDBx:details&gt;
       &lt;PDBx:diffrn_id&gt;1&lt;/PDBx:diffrn_id&gt;
       &lt;PDBx:electron_source&gt;FIELD EMISSION GUN&lt;/PDBx:electron_source&gt;
       &lt;PDBx:energyfilter_name&gt;TFS Selectris&lt;/PDBx:energyfilter_name&gt;
@@ -50584,7 +50596,7 @@ for subsequent diffraction experiments.
     Example 1 - based on PDB entry 9dho
 &lt;PDBx:pdbx_exptl_crystal_processCategory&gt;
    &lt;PDBx:pdbx_exptl_crystal_process crystal_id="1" id="1"&gt;
-      &lt;PDBx:details&gt;stepwise protocol to an optimal thickness of approximately 300&amp;amp;#8201;nm using a 30&amp;amp;#8201;kV Argon plasma ion beam&lt;/PDBx:details&gt;
+      &lt;PDBx:details&gt;stepwise protocol to an optimal thickness of approximately 300 nm using a 30 kV Argon plasma ion beam&lt;/PDBx:details&gt;
       &lt;PDBx:microcrystal_description&gt;lamella&lt;/PDBx:microcrystal_description&gt;
       &lt;PDBx:microcrystal_instrument&gt;Helios Hydra 5 CX dual-beam plasma FIB/SEM (Thermo Fisher Scientific)&lt;/PDBx:microcrystal_instrument&gt;
       &lt;PDBx:microcrystal_max_dim&gt;5&lt;/PDBx:microcrystal_max_dim&gt;
@@ -52077,6 +52089,7 @@ This item identifies the resource of initial model used for refinement
                   <xsd:enumeration value="AlphaFold"/>
                   <xsd:enumeration value="Robetta"/>
                   <xsd:enumeration value="RoseTTAFold"/>
+                  <xsd:enumeration value="ModelAngelo"/>
                   <xsd:enumeration value="ModelArchive"/>
                   <xsd:enumeration value="SwissModel"/>
                   <xsd:enumeration value="Modeller"/>
@@ -53523,6 +53536,7 @@ Phosphorylation
                   <xsd:enumeration value="Hydroxysulfanylation"/>
                   <xsd:enumeration value="Hypusine"/>
                   <xsd:enumeration value="Iodination"/>
+                  <xsd:enumeration value="Isobutyrylation"/>
                   <xsd:enumeration value="Isoleucylation"/>
                   <xsd:enumeration value="Lactoylation"/>
                   <xsd:enumeration value="Laurylation"/>
@@ -55116,6 +55130,21 @@ Number of constraints of this type and subtype in the file.
               <xsd:simpleType>
                 <xsd:restriction base="xsd:int">
                   <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="constraint_subsubtype" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+
+Another level of description of the type of constraints in the file (simple, 
+ambiguous, etc.)
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="ambi"/>
+                  <xsd:enumeration value="simple"/>
                 </xsd:restriction>
               </xsd:simpleType>
             </xsd:element>
@@ -58380,9 +58409,12 @@ in the coordinate file.
                   <xsd:enumeration value="trigonal planar tricapped"/>
                   <xsd:enumeration value="octahedral"/>
                   <xsd:enumeration value="trigonal prismatic"/>
-                  <xsd:enumeration value="pentagonal bipyramidal with vacancy"/>
-                  <xsd:enumeration value="octahedral monocapped with vacancy"/>
-                  <xsd:enumeration value="trigonal prismatic monocapped with vacancy"/>
+                  <xsd:enumeration value="pentagonal bipyramidal with axial vacancy"/>
+                  <xsd:enumeration value="pentagonal bipyramidal with equatorial vacancy"/>
+                  <xsd:enumeration value="octahedral monocapped with capped face vacancy"/>
+                  <xsd:enumeration value="octahedral monocapped with non-capped face vacancy"/>
+                  <xsd:enumeration value="trigonal prismatic monocapped with capped face vacancy"/>
+                  <xsd:enumeration value="trigonal prismatic monocapped with non-capped face vacancy"/>
                   <xsd:enumeration value="sandwich 4h 2"/>
                   <xsd:enumeration value="sandwich 4 2"/>
                   <xsd:enumeration value="sandwich 5 1"/>
@@ -58390,8 +58422,10 @@ in the coordinate file.
                   <xsd:enumeration value="hexagonal planar"/>
                   <xsd:enumeration value="pentagonal bipyramidal"/>
                   <xsd:enumeration value="trigonal prismatic monocapped"/>
-                  <xsd:enumeration value="octahedral monocapped"/>
-                  <xsd:enumeration value="hexagonal bipyramidal with vacancy"/>
+                  <xsd:enumeration value="octahedral edge monocapped"/>
+                  <xsd:enumeration value="octahedral face monocapped"/>
+                  <xsd:enumeration value="hexagonal bipyramidal with axial vacancy"/>
+                  <xsd:enumeration value="hexagonal bipyramidal with equatorial vacancy"/>
                   <xsd:enumeration value="cubic with vacancy"/>
                   <xsd:enumeration value="square antiprismatic with vacancy"/>
                   <xsd:enumeration value="sandwich 6 1"/>
@@ -58401,8 +58435,10 @@ in the coordinate file.
                   <xsd:enumeration value="hexagonal bipyramidal"/>
                   <xsd:enumeration value="cubic"/>
                   <xsd:enumeration value="square antiprismatic"/>
-                  <xsd:enumeration value="octahedral bicapped"/>
-                  <xsd:enumeration value="trigonal prismatic bicapped"/>
+                  <xsd:enumeration value="octahedral cis bicapped"/>
+                  <xsd:enumeration value="octahedral trans bicapped"/>
+                  <xsd:enumeration value="trigonal prismatic square-face bicapped"/>
+                  <xsd:enumeration value="trigonal prismatic triangular-face bicapped"/>
                   <xsd:enumeration value="sandwich 4h 4h"/>
                   <xsd:enumeration value="sandwich 7 1"/>
                   <xsd:enumeration value="sandwich 4h 4"/>
@@ -93688,7 +93724,7 @@ Ref: Karplus &amp; Diederichs (2012), Science 336, 1030-33
               </xsd:annotation>
               <xsd:simpleType>
                 <xsd:restriction base="xsd:decimal">
-                  <xsd:minInclusive value="0"/>
+                  <xsd:minInclusive value="-1"/>
                   <xsd:maxInclusive value="1"/>
                 </xsd:restriction>
               </xsd:simpleType>
@@ -95419,7 +95455,7 @@ Ref: Karplus &amp; Diederichs (2012), Science 336, 1030-33
               </xsd:annotation>
               <xsd:simpleType>
                 <xsd:restriction base="xsd:decimal">
-                  <xsd:minInclusive value="0"/>
+                  <xsd:minInclusive value="-1"/>
                   <xsd:maxInclusive value="1"/>
                 </xsd:restriction>
               </xsd:simpleType>

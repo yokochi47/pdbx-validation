@@ -539,7 +539,13 @@
                  type="http://www.w3.org/2001/XMLSchema#decimal"/>
    </category_item>
    <category_item name="diffrn_measurement">
+      <data_item name="pdbx_angle_end" type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="pdbx_angle_start" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="pdbx_date" type="http://www.w3.org/2001/XMLSchema#date"/>
+      <data_item name="pdbx_exposure_time_per_image"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="pdbx_rotation_rate"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
    </category_item>
    <category_item name="diffrn_orient_matrix">
       <data_item name="UB11" type="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -1783,6 +1789,22 @@
       <data_item name="length_c_esd" type="http://www.w3.org/2001/XMLSchema#decimal"/>
    </category_item>
    <category_item name="pdbx_diffrn_detector_panel_mapping"/>
+   <category_item name="pdbx_diffrn_ed">
+      <data_item name="beam_diameter_sample_plane"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="c2_aperture_diameter"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="camera_length" type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="energyfilter_lower"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="energyfilter_upper"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="fluence_accumulated"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="fluence_rate" type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="sa_aperture_diameter"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+   </category_item>
    <category_item name="pdbx_diffrn_orientation">
       <data_item name="matrix11" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="matrix12" type="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -2000,10 +2022,17 @@
       <data_item name="pH" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="volume" type="http://www.w3.org/2001/XMLSchema#decimal"/>
    </category_item>
+   <category_item name="pdbx_exptl_crystal_process">
+      <data_item name="microcrystal_max_dim"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="microcrystal_min_dim"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+   </category_item>
    <category_item name="pdbx_exptl_pd">
       <data_item name="spec_preparation_pH"
                  type="http://www.w3.org/2001/XMLSchema#decimal"/>
    </category_item>
+   <category_item name="pdbx_exptl_subtype"/>
    <category_item name="pdbx_family_group_index"/>
    <category_item name="pdbx_family_prd_audit">
       <data_item name="date" type="http://www.w3.org/2001/XMLSchema#date"/>

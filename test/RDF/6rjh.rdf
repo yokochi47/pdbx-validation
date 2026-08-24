@@ -506,7 +506,7 @@
           <PDBo:em_3d_reconstruction rdf:about="http://rdf.wwpdb.org/pdb/6RJH/em_3d_reconstruction/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entry/6RJH">
                 <PDBo:referenced_by_em_3d_reconstruction rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/em_3d_reconstruction/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -827,7 +827,7 @@
           <PDBo:em_vitrification rdf:about="http://rdf.wwpdb.org/pdb/6RJH/em_vitrification/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entry/6RJH">
                 <PDBo:referenced_by_em_vitrification rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/em_vitrification/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -111339,7 +111339,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/1"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111359,7 +111359,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/2"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111379,7 +111379,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/3"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111399,7 +111399,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/4"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111419,7 +111419,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/5"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111439,7 +111439,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/6"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111459,7 +111459,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/7"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111479,7 +111479,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/8"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111499,7 +111499,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/9"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111519,7 +111519,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/10"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111539,7 +111539,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/11"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111559,7 +111559,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/12"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111579,7 +111579,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/13"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111599,7 +111599,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/14"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111619,7 +111619,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/15"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111639,7 +111639,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/16"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111659,7 +111659,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/17"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111679,7 +111679,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/18"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111699,7 +111699,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/19">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/19"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111719,7 +111719,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/20">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/20"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111739,7 +111739,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/21">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/21"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111759,7 +111759,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/22">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/22"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111779,7 +111779,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/23">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/23"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -111799,7 +111799,7 @@
           <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/24">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/chem_comp/LYS">
                 <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/pdbx_unobs_or_zero_occ_residues/24"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
@@ -120709,7 +120709,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/A"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120728,7 +120728,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/B"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120747,7 +120747,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/C"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120766,7 +120766,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/D"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120785,7 +120785,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/E"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120804,7 +120804,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/F"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120823,7 +120823,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/G"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120842,7 +120842,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/H"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120861,7 +120861,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/I"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120880,7 +120880,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/J"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120899,7 +120899,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/K"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120918,7 +120918,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/L"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120937,7 +120937,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/M"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120956,7 +120956,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/N"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120975,7 +120975,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/O"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -120994,7 +120994,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/P"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -121013,7 +121013,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/Q"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -121032,7 +121032,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/R"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -121051,7 +121051,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/S"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -121070,7 +121070,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/T"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -121089,7 +121089,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/U"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -121108,7 +121108,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/V"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -121127,7 +121127,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/W"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -121146,7 +121146,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_asym/X"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -121164,7 +121164,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121191,7 +121191,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121218,7 +121218,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121245,7 +121245,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121272,7 +121272,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P5"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121299,7 +121299,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P6"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121326,7 +121326,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P7"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121353,7 +121353,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P8"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121380,7 +121380,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121407,7 +121407,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121434,7 +121434,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P11"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121461,7 +121461,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P12"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121488,7 +121488,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P13"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121515,7 +121515,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P14"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121542,7 +121542,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P15"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121569,7 +121569,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P16"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121596,7 +121596,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P17"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121623,7 +121623,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P18"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121650,7 +121650,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P19">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P19"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121677,7 +121677,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P20">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P20"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121704,7 +121704,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P21">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P21"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121731,7 +121731,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P22">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P22"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121758,7 +121758,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P23">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P23"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121785,7 +121785,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P24">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P24"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121812,7 +121812,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P25">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P25"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121839,7 +121839,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P26">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P26"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121866,7 +121866,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P27">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P27"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121893,7 +121893,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P28">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P28"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121920,7 +121920,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P29">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P29"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121947,7 +121947,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P30">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P30"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -121974,7 +121974,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P31">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P31"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122001,7 +122001,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P32">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P32"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122028,7 +122028,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P33">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P33"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122055,7 +122055,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P34">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P34"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122082,7 +122082,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P35">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P35"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122109,7 +122109,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P36">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P36"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122136,7 +122136,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P37">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P37"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122163,7 +122163,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P38">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P38"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122190,7 +122190,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P39">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P39"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122217,7 +122217,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P40">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P40"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122244,7 +122244,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P41">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P41"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122271,7 +122271,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P42">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P42"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122298,7 +122298,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P43">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P43"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122325,7 +122325,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P44">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P44"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122352,7 +122352,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P45">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P45"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122379,7 +122379,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P46">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P46"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122406,7 +122406,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P47">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P47"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122433,7 +122433,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P48">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P48"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122460,7 +122460,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P49">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P49"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122487,7 +122487,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P50">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P50"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122514,7 +122514,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P51">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P51"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122541,7 +122541,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P52">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P52"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122568,7 +122568,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P53">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P53"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122595,7 +122595,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P54">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P54"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122622,7 +122622,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P55">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P55"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122649,7 +122649,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P56">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P56"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122676,7 +122676,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P57">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P57"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122703,7 +122703,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P58">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P58"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122730,7 +122730,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P59">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P59"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122757,7 +122757,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P60">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P60"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122784,7 +122784,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P61">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P61"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122811,7 +122811,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P62">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P62"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122838,7 +122838,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P63">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P63"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122865,7 +122865,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P64">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P64"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122892,7 +122892,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P65">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P65"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122919,7 +122919,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P66">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P66"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122946,7 +122946,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P67">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P67"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -122973,7 +122973,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P68">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P68"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123000,7 +123000,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P69">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P69"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123027,7 +123027,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P70">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P70"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123054,7 +123054,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P71">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P71"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123081,7 +123081,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P72">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P72"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123108,7 +123108,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P73">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P73"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123135,7 +123135,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P74">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P74"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123162,7 +123162,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P75">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P75"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123189,7 +123189,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P76">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P76"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123216,7 +123216,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P77">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P77"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123243,7 +123243,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P78">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P78"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123270,7 +123270,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P79">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P79"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123297,7 +123297,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P80">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P80"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123324,7 +123324,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P81">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P81"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123351,7 +123351,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P82">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P82"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123378,7 +123378,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P83">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P83"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123405,7 +123405,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P84">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P84"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123432,7 +123432,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P85">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P85"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123459,7 +123459,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P86">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P86"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123486,7 +123486,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P87">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P87"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123513,7 +123513,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P88">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P88"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123540,7 +123540,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P89">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P89"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123567,7 +123567,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P90">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P90"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123594,7 +123594,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P91">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P91"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123621,7 +123621,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P92">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P92"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123648,7 +123648,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P93">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P93"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123675,7 +123675,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P94">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P94"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123702,7 +123702,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P95">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P95"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123729,7 +123729,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P96">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P96"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123756,7 +123756,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P97">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P97"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123783,7 +123783,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P98">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P98"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123810,7 +123810,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P99">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P99"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123837,7 +123837,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P100">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P100"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123864,7 +123864,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P101">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P101"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123891,7 +123891,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P102">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P102"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123918,7 +123918,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P103">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P103"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123945,7 +123945,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P104">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P104"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123972,7 +123972,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P105">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P105"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -123999,7 +123999,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P106">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P106"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124026,7 +124026,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P107">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P107"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124053,7 +124053,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P108">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P108"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124080,7 +124080,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P109">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P109"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124107,7 +124107,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P110">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P110"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124134,7 +124134,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P111">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P111"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124161,7 +124161,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P112">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P112"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124188,7 +124188,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P113">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P113"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124215,7 +124215,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P114">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P114"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124242,7 +124242,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P115">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P115"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124269,7 +124269,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P116">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P116"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124296,7 +124296,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P117">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P117"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124323,7 +124323,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P118">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P118"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124350,7 +124350,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P119">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P119"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124377,7 +124377,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P120">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P120"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124404,7 +124404,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P121">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P121"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124431,7 +124431,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P122">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P122"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124458,7 +124458,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P123">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P123"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124485,7 +124485,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P124">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P124"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124512,7 +124512,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P125">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P125"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124539,7 +124539,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P126">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P126"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124566,7 +124566,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P127">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P127"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124593,7 +124593,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P128">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P128"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124620,7 +124620,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P129">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P129"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124647,7 +124647,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P130">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P130"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124674,7 +124674,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P131">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P131"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124701,7 +124701,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P132">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P132"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124728,7 +124728,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P133">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P133"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124755,7 +124755,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P134">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P134"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124782,7 +124782,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P135">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P135"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124809,7 +124809,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P136">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P136"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124836,7 +124836,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P137">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P137"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124863,7 +124863,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P138">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P138"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124890,7 +124890,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P139">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P139"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124917,7 +124917,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P140">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P140"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124944,7 +124944,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P141">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P141"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124971,7 +124971,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P142">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P142"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -124998,7 +124998,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P143">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P143"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -125025,7 +125025,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P144">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_conf/HELX_P144"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -143905,7 +143905,7 @@
           <PDBo:struct_ref rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/entity/1">
                 <PDBo:referenced_by_struct_ref rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -143928,7 +143928,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -143949,7 +143949,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -143970,7 +143970,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -143991,7 +143991,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144012,7 +144012,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/5"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144033,7 +144033,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/6"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144054,7 +144054,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/7"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144075,7 +144075,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/8"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144096,7 +144096,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144117,7 +144117,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144138,7 +144138,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/11"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144159,7 +144159,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/12"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144180,7 +144180,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/13"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144201,7 +144201,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/14"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144222,7 +144222,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/15"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144243,7 +144243,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/16"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144264,7 +144264,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/17"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144285,7 +144285,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/18"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144306,7 +144306,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/19">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/19"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144327,7 +144327,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/20">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/20"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144348,7 +144348,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/21">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/21"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144369,7 +144369,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/22">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/22"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144390,7 +144390,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/23">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/23"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -144411,7 +144411,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/24">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/6RJH"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6RJH/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/pdb/6RJH/struct_ref_seq/24"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>

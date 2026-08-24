@@ -78,7 +78,7 @@
           <PDBo:em_3d_reconstruction rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/em_3d_reconstruction/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entry/7ZBU">
                 <PDBo:referenced_by_em_3d_reconstruction rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/em_3d_reconstruction/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -244,7 +244,7 @@
           <PDBo:em_image_scans rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/em_image_scans/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entry/7ZBU">
                 <PDBo:referenced_by_em_image_scans rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/em_image_scans/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -463,7 +463,7 @@
           <PDBo:em_vitrification rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/em_vitrification/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entry/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entry/7ZBU">
                 <PDBo:referenced_by_em_vitrification rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/em_vitrification/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -81021,7 +81021,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/1">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/A"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81040,7 +81040,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/2">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/B"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81059,7 +81059,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/3">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/C"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81078,7 +81078,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/4">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/D"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81097,7 +81097,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/4">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/E"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81116,7 +81116,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/4">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/F"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81135,7 +81135,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/4">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/G"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81154,7 +81154,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/4">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/H"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81173,7 +81173,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/4">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/I"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81192,7 +81192,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/4">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/J"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81211,7 +81211,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/4">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/K"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81230,7 +81230,7 @@
               </PDBo:struct_asym>
             </owl:sameAs>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/5">
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_asym/L"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -81248,7 +81248,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -81275,7 +81275,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -81302,7 +81302,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -81329,7 +81329,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -81356,7 +81356,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P5"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -81383,7 +81383,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P6"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -81410,7 +81410,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P7"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -81437,7 +81437,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P8"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -81464,7 +81464,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -81491,7 +81491,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -81518,7 +81518,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P11"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -81545,7 +81545,7 @@
           <PDBo:struct_conf rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_conf_type>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf_type/HELX_P">
                 <PDBo:referenced_by_struct_conf rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_conf/HELX_P12"/>
               </rdf:Description>
             </PDBo:reference_to_struct_conf_type>
@@ -82246,7 +82246,7 @@
           <PDBo:struct_ref rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/1">
                 <PDBo:referenced_by_struct_ref rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/1"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -82265,7 +82265,7 @@
           <PDBo:struct_ref rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/2">
                 <PDBo:referenced_by_struct_ref rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/2"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -82281,7 +82281,7 @@
           <PDBo:struct_ref rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/entity/3">
                 <PDBo:referenced_by_struct_ref rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/3"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -82301,7 +82301,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/1">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -82322,7 +82322,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/2">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -82343,7 +82343,7 @@
           <PDBo:struct_ref_seq rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref/3">
                 <PDBo:referenced_by_struct_ref_seq rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
@@ -82368,7 +82368,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82388,7 +82388,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82408,7 +82408,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82428,7 +82428,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82448,7 +82448,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/5"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82468,7 +82468,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/6"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82488,7 +82488,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/7"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82508,7 +82508,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/8"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82528,7 +82528,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82548,7 +82548,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82568,7 +82568,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/11"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82588,7 +82588,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/12"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82608,7 +82608,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/13"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82628,7 +82628,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/14"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82648,7 +82648,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/15"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82668,7 +82668,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/16"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82688,7 +82688,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/17"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82708,7 +82708,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/18"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82728,7 +82728,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/19">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/19"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82748,7 +82748,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/20">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/20"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82768,7 +82768,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/21">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/21"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82788,7 +82788,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/22">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/22"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82808,7 +82808,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/23">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/23"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82828,7 +82828,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/24">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/24"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82848,7 +82848,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/25">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/25"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82868,7 +82868,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/26">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/26"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82888,7 +82888,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/27">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/27"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82908,7 +82908,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/28">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/28"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82928,7 +82928,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/29">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/29"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82948,7 +82948,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/30">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/30"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82968,7 +82968,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/31">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/31"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -82988,7 +82988,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/32">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/32"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83010,7 +83010,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/33">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/33"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83032,7 +83032,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/34">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/34"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83054,7 +83054,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/35">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/35"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83076,7 +83076,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/36">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/36"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83096,7 +83096,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/37">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/37"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83116,7 +83116,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/38">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/38"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83136,7 +83136,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/39">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/39"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83156,7 +83156,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/40">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/40"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83176,7 +83176,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/41">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/41"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83196,7 +83196,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/42">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/42"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83216,7 +83216,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/43">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/43"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83236,7 +83236,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/44">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/44"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83256,7 +83256,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/45">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/45"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83276,7 +83276,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/46">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/46"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83296,7 +83296,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/47">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/47"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83316,7 +83316,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/48">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/48"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83336,7 +83336,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/49">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/49"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83356,7 +83356,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/50">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/50"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83376,7 +83376,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/51">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/51"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83396,7 +83396,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/52">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/52"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83416,7 +83416,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/53">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/53"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83436,7 +83436,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/54">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/54"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83456,7 +83456,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/55">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/55"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83476,7 +83476,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/56">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/56"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83496,7 +83496,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/57">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/57"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83516,7 +83516,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/58">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/58"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83536,7 +83536,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/59">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/59"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83556,7 +83556,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/60">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/60"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83576,7 +83576,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/61">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/61"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83596,7 +83596,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/62">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/62"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83616,7 +83616,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/63">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/63"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83636,7 +83636,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/64">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/64"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83656,7 +83656,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/65">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/65"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83676,7 +83676,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/66">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/66"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83696,7 +83696,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/67">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/67"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83716,7 +83716,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/68">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/68"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83736,7 +83736,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/69">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/69"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83756,7 +83756,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/70">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/70"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83776,7 +83776,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/71">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/71"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83796,7 +83796,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/72">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/72"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83816,7 +83816,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/73">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/73"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83836,7 +83836,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/74">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/74"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83856,7 +83856,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/75">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/75"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83876,7 +83876,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/76">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/76"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83896,7 +83896,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/77">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/77"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83916,7 +83916,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/78">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/78"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83936,7 +83936,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/79">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/79"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83956,7 +83956,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/80">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/80"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83976,7 +83976,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/81">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/81"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -83996,7 +83996,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/82">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/82"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -84016,7 +84016,7 @@
           <PDBo:struct_ref_seq_dif rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/83">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_struct_ref_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq/1">
                 <PDBo:referenced_by_struct_ref_seq_dif rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/struct_ref_seq_dif/83"/>
               </rdf:Description>
             </PDBo:reference_to_struct_ref_seq>
@@ -130318,12 +130318,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/3sigma,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/3sigma,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/3sigma,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130342,12 +130342,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/half-bit,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/half-bit,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/half-bit,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130366,12 +130366,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/one-bit,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/one-bit,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/3">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/one-bit,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130390,12 +130390,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.5,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.5,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/4">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.5,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130414,12 +130414,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.333,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.333,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/5">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.333,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130438,12 +130438,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.143,calculated_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/1">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.143,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/6">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.143,calculated_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130462,12 +130462,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/3sigma,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/3sigma,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/7">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/3sigma,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130486,12 +130486,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/half-bit,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/half-bit,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/8">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/half-bit,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130510,12 +130510,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/one-bit,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/one-bit,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/9">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/one-bit,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130534,12 +130534,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.5,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.5,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/10">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.5,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130558,12 +130558,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.333,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.333,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/11">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.333,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
@@ -130582,12 +130582,12 @@
           <PDBo:pdbx_em_fsc_resolution rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.143,author_provided_fsc">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU"/>
             <PDBo:reference_to_pdbx_em_fsc_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_curve/2">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.143,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_curve>
             <PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_cutoff_curve/12">
                 <PDBo:referenced_by_pdbx_em_fsc_resolution rdf:resource="http://rdf.wwpdb.org/vrpt/7ZBU/pdbx_em_fsc_resolution/0.143,author_provided_fsc"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_em_fsc_cutoff_curve>
