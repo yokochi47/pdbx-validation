@@ -12,7 +12,8 @@ fi
 
 RDF_DIR=
 CHK_SUM_DIR=chk_sum_valid_rdf
-DELETE=false
+DELETE=
+FORCE=
 
 ARGV=`getopt --long -o "d:r" "$@"`
 eval set -- "$ARGV"
@@ -23,7 +24,10 @@ while true ; do
   shift
  ;;
  -r)
-  DELETE=true
+  DELETE='-r'
+ ;;
+ -f)
+  FORCE='-f'
  ;;
  *)
   break
@@ -55,11 +59,7 @@ if [ -d $RDF_DIR ] ; then
 
   for proc_id in `seq 1 $MAXPROCS` ; do
 
-   if [ $DELETE = "true" ] ; then
-    ./scripts/validate_all_rdf_worker.sh -c $CHK_SUM_DIR -d $RDF_DIR -l $rdf_file_list -n $proc_id"of"$MAXPROCS -t $total -r &
-   else
-    ./scripts/validate_all_rdf_worker.sh -c $CHK_SUM_DIR -d $RDF_DIR -l $rdf_file_list -n $proc_id"of"$MAXPROCS -t $total &
-   fi
+   ./scripts/validate_all_rdf_worker.sh -c $CHK_SUM_DIR -d $RDF_DIR -l $rdf_file_list -n $proc_id"of"$MAXPROCS -t $total $DELETE $FORCE &
 
   done
 

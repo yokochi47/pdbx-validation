@@ -7,6 +7,7 @@ WORK_DIR=
 FILE_LIST=
 TOTAL=
 DELETE=false
+FORCE=false
 
 ARGV=`getopt --long -o "c:d:l:n:t:r" "$@"`
 eval set -- "$ARGV"
@@ -34,6 +35,9 @@ while true ; do
  ;;
  -r)
   DELETE=true
+ ;;
+ -f)
+  FORCE=true
  ;;
  *)
   break
@@ -123,7 +127,22 @@ do
 
    gunzip -c $rdf_gz_file > $rdf_file || exit 1
 
-   rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file )
+   rapper -q -c $rdf_file 2> $err_file && ( rm -f $err_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file )
+
+   if [ ! -e $err_file ] ; then 
+    if [ $FORCE = "true" ]; then
+     $RFC_3986_VALIDATOR $rdf_file | grep -v '^\[OK\]' > $err_file
+     if [ ! -s $err_file ] ; then
+      rm -f $rdf_file $err_file
+      echo $new_chk_sum > $chk_sum_file
+     else
+      [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file
+     fi
+    else
+     rm -f $rdf_file
+     echo $new_chk_sum > $chk_sum_file
+    fi
+   fi
 
    if [ $proc_id_mod -eq 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
@@ -199,7 +218,22 @@ do
 
    gunzip -c $rdf_gz_file > $rdf_file || exit 1
 
-   rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file )
+   rapper -q -c $rdf_file 2> $err_file && ( rm -f $err_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file )
+
+   if [ ! -e $err_file ] ; then
+    if [ $FORCE = "true" ]; then
+     $RFC_3986_VALIDATOR $rdf_file | grep -v '^\[OK\]' > $err_file
+     if [ ! -s $err_file ] ; then
+      rm -f $rdf_file $err_file
+      echo $new_chk_sum > $chk_sum_file
+     else
+      [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file
+     fi
+    else
+     rm -f $err_file
+     echo $new_chk_sum > $chk_sum_file
+    fi
+   fi
 
    rm -f $lock_file
 

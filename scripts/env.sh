@@ -114,6 +114,8 @@ VALIDATION_CHECK_6_03_XSL=stylesheet/validation_check_6.03.xsl
 
 COMPLEX_VRPT_XSL=stylesheet/complex_vrpt.xsl
 
+INCHIKEY_DESC_XSL=stylesheet/inchikey_descriptor.xsl
+
 RDF=RDF
 
 SIFTS_XML_URL=ftp.ebi.ac.uk/pub/databases/msd/sifts/xml
@@ -138,6 +140,9 @@ MERGE_PDBML_SIFTS_XSL=stylesheet/merge_pdbml_sifts.xsl
 XSD2MERGE_PDBML_NEXTGEN_XSL=stylesheet/xsd2merge_pdbml_nextgen.xsl
 MERGE_PDBML_NEXTGEN_XSL=stylesheet/merge_pdbml_nextgen.xsl
 
+UNICHEM_API=https://www.ebi.ac.uk/unichem/api/v1/compounds
+UNICHEM_JSON=unichem_json
+
 CC_CIF_URL=ftp.pdbj.org/pub/pdb/refdata/chem_comp
 MMCIF_CC=pub/pdb/refdata/chem_comp
 MMCIF_BIRD=pub/pdb/refdata/bird
@@ -155,6 +160,8 @@ RDF_PRD=$RDF_BIRD/prd
 
 PDBML_FAM=$XML_BIRD/family
 RDF_FAM=$RDF_BIRD/family
+
+RFC_3986_VALIDATOR='python scripts/rfc_3986_validator.py'
 
 function mk_div_dir() {
  if [ ! -d $1 ] ; then

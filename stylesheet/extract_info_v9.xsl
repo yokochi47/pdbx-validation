@@ -1570,7 +1570,7 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
             <xsl:when test='@restraint_type="THETA&apos;"'>
               <xsl:attribute name="type">theta'</xsl:attribute>
             </xsl:when>
-            <xsl:when test="@restraint_type='.' or @restraint_type='PPA' or @restraint_type='VEANgle' or @restraint_type='UNNAMED' or @restraint_type='UNKN' or @restraint_type='ALIGN' or @restraint_type='PLANE'">
+            <xsl:when test="@restraint_type='.' or @restraint_type='PPA' or @restraint_type='VEANgle' or @restraint_type='UNNAMED' or @restraint_type='UNKN' or @restraint_type='ALIGN' or @restraint_type='PLANE' or @restraint_type='DIHEDRAL'">
               <xsl:attribute name="type">other</xsl:attribute>
             </xsl:when>
             <xsl:otherwise>
