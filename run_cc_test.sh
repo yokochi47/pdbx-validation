@@ -58,8 +58,9 @@ for pdbml_file in $WORK_DIR/$XML_CC/*.xml ; do
  uc_json_file=$WORK_DIR/$UNICHEM_SRCS/$cc_id.json
  uc_xml_file=$WORK_DIR/$UNICHEM_SRCS/$cc_id.xml
  err_file=$WORK_DIR/$UNICHEM_SRCS/$cc_id.err
+ ign_file=$WORK_DIR/$UNICHEM_SRCS/$cc_id.ign
 
- if [ ! -e $uc_json_file ] ; then
+ if [ ! -e $uc_json_file ] && [ ! -e $ign_file ] ; then
 
   echo "#!/bin/bash" > $com_file
   echo curl -X POST \"$UNICHEM_API\" -H \"accept: application/json\" -H \"Content-Type: application/json\" -d \"\{\\\"compound\\\":\\\"$inchikey\\\",\\\"type\\\":\\\"inchikey\\\"\}\" -s >> $com_file
@@ -84,11 +85,12 @@ for pdbml_file in $WORK_DIR/$XML_CC/*.xml ; do
     if [ $? = 0 ] ; then
      echo $test2 > $err_file
      rm -f $uc_json_file
+
+     sleep 1
+
     else
      rm -f $rdf_file
     fi
-
-    sleep 1
 
    fi
 
@@ -96,7 +98,7 @@ for pdbml_file in $WORK_DIR/$XML_CC/*.xml ; do
 
  fi
 
- if [ ! -e $uc_json_file ] ; then
+ if [ ! -e $uc_json_file ] && [ ! -e $ign_file ] ; then
 
   inchi=`xsltproc $INCHI_DESC_XSL $pdbml_file`
 
@@ -114,6 +116,8 @@ for pdbml_file in $WORK_DIR/$XML_CC/*.xml ; do
     echo $test1 > $err_file
     rm -f $uc_json_file
 
+    touch $ign_file
+
     sleep 2
 
    else
@@ -123,11 +127,14 @@ for pdbml_file in $WORK_DIR/$XML_CC/*.xml ; do
     if [ $? = 0 ] ; then
      echo $test2 > $err_file
      rm -f $uc_json_file
+
+     touch $ign_file
+
+     sleep 1
+
     else
      rm -f $rdf_file
     fi
-
-    sleep 1
 
    fi
 

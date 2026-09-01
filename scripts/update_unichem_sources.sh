@@ -62,7 +62,12 @@ if [ $err != 0 ] || [ $total != $last ] ; then
   json_file=$UNICHEM_DIR/$cc_id.json
   xml_file=$UNICHEM_DIR/$cc_id.xml
   err_file=$UNICHEM_DIR/$cc_id.err
+  ign_file=$UNICHEM_DIR/$cc_id.ign
   rdf_gz_file=$RDF_CC/${cc_id:-1}/$cc_id.rdf.gz
+
+  if [ -e $ign_file ] ; then
+   continue
+  fi
 
   if [ ! -e $json_file ] || [ -e $err_file ] ; then
 
@@ -93,11 +98,12 @@ if [ $err != 0 ] || [ $total != $last ] ; then
      if [ $? = 0 ] ; then
       echo $test2 > $err_file
       rm -f $json_file
+
+      sleep 1
+
      else
       rm -f $rdf_gz_file
      fi
-
-     sleep 1
 
     fi
 
@@ -123,6 +129,8 @@ if [ $err != 0 ] || [ $total != $last ] ; then
      echo $test1 > $err_file
      rm -f $json_file
 
+     touch $ign_file
+
      sleep 2
 
     else
@@ -132,11 +140,14 @@ if [ $err != 0 ] || [ $total != $last ] ; then
      if [ $? = 0 ] ; then
       echo $test2 > $err_file
       rm -f $json_file
+
+      touch $ign_file
+
+      sleep 1
+
      else
       rm -f $rdf_gz_file
      fi
-
-     sleep 1
 
     fi
 
