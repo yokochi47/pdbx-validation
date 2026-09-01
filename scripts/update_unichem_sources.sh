@@ -2,33 +2,10 @@
 
 source ./scripts/env.sh
 
-MTIME=
-FULL=false
-
-ARGV=`getopt --long -o "m:f" "$@"`
-eval set -- "$ARGV"
-while true ; do
- case "$1" in
- -m)
-  MTIME=$2
-  shift
- ;;
- -f)
-  FULL=true
- ;;
- *)
-  break
- ;;
- esac
- shift
-done
-
 DB_NAME=UniChem
 
 SRC_DIR=$XML_CC
 UNICHEM_DIR=$UNICHEM_SRCS
-
-weekday=`date -u +"%w"`
 
 if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
@@ -53,115 +30,26 @@ if [ $err != 0 ] || [ $total != $last ] ; then
  pdbml_file_list=pdbml_cc_file_list
  find $SRC_DIR -maxdepth 1 -name '*.xml' > $pdbml_file_list
 
- while read pdbml_file
- do
+ for proc_id in `seq 1 $MAXPROCS` ; do
 
-  cc_id=`basename $pdbml_file .xml`
+  ./scripts/update_unichem_sources_worker.sh -d $UNICHEM_DIR -l $pdbml_file_list -n $proc_id"of"$MAXPROCS -t $total &
 
-  com_file=$UNICHEM_DIR/$cc_id.com
-  json_file=$UNICHEM_DIR/$cc_id.json
-  xml_file=$UNICHEM_DIR/$cc_id.xml
-  err_file=$UNICHEM_DIR/$cc_id.err
-  ign_file=$UNICHEM_DIR/$cc_id.ign
-  rdf_gz_file=$RDF_CC/${cc_id:-1}/$cc_id.rdf.gz
+ done
 
-  if [ -e $ign_file ] ; then
-   continue
-  fi
+ if [ $? != 0 ] ; then
 
-  if [ ! -e $json_file ] || [ -e $err_file ] ; then
+  echo $0 aborted.
+  exit 1
 
-   inchikey=`xsltproc $INCHIKEY_DESC_XSL $pdbml_file`
+ fi
 
-   echo $cc_id
+ wait
 
-   echo "#!/bin/bash" > $com_file
-   echo curl -X POST \"$UNICHEM_API\" -H \"accept: application/json\" -H \"Content-Type: application/json\" -d \"\{\\\"compound\\\":\\\"$inchikey\\\",\\\"type\\\":\\\"inchikey\\\"\}\" -s >> $com_file
-   chmod +x $com_file
+ echo
 
-   ./$com_file > $json_file 2> $err_file && ( rm -f $com_file $err_file ) || ( rm -f $com_file $json_file; cat $err_file )
-
-   if [ -e $json_file ] && [ ! -e $err_file ] ; then
-
-    test1=`grep "Something has gone wrong" $json_file 2> /dev/null`
-
-    if [ $? = 0 ] ; then
-     echo $test1 > $err_file
-     rm -f $json_file
-
-     sleep 2
-
-    else
-
-     test2=`grep "Not found" $json_file 2> /dev/null`
-
-     if [ $? = 0 ] ; then
-      echo $test2 > $err_file
-      rm -f $json_file
-
-      sleep 1
-
-     else
-      rm -f $rdf_gz_file
-     fi
-
-    fi
-
-   fi
-
-  fi
-
-  if [ ! -e $json_file ] || [ -e $err_file ] ; then
-
-   inchi=`xsltproc $INCHI_DESC_XSL $pdbml_file`
-
-   echo "#!/bin/bash" > $com_file
-   echo curl -X POST \"$UNICHEM_API\" -H \"accept: application/json\" -H \"Content-Type: application/json\" -d \"\{\\\"compound\\\":\\\"$inchi\\\",\\\"type\\\":\\\"inchi\\\"\}\" -s >> $com_file
-   chmod +x $com_file
-
-   ./$com_file > $json_file 2> $err_file && ( rm -f $com_file $err_file ) || ( rm -f $com_file $json_file; cat $err_file )
-
-   if [ -e $json_file ] && [ ! -e $err_file ] ; then
-
-    test1=`grep "Something has gone wrong" $json_file 2> /dev/null`
-
-    if [ $? = 0 ] ; then
-     echo $test1 > $err_file
-     rm -f $json_file
-
-     touch $ign_file
-
-     sleep 2
-
-    else
-
-     test2=`grep "Not found" $json_file 2> /dev/null`
-
-     if [ $? = 0 ] ; then
-      echo $test2 > $err_file
-      rm -f $json_file
-
-      touch $ign_file
-
-      sleep 1
-
-     else
-      rm -f $rdf_gz_file
-     fi
-
-    fi
-
-   fi
-
-  fi
-
-  if [ -e $json_file ] && [ ! -e $xml_file ] ; then
-   python -c "import json, dicttoxml; print(dicttoxml.dicttoxml(json.load(open('$json_file'))).decode())" > $xml_file
-  fi
-
- done < $pdbml_file_list
+ rm -f $pdbml_file_list
 
 fi
 
-echo $SRC_DIR is up-to-date.
+echo $UNICHEM_DIR is up-to-date.
 
