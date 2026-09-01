@@ -423,6 +423,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2022</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1016/j.celrep.2022.111276" rdfs:label="doi:10.1016/j.celrep.2022.111276"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/35981534" rdfs:label="pubmed:35981534"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/35981534"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/35981534" rdfs:label="pubmed:35981534"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -34317,8 +34318,10 @@
             <PDBo:entity_src_gen.pdbx_host_org_scientific_name>Homo sapiens</PDBo:entity_src_gen.pdbx_host_org_scientific_name>
             <PDBo:entity_src_gen.pdbx_seq_type>Biological sequence</PDBo:entity_src_gen.pdbx_seq_type>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/2697049" rdfs:label="taxonomy:2697049"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/2697049"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/2697049" rdfs:label="taxonomy:2697049"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
@@ -34342,8 +34345,10 @@
             <PDBo:entity_src_gen.pdbx_host_org_strain>FreeStyle293</PDBo:entity_src_gen.pdbx_host_org_strain>
             <PDBo:entity_src_gen.pdbx_seq_type>Biological sequence</PDBo:entity_src_gen.pdbx_seq_type>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
@@ -34368,8 +34373,10 @@
             <PDBo:entity_src_gen.pdbx_host_org_strain>FreeStyle293</PDBo:entity_src_gen.pdbx_host_org_strain>
             <PDBo:entity_src_gen.pdbx_seq_type>Biological sequence</PDBo:entity_src_gen.pdbx_seq_type>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
@@ -95339,6 +95346,7 @@
             <PDBo:struct_ref.pdbx_db_accession>P0DTC2</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:struct_ref.pdbx_seq_one_letter_code>MFVFLVLLPLVSSQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVNNATNVVIKVCEFQFCNDPFLGVYYHKNNKSWMESEFRVYSSANNCTFEYVSQPFLMDLEGKQGNFKNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRVQPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFLPFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYSTGSNVFQTRAGCLIGAEHVNNSYECDIPIGAGICASYQTQTNSPRRARSVASQSIIAYTMSLGAENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIYKTPPIKDFGGFNFSQILPDPSKPSKRSFIEDLLFNKVTLADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHDGKAHFPREGVFVSNGTHWFVTQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQ</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
@@ -100381,6 +100389,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1208</PDBo:pdbx_sifts_unp_segments.unp_end>

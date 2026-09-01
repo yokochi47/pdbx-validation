@@ -121,6 +121,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
             <PDBo:entity.src_method>nat</PDBo:entity.src_method>
             <PDBo:entity.type>polymer</PDBo:entity.type>
             <PDBo:link_to_enzyme rdf:resource="http://purl.uniprot.org/enzyme/3.4.23.-" rdfs:label="ec-code:3.4.23.-"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/enzyme/3.4.23.-"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/ec-code/3.4.23.-" rdfs:label="ec-code:3.4.23.-"/>
           </PDBo:entity>
         </PDBo:has_entity>
@@ -142,6 +143,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
             <PDBo:entity.src_method>nat</PDBo:entity.src_method>
             <PDBo:entity.type>polymer</PDBo:entity.type>
             <PDBo:link_to_enzyme rdf:resource="http://purl.uniprot.org/enzyme/3.4.23.-" rdfs:label="ec-code:3.4.23.-"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/enzyme/3.4.23.-"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/ec-code/3.4.23.-" rdfs:label="ec-code:3.4.23.-"/>
           </PDBo:entity>
         </PDBo:has_entity>
@@ -6304,6 +6306,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G17689EW" rdfs:label="glytoucan:G17689EW"/>
+            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G17689EW"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G17689EW" rdfs:label="glytoucan:G17689EW"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
@@ -6353,6 +6356,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G18638YB" rdfs:label="glytoucan:G18638YB"/>
+            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G18638YB"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G18638YB" rdfs:label="glytoucan:G18638YB"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
@@ -6402,6 +6406,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G43648DB" rdfs:label="glytoucan:G43648DB"/>
+            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G43648DB"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G43648DB" rdfs:label="glytoucan:G43648DB"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
@@ -6451,6 +6456,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G73622RM" rdfs:label="glytoucan:G73622RM"/>
+            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G73622RM"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G73622RM" rdfs:label="glytoucan:G73622RM"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
@@ -36281,6 +36287,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">71</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">309</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -36304,6 +36311,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">418</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">504</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -36327,6 +36335,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">71</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">309</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -36350,6 +36359,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">418</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">504</PDBo:pdbx_sifts_unp_segments.unp_end>

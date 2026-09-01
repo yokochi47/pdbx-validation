@@ -29,10 +29,10 @@
 
   <xsl:variable name="idorg">http://identifiers.org/</xsl:variable>
   <xsl:variable name="doi">http://doi.org/</xsl:variable>
-  <xsl:variable name="pubmed">http://rdf.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
-  <xsl:variable name="taxonomy">http://purl.uniprot.org/taxonomy/</xsl:variable>
-  <xsl:variable name="enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
-  <xsl:variable name="uniprot">http://purl.uniprot.org/uniprot/</xsl:variable>
+  <xsl:variable name="p_pubmed">http://rdf.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
+  <xsl:variable name="p_taxonomy">http://purl.uniprot.org/taxonomy/</xsl:variable>
+  <xsl:variable name="p_enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
+  <xsl:variable name="p_uniprot">http://purl.uniprot.org/uniprot/</xsl:variable>
   <xsl:variable name="norine">http://bioinfo.lifl.fr/norine/result.jsp?ID=</xsl:variable>
   <xsl:variable name="kegg_comp">http://www.kegg.jp/entry/</xsl:variable>
   <xsl:variable name="kegg_drug">http://www.kegg.jp/entry/</xsl:variable>
@@ -44,13 +44,14 @@
   <xsl:variable name="nadb5">http://www.antibiotics.or.jp/journal/database/data-5.htm#</xsl:variable>
   <xsl:variable name="ccdc_num">http://www.ccdc.cam.ac.uk/structures/search?pid=ccdc:</xsl:variable>
   <xsl:variable name="ccdc_id">http://www.ccdc.cam.ac.uk/structures/search?ccdcid=</xsl:variable>
-  <xsl:variable name="pubchem.substance">http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID</xsl:variable>
+  <xsl:variable name="p_pubchem.substance">http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID</xsl:variable>
   <xsl:variable name="chemspider">http://www.chemspider.com/Chemical-Structure.</xsl:variable>
   <xsl:variable name="cas">http://commonchemistry.cas.org/detail?ref=</xsl:variable>
-  <xsl:variable name="chebi">http://purl.obolibrary.org/obo/CHEBI_</xsl:variable>
+  <xsl:variable name="p_chebi">http://purl.obolibrary.org/obo/CHEBI_</xsl:variable>
   <xsl:variable name="mesh">http://id.nlm.nih.gov/mesh/</xsl:variable>
   <xsl:variable name="chemidplus">http://chem.nlm.nih.gov/chemidplus/rn/</xsl:variable>
-  <xsl:variable name="chembl">http://www.ebi.ac.uk/chembl/entity/</xsl:variable>
+  <!--xsl:variable name="chembl">http://www.ebi.ac.uk/chembl/entity/</xsl:variable-->
+  <xsl:variable name="p_chembl">http://rdf.ebi.ac.uk/resource/chembl/molecule/</xsl:variable>
   <xsl:variable name="bindingdb">http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=</xsl:variable>
   <xsl:variable name="drugbank">http://www.drugbank.ca/drugs/</xsl:variable>
   <xsl:variable name="chemdb">http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id=</xsl:variable>
@@ -160,7 +161,8 @@
   </xsl:template>
 
   <xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked">
-    <PDBo:link_to_pubmed rdf:resource="{$pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
+    <PDBo:link_to_pubmed rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
+    <owl:sameAs rdf:resource="{$p_pubmed}{text()}"/>
     <dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/>
   </xsl:template>
 
@@ -210,7 +212,8 @@
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-        <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -226,7 +229,8 @@
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-        <PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_host rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -242,7 +246,8 @@
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-        <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -260,7 +265,8 @@
       <xsl:for-each select="ext:node-set($ec_list)/token">
         <xsl:variable name="ec"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
         <xsl:if test="string-length($ec)!=0">
-          <PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
+          <PDBo:link_to_enzyme rdf:resource="{$p_enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
+          <owl:sameAs rdf:resource="{$p_enzyme}{$ec}"/>
           <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
         </xsl:if>
       </xsl:for-each>
@@ -289,7 +295,8 @@
 
   <xsl:template match="PDBx:pdbx_reference_entity_poly/PDBx:db_code[../PDBx:db_name='UNP' and text()!='']" mode="linked">
     <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
-    <PDBo:link_to_uniprot rdf:resource="{$uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/>
   </xsl:template>
 
@@ -301,7 +308,8 @@
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[(../PDBx:db_name='UNP' or ../PDBx:db_name='UniProtKB' or ../PDBx:db_name='UniProt') and text()!='']" mode="linked">
     <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
-    <PDBo:link_to_uniprot rdf:resource="{$uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/>
   </xsl:template>
 
@@ -342,7 +350,8 @@
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:taxid[text()!='']" mode="linked">
     <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
-    <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$acc}" rdfs:label="taxonomy:{$acc}"/>
+    <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$acc}" rdfs:label="taxonomy:{$acc}"/>
+    <owl:sameAs rdf:resource="{$p_taxonomy}{$acc}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$acc}" rdfs:label="taxonomy:{$acc}"/>
   </xsl:template>
 
@@ -359,7 +368,8 @@
 
   <xsl:template match="PDBx:pdbx_reference_molecule_annotation/PDBx:source[starts-with(text(),'PMID:')]" mode="linked">
     <xsl:variable name="code"><xsl:value-of select="substring-after(text(),':')"/></xsl:variable>
-    <PDBo:link_to_pubmed rdf:resource="{$pubmed}{$code}" rdfs:label="pubmed:{$code}"/>
+    <PDBo:link_to_pubmed rdf:resource="{$p_pubmed}{$code}" rdfs:label="pubmed:{$code}"/>
+    <owl:sameAs rdf:resource="{$p_pubmed}{$code}"/>
     <dcterms:references rdf:resource="{$idorg}pubmed/{$code}" rdfs:label="pubmed:{$code}"/>
   </xsl:template>
 
@@ -384,7 +394,8 @@
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='PubChem' and text()!='']" mode="linked">
     <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
-    <PDBo:link_to_pubchem_substance rdf:resource="{$pubchem.substance}{$acc}" rdfs:label="pubchem.substance:{$acc}"/>
+    <PDBo:link_to_pubchem_substance rdf:resource="{$p_pubchem.substance}{$acc}" rdfs:label="pubchem.substance:{$acc}"/>
+    <owl:sameAs rdf:resource="{$p_pubchem.substance}{$acc}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}pubchem.substance/{$acc}" rdfs:label="pubchem.substance:{$acc}"/>
   </xsl:template>
 
@@ -402,7 +413,8 @@
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[(../PDBx:source='ChEBI' or ../PDBx:source='CHEBI') and text()!='']" mode="linked">
     <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
-    <PDBo:link_to_chebi rdf:resource="{$chebi}{$acc}" rdfs:label="CHEBI:{$acc}"/>
+    <PDBo:link_to_chebi rdf:resource="{$p_chebi}{$acc}" rdfs:label="CHEBI:{$acc}"/>
+    <owl:sameAs rdf:resource="{$p_chebi}{$acc}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}chebi/CHEBI:{$acc}" rdfs:label="CHEBI:{$acc}"/>
   </xsl:template>
 
@@ -427,7 +439,8 @@
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[(../PDBx:source='ChEMBL' or ../PDBx:source='CHEMBL') and text()!='']" mode="linked">
     <xsl:variable name="code"><xsl:value-of select="concat('CHEMBL',translate(text(),' ',''))"/></xsl:variable>
-    <PDBo:link_to_chembl rdf:resource="{$chembl}{$code}" rdfs:label="chembl:{$code}"/>
+    <PDBo:link_to_chembl rdf:resource="{$p_chembl}{$code}" rdfs:label="chembl:{$code}"/>
+    <owl:sameAs rdf:resource="{$p_chembl}{$code}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}chembl/{$code}" rdfs:label="chembl:{$code}"/>
   </xsl:template>
 
@@ -473,7 +486,8 @@
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='UniProt' and text()!='']" mode="linked">
     <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
-    <PDBo:link_to_uniprot rdf:resource="{$uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/>
   </xsl:template>
 

@@ -26,6 +26,8 @@ fi
 
 ./scripts/update_cc.sh $MTIME_OPT || exit $?
 
+./scripts/update_unichem_sources.sh
+
 ./scripts/transl_to_rdf_cc.sh
 
 echo

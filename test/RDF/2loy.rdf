@@ -443,6 +443,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2012</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1073/pnas.1203013109" rdfs:label="doi:10.1073/pnas.1203013109"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/22733734" rdfs:label="pubmed:22733734"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/22733734"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/22733734" rdfs:label="pubmed:22733734"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -4297,8 +4298,10 @@
             <PDBo:entity_src_gen.pdbx_host_org_strain>BL21(DE3)pMgK</PDBo:entity_src_gen.pdbx_host_org_strain>
             <PDBo:entity_src_gen.pdbx_host_org_vector>pET21_NESG</PDBo:entity_src_gen.pdbx_host_org_vector>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/6239" rdfs:label="taxonomy:6239"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/6239"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/6239" rdfs:label="taxonomy:6239"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/469008" rdfs:label="taxonomy:469008"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/469008"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/469008" rdfs:label="taxonomy:469008"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
@@ -4448,6 +4451,7 @@
             <PDBo:pdbx_database_related.db_id>16833</PDBo:pdbx_database_related.db_id>
             <PDBo:pdbx_database_related.db_name>BMRB</PDBo:pdbx_database_related.db_name>
             <PDBo:link_to_bmrb rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr16833" rdfs:label="bmrb:16833"/>
+            <owl:saveAs rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr16833"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb/16833" rdfs:label="bmrb:16833"/>
           </PDBo:pdbx_database_related>
         </PDBo:has_pdbx_database_related>
@@ -16037,6 +16041,7 @@
             <PDBo:struct_ref.pdbx_db_accession>Q93573</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:struct_ref.pdbx_seq_one_letter_code>MLIYKDIFTDDELSSDSFPMKLVDDLVYEFKGKHVVRKEGEIVLAGSNPSAEEGAEDDGSDEHVERGIDIVLNHKLVEMNCYEDASMFKAYIKKFMKNVIDHMEKNNRDKADVDAFKKKIQGWVVSLLAKDRFKNLAFFIGERAAEGAENGQVAIIEYRDVDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q93573" rdfs:label="uniprot:Q93573"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q93573"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q93573" rdfs:label="uniprot:Q93573"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
@@ -16656,6 +16661,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q93573" rdfs:label="uniprot:Q93573"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q93573"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q93573" rdfs:label="uniprot:Q93573"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">181</PDBo:pdbx_sifts_unp_segments.unp_end>

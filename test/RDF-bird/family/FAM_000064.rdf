@@ -21,6 +21,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1978</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1016/0022-2836(78)90261-9" rdfs:label="doi:10.1016/0022-2836(78)90261-9"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/77905" rdfs:label="pubmed:77905"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/77905"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/77905" rdfs:label="pubmed:77905"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -146,6 +147,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>channel-forming antibiotic</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11570868" rdfs:label="pubmed:11570868"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11570868"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/11570868" rdfs:label="pubmed:11570868"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
@@ -159,6 +161,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>channel-forming antibiotic</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11570868" rdfs:label="pubmed:11570868"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11570868"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/11570868" rdfs:label="pubmed:11570868"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
@@ -172,6 +175,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>channel-forming antibiotic</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11570868" rdfs:label="pubmed:11570868"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11570868"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/11570868" rdfs:label="pubmed:11570868"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
@@ -197,6 +201,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>biological ion channel</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/15691331" rdfs:label="pubmed:15691331"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/15691331"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/15691331" rdfs:label="pubmed:15691331"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
@@ -304,6 +309,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>16132269</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16132269" rdfs:label="pubchem.substance:16132269"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16132269"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/16132269" rdfs:label="pubchem.substance:16132269"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
@@ -486,6 +492,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>25244501</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID25244501" rdfs:label="pubchem.substance:25244501"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID25244501"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/25244501" rdfs:label="pubchem.substance:25244501"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
@@ -668,6 +675,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>16130140</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16130140" rdfs:label="pubchem.substance:16130140"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16130140"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/16130140" rdfs:label="pubchem.substance:16130140"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>

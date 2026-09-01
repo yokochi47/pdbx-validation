@@ -208,12 +208,14 @@ File path | Document
 
 ## Release notes
 
-- **Aug 24, 2026**: Release v4.5.16
+- **Sep 1, 2026**: Release v4.5.16
 	- Update wwPDB Validation Information Dictionary to 4.416.
 	- Correct RDF resource URI in cross-references using PDBx:reference_to_* ontology classes.
 	- Normalizes the whitespace in the value of the "name" data item.
+	- Add cross-references from chem_comp/RDF based on UniChem sources.
+	- Use owl:sameAs for persistent RDF URIs, instead of rdfs:seeAlso.
 
-- **Jun 04, 2026**: Release v4.5.15
+- **Jun 4, 2026**: Release v4.5.15
 	- Update wwPDB Validation Information Dictionary to 4.415.
 
 - **Apr 28, 2026**: Release v4.5.14
@@ -249,13 +251,13 @@ File path | Document
 - **Oct 15, 2025**: Release v4.5.5
 	- Update wwPDB Validation Information Dictionary to 4.405.
 
-- **Aug 01, 2025**: Release v4.5.4
+- **Aug 1, 2025**: Release v4.5.4
 	- Update wwPDB Validation Information Dictionary to 4.404.
 
-- **Aug 01, 2025**: Release v4.5.3
+- **Aug 1, 2025**: Release v4.5.3
 	- Update wwPDB Validation Information Dictionary to 4.403.
 
-- **Aug 01, 2025**: Release v4.5.2
+- **Aug 1, 2025**: Release v4.5.2
 	- Update wwPDB Validation Information Dictionary to 4.402.
 
 - **Aug 1, 2025**: Release v4.5.1
@@ -335,7 +337,7 @@ File path | Document
 - **Oct 19, 2023**: Release v4.4.30
 	- Update wwPDB Validation Information Dictionary to 4.380.
 
-- **Sep 06, 2023**: Release v4.4.29
+- **Sep 6, 2023**: Release v4.4.29
 	- Update wwPDB Validation Information Dictionary to 4.379.
 
 - **Aug 25, 2023**: Release v4.4.28

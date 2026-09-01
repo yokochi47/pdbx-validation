@@ -402,6 +402,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2020</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1101/2020.06.17.153486" rdfs:label="doi:10.1101/2020.06.17.153486"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/32587975" rdfs:label="pubmed:32587975"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/32587975"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/32587975" rdfs:label="pubmed:32587975"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -30174,8 +30175,10 @@
             <PDBo:entity_src_gen.pdbx_host_org_scientific_name>Homo sapiens</PDBo:entity_src_gen.pdbx_host_org_scientific_name>
             <PDBo:entity_src_gen.pdbx_seq_type>Biological sequence</PDBo:entity_src_gen.pdbx_seq_type>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/2697049" rdfs:label="taxonomy:2697049"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/2697049"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/2697049" rdfs:label="taxonomy:2697049"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
@@ -30199,8 +30202,10 @@
             <PDBo:entity_src_gen.pdbx_host_org_scientific_name>Homo sapiens</PDBo:entity_src_gen.pdbx_host_org_scientific_name>
             <PDBo:entity_src_gen.pdbx_seq_type>Biological sequence</PDBo:entity_src_gen.pdbx_seq_type>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
@@ -30224,8 +30229,10 @@
             <PDBo:entity_src_gen.pdbx_host_org_scientific_name>Homo sapiens</PDBo:entity_src_gen.pdbx_host_org_scientific_name>
             <PDBo:entity_src_gen.pdbx_seq_type>Biological sequence</PDBo:entity_src_gen.pdbx_seq_type>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
@@ -31761,6 +31768,7 @@
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G42666HT" rdfs:label="glytoucan:G42666HT"/>
+            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G42666HT"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G42666HT" rdfs:label="glytoucan:G42666HT"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
@@ -31810,6 +31818,7 @@
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G15407YE" rdfs:label="glytoucan:G15407YE"/>
+            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G15407YE"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G15407YE" rdfs:label="glytoucan:G15407YE"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
@@ -31859,6 +31868,7 @@
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G90333CG" rdfs:label="glytoucan:G90333CG"/>
+            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G90333CG"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G90333CG" rdfs:label="glytoucan:G90333CG"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
@@ -215569,6 +215579,7 @@
             <PDBo:struct_ref.pdbx_db_accession>P0DTC2</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:struct_ref.pdbx_seq_one_letter_code>MFVFLVLLPLVSSQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVNNATNVVIKVCEFQFCNDPFLGVYYHKNNKSWMESEFRVYSSANNCTFEYVSQPFLMDLEGKQGNFKNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRVQPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFLPFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYSTGSNVFQTRAGCLIGAEHVNNSYECDIPIGAGICASYQTQTNSPRRARSVASQSIIAYTMSLGAENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIYKTPPIKDFGGFNFSQILPDPSKPSKRSFIEDLLFNKVTLADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHDGKAHFPREGVFVSNGTHWFVTQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQ</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
@@ -215604,6 +215615,7 @@
             <PDBo:struct_ref.pdbx_db_accession>A0A5C2GJG2</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:struct_ref.pdbx_seq_one_letter_code>QSALTQPPSASGSPGQSVTISCTGTSSDVGGYNYVSWYQQHPGKAPKLMIYEVSKRPSGVPDRFSGSKSGNTASLTVSGLQAEDEADYYCSSYAGSNNLVFGGGTKLTVL</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
@@ -229600,6 +229612,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1208</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -229623,6 +229636,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1208</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -229646,6 +229660,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1208</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -229669,6 +229684,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -229692,6 +229708,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -229715,6 +229732,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</PDBo:pdbx_sifts_unp_segments.unp_end>

@@ -39,6 +39,7 @@ WORK_DIR=test
 # chem_comp/RDF
 
 mkdir -p $WORK_DIR/$RDF_CC
+mkdir -p $WORK_DIR/$UNICHEM_SRCS
 
 for pdbml_file in $WORK_DIR/$XML_CC/*.xml ; do
 
@@ -49,8 +50,106 @@ for pdbml_file in $WORK_DIR/$XML_CC/*.xml ; do
 
  rdf_file=$WORK_DIR/$RDF_CC/$cc_id.rdf
 
- #java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file primitive_type_mapping=$_PDBX_PRIMITIVE_TYPE_MAPPING_XML || ( echo $0 aborted. ; exit 1 )
- xsltproc -o $rdf_file --stringparam primitive_type_mapping $_PDBX_PRIMITIVE_TYPE_MAPPING_XML $CC2RDF_XSL $pdbml_file || ( echo $0 aborted. ; exit 1 )
+ inchikey=`xsltproc $INCHIKEY_DESC_XSL $pdbml_file`
+
+ echo InChIKey: $inchikey
+
+ com_file=$WORK_DIR/$UNICHEM_SRCS/$cc_id.com
+ uc_json_file=$WORK_DIR/$UNICHEM_SRCS/$cc_id.json
+ uc_xml_file=$WORK_DIR/$UNICHEM_SRCS/$cc_id.xml
+ err_file=$WORK_DIR/$UNICHEM_SRCS/$cc_id.err
+
+ if [ ! -e $uc_json_file ] ; then
+
+  echo "#!/bin/bash" > $com_file
+  echo curl -X POST \"$UNICHEM_API\" -H \"accept: application/json\" -H \"Content-Type: application/json\" -d \"\{\\\"compound\\\":\\\"$inchikey\\\",\\\"type\\\":\\\"inchikey\\\"\}\" -s >> $com_file
+  chmod +x $com_file
+
+  ./$com_file > $uc_json_file 2> $err_file && ( rm -f $com_file $err_file ) || ( rm -f $com_file $uc_json_file; cat $err_file )
+
+  if [ -e $uc_json_file ] && [ ! -e $err_file ] ; then
+
+   test1=`grep "Something has gone wrong" $uc_json_file 2> /dev/null`
+
+   if [ $? = 0 ] ; then
+    echo $test1 > $err_file
+    rm -f $uc_json_file
+
+    sleep 2
+
+   else
+
+    test2=`grep "Not found" $uc_json_file 2> /dev/null`
+
+    if [ $? = 0 ] ; then
+     echo $test2 > $err_file
+     rm -f $uc_json_file
+    else
+     rm -f $rdf_file
+    fi
+
+    sleep 1
+
+   fi
+
+  fi
+
+ fi
+
+ if [ ! -e $uc_json_file ] ; then
+
+  inchi=`xsltproc $INCHI_DESC_XSL $pdbml_file`
+
+  echo "#!/bin/bash" > $com_file
+  echo curl -X POST \"$UNICHEM_API\" -H \"accept: application/json\" -H \"Content-Type: application/json\" -d \"\{\\\"compound\\\":\\\"$inchi\\\",\\\"type\\\":\\\"inchi\\\"\}\" -s >> $com_file
+  chmod +x $com_file
+
+  ./$com_file > $uc_json_file 2> $err_file && ( rm -f $com_file $err_file ) || ( rm -f $com_file $uc_json_file; cat $err_file )
+
+  if [ -e $uc_json_file ] && [ ! -e $err_file ] ; then
+
+   test1=`grep "Something has gone wrong" $uc_json_file 2> /dev/null`
+
+   if [ $? = 0 ] ; then
+    echo $test1 > $err_file
+    rm -f $uc_json_file
+
+    sleep 2
+
+   else
+
+    test2=`grep "Not found" $uc_json_file 2> /dev/null`
+
+    if [ $? = 0 ] ; then
+     echo $test2 > $err_file
+     rm -f $uc_json_file
+    else
+     rm -f $rdf_file
+    fi
+
+    sleep 1
+
+   fi
+
+  fi
+
+ fi
+
+ if [ -e $uc_json_file ] && [ ! -e $uc_xml_file ] ; then
+  python -c "import json, dicttoxml; print(dicttoxml.dicttoxml(json.load(open('$uc_json_file'))).decode())" > $uc_xml_file
+ fi
+
+ if [ -e $uc_xml_file ] ; then
+
+  #java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file unichem_xml=../$uc_xml_file primitive_type_mapping=$_PDBX_PRIMITIVE_TYPE_MAPPING_XML || ( echo $0 aborted. ; exit 1 )
+  xsltproc -o $rdf_file --stringparam unichem_xml ../$uc_xml_file --stringparam primitive_type_mapping $_PDBX_PRIMITIVE_TYPE_MAPPING_XML $CC2RDF_XSL $pdbml_file || ( echo $0 aborted. ; exit 1 )
+
+ else
+
+  #java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file primitive_type_mapping=$_PDBX_PRIMITIVE_TYPE_MAPPING_XML || ( echo $0 aborted. ; exit 1 )
+  xsltproc -o $rdf_file --stringparam primitive_type_mapping $_PDBX_PRIMITIVE_TYPE_MAPPING_XML $CC2RDF_XSL $pdbml_file || ( echo $0 aborted. ; exit 1 )
+
+ fi
 
  echo " generated: "$rdf_file
 

@@ -684,6 +684,7 @@
             <PDBo:link_to_kegg_drug rdf:resource="http://www.kegg.jp/entry/D00214" rdfs:label="kegg.drug:D00214"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.drug/D00214" rdfs:label="kegg.drug:D00214"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/146923"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
@@ -713,6 +714,7 @@
             <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00228" rdfs:label="norine:NOR00228"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/norine/NOR00228" rdfs:label="norine:NOR00228"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/1892" rdfs:label="taxonomy:1892"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/1892"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/1892" rdfs:label="taxonomy:1892"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
@@ -729,6 +731,7 @@
             <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00228" rdfs:label="norine:NOR00228"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/norine/NOR00228" rdfs:label="norine:NOR00228"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/1890" rdfs:label="taxonomy:1890"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/1890"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/1890" rdfs:label="taxonomy:1890"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
@@ -745,6 +748,7 @@
             <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00228" rdfs:label="norine:NOR00228"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/norine/NOR00228" rdfs:label="norine:NOR00228"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/146923"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>

@@ -30,10 +30,10 @@
 
   <xsl:variable name="idorg">http://identifiers.org/</xsl:variable>
   <xsl:variable name="doi">http://doi.org/</xsl:variable>
-  <xsl:variable name="pubmed">http://rdf.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
-  <xsl:variable name="taxonomy">http://purl.uniprot.org/taxonomy/</xsl:variable>
-  <xsl:variable name="enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
-  <xsl:variable name="uniprot">http://purl.uniprot.org/uniprot/</xsl:variable>
+  <xsl:variable name="p_pubmed">http://rdf.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
+  <xsl:variable name="p_taxonomy">http://purl.uniprot.org/taxonomy/</xsl:variable>
+  <xsl:variable name="p_enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
+  <xsl:variable name="p_uniprot">http://purl.uniprot.org/uniprot/</xsl:variable>
   <xsl:variable name="norine">http://bioinfo.lifl.fr/norine/result.jsp?ID=</xsl:variable>
   <xsl:variable name="kegg_comp">http://www.kegg.jp/entry/</xsl:variable>
   <xsl:variable name="kegg_drug">http://www.kegg.jp/entry/</xsl:variable>
@@ -146,7 +146,8 @@
   </xsl:template>
 
   <xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked">
-    <PDBo:link_to_pubmed rdf:resource="{$pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
+    <PDBo:link_to_pubmed rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
+    <owl:sameAs rdf:resource="{$p_pubmed}{text()}"/>
     <dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/>
   </xsl:template>
 
@@ -196,7 +197,8 @@
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-        <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -212,7 +214,8 @@
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-        <PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_host rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -228,7 +231,8 @@
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-        <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -246,7 +250,8 @@
       <xsl:for-each select="ext:node-set($ec_list)/token">
         <xsl:variable name="ec"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
         <xsl:if test="string-length($ec)!=0">
-          <PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
+          <PDBo:link_to_enzyme rdf:resource="{$p_enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
+          <owl:sameAs rdf:resource="{$p_enzyme}{$ec}"/>
           <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
         </xsl:if>
       </xsl:for-each>
@@ -275,7 +280,8 @@
 
   <xsl:template match="PDBx:pdbx_reference_entity_poly/PDBx:db_code[../PDBx:db_name='UNP' and text()!='']" mode="linked">
     <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
-    <PDBo:link_to_uniprot rdf:resource="{$uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/>
   </xsl:template>
 
@@ -287,7 +293,8 @@
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[(../PDBx:db_name='UNP' or ../PDBx:db_name='UniProtKB' or ../PDBx:db_name='UniProt') and text()!='']" mode="linked">
     <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
-    <PDBo:link_to_uniprot rdf:resource="{$uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/>
   </xsl:template>
 
@@ -328,7 +335,8 @@
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:taxid[text()!='']" mode="linked">
     <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
-    <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$acc}" rdfs:label="taxonomy:{$acc}"/>
+    <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$acc}" rdfs:label="taxonomy:{$acc}"/>
+    <owl:sameAs rdf:resource="{$p_taxonomy}{$acc}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$acc}" rdfs:label="taxonomy:{$acc}"/>
   </xsl:template>
 

@@ -1444,6 +1444,7 @@
             <PDBo:pdbx_database_related.db_id>31011</PDBo:pdbx_database_related.db_id>
             <PDBo:pdbx_database_related.db_name>BMRB</PDBo:pdbx_database_related.db_name>
             <PDBo:link_to_bmrb rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr31011" rdfs:label="bmrb:31011"/>
+            <owl:sameAs rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr31011"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb/31011" rdfs:label="bmrb:31011"/>
             <PDBo:pdbx_database_related.details>Solution NMR structure of hexahistidine tagged QseM (6H-QseM)</PDBo:pdbx_database_related.details>
           </PDBo:pdbx_database_related>

@@ -136,7 +136,7 @@
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pubmed">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
         <rdfs:comment xml:lang="en">external link to PubMed.</rdfs:comment>
       </owl:ObjectProperty>
 
@@ -213,7 +213,7 @@
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_taxonomy">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
         <rdfs:comment xml:lang="en">external link to NCBI taxonomy.</rdfs:comment>
       </owl:ObjectProperty>
 
@@ -228,12 +228,12 @@
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_enzyme">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
         <rdfs:comment xml:lang="en">external link to EC (enzyme commission) number.</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_go">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
         <rdfs:comment xml:lang="en">external link to GO (gene ontology).</rdfs:comment>
       </owl:ObjectProperty>
 
@@ -283,7 +283,7 @@
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pubchem_substance">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
         <rdfs:comment xml:lang="en">external link to PubChem Substance.</rdfs:comment>
       </owl:ObjectProperty>
 
@@ -298,7 +298,7 @@
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_chebi">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
         <rdfs:comment xml:lang="en">external link to ChEBI.</rdfs:comment>
       </owl:ObjectProperty>
 
@@ -313,7 +313,7 @@
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_chembl">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
         <rdfs:comment xml:lang="en">external link to ChEMBL.</rdfs:comment>
       </owl:ObjectProperty>
 

@@ -19,6 +19,7 @@
             <PDBo:citation.title>Cephaibols, new peptaibol antibiotics with anthelmintic properties from Acremonium tubakii DSM 12774</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2001</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11372779" rdfs:label="pubmed:11372779"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11372779"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/11372779" rdfs:label="pubmed:11372779"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -36,6 +37,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2003</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1002/psc.496" rdfs:label="doi:10.1002/psc.496"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/14658793" rdfs:label="pubmed:14658793"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/14658793"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/14658793" rdfs:label="pubmed:14658793"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -65,6 +67,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1998</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1002/(SICI)1099-1387(199705)3:3&amp;lt;193::AID-PSC101&amp;gt;3.0.CO;2-6" rdfs:label="doi:10.1002/(SICI)1099-1387(199705)3:3&lt;193::AID-PSC101&gt;3.0.CO;2-6"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/9230485" rdfs:label="pubmed:9230485"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/9230485"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/9230485" rdfs:label="pubmed:9230485"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -80,6 +83,7 @@
             <PDBo:citation.title>Parallel Packing of alpha-helices in Crystals of the Zervamicin IIA Analog Boc-Trp-Ile-Ala-Aib-Ile-Val-Aib-Leu-Aib-Pro-OMe</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1986</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/2432594" rdfs:label="pubmed:2432594"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/2432594"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/2432594" rdfs:label="pubmed:2432594"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -95,6 +99,7 @@
             <PDBo:citation.title>Crystal structure of [Leu1]zervamicin, a membrane ion-channel peptide: implications for gating mechanisms</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1991</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/1711227" rdfs:label="pubmed:1711227"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/1711227"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/1711227" rdfs:label="pubmed:1711227"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -112,6 +117,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1134/S1607672907030143" rdfs:label="doi:10.1134/S1607672907030143"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17695323" rdfs:label="pubmed:17695323"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17695323"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/17695323" rdfs:label="pubmed:17695323"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -155,6 +161,7 @@
             <PDBo:citation.title>Zervamicins, a structurally characterised peptide model for membrane ion channels.</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1992</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/1378732" rdfs:label="pubmed:1378732"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/1378732"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/1378732" rdfs:label="pubmed:1378732"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -170,6 +177,7 @@
             <PDBo:citation.title>Flexibility in peptide molecules and restraints imposed by hydrogen bonds, the Aib residue, and core inserts</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1996</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8541446" rdfs:label="pubmed:8541446"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8541446"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/8541446" rdfs:label="pubmed:8541446"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -187,6 +195,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2003</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1002/psc.495" rdfs:label="doi:10.1002/psc.495"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/14658792" rdfs:label="pubmed:14658792"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/14658792"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/14658792" rdfs:label="pubmed:14658792"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -216,6 +225,7 @@
             <PDBo:citation.title>Determining the occurrence of a 3(10)-helix and an alpha-helix in two different segments of a lipopeptaibol antibiotic using TOAC, a nitroxide spin-labeled C(alpha)-tetrasubstituted alpha-aminoacid</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1999</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10199662" rdfs:label="pubmed:10199662"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10199662"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/10199662" rdfs:label="pubmed:10199662"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -259,6 +269,7 @@
             <PDBo:citation.title>New Mycotoxin, Trichotoxin A, from Trichoderma viride Isolated from Southern Leaf Blight-Infected Corn</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1972</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/380305" rdfs:label="pubmed:380305"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/380305"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/380305" rdfs:label="pubmed:380305"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -290,6 +301,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2008</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1002/cbdv.200890158" rdfs:label="doi:10.1002/cbdv.200890158"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/18816522" rdfs:label="pubmed:18816522"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/18816522"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/18816522" rdfs:label="pubmed:18816522"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -319,6 +331,7 @@
             <PDBo:citation.title>Crystal structure of the channel-forming polypeptide antiamoebin in a membrane-mimetic environment</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1998</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/9576911" rdfs:label="pubmed:9576911"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/9576911"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/9576911" rdfs:label="pubmed:9576911"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -362,6 +375,7 @@
             <PDBo:citation.title>Chrysospermins v New Peptaibol Antibiotics from Apiocrea chrysosperma Ap101</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1995</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/7592066" rdfs:label="pubmed:7592066"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/7592066"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/7592066" rdfs:label="pubmed:7592066"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -377,6 +391,7 @@
             <PDBo:citation.title>Accommodation of a D-Phe residue into a right-handed 3(10)-helix: structure of Boc-D-Phe-(Aib)4-Gly-L-Leu-(Aib)2-OMe, an analogue of the amino terminal segment of antiamoebins and emerimicins</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1993</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8461451" rdfs:label="pubmed:8461451"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8461451"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/8461451" rdfs:label="pubmed:8461451"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -392,6 +407,7 @@
             <PDBo:citation.title>Conformational effects of chiral alpha,alpha-dialkyl amino acids. I. C-terminal tetrapeptides of emerimicin containing alpha-ethylalanine.</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1988</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/3246479" rdfs:label="pubmed:3246479"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/3246479"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/3246479" rdfs:label="pubmed:3246479"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -407,6 +423,7 @@
             <PDBo:citation.title>Molecular structure of peptaibol antibiotics: solution conformation and crystal structure of the octapeptide corresponding to the 2-9 sequence of emerimicins III and IV</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1985</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/3917040" rdfs:label="pubmed:3917040"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/3917040"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/3917040" rdfs:label="pubmed:3917040"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -422,6 +439,7 @@
             <PDBo:citation.title>Structures of the peptide antibiotics. Emerimicins III and IV 1,2.</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1977</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/874245" rdfs:label="pubmed:874245"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/874245"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/874245" rdfs:label="pubmed:874245"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -437,6 +455,7 @@
             <PDBo:citation.title>Emerimicins II, 3 and IV, antibiotics produced by Emericellopsis microspora in media supplemented with trans-4-n-propyl-L-proline</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1974</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/4851844" rdfs:label="pubmed:4851844"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/4851844"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/4851844" rdfs:label="pubmed:4851844"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -452,6 +471,7 @@
             <PDBo:citation.title>Factors governing helical preference of peptides containing multiple alpha,alpha-dialkyl amino acids</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1990</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/2296604" rdfs:label="pubmed:2296604"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/2296604"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/2296604" rdfs:label="pubmed:2296604"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -467,6 +487,7 @@
             <PDBo:citation.title>The NMR solution structure of the ion channel peptaibol chrysospermin C bound to dodecylphosphocholine micelles</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10712611" rdfs:label="pubmed:10712611"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10712611"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/10712611" rdfs:label="pubmed:10712611"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -482,6 +503,7 @@
             <PDBo:citation.title>Model for a helical bundle channel based on the high-resolution crystal structure of Trichotoxin_A50E</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2002</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/12390019" rdfs:label="pubmed:12390019"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/12390019"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/12390019" rdfs:label="pubmed:12390019"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -497,6 +519,7 @@
             <PDBo:citation.title>The ion-channel activity of longibrachins LGA I and II: effects of Pro-2/Ala and Gln-18/Glu substitutions on the alamethicin voltage-gated membrane channels</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1999</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10556493" rdfs:label="pubmed:10556493"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10556493"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/10556493" rdfs:label="pubmed:10556493"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -512,6 +535,7 @@
             <PDBo:citation.title>Voltage-dependent pore formation and antimicrobial activity by alamethicin and analogues</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2001</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11687873" rdfs:label="pubmed:11687873"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11687873"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/11687873" rdfs:label="pubmed:11687873"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -527,6 +551,7 @@
             <PDBo:citation.title>A voltage-gated ion channel model inferred from the crystal structure of alamethicin at 1.5- angstrom resolution</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1982</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/6292726" rdfs:label="pubmed:6292726"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/6292726"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/6292726" rdfs:label="pubmed:6292726"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -542,6 +567,7 @@
             <PDBo:citation.title>Structure of the alamethicin pore reconstructed by X-ray diffraction analysis</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2008</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/18199659" rdfs:label="pubmed:18199659"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/18199659"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/18199659" rdfs:label="pubmed:18199659"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -557,6 +583,7 @@
             <PDBo:citation.title>An anion-selective analogue of the channel-forming peptide alamethicin</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1999</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10320341" rdfs:label="pubmed:10320341"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10320341"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/10320341" rdfs:label="pubmed:10320341"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -572,6 +599,7 @@
             <PDBo:citation.title>Common structural features in gramicidin and other ion channels</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10684582" rdfs:label="pubmed:10684582"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10684582"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/10684582" rdfs:label="pubmed:10684582"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -587,6 +615,7 @@
             <PDBo:citation.title>The mechanism of channel formation by alamethicin as viewed by molecular dynamics simulations</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1999</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10472052" rdfs:label="pubmed:10472052"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10472052"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/10472052" rdfs:label="pubmed:10472052"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -602,6 +631,7 @@
             <PDBo:citation.title>Alamethicin : Pore-forming properties F50/5 inserted in a biological membrane</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17589885" rdfs:label="pubmed:17589885"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17589885"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/17589885" rdfs:label="pubmed:17589885"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -617,6 +647,7 @@
             <PDBo:citation.title>Channel-forming activity of alamethicin: effects of covalent tethering</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17589884" rdfs:label="pubmed:17589884"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17589884"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/17589884" rdfs:label="pubmed:17589884"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -632,6 +663,7 @@
             <PDBo:citation.title>Alamethicin or detergent permeabilization of the cell membrane as a tool for adenylate cyclase determination</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1982</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/6285993" rdfs:label="pubmed:6285993"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/6285993"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/6285993" rdfs:label="pubmed:6285993"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -647,6 +679,7 @@
             <PDBo:citation.title>Ligand-induced extramembrane conformation switch controlling alamethicin assembly and the channel current</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17589883" rdfs:label="pubmed:17589883"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17589883"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/17589883" rdfs:label="pubmed:17589883"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -662,6 +695,7 @@
             <PDBo:citation.title>Alamethicin interaction with lipid membranes: a spectroscopic study on synthetic analogues</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17589867" rdfs:label="pubmed:17589867"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17589867"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/17589867" rdfs:label="pubmed:17589867"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -677,6 +711,7 @@
             <PDBo:citation.title>Lipid chain-length dependence for incorporation of alamethicin in membranes: electron paramagnetic resonance studies on TOAC-spin labeled analogs</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17351010" rdfs:label="pubmed:17351010"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17351010"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/17351010" rdfs:label="pubmed:17351010"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -692,6 +727,7 @@
             <PDBo:citation.title>Conformation of the flexible bent helix of Leu1-zervamicin in crystal C and a possible gating action for ion passage.</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1994</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8025219" rdfs:label="pubmed:8025219"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8025219"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/8025219" rdfs:label="pubmed:8025219"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -735,6 +771,7 @@
             <PDBo:citation.title>Model for a helical bundle channel based on the high-resolution crystal structure of trichotoxin_A50E.</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2002</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/12390019" rdfs:label="pubmed:12390019"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/12390019"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/12390019" rdfs:label="pubmed:12390019"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -3873,6 +3910,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>peptaibol antibiotic</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/22281739" rdfs:label="pubmed:22281739"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/22281739"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/22281739" rdfs:label="pubmed:22281739"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
@@ -3886,6 +3924,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>peptide antibiotic</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/23019149" rdfs:label="pubmed:23019149"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/23019149"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/23019149" rdfs:label="pubmed:23019149"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
@@ -3899,6 +3938,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>peptaibol antibiotic</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/12390019" rdfs:label="pubmed:12390019"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/12390019"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/12390019" rdfs:label="pubmed:12390019"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
@@ -3912,6 +3952,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>forms multimeric transmembrane channels through self-association</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Mechanism of action</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/12390019" rdfs:label="pubmed:12390019"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/12390019"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/12390019" rdfs:label="pubmed:12390019"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
@@ -4459,6 +4500,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>16132282</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16132282" rdfs:label="pubchem.substance:16132282"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16132282"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/16132282" rdfs:label="pubchem.substance:16132282"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
@@ -4676,6 +4718,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>16132327</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16132327" rdfs:label="pubchem.substance:16132327"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16132327"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/16132327" rdfs:label="pubchem.substance:16132327"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
@@ -4750,6 +4793,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>16132042</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16132042" rdfs:label="pubchem.substance:16132042"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16132042"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/16132042" rdfs:label="pubchem.substance:16132042"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>

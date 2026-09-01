@@ -15,6 +15,9 @@
   <xsl:include href="url-encode.xsl"/>
   <xsl:include href="compatible-pdb-id.xsl"/>
 
+  <xsl:param name="unichem_xml" required="no"/>
+  <xsl:param name="unichem_mapping" select="document($unichem_xml)"/>
+
   <xsl:param name="primitive_type_mapping" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/stylesheet/pdbx_primitive_type_mapping.xml'" required="no"/>
   <xsl:param name="type_mapping" select="document($primitive_type_mapping)"/>
 
@@ -29,9 +32,14 @@
   <xsl:variable name="pdbe">http://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/</xsl:variable>
   <xsl:variable name="idorg">http://identifiers.org/</xsl:variable>
   <xsl:variable name="doi">http://doi.org/</xsl:variable>
-  <xsl:variable name="pubmed">http://rdf.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
-  <xsl:variable name="taxonomy">http://purl.uniprot.org/taxonomy/</xsl:variable>
-  <xsl:variable name="enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
+  <xsl:variable name="p_pubmed">http://rdf.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
+  <xsl:variable name="p_taxonomy">http://purl.uniprot.org/taxonomy/</xsl:variable>
+  <xsl:variable name="p_enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
+  <xsl:variable name="p_chembl">http://rdf.ebi.ac.uk/resource/chembl/molecule/</xsl:variable>
+  <xsl:variable name="p_gtop">https://rdf.guidetopharmacology.org/GRAC/ligand</xsl:variable>
+  <xsl:variable name="p_chebi">http://purl.obolibrary.org/obo/CHEBI_</xsl:variable>
+  <xsl:variable name="p_pubchem">http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID</xsl:variable>
+  <xsl:variable name="p_glycoinfo">http://rdf.glycoinfo.org/glycan/</xsl:variable>
 
   <xsl:template match="/">
     <rdf:RDF>
@@ -47,6 +55,38 @@
       <rdfs:seeAlso rdf:resource="{$pdbj}{$CC_ID}"/>
       <rdfs:seeAlso rdf:resource="{$rcsb}{$CC_ID}"/>
       <rdfs:seeAlso rdf:resource="{$pdbe}{$CC_ID}"/>
+      <xsl:for-each select="$unichem_mapping/root/compounds/item/sources/item">
+        <xsl:variable name="source_id"><xsl:value-of select="./id/text()"/></xsl:variable>
+        <xsl:variable name="compound_id"><xsl:value-of select="./compoundId/text()"/></xsl:variable>
+        <xsl:variable name="url"><xsl:value-of select="./url/text()"/></xsl:variable>
+        <xsl:choose>
+          <xsl:when test="$source_id='1'">
+            <owl:sameAs rdf:resource="{$p_chembl}{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='3'"/> <!-- self: rcsb pdb -->
+          <xsl:when test="$source_id='4'">
+            <owl:sameAs rdf:resource="{$p_gtop}{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='5'"/> <!-- self: pdbe -->
+          <xsl:when test="$source_id='7'">
+            <xsl:variable name="_compound_id"><xsl:value-of select="substring-after($compound_id,':')"/></xsl:variable>
+            <owl:sameAs rdf:resource="{$p_chebi}{$_compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='22'">
+            <owl:sameAs rdf:resource="{$p_pubchem}{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='31'"/> <!-- bulk-download link -->
+          <xsl:when test="$source_id='38'"> <!-- compound_id is based on ChEBI identifier -->
+            <rdfs:seeAlso rdf:resource="{$url}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='53'">
+            <owl:sameAs rdf:resource="{$p_glycoinfo}{$compound_id}"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <rdfs:seeAlso rdf:resource="{$url}"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:for-each>
 
       <PDBo:datablockName><xsl:value-of select="@datablockName"/></PDBo:datablockName>
       <xsl:apply-templates select="./*"/>
@@ -138,7 +178,8 @@
   </xsl:template>
 
   <xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked">
-    <PDBo:link_to_pubmed rdf:resource="{$pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
+    <PDBo:link_to_pubmed rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
+    <owl:sameAs rdf:resource="{$p_pubmed}{text()}"/>
     <dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/>
   </xsl:template>
 
@@ -188,7 +229,8 @@
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-        <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -204,7 +246,8 @@
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-        <PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_host rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -220,7 +263,8 @@
     <xsl:for-each select="ext:node-set($tax_list)/token">
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
-        <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -238,7 +282,8 @@
       <xsl:for-each select="ext:node-set($ec_list)/token">
         <xsl:variable name="ec"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
         <xsl:if test="string-length($ec)!=0">
-          <PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
+          <PDBo:link_to_enzyme rdf:resource="{$p_enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
+          <owl:sameAs rdf:resource="{$p_enzyme}{$ec}"/>
           <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
         </xsl:if>
       </xsl:for-each>

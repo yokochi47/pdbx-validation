@@ -6,6 +6,39 @@
     <rdfs:seeAlso rdf:resource="http://pdbj.org/chemie/summary/MK1"/>
     <rdfs:seeAlso rdf:resource="http://www.rcsb.org/ligand/MK1"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/MK1"/>
+    <owl:sameAs rdf:resource="http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL115"/>
+    <rdfs:seeAlso rdf:resource="https://go.drugbank.com/drugs/DB00224"/>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_44032"/>
+    <rdfs:seeAlso rdf:resource="https://d20b1koi85gdl2.cloudfront.net/uniisearch/srs/unii/9MG78X43ZT"/>
+    <rdfs:seeAlso rdf:resource="https://www.surechembl.org/chemical/29359155"/>
+    <rdfs:seeAlso rdf:resource="https://www.surechembl.org/chemical/29714123"/>
+    <rdfs:seeAlso rdf:resource="https://www.surechembl.org/chemical/6317"/>
+    <rdfs:seeAlso rdf:resource="https://www.hmdb.ca/metabolites/HMDB0014369"/>
+    <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5362440"/>
+    <rdfs:seeAlso rdf:resource="https://www.molport.com/shop/compound/Molport-000-883-804"/>
+    <rdfs:seeAlso rdf:resource="https://comptox.epa.gov/dashboard/chemical/details/DTXSID4043802"/>
+    <rdfs:seeAlso rdf:resource="https://drugcentral.org/drugcard/1437"/>
+    <rdfs:seeAlso rdf:resource="https://www.brenda-enzymes.org/ligand.php?brenda_ligand_id=1036"/>
+    <rdfs:seeAlso rdf:resource="https://www.brenda-enzymes.org/ligand.php?brenda_ligand_id=229531"/>
+    <rdfs:seeAlso rdf:resource="https://www.brenda-enzymes.org/ligand.php?brenda_ligand_id=229532"/>
+    <rdfs:seeAlso rdf:resource="https://www.brenda-enzymes.org/ligand.php?brenda_ligand_id=66585"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00001443"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00001644"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00050180"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00120783"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00148785"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00158405"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00192660"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00307502"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00362310"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00411996"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00433056"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT01067690"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT02300623"/>
+    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT02302547"/>
+    <rdfs:seeAlso rdf:resource="https://www.probes-drugs.org/compounds/PD010161"/>
+    <rdfs:seeAlso rdf:resource="https://www.ccdc.cam.ac.uk/structures/search?sid=UNICHEM&amp;pid=csd:DIJWOJ"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Indinavir"/>
     <PDBo:datablockName>MK1</PDBo:datablockName>
     <PDBo:has_chem_compCategory>
       <PDBo:chem_compCategory rdf:about="http://rdf.wwpdb.org/cc/MK1/chem_compCategory">

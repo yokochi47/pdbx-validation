@@ -64,6 +64,7 @@ do
 
   cc_id=`basename $pdbml_file .xml`
   rdf_file=$WORK_DIR/$cc_id.rdf
+  uc_xml_file=$WORK_DIR/$UNICHEM_SRCS/$cc_id.xml
   #if [ ${#cc_id} -gt 3 ] ; then
   # div_dir=$WORK_DIR/${cc_id:2}
   #else
@@ -78,7 +79,12 @@ do
 
    #gunzip -c $pdbml_gz_file | xsltproc -o $rdf_file $CC2RDF_XSL - 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
    #xsltproc -o $rdf_file $CC2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
-   xsltproc -o $rdf_file --stringparam primitive_type_mapping $_PDBX_PRIMITIVE_TYPE_MAPPING_XML $CC2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
+
+   if [ -e $uc_xml_file ] ; then
+    xsltproc -o $rdf_file --stringparam unichem_xml ../$uc_xml_file --stringparam primitive_type_mapping $_PDBX_PRIMITIVE_TYPE_MAPPING_XML $CC2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
+   else
+    xsltproc -o $rdf_file --stringparam primitive_type_mapping $_PDBX_PRIMITIVE_TYPE_MAPPING_XML $CC2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
+   fi
 
    if [ $has_rapper_command != "false" ] ; then
     rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )

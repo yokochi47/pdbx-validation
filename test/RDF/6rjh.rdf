@@ -396,6 +396,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2019</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1073/pnas.1904766116" rdfs:label="doi:10.1073/pnas.1904766116"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/31127045" rdfs:label="pubmed:31127045"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/31127045"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/31127045" rdfs:label="pubmed:31127045"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -4163,6 +4164,7 @@
             <PDBo:entity_src_nat.pdbx_ncbi_taxonomy_id>9796</PDBo:entity_src_nat.pdbx_ncbi_taxonomy_id>
             <PDBo:entity_src_nat.pdbx_organism_scientific>Equus caballus</PDBo:entity_src_nat.pdbx_organism_scientific>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/9796" rdfs:label="taxonomy:9796"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9796"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9796" rdfs:label="taxonomy:9796"/>
           </PDBo:entity_src_nat>
         </PDBo:has_entity_src_nat>
@@ -143917,6 +143919,7 @@
             <PDBo:struct_ref.pdbx_db_accession>P02791</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:struct_ref.pdbx_seq_one_letter_code>SQIRQNYSTEVEAAVNRLVNLYLRASYTYLSLGFYFDRDDVALEGVCHFFRELAEEKREGAERLLKMQNQRGGRALFQDLQKPSQDEWGTTLDAMKAAIVLEKSLNQALLDLHALGSAQADPHLCDFLESHFLDEEVKLIKKMGDHLTNIQRLVGSQAGLGEYLFERLTLK</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
@@ -144463,6 +144466,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144486,6 +144490,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144509,6 +144514,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144532,6 +144538,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144555,6 +144562,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144578,6 +144586,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144601,6 +144610,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144624,6 +144634,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144647,6 +144658,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144670,6 +144682,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144693,6 +144706,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144716,6 +144730,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144739,6 +144754,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144762,6 +144778,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144785,6 +144802,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144808,6 +144826,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144831,6 +144850,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144854,6 +144874,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144877,6 +144898,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144900,6 +144922,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144923,6 +144946,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144946,6 +144970,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144969,6 +144994,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -144992,6 +145018,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P02791"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P02791" rdfs:label="uniprot:P02791"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">173</PDBo:pdbx_sifts_unp_segments.unp_end>

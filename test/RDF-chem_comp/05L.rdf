@@ -6,6 +6,7 @@
     <rdfs:seeAlso rdf:resource="http://pdbj.org/chemie/summary/05L"/>
     <rdfs:seeAlso rdf:resource="http://www.rcsb.org/ligand/05L"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/05L"/>
+    <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID54759163"/>
     <PDBo:datablockName>05L</PDBo:datablockName>
     <PDBo:has_chem_compCategory>
       <PDBo:chem_compCategory rdf:about="http://rdf.wwpdb.org/cc/05L/chem_compCategory">

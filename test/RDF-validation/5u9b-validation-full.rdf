@@ -1788,6 +1788,7 @@
             <PDBo:pdbx_database_related.db_id>30210</PDBo:pdbx_database_related.db_id>
             <PDBo:pdbx_database_related.db_name>BMRB</PDBo:pdbx_database_related.db_name>
             <PDBo:link_to_bmrb rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr30210" rdfs:label="bmrb:30210"/>
+            <owl:sameAs rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr30210"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb/30210" rdfs:label="bmrb:30210"/>
             <PDBo:pdbx_database_related.details>Solution structure of the zinc fingers 1 and 2 of MBNL1 in complex with human cardiac troponin T pre-mRNA</PDBo:pdbx_database_related.details>
           </PDBo:pdbx_database_related>
@@ -7054,6 +7055,7 @@
             <PDBo:struct_ref.pdbx_db_accession>Q9NR56</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:struct_ref.pdbx_seq_one_letter_code>MAVSVTPIRDTKWLTLEVCREFQRGTCSRPDTECKFAHPSKSCQVENGRVIACFDSLKGRCSRENCKYLHPPPHLKTQLEINGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9NR56" rdfs:label="uniprot:Q9NR56"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q9NR56"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9NR56" rdfs:label="uniprot:Q9NR56"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
@@ -7410,6 +7412,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9NR56" rdfs:label="uniprot:Q9NR56"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q9NR56"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9NR56" rdfs:label="uniprot:Q9NR56"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92</PDBo:pdbx_sifts_unp_segments.unp_end>

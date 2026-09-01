@@ -116,6 +116,7 @@
             <PDBo:entity.src_method>man</PDBo:entity.src_method>
             <PDBo:entity.type>polymer</PDBo:entity.type>
             <PDBo:link_to_enzyme rdf:resource="http://purl.uniprot.org/enzyme/2.7.13.3" rdfs:label="ec-code:2.7.13.3"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/enzyme/2.7.13.3"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/ec-code/2.7.13.3" rdfs:label="ec-code:2.7.13.3"/>
           </PDBo:entity>
         </PDBo:has_entity>
@@ -21511,6 +21512,7 @@
             <PDBo:struct_ref.pdbx_db_accession>Q9RZA4</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:struct_ref.pdbx_seq_one_letter_code>MSRDPLPFFPPLYLGGPEITTENCEREPIHIPGSIQPHGALLTADGHSGEVLQMSLNAATFLGQEPTVLRGQTLAALLPEQWPALQAALPPGCPDALQYRATLDWPAAGHLSLTVHRVGELLILEFEPTEAWDSTGPHALRNAMFALESAPNLRALAEVATQTVRELTGFDRVMLYKFAPDATGEVIAEARREGLHAFLGHRFPASDIPAQARALYTRHLLRLTADTRAAAVPLDPVLNPQTNAPTPLGGAVLRATSPMHMQYLRNMGVGSSLSVSVVVGGQLWGLIACHHQTPYVLPPDLRTTLEYLGRLLSLQVQVKEA</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9RZA4" rdfs:label="uniprot:Q9RZA4"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q9RZA4"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9RZA4" rdfs:label="uniprot:Q9RZA4"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
@@ -22554,6 +22556,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9RZA4" rdfs:label="uniprot:Q9RZA4"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q9RZA4"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9RZA4" rdfs:label="uniprot:Q9RZA4"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">321</PDBo:pdbx_sifts_unp_segments.unp_end>

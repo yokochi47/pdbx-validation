@@ -115,6 +115,7 @@ VALIDATION_CHECK_6_03_XSL=stylesheet/validation_check_6.03.xsl
 COMPLEX_VRPT_XSL=stylesheet/complex_vrpt.xsl
 
 INCHIKEY_DESC_XSL=stylesheet/inchikey_descriptor.xsl
+INCHI_DESC_XSL=stylesheet/inchi_descriptor.xsl
 
 RDF=RDF
 
@@ -141,7 +142,7 @@ XSD2MERGE_PDBML_NEXTGEN_XSL=stylesheet/xsd2merge_pdbml_nextgen.xsl
 MERGE_PDBML_NEXTGEN_XSL=stylesheet/merge_pdbml_nextgen.xsl
 
 UNICHEM_API=https://www.ebi.ac.uk/unichem/api/v1/compounds
-UNICHEM_JSON=unichem_json
+UNICHEM_SRCS=unichem_sources
 
 CC_CIF_URL=ftp.pdbj.org/pub/pdb/refdata/chem_comp
 MMCIF_CC=pub/pdb/refdata/chem_comp

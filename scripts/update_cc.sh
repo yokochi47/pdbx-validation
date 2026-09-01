@@ -75,6 +75,13 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $components_cif_del
  fi
 
+ if [ -d $UNICHEM_SRCS ] ; then
+  while read cc_id ; do
+   [ -z "$cc_id" ] || [[ "$cc_id" =~ ^#.* ]] && continue
+   rm -f $UNICHEM_SRCS/$cc_id.json $UNICHEM_SRCS/$cc_id.xml
+  done < $components_cif_del
+ fi
+
  if [ -d $RDF_CC ] ; then
   while read cc_id ; do
    [ -z "$cc_id" ] || [[ "$cc_id" =~ ^#.* ]] && continue
@@ -150,6 +157,13 @@ if [ -d $XML_CC ] ; then
  while read cc_id ; do
   [ -z "$cc_id" ] || [[ "$cc_id" =~ ^#.* ]] && continue
   rm -f $XML_CC/$cc_id.xml
+ done < $chk_sum_log
+fi
+
+if [ -d $UNICHEM_SRCS ; then
+ while read cc_id ; do
+  [ -z "$cc_id" ] || [[ "$cc_id" =~ ^#.* ]] && continue
+  rm -f $UNICHEM_SRCS/$cc_id.json $UNICHEM_SRCS/$cc_id.xml
  done < $chk_sum_log
 fi
 

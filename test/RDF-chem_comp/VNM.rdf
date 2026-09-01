@@ -6,6 +6,7 @@
     <rdfs:seeAlso rdf:resource="http://pdbj.org/chemie/summary/VNM"/>
     <rdfs:seeAlso rdf:resource="http://www.rcsb.org/ligand/VNM"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/VNM"/>
+    <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID155923774"/>
     <PDBo:datablockName>VNM</PDBo:datablockName>
     <PDBo:has_chem_compCategory>
       <PDBo:chem_compCategory rdf:about="http://rdf.wwpdb.org/cc/VNM/chem_compCategory">
