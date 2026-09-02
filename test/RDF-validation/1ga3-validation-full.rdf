@@ -11450,6 +11450,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0001774" rdfs:label="GO:0001774"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0001774"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0001774" rdfs:label="GO:0001774"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11470,6 +11471,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0002639" rdfs:label="GO:0002639"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0002639"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0002639" rdfs:label="GO:0002639"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11490,6 +11492,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0002639" rdfs:label="GO:0002639"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0002639"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0002639" rdfs:label="GO:0002639"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11510,6 +11513,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005125" rdfs:label="GO:0005125"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005125"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005125" rdfs:label="GO:0005125"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11530,6 +11534,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005144" rdfs:label="GO:0005144"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005144"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005144" rdfs:label="GO:0005144"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11550,6 +11555,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005515" rdfs:label="GO:0005515"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005515"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005515" rdfs:label="GO:0005515"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11570,6 +11576,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005515" rdfs:label="GO:0005515"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005515"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005515" rdfs:label="GO:0005515"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11590,6 +11597,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005515" rdfs:label="GO:0005515"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005515"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005515" rdfs:label="GO:0005515"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11610,6 +11618,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005515" rdfs:label="GO:0005515"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005515"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005515" rdfs:label="GO:0005515"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11630,6 +11639,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11650,6 +11660,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11670,6 +11681,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11690,6 +11702,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11710,6 +11723,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11730,6 +11744,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11750,6 +11765,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11770,6 +11786,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005615" rdfs:label="GO:0005615"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005615"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005615" rdfs:label="GO:0005615"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11790,6 +11807,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005737" rdfs:label="GO:0005737"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005737"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005737" rdfs:label="GO:0005737"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11810,6 +11828,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0006954" rdfs:label="GO:0006954"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0006954"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0006954" rdfs:label="GO:0006954"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11830,6 +11849,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0009897" rdfs:label="GO:0009897"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0009897"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0009897" rdfs:label="GO:0009897"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11850,6 +11870,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0010155" rdfs:label="GO:0010155"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0010155"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0010155" rdfs:label="GO:0010155"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11870,6 +11891,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0010628" rdfs:label="GO:0010628"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0010628"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0010628" rdfs:label="GO:0010628"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11890,6 +11912,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0010628" rdfs:label="GO:0010628"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0010628"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0010628" rdfs:label="GO:0010628"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11910,6 +11933,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0030890" rdfs:label="GO:0030890"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0030890"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0030890" rdfs:label="GO:0030890"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11930,6 +11954,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0035094" rdfs:label="GO:0035094"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0035094"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0035094" rdfs:label="GO:0035094"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11950,6 +11975,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0042116" rdfs:label="GO:0042116"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0042116"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0042116" rdfs:label="GO:0042116"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11970,6 +11996,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0042531" rdfs:label="GO:0042531"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0042531"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0042531" rdfs:label="GO:0042531"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -11990,6 +12017,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0043032" rdfs:label="GO:0043032"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0043032"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0043032" rdfs:label="GO:0043032"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12010,6 +12038,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0045471" rdfs:label="GO:0045471"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0045471"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0045471" rdfs:label="GO:0045471"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12030,6 +12059,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0048661" rdfs:label="GO:0048661"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0048661"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0048661" rdfs:label="GO:0048661"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12050,6 +12080,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0050714" rdfs:label="GO:0050714"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0050714"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0050714" rdfs:label="GO:0050714"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12070,6 +12101,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0050728" rdfs:label="GO:0050728"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0050728"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0050728" rdfs:label="GO:0050728"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12090,6 +12122,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0051281" rdfs:label="GO:0051281"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0051281"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0051281" rdfs:label="GO:0051281"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12110,6 +12143,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0071260" rdfs:label="GO:0071260"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0071260"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0071260" rdfs:label="GO:0071260"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12130,6 +12164,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005515" rdfs:label="GO:0005515"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005515"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005515" rdfs:label="GO:0005515"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12150,6 +12185,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12170,6 +12206,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12190,6 +12227,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12210,6 +12248,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12230,6 +12269,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005615" rdfs:label="GO:0005615"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005615"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005615" rdfs:label="GO:0005615"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12250,6 +12290,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005615" rdfs:label="GO:0005615"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005615"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005615" rdfs:label="GO:0005615"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12270,6 +12311,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005615" rdfs:label="GO:0005615"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005615"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005615" rdfs:label="GO:0005615"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12290,6 +12332,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0006954" rdfs:label="GO:0006954"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0006954"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0006954" rdfs:label="GO:0006954"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12310,6 +12353,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0007165" rdfs:label="GO:0007165"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0007165"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0007165" rdfs:label="GO:0007165"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12330,6 +12374,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0009612" rdfs:label="GO:0009612"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0009612"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0009612" rdfs:label="GO:0009612"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12350,6 +12395,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0010628" rdfs:label="GO:0010628"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0010628"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0010628" rdfs:label="GO:0010628"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12370,6 +12416,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0032496" rdfs:label="GO:0032496"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0032496"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0032496" rdfs:label="GO:0032496"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12390,6 +12437,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0032723" rdfs:label="GO:0032723"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0032723"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0032723" rdfs:label="GO:0032723"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12410,6 +12458,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0032733" rdfs:label="GO:0032733"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0032733"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0032733" rdfs:label="GO:0032733"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12430,6 +12479,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0033861" rdfs:label="GO:0033861"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0033861"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0033861" rdfs:label="GO:0033861"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12450,6 +12500,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0043270" rdfs:label="GO:0043270"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0043270"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0043270" rdfs:label="GO:0043270"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12470,6 +12521,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0043306" rdfs:label="GO:0043306"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0043306"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0043306" rdfs:label="GO:0043306"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12490,6 +12542,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0120162" rdfs:label="GO:0120162"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0120162"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0120162" rdfs:label="GO:0120162"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12510,6 +12563,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0120162" rdfs:label="GO:0120162"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0120162"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0120162" rdfs:label="GO:0120162"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12530,6 +12584,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_1901215" rdfs:label="GO:1901215"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_1901215"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:1901215" rdfs:label="GO:1901215"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12550,6 +12605,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_1903660" rdfs:label="GO:1903660"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_1903660"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:1903660" rdfs:label="GO:1903660"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12570,6 +12626,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_2000231" rdfs:label="GO:2000231"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_2000231"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:2000231" rdfs:label="GO:2000231"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12590,6 +12647,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_2000352" rdfs:label="GO:2000352"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_2000352"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:2000352" rdfs:label="GO:2000352"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12610,6 +12668,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0071345" rdfs:label="GO:0071345"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0071345"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0071345" rdfs:label="GO:0071345"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12630,6 +12689,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0071635" rdfs:label="GO:0071635"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0071635"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0071635" rdfs:label="GO:0071635"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12650,6 +12710,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_1901247" rdfs:label="GO:1901247"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_1901247"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:1901247" rdfs:label="GO:1901247"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12670,6 +12731,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_1901251" rdfs:label="GO:1901251"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_1901251"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:1901251" rdfs:label="GO:1901251"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12770,6 +12832,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0001774" rdfs:label="GO:0001774"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0001774"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0001774" rdfs:label="GO:0001774"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12790,6 +12853,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0002639" rdfs:label="GO:0002639"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0002639"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0002639" rdfs:label="GO:0002639"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12810,6 +12874,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0002639" rdfs:label="GO:0002639"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0002639"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0002639" rdfs:label="GO:0002639"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12830,6 +12895,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005125" rdfs:label="GO:0005125"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005125"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005125" rdfs:label="GO:0005125"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12850,6 +12916,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005144" rdfs:label="GO:0005144"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005144"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005144" rdfs:label="GO:0005144"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12870,6 +12937,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005515" rdfs:label="GO:0005515"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005515"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005515" rdfs:label="GO:0005515"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12890,6 +12958,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005515" rdfs:label="GO:0005515"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005515"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005515" rdfs:label="GO:0005515"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12910,6 +12979,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005515" rdfs:label="GO:0005515"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005515"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005515" rdfs:label="GO:0005515"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12930,6 +13000,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005515" rdfs:label="GO:0005515"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005515"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005515" rdfs:label="GO:0005515"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12950,6 +13021,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005515" rdfs:label="GO:0005515"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005515"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005515" rdfs:label="GO:0005515"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12970,6 +13042,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -12990,6 +13063,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13010,6 +13084,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13030,6 +13105,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13050,6 +13126,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13070,6 +13147,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13090,6 +13168,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13110,6 +13189,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13130,6 +13210,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13150,6 +13231,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13170,6 +13252,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005576" rdfs:label="GO:0005576"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005576"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005576" rdfs:label="GO:0005576"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13190,6 +13273,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005615" rdfs:label="GO:0005615"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005615"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005615" rdfs:label="GO:0005615"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13210,6 +13294,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005615" rdfs:label="GO:0005615"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005615"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005615" rdfs:label="GO:0005615"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13230,6 +13315,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005615" rdfs:label="GO:0005615"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005615"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005615" rdfs:label="GO:0005615"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13250,6 +13336,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005615" rdfs:label="GO:0005615"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005615"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005615" rdfs:label="GO:0005615"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13270,6 +13357,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005737" rdfs:label="GO:0005737"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0005737"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005737" rdfs:label="GO:0005737"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13290,6 +13378,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0006954" rdfs:label="GO:0006954"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0006954"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0006954" rdfs:label="GO:0006954"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13310,6 +13399,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0006954" rdfs:label="GO:0006954"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0006954"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0006954" rdfs:label="GO:0006954"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13330,6 +13420,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0007165" rdfs:label="GO:0007165"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0007165"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0007165" rdfs:label="GO:0007165"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13350,6 +13441,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0009612" rdfs:label="GO:0009612"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0009612"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0009612" rdfs:label="GO:0009612"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13370,6 +13462,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0009897" rdfs:label="GO:0009897"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0009897"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0009897" rdfs:label="GO:0009897"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13390,6 +13483,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0010155" rdfs:label="GO:0010155"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0010155"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0010155" rdfs:label="GO:0010155"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13410,6 +13504,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0010628" rdfs:label="GO:0010628"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0010628"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0010628" rdfs:label="GO:0010628"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13430,6 +13525,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0010628" rdfs:label="GO:0010628"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0010628"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0010628" rdfs:label="GO:0010628"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13450,6 +13546,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0010628" rdfs:label="GO:0010628"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0010628"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0010628" rdfs:label="GO:0010628"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13470,6 +13567,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0030890" rdfs:label="GO:0030890"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0030890"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0030890" rdfs:label="GO:0030890"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13490,6 +13588,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0032496" rdfs:label="GO:0032496"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0032496"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0032496" rdfs:label="GO:0032496"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13510,6 +13609,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0032723" rdfs:label="GO:0032723"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0032723"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0032723" rdfs:label="GO:0032723"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13530,6 +13630,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0032733" rdfs:label="GO:0032733"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0032733"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0032733" rdfs:label="GO:0032733"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13550,6 +13651,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0033861" rdfs:label="GO:0033861"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0033861"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0033861" rdfs:label="GO:0033861"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13570,6 +13672,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0035094" rdfs:label="GO:0035094"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0035094"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0035094" rdfs:label="GO:0035094"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13590,6 +13693,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0042116" rdfs:label="GO:0042116"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0042116"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0042116" rdfs:label="GO:0042116"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13610,6 +13714,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0042531" rdfs:label="GO:0042531"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0042531"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0042531" rdfs:label="GO:0042531"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13630,6 +13735,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0043032" rdfs:label="GO:0043032"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0043032"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0043032" rdfs:label="GO:0043032"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13650,6 +13756,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0043270" rdfs:label="GO:0043270"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0043270"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0043270" rdfs:label="GO:0043270"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13670,6 +13777,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0043306" rdfs:label="GO:0043306"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0043306"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0043306" rdfs:label="GO:0043306"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13690,6 +13798,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0045471" rdfs:label="GO:0045471"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0045471"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0045471" rdfs:label="GO:0045471"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13710,6 +13819,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0048661" rdfs:label="GO:0048661"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0048661"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0048661" rdfs:label="GO:0048661"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13730,6 +13840,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0050714" rdfs:label="GO:0050714"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0050714"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0050714" rdfs:label="GO:0050714"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13750,6 +13861,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0050728" rdfs:label="GO:0050728"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0050728"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0050728" rdfs:label="GO:0050728"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13770,6 +13882,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0051281" rdfs:label="GO:0051281"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0051281"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0051281" rdfs:label="GO:0051281"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13790,6 +13903,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0071260" rdfs:label="GO:0071260"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0071260"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0071260" rdfs:label="GO:0071260"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13810,6 +13924,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0071345" rdfs:label="GO:0071345"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0071345"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0071345" rdfs:label="GO:0071345"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13830,6 +13945,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0071635" rdfs:label="GO:0071635"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0071635"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0071635" rdfs:label="GO:0071635"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13850,6 +13966,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0120162" rdfs:label="GO:0120162"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0120162"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0120162" rdfs:label="GO:0120162"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13870,6 +13987,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0120162" rdfs:label="GO:0120162"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0120162"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0120162" rdfs:label="GO:0120162"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13890,6 +14008,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_1901215" rdfs:label="GO:1901215"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_1901215"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:1901215" rdfs:label="GO:1901215"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13910,6 +14029,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_1901247" rdfs:label="GO:1901247"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_1901247"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:1901247" rdfs:label="GO:1901247"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13930,6 +14050,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_1901251" rdfs:label="GO:1901251"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_1901251"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:1901251" rdfs:label="GO:1901251"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13950,6 +14071,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_1903660" rdfs:label="GO:1903660"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_1903660"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:1903660" rdfs:label="GO:1903660"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13970,6 +14092,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_2000231" rdfs:label="GO:2000231"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_2000231"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:2000231" rdfs:label="GO:2000231"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
@@ -13990,6 +14113,7 @@
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_2000352" rdfs:label="GO:2000352"/>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_2000352"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:2000352" rdfs:label="GO:2000352"/>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>

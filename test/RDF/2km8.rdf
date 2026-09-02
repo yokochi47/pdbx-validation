@@ -6117,7 +6117,7 @@
             <PDBo:pdbx_database_related.db_id>16425</PDBo:pdbx_database_related.db_id>
             <PDBo:pdbx_database_related.db_name>BMRB</PDBo:pdbx_database_related.db_name>
             <PDBo:link_to_bmrb rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr16425" rdfs:label="bmrb:16425"/>
-            <owl:saveAs rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr16425"/>
+            <owl:sameAs rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr16425"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb/16425" rdfs:label="bmrb:16425"/>
           </PDBo:pdbx_database_related>
         </PDBo:has_pdbx_database_related>
