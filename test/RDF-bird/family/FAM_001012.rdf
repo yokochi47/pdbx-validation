@@ -630,7 +630,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>579</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=579"/>
+            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/rwd/entry/579"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -837,7 +837,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>580</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=580"/>
+            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/rwd/entry/580"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -855,7 +855,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>780</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=780"/>
+            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/rwd/entry/780"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1007,7 +1007,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>714</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=714"/>
+            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/rwd/entry/714"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1179,7 +1179,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>50299000</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=50299000"/>
+            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/rwd/entry/50299000"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1277,7 +1277,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>50209559</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=50209559"/>
+            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/rwd/entry/50209559"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1433,7 +1433,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>50242882</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=50242882"/>
+            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/rwd/entry/50242882"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1571,7 +1571,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>50273738</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=50273738"/>
+            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/rwd/entry/50273738"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1649,7 +1649,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>50273737</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=50273737"/>
+            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/rwd/entry/50273737"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1806,7 +1806,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>50209552</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=50209552"/>
+            <PDBo:link_to_bindingdb rdf:resource="http://www.bindingdb.org/rwd/entry/50209552"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>

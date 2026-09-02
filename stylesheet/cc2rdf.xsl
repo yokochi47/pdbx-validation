@@ -40,6 +40,16 @@
   <xsl:variable name="p_chebi">http://purl.obolibrary.org/obo/CHEBI_</xsl:variable>
   <xsl:variable name="p_pubchem">http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID</xsl:variable>
   <xsl:variable name="p_glycoinfo">http://rdf.glycoinfo.org/glycan/</xsl:variable>
+  <xsl:variable name="drugbank">http://www.drugbank.ca/drugs/</xsl:variable>
+  <xsl:variable name="bindingdb">http://www.bindingdb.org/rwd/entry/</xsl:variable>
+  <xsl:variable name="drugcentral">http://drugcentral.org/drugcard/</xsl:variable>
+  <xsl:variable name="csd">http://www.ccdc.cam.ac.uk/structures/search?pid=csd:</xsl:variable>
+  <xsl:variable name="unii">http://precision.fda.gov/uniisearch/srs/unii/</xsl:variable>
+  <xsl:variable name="hmdb">http://www.hmdb.ca/metabolites/</xsl:variable>
+  <xsl:variable name="nmrshiftdb">http://nmrshiftdb.nmr.uni-koeln.de/molecule/</xsl:variable>
+  <xsl:variable name="comptox">http://comptox.epa.gov/dashboard/</xsl:variable>
+  <xsl:variable name="clinicaltrials">http://clinicaltrials.gov/study/</xsl:variable>
+  <xsl:variable name="foodb">http://foodb.ca/compounds/</xsl:variable>
 
   <xsl:template match="/">
     <rdf:RDF>
@@ -58,10 +68,13 @@
       <xsl:for-each select="$unichem_mapping/root/compounds/item/sources/item">
         <xsl:variable name="source_id"><xsl:value-of select="./id/text()"/></xsl:variable>
         <xsl:variable name="compound_id"><xsl:value-of select="./compoundId/text()"/></xsl:variable>
-        <xsl:variable name="url"><xsl:value-of select="./url/text()"/></xsl:variable>
+        <xsl:variable name="url"><xsl:choose><xsl:when test="starts-with(./url/text(),'https')"><xsl:value-of select="concat('http:',substring-after(./url/text(),':'))"/></xsl:when><xsl:otherwise><xsl:value-of select="./url/text()"/></xsl:otherwise></xsl:choose></xsl:variable>
         <xsl:choose>
           <xsl:when test="$source_id='1'">
             <owl:sameAs rdf:resource="{$p_chembl}{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='2'">
+            <rdfs:seeAlso rdf:resource="{$drugbank}{$compound_id}" rdfs:label="drugbank:{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='3'"/> <!-- self: rcsb pdb -->
           <xsl:when test="$source_id='4'">
@@ -72,12 +85,53 @@
             <xsl:variable name="_compound_id"><xsl:value-of select="substring-after($compound_id,':')"/></xsl:variable>
             <owl:sameAs rdf:resource="{$p_chebi}{$_compound_id}"/>
           </xsl:when>
+          <xsl:when test="$source_id='14'">
+            <rdfs:seeAlso rdf:resource="{$unii}{$compound_id}" rdfs:label="unii:{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='18'">
+            <rdfs:seeAlso rdf:resource="{$hmdb}{$compound_id}" rdfs:label="hmdb:{$compound_id}"/>
+          </xsl:when>
           <xsl:when test="$source_id='22'">
             <owl:sameAs rdf:resource="{$p_pubchem}{$compound_id}"/>
           </xsl:when>
-          <xsl:when test="$source_id='31'"/> <!-- bulk-download link -->
-          <xsl:when test="$source_id='38'"> <!-- compound_id is based on ChEBI identifier -->
+          <xsl:when test="$source_id='24'">
+            <rdfs:seeAlso rdf:resource="{$nmrshiftdb}{$compound_id}" rdfs:label="nmrshiftdb2:{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='28'"> <!-- identifier.org does not have prefix for MolPort -->
+            <rdfs:seeAlso rdf:resource="{url}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='31'"> <!-- UniChem provides bulk download file -->
+            <rdfs:seeAlso rdf:resource="{$bindingdb}{$compound_id}" rdfs:label="bindingdb:{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='32'">
+            <rdfs:seeAlso rdf:resource="{$comptox}{$compound_id}" rdfs:label="comptox:{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='33'">
+            <rdfs:seeAlso rdf:resource="{url}" rdfs:label="lipidmaps:{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='34'">
+            <rdfs:seeAlso rdf:resource="{$drugcentral}{$compound_id}" rdfs:label="durgcentral:{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='37'"> <!-- identifier.org can't resolve brenda:{id} -->
+            <rdfs:seeAlso rdf:resource="{url}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='38'"> <!-- CHEBI identifier, not own identifier -->
             <rdfs:seeAlso rdf:resource="{$url}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='41'"> <!-- UniChem provides prefix SLM:{id} -->
+            <rdfs:seeAlso rdf:resource="{url}" rdfs:label="{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='46'">
+            <rdfs:seeAlso rdf:resource="{$clinicaltrials}{$compound_id}" rdfs:label="clinicaltrials:{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='49'"> <!-- identifier.org does not have prefix for Probes and Drugs -->
+            <rdfs:seeAlso rdf:resource="{url}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='50'">
+            <rdfs:seeAlso rdf:resource="{$csd}{$compound_id}" rdfs:label="csd:{$compound_id}"/>
+          </xsl:when>
+          <xsl:when test="$source_id='51'">
+            <rdfs:seeAlso rdf:resource="{$foodb}{$compound_id}" rdfs:label="foodb.compound:{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='53'">
             <owl:sameAs rdf:resource="{$p_glycoinfo}{$compound_id}"/>

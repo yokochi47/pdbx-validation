@@ -52,7 +52,7 @@
   <xsl:variable name="chemidplus">http://chem.nlm.nih.gov/chemidplus/rn/</xsl:variable>
   <!--xsl:variable name="chembl">http://www.ebi.ac.uk/chembl/entity/</xsl:variable-->
   <xsl:variable name="p_chembl">http://rdf.ebi.ac.uk/resource/chembl/molecule/</xsl:variable>
-  <xsl:variable name="bindingdb">http://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=</xsl:variable>
+  <xsl:variable name="bindingdb">http://www.bindingdb.org/rwd/entry/</xsl:variable>
   <xsl:variable name="drugbank">http://www.drugbank.ca/drugs/</xsl:variable>
   <xsl:variable name="chemdb">http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id=</xsl:variable>
 

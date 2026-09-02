@@ -7,17 +7,19 @@
     <rdfs:seeAlso rdf:resource="http://www.rcsb.org/ligand/ATP"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/ATP"/>
     <owl:sameAs rdf:resource="http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL14249"/>
-    <rdfs:seeAlso rdf:resource="https://go.drugbank.com/drugs/DB00171"/>
+    <rdfs:seeAlso rdf:resource="http://www.drugbank.ca/drugs/DB00171" rdfs:label="drugbank:DB00171"/>
     <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15422"/>
-    <rdfs:seeAlso rdf:resource="https://d20b1koi85gdl2.cloudfront.net/uniisearch/srs/unii/8L70Q75FXE"/>
-    <rdfs:seeAlso rdf:resource="https://www.surechembl.org/chemical/29354125"/>
-    <rdfs:seeAlso rdf:resource="https://www.surechembl.org/chemical/8979"/>
-    <rdfs:seeAlso rdf:resource="https://www.surechembl.org/chemical/8980"/>
-    <rdfs:seeAlso rdf:resource="https://www.hmdb.ca/metabolites/HMDB0000538"/>
+    <rdfs:seeAlso rdf:resource="http://precision.fda.gov/uniisearch/srs/unii/8L70Q75FXE" rdfs:label="unii:8L70Q75FXE"/>
+    <rdfs:seeAlso rdf:resource="http://www.surechembl.org/chemical/29354125"/>
+    <rdfs:seeAlso rdf:resource="http://www.surechembl.org/chemical/8979"/>
+    <rdfs:seeAlso rdf:resource="http://www.surechembl.org/chemical/8980"/>
+    <rdfs:seeAlso rdf:resource="http://www.hmdb.ca/metabolites/HMDB0000538" rdfs:label="hmdb:HMDB0000538"/>
     <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5957"/>
     <rdfs:seeAlso rdf:resource="https://www.molport.com/shop/compound/Molport-002-533-479"/>
-    <rdfs:seeAlso rdf:resource="https://comptox.epa.gov/dashboard/chemical/details/DTXSID6022559"/>
-    <rdfs:seeAlso rdf:resource="https://drugcentral.org/drugcard/91"/>
+    <rdfs:seeAlso rdf:resource="http://www.bindingdb.org/rwd/entry/2" rdfs:label="bindingdb:2"/>
+    <rdfs:seeAlso rdf:resource="http://www.bindingdb.org/rwd/entry/50366480" rdfs:label="bindingdb:50366480"/>
+    <rdfs:seeAlso rdf:resource="http://comptox.epa.gov/dashboard/DTXSID6022559" rdfs:label="comptox:DTXSID6022559"/>
+    <rdfs:seeAlso rdf:resource="http://drugcentral.org/drugcard/91" rdfs:label="durgcentral:91"/>
     <rdfs:seeAlso rdf:resource="https://www.brenda-enzymes.org/ligand.php?brenda_ligand_id=12415"/>
     <rdfs:seeAlso rdf:resource="https://www.brenda-enzymes.org/ligand.php?brenda_ligand_id=177023"/>
     <rdfs:seeAlso rdf:resource="https://www.brenda-enzymes.org/ligand.php?brenda_ligand_id=21348"/>
@@ -32,15 +34,15 @@
     <rdfs:seeAlso rdf:resource="https://www.brenda-enzymes.org/ligand.php?brenda_ligand_id=92425"/>
     <rdfs:seeAlso rdf:resource="https://www.brenda-enzymes.org/ligand.php?brenda_ligand_id=96166"/>
     <rdfs:seeAlso rdf:resource="https://www.brenda-enzymes.org/ligand.php?brenda_ligand_id=96167"/>
-    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT00014248"/>
-    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT02279511"/>
-    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT03138681"/>
-    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT03738943"/>
-    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT03972683"/>
-    <rdfs:seeAlso rdf:resource="https://clinicaltrials.gov/study/NCT05431413"/>
+    <rdfs:seeAlso rdf:resource="http://clinicaltrials.gov/study/NCT00014248" rdfs:label="clinicaltrials:NCT00014248"/>
+    <rdfs:seeAlso rdf:resource="http://clinicaltrials.gov/study/NCT02279511" rdfs:label="clinicaltrials:NCT02279511"/>
+    <rdfs:seeAlso rdf:resource="http://clinicaltrials.gov/study/NCT03138681" rdfs:label="clinicaltrials:NCT03138681"/>
+    <rdfs:seeAlso rdf:resource="http://clinicaltrials.gov/study/NCT03738943" rdfs:label="clinicaltrials:NCT03738943"/>
+    <rdfs:seeAlso rdf:resource="http://clinicaltrials.gov/study/NCT03972683" rdfs:label="clinicaltrials:NCT03972683"/>
+    <rdfs:seeAlso rdf:resource="http://clinicaltrials.gov/study/NCT05431413" rdfs:label="clinicaltrials:NCT05431413"/>
     <rdfs:seeAlso rdf:resource="https://www.probes-drugs.org/compounds/PD010189"/>
-    <rdfs:seeAlso rdf:resource="https://foodb.ca/compounds/FDB030683"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Adenosine triphosphate"/>
+    <rdfs:seeAlso rdf:resource="http://foodb.ca/compounds/FDB030683" rdfs:label="foodb.compound:FDB030683"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Adenosine triphosphate"/>
     <PDBo:datablockName>ATP</PDBo:datablockName>
     <PDBo:has_chem_compCategory>
       <PDBo:chem_compCategory rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_compCategory">
