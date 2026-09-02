@@ -98,7 +98,7 @@
   <xsl:variable name="refseq">http://www.ncbi.nlm.nih.gov/protein/</xsl:variable>
   <xsl:variable name="norine">http://bioinfo.lifl.fr/norine/result.jsp?ID=</xsl:variable>
   <xsl:variable name="p_enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
-  <xsl:variable name="go">http://purl.obolibrary.org/obo/GO_</xsl:variable>
+  <xsl:variable name="p_go">http://purl.obolibrary.org/obo/GO_</xsl:variable>
   <xsl:variable name="interpro">http://www.ebi.ac.uk/interpro/entry/</xsl:variable>
   <xsl:variable name="pfam">http://pfam.xfam.org/family/</xsl:variable>
   <xsl:variable name="cath">http://www.cathdb.info/cathnode/</xsl:variable>
@@ -426,7 +426,8 @@
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='GO' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <xsl:variable name="go_id"><xsl:value-of select="substring-after(.,':')"/></xsl:variable>
-    <PDBo:link_to_go rdf:resource="{$go}{$go_id}" rdfs:label="{.}"/>
+    <PDBo:link_to_go rdf:resource="{$p_go}{$go_id}" rdfs:label="{.}"/>
+    <owl:sameAs rdf:resource="{$p_go}{$go_id}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}go/{.}" rdfs:label="{.}"/>
   </xsl:template>
 
@@ -487,7 +488,7 @@
 
   <xsl:template match="PDBx:pdbx_database_related[@db_name='BMRB']/@db_id" mode="linked">
     <PDBo:link_to_bmrb rdf:resource="{$bmrb}{.}" rdfs:label="bmrb:{.}"/>
-    <owl:saveAs rdf:resource="{$bmrb}{.}"/>
+    <owl:sameAs rdf:resource="{$bmrb}{.}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}bmrb/{.}" rdfs:label="bmrb:{.}"/>
   </xsl:template>
 

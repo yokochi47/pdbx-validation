@@ -119,7 +119,7 @@
   &lt;xsl:variable name="refseq"&gt;http://www.ncbi.nlm.nih.gov/protein/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="norine"&gt;http://bioinfo.lifl.fr/norine/result.jsp?ID=&lt;/xsl:variable&gt;
   &lt;xsl:variable name="p_enzyme"&gt;http://purl.uniprot.org/enzyme/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="go"&gt;http://purl.obolibrary.org/obo/GO_&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="p_go"&gt;http://purl.obolibrary.org/obo/GO_&lt;/xsl:variable&gt;
   &lt;xsl:variable name="interpro"&gt;http://www.ebi.ac.uk/interpro/entry/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pfam"&gt;http://pfam.xfam.org/family/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="cath"&gt;http://www.cathdb.info/cathnode/&lt;/xsl:variable&gt;
@@ -448,7 +448,8 @@
 
   &lt;xsl:template match="VRPTx:pdbx_sifts_xref_db_segments[@xref_db='GO' and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
     &lt;xsl:variable name="go_id">&lt;xsl:value-of select="substring-after(.,':')"/&gt;&lt;/xsl:variable&gt;
-    &lt;PDBo:link_to_go rdf:resource="{$go}{$go_id}" rdfs:label="{.}"/&gt;
+    &lt;PDBo:link_to_go rdf:resource="{$p_go}{$go_id}" rdfs:label="{.}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_go}{$go_id}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}go/{.}" rdfs:label="{.}"/&gt;
   &lt;/xsl:template&gt;
 
