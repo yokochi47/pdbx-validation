@@ -107,6 +107,9 @@
   <xsl:variable name="ensembl">http://www.ensembl.org/id/</xsl:variable>
   <xsl:variable name="p_glycoinfo">http://rdf.glycoinfo.org/glycan/</xsl:variable>
 
+  <xsl:variable name="sifts_unp_seg_doc" select="/PDBx:datablock/PDBx:pdbx_sifts_unp_segmentsCategory"/>
+  <xsl:variable name="sifts_xref_db_seg_doc" select="/PDBx:datablock/PDBx:pdbx_sifts_xref_db_segmentsCategory"/>
+
   <xsl:template match="/">
     <rdf:RDF>
       <xsl:apply-templates/>
@@ -249,7 +252,7 @@
 
   <xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked">
     <PDBo:link_to_pubmed rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
-    <owl:sameAs rdf:resource="{$p_pubmed}{text()}"/>
+    <owl:sameAs rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
     <dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/>
   </xsl:template>
 
@@ -302,7 +305,7 @@
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
         <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
-        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -319,7 +322,7 @@
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
         <PDBo:link_to_taxonomy_host rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
-        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -336,7 +339,7 @@
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
         <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
-        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -355,7 +358,7 @@
         <xsl:variable name="ec"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
         <xsl:if test="string-length($ec)!=0">
           <PDBo:link_to_enzyme rdf:resource="{$p_enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/>
-          <owl:sameAs rdf:resource="{$p_enzyme}{$ec}"/>
+          <owl:sameAs rdf:resource="{$p_enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/>
           <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
         </xsl:if>
       </xsl:for-each>
@@ -365,7 +368,7 @@
   <xsl:template match="PDBx:struct_ref/PDBx:pdbx_db_accession[../PDBx:db_name='UNP' and text()!='']" mode="linked">
     <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
     <PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
-    <owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/>
+    <owl:sameAs rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/>
   </xsl:template>
 
@@ -384,7 +387,7 @@
   <xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='TREMBL' and string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789')]" mode="linked">
     <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
     <PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
-    <owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/>
+    <owl:sameAs rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/>
   </xsl:template>
 
@@ -420,14 +423,14 @@
 
   <xsl:template match="PDBx:pdbx_sifts_unp_segments[@unp_acc!='']/@unp_acc" mode="linked">
     <PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{.}" rdfs:label="uniprot:{.}"/>
-    <owl:sameAs rdf:resource="{$p_uniprot}{.}"/>
+    <owl:sameAs rdf:resource="{$p_uniprot}{.}" rdfs:label="uniprot:{.}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{.}" rdfs:label="uniprot:{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='GO' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <xsl:variable name="go_id"><xsl:value-of select="substring-after(.,':')"/></xsl:variable>
     <PDBo:link_to_go rdf:resource="{$p_go}{$go_id}" rdfs:label="{.}"/>
-    <owl:sameAs rdf:resource="{$p_go}{$go_id}"/>
+    <owl:sameAs rdf:resource="{$p_go}{$go_id}" rdfs:label="{.}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}go/{.}" rdfs:label="{.}"/>
   </xsl:template>
 
@@ -465,7 +468,7 @@
     <xsl:for-each select="$glytoucan/catalog/wurcs[@id=$wurcs_id]">
       <xsl:if test="text()!=''">
         <PDBo:link_to_glycoinfo rdf:resource="{$p_glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/>
-        <owl:sameAs rdf:resource="{$p_glycoinfo}{text()}"/>
+        <owl:sameAs rdf:resource="{$p_glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}glytoucan/{text()}" rdfs:label="glytoucan:{text()}"/>
       </xsl:if>
     </xsl:for-each>
@@ -488,7 +491,7 @@
 
   <xsl:template match="PDBx:pdbx_database_related[@db_name='BMRB']/@db_id" mode="linked">
     <PDBo:link_to_bmrb rdf:resource="{$bmrb}{.}" rdfs:label="bmrb:{.}"/>
-    <owl:sameAs rdf:resource="{$bmrb}{.}"/>
+    <owl:sameAs rdf:resource="{$bmrb}{.}" rdfs:label="bmrb:{.}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}bmrb/{.}" rdfs:label="bmrb:{.}"/>
   </xsl:template>
 
@@ -11912,6 +11915,47 @@
         </PDBo:reference_to_entity>
         <!-- entityKeyref_0_0_38_0 -->
       </xsl:if>
+      <xsl:for-each select="$sifts_unp_seg_doc/PDBx:pdbx_sifts_unp_segments[@asym_id=$id_encoded]">
+        <xsl:variable name="asym_id_truncated"><xsl:choose><xsl:when test="string-length(@asym_id)&lt;64"><xsl:value-of select="@asym_id"/></xsl:when><xsl:when test="contains(@asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="instance_id_truncated"><xsl:choose><xsl:when test="string-length(@instance_id)&lt;64"><xsl:value-of select="@instance_id"/></xsl:when><xsl:when test="contains(@instance_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@instance_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@instance_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="instance_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($instance_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="segment_id_truncated"><xsl:choose><xsl:when test="string-length(@segment_id)&lt;64"><xsl:value-of select="@segment_id"/></xsl:when><xsl:when test="contains(@segment_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@segment_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@segment_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="segment_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($segment_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="unp_acc_truncated"><xsl:choose><xsl:when test="string-length(@unp_acc)&lt;64"><xsl:value-of select="@unp_acc"/></xsl:when><xsl:when test="contains(@unp_acc,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@unp_acc,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@unp_acc,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="unp_acc_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($unp_acc_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <PDBo:reference_to_pdbx_sifts_unp_segments>
+          <rdf:Description rdf:about="{$base}/pdbx_sifts_unp_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$unp_acc_encoded}">
+            <PDBo:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_sifts_unp_segments>
+      </xsl:for-each>
+      <xsl:for-each select="$sifts_xref_db_seg_doc/PDBx:pdbx_sifts_xref_db_segments[@asym_id=$id_encoded]">
+        <xsl:variable name="asym_id_truncated"><xsl:choose><xsl:when test="string-length(@asym_id)&lt;64"><xsl:value-of select="@asym_id"/></xsl:when><xsl:when test="contains(@asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="instance_id_truncated"><xsl:choose><xsl:when test="string-length(@instance_id)&lt;64"><xsl:value-of select="@instance_id"/></xsl:when><xsl:when test="contains(@instance_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@instance_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@instance_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="instance_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($instance_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="segment_id_truncated"><xsl:choose><xsl:when test="string-length(@segment_id)&lt;64"><xsl:value-of select="@segment_id"/></xsl:when><xsl:when test="contains(@segment_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@segment_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@segment_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="segment_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($segment_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="seq_id_end_truncated"><xsl:choose><xsl:when test="string-length(@seq_id_end)&lt;64"><xsl:value-of select="@seq_id_end"/></xsl:when><xsl:when test="contains(@seq_id_end,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@seq_id_end,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@seq_id_end,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="seq_id_end_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($seq_id_end_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="seq_id_start_truncated"><xsl:choose><xsl:when test="string-length(@seq_id_start)&lt;64"><xsl:value-of select="@seq_id_start"/></xsl:when><xsl:when test="contains(@seq_id_start,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@seq_id_start,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@seq_id_start,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="seq_id_start_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($seq_id_start_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="xref_db_truncated"><xsl:choose><xsl:when test="string-length(@xref_db)&lt;64"><xsl:value-of select="@xref_db"/></xsl:when><xsl:when test="contains(@xref_db,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@xref_db,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@xref_db,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="xref_db_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($xref_db_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="xref_db_acc_truncated"><xsl:choose><xsl:when test="string-length(@xref_db_acc)&lt;64"><xsl:value-of select="@xref_db_acc"/></xsl:when><xsl:when test="contains(@xref_db_acc,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@xref_db_acc,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@xref_db_acc,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+        <xsl:variable name="xref_db_acc_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($xref_db_acc_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+          <rdf:Description rdf:about="{$base}/pdbx_sifts_xref_db_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$seq_id_end_encoded},{$seq_id_start_encoded},{$xref_db_encoded},{$xref_db_acc_encoded}">
+            <PDBo:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{$id_encoded}"/>
+          </rdf:Description>
+        </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+      </xsl:for-each>
+    
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
       <xsl:apply-templates/>

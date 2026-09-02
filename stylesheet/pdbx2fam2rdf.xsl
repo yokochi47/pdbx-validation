@@ -189,7 +189,7 @@
 
   &lt;xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_pubmed rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_pubmed}{text()}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/&gt;
     &lt;dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -240,7 +240,7 @@
       &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
       &lt;xsl:if test="string-length($tax)!=0"&gt;
         &lt;PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
-        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/&gt;
+        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
         &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
       &lt;/xsl:if&gt;
     &lt;/xsl:for-each&gt;
@@ -257,7 +257,7 @@
       &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
       &lt;xsl:if test="string-length($tax)!=0"&gt;
         &lt;PDBo:link_to_taxonomy_host rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
-        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/&gt;
+        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
         &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
       &lt;/xsl:if&gt;
     &lt;/xsl:for-each&gt;
@@ -274,7 +274,7 @@
       &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
       &lt;xsl:if test="string-length($tax)!=0"&gt;
         &lt;PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
-        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/&gt;
+        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
         &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
       &lt;/xsl:if&gt;
     &lt;/xsl:for-each&gt;
@@ -293,7 +293,7 @@
         &lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
         &lt;xsl:if test="string-length($ec)!=0"&gt;
           &lt;PDBo:link_to_enzyme rdf:resource="{$p_enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/&gt;
-          &lt;owl:sameAs rdf:resource="{$p_enzyme}{$ec}"/&gt;
+          &lt;owl:sameAs rdf:resource="{$p_enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/&gt;
           &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
         &lt;/xsl:if&gt;
       &lt;/xsl:for-each&gt;
@@ -323,7 +323,7 @@
   &lt;xsl:template match="PDBx:pdbx_reference_entity_poly/PDBx:db_code[../PDBx:db_name='UNP' and text()!='']" mode="linked"&gt;
     &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
     &lt;PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -336,7 +336,7 @@
   &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[(../PDBx:db_name='UNP' or ../PDBx:db_name='UniProtKB' or ../PDBx:db_name='UniProt') and text()!='']" mode="linked"&gt;
     &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
     &lt;PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -414,7 +414,7 @@
   &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:taxid[text()!='']" mode="linked"&gt;
     &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
     &lt;PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$acc}" rdfs:label="taxonomy:{$acc}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$acc}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$acc}" rdfs:label="taxonomy:{$acc}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$acc}" rdfs:label="taxonomy:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -432,7 +432,7 @@
   &lt;xsl:template match="PDBx:pdbx_reference_molecule_annotation/PDBx:source[starts-with(text(),'PMID:')]" mode="linked"&gt;
     &lt;xsl:variable name="code"&gt;&lt;xsl:value-of select="substring-after(text(),':')"/&gt;&lt;/xsl:variable&gt;
     &lt;PDBo:link_to_pubmed rdf:resource="{$p_pubmed}{$code}" rdfs:label="pubmed:{$code}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_pubmed}{$code}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_pubmed}{$code}" rdfs:label="pubmed:{$code}"/&gt;
     &lt;dcterms:references rdf:resource="{$idorg}pubmed/{$code}" rdfs:label="pubmed:{$code}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -458,7 +458,7 @@
   &lt;xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='PubChem' and text()!='']" mode="linked"&gt;
     &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
     &lt;PDBo:link_to_pubchem_substance rdf:resource="{$p_pubchem.substance}{$acc}" rdfs:label="pubchem.substance:{$acc}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_pubchem.substance}{$acc}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_pubchem.substance}{$acc}" rdfs:label="pubchem.substance:{$acc}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}pubchem.substance/{$acc}" rdfs:label="pubchem.substance:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -477,7 +477,7 @@
   &lt;xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[(../PDBx:source='ChEBI' or ../PDBx:source='CHEBI') and text()!='']" mode="linked"&gt;
     &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
     &lt;PDBo:link_to_chebi rdf:resource="{$p_chebi}{$acc}" rdfs:label="CHEBI:{$acc}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_chebi}{$acc}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_chebi}{$acc}" rdfs:label="CHEBI:{$acc}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}chebi/CHEBI:{$acc}" rdfs:label="CHEBI:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -502,9 +502,9 @@
 
   &lt;xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[(../PDBx:source='ChEMBL' or ../PDBx:source='CHEMBL') and text()!='']" mode="linked"&gt;
     &lt;xsl:variable name="code"&gt;&lt;xsl:value-of select="concat('CHEMBL',translate(text(),' ',''))"/&gt;&lt;/xsl:variable&gt;
-    &lt;PDBo:link_to_chembl rdf:resource="{$p_chembl}{$code}" rdfs:label="chembl:{$code}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_chembl}{$code}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}chembl/{$code}" rdfs:label="chembl:{$code}"/&gt;
+    &lt;PDBo:link_to_chembl rdf:resource="{$p_chembl}{$code}" rdfs:label="chembl.compound:{$code}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_chembl}{$code}" rdfs:label="chembl.compound:{$code}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}chembl/{$code}" rdfs:label="chembl.compound:{$code}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='BindingDB' and text()!='']" mode="linked"&gt;
@@ -550,7 +550,7 @@
   &lt;xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='UniProt' and text()!='']" mode="linked"&gt;
     &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
     &lt;PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 

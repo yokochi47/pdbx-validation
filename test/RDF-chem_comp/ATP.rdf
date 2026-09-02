@@ -6,15 +6,15 @@
     <rdfs:seeAlso rdf:resource="http://pdbj.org/chemie/summary/ATP"/>
     <rdfs:seeAlso rdf:resource="http://www.rcsb.org/ligand/ATP"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/ATP"/>
-    <owl:sameAs rdf:resource="http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL14249"/>
+    <owl:sameAs rdf:resource="http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL14249" rdfs:label="chembl.compound:CHEMBL14249"/>
     <rdfs:seeAlso rdf:resource="http://www.drugbank.ca/drugs/DB00171" rdfs:label="drugbank:DB00171"/>
-    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15422"/>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15422" rdfs:label="CHEBI:15422"/>
     <rdfs:seeAlso rdf:resource="http://precision.fda.gov/uniisearch/srs/unii/8L70Q75FXE" rdfs:label="unii:8L70Q75FXE"/>
     <rdfs:seeAlso rdf:resource="http://www.surechembl.org/chemical/29354125"/>
     <rdfs:seeAlso rdf:resource="http://www.surechembl.org/chemical/8979"/>
     <rdfs:seeAlso rdf:resource="http://www.surechembl.org/chemical/8980"/>
     <rdfs:seeAlso rdf:resource="http://www.hmdb.ca/metabolites/HMDB0000538" rdfs:label="hmdb:HMDB0000538"/>
-    <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5957"/>
+    <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5957" rdfs:label="pubchem.compound:5957"/>
     <rdfs:seeAlso rdf:resource="http://www.molport.com/shop/compound/Molport-002-533-479"/>
     <rdfs:seeAlso rdf:resource="http://www.bindingdb.org/rwd/entry/2" rdfs:label="bindingdb:2"/>
     <rdfs:seeAlso rdf:resource="http://www.bindingdb.org/rwd/entry/50366480" rdfs:label="bindingdb:50366480"/>

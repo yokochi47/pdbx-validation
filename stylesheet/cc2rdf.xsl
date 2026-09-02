@@ -71,19 +71,19 @@
         <xsl:variable name="url"><xsl:choose><xsl:when test="starts-with(./url/text(),'https')"><xsl:value-of select="concat('http:',substring-after(./url/text(),':'))"/></xsl:when><xsl:otherwise><xsl:value-of select="./url/text()"/></xsl:otherwise></xsl:choose></xsl:variable>
         <xsl:choose>
           <xsl:when test="$source_id='1'">
-            <owl:sameAs rdf:resource="{$p_chembl}{$compound_id}"/>
+            <owl:sameAs rdf:resource="{$p_chembl}{$compound_id}" rdfs:label="chembl.compound:{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='2'">
             <rdfs:seeAlso rdf:resource="{$drugbank}{$compound_id}" rdfs:label="drugbank:{$compound_id}"/>
           </xsl:when>
-          <xsl:when test="$source_id='3'"/> <!-- self: rcsb pdb -->
-          <xsl:when test="$source_id='4'">
+          <xsl:when test="$source_id='3'"/> <!-- self reference: rcsb pdb -->
+          <xsl:when test="$source_id='4'"> <!-- identifier.org does not have prefix for Guide to Pharmacology -->
             <owl:sameAs rdf:resource="{$p_gtop}{$compound_id}"/>
           </xsl:when>
-          <xsl:when test="$source_id='5'"/> <!-- self: pdbe -->
+          <xsl:when test="$source_id='5'"/> <!-- self reference: pdbe -->
           <xsl:when test="$source_id='7'">
             <xsl:variable name="_compound_id"><xsl:value-of select="substring-after($compound_id,':')"/></xsl:variable>
-            <owl:sameAs rdf:resource="{$p_chebi}{$_compound_id}"/>
+            <owl:sameAs rdf:resource="{$p_chebi}{$_compound_id}" rdfs:label="{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='14'">
             <rdfs:seeAlso rdf:resource="{$unii}{$compound_id}" rdfs:label="unii:{$compound_id}"/>
@@ -92,7 +92,7 @@
             <rdfs:seeAlso rdf:resource="{$hmdb}{$compound_id}" rdfs:label="hmdb:{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='22'">
-            <owl:sameAs rdf:resource="{$p_pubchem}{$compound_id}"/>
+            <owl:sameAs rdf:resource="{$p_pubchem}{$compound_id}" rdfs:label="pubchem.compound:{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='24'">
             <rdfs:seeAlso rdf:resource="{$nmrshiftdb}{$compound_id}" rdfs:label="nmrshiftdb2:{$compound_id}"/>
@@ -134,7 +134,7 @@
             <rdfs:seeAlso rdf:resource="{$foodb}{$compound_id}" rdfs:label="foodb.compound:{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='53'">
-            <owl:sameAs rdf:resource="{$p_glycoinfo}{$compound_id}"/>
+            <owl:sameAs rdf:resource="{$p_glycoinfo}{$compound_id}" rdfs:label="glytoucan:{$compound_id}"/>
           </xsl:when>
           <xsl:otherwise>
             <rdfs:seeAlso rdf:resource="{$url}"/>
@@ -233,7 +233,7 @@
 
   <xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked">
     <PDBo:link_to_pubmed rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
-    <owl:sameAs rdf:resource="{$p_pubmed}{text()}"/>
+    <owl:sameAs rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
     <dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/>
   </xsl:template>
 
@@ -284,7 +284,7 @@
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
         <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
-        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -301,7 +301,7 @@
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
         <PDBo:link_to_taxonomy_host rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
-        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -318,7 +318,7 @@
       <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($tax)!=0">
         <PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
-        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/>
+        <owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
         <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
       </xsl:if>
     </xsl:for-each>
@@ -337,7 +337,7 @@
         <xsl:variable name="ec"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
         <xsl:if test="string-length($ec)!=0">
           <PDBo:link_to_enzyme rdf:resource="{$p_enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
-          <owl:sameAs rdf:resource="{$p_enzyme}{$ec}"/>
+          <owl:sameAs rdf:resource="{$p_enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
           <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
         </xsl:if>
       </xsl:for-each>

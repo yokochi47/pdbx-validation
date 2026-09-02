@@ -128,6 +128,9 @@
   &lt;xsl:variable name="ensembl"&gt;http://www.ensembl.org/id/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="p_glycoinfo"&gt;http://rdf.glycoinfo.org/glycan/&lt;/xsl:variable&gt;
 
+  &lt;xsl:variable name="sifts_unp_seg_doc" select="/PDBx:datablock/PDBx:pdbx_sifts_unp_segmentsCategory"/&gt;
+  &lt;xsl:variable name="sifts_xref_db_seg_doc" select="/PDBx:datablock/PDBx:pdbx_sifts_xref_db_segmentsCategory"/&gt;
+
   &lt;xsl:template match="/"&gt;
     &lt;rdf:RDF&gt;
       &lt;xsl:apply-templates/&gt;
@@ -269,7 +272,7 @@
 
   &lt;xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_pubmed rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_pubmed}{text()}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/&gt;
     &lt;dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -322,7 +325,7 @@
       &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
       &lt;xsl:if test="string-length($tax)!=0"&gt;
         &lt;PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
-        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/&gt;
+        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
         &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
       &lt;/xsl:if&gt;
     &lt;/xsl:for-each&gt;
@@ -339,7 +342,7 @@
       &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
       &lt;xsl:if test="string-length($tax)!=0"&gt;
         &lt;PDBo:link_to_taxonomy_host rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
-        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/&gt;
+        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
         &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
       &lt;/xsl:if&gt;
     &lt;/xsl:for-each&gt;
@@ -356,7 +359,7 @@
       &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
       &lt;xsl:if test="string-length($tax)!=0"&gt;
         &lt;PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
-        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/&gt;
+        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
         &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
       &lt;/xsl:if&gt;
     &lt;/xsl:for-each&gt;
@@ -375,7 +378,7 @@
         &lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
         &lt;xsl:if test="string-length($ec)!=0"&gt;
           &lt;PDBo:link_to_enzyme rdf:resource="{$p_enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
-          &lt;owl:sameAs rdf:resource="{$p_enzyme}{$ec}"/&gt;
+          &lt;owl:sameAs rdf:resource="{$p_enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
           &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
         &lt;/xsl:if&gt;
       &lt;/xsl:for-each&gt;
@@ -385,7 +388,7 @@
   &lt;xsl:template match="PDBx:struct_ref/PDBx:pdbx_db_accession[../PDBx:db_name='UNP' and text()!='']" mode="linked"&gt;
     &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
     &lt;PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -404,7 +407,7 @@
   &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='TREMBL' and string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789')]" mode="linked"&gt;
     &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
     &lt;PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_uniprot}{$acc}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -440,14 +443,14 @@
 
   &lt;xsl:template match="PDBx:pdbx_sifts_unp_segments[@unp_acc!='']/@unp_acc" mode="linked"&gt;
     &lt;PDBo:link_to_uniprot rdf:resource="{$p_uniprot}{.}" rdfs:label="uniprot:{.}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_uniprot}{.}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_uniprot}{.}" rdfs:label="uniprot:{.}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{.}" rdfs:label="uniprot:{.}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='GO' and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
     &lt;xsl:variable name="go_id">&lt;xsl:value-of select="substring-after(.,':')"/&gt;&lt;/xsl:variable&gt;
     &lt;PDBo:link_to_go rdf:resource="{$p_go}{$go_id}" rdfs:label="{.}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_go}{$go_id}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_go}{$go_id}" rdfs:label="{.}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}go/{.}" rdfs:label="{.}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -485,7 +488,7 @@
     &lt;xsl:for-each select="$glytoucan/catalog/wurcs[@id=$wurcs_id]"&gt;
       &lt;xsl:if test="text()!=''"&gt;
         &lt;PDBo:link_to_glycoinfo rdf:resource="{$p_glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/&gt;
-        &lt;owl:sameAs rdf:resource="{$p_glycoinfo}{text()}"/&gt;
+        &lt;owl:sameAs rdf:resource="{$p_glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/&gt;
         &lt;rdfs:seeAlso rdf:resource="{$idorg}glytoucan/{text()}" rdfs:label="glytoucan:{text()}"/&gt;
       &lt;/xsl:if&gt;
     &lt;/xsl:for-each&gt;
@@ -508,7 +511,7 @@
 
   &lt;xsl:template match="PDBx:pdbx_database_related[@db_name='BMRB']/@db_id" mode="linked"&gt;
     &lt;PDBo:link_to_bmrb rdf:resource="{$bmrb}{.}" rdfs:label="bmrb:{.}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$bmrb}{.}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$bmrb}{.}" rdfs:label="bmrb:{.}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}bmrb/{.}" rdfs:label="bmrb:{.}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -630,6 +633,9 @@
       <xsl2:with-param name="name" select="$name"/>
       <xsl2:with-param name="pathname" select="$resource"/>
     </xsl2:call-template>
+    <xsl2:if test="$name='struct_asym'">
+      <xsl2:call-template name="link_sifts"/>
+    </xsl2:if>
     <xsl2:text disable-output-escaping="yes">
       &lt;xsl:apply-templates select="@*"/&gt;
       &lt;xsl:apply-templates select="@*" mode="linked"/&gt;
@@ -708,4 +714,50 @@
     </xsl2:for-each>
   </xsl2:template>
   <xsl2:template match="*|text()|@*"/>
+
+  <xsl2:template name="link_sifts">
+    <xsl2:text disable-output-escaping="yes">
+      &lt;xsl:for-each select="$sifts_unp_seg_doc/PDBx:pdbx_sifts_unp_segments[@asym_id=$id_encoded]"&gt;
+        &lt;xsl:variable name="asym_id_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@asym_id)&amp;lt;64"&gt;&lt;xsl:value-of select="@asym_id"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@asym_id,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@asym_id,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@asym_id,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="asym_id_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="entity_id_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@entity_id)&amp;lt;64"&gt;&lt;xsl:value-of select="@entity_id"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@entity_id,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@entity_id,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@entity_id,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="entity_id_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="instance_id_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@instance_id)&amp;lt;64"&gt;&lt;xsl:value-of select="@instance_id"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@instance_id,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@instance_id,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@instance_id,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="instance_id_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($instance_id_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="segment_id_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@segment_id)&amp;lt;64"&gt;&lt;xsl:value-of select="@segment_id"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@segment_id,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@segment_id,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@segment_id,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="segment_id_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($segment_id_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="unp_acc_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@unp_acc)&amp;lt;64"&gt;&lt;xsl:value-of select="@unp_acc"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@unp_acc,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@unp_acc,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@unp_acc,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="unp_acc_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($unp_acc_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;PDBo:reference_to_pdbx_sifts_unp_segments&gt;
+          &lt;rdf:Description rdf:about="{$base}/pdbx_sifts_unp_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$unp_acc_encoded}"&gt;
+            &lt;PDBo:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{$id_encoded}"/&gt;
+          &lt;/rdf:Description&gt;
+        &lt;/PDBo:reference_to_pdbx_sifts_unp_segments&gt;
+      &lt;/xsl:for-each&gt;
+      &lt;xsl:for-each select="$sifts_xref_db_seg_doc/PDBx:pdbx_sifts_xref_db_segments[@asym_id=$id_encoded]"&gt;
+        &lt;xsl:variable name="asym_id_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@asym_id)&amp;lt;64"&gt;&lt;xsl:value-of select="@asym_id"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@asym_id,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@asym_id,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@asym_id,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="asym_id_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="entity_id_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@entity_id)&amp;lt;64"&gt;&lt;xsl:value-of select="@entity_id"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@entity_id,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@entity_id,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@entity_id,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="entity_id_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="instance_id_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@instance_id)&amp;lt;64"&gt;&lt;xsl:value-of select="@instance_id"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@instance_id,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@instance_id,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@instance_id,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="instance_id_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($instance_id_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="segment_id_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@segment_id)&amp;lt;64"&gt;&lt;xsl:value-of select="@segment_id"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@segment_id,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@segment_id,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@segment_id,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="segment_id_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($segment_id_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="seq_id_end_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@seq_id_end)&amp;lt;64"&gt;&lt;xsl:value-of select="@seq_id_end"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@seq_id_end,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@seq_id_end,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@seq_id_end,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="seq_id_end_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($seq_id_end_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="seq_id_start_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@seq_id_start)&amp;lt;64"&gt;&lt;xsl:value-of select="@seq_id_start"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@seq_id_start,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@seq_id_start,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@seq_id_start,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="seq_id_start_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($seq_id_start_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="xref_db_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@xref_db)&amp;lt;64"&gt;&lt;xsl:value-of select="@xref_db"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@xref_db,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@xref_db,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@xref_db,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="xref_db_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($xref_db_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="xref_db_acc_truncated"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(@xref_db_acc)&amp;lt;64"&gt;&lt;xsl:value-of select="@xref_db_acc"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(@xref_db_acc,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(@xref_db_acc,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(@xref_db_acc,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="xref_db_acc_encoded"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($xref_db_acc_truncated),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;
+        &lt;PDBo:reference_to_pdbx_sifts_xref_db_segments&gt;
+          &lt;rdf:Description rdf:about="{$base}/pdbx_sifts_xref_db_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$seq_id_end_encoded},{$seq_id_start_encoded},{$xref_db_encoded},{$xref_db_acc_encoded}"&gt;
+            &lt;PDBo:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{$id_encoded}"/&gt;
+          &lt;/rdf:Description&gt;
+        &lt;/PDBo:reference_to_pdbx_sifts_xref_db_segments&gt;
+      &lt;/xsl:for-each&gt;
+    </xsl2:text>
+  </xsl2:template>
+
 </xsl2:stylesheet>

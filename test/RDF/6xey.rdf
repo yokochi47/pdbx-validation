@@ -402,7 +402,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2020</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1101/2020.06.17.153486" rdfs:label="doi:10.1101/2020.06.17.153486"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/32587975" rdfs:label="pubmed:32587975"/>
-            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/32587975"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/32587975" rdfs:label="pubmed:32587975"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/32587975" rdfs:label="pubmed:32587975"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -30175,10 +30175,10 @@
             <PDBo:entity_src_gen.pdbx_host_org_scientific_name>Homo sapiens</PDBo:entity_src_gen.pdbx_host_org_scientific_name>
             <PDBo:entity_src_gen.pdbx_seq_type>Biological sequence</PDBo:entity_src_gen.pdbx_seq_type>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/2697049" rdfs:label="taxonomy:2697049"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/2697049"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/2697049" rdfs:label="taxonomy:2697049"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/2697049" rdfs:label="taxonomy:2697049"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
@@ -30202,10 +30202,10 @@
             <PDBo:entity_src_gen.pdbx_host_org_scientific_name>Homo sapiens</PDBo:entity_src_gen.pdbx_host_org_scientific_name>
             <PDBo:entity_src_gen.pdbx_seq_type>Biological sequence</PDBo:entity_src_gen.pdbx_seq_type>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
@@ -30229,10 +30229,10 @@
             <PDBo:entity_src_gen.pdbx_host_org_scientific_name>Homo sapiens</PDBo:entity_src_gen.pdbx_host_org_scientific_name>
             <PDBo:entity_src_gen.pdbx_seq_type>Biological sequence</PDBo:entity_src_gen.pdbx_seq_type>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
@@ -31768,7 +31768,7 @@
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G42666HT" rdfs:label="glytoucan:G42666HT"/>
-            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G42666HT"/>
+            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G42666HT" rdfs:label="glytoucan:G42666HT"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G42666HT" rdfs:label="glytoucan:G42666HT"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
@@ -31818,7 +31818,7 @@
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G15407YE" rdfs:label="glytoucan:G15407YE"/>
-            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G15407YE"/>
+            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G15407YE" rdfs:label="glytoucan:G15407YE"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G15407YE" rdfs:label="glytoucan:G15407YE"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
@@ -31868,7 +31868,7 @@
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G90333CG" rdfs:label="glytoucan:G90333CG"/>
-            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G90333CG"/>
+            <owl:sameAs rdf:resource="http://rdf.glycoinfo.org/glycan/G90333CG" rdfs:label="glytoucan:G90333CG"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G90333CG" rdfs:label="glytoucan:G90333CG"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
@@ -209265,6 +209265,156 @@
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
+            <PDBo:reference_to_pdbx_sifts_unp_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_unp_segments/A,1,1,1,P0DTC2">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_unp_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,1,1,1001,896,InterPro,IPR044873">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,2,1,1208,711,InterPro,IPR002552">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,3,1,526,348,InterPro,IPR018548">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,4,1,516,333,InterPro,IPR036326">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,5,1,1208,1143,InterPro,IPR044874">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,6,1,527,334,InterPro,IPR018548">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,7,1,337,33,InterPro,IPR032500">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,8,1,304,13,InterPro,IPR044341">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,9,1,1208,1186,InterPro,IPR012473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,10,1,1208,2,InterPro,IPR042578">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,11,1,1026,909,InterPro,IPR043473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,12,1,307,28,InterPro,IPR043002">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,13,1,592,536,InterPro,IPR043607">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,14,1,1200,1104,InterPro,IPR043473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,15,1,541,319,InterPro,IPR044366">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,16,1,303,9,InterPro,IPR032500">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,17,1,1068,717,SCOP2B,8092471">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,18,1,526,335,SCOP2B,8092467">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,19,1,1146,1074,SCOP2B,8092473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,20,1,592,529,SCOP2B,8092661">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,21,1,293,27,SCOP2B,8092469">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,22,1,1208,711,Pfam,PF01601">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,23,1,526,349,Pfam,PF09408">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,24,1,337,33,Pfam,PF16451">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,25,1,592,536,Pfam,PF19209">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,1,2,1209,1209,InterPro,IPR002552">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,2,2,1226,1209,InterPro,IPR044874">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,3,2,1236,1209,InterPro,IPR012473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/A,1,4,2,1255,1209,InterPro,IPR042578">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
             <PDBo:struct_asym.id>A</PDBo:struct_asym.id>
             <PDBo:struct_asym.entity_id>1</PDBo:struct_asym.entity_id>
             <PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>N</PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>
@@ -209284,6 +209434,156 @@
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
+            <PDBo:reference_to_pdbx_sifts_unp_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_unp_segments/B,1,1,1,P0DTC2">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_unp_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,1,1,527,334,InterPro,IPR018548">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,2,1,1208,711,InterPro,IPR002552">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,3,1,1200,1104,InterPro,IPR043473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,4,1,541,319,InterPro,IPR044366">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,5,1,516,333,InterPro,IPR036326">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,6,1,1208,1143,InterPro,IPR044874">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,7,1,337,33,InterPro,IPR032500">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,8,1,307,28,InterPro,IPR043002">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,9,1,304,13,InterPro,IPR044341">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,10,1,303,9,InterPro,IPR032500">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,11,1,1026,909,InterPro,IPR043473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,12,1,1208,1186,InterPro,IPR012473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,13,1,1001,896,InterPro,IPR044873">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,14,1,592,536,InterPro,IPR043607">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,15,1,526,348,InterPro,IPR018548">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,16,1,1208,2,InterPro,IPR042578">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,17,1,1068,717,SCOP2B,8092471">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,18,1,526,335,SCOP2B,8092467">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,19,1,592,529,SCOP2B,8092661">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,20,1,1146,1074,SCOP2B,8092473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,21,1,293,27,SCOP2B,8092469">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,22,1,1208,711,Pfam,PF01601">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,23,1,526,349,Pfam,PF09408">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,24,1,337,33,Pfam,PF16451">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,25,1,592,536,Pfam,PF19209">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,1,2,1209,1209,InterPro,IPR002552">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,2,2,1226,1209,InterPro,IPR044874">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,3,2,1236,1209,InterPro,IPR012473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/B,1,4,2,1255,1209,InterPro,IPR042578">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/B"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
             <PDBo:struct_asym.id>B</PDBo:struct_asym.id>
             <PDBo:struct_asym.entity_id>1</PDBo:struct_asym.entity_id>
             <PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>N</PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>
@@ -209303,6 +209603,156 @@
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
+            <PDBo:reference_to_pdbx_sifts_unp_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_unp_segments/C,1,1,1,P0DTC2">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_unp_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,1,1,527,334,InterPro,IPR018548">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,2,1,1208,1143,InterPro,IPR044874">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,3,1,1001,896,InterPro,IPR044873">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,4,1,526,348,InterPro,IPR018548">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,5,1,1026,909,InterPro,IPR043473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,6,1,1208,2,InterPro,IPR042578">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,7,1,516,333,InterPro,IPR036326">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,8,1,1208,1186,InterPro,IPR012473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,9,1,541,319,InterPro,IPR044366">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,10,1,592,536,InterPro,IPR043607">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,11,1,304,13,InterPro,IPR044341">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,12,1,303,9,InterPro,IPR032500">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,13,1,1208,711,InterPro,IPR002552">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,14,1,1200,1104,InterPro,IPR043473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,15,1,337,33,InterPro,IPR032500">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,16,1,307,28,InterPro,IPR043002">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,17,1,1068,717,SCOP2B,8092471">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,18,1,526,335,SCOP2B,8092467">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,19,1,592,529,SCOP2B,8092661">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,20,1,1146,1074,SCOP2B,8092473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,21,1,293,27,SCOP2B,8092469">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,22,1,1208,711,Pfam,PF01601">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,23,1,526,349,Pfam,PF09408">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,24,1,337,33,Pfam,PF16451">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,25,1,592,536,Pfam,PF19209">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,1,2,1226,1209,InterPro,IPR044874">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,2,2,1255,1209,InterPro,IPR042578">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,3,2,1236,1209,InterPro,IPR012473">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/C,1,4,2,1209,1209,InterPro,IPR002552">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/C"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
             <PDBo:struct_asym.id>C</PDBo:struct_asym.id>
             <PDBo:struct_asym.entity_id>1</PDBo:struct_asym.entity_id>
             <PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>N</PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>
@@ -209322,6 +209772,46 @@
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/D"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/D,2,1,1,98,17,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/D"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/D,2,2,1,122,1,InterPro,IPR013783">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/D"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/D,2,3,1,122,1,InterPro,IPR036179">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/D"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/D,2,4,1,122,1,InterPro,IPR013783">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/D"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/D,2,5,1,122,1,InterPro,IPR036179">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/D"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/D,2,6,1,96,1,InterPro,IPR007110">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/D"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/D,2,7,1,121,7,InterPro,IPR003599">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/D"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/D,2,8,1,120,13,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/D"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
             <PDBo:struct_asym.id>D</PDBo:struct_asym.id>
             <PDBo:struct_asym.entity_id>2</PDBo:struct_asym.entity_id>
             <PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>N</PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>
@@ -209341,6 +209831,46 @@
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/E"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
+            <PDBo:reference_to_pdbx_sifts_unp_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_unp_segments/E,3,1,1,A0A5C2GJG2">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/E"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_unp_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/E,3,1,1,90,1,InterPro,IPR007110">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/E"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/E,3,2,1,109,3,InterPro,IPR036179">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/E"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/E,3,3,1,110,1,InterPro,IPR013783">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/E"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/E,3,4,1,110,6,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/E"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/E,3,5,1,92,17,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/E"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/E,3,6,1,110,7,InterPro,IPR003599">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/E"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/E,3,7,1,110,5,Pfam,PF07686">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/E"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
             <PDBo:struct_asym.id>E</PDBo:struct_asym.id>
             <PDBo:struct_asym.entity_id>3</PDBo:struct_asym.entity_id>
             <PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>N</PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>
@@ -209360,6 +209890,46 @@
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/F"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/F,2,1,1,96,1,InterPro,IPR007110">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/F"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/F,2,2,1,120,13,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/F"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/F,2,3,1,98,17,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/F"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/F,2,4,1,121,7,InterPro,IPR003599">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/F"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/F,2,5,1,122,1,InterPro,IPR013783">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/F"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/F,2,6,1,122,1,InterPro,IPR036179">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/F"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/F,2,7,1,122,1,InterPro,IPR013783">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/F"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/F,2,8,1,122,1,InterPro,IPR036179">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/F"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
             <PDBo:struct_asym.id>F</PDBo:struct_asym.id>
             <PDBo:struct_asym.entity_id>2</PDBo:struct_asym.entity_id>
             <PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>N</PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>
@@ -209379,6 +209949,46 @@
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/G"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/G,2,1,1,120,13,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/G"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/G,2,2,1,122,1,InterPro,IPR013783">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/G"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/G,2,3,1,122,1,InterPro,IPR036179">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/G"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/G,2,4,1,96,1,InterPro,IPR007110">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/G"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/G,2,5,1,121,7,InterPro,IPR003599">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/G"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/G,2,6,1,98,17,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/G"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/G,2,7,1,122,1,InterPro,IPR013783">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/G"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/G,2,8,1,122,1,InterPro,IPR036179">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/G"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
             <PDBo:struct_asym.id>G</PDBo:struct_asym.id>
             <PDBo:struct_asym.entity_id>2</PDBo:struct_asym.entity_id>
             <PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>N</PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>
@@ -209398,6 +210008,46 @@
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/H"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
+            <PDBo:reference_to_pdbx_sifts_unp_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_unp_segments/H,3,1,1,A0A5C2GJG2">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/H"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_unp_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/H,3,1,1,110,1,InterPro,IPR013783">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/H"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/H,3,2,1,92,17,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/H"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/H,3,3,1,110,7,InterPro,IPR003599">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/H"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/H,3,4,1,109,3,InterPro,IPR036179">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/H"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/H,3,5,1,90,1,InterPro,IPR007110">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/H"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/H,3,6,1,110,6,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/H"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/H,3,7,1,110,5,Pfam,PF07686">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/H"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
             <PDBo:struct_asym.id>H</PDBo:struct_asym.id>
             <PDBo:struct_asym.entity_id>3</PDBo:struct_asym.entity_id>
             <PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>N</PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>
@@ -209417,6 +210067,46 @@
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/I"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
+            <PDBo:reference_to_pdbx_sifts_unp_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_unp_segments/I,3,1,1,A0A5C2GJG2">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/I"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_unp_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/I,3,1,1,92,17,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/I"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/I,3,2,1,109,3,InterPro,IPR036179">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/I"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/I,3,3,1,110,6,InterPro,IPR013106">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/I"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/I,3,4,1,90,1,InterPro,IPR007110">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/I"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/I,3,5,1,110,7,InterPro,IPR003599">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/I"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/I,3,6,1,110,1,InterPro,IPR013783">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/I"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/6XEY/pdbx_sifts_xref_db_segments/I,3,7,1,110,5,Pfam,PF07686">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/6XEY/struct_asym/I"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
             <PDBo:struct_asym.id>I</PDBo:struct_asym.id>
             <PDBo:struct_asym.entity_id>3</PDBo:struct_asym.entity_id>
             <PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>N</PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>
@@ -215579,7 +216269,7 @@
             <PDBo:struct_ref.pdbx_db_accession>P0DTC2</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:struct_ref.pdbx_seq_one_letter_code>MFVFLVLLPLVSSQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVNNATNVVIKVCEFQFCNDPFLGVYYHKNNKSWMESEFRVYSSANNCTFEYVSQPFLMDLEGKQGNFKNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRVQPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFLPFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYSTGSNVFQTRAGCLIGAEHVNNSYECDIPIGAGICASYQTQTNSPRRARSVASQSIIAYTMSLGAENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIYKTPPIKDFGGFNFSQILPDPSKPSKRSFIEDLLFNKVTLADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHDGKAHFPREGVFVSNGTHWFVTQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQ</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
@@ -215615,7 +216305,7 @@
             <PDBo:struct_ref.pdbx_db_accession>A0A5C2GJG2</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:struct_ref.pdbx_seq_one_letter_code>QSALTQPPSASGSPGQSVTISCTGTSSDVGGYNYVSWYQQHPGKAPKLMIYEVSKRPSGVPDRFSGSKSGNTASLTVSGLQAEDEADYYCSSYAGSNNLVFGGGTKLTVL</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
@@ -229612,7 +230302,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1208</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -229636,7 +230326,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1208</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -229660,7 +230350,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0DTC2" rdfs:label="uniprot:P0DTC2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1208</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -229684,7 +230374,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -229708,7 +230398,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</PDBo:pdbx_sifts_unp_segments.unp_end>
@@ -229732,7 +230422,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/A0A5C2GJG2" rdfs:label="uniprot:A0A5C2GJG2"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</PDBo:pdbx_sifts_unp_segments.unp_end>

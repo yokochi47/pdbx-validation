@@ -92,19 +92,19 @@
         &lt;xsl:variable name="url"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="starts-with(./url/text(),'https')"&gt;&lt;xsl:value-of select="concat('http:',substring-after(./url/text(),':'))"/&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="./url/text()"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
         &lt;xsl:choose&gt;
           &lt;xsl:when test="$source_id='1'"&gt;
-            &lt;owl:sameAs rdf:resource="{$p_chembl}{$compound_id}"/&gt;
+            &lt;owl:sameAs rdf:resource="{$p_chembl}{$compound_id}" rdfs:label="chembl.compound:{$compound_id}"/&gt;
           &lt;/xsl:when&gt;
           &lt;xsl:when test="$source_id='2'"&gt;
             &lt;rdfs:seeAlso rdf:resource="{$drugbank}{$compound_id}" rdfs:label="drugbank:{$compound_id}"/&gt;
           &lt;/xsl:when&gt;
-          &lt;xsl:when test="$source_id='3'"/&gt; &lt;!-- self: rcsb pdb --&gt;
-          &lt;xsl:when test="$source_id='4'"&gt;
+          &lt;xsl:when test="$source_id='3'"/&gt; &lt;!-- self reference: rcsb pdb --&gt;
+          &lt;xsl:when test="$source_id='4'"&gt; &lt;!-- identifier.org does not have prefix for Guide to Pharmacology --&gt;
             &lt;owl:sameAs rdf:resource="{$p_gtop}{$compound_id}"/&gt;
           &lt;/xsl:when&gt;
-          &lt;xsl:when test="$source_id='5'"/&gt; &lt;!-- self: pdbe --&gt;
+          &lt;xsl:when test="$source_id='5'"/&gt; &lt;!-- self reference: pdbe --&gt;
           &lt;xsl:when test="$source_id='7'"&gt;
             &lt;xsl:variable name="_compound_id"&gt;&lt;xsl:value-of select="substring-after($compound_id,':')"/&gt;&lt;/xsl:variable&gt;
-            &lt;owl:sameAs rdf:resource="{$p_chebi}{$_compound_id}"/&gt;
+            &lt;owl:sameAs rdf:resource="{$p_chebi}{$_compound_id}" rdfs:label="{$compound_id}"/&gt;
           &lt;/xsl:when&gt;
           &lt;xsl:when test="$source_id='14'"&gt;
             &lt;rdfs:seeAlso rdf:resource="{$unii}{$compound_id}" rdfs:label="unii:{$compound_id}"/&gt;
@@ -113,7 +113,7 @@
             &lt;rdfs:seeAlso rdf:resource="{$hmdb}{$compound_id}" rdfs:label="hmdb:{$compound_id}"/&gt;
           &lt;/xsl:when&gt;
           &lt;xsl:when test="$source_id='22'"&gt;
-            &lt;owl:sameAs rdf:resource="{$p_pubchem}{$compound_id}"/&gt;
+            &lt;owl:sameAs rdf:resource="{$p_pubchem}{$compound_id}" rdfs:label="pubchem.compound:{$compound_id}"/&gt;
           &lt;/xsl:when&gt;
           &lt;xsl:when test="$source_id='24'"&gt;
             &lt;rdfs:seeAlso rdf:resource="{$nmrshiftdb}{$compound_id}" rdfs:label="nmrshiftdb2:{$compound_id}"/&gt;
@@ -155,7 +155,7 @@
             &lt;rdfs:seeAlso rdf:resource="{$foodb}{$compound_id}" rdfs:label="foodb.compound:{$compound_id}"/&gt;
           &lt;/xsl:when&gt;
           &lt;xsl:when test="$source_id='53'"&gt;
-            &lt;owl:sameAs rdf:resource="{$p_glycoinfo}{$compound_id}"/&gt;
+            &lt;owl:sameAs rdf:resource="{$p_glycoinfo}{$compound_id}" rdfs:label="glytoucan:{$compound_id}"/&gt;
           &lt;/xsl:when&gt;
           &lt;xsl:otherwise&gt;
             &lt;rdfs:seeAlso rdf:resource="{$url}"/&gt;
@@ -254,7 +254,7 @@
 
   &lt;xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_pubmed rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/&gt;
-    &lt;owl:sameAs rdf:resource="{$p_pubmed}{text()}"/&gt;
+    &lt;owl:sameAs rdf:resource="{$p_pubmed}{text()}" rdfs:label="pubmed:{text()}"/&gt;
     &lt;dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
@@ -305,7 +305,7 @@
       &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
       &lt;xsl:if test="string-length($tax)!=0"&gt;
         &lt;PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
-        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/&gt;
+        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
         &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
       &lt;/xsl:if&gt;
     &lt;/xsl:for-each&gt;
@@ -322,7 +322,7 @@
       &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
       &lt;xsl:if test="string-length($tax)!=0"&gt;
         &lt;PDBo:link_to_taxonomy_host rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
-        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/&gt;
+        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
         &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
       &lt;/xsl:if&gt;
     &lt;/xsl:for-each&gt;
@@ -339,7 +339,7 @@
       &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
       &lt;xsl:if test="string-length($tax)!=0"&gt;
         &lt;PDBo:link_to_taxonomy_source rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
-        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}"/&gt;
+        &lt;owl:sameAs rdf:resource="{$p_taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
         &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
       &lt;/xsl:if&gt;
     &lt;/xsl:for-each&gt;
@@ -358,7 +358,7 @@
         &lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
         &lt;xsl:if test="string-length($ec)!=0"&gt;
           &lt;PDBo:link_to_enzyme rdf:resource="{$p_enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/&gt;
-          &lt;owl:sameAs rdf:resource="{$p_enzyme}{$ec}"/&gt;
+          &lt;owl:sameAs rdf:resource="{$p_enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/&gt;
           &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
         &lt;/xsl:if&gt;
       &lt;/xsl:for-each&gt;

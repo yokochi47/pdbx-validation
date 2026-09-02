@@ -261,7 +261,7 @@
             <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2020</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.3390/biom10081152" rdfs:label="doi:10.3390/biom10081152"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/32781704" rdfs:label="pubmed:32781704"/>
-            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/32781704"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/32781704" rdfs:label="pubmed:32781704"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/32781704" rdfs:label="pubmed:32781704"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -944,7 +944,7 @@
             <PDBo:pdbx_database_related.db_id>30780</PDBo:pdbx_database_related.db_id>
             <PDBo:pdbx_database_related.db_name>BMRB</PDBo:pdbx_database_related.db_name>
             <PDBo:link_to_bmrb rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr30780" rdfs:label="bmrb:30780"/>
-            <owl:sameAs rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr30780"/>
+            <owl:sameAs rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr30780" rdfs:label="bmrb:30780"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb/30780" rdfs:label="bmrb:30780"/>
             <PDBo:pdbx_database_related.details>Structure of truncated zebrafish granulin AaE</PDBo:pdbx_database_related.details>
           </PDBo:pdbx_database_related>
@@ -1990,6 +1990,16 @@
                 <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/A"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
+            <PDBo:reference_to_pdbx_sifts_unp_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_unp_segments/A,1,1,1,Q8QGN9">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_unp_segments>
+            <PDBo:reference_to_pdbx_sifts_xref_db_segments>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db_segments/A,1,1,1,24,12,Pfam,PF00396">
+                <PDBo:referenced_by_struct_asym rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/A"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_sifts_xref_db_segments>
             <PDBo:struct_asym.id>A</PDBo:struct_asym.id>
             <PDBo:struct_asym.entity_id>1</PDBo:struct_asym.entity_id>
             <PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>N</PDBo:struct_asym.pdbx_blank_PDB_chainid_flag>
@@ -2134,7 +2144,7 @@
             <PDBo:struct_ref.pdbx_db_accession>Q8QGN9</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:struct_ref.pdbx_seq_one_letter_code>CGGGFSCHDGETCCPTSQTTWGCC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q8QGN9"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
@@ -2262,7 +2272,7 @@
             <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q8QGN9"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="http://www.w3.org/2001/XMLSchema#int">796</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">819</PDBo:pdbx_sifts_unp_segments.unp_end>

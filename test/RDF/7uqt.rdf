@@ -2286,10 +2286,10 @@
             <PDBo:entity_src_gen.pdbx_host_org_strain>BL21(DE3)</PDBo:entity_src_gen.pdbx_host_org_strain>
             <PDBo:entity_src_gen.pdbx_seq_type>Biological sequence</PDBo:entity_src_gen.pdbx_seq_type>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/935547" rdfs:label="taxonomy:935547"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/935547"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/935547" rdfs:label="taxonomy:935547"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/935547" rdfs:label="taxonomy:935547"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/469008" rdfs:label="taxonomy:469008"/>
-            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/469008"/>
+            <owl:sameAs rdf:resource="http://purl.uniprot.org/taxonomy/469008" rdfs:label="taxonomy:469008"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/469008" rdfs:label="taxonomy:469008"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
@@ -2394,7 +2394,7 @@
             <PDBo:pdbx_database_related.db_id>31011</PDBo:pdbx_database_related.db_id>
             <PDBo:pdbx_database_related.db_name>BMRB</PDBo:pdbx_database_related.db_name>
             <PDBo:link_to_bmrb rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr31011" rdfs:label="bmrb:31011"/>
-            <owl:sameAs rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr31011"/>
+            <owl:sameAs rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr31011" rdfs:label="bmrb:31011"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb/31011" rdfs:label="bmrb:31011"/>
             <PDBo:pdbx_database_related.details>Solution NMR structure of hexahistidine tagged QseM (6H-QseM)</PDBo:pdbx_database_related.details>
           </PDBo:pdbx_database_related>

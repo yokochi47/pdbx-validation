@@ -6,7 +6,7 @@
     <rdfs:seeAlso rdf:resource="http://pdbj.org/chemie/summary/C99"/>
     <rdfs:seeAlso rdf:resource="http://www.rcsb.org/ligand/C99"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/C99"/>
-    <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID49866760"/>
+    <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID49866760" rdfs:label="pubchem.compound:49866760"/>
     <PDBo:datablockName>C99</PDBo:datablockName>
     <PDBo:has_chem_compCategory>
       <PDBo:chem_compCategory rdf:about="http://rdf.wwpdb.org/cc/C99/chem_compCategory">

@@ -101,7 +101,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>128801</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID128801" rdfs:label="pubchem.substance:128801"/>
-            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID128801"/>
+            <owl:sameAs rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID128801" rdfs:label="pubchem.substance:128801"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/128801" rdfs:label="pubchem.substance:128801"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
