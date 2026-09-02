@@ -160,7 +160,7 @@ if [ -d $XML_CC ] ; then
  done < $chk_sum_log
 fi
 
-if [ -d $UNICHEM_SRCS ; then
+if [ -d $UNICHEM_SRCS ] ; then
  while read cc_id ; do
   [ -z "$cc_id" ] || [[ "$cc_id" =~ ^#.* ]] && continue
   rm -f $UNICHEM_SRCS/$cc_id.json $UNICHEM_SRCS/$cc_id.xml $UNICHEM_SRCS/$cc_id.ign
