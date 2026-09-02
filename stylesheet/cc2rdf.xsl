@@ -98,7 +98,7 @@
             <rdfs:seeAlso rdf:resource="{$nmrshiftdb}{$compound_id}" rdfs:label="nmrshiftdb2:{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='28'"> <!-- identifier.org does not have prefix for MolPort -->
-            <rdfs:seeAlso rdf:resource="{url}"/>
+            <rdfs:seeAlso rdf:resource="{$url}"/>
           </xsl:when>
           <xsl:when test="$source_id='31'"> <!-- UniChem provides bulk download file -->
             <rdfs:seeAlso rdf:resource="{$bindingdb}{$compound_id}" rdfs:label="bindingdb:{$compound_id}"/>
@@ -107,25 +107,25 @@
             <rdfs:seeAlso rdf:resource="{$comptox}{$compound_id}" rdfs:label="comptox:{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='33'">
-            <rdfs:seeAlso rdf:resource="{url}" rdfs:label="lipidmaps:{$compound_id}"/>
+            <rdfs:seeAlso rdf:resource="{$url}" rdfs:label="lipidmaps:{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='34'">
             <rdfs:seeAlso rdf:resource="{$drugcentral}{$compound_id}" rdfs:label="durgcentral:{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='37'"> <!-- identifier.org can't resolve brenda:{id} -->
-            <rdfs:seeAlso rdf:resource="{url}"/>
+            <rdfs:seeAlso rdf:resource="{$url}"/>
           </xsl:when>
           <xsl:when test="$source_id='38'"> <!-- CHEBI identifier, not own identifier -->
             <rdfs:seeAlso rdf:resource="{$url}"/>
           </xsl:when>
           <xsl:when test="$source_id='41'"> <!-- UniChem provides prefix SLM:{id} -->
-            <rdfs:seeAlso rdf:resource="{url}" rdfs:label="{$compound_id}"/>
+            <rdfs:seeAlso rdf:resource="{$url}" rdfs:label="{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='46'">
             <rdfs:seeAlso rdf:resource="{$clinicaltrials}{$compound_id}" rdfs:label="clinicaltrials:{$compound_id}"/>
           </xsl:when>
           <xsl:when test="$source_id='49'"> <!-- identifier.org does not have prefix for Probes and Drugs -->
-            <rdfs:seeAlso rdf:resource="{url}"/>
+            <rdfs:seeAlso rdf:resource="{$url}"/>
           </xsl:when>
           <xsl:when test="$source_id='50'">
             <rdfs:seeAlso rdf:resource="{$csd}{$compound_id}" rdfs:label="csd:{$compound_id}"/>
