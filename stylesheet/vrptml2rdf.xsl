@@ -509,8 +509,7 @@
 
   <!-- level 3 templates follow -->
   <xsl:template match="VRPTx:datablock/VRPTx:diffrnCategory/VRPTx:diffrn">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn>
       <PDBo:diffrn rdf:about="{$base}/diffrn/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -523,8 +522,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_attenuatorCategory/VRPTx:diffrn_attenuator">
-      <xsl:variable name="code_truncated"><xsl:choose><xsl:when test="string-length(@code)&lt;64"><xsl:value-of select="@code"/></xsl:when><xsl:when test="contains(@code,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@code,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@code,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="code_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($code_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="code_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@code"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_attenuator>
       <PDBo:diffrn_attenuator rdf:about="{$base}/diffrn_attenuator/{$code_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -537,8 +535,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_detectorCategory/VRPTx:diffrn_detector">
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_detector>
       <PDBo:diffrn_detector rdf:about="{$base}/diffrn_detector/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -559,8 +556,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_measurementCategory/VRPTx:diffrn_measurement">
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_measurement>
       <PDBo:diffrn_measurement rdf:about="{$base}/diffrn_measurement/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -581,8 +577,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_orient_matrixCategory/VRPTx:diffrn_orient_matrix">
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_orient_matrix>
       <PDBo:diffrn_orient_matrix rdf:about="{$base}/diffrn_orient_matrix/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -603,14 +598,10 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_orient_reflnCategory/VRPTx:diffrn_orient_refln">
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_h_truncated"><xsl:choose><xsl:when test="string-length(@index_h)&lt;64"><xsl:value-of select="@index_h"/></xsl:when><xsl:when test="contains(@index_h,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_h,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_h,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_h_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_h_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_k_truncated"><xsl:choose><xsl:when test="string-length(@index_k)&lt;64"><xsl:value-of select="@index_k"/></xsl:when><xsl:when test="contains(@index_k,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_k,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_k,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_k_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_k_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_l_truncated"><xsl:choose><xsl:when test="string-length(@index_l)&lt;64"><xsl:value-of select="@index_l"/></xsl:when><xsl:when test="contains(@index_l,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_l,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_l,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_l_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_l_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_h_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_h"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_k_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_k"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_l_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_l"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_orient_refln>
       <PDBo:diffrn_orient_refln rdf:about="{$base}/diffrn_orient_refln/{$diffrn_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -631,8 +622,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_radiationCategory/VRPTx:diffrn_radiation">
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_radiation>
       <PDBo:diffrn_radiation rdf:about="{$base}/diffrn_radiation/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -653,8 +643,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_radiation_wavelengthCategory/VRPTx:diffrn_radiation_wavelength">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_radiation_wavelength>
       <PDBo:diffrn_radiation_wavelength rdf:about="{$base}/diffrn_radiation_wavelength/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -667,10 +656,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_reflnCategory/VRPTx:diffrn_refln">
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_refln>
       <PDBo:diffrn_refln rdf:about="{$base}/diffrn_refln/{$diffrn_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -691,8 +678,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_reflnsCategory/VRPTx:diffrn_reflns">
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_reflns>
       <PDBo:diffrn_reflns rdf:about="{$base}/diffrn_reflns/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -713,8 +699,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_reflns_classCategory/VRPTx:diffrn_reflns_class">
-      <xsl:variable name="code_truncated"><xsl:choose><xsl:when test="string-length(@code)&lt;64"><xsl:value-of select="@code"/></xsl:when><xsl:when test="contains(@code,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@code,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@code,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="code_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($code_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="code_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@code"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_reflns_class>
       <PDBo:diffrn_reflns_class rdf:about="{$base}/diffrn_reflns_class/{$code_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -727,8 +712,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_scale_groupCategory/VRPTx:diffrn_scale_group">
-      <xsl:variable name="code_truncated"><xsl:choose><xsl:when test="string-length(@code)&lt;64"><xsl:value-of select="@code"/></xsl:when><xsl:when test="contains(@code,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@code,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@code,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="code_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($code_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="code_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@code"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_scale_group>
       <PDBo:diffrn_scale_group rdf:about="{$base}/diffrn_scale_group/{$code_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -741,8 +725,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_sourceCategory/VRPTx:diffrn_source">
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_source>
       <PDBo:diffrn_source rdf:about="{$base}/diffrn_source/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -763,10 +746,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_standard_reflnCategory/VRPTx:diffrn_standard_refln">
-      <xsl:variable name="code_truncated"><xsl:choose><xsl:when test="string-length(@code)&lt;64"><xsl:value-of select="@code"/></xsl:when><xsl:when test="contains(@code,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@code,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@code,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="code_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($code_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="code_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@code"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_standard_refln>
       <PDBo:diffrn_standard_refln rdf:about="{$base}/diffrn_standard_refln/{$code_encoded},{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -787,8 +768,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:diffrn_standardsCategory/VRPTx:diffrn_standards">
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_diffrn_standards>
       <PDBo:diffrn_standards rdf:about="{$base}/diffrn_standards/{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -809,10 +789,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_2d_crystal_entityCategory/VRPTx:em_2d_crystal_entity">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="image_processing_id_truncated"><xsl:choose><xsl:when test="string-length(@image_processing_id)&lt;64"><xsl:value-of select="@image_processing_id"/></xsl:when><xsl:when test="contains(@image_processing_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@image_processing_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@image_processing_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($image_processing_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@image_processing_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_2d_crystal_entity>
       <PDBo:em_2d_crystal_entity rdf:about="{$base}/em_2d_crystal_entity/{$id_encoded},{$image_processing_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -825,10 +803,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_3d_crystal_entityCategory/VRPTx:em_3d_crystal_entity">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="image_processing_id_truncated"><xsl:choose><xsl:when test="string-length(@image_processing_id)&lt;64"><xsl:value-of select="@image_processing_id"/></xsl:when><xsl:when test="contains(@image_processing_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@image_processing_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@image_processing_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($image_processing_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@image_processing_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_3d_crystal_entity>
       <PDBo:em_3d_crystal_entity rdf:about="{$base}/em_3d_crystal_entity/{$id_encoded},{$image_processing_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -841,10 +817,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_3d_fittingCategory/VRPTx:em_3d_fitting">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_3d_fitting>
       <PDBo:em_3d_fitting rdf:about="{$base}/em_3d_fitting/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -865,10 +839,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_3d_fitting_listCategory/VRPTx:em_3d_fitting_list">
-      <xsl:variable name="_3d_fitting_id_truncated"><xsl:choose><xsl:when test="string-length(@_3d_fitting_id)&lt;64"><xsl:value-of select="@_3d_fitting_id"/></xsl:when><xsl:when test="contains(@_3d_fitting_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@_3d_fitting_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@_3d_fitting_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="_3d_fitting_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($_3d_fitting_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="_3d_fitting_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@_3d_fitting_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_3d_fitting_list>
       <PDBo:em_3d_fitting_list rdf:about="{$base}/em_3d_fitting_list/{$_3d_fitting_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -881,10 +853,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_3d_reconstructionCategory/VRPTx:em_3d_reconstruction">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="image_processing_id_truncated"><xsl:choose><xsl:when test="string-length(@image_processing_id)&lt;64"><xsl:value-of select="@image_processing_id"/></xsl:when><xsl:when test="contains(@image_processing_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@image_processing_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@image_processing_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($image_processing_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@image_processing_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_3d_reconstruction>
       <PDBo:em_3d_reconstruction rdf:about="{$base}/em_3d_reconstruction/{$id_encoded},{$image_processing_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -905,8 +875,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_adminCategory/VRPTx:em_admin">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_admin>
       <PDBo:em_admin rdf:about="{$base}/em_admin/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -919,10 +888,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_bufferCategory/VRPTx:em_buffer">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="specimen_id_truncated"><xsl:choose><xsl:when test="string-length(@specimen_id)&lt;64"><xsl:value-of select="@specimen_id"/></xsl:when><xsl:when test="contains(@specimen_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@specimen_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@specimen_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="specimen_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($specimen_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="specimen_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@specimen_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_buffer>
       <PDBo:em_buffer rdf:about="{$base}/em_buffer/{$id_encoded},{$specimen_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -935,10 +902,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_buffer_componentCategory/VRPTx:em_buffer_component">
-      <xsl:variable name="buffer_id_truncated"><xsl:choose><xsl:when test="string-length(@buffer_id)&lt;64"><xsl:value-of select="@buffer_id"/></xsl:when><xsl:when test="contains(@buffer_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@buffer_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@buffer_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="buffer_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($buffer_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="buffer_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@buffer_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_buffer_component>
       <PDBo:em_buffer_component rdf:about="{$base}/em_buffer_component/{$buffer_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -951,8 +916,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_crystal_formationCategory/VRPTx:em_crystal_formation">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_crystal_formation>
       <PDBo:em_crystal_formation rdf:about="{$base}/em_crystal_formation/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -965,8 +929,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_ctf_correctionCategory/VRPTx:em_ctf_correction">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_ctf_correction>
       <PDBo:em_ctf_correction rdf:about="{$base}/em_ctf_correction/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -979,8 +942,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_diffractionCategory/VRPTx:em_diffraction">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_diffraction>
       <PDBo:em_diffraction rdf:about="{$base}/em_diffraction/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -993,8 +955,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_diffraction_shellCategory/VRPTx:em_diffraction_shell">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_diffraction_shell>
       <PDBo:em_diffraction_shell rdf:about="{$base}/em_diffraction_shell/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1007,8 +968,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_diffraction_statsCategory/VRPTx:em_diffraction_stats">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_diffraction_stats>
       <PDBo:em_diffraction_stats rdf:about="{$base}/em_diffraction_stats/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1021,8 +981,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_embeddingCategory/VRPTx:em_embedding">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_embedding>
       <PDBo:em_embedding rdf:about="{$base}/em_embedding/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1035,8 +994,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_entity_assemblyCategory/VRPTx:em_entity_assembly">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_entity_assembly>
       <PDBo:em_entity_assembly rdf:about="{$base}/em_entity_assembly/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1049,10 +1007,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_entity_assembly_molwtCategory/VRPTx:em_entity_assembly_molwt">
-      <xsl:variable name="entity_assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_assembly_id)&lt;64"><xsl:value-of select="@entity_assembly_id"/></xsl:when><xsl:when test="contains(@entity_assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_assembly_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_entity_assembly_molwt>
       <PDBo:em_entity_assembly_molwt rdf:about="{$base}/em_entity_assembly_molwt/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1073,10 +1029,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_entity_assembly_naturalsourceCategory/VRPTx:em_entity_assembly_naturalsource">
-      <xsl:variable name="entity_assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_assembly_id)&lt;64"><xsl:value-of select="@entity_assembly_id"/></xsl:when><xsl:when test="contains(@entity_assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_assembly_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_entity_assembly_naturalsource>
       <PDBo:em_entity_assembly_naturalsource rdf:about="{$base}/em_entity_assembly_naturalsource/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1097,10 +1051,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_entity_assembly_recombinantCategory/VRPTx:em_entity_assembly_recombinant">
-      <xsl:variable name="entity_assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_assembly_id)&lt;64"><xsl:value-of select="@entity_assembly_id"/></xsl:when><xsl:when test="contains(@entity_assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_assembly_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_entity_assembly_recombinant>
       <PDBo:em_entity_assembly_recombinant rdf:about="{$base}/em_entity_assembly_recombinant/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1121,10 +1073,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_entity_assembly_syntheticCategory/VRPTx:em_entity_assembly_synthetic">
-      <xsl:variable name="entity_assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_assembly_id)&lt;64"><xsl:value-of select="@entity_assembly_id"/></xsl:when><xsl:when test="contains(@entity_assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_assembly_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_entity_assembly_synthetic>
       <PDBo:em_entity_assembly_synthetic rdf:about="{$base}/em_entity_assembly_synthetic/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1145,8 +1095,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_experimentCategory/VRPTx:em_experiment">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_experiment>
       <PDBo:em_experiment rdf:about="{$base}/em_experiment/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1167,10 +1116,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_helical_entityCategory/VRPTx:em_helical_entity">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="image_processing_id_truncated"><xsl:choose><xsl:when test="string-length(@image_processing_id)&lt;64"><xsl:value-of select="@image_processing_id"/></xsl:when><xsl:when test="contains(@image_processing_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@image_processing_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@image_processing_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($image_processing_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@image_processing_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_helical_entity>
       <PDBo:em_helical_entity rdf:about="{$base}/em_helical_entity/{$id_encoded},{$image_processing_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1183,10 +1130,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_image_processingCategory/VRPTx:em_image_processing">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="image_recording_id_truncated"><xsl:choose><xsl:when test="string-length(@image_recording_id)&lt;64"><xsl:value-of select="@image_recording_id"/></xsl:when><xsl:when test="contains(@image_recording_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@image_recording_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@image_recording_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="image_recording_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($image_recording_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="image_recording_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@image_recording_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_image_processing>
       <PDBo:em_image_processing rdf:about="{$base}/em_image_processing/{$id_encoded},{$image_recording_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1199,10 +1144,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_image_recordingCategory/VRPTx:em_image_recording">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="imaging_id_truncated"><xsl:choose><xsl:when test="string-length(@imaging_id)&lt;64"><xsl:value-of select="@imaging_id"/></xsl:when><xsl:when test="contains(@imaging_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@imaging_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@imaging_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="imaging_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($imaging_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="imaging_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@imaging_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_image_recording>
       <PDBo:em_image_recording rdf:about="{$base}/em_image_recording/{$id_encoded},{$imaging_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1215,10 +1158,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_image_scansCategory/VRPTx:em_image_scans">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="image_recording_id_truncated"><xsl:choose><xsl:when test="string-length(@image_recording_id)&lt;64"><xsl:value-of select="@image_recording_id"/></xsl:when><xsl:when test="contains(@image_recording_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@image_recording_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@image_recording_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="image_recording_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($image_recording_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="image_recording_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@image_recording_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_image_scans>
       <PDBo:em_image_scans rdf:about="{$base}/em_image_scans/{$id_encoded},{$image_recording_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1239,10 +1180,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_imagingCategory/VRPTx:em_imaging">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_imaging>
       <PDBo:em_imaging rdf:about="{$base}/em_imaging/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1263,10 +1202,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_imaging_opticsCategory/VRPTx:em_imaging_optics">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="imaging_id_truncated"><xsl:choose><xsl:when test="string-length(@imaging_id)&lt;64"><xsl:value-of select="@imaging_id"/></xsl:when><xsl:when test="contains(@imaging_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@imaging_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@imaging_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="imaging_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($imaging_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="imaging_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@imaging_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_imaging_optics>
       <PDBo:em_imaging_optics rdf:about="{$base}/em_imaging_optics/{$id_encoded},{$imaging_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1279,10 +1216,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_particle_selectionCategory/VRPTx:em_particle_selection">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="image_processing_id_truncated"><xsl:choose><xsl:when test="string-length(@image_processing_id)&lt;64"><xsl:value-of select="@image_processing_id"/></xsl:when><xsl:when test="contains(@image_processing_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@image_processing_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@image_processing_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($image_processing_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@image_processing_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_particle_selection>
       <PDBo:em_particle_selection rdf:about="{$base}/em_particle_selection/{$id_encoded},{$image_processing_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1295,10 +1230,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_single_particle_entityCategory/VRPTx:em_single_particle_entity">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="image_processing_id_truncated"><xsl:choose><xsl:when test="string-length(@image_processing_id)&lt;64"><xsl:value-of select="@image_processing_id"/></xsl:when><xsl:when test="contains(@image_processing_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@image_processing_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@image_processing_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($image_processing_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@image_processing_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_single_particle_entity>
       <PDBo:em_single_particle_entity rdf:about="{$base}/em_single_particle_entity/{$id_encoded},{$image_processing_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1311,8 +1244,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_softwareCategory/VRPTx:em_software">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_software>
       <PDBo:em_software rdf:about="{$base}/em_software/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1325,10 +1257,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_specimenCategory/VRPTx:em_specimen">
-      <xsl:variable name="experiment_id_truncated"><xsl:choose><xsl:when test="string-length(@experiment_id)&lt;64"><xsl:value-of select="@experiment_id"/></xsl:when><xsl:when test="contains(@experiment_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@experiment_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@experiment_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="experiment_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($experiment_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="experiment_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@experiment_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_specimen>
       <PDBo:em_specimen rdf:about="{$base}/em_specimen/{$experiment_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1341,8 +1271,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_stainingCategory/VRPTx:em_staining">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_staining>
       <PDBo:em_staining rdf:about="{$base}/em_staining/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1355,10 +1284,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_virus_entityCategory/VRPTx:em_virus_entity">
-      <xsl:variable name="entity_assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_assembly_id)&lt;64"><xsl:value-of select="@entity_assembly_id"/></xsl:when><xsl:when test="contains(@entity_assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_assembly_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_virus_entity>
       <PDBo:em_virus_entity rdf:about="{$base}/em_virus_entity/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1379,10 +1306,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_virus_natural_hostCategory/VRPTx:em_virus_natural_host">
-      <xsl:variable name="entity_assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_assembly_id)&lt;64"><xsl:value-of select="@entity_assembly_id"/></xsl:when><xsl:when test="contains(@entity_assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_assembly_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_virus_natural_host>
       <PDBo:em_virus_natural_host rdf:about="{$base}/em_virus_natural_host/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1403,10 +1328,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_virus_shellCategory/VRPTx:em_virus_shell">
-      <xsl:variable name="entity_assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_assembly_id)&lt;64"><xsl:value-of select="@entity_assembly_id"/></xsl:when><xsl:when test="contains(@entity_assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_assembly_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_virus_shell>
       <PDBo:em_virus_shell rdf:about="{$base}/em_virus_shell/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1427,10 +1350,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_virus_syntheticCategory/VRPTx:em_virus_synthetic">
-      <xsl:variable name="entity_assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_assembly_id)&lt;64"><xsl:value-of select="@entity_assembly_id"/></xsl:when><xsl:when test="contains(@entity_assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_assembly_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_virus_synthetic>
       <PDBo:em_virus_synthetic rdf:about="{$base}/em_virus_synthetic/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1451,10 +1372,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_vitrificationCategory/VRPTx:em_vitrification">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="specimen_id_truncated"><xsl:choose><xsl:when test="string-length(@specimen_id)&lt;64"><xsl:value-of select="@specimen_id"/></xsl:when><xsl:when test="contains(@specimen_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@specimen_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@specimen_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="specimen_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($specimen_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="specimen_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@specimen_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_vitrification>
       <PDBo:em_vitrification rdf:about="{$base}/em_vitrification/{$id_encoded},{$specimen_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1475,10 +1394,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:em_volume_selectionCategory/VRPTx:em_volume_selection">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="image_processing_id_truncated"><xsl:choose><xsl:when test="string-length(@image_processing_id)&lt;64"><xsl:value-of select="@image_processing_id"/></xsl:when><xsl:when test="contains(@image_processing_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@image_processing_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@image_processing_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($image_processing_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="image_processing_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@image_processing_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_volume_selection>
       <PDBo:em_volume_selection rdf:about="{$base}/em_volume_selection/{$id_encoded},{$image_processing_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1491,8 +1408,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:entityCategory/VRPTx:entity">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_entity>
       <PDBo:entity rdf:about="{$base}/entity/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1505,8 +1421,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:entity_name_comCategory/VRPTx:entity_name_com">
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_entity_name_com>
       <PDBo:entity_name_com rdf:about="{$base}/entity_name_com/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1527,8 +1442,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:entity_name_sysCategory/VRPTx:entity_name_sys">
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_entity_name_sys>
       <PDBo:entity_name_sys rdf:about="{$base}/entity_name_sys/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1549,8 +1463,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:entity_polyCategory/VRPTx:entity_poly">
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_entity_poly>
       <PDBo:entity_poly rdf:about="{$base}/entity_poly/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1571,12 +1484,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:entity_poly_seqCategory/VRPTx:entity_poly_seq">
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="mon_id_truncated"><xsl:choose><xsl:when test="string-length(@mon_id)&lt;64"><xsl:value-of select="@mon_id"/></xsl:when><xsl:when test="contains(@mon_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@mon_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@mon_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="mon_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($mon_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="num_truncated"><xsl:choose><xsl:when test="string-length(@num)&lt;64"><xsl:value-of select="@num"/></xsl:when><xsl:when test="contains(@num,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@num,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@num,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="num_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($num_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="mon_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@mon_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="num_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@num"/></xsl:call-template></xsl:variable>
       <PDBo:has_entity_poly_seq>
       <PDBo:entity_poly_seq rdf:about="{$base}/entity_poly_seq/{$entity_id_encoded},{$mon_id_encoded},{$num_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1597,8 +1507,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:entryCategory/VRPTx:entry">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_entry>
       <PDBo:entry rdf:about="{$base}/entry/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1611,10 +1520,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:entry_linkCategory/VRPTx:entry_link">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_entry_link>
       <PDBo:entry_link rdf:about="{$base}/entry_link/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1635,10 +1542,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:exptlCategory/VRPTx:exptl">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="method_truncated"><xsl:choose><xsl:when test="string-length(@method)&lt;64"><xsl:value-of select="@method"/></xsl:when><xsl:when test="contains(@method,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@method,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@method,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="method_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($method_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="method_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@method"/></xsl:call-template></xsl:variable>
       <PDBo:has_exptl>
       <PDBo:exptl rdf:about="{$base}/exptl/{$entry_id_encoded},{$method_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1659,10 +1564,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:ndb_struct_conf_naCategory/VRPTx:ndb_struct_conf_na">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="feature_truncated"><xsl:choose><xsl:when test="string-length(@feature)&lt;64"><xsl:value-of select="@feature"/></xsl:when><xsl:when test="contains(@feature,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@feature,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@feature,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="feature_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($feature_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="feature_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@feature"/></xsl:call-template></xsl:variable>
       <PDBo:has_ndb_struct_conf_na>
       <PDBo:ndb_struct_conf_na rdf:about="{$base}/ndb_struct_conf_na/{$entry_id_encoded},{$feature_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1683,24 +1586,15 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:ndb_struct_na_base_pairCategory/VRPTx:ndb_struct_na_base_pair">
-      <xsl:variable name="i_label_asym_id_truncated"><xsl:choose><xsl:when test="string-length(@i_label_asym_id)&lt;64"><xsl:value-of select="@i_label_asym_id"/></xsl:when><xsl:when test="contains(@i_label_asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_label_asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_label_asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_label_asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_label_asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="i_label_comp_id_truncated"><xsl:choose><xsl:when test="string-length(@i_label_comp_id)&lt;64"><xsl:value-of select="@i_label_comp_id"/></xsl:when><xsl:when test="contains(@i_label_comp_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_label_comp_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_label_comp_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_label_comp_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_label_comp_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="i_label_seq_id_truncated"><xsl:choose><xsl:when test="string-length(@i_label_seq_id)&lt;64"><xsl:value-of select="@i_label_seq_id"/></xsl:when><xsl:when test="contains(@i_label_seq_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_label_seq_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_label_seq_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_label_seq_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_label_seq_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="i_symmetry_truncated"><xsl:choose><xsl:when test="string-length(@i_symmetry)&lt;64"><xsl:value-of select="@i_symmetry"/></xsl:when><xsl:when test="contains(@i_symmetry,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_symmetry,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_symmetry,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_symmetry_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_symmetry_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_label_asym_id_truncated"><xsl:choose><xsl:when test="string-length(@j_label_asym_id)&lt;64"><xsl:value-of select="@j_label_asym_id"/></xsl:when><xsl:when test="contains(@j_label_asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_label_asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_label_asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_label_asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_label_asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_label_comp_id_truncated"><xsl:choose><xsl:when test="string-length(@j_label_comp_id)&lt;64"><xsl:value-of select="@j_label_comp_id"/></xsl:when><xsl:when test="contains(@j_label_comp_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_label_comp_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_label_comp_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_label_comp_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_label_comp_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_label_seq_id_truncated"><xsl:choose><xsl:when test="string-length(@j_label_seq_id)&lt;64"><xsl:value-of select="@j_label_seq_id"/></xsl:when><xsl:when test="contains(@j_label_seq_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_label_seq_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_label_seq_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_label_seq_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_label_seq_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_symmetry_truncated"><xsl:choose><xsl:when test="string-length(@j_symmetry)&lt;64"><xsl:value-of select="@j_symmetry"/></xsl:when><xsl:when test="contains(@j_symmetry,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_symmetry,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_symmetry,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_symmetry_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_symmetry_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="model_number_truncated"><xsl:choose><xsl:when test="string-length(@model_number)&lt;64"><xsl:value-of select="@model_number"/></xsl:when><xsl:when test="contains(@model_number,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@model_number,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@model_number,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="model_number_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($model_number_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_label_asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_label_asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_label_comp_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_label_comp_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_label_seq_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_label_seq_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_symmetry_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_symmetry"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_label_asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_label_asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_label_comp_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_label_comp_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_label_seq_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_label_seq_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_symmetry_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_symmetry"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="model_number_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@model_number"/></xsl:call-template></xsl:variable>
       <PDBo:has_ndb_struct_na_base_pair>
       <PDBo:ndb_struct_na_base_pair rdf:about="{$base}/ndb_struct_na_base_pair/{$i_label_asym_id_encoded},{$i_label_comp_id_encoded},{$i_label_seq_id_encoded},{$i_symmetry_encoded},{$j_label_asym_id_encoded},{$j_label_comp_id_encoded},{$j_label_seq_id_encoded},{$j_symmetry_encoded},{$model_number_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1713,40 +1607,23 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:ndb_struct_na_base_pair_stepCategory/VRPTx:ndb_struct_na_base_pair_step">
-      <xsl:variable name="i_label_asym_id_1_truncated"><xsl:choose><xsl:when test="string-length(@i_label_asym_id_1)&lt;64"><xsl:value-of select="@i_label_asym_id_1"/></xsl:when><xsl:when test="contains(@i_label_asym_id_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_label_asym_id_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_label_asym_id_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_label_asym_id_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_label_asym_id_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="i_label_asym_id_2_truncated"><xsl:choose><xsl:when test="string-length(@i_label_asym_id_2)&lt;64"><xsl:value-of select="@i_label_asym_id_2"/></xsl:when><xsl:when test="contains(@i_label_asym_id_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_label_asym_id_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_label_asym_id_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_label_asym_id_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_label_asym_id_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="i_label_comp_id_1_truncated"><xsl:choose><xsl:when test="string-length(@i_label_comp_id_1)&lt;64"><xsl:value-of select="@i_label_comp_id_1"/></xsl:when><xsl:when test="contains(@i_label_comp_id_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_label_comp_id_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_label_comp_id_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_label_comp_id_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_label_comp_id_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="i_label_comp_id_2_truncated"><xsl:choose><xsl:when test="string-length(@i_label_comp_id_2)&lt;64"><xsl:value-of select="@i_label_comp_id_2"/></xsl:when><xsl:when test="contains(@i_label_comp_id_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_label_comp_id_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_label_comp_id_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_label_comp_id_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_label_comp_id_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="i_label_seq_id_1_truncated"><xsl:choose><xsl:when test="string-length(@i_label_seq_id_1)&lt;64"><xsl:value-of select="@i_label_seq_id_1"/></xsl:when><xsl:when test="contains(@i_label_seq_id_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_label_seq_id_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_label_seq_id_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_label_seq_id_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_label_seq_id_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="i_label_seq_id_2_truncated"><xsl:choose><xsl:when test="string-length(@i_label_seq_id_2)&lt;64"><xsl:value-of select="@i_label_seq_id_2"/></xsl:when><xsl:when test="contains(@i_label_seq_id_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_label_seq_id_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_label_seq_id_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_label_seq_id_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_label_seq_id_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="i_symmetry_1_truncated"><xsl:choose><xsl:when test="string-length(@i_symmetry_1)&lt;64"><xsl:value-of select="@i_symmetry_1"/></xsl:when><xsl:when test="contains(@i_symmetry_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_symmetry_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_symmetry_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_symmetry_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_symmetry_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="i_symmetry_2_truncated"><xsl:choose><xsl:when test="string-length(@i_symmetry_2)&lt;64"><xsl:value-of select="@i_symmetry_2"/></xsl:when><xsl:when test="contains(@i_symmetry_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@i_symmetry_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@i_symmetry_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="i_symmetry_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($i_symmetry_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_label_asym_id_1_truncated"><xsl:choose><xsl:when test="string-length(@j_label_asym_id_1)&lt;64"><xsl:value-of select="@j_label_asym_id_1"/></xsl:when><xsl:when test="contains(@j_label_asym_id_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_label_asym_id_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_label_asym_id_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_label_asym_id_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_label_asym_id_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_label_asym_id_2_truncated"><xsl:choose><xsl:when test="string-length(@j_label_asym_id_2)&lt;64"><xsl:value-of select="@j_label_asym_id_2"/></xsl:when><xsl:when test="contains(@j_label_asym_id_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_label_asym_id_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_label_asym_id_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_label_asym_id_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_label_asym_id_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_label_comp_id_1_truncated"><xsl:choose><xsl:when test="string-length(@j_label_comp_id_1)&lt;64"><xsl:value-of select="@j_label_comp_id_1"/></xsl:when><xsl:when test="contains(@j_label_comp_id_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_label_comp_id_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_label_comp_id_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_label_comp_id_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_label_comp_id_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_label_comp_id_2_truncated"><xsl:choose><xsl:when test="string-length(@j_label_comp_id_2)&lt;64"><xsl:value-of select="@j_label_comp_id_2"/></xsl:when><xsl:when test="contains(@j_label_comp_id_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_label_comp_id_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_label_comp_id_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_label_comp_id_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_label_comp_id_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_label_seq_id_1_truncated"><xsl:choose><xsl:when test="string-length(@j_label_seq_id_1)&lt;64"><xsl:value-of select="@j_label_seq_id_1"/></xsl:when><xsl:when test="contains(@j_label_seq_id_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_label_seq_id_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_label_seq_id_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_label_seq_id_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_label_seq_id_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_label_seq_id_2_truncated"><xsl:choose><xsl:when test="string-length(@j_label_seq_id_2)&lt;64"><xsl:value-of select="@j_label_seq_id_2"/></xsl:when><xsl:when test="contains(@j_label_seq_id_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_label_seq_id_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_label_seq_id_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_label_seq_id_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_label_seq_id_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_symmetry_1_truncated"><xsl:choose><xsl:when test="string-length(@j_symmetry_1)&lt;64"><xsl:value-of select="@j_symmetry_1"/></xsl:when><xsl:when test="contains(@j_symmetry_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_symmetry_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_symmetry_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_symmetry_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_symmetry_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="j_symmetry_2_truncated"><xsl:choose><xsl:when test="string-length(@j_symmetry_2)&lt;64"><xsl:value-of select="@j_symmetry_2"/></xsl:when><xsl:when test="contains(@j_symmetry_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@j_symmetry_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@j_symmetry_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="j_symmetry_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($j_symmetry_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="model_number_truncated"><xsl:choose><xsl:when test="string-length(@model_number)&lt;64"><xsl:value-of select="@model_number"/></xsl:when><xsl:when test="contains(@model_number,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@model_number,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@model_number,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="model_number_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($model_number_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_label_asym_id_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_label_asym_id_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_label_asym_id_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_label_asym_id_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_label_comp_id_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_label_comp_id_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_label_comp_id_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_label_comp_id_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_label_seq_id_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_label_seq_id_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_label_seq_id_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_label_seq_id_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_symmetry_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_symmetry_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="i_symmetry_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@i_symmetry_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_label_asym_id_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_label_asym_id_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_label_asym_id_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_label_asym_id_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_label_comp_id_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_label_comp_id_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_label_comp_id_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_label_comp_id_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_label_seq_id_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_label_seq_id_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_label_seq_id_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_label_seq_id_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_symmetry_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_symmetry_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="j_symmetry_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@j_symmetry_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="model_number_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@model_number"/></xsl:call-template></xsl:variable>
       <PDBo:has_ndb_struct_na_base_pair_step>
       <PDBo:ndb_struct_na_base_pair_step rdf:about="{$base}/ndb_struct_na_base_pair_step/{$i_label_asym_id_1_encoded},{$i_label_asym_id_2_encoded},{$i_label_comp_id_1_encoded},{$i_label_comp_id_2_encoded},{$i_label_seq_id_1_encoded},{$i_label_seq_id_2_encoded},{$i_symmetry_1_encoded},{$i_symmetry_2_encoded},{$j_label_asym_id_1_encoded},{$j_label_asym_id_2_encoded},{$j_label_comp_id_1_encoded},{$j_label_comp_id_2_encoded},{$j_label_seq_id_1_encoded},{$j_label_seq_id_2_encoded},{$j_symmetry_1_encoded},{$j_symmetry_2_encoded},{$model_number_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1759,8 +1636,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_audit_authorCategory/VRPTx:pdbx_audit_author">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_audit_author>
       <PDBo:pdbx_audit_author rdf:about="{$base}/pdbx_audit_author/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1773,12 +1649,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_audit_revision_categoryCategory/VRPTx:pdbx_audit_revision_category">
-      <xsl:variable name="data_content_type_truncated"><xsl:choose><xsl:when test="string-length(@data_content_type)&lt;64"><xsl:value-of select="@data_content_type"/></xsl:when><xsl:when test="contains(@data_content_type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@data_content_type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@data_content_type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="data_content_type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($data_content_type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="revision_ordinal_truncated"><xsl:choose><xsl:when test="string-length(@revision_ordinal)&lt;64"><xsl:value-of select="@revision_ordinal"/></xsl:when><xsl:when test="contains(@revision_ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@revision_ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@revision_ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="revision_ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($revision_ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="data_content_type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@data_content_type"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="revision_ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@revision_ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_audit_revision_category>
       <PDBo:pdbx_audit_revision_category rdf:about="{$base}/pdbx_audit_revision_category/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1799,12 +1672,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_audit_revision_detailsCategory/VRPTx:pdbx_audit_revision_details">
-      <xsl:variable name="data_content_type_truncated"><xsl:choose><xsl:when test="string-length(@data_content_type)&lt;64"><xsl:value-of select="@data_content_type"/></xsl:when><xsl:when test="contains(@data_content_type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@data_content_type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@data_content_type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="data_content_type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($data_content_type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="revision_ordinal_truncated"><xsl:choose><xsl:when test="string-length(@revision_ordinal)&lt;64"><xsl:value-of select="@revision_ordinal"/></xsl:when><xsl:when test="contains(@revision_ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@revision_ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@revision_ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="revision_ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($revision_ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="data_content_type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@data_content_type"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="revision_ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@revision_ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_audit_revision_details>
       <PDBo:pdbx_audit_revision_details rdf:about="{$base}/pdbx_audit_revision_details/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1825,12 +1695,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_audit_revision_groupCategory/VRPTx:pdbx_audit_revision_group">
-      <xsl:variable name="data_content_type_truncated"><xsl:choose><xsl:when test="string-length(@data_content_type)&lt;64"><xsl:value-of select="@data_content_type"/></xsl:when><xsl:when test="contains(@data_content_type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@data_content_type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@data_content_type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="data_content_type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($data_content_type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="revision_ordinal_truncated"><xsl:choose><xsl:when test="string-length(@revision_ordinal)&lt;64"><xsl:value-of select="@revision_ordinal"/></xsl:when><xsl:when test="contains(@revision_ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@revision_ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@revision_ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="revision_ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($revision_ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="data_content_type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@data_content_type"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="revision_ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@revision_ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_audit_revision_group>
       <PDBo:pdbx_audit_revision_group rdf:about="{$base}/pdbx_audit_revision_group/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1851,10 +1718,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_audit_revision_historyCategory/VRPTx:pdbx_audit_revision_history">
-      <xsl:variable name="data_content_type_truncated"><xsl:choose><xsl:when test="string-length(@data_content_type)&lt;64"><xsl:value-of select="@data_content_type"/></xsl:when><xsl:when test="contains(@data_content_type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@data_content_type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@data_content_type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="data_content_type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($data_content_type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="data_content_type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@data_content_type"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_audit_revision_history>
       <PDBo:pdbx_audit_revision_history rdf:about="{$base}/pdbx_audit_revision_history/{$data_content_type_encoded},{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1867,12 +1732,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_audit_revision_itemCategory/VRPTx:pdbx_audit_revision_item">
-      <xsl:variable name="data_content_type_truncated"><xsl:choose><xsl:when test="string-length(@data_content_type)&lt;64"><xsl:value-of select="@data_content_type"/></xsl:when><xsl:when test="contains(@data_content_type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@data_content_type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@data_content_type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="data_content_type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($data_content_type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="revision_ordinal_truncated"><xsl:choose><xsl:when test="string-length(@revision_ordinal)&lt;64"><xsl:value-of select="@revision_ordinal"/></xsl:when><xsl:when test="contains(@revision_ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@revision_ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@revision_ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="revision_ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($revision_ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="data_content_type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@data_content_type"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="revision_ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@revision_ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_audit_revision_item>
       <PDBo:pdbx_audit_revision_item rdf:about="{$base}/pdbx_audit_revision_item/{$data_content_type_encoded},{$ordinal_encoded},{$revision_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1893,10 +1755,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_bond_distance_limitsCategory/VRPTx:pdbx_bond_distance_limits">
-      <xsl:variable name="atom_type_1_truncated"><xsl:choose><xsl:when test="string-length(@atom_type_1)&lt;64"><xsl:value-of select="@atom_type_1"/></xsl:when><xsl:when test="contains(@atom_type_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@atom_type_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@atom_type_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="atom_type_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($atom_type_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="atom_type_2_truncated"><xsl:choose><xsl:when test="string-length(@atom_type_2)&lt;64"><xsl:value-of select="@atom_type_2"/></xsl:when><xsl:when test="contains(@atom_type_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@atom_type_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@atom_type_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="atom_type_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($atom_type_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="atom_type_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@atom_type_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="atom_type_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@atom_type_2"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_bond_distance_limits>
       <PDBo:pdbx_bond_distance_limits rdf:about="{$base}/pdbx_bond_distance_limits/{$atom_type_1_encoded},{$atom_type_2_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1909,14 +1769,10 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_branch_schemeCategory/VRPTx:pdbx_branch_scheme">
-      <xsl:variable name="asym_id_truncated"><xsl:choose><xsl:when test="string-length(@asym_id)&lt;64"><xsl:value-of select="@asym_id"/></xsl:when><xsl:when test="contains(@asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="mon_id_truncated"><xsl:choose><xsl:when test="string-length(@mon_id)&lt;64"><xsl:value-of select="@mon_id"/></xsl:when><xsl:when test="contains(@mon_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@mon_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@mon_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="mon_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($mon_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="num_truncated"><xsl:choose><xsl:when test="string-length(@num)&lt;64"><xsl:value-of select="@num"/></xsl:when><xsl:when test="contains(@num,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@num,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@num,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="num_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($num_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="mon_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@mon_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="num_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@num"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_branch_scheme>
       <PDBo:pdbx_branch_scheme rdf:about="{$base}/pdbx_branch_scheme/{$asym_id_encoded},{$entity_id_encoded},{$mon_id_encoded},{$num_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1937,8 +1793,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_coordinate_modelCategory/VRPTx:pdbx_coordinate_model">
-      <xsl:variable name="asym_id_truncated"><xsl:choose><xsl:when test="string-length(@asym_id)&lt;64"><xsl:value-of select="@asym_id"/></xsl:when><xsl:when test="contains(@asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@asym_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_coordinate_model>
       <PDBo:pdbx_coordinate_model rdf:about="{$base}/pdbx_coordinate_model/{$asym_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1959,12 +1814,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_database_relatedCategory/VRPTx:pdbx_database_related">
-      <xsl:variable name="content_type_truncated"><xsl:choose><xsl:when test="string-length(@content_type)&lt;64"><xsl:value-of select="@content_type"/></xsl:when><xsl:when test="contains(@content_type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@content_type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@content_type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="content_type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($content_type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="db_id_truncated"><xsl:choose><xsl:when test="string-length(@db_id)&lt;64"><xsl:value-of select="@db_id"/></xsl:when><xsl:when test="contains(@db_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@db_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@db_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="db_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($db_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="db_name_truncated"><xsl:choose><xsl:when test="string-length(@db_name)&lt;64"><xsl:value-of select="@db_name"/></xsl:when><xsl:when test="contains(@db_name,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@db_name,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@db_name,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="db_name_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($db_name_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="content_type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@content_type"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="db_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@db_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="db_name_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@db_name"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_database_related>
       <PDBo:pdbx_database_related rdf:about="{$base}/pdbx_database_related/{$content_type_encoded},{$db_id_encoded},{$db_name_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1977,8 +1829,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_database_statusCategory/VRPTx:pdbx_database_status">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_database_status>
       <PDBo:pdbx_database_status rdf:about="{$base}/pdbx_database_status/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -1999,8 +1850,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_dcc_densityCategory/VRPTx:pdbx_dcc_density">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_dcc_density>
       <PDBo:pdbx_dcc_density rdf:about="{$base}/pdbx_dcc_density/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2021,8 +1871,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_dcc_density_corrCategory/VRPTx:pdbx_dcc_density_corr">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_dcc_density_corr>
       <PDBo:pdbx_dcc_density_corr rdf:about="{$base}/pdbx_dcc_density_corr/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2035,10 +1884,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_dcc_entity_geometryCategory/VRPTx:pdbx_dcc_entity_geometry">
-      <xsl:variable name="PDB_model_num_truncated"><xsl:choose><xsl:when test="string-length(@PDB_model_num)&lt;64"><xsl:value-of select="@PDB_model_num"/></xsl:when><xsl:when test="contains(@PDB_model_num,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@PDB_model_num,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@PDB_model_num,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($PDB_model_num_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="label_asym_id_truncated"><xsl:choose><xsl:when test="string-length(@label_asym_id)&lt;64"><xsl:value-of select="@label_asym_id"/></xsl:when><xsl:when test="contains(@label_asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="label_asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@PDB_model_num"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@label_asym_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_dcc_entity_geometry>
       <PDBo:pdbx_dcc_entity_geometry rdf:about="{$base}/pdbx_dcc_entity_geometry/{$PDB_model_num_encoded},{$label_asym_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2051,8 +1898,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_dcc_geometryCategory/VRPTx:pdbx_dcc_geometry">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_dcc_geometry>
       <PDBo:pdbx_dcc_geometry rdf:about="{$base}/pdbx_dcc_geometry/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2073,8 +1919,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_dcc_mapCategory/VRPTx:pdbx_dcc_map">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_dcc_map>
       <PDBo:pdbx_dcc_map rdf:about="{$base}/pdbx_dcc_map/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2087,8 +1932,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_dcc_map_overallCategory/VRPTx:pdbx_dcc_map_overall">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_dcc_map_overall>
       <PDBo:pdbx_dcc_map_overall rdf:about="{$base}/pdbx_dcc_map_overall/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2109,8 +1953,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_dcc_mapmanCategory/VRPTx:pdbx_dcc_mapman">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_dcc_mapman>
       <PDBo:pdbx_dcc_mapman rdf:about="{$base}/pdbx_dcc_mapman/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2131,8 +1974,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_dcc_mon_geometryCategory/VRPTx:pdbx_dcc_mon_geometry">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_dcc_mon_geometry>
       <PDBo:pdbx_dcc_mon_geometry rdf:about="{$base}/pdbx_dcc_mon_geometry/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2145,8 +1987,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_dcc_rscc_mapmanCategory/VRPTx:pdbx_dcc_rscc_mapman">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_dcc_rscc_mapman>
       <PDBo:pdbx_dcc_rscc_mapman rdf:about="{$base}/pdbx_dcc_rscc_mapman/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2159,8 +2000,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_dcc_rscc_mapman_overallCategory/VRPTx:pdbx_dcc_rscc_mapman_overall">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_dcc_rscc_mapman_overall>
       <PDBo:pdbx_dcc_rscc_mapman_overall rdf:about="{$base}/pdbx_dcc_rscc_mapman_overall/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2181,8 +2021,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_diffrn_edCategory/VRPTx:pdbx_diffrn_ed">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_diffrn_ed>
       <PDBo:pdbx_diffrn_ed rdf:about="{$base}/pdbx_diffrn_ed/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2203,12 +2042,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_diffrn_reflns_shellCategory/VRPTx:pdbx_diffrn_reflns_shell">
-      <xsl:variable name="d_res_high_truncated"><xsl:choose><xsl:when test="string-length(@d_res_high)&lt;64"><xsl:value-of select="@d_res_high"/></xsl:when><xsl:when test="contains(@d_res_high,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_high,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_high,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_high_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="d_res_low_truncated"><xsl:choose><xsl:when test="string-length(@d_res_low)&lt;64"><xsl:value-of select="@d_res_low"/></xsl:when><xsl:when test="contains(@d_res_low,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_low,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_low,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_low_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_high"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_low"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_diffrn_reflns_shell>
       <PDBo:pdbx_diffrn_reflns_shell rdf:about="{$base}/pdbx_diffrn_reflns_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$diffrn_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2229,8 +2065,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_distant_solvent_atomsCategory/VRPTx:pdbx_distant_solvent_atoms">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_distant_solvent_atoms>
       <PDBo:pdbx_distant_solvent_atoms rdf:about="{$base}/pdbx_distant_solvent_atoms/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2243,8 +2078,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_domainCategory/VRPTx:pdbx_domain">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_domain>
       <PDBo:pdbx_domain rdf:about="{$base}/pdbx_domain/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2257,8 +2091,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_domain_rangeCategory/VRPTx:pdbx_domain_range">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_domain_range>
       <PDBo:pdbx_domain_range rdf:about="{$base}/pdbx_domain_range/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2279,8 +2112,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_atom_inclusionCategory/VRPTx:pdbx_em_atom_inclusion">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_atom_inclusion>
       <PDBo:pdbx_em_atom_inclusion rdf:about="{$base}/pdbx_em_atom_inclusion/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2293,10 +2125,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_atom_inclusion_markerCategory/VRPTx:pdbx_em_atom_inclusion_marker">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="plot_id_truncated"><xsl:choose><xsl:when test="string-length(@plot_id)&lt;64"><xsl:value-of select="@plot_id"/></xsl:when><xsl:when test="contains(@plot_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@plot_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@plot_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="plot_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($plot_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="plot_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@plot_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_atom_inclusion_marker>
       <PDBo:pdbx_em_atom_inclusion_marker rdf:about="{$base}/pdbx_em_atom_inclusion_marker/{$ordinal_encoded},{$plot_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2317,8 +2147,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_density_distributionCategory/VRPTx:pdbx_em_density_distribution">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_density_distribution>
       <PDBo:pdbx_em_density_distribution rdf:about="{$base}/pdbx_em_density_distribution/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2331,10 +2160,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_density_distribution_markerCategory/VRPTx:pdbx_em_density_distribution_marker">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="plot_id_truncated"><xsl:choose><xsl:when test="string-length(@plot_id)&lt;64"><xsl:value-of select="@plot_id"/></xsl:when><xsl:when test="contains(@plot_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@plot_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@plot_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="plot_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($plot_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="plot_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@plot_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_density_distribution_marker>
       <PDBo:pdbx_em_density_distribution_marker rdf:about="{$base}/pdbx_em_density_distribution_marker/{$ordinal_encoded},{$plot_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2355,8 +2182,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_fsc_curveCategory/VRPTx:pdbx_em_fsc_curve">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_fsc_curve>
       <PDBo:pdbx_em_fsc_curve rdf:about="{$base}/pdbx_em_fsc_curve/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2369,10 +2195,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_fsc_curve_markerCategory/VRPTx:pdbx_em_fsc_curve_marker">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="plot_id_truncated"><xsl:choose><xsl:when test="string-length(@plot_id)&lt;64"><xsl:value-of select="@plot_id"/></xsl:when><xsl:when test="contains(@plot_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@plot_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@plot_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="plot_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($plot_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="plot_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@plot_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_fsc_curve_marker>
       <PDBo:pdbx_em_fsc_curve_marker rdf:about="{$base}/pdbx_em_fsc_curve_marker/{$ordinal_encoded},{$plot_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2393,8 +2217,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_fsc_cutoff_curveCategory/VRPTx:pdbx_em_fsc_cutoff_curve">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_fsc_cutoff_curve>
       <PDBo:pdbx_em_fsc_cutoff_curve rdf:about="{$base}/pdbx_em_fsc_cutoff_curve/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2407,10 +2230,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_fsc_cutoff_curve_markerCategory/VRPTx:pdbx_em_fsc_cutoff_curve_marker">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="plot_id_truncated"><xsl:choose><xsl:when test="string-length(@plot_id)&lt;64"><xsl:value-of select="@plot_id"/></xsl:when><xsl:when test="contains(@plot_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@plot_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@plot_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="plot_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($plot_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="plot_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@plot_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_fsc_cutoff_curve_marker>
       <PDBo:pdbx_em_fsc_cutoff_curve_marker rdf:about="{$base}/pdbx_em_fsc_cutoff_curve_marker/{$ordinal_encoded},{$plot_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2431,10 +2252,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_fsc_resolutionCategory/VRPTx:pdbx_em_fsc_resolution">
-      <xsl:variable name="criterion_truncated"><xsl:choose><xsl:when test="string-length(@criterion)&lt;64"><xsl:value-of select="@criterion"/></xsl:when><xsl:when test="contains(@criterion,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@criterion,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@criterion,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="criterion_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($criterion_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="source_truncated"><xsl:choose><xsl:when test="string-length(@source)&lt;64"><xsl:value-of select="@source"/></xsl:when><xsl:when test="contains(@source,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@source,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@source,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="source_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($source_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="criterion_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@criterion"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="source_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@source"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_fsc_resolution>
       <PDBo:pdbx_em_fsc_resolution rdf:about="{$base}/pdbx_em_fsc_resolution/{$criterion_encoded},{$source_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2463,8 +2282,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_rapsCategory/VRPTx:pdbx_em_raps">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_raps>
       <PDBo:pdbx_em_raps rdf:about="{$base}/pdbx_em_raps/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2477,10 +2295,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_raps_markerCategory/VRPTx:pdbx_em_raps_marker">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="plot_id_truncated"><xsl:choose><xsl:when test="string-length(@plot_id)&lt;64"><xsl:value-of select="@plot_id"/></xsl:when><xsl:when test="contains(@plot_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@plot_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@plot_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="plot_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($plot_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="plot_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@plot_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_raps_marker>
       <PDBo:pdbx_em_raps_marker rdf:about="{$base}/pdbx_em_raps_marker/{$ordinal_encoded},{$plot_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2501,8 +2317,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_raw_rapsCategory/VRPTx:pdbx_em_raw_raps">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_raw_raps>
       <PDBo:pdbx_em_raw_raps rdf:about="{$base}/pdbx_em_raw_raps/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2515,10 +2330,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_raw_raps_markerCategory/VRPTx:pdbx_em_raw_raps_marker">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="plot_id_truncated"><xsl:choose><xsl:when test="string-length(@plot_id)&lt;64"><xsl:value-of select="@plot_id"/></xsl:when><xsl:when test="contains(@plot_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@plot_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@plot_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="plot_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($plot_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="plot_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@plot_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_raw_raps_marker>
       <PDBo:pdbx_em_raw_raps_marker rdf:about="{$base}/pdbx_em_raw_raps_marker/{$ordinal_encoded},{$plot_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2539,8 +2352,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_validate_map_modelCategory/VRPTx:pdbx_em_validate_map_model">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_validate_map_model>
       <PDBo:pdbx_em_validate_map_model rdf:about="{$base}/pdbx_em_validate_map_model/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2553,10 +2365,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_validate_map_model_entityCategory/VRPTx:pdbx_em_validate_map_model_entity">
-      <xsl:variable name="PDB_model_num_truncated"><xsl:choose><xsl:when test="string-length(@PDB_model_num)&lt;64"><xsl:value-of select="@PDB_model_num"/></xsl:when><xsl:when test="contains(@PDB_model_num,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@PDB_model_num,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@PDB_model_num,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($PDB_model_num_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="label_asym_id_truncated"><xsl:choose><xsl:when test="string-length(@label_asym_id)&lt;64"><xsl:value-of select="@label_asym_id"/></xsl:when><xsl:when test="contains(@label_asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="label_asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@PDB_model_num"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@label_asym_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_validate_map_model_entity>
       <PDBo:pdbx_em_validate_map_model_entity rdf:about="{$base}/pdbx_em_validate_map_model_entity/{$PDB_model_num_encoded},{$label_asym_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2569,8 +2379,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_validate_map_model_overallCategory/VRPTx:pdbx_em_validate_map_model_overall">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_validate_map_model_overall>
       <PDBo:pdbx_em_validate_map_model_overall rdf:about="{$base}/pdbx_em_validate_map_model_overall/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2591,8 +2400,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_volume_estimateCategory/VRPTx:pdbx_em_volume_estimate">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_volume_estimate>
       <PDBo:pdbx_em_volume_estimate rdf:about="{$base}/pdbx_em_volume_estimate/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2605,10 +2413,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_em_volume_estimate_markerCategory/VRPTx:pdbx_em_volume_estimate_marker">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="plot_id_truncated"><xsl:choose><xsl:when test="string-length(@plot_id)&lt;64"><xsl:value-of select="@plot_id"/></xsl:when><xsl:when test="contains(@plot_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@plot_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@plot_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="plot_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($plot_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="plot_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@plot_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_em_volume_estimate_marker>
       <PDBo:pdbx_em_volume_estimate_marker rdf:about="{$base}/pdbx_em_volume_estimate_marker/{$ordinal_encoded},{$plot_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2629,10 +2435,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_entity_assemblyCategory/VRPTx:pdbx_entity_assembly">
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_entity_assembly>
       <PDBo:pdbx_entity_assembly rdf:about="{$base}/pdbx_entity_assembly/{$entity_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2661,8 +2465,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_entity_branchCategory/VRPTx:pdbx_entity_branch">
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_entity_branch>
       <PDBo:pdbx_entity_branch rdf:about="{$base}/pdbx_entity_branch/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2683,8 +2486,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_entity_branch_descriptorCategory/VRPTx:pdbx_entity_branch_descriptor">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_entity_branch_descriptor>
       <PDBo:pdbx_entity_branch_descriptor rdf:about="{$base}/pdbx_entity_branch_descriptor/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2705,8 +2507,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_entity_branch_linkCategory/VRPTx:pdbx_entity_branch_link">
-      <xsl:variable name="link_id_truncated"><xsl:choose><xsl:when test="string-length(@link_id)&lt;64"><xsl:value-of select="@link_id"/></xsl:when><xsl:when test="contains(@link_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@link_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@link_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="link_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($link_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="link_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@link_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_entity_branch_link>
       <PDBo:pdbx_entity_branch_link rdf:about="{$base}/pdbx_entity_branch_link/{$link_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2719,12 +2520,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_entity_branch_listCategory/VRPTx:pdbx_entity_branch_list">
-      <xsl:variable name="comp_id_truncated"><xsl:choose><xsl:when test="string-length(@comp_id)&lt;64"><xsl:value-of select="@comp_id"/></xsl:when><xsl:when test="contains(@comp_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@comp_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@comp_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="comp_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($comp_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="num_truncated"><xsl:choose><xsl:when test="string-length(@num)&lt;64"><xsl:value-of select="@num"/></xsl:when><xsl:when test="contains(@num,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@num,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@num,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="num_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($num_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="comp_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@comp_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="num_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@num"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_entity_branch_list>
       <PDBo:pdbx_entity_branch_list rdf:about="{$base}/pdbx_entity_branch_list/{$comp_id_encoded},{$entity_id_encoded},{$num_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2745,8 +2543,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_entity_descriptorCategory/VRPTx:pdbx_entity_descriptor">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_entity_descriptor>
       <PDBo:pdbx_entity_descriptor rdf:about="{$base}/pdbx_entity_descriptor/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2767,8 +2564,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_entity_nonpolyCategory/VRPTx:pdbx_entity_nonpoly">
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_entity_nonpoly>
       <PDBo:pdbx_entity_nonpoly rdf:about="{$base}/pdbx_entity_nonpoly/{$entity_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2789,8 +2585,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_entity_poly_comp_link_listCategory/VRPTx:pdbx_entity_poly_comp_link_list">
-      <xsl:variable name="link_id_truncated"><xsl:choose><xsl:when test="string-length(@link_id)&lt;64"><xsl:value-of select="@link_id"/></xsl:when><xsl:when test="contains(@link_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@link_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@link_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="link_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($link_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="link_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@link_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_entity_poly_comp_link_list>
       <PDBo:pdbx_entity_poly_comp_link_list rdf:about="{$base}/pdbx_entity_poly_comp_link_list/{$link_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2811,8 +2606,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_entry_detailsCategory/VRPTx:pdbx_entry_details">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_entry_details>
       <PDBo:pdbx_entry_details rdf:about="{$base}/pdbx_entry_details/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2833,10 +2627,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_exptl_subtypeCategory/VRPTx:pdbx_exptl_subtype">
-      <xsl:variable name="exptl_method_truncated"><xsl:choose><xsl:when test="string-length(@exptl_method)&lt;64"><xsl:value-of select="@exptl_method"/></xsl:when><xsl:when test="contains(@exptl_method,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@exptl_method,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@exptl_method,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="exptl_method_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($exptl_method_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="method_type_truncated"><xsl:choose><xsl:when test="string-length(@method_type)&lt;64"><xsl:value-of select="@method_type"/></xsl:when><xsl:when test="contains(@method_type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@method_type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@method_type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="method_type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($method_type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="exptl_method_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@exptl_method"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="method_type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@method_type"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_exptl_subtype>
       <PDBo:pdbx_exptl_subtype rdf:about="{$base}/pdbx_exptl_subtype/{$exptl_method_encoded},{$method_type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2849,8 +2641,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_helical_symmetryCategory/VRPTx:pdbx_helical_symmetry">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_helical_symmetry>
       <PDBo:pdbx_helical_symmetry rdf:about="{$base}/pdbx_helical_symmetry/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2871,10 +2662,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_missing_nmr_star_itemCategory/VRPTx:pdbx_missing_nmr_star_item">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="list_id_truncated"><xsl:choose><xsl:when test="string-length(@list_id)&lt;64"><xsl:value-of select="@list_id"/></xsl:when><xsl:when test="contains(@list_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@list_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@list_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="list_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($list_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="list_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@list_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_missing_nmr_star_item>
       <PDBo:pdbx_missing_nmr_star_item rdf:about="{$base}/pdbx_missing_nmr_star_item/{$id_encoded},{$list_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2895,8 +2684,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_assigned_chem_shift_listCategory/VRPTx:pdbx_nmr_assigned_chem_shift_list">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_assigned_chem_shift_list>
       <PDBo:pdbx_nmr_assigned_chem_shift_list rdf:about="{$base}/pdbx_nmr_assigned_chem_shift_list/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2909,10 +2697,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_chem_shift_annotationCategory/VRPTx:pdbx_nmr_chem_shift_annotation">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="list_id_truncated"><xsl:choose><xsl:when test="string-length(@list_id)&lt;64"><xsl:value-of select="@list_id"/></xsl:when><xsl:when test="contains(@list_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@list_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@list_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="list_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($list_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="list_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@list_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_chem_shift_annotation>
       <PDBo:pdbx_nmr_chem_shift_annotation rdf:about="{$base}/pdbx_nmr_chem_shift_annotation/{$id_encoded},{$list_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2933,12 +2719,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_chem_shift_completenessCategory/VRPTx:pdbx_nmr_chem_shift_completeness">
-      <xsl:variable name="atom_group_truncated"><xsl:choose><xsl:when test="string-length(@atom_group)&lt;64"><xsl:value-of select="@atom_group"/></xsl:when><xsl:when test="contains(@atom_group,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@atom_group,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@atom_group,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="atom_group_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($atom_group_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="atom_type_truncated"><xsl:choose><xsl:when test="string-length(@atom_type)&lt;64"><xsl:value-of select="@atom_type"/></xsl:when><xsl:when test="contains(@atom_type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@atom_type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@atom_type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="atom_type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($atom_type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="list_id_truncated"><xsl:choose><xsl:when test="string-length(@list_id)&lt;64"><xsl:value-of select="@list_id"/></xsl:when><xsl:when test="contains(@list_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@list_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@list_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="list_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($list_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="atom_group_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@atom_group"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="atom_type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@atom_type"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="list_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@list_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_chem_shift_completeness>
       <PDBo:pdbx_nmr_chem_shift_completeness rdf:about="{$base}/pdbx_nmr_chem_shift_completeness/{$atom_group_encoded},{$atom_type_encoded},{$list_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2959,10 +2742,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_chem_shift_re_offsetCategory/VRPTx:pdbx_nmr_chem_shift_re_offset">
-      <xsl:variable name="atom_type_truncated"><xsl:choose><xsl:when test="string-length(@atom_type)&lt;64"><xsl:value-of select="@atom_type"/></xsl:when><xsl:when test="contains(@atom_type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@atom_type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@atom_type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="atom_type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($atom_type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="list_id_truncated"><xsl:choose><xsl:when test="string-length(@list_id)&lt;64"><xsl:value-of select="@list_id"/></xsl:when><xsl:when test="contains(@list_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@list_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@list_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="list_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($list_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="atom_type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@atom_type"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="list_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@list_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_chem_shift_re_offset>
       <PDBo:pdbx_nmr_chem_shift_re_offset rdf:about="{$base}/pdbx_nmr_chem_shift_re_offset/{$atom_type_encoded},{$list_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -2983,8 +2764,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_constraintsCategory/VRPTx:pdbx_nmr_constraints">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_constraints>
       <PDBo:pdbx_nmr_constraints rdf:about="{$base}/pdbx_nmr_constraints/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3005,8 +2785,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_detailsCategory/VRPTx:pdbx_nmr_details">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_details>
       <PDBo:pdbx_nmr_details rdf:about="{$base}/pdbx_nmr_details/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3027,8 +2806,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_dihedral_angle_violationCategory/VRPTx:pdbx_nmr_dihedral_angle_violation">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_dihedral_angle_violation>
       <PDBo:pdbx_nmr_dihedral_angle_violation rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3041,8 +2819,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_dihedral_angle_violation_ensembleCategory/VRPTx:pdbx_nmr_dihedral_angle_violation_ensemble">
-      <xsl:variable name="fraction_ensemble_size_truncated"><xsl:choose><xsl:when test="string-length(@fraction_ensemble_size)&lt;64"><xsl:value-of select="@fraction_ensemble_size"/></xsl:when><xsl:when test="contains(@fraction_ensemble_size,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@fraction_ensemble_size,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@fraction_ensemble_size,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="fraction_ensemble_size_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($fraction_ensemble_size_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="fraction_ensemble_size_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@fraction_ensemble_size"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_dihedral_angle_violation_ensemble>
       <PDBo:pdbx_nmr_dihedral_angle_violation_ensemble rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_ensemble/{$fraction_ensemble_size_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3055,8 +2832,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_dihedral_angle_violation_modelCategory/VRPTx:pdbx_nmr_dihedral_angle_violation_model">
-      <xsl:variable name="PDB_model_num_truncated"><xsl:choose><xsl:when test="string-length(@PDB_model_num)&lt;64"><xsl:value-of select="@PDB_model_num"/></xsl:when><xsl:when test="contains(@PDB_model_num,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@PDB_model_num,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@PDB_model_num,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($PDB_model_num_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@PDB_model_num"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_dihedral_angle_violation_model>
       <PDBo:pdbx_nmr_dihedral_angle_violation_model rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_model/{$PDB_model_num_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3069,8 +2845,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_dihedral_angle_violation_pluralCategory/VRPTx:pdbx_nmr_dihedral_angle_violation_plural">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_dihedral_angle_violation_plural>
       <PDBo:pdbx_nmr_dihedral_angle_violation_plural rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_plural/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3083,8 +2858,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_dihedral_angle_violation_summaryCategory/VRPTx:pdbx_nmr_dihedral_angle_violation_summary">
-      <xsl:variable name="type_truncated"><xsl:choose><xsl:when test="string-length(@type)&lt;64"><xsl:value-of select="@type"/></xsl:when><xsl:when test="contains(@type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@type"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_dihedral_angle_violation_summary>
       <PDBo:pdbx_nmr_dihedral_angle_violation_summary rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_summary/{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3097,8 +2871,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_distance_violationCategory/VRPTx:pdbx_nmr_distance_violation">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_distance_violation>
       <PDBo:pdbx_nmr_distance_violation rdf:about="{$base}/pdbx_nmr_distance_violation/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3111,8 +2884,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_distance_violation_ensembleCategory/VRPTx:pdbx_nmr_distance_violation_ensemble">
-      <xsl:variable name="fraction_ensemble_size_truncated"><xsl:choose><xsl:when test="string-length(@fraction_ensemble_size)&lt;64"><xsl:value-of select="@fraction_ensemble_size"/></xsl:when><xsl:when test="contains(@fraction_ensemble_size,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@fraction_ensemble_size,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@fraction_ensemble_size,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="fraction_ensemble_size_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($fraction_ensemble_size_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="fraction_ensemble_size_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@fraction_ensemble_size"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_distance_violation_ensemble>
       <PDBo:pdbx_nmr_distance_violation_ensemble rdf:about="{$base}/pdbx_nmr_distance_violation_ensemble/{$fraction_ensemble_size_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3125,8 +2897,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_distance_violation_modelCategory/VRPTx:pdbx_nmr_distance_violation_model">
-      <xsl:variable name="PDB_model_num_truncated"><xsl:choose><xsl:when test="string-length(@PDB_model_num)&lt;64"><xsl:value-of select="@PDB_model_num"/></xsl:when><xsl:when test="contains(@PDB_model_num,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@PDB_model_num,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@PDB_model_num,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($PDB_model_num_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@PDB_model_num"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_distance_violation_model>
       <PDBo:pdbx_nmr_distance_violation_model rdf:about="{$base}/pdbx_nmr_distance_violation_model/{$PDB_model_num_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3139,8 +2910,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_distance_violation_pluralCategory/VRPTx:pdbx_nmr_distance_violation_plural">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_distance_violation_plural>
       <PDBo:pdbx_nmr_distance_violation_plural rdf:about="{$base}/pdbx_nmr_distance_violation_plural/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3153,10 +2923,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_distance_violation_summaryCategory/VRPTx:pdbx_nmr_distance_violation_summary">
-      <xsl:variable name="subtype_truncated"><xsl:choose><xsl:when test="string-length(@subtype)&lt;64"><xsl:value-of select="@subtype"/></xsl:when><xsl:when test="contains(@subtype,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@subtype,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@subtype,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="subtype_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($subtype_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="type_truncated"><xsl:choose><xsl:when test="string-length(@type)&lt;64"><xsl:value-of select="@type"/></xsl:when><xsl:when test="contains(@type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="subtype_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@subtype"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@type"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_distance_violation_summary>
       <PDBo:pdbx_nmr_distance_violation_summary rdf:about="{$base}/pdbx_nmr_distance_violation_summary/{$subtype_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3169,8 +2937,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_ensembleCategory/VRPTx:pdbx_nmr_ensemble">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_ensemble>
       <PDBo:pdbx_nmr_ensemble rdf:about="{$base}/pdbx_nmr_ensemble/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3191,8 +2958,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_ensemble_rmsCategory/VRPTx:pdbx_nmr_ensemble_rms">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_ensemble_rms>
       <PDBo:pdbx_nmr_ensemble_rms rdf:about="{$base}/pdbx_nmr_ensemble_rms/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3213,12 +2979,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_exptlCategory/VRPTx:pdbx_nmr_exptl">
-      <xsl:variable name="conditions_id_truncated"><xsl:choose><xsl:when test="string-length(@conditions_id)&lt;64"><xsl:value-of select="@conditions_id"/></xsl:when><xsl:when test="contains(@conditions_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@conditions_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@conditions_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="conditions_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($conditions_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="experiment_id_truncated"><xsl:choose><xsl:when test="string-length(@experiment_id)&lt;64"><xsl:value-of select="@experiment_id"/></xsl:when><xsl:when test="contains(@experiment_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@experiment_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@experiment_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="experiment_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($experiment_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="solution_id_truncated"><xsl:choose><xsl:when test="string-length(@solution_id)&lt;64"><xsl:value-of select="@solution_id"/></xsl:when><xsl:when test="contains(@solution_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@solution_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@solution_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="solution_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($solution_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="conditions_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@conditions_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="experiment_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@experiment_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="solution_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@solution_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_exptl>
       <PDBo:pdbx_nmr_exptl rdf:about="{$base}/pdbx_nmr_exptl/{$conditions_id_encoded},{$experiment_id_encoded},{$solution_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3231,10 +2994,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_exptl_sampleCategory/VRPTx:pdbx_nmr_exptl_sample">
-      <xsl:variable name="component_truncated"><xsl:choose><xsl:when test="string-length(@component)&lt;64"><xsl:value-of select="@component"/></xsl:when><xsl:when test="contains(@component,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@component,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@component,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="component_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($component_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="solution_id_truncated"><xsl:choose><xsl:when test="string-length(@solution_id)&lt;64"><xsl:value-of select="@solution_id"/></xsl:when><xsl:when test="contains(@solution_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@solution_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@solution_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="solution_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($solution_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="component_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@component"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="solution_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@solution_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_exptl_sample>
       <PDBo:pdbx_nmr_exptl_sample rdf:about="{$base}/pdbx_nmr_exptl_sample/{$component_encoded},{$solution_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3247,8 +3008,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_exptl_sample_conditionsCategory/VRPTx:pdbx_nmr_exptl_sample_conditions">
-      <xsl:variable name="conditions_id_truncated"><xsl:choose><xsl:when test="string-length(@conditions_id)&lt;64"><xsl:value-of select="@conditions_id"/></xsl:when><xsl:when test="contains(@conditions_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@conditions_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@conditions_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="conditions_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($conditions_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="conditions_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@conditions_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_exptl_sample_conditions>
       <PDBo:pdbx_nmr_exptl_sample_conditions rdf:about="{$base}/pdbx_nmr_exptl_sample_conditions/{$conditions_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3261,8 +3021,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_force_constantsCategory/VRPTx:pdbx_nmr_force_constants">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_force_constants>
       <PDBo:pdbx_nmr_force_constants rdf:about="{$base}/pdbx_nmr_force_constants/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3283,10 +3042,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_refineCategory/VRPTx:pdbx_nmr_refine">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="software_ordinal_truncated"><xsl:choose><xsl:when test="string-length(@software_ordinal)&lt;64"><xsl:value-of select="@software_ordinal"/></xsl:when><xsl:when test="contains(@software_ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@software_ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@software_ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="software_ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($software_ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="software_ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@software_ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_refine>
       <PDBo:pdbx_nmr_refine rdf:about="{$base}/pdbx_nmr_refine/{$entry_id_encoded},{$software_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3307,8 +3064,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_representativeCategory/VRPTx:pdbx_nmr_representative">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_representative>
       <PDBo:pdbx_nmr_representative rdf:about="{$base}/pdbx_nmr_representative/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3329,10 +3085,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_restraint_listCategory/VRPTx:pdbx_nmr_restraint_list">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="type_truncated"><xsl:choose><xsl:when test="string-length(@type)&lt;64"><xsl:value-of select="@type"/></xsl:when><xsl:when test="contains(@type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@type"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_restraint_list>
       <PDBo:pdbx_nmr_restraint_list rdf:about="{$base}/pdbx_nmr_restraint_list/{$id_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3345,8 +3099,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_restraint_summaryCategory/VRPTx:pdbx_nmr_restraint_summary">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_restraint_summary>
       <PDBo:pdbx_nmr_restraint_summary rdf:about="{$base}/pdbx_nmr_restraint_summary/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3367,10 +3120,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_restraint_violationCategory/VRPTx:pdbx_nmr_restraint_violation">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="type_truncated"><xsl:choose><xsl:when test="string-length(@type)&lt;64"><xsl:value-of select="@type"/></xsl:when><xsl:when test="contains(@type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@type"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_restraint_violation>
       <PDBo:pdbx_nmr_restraint_violation rdf:about="{$base}/pdbx_nmr_restraint_violation/{$ordinal_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3383,8 +3134,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_softwareCategory/VRPTx:pdbx_nmr_software">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_software>
       <PDBo:pdbx_nmr_software rdf:about="{$base}/pdbx_nmr_software/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3397,8 +3147,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_spectrometerCategory/VRPTx:pdbx_nmr_spectrometer">
-      <xsl:variable name="spectrometer_id_truncated"><xsl:choose><xsl:when test="string-length(@spectrometer_id)&lt;64"><xsl:value-of select="@spectrometer_id"/></xsl:when><xsl:when test="contains(@spectrometer_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@spectrometer_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@spectrometer_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="spectrometer_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($spectrometer_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="spectrometer_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@spectrometer_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_spectrometer>
       <PDBo:pdbx_nmr_spectrometer rdf:about="{$base}/pdbx_nmr_spectrometer/{$spectrometer_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3411,10 +3160,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_unmapped_chem_shiftCategory/VRPTx:pdbx_nmr_unmapped_chem_shift">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="list_id_truncated"><xsl:choose><xsl:when test="string-length(@list_id)&lt;64"><xsl:value-of select="@list_id"/></xsl:when><xsl:when test="contains(@list_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@list_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@list_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="list_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($list_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="list_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@list_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_unmapped_chem_shift>
       <PDBo:pdbx_nmr_unmapped_chem_shift rdf:about="{$base}/pdbx_nmr_unmapped_chem_shift/{$id_encoded},{$list_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3435,10 +3182,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nmr_unparsed_chem_shiftCategory/VRPTx:pdbx_nmr_unparsed_chem_shift">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="list_id_truncated"><xsl:choose><xsl:when test="string-length(@list_id)&lt;64"><xsl:value-of select="@list_id"/></xsl:when><xsl:when test="contains(@list_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@list_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@list_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="list_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($list_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="list_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@list_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nmr_unparsed_chem_shift>
       <PDBo:pdbx_nmr_unparsed_chem_shift rdf:about="{$base}/pdbx_nmr_unparsed_chem_shift/{$id_encoded},{$list_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3459,10 +3204,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_nonpoly_schemeCategory/VRPTx:pdbx_nonpoly_scheme">
-      <xsl:variable name="asym_id_truncated"><xsl:choose><xsl:when test="string-length(@asym_id)&lt;64"><xsl:value-of select="@asym_id"/></xsl:when><xsl:when test="contains(@asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="ndb_seq_num_truncated"><xsl:choose><xsl:when test="string-length(@ndb_seq_num)&lt;64"><xsl:value-of select="@ndb_seq_num"/></xsl:when><xsl:when test="contains(@ndb_seq_num,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ndb_seq_num,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ndb_seq_num,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ndb_seq_num_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ndb_seq_num_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ndb_seq_num_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ndb_seq_num"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_nonpoly_scheme>
       <PDBo:pdbx_nonpoly_scheme rdf:about="{$base}/pdbx_nonpoly_scheme/{$asym_id_encoded},{$ndb_seq_num_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3475,8 +3218,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_percentile_conditionsCategory/VRPTx:pdbx_percentile_conditions">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_percentile_conditions>
       <PDBo:pdbx_percentile_conditions rdf:about="{$base}/pdbx_percentile_conditions/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3489,14 +3231,10 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_percentile_entity_viewCategory/VRPTx:pdbx_percentile_entity_view">
-      <xsl:variable name="PDB_model_num_truncated"><xsl:choose><xsl:when test="string-length(@PDB_model_num)&lt;64"><xsl:value-of select="@PDB_model_num"/></xsl:when><xsl:when test="contains(@PDB_model_num,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@PDB_model_num,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@PDB_model_num,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($PDB_model_num_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="conditions_id_truncated"><xsl:choose><xsl:when test="string-length(@conditions_id)&lt;64"><xsl:value-of select="@conditions_id"/></xsl:when><xsl:when test="contains(@conditions_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@conditions_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@conditions_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="conditions_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($conditions_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="label_asym_id_truncated"><xsl:choose><xsl:when test="string-length(@label_asym_id)&lt;64"><xsl:value-of select="@label_asym_id"/></xsl:when><xsl:when test="contains(@label_asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="label_asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="type_truncated"><xsl:choose><xsl:when test="string-length(@type)&lt;64"><xsl:value-of select="@type"/></xsl:when><xsl:when test="contains(@type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@PDB_model_num"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="conditions_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@conditions_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@label_asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@type"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_percentile_entity_view>
       <PDBo:pdbx_percentile_entity_view rdf:about="{$base}/pdbx_percentile_entity_view/{$PDB_model_num_encoded},{$conditions_id_encoded},{$label_asym_id_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3517,8 +3255,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_percentile_listCategory/VRPTx:pdbx_percentile_list">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_percentile_list>
       <PDBo:pdbx_percentile_list rdf:about="{$base}/pdbx_percentile_list/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3539,12 +3276,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_percentile_viewCategory/VRPTx:pdbx_percentile_view">
-      <xsl:variable name="conditions_id_truncated"><xsl:choose><xsl:when test="string-length(@conditions_id)&lt;64"><xsl:value-of select="@conditions_id"/></xsl:when><xsl:when test="contains(@conditions_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@conditions_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@conditions_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="conditions_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($conditions_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="type_truncated"><xsl:choose><xsl:when test="string-length(@type)&lt;64"><xsl:value-of select="@type"/></xsl:when><xsl:when test="contains(@type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="conditions_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@conditions_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@type"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_percentile_view>
       <PDBo:pdbx_percentile_view rdf:about="{$base}/pdbx_percentile_view/{$conditions_id_encoded},{$entry_id_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3573,8 +3307,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_phasing_MAD_setCategory/VRPTx:pdbx_phasing_MAD_set">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_phasing_MAD_set>
       <PDBo:pdbx_phasing_MAD_set rdf:about="{$base}/pdbx_phasing_MAD_set/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3587,12 +3320,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_phasing_MAD_set_shellCategory/VRPTx:pdbx_phasing_MAD_set_shell">
-      <xsl:variable name="d_res_high_truncated"><xsl:choose><xsl:when test="string-length(@d_res_high)&lt;64"><xsl:value-of select="@d_res_high"/></xsl:when><xsl:when test="contains(@d_res_high,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_high,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_high,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_high_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="d_res_low_truncated"><xsl:choose><xsl:when test="string-length(@d_res_low)&lt;64"><xsl:value-of select="@d_res_low"/></xsl:when><xsl:when test="contains(@d_res_low,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_low,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_low,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_low_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_high"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_low"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_phasing_MAD_set_shell>
       <PDBo:pdbx_phasing_MAD_set_shell rdf:about="{$base}/pdbx_phasing_MAD_set_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3605,8 +3335,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_phasing_MAD_set_siteCategory/VRPTx:pdbx_phasing_MAD_set_site">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_phasing_MAD_set_site>
       <PDBo:pdbx_phasing_MAD_set_site rdf:about="{$base}/pdbx_phasing_MAD_set_site/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3619,10 +3348,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_phasing_MAD_shellCategory/VRPTx:pdbx_phasing_MAD_shell">
-      <xsl:variable name="d_res_high_truncated"><xsl:choose><xsl:when test="string-length(@d_res_high)&lt;64"><xsl:value-of select="@d_res_high"/></xsl:when><xsl:when test="contains(@d_res_high,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_high,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_high,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_high_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="d_res_low_truncated"><xsl:choose><xsl:when test="string-length(@d_res_low)&lt;64"><xsl:value-of select="@d_res_low"/></xsl:when><xsl:when test="contains(@d_res_low,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_low,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_low,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_low_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_high"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_low"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_phasing_MAD_shell>
       <PDBo:pdbx_phasing_MAD_shell rdf:about="{$base}/pdbx_phasing_MAD_shell/{$d_res_high_encoded},{$d_res_low_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3635,8 +3362,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_phasing_MRCategory/VRPTx:pdbx_phasing_MR">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_phasing_MR>
       <PDBo:pdbx_phasing_MR rdf:about="{$base}/pdbx_phasing_MR/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3649,8 +3375,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_phasing_dmCategory/VRPTx:pdbx_phasing_dm">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_phasing_dm>
       <PDBo:pdbx_phasing_dm rdf:about="{$base}/pdbx_phasing_dm/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3663,10 +3388,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_phasing_dm_shellCategory/VRPTx:pdbx_phasing_dm_shell">
-      <xsl:variable name="d_res_high_truncated"><xsl:choose><xsl:when test="string-length(@d_res_high)&lt;64"><xsl:value-of select="@d_res_high"/></xsl:when><xsl:when test="contains(@d_res_high,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_high,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_high,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_high_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="d_res_low_truncated"><xsl:choose><xsl:when test="string-length(@d_res_low)&lt;64"><xsl:value-of select="@d_res_low"/></xsl:when><xsl:when test="contains(@d_res_low,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_low,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_low,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_low_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_high"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_low"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_phasing_dm_shell>
       <PDBo:pdbx_phasing_dm_shell rdf:about="{$base}/pdbx_phasing_dm_shell/{$d_res_high_encoded},{$d_res_low_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3679,8 +3402,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_point_symmetryCategory/VRPTx:pdbx_point_symmetry">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_point_symmetry>
       <PDBo:pdbx_point_symmetry rdf:about="{$base}/pdbx_point_symmetry/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3701,14 +3423,10 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_poly_seq_schemeCategory/VRPTx:pdbx_poly_seq_scheme">
-      <xsl:variable name="asym_id_truncated"><xsl:choose><xsl:when test="string-length(@asym_id)&lt;64"><xsl:value-of select="@asym_id"/></xsl:when><xsl:when test="contains(@asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="mon_id_truncated"><xsl:choose><xsl:when test="string-length(@mon_id)&lt;64"><xsl:value-of select="@mon_id"/></xsl:when><xsl:when test="contains(@mon_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@mon_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@mon_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="mon_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($mon_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="seq_id_truncated"><xsl:choose><xsl:when test="string-length(@seq_id)&lt;64"><xsl:value-of select="@seq_id"/></xsl:when><xsl:when test="contains(@seq_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@seq_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@seq_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="seq_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($seq_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="mon_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@mon_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="seq_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@seq_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_poly_seq_scheme>
       <PDBo:pdbx_poly_seq_scheme rdf:about="{$base}/pdbx_poly_seq_scheme/{$asym_id_encoded},{$entity_id_encoded},{$mon_id_encoded},{$seq_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3737,8 +3455,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_re_refinementCategory/VRPTx:pdbx_re_refinement">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_re_refinement>
       <PDBo:pdbx_re_refinement rdf:about="{$base}/pdbx_re_refinement/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3751,10 +3468,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_refineCategory/VRPTx:pdbx_refine">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_refine_id)&lt;64"><xsl:value-of select="@pdbx_refine_id"/></xsl:when><xsl:when test="contains(@pdbx_refine_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_refine_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_refine_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_refine_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_refine_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_refine>
       <PDBo:pdbx_refine rdf:about="{$base}/pdbx_refine/{$entry_id_encoded},{$pdbx_refine_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3775,14 +3490,10 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_refine_componentCategory/VRPTx:pdbx_refine_component">
-      <xsl:variable name="label_alt_id_truncated"><xsl:choose><xsl:when test="string-length(@label_alt_id)&lt;64"><xsl:value-of select="@label_alt_id"/></xsl:when><xsl:when test="contains(@label_alt_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_alt_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_alt_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="label_alt_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_alt_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="label_asym_id_truncated"><xsl:choose><xsl:when test="string-length(@label_asym_id)&lt;64"><xsl:value-of select="@label_asym_id"/></xsl:when><xsl:when test="contains(@label_asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="label_asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="label_comp_id_truncated"><xsl:choose><xsl:when test="string-length(@label_comp_id)&lt;64"><xsl:value-of select="@label_comp_id"/></xsl:when><xsl:when test="contains(@label_comp_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_comp_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_comp_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="label_comp_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_comp_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="label_seq_id_truncated"><xsl:choose><xsl:when test="string-length(@label_seq_id)&lt;64"><xsl:value-of select="@label_seq_id"/></xsl:when><xsl:when test="contains(@label_seq_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@label_seq_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@label_seq_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="label_seq_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($label_seq_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_alt_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@label_alt_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@label_asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_comp_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@label_comp_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="label_seq_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@label_seq_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_refine_component>
       <PDBo:pdbx_refine_component rdf:about="{$base}/pdbx_refine_component/{$label_alt_id_encoded},{$label_asym_id_encoded},{$label_comp_id_encoded},{$label_seq_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3795,8 +3506,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_refine_tlsCategory/VRPTx:pdbx_refine_tls">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_refine_tls>
       <PDBo:pdbx_refine_tls rdf:about="{$base}/pdbx_refine_tls/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3809,8 +3519,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_refine_tls_groupCategory/VRPTx:pdbx_refine_tls_group">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_refine_tls_group>
       <PDBo:pdbx_refine_tls_group rdf:about="{$base}/pdbx_refine_tls_group/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3831,8 +3540,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_refln_signal_binningCategory/VRPTx:pdbx_refln_signal_binning">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_refln_signal_binning>
       <PDBo:pdbx_refln_signal_binning rdf:about="{$base}/pdbx_refln_signal_binning/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3845,12 +3553,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_reflns_twinCategory/VRPTx:pdbx_reflns_twin">
-      <xsl:variable name="crystal_id_truncated"><xsl:choose><xsl:when test="string-length(@crystal_id)&lt;64"><xsl:value-of select="@crystal_id"/></xsl:when><xsl:when test="contains(@crystal_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@crystal_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@crystal_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="crystal_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($crystal_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="diffrn_id_truncated"><xsl:choose><xsl:when test="string-length(@diffrn_id)&lt;64"><xsl:value-of select="@diffrn_id"/></xsl:when><xsl:when test="contains(@diffrn_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@diffrn_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@diffrn_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($diffrn_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="operator_truncated"><xsl:choose><xsl:when test="string-length(@operator)&lt;64"><xsl:value-of select="@operator"/></xsl:when><xsl:when test="contains(@operator,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@operator,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@operator,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="operator_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($operator_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="crystal_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@crystal_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="diffrn_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@diffrn_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="operator_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@operator"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_reflns_twin>
       <PDBo:pdbx_reflns_twin rdf:about="{$base}/pdbx_reflns_twin/{$crystal_id_encoded},{$diffrn_id_encoded},{$operator_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3863,8 +3568,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_related_exp_data_setCategory/VRPTx:pdbx_related_exp_data_set">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_related_exp_data_set>
       <PDBo:pdbx_related_exp_data_set rdf:about="{$base}/pdbx_related_exp_data_set/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3877,24 +3581,15 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_sequence_rangeCategory/VRPTx:pdbx_sequence_range">
-      <xsl:variable name="beg_label_alt_id_truncated"><xsl:choose><xsl:when test="string-length(@beg_label_alt_id)&lt;64"><xsl:value-of select="@beg_label_alt_id"/></xsl:when><xsl:when test="contains(@beg_label_alt_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@beg_label_alt_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@beg_label_alt_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="beg_label_alt_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($beg_label_alt_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="beg_label_asym_id_truncated"><xsl:choose><xsl:when test="string-length(@beg_label_asym_id)&lt;64"><xsl:value-of select="@beg_label_asym_id"/></xsl:when><xsl:when test="contains(@beg_label_asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@beg_label_asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@beg_label_asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="beg_label_asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($beg_label_asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="beg_label_comp_id_truncated"><xsl:choose><xsl:when test="string-length(@beg_label_comp_id)&lt;64"><xsl:value-of select="@beg_label_comp_id"/></xsl:when><xsl:when test="contains(@beg_label_comp_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@beg_label_comp_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@beg_label_comp_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="beg_label_comp_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($beg_label_comp_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="beg_label_seq_id_truncated"><xsl:choose><xsl:when test="string-length(@beg_label_seq_id)&lt;64"><xsl:value-of select="@beg_label_seq_id"/></xsl:when><xsl:when test="contains(@beg_label_seq_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@beg_label_seq_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@beg_label_seq_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="beg_label_seq_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($beg_label_seq_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="end_label_alt_id_truncated"><xsl:choose><xsl:when test="string-length(@end_label_alt_id)&lt;64"><xsl:value-of select="@end_label_alt_id"/></xsl:when><xsl:when test="contains(@end_label_alt_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@end_label_alt_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@end_label_alt_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="end_label_alt_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($end_label_alt_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="end_label_asym_id_truncated"><xsl:choose><xsl:when test="string-length(@end_label_asym_id)&lt;64"><xsl:value-of select="@end_label_asym_id"/></xsl:when><xsl:when test="contains(@end_label_asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@end_label_asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@end_label_asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="end_label_asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($end_label_asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="end_label_comp_id_truncated"><xsl:choose><xsl:when test="string-length(@end_label_comp_id)&lt;64"><xsl:value-of select="@end_label_comp_id"/></xsl:when><xsl:when test="contains(@end_label_comp_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@end_label_comp_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@end_label_comp_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="end_label_comp_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($end_label_comp_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="end_label_seq_id_truncated"><xsl:choose><xsl:when test="string-length(@end_label_seq_id)&lt;64"><xsl:value-of select="@end_label_seq_id"/></xsl:when><xsl:when test="contains(@end_label_seq_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@end_label_seq_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@end_label_seq_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="end_label_seq_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($end_label_seq_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="seq_range_id_truncated"><xsl:choose><xsl:when test="string-length(@seq_range_id)&lt;64"><xsl:value-of select="@seq_range_id"/></xsl:when><xsl:when test="contains(@seq_range_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@seq_range_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@seq_range_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="seq_range_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($seq_range_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="beg_label_alt_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@beg_label_alt_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="beg_label_asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@beg_label_asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="beg_label_comp_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@beg_label_comp_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="beg_label_seq_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@beg_label_seq_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="end_label_alt_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@end_label_alt_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="end_label_asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@end_label_asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="end_label_comp_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@end_label_comp_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="end_label_seq_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@end_label_seq_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="seq_range_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@seq_range_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_sequence_range>
       <PDBo:pdbx_sequence_range rdf:about="{$base}/pdbx_sequence_range/{$beg_label_alt_id_encoded},{$beg_label_asym_id_encoded},{$beg_label_comp_id_encoded},{$beg_label_seq_id_encoded},{$end_label_alt_id_encoded},{$end_label_asym_id_encoded},{$end_label_comp_id_encoded},{$end_label_seq_id_encoded},{$seq_range_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3907,16 +3602,11 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_sifts_unp_segmentsCategory/VRPTx:pdbx_sifts_unp_segments">
-      <xsl:variable name="asym_id_truncated"><xsl:choose><xsl:when test="string-length(@asym_id)&lt;64"><xsl:value-of select="@asym_id"/></xsl:when><xsl:when test="contains(@asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="instance_id_truncated"><xsl:choose><xsl:when test="string-length(@instance_id)&lt;64"><xsl:value-of select="@instance_id"/></xsl:when><xsl:when test="contains(@instance_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@instance_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@instance_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="instance_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($instance_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="segment_id_truncated"><xsl:choose><xsl:when test="string-length(@segment_id)&lt;64"><xsl:value-of select="@segment_id"/></xsl:when><xsl:when test="contains(@segment_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@segment_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@segment_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="segment_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($segment_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="unp_acc_truncated"><xsl:choose><xsl:when test="string-length(@unp_acc)&lt;64"><xsl:value-of select="@unp_acc"/></xsl:when><xsl:when test="contains(@unp_acc,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@unp_acc,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@unp_acc,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="unp_acc_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($unp_acc_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="instance_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@instance_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="segment_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@segment_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="unp_acc_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@unp_acc"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_sifts_unp_segments>
       <PDBo:pdbx_sifts_unp_segments rdf:about="{$base}/pdbx_sifts_unp_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$unp_acc_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3937,14 +3627,10 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_sifts_xref_dbCategory/VRPTx:pdbx_sifts_xref_db">
-      <xsl:variable name="asym_id_truncated"><xsl:choose><xsl:when test="string-length(@asym_id)&lt;64"><xsl:value-of select="@asym_id"/></xsl:when><xsl:when test="contains(@asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="seq_id_truncated"><xsl:choose><xsl:when test="string-length(@seq_id)&lt;64"><xsl:value-of select="@seq_id"/></xsl:when><xsl:when test="contains(@seq_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@seq_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@seq_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="seq_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($seq_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="seq_id_ordinal_truncated"><xsl:choose><xsl:when test="string-length(@seq_id_ordinal)&lt;64"><xsl:value-of select="@seq_id_ordinal"/></xsl:when><xsl:when test="contains(@seq_id_ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@seq_id_ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@seq_id_ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="seq_id_ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($seq_id_ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="seq_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@seq_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="seq_id_ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@seq_id_ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_sifts_xref_db>
       <PDBo:pdbx_sifts_xref_db rdf:about="{$base}/pdbx_sifts_xref_db/{$asym_id_encoded},{$entity_id_encoded},{$seq_id_encoded},{$seq_id_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -3965,22 +3651,14 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_sifts_xref_db_segmentsCategory/VRPTx:pdbx_sifts_xref_db_segments">
-      <xsl:variable name="asym_id_truncated"><xsl:choose><xsl:when test="string-length(@asym_id)&lt;64"><xsl:value-of select="@asym_id"/></xsl:when><xsl:when test="contains(@asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="instance_id_truncated"><xsl:choose><xsl:when test="string-length(@instance_id)&lt;64"><xsl:value-of select="@instance_id"/></xsl:when><xsl:when test="contains(@instance_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@instance_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@instance_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="instance_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($instance_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="segment_id_truncated"><xsl:choose><xsl:when test="string-length(@segment_id)&lt;64"><xsl:value-of select="@segment_id"/></xsl:when><xsl:when test="contains(@segment_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@segment_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@segment_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="segment_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($segment_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="seq_id_end_truncated"><xsl:choose><xsl:when test="string-length(@seq_id_end)&lt;64"><xsl:value-of select="@seq_id_end"/></xsl:when><xsl:when test="contains(@seq_id_end,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@seq_id_end,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@seq_id_end,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="seq_id_end_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($seq_id_end_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="seq_id_start_truncated"><xsl:choose><xsl:when test="string-length(@seq_id_start)&lt;64"><xsl:value-of select="@seq_id_start"/></xsl:when><xsl:when test="contains(@seq_id_start,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@seq_id_start,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@seq_id_start,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="seq_id_start_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($seq_id_start_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="xref_db_truncated"><xsl:choose><xsl:when test="string-length(@xref_db)&lt;64"><xsl:value-of select="@xref_db"/></xsl:when><xsl:when test="contains(@xref_db,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@xref_db,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@xref_db,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="xref_db_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($xref_db_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="xref_db_acc_truncated"><xsl:choose><xsl:when test="string-length(@xref_db_acc)&lt;64"><xsl:value-of select="@xref_db_acc"/></xsl:when><xsl:when test="contains(@xref_db_acc,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@xref_db_acc,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@xref_db_acc,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="xref_db_acc_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($xref_db_acc_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@asym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="instance_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@instance_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="segment_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@segment_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="seq_id_end_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@seq_id_end"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="seq_id_start_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@seq_id_start"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="xref_db_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@xref_db"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="xref_db_acc_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@xref_db_acc"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_sifts_xref_db_segments>
       <PDBo:pdbx_sifts_xref_db_segments rdf:about="{$base}/pdbx_sifts_xref_db_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$seq_id_end_encoded},{$seq_id_start_encoded},{$xref_db_encoded},{$xref_db_acc_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4001,10 +3679,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_soln_scatterCategory/VRPTx:pdbx_soln_scatter">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_soln_scatter>
       <PDBo:pdbx_soln_scatter rdf:about="{$base}/pdbx_soln_scatter/{$entry_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4025,10 +3701,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_soln_scatter_modelCategory/VRPTx:pdbx_soln_scatter_model">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="scatter_id_truncated"><xsl:choose><xsl:when test="string-length(@scatter_id)&lt;64"><xsl:value-of select="@scatter_id"/></xsl:when><xsl:when test="contains(@scatter_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@scatter_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@scatter_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="scatter_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($scatter_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="scatter_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@scatter_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_soln_scatter_model>
       <PDBo:pdbx_soln_scatter_model rdf:about="{$base}/pdbx_soln_scatter_model/{$id_encoded},{$scatter_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4041,8 +3715,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_assemblyCategory/VRPTx:pdbx_struct_assembly">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_assembly>
       <PDBo:pdbx_struct_assembly rdf:about="{$base}/pdbx_struct_assembly/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4055,12 +3728,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_assembly_genCategory/VRPTx:pdbx_struct_assembly_gen">
-      <xsl:variable name="assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@assembly_id)&lt;64"><xsl:value-of select="@assembly_id"/></xsl:when><xsl:when test="contains(@assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="asym_id_list_truncated"><xsl:choose><xsl:when test="string-length(@asym_id_list)&lt;64"><xsl:value-of select="@asym_id_list"/></xsl:when><xsl:when test="contains(@asym_id_list,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id_list,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id_list,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="asym_id_list_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_list_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="oper_expression_truncated"><xsl:choose><xsl:when test="string-length(@oper_expression)&lt;64"><xsl:value-of select="@oper_expression"/></xsl:when><xsl:when test="contains(@oper_expression,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@oper_expression,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@oper_expression,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="oper_expression_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($oper_expression_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="assembly_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@assembly_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="asym_id_list_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@asym_id_list"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="oper_expression_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@oper_expression"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_assembly_gen>
       <PDBo:pdbx_struct_assembly_gen rdf:about="{$base}/pdbx_struct_assembly_gen/{$assembly_id_encoded},{$asym_id_list_encoded},{$oper_expression_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4081,10 +3751,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_assembly_propCategory/VRPTx:pdbx_struct_assembly_prop">
-      <xsl:variable name="biol_id_truncated"><xsl:choose><xsl:when test="string-length(@biol_id)&lt;64"><xsl:value-of select="@biol_id"/></xsl:when><xsl:when test="contains(@biol_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@biol_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@biol_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="biol_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($biol_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="type_truncated"><xsl:choose><xsl:when test="string-length(@type)&lt;64"><xsl:value-of select="@type"/></xsl:when><xsl:when test="contains(@type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="biol_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@biol_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@type"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_assembly_prop>
       <PDBo:pdbx_struct_assembly_prop rdf:about="{$base}/pdbx_struct_assembly_prop/{$biol_id_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4097,10 +3765,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_asym_genCategory/VRPTx:pdbx_struct_asym_gen">
-      <xsl:variable name="entity_inst_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_inst_id)&lt;64"><xsl:value-of select="@entity_inst_id"/></xsl:when><xsl:when test="contains(@entity_inst_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_inst_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_inst_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_inst_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_inst_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="oper_expression_truncated"><xsl:choose><xsl:when test="string-length(@oper_expression)&lt;64"><xsl:value-of select="@oper_expression"/></xsl:when><xsl:when test="contains(@oper_expression,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@oper_expression,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@oper_expression,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="oper_expression_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($oper_expression_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_inst_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_inst_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="oper_expression_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@oper_expression"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_asym_gen>
       <PDBo:pdbx_struct_asym_gen rdf:about="{$base}/pdbx_struct_asym_gen/{$entity_inst_id_encoded},{$oper_expression_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4121,8 +3787,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_chem_comp_diagnosticsCategory/VRPTx:pdbx_struct_chem_comp_diagnostics">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_chem_comp_diagnostics>
       <PDBo:pdbx_struct_chem_comp_diagnostics rdf:about="{$base}/pdbx_struct_chem_comp_diagnostics/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4135,8 +3800,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_conn_angleCategory/VRPTx:pdbx_struct_conn_angle">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_conn_angle>
       <PDBo:pdbx_struct_conn_angle rdf:about="{$base}/pdbx_struct_conn_angle/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4149,8 +3813,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_entity_instCategory/VRPTx:pdbx_struct_entity_inst">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_entity_inst>
       <PDBo:pdbx_struct_entity_inst rdf:about="{$base}/pdbx_struct_entity_inst/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4163,8 +3826,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_group_component_rangeCategory/VRPTx:pdbx_struct_group_component_range">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_group_component_range>
       <PDBo:pdbx_struct_group_component_range rdf:about="{$base}/pdbx_struct_group_component_range/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4185,8 +3847,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_group_componentsCategory/VRPTx:pdbx_struct_group_components">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_group_components>
       <PDBo:pdbx_struct_group_components rdf:about="{$base}/pdbx_struct_group_components/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4207,8 +3868,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_group_listCategory/VRPTx:pdbx_struct_group_list">
-      <xsl:variable name="struct_group_id_truncated"><xsl:choose><xsl:when test="string-length(@struct_group_id)&lt;64"><xsl:value-of select="@struct_group_id"/></xsl:when><xsl:when test="contains(@struct_group_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@struct_group_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@struct_group_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="struct_group_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($struct_group_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="struct_group_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@struct_group_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_group_list>
       <PDBo:pdbx_struct_group_list rdf:about="{$base}/pdbx_struct_group_list/{$struct_group_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4221,10 +3881,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_infoCategory/VRPTx:pdbx_struct_info">
-      <xsl:variable name="type_truncated"><xsl:choose><xsl:when test="string-length(@type)&lt;64"><xsl:value-of select="@type"/></xsl:when><xsl:when test="contains(@type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="value_truncated"><xsl:choose><xsl:when test="string-length(@value)&lt;64"><xsl:value-of select="@value"/></xsl:when><xsl:when test="contains(@value,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@value,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@value,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="value_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($value_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@type"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="value_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@value"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_info>
       <PDBo:pdbx_struct_info rdf:about="{$base}/pdbx_struct_info/{$type_encoded},{$value_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4237,8 +3895,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_legacy_oper_listCategory/VRPTx:pdbx_struct_legacy_oper_list">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_legacy_oper_list>
       <PDBo:pdbx_struct_legacy_oper_list rdf:about="{$base}/pdbx_struct_legacy_oper_list/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4251,8 +3908,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_mod_residueCategory/VRPTx:pdbx_struct_mod_residue">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_mod_residue>
       <PDBo:pdbx_struct_mod_residue rdf:about="{$base}/pdbx_struct_mod_residue/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4265,12 +3921,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_msym_genCategory/VRPTx:pdbx_struct_msym_gen">
-      <xsl:variable name="entity_inst_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_inst_id)&lt;64"><xsl:value-of select="@entity_inst_id"/></xsl:when><xsl:when test="contains(@entity_inst_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_inst_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_inst_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entity_inst_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_inst_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="msym_id_truncated"><xsl:choose><xsl:when test="string-length(@msym_id)&lt;64"><xsl:value-of select="@msym_id"/></xsl:when><xsl:when test="contains(@msym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@msym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@msym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="msym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($msym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="oper_expression_truncated"><xsl:choose><xsl:when test="string-length(@oper_expression)&lt;64"><xsl:value-of select="@oper_expression"/></xsl:when><xsl:when test="contains(@oper_expression,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@oper_expression,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@oper_expression,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="oper_expression_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($oper_expression_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entity_inst_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_inst_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="msym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@msym_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="oper_expression_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@oper_expression"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_msym_gen>
       <PDBo:pdbx_struct_msym_gen rdf:about="{$base}/pdbx_struct_msym_gen/{$entity_inst_id_encoded},{$msym_id_encoded},{$oper_expression_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4291,8 +3944,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_nmr_ens_clustCategory/VRPTx:pdbx_struct_nmr_ens_clust">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_nmr_ens_clust>
       <PDBo:pdbx_struct_nmr_ens_clust rdf:about="{$base}/pdbx_struct_nmr_ens_clust/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4313,8 +3965,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_nmr_ens_clust_genCategory/VRPTx:pdbx_struct_nmr_ens_clust_gen">
-      <xsl:variable name="PDB_model_num_truncated"><xsl:choose><xsl:when test="string-length(@PDB_model_num)&lt;64"><xsl:value-of select="@PDB_model_num"/></xsl:when><xsl:when test="contains(@PDB_model_num,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@PDB_model_num,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@PDB_model_num,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($PDB_model_num_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="PDB_model_num_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@PDB_model_num"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_nmr_ens_clust_gen>
       <PDBo:pdbx_struct_nmr_ens_clust_gen rdf:about="{$base}/pdbx_struct_nmr_ens_clust_gen/{$PDB_model_num_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4327,8 +3978,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_nmr_ens_domCategory/VRPTx:pdbx_struct_nmr_ens_dom">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_nmr_ens_dom>
       <PDBo:pdbx_struct_nmr_ens_dom rdf:about="{$base}/pdbx_struct_nmr_ens_dom/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4341,10 +3991,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_nmr_ens_dom_limCategory/VRPTx:pdbx_struct_nmr_ens_dom_lim">
-      <xsl:variable name="component_id_truncated"><xsl:choose><xsl:when test="string-length(@component_id)&lt;64"><xsl:value-of select="@component_id"/></xsl:when><xsl:when test="contains(@component_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@component_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@component_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="component_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($component_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="dom_id_truncated"><xsl:choose><xsl:when test="string-length(@dom_id)&lt;64"><xsl:value-of select="@dom_id"/></xsl:when><xsl:when test="contains(@dom_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@dom_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@dom_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="dom_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($dom_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="component_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@component_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="dom_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@dom_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_nmr_ens_dom_lim>
       <PDBo:pdbx_struct_nmr_ens_dom_lim rdf:about="{$base}/pdbx_struct_nmr_ens_dom_lim/{$component_id_encoded},{$dom_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4365,8 +4013,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_oper_listCategory/VRPTx:pdbx_struct_oper_list">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_oper_list>
       <PDBo:pdbx_struct_oper_list rdf:about="{$base}/pdbx_struct_oper_list/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4379,8 +4026,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_ref_seq_deletionCategory/VRPTx:pdbx_struct_ref_seq_deletion">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_ref_seq_deletion>
       <PDBo:pdbx_struct_ref_seq_deletion rdf:about="{$base}/pdbx_struct_ref_seq_deletion/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4393,8 +4039,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_ref_seq_insertionCategory/VRPTx:pdbx_struct_ref_seq_insertion">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_ref_seq_insertion>
       <PDBo:pdbx_struct_ref_seq_insertion rdf:about="{$base}/pdbx_struct_ref_seq_insertion/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4407,12 +4052,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_sheet_hbondCategory/VRPTx:pdbx_struct_sheet_hbond">
-      <xsl:variable name="range_id_1_truncated"><xsl:choose><xsl:when test="string-length(@range_id_1)&lt;64"><xsl:value-of select="@range_id_1"/></xsl:when><xsl:when test="contains(@range_id_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@range_id_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@range_id_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="range_id_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($range_id_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="range_id_2_truncated"><xsl:choose><xsl:when test="string-length(@range_id_2)&lt;64"><xsl:value-of select="@range_id_2"/></xsl:when><xsl:when test="contains(@range_id_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@range_id_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@range_id_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="range_id_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($range_id_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="sheet_id_truncated"><xsl:choose><xsl:when test="string-length(@sheet_id)&lt;64"><xsl:value-of select="@sheet_id"/></xsl:when><xsl:when test="contains(@sheet_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@sheet_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@sheet_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="sheet_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($sheet_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="range_id_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@range_id_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="range_id_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@range_id_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="sheet_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@sheet_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_sheet_hbond>
       <PDBo:pdbx_struct_sheet_hbond rdf:about="{$base}/pdbx_struct_sheet_hbond/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4433,8 +4075,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_struct_special_symmetryCategory/VRPTx:pdbx_struct_special_symmetry">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_struct_special_symmetry>
       <PDBo:pdbx_struct_special_symmetry rdf:about="{$base}/pdbx_struct_special_symmetry/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4447,8 +4088,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_unobs_or_zero_occ_atomsCategory/VRPTx:pdbx_unobs_or_zero_occ_atoms">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_unobs_or_zero_occ_atoms>
       <PDBo:pdbx_unobs_or_zero_occ_atoms rdf:about="{$base}/pdbx_unobs_or_zero_occ_atoms/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4461,8 +4101,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_unobs_or_zero_occ_residuesCategory/VRPTx:pdbx_unobs_or_zero_occ_residues">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_unobs_or_zero_occ_residues>
       <PDBo:pdbx_unobs_or_zero_occ_residues rdf:about="{$base}/pdbx_unobs_or_zero_occ_residues/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4475,8 +4114,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_chiralCategory/VRPTx:pdbx_validate_chiral">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_chiral>
       <PDBo:pdbx_validate_chiral rdf:about="{$base}/pdbx_validate_chiral/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4489,8 +4127,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_close_contactCategory/VRPTx:pdbx_validate_close_contact">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_close_contact>
       <PDBo:pdbx_validate_close_contact rdf:about="{$base}/pdbx_validate_close_contact/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4503,8 +4140,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_main_chain_planeCategory/VRPTx:pdbx_validate_main_chain_plane">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_main_chain_plane>
       <PDBo:pdbx_validate_main_chain_plane rdf:about="{$base}/pdbx_validate_main_chain_plane/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4517,10 +4153,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_nmr_chem_shiftCategory/VRPTx:pdbx_validate_nmr_chem_shift">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="list_id_truncated"><xsl:choose><xsl:when test="string-length(@list_id)&lt;64"><xsl:value-of select="@list_id"/></xsl:when><xsl:when test="contains(@list_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@list_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@list_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="list_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($list_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="list_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@list_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_nmr_chem_shift>
       <PDBo:pdbx_validate_nmr_chem_shift rdf:about="{$base}/pdbx_validate_nmr_chem_shift/{$id_encoded},{$list_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4541,8 +4175,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_peptide_omegaCategory/VRPTx:pdbx_validate_peptide_omega">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_peptide_omega>
       <PDBo:pdbx_validate_peptide_omega rdf:about="{$base}/pdbx_validate_peptide_omega/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4555,8 +4188,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_planesCategory/VRPTx:pdbx_validate_planes">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_planes>
       <PDBo:pdbx_validate_planes rdf:about="{$base}/pdbx_validate_planes/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4569,8 +4201,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_planes_atomCategory/VRPTx:pdbx_validate_planes_atom">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_planes_atom>
       <PDBo:pdbx_validate_planes_atom rdf:about="{$base}/pdbx_validate_planes_atom/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4591,8 +4222,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_polymer_linkageCategory/VRPTx:pdbx_validate_polymer_linkage">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_polymer_linkage>
       <PDBo:pdbx_validate_polymer_linkage rdf:about="{$base}/pdbx_validate_polymer_linkage/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4605,8 +4235,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_angleCategory/VRPTx:pdbx_validate_rmsd_angle">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_rmsd_angle>
       <PDBo:pdbx_validate_rmsd_angle rdf:about="{$base}/pdbx_validate_rmsd_angle/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4619,8 +4248,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_bondCategory/VRPTx:pdbx_validate_rmsd_bond">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_rmsd_bond>
       <PDBo:pdbx_validate_rmsd_bond rdf:about="{$base}/pdbx_validate_rmsd_bond/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4633,8 +4261,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_ringCategory/VRPTx:pdbx_validate_rmsd_ring">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_rmsd_ring>
       <PDBo:pdbx_validate_rmsd_ring rdf:about="{$base}/pdbx_validate_rmsd_ring/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4647,10 +4274,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_rings_atomCategory/VRPTx:pdbx_validate_rmsd_rings_atom">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="ring_id_truncated"><xsl:choose><xsl:when test="string-length(@ring_id)&lt;64"><xsl:value-of select="@ring_id"/></xsl:when><xsl:when test="contains(@ring_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ring_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ring_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ring_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ring_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ring_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ring_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_rmsd_rings_atom>
       <PDBo:pdbx_validate_rmsd_rings_atom rdf:about="{$base}/pdbx_validate_rmsd_rings_atom/{$id_encoded},{$ring_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4671,8 +4296,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_torsionCategory/VRPTx:pdbx_validate_rmsd_torsion">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_rmsd_torsion>
       <PDBo:pdbx_validate_rmsd_torsion rdf:about="{$base}/pdbx_validate_rmsd_torsion/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4685,10 +4309,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_torsions_atomCategory/VRPTx:pdbx_validate_rmsd_torsions_atom">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="torsion_id_truncated"><xsl:choose><xsl:when test="string-length(@torsion_id)&lt;64"><xsl:value-of select="@torsion_id"/></xsl:when><xsl:when test="contains(@torsion_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@torsion_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@torsion_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="torsion_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($torsion_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="torsion_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@torsion_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_rmsd_torsions_atom>
       <PDBo:pdbx_validate_rmsd_torsions_atom rdf:about="{$base}/pdbx_validate_rmsd_torsions_atom/{$id_encoded},{$torsion_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4709,8 +4331,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_symm_contactCategory/VRPTx:pdbx_validate_symm_contact">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_symm_contact>
       <PDBo:pdbx_validate_symm_contact rdf:about="{$base}/pdbx_validate_symm_contact/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4723,8 +4344,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validate_torsionCategory/VRPTx:pdbx_validate_torsion">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validate_torsion>
       <PDBo:pdbx_validate_torsion rdf:about="{$base}/pdbx_validate_torsion/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4737,8 +4357,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_validation_softwareCategory/VRPTx:pdbx_validation_software">
-      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_pdbx_validation_software>
       <PDBo:pdbx_validation_software rdf:about="{$base}/pdbx_validation_software/{$ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4751,8 +4370,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasingCategory/VRPTx:phasing">
-      <xsl:variable name="method_truncated"><xsl:choose><xsl:when test="string-length(@method)&lt;64"><xsl:value-of select="@method"/></xsl:when><xsl:when test="contains(@method,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@method,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@method,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="method_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($method_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="method_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@method"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing>
       <PDBo:phasing rdf:about="{$base}/phasing/{$method_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4765,8 +4383,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_MADCategory/VRPTx:phasing_MAD">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_MAD>
       <PDBo:phasing_MAD rdf:about="{$base}/phasing_MAD/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4787,10 +4404,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_MAD_clustCategory/VRPTx:phasing_MAD_clust">
-      <xsl:variable name="expt_id_truncated"><xsl:choose><xsl:when test="string-length(@expt_id)&lt;64"><xsl:value-of select="@expt_id"/></xsl:when><xsl:when test="contains(@expt_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@expt_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@expt_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="expt_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($expt_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="expt_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@expt_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_MAD_clust>
       <PDBo:phasing_MAD_clust rdf:about="{$base}/phasing_MAD_clust/{$expt_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4811,8 +4426,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_MAD_exptCategory/VRPTx:phasing_MAD_expt">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_MAD_expt>
       <PDBo:phasing_MAD_expt rdf:about="{$base}/phasing_MAD_expt/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4825,14 +4439,10 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_MAD_ratioCategory/VRPTx:phasing_MAD_ratio">
-      <xsl:variable name="clust_id_truncated"><xsl:choose><xsl:when test="string-length(@clust_id)&lt;64"><xsl:value-of select="@clust_id"/></xsl:when><xsl:when test="contains(@clust_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@clust_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@clust_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="clust_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($clust_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="expt_id_truncated"><xsl:choose><xsl:when test="string-length(@expt_id)&lt;64"><xsl:value-of select="@expt_id"/></xsl:when><xsl:when test="contains(@expt_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@expt_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@expt_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="expt_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($expt_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="wavelength_1_truncated"><xsl:choose><xsl:when test="string-length(@wavelength_1)&lt;64"><xsl:value-of select="@wavelength_1"/></xsl:when><xsl:when test="contains(@wavelength_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@wavelength_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@wavelength_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="wavelength_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($wavelength_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="wavelength_2_truncated"><xsl:choose><xsl:when test="string-length(@wavelength_2)&lt;64"><xsl:value-of select="@wavelength_2"/></xsl:when><xsl:when test="contains(@wavelength_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@wavelength_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@wavelength_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="wavelength_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($wavelength_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="clust_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@clust_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="expt_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@expt_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="wavelength_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@wavelength_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="wavelength_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@wavelength_2"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_MAD_ratio>
       <PDBo:phasing_MAD_ratio rdf:about="{$base}/phasing_MAD_ratio/{$clust_id_encoded},{$expt_id_encoded},{$wavelength_1_encoded},{$wavelength_2_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4853,14 +4463,10 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_MAD_setCategory/VRPTx:phasing_MAD_set">
-      <xsl:variable name="clust_id_truncated"><xsl:choose><xsl:when test="string-length(@clust_id)&lt;64"><xsl:value-of select="@clust_id"/></xsl:when><xsl:when test="contains(@clust_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@clust_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@clust_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="clust_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($clust_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="expt_id_truncated"><xsl:choose><xsl:when test="string-length(@expt_id)&lt;64"><xsl:value-of select="@expt_id"/></xsl:when><xsl:when test="contains(@expt_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@expt_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@expt_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="expt_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($expt_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="set_id_truncated"><xsl:choose><xsl:when test="string-length(@set_id)&lt;64"><xsl:value-of select="@set_id"/></xsl:when><xsl:when test="contains(@set_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@set_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@set_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="set_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($set_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="wavelength_truncated"><xsl:choose><xsl:when test="string-length(@wavelength)&lt;64"><xsl:value-of select="@wavelength"/></xsl:when><xsl:when test="contains(@wavelength,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@wavelength,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@wavelength,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="wavelength_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($wavelength_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="clust_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@clust_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="expt_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@expt_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="set_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@set_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="wavelength_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@wavelength"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_MAD_set>
       <PDBo:phasing_MAD_set rdf:about="{$base}/phasing_MAD_set/{$clust_id_encoded},{$expt_id_encoded},{$set_id_encoded},{$wavelength_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4889,8 +4495,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_MIRCategory/VRPTx:phasing_MIR">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_MIR>
       <PDBo:phasing_MIR rdf:about="{$base}/phasing_MIR/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4911,8 +4516,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_MIR_derCategory/VRPTx:phasing_MIR_der">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_MIR_der>
       <PDBo:phasing_MIR_der rdf:about="{$base}/phasing_MIR_der/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4933,16 +4537,11 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_MIR_der_reflnCategory/VRPTx:phasing_MIR_der_refln">
-      <xsl:variable name="der_id_truncated"><xsl:choose><xsl:when test="string-length(@der_id)&lt;64"><xsl:value-of select="@der_id"/></xsl:when><xsl:when test="contains(@der_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@der_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@der_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="der_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($der_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_h_truncated"><xsl:choose><xsl:when test="string-length(@index_h)&lt;64"><xsl:value-of select="@index_h"/></xsl:when><xsl:when test="contains(@index_h,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_h,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_h,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_h_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_h_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_k_truncated"><xsl:choose><xsl:when test="string-length(@index_k)&lt;64"><xsl:value-of select="@index_k"/></xsl:when><xsl:when test="contains(@index_k,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_k,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_k,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_k_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_k_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_l_truncated"><xsl:choose><xsl:when test="string-length(@index_l)&lt;64"><xsl:value-of select="@index_l"/></xsl:when><xsl:when test="contains(@index_l,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_l,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_l,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_l_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_l_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="set_id_truncated"><xsl:choose><xsl:when test="string-length(@set_id)&lt;64"><xsl:value-of select="@set_id"/></xsl:when><xsl:when test="contains(@set_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@set_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@set_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="set_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($set_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="der_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@der_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_h_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_h"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_k_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_k"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_l_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_l"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="set_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@set_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_MIR_der_refln>
       <PDBo:phasing_MIR_der_refln rdf:about="{$base}/phasing_MIR_der_refln/{$der_id_encoded},{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4971,12 +4570,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_MIR_der_shellCategory/VRPTx:phasing_MIR_der_shell">
-      <xsl:variable name="d_res_high_truncated"><xsl:choose><xsl:when test="string-length(@d_res_high)&lt;64"><xsl:value-of select="@d_res_high"/></xsl:when><xsl:when test="contains(@d_res_high,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_high,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_high,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_high_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="d_res_low_truncated"><xsl:choose><xsl:when test="string-length(@d_res_low)&lt;64"><xsl:value-of select="@d_res_low"/></xsl:when><xsl:when test="contains(@d_res_low,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_low,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_low,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_low_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="der_id_truncated"><xsl:choose><xsl:when test="string-length(@der_id)&lt;64"><xsl:value-of select="@der_id"/></xsl:when><xsl:when test="contains(@der_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@der_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@der_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="der_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($der_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_high"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_low"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="der_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@der_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_MIR_der_shell>
       <PDBo:phasing_MIR_der_shell rdf:about="{$base}/phasing_MIR_der_shell/{$d_res_high_encoded},{$d_res_low_encoded},{$der_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -4997,10 +4593,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_MIR_der_siteCategory/VRPTx:phasing_MIR_der_site">
-      <xsl:variable name="der_id_truncated"><xsl:choose><xsl:when test="string-length(@der_id)&lt;64"><xsl:value-of select="@der_id"/></xsl:when><xsl:when test="contains(@der_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@der_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@der_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="der_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($der_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="der_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@der_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_MIR_der_site>
       <PDBo:phasing_MIR_der_site rdf:about="{$base}/phasing_MIR_der_site/{$der_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5021,10 +4615,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_MIR_shellCategory/VRPTx:phasing_MIR_shell">
-      <xsl:variable name="d_res_high_truncated"><xsl:choose><xsl:when test="string-length(@d_res_high)&lt;64"><xsl:value-of select="@d_res_high"/></xsl:when><xsl:when test="contains(@d_res_high,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_high,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_high,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_high_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="d_res_low_truncated"><xsl:choose><xsl:when test="string-length(@d_res_low)&lt;64"><xsl:value-of select="@d_res_low"/></xsl:when><xsl:when test="contains(@d_res_low,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_low,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_low,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_low_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_high"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_low_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_low"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_MIR_shell>
       <PDBo:phasing_MIR_shell rdf:about="{$base}/phasing_MIR_shell/{$d_res_high_encoded},{$d_res_low_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5037,8 +4629,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_averagingCategory/VRPTx:phasing_averaging">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_averaging>
       <PDBo:phasing_averaging rdf:about="{$base}/phasing_averaging/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5059,8 +4650,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_isomorphousCategory/VRPTx:phasing_isomorphous">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_isomorphous>
       <PDBo:phasing_isomorphous rdf:about="{$base}/phasing_isomorphous/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5081,8 +4671,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_setCategory/VRPTx:phasing_set">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_set>
       <PDBo:phasing_set rdf:about="{$base}/phasing_set/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5095,14 +4684,10 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:phasing_set_reflnCategory/VRPTx:phasing_set_refln">
-      <xsl:variable name="index_h_truncated"><xsl:choose><xsl:when test="string-length(@index_h)&lt;64"><xsl:value-of select="@index_h"/></xsl:when><xsl:when test="contains(@index_h,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_h,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_h,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_h_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_h_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_k_truncated"><xsl:choose><xsl:when test="string-length(@index_k)&lt;64"><xsl:value-of select="@index_k"/></xsl:when><xsl:when test="contains(@index_k,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_k,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_k,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_k_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_k_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_l_truncated"><xsl:choose><xsl:when test="string-length(@index_l)&lt;64"><xsl:value-of select="@index_l"/></xsl:when><xsl:when test="contains(@index_l,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_l,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_l,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_l_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_l_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="set_id_truncated"><xsl:choose><xsl:when test="string-length(@set_id)&lt;64"><xsl:value-of select="@set_id"/></xsl:when><xsl:when test="contains(@set_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@set_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@set_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="set_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($set_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_h_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_h"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_k_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_k"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_l_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_l"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="set_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@set_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_phasing_set_refln>
       <PDBo:phasing_set_refln rdf:about="{$base}/phasing_set_refln/{$index_h_encoded},{$index_k_encoded},{$index_l_encoded},{$set_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5123,10 +4708,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refineCategory/VRPTx:refine">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_refine_id)&lt;64"><xsl:value-of select="@pdbx_refine_id"/></xsl:when><xsl:when test="contains(@pdbx_refine_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_refine_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_refine_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_refine_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_refine_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_refine>
       <PDBo:refine rdf:about="{$base}/refine/{$entry_id_encoded},{$pdbx_refine_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5147,10 +4730,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refine_B_isoCategory/VRPTx:refine_B_iso">
-      <xsl:variable name="class_truncated"><xsl:choose><xsl:when test="string-length(@class)&lt;64"><xsl:value-of select="@class"/></xsl:when><xsl:when test="contains(@class,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@class,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@class,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="class_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($class_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_refine_id)&lt;64"><xsl:value-of select="@pdbx_refine_id"/></xsl:when><xsl:when test="contains(@pdbx_refine_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_refine_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_refine_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_refine_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="class_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@class"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_refine_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_refine_B_iso>
       <PDBo:refine_B_iso rdf:about="{$base}/refine_B_iso/{$class_encoded},{$pdbx_refine_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5163,10 +4744,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refine_analyzeCategory/VRPTx:refine_analyze">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_refine_id)&lt;64"><xsl:value-of select="@pdbx_refine_id"/></xsl:when><xsl:when test="contains(@pdbx_refine_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_refine_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_refine_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_refine_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_refine_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_refine_analyze>
       <PDBo:refine_analyze rdf:about="{$base}/refine_analyze/{$entry_id_encoded},{$pdbx_refine_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5187,10 +4766,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refine_funct_minimizedCategory/VRPTx:refine_funct_minimized">
-      <xsl:variable name="pdbx_refine_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_refine_id)&lt;64"><xsl:value-of select="@pdbx_refine_id"/></xsl:when><xsl:when test="contains(@pdbx_refine_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_refine_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_refine_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_refine_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="type_truncated"><xsl:choose><xsl:when test="string-length(@type)&lt;64"><xsl:value-of select="@type"/></xsl:when><xsl:when test="contains(@type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_refine_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@type"/></xsl:call-template></xsl:variable>
       <PDBo:has_refine_funct_minimized>
       <PDBo:refine_funct_minimized rdf:about="{$base}/refine_funct_minimized/{$pdbx_refine_id_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5203,10 +4780,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refine_histCategory/VRPTx:refine_hist">
-      <xsl:variable name="cycle_id_truncated"><xsl:choose><xsl:when test="string-length(@cycle_id)&lt;64"><xsl:value-of select="@cycle_id"/></xsl:when><xsl:when test="contains(@cycle_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@cycle_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@cycle_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="cycle_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($cycle_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_refine_id)&lt;64"><xsl:value-of select="@pdbx_refine_id"/></xsl:when><xsl:when test="contains(@pdbx_refine_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_refine_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_refine_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_refine_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="cycle_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@cycle_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_refine_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_refine_hist>
       <PDBo:refine_hist rdf:about="{$base}/refine_hist/{$cycle_id_encoded},{$pdbx_refine_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5219,8 +4794,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refine_ls_classCategory/VRPTx:refine_ls_class">
-      <xsl:variable name="code_truncated"><xsl:choose><xsl:when test="string-length(@code)&lt;64"><xsl:value-of select="@code"/></xsl:when><xsl:when test="contains(@code,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@code,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@code,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="code_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($code_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="code_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@code"/></xsl:call-template></xsl:variable>
       <PDBo:has_refine_ls_class>
       <PDBo:refine_ls_class rdf:about="{$base}/refine_ls_class/{$code_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5233,10 +4807,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refine_ls_restrCategory/VRPTx:refine_ls_restr">
-      <xsl:variable name="pdbx_refine_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_refine_id)&lt;64"><xsl:value-of select="@pdbx_refine_id"/></xsl:when><xsl:when test="contains(@pdbx_refine_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_refine_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_refine_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_refine_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="type_truncated"><xsl:choose><xsl:when test="string-length(@type)&lt;64"><xsl:value-of select="@type"/></xsl:when><xsl:when test="contains(@type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_refine_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@type"/></xsl:call-template></xsl:variable>
       <PDBo:has_refine_ls_restr>
       <PDBo:refine_ls_restr rdf:about="{$base}/refine_ls_restr/{$pdbx_refine_id_encoded},{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5249,8 +4821,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refine_ls_restr_ncsCategory/VRPTx:refine_ls_restr_ncs">
-      <xsl:variable name="pdbx_ordinal_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_ordinal)&lt;64"><xsl:value-of select="@pdbx_ordinal"/></xsl:when><xsl:when test="contains(@pdbx_ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_refine_ls_restr_ncs>
       <PDBo:refine_ls_restr_ncs rdf:about="{$base}/refine_ls_restr_ncs/{$pdbx_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5263,8 +4834,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refine_ls_restr_typeCategory/VRPTx:refine_ls_restr_type">
-      <xsl:variable name="type_truncated"><xsl:choose><xsl:when test="string-length(@type)&lt;64"><xsl:value-of select="@type"/></xsl:when><xsl:when test="contains(@type,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@type,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@type,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="type_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($type_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="type_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@type"/></xsl:call-template></xsl:variable>
       <PDBo:has_refine_ls_restr_type>
       <PDBo:refine_ls_restr_type rdf:about="{$base}/refine_ls_restr_type/{$type_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5277,10 +4847,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refine_ls_shellCategory/VRPTx:refine_ls_shell">
-      <xsl:variable name="d_res_high_truncated"><xsl:choose><xsl:when test="string-length(@d_res_high)&lt;64"><xsl:value-of select="@d_res_high"/></xsl:when><xsl:when test="contains(@d_res_high,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@d_res_high,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@d_res_high,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($d_res_high_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_refine_id)&lt;64"><xsl:value-of select="@pdbx_refine_id"/></xsl:when><xsl:when test="contains(@pdbx_refine_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_refine_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_refine_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_refine_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="d_res_high_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@d_res_high"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_refine_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_refine_ls_shell>
       <PDBo:refine_ls_shell rdf:about="{$base}/refine_ls_shell/{$d_res_high_encoded},{$pdbx_refine_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5293,10 +4861,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refine_occupancyCategory/VRPTx:refine_occupancy">
-      <xsl:variable name="class_truncated"><xsl:choose><xsl:when test="string-length(@class)&lt;64"><xsl:value-of select="@class"/></xsl:when><xsl:when test="contains(@class,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@class,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@class,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="class_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($class_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_refine_id)&lt;64"><xsl:value-of select="@pdbx_refine_id"/></xsl:when><xsl:when test="contains(@pdbx_refine_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_refine_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_refine_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_refine_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="class_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@class"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_refine_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_refine_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_refine_occupancy>
       <PDBo:refine_occupancy rdf:about="{$base}/refine_occupancy/{$class_encoded},{$pdbx_refine_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5309,12 +4875,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:reflnCategory/VRPTx:refln">
-      <xsl:variable name="index_h_truncated"><xsl:choose><xsl:when test="string-length(@index_h)&lt;64"><xsl:value-of select="@index_h"/></xsl:when><xsl:when test="contains(@index_h,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_h,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_h,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_h_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_h_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_k_truncated"><xsl:choose><xsl:when test="string-length(@index_k)&lt;64"><xsl:value-of select="@index_k"/></xsl:when><xsl:when test="contains(@index_k,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_k,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_k,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_k_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_k_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_l_truncated"><xsl:choose><xsl:when test="string-length(@index_l)&lt;64"><xsl:value-of select="@index_l"/></xsl:when><xsl:when test="contains(@index_l,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_l,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_l,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_l_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_l_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_h_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_h"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_k_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_k"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_l_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_l"/></xsl:call-template></xsl:variable>
       <PDBo:has_refln>
       <PDBo:refln rdf:about="{$base}/refln/{$index_h_encoded},{$index_k_encoded},{$index_l_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5327,12 +4890,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:refln_sys_absCategory/VRPTx:refln_sys_abs">
-      <xsl:variable name="index_h_truncated"><xsl:choose><xsl:when test="string-length(@index_h)&lt;64"><xsl:value-of select="@index_h"/></xsl:when><xsl:when test="contains(@index_h,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_h,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_h,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_h_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_h_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_k_truncated"><xsl:choose><xsl:when test="string-length(@index_k)&lt;64"><xsl:value-of select="@index_k"/></xsl:when><xsl:when test="contains(@index_k,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_k,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_k,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_k_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_k_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="index_l_truncated"><xsl:choose><xsl:when test="string-length(@index_l)&lt;64"><xsl:value-of select="@index_l"/></xsl:when><xsl:when test="contains(@index_l,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@index_l,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@index_l,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="index_l_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($index_l_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_h_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_h"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_k_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_k"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="index_l_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@index_l"/></xsl:call-template></xsl:variable>
       <PDBo:has_refln_sys_abs>
       <PDBo:refln_sys_abs rdf:about="{$base}/refln_sys_abs/{$index_h_encoded},{$index_k_encoded},{$index_l_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5345,8 +4905,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:reflnsCategory/VRPTx:reflns">
-      <xsl:variable name="pdbx_ordinal_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_ordinal)&lt;64"><xsl:value-of select="@pdbx_ordinal"/></xsl:when><xsl:when test="contains(@pdbx_ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_reflns>
       <PDBo:reflns rdf:about="{$base}/reflns/{$pdbx_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5367,8 +4926,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:reflns_classCategory/VRPTx:reflns_class">
-      <xsl:variable name="code_truncated"><xsl:choose><xsl:when test="string-length(@code)&lt;64"><xsl:value-of select="@code"/></xsl:when><xsl:when test="contains(@code,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@code,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@code,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="code_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($code_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="code_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@code"/></xsl:call-template></xsl:variable>
       <PDBo:has_reflns_class>
       <PDBo:reflns_class rdf:about="{$base}/reflns_class/{$code_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5381,8 +4939,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:reflns_scaleCategory/VRPTx:reflns_scale">
-      <xsl:variable name="group_code_truncated"><xsl:choose><xsl:when test="string-length(@group_code)&lt;64"><xsl:value-of select="@group_code"/></xsl:when><xsl:when test="contains(@group_code,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@group_code,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@group_code,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="group_code_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($group_code_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="group_code_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@group_code"/></xsl:call-template></xsl:variable>
       <PDBo:has_reflns_scale>
       <PDBo:reflns_scale rdf:about="{$base}/reflns_scale/{$group_code_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5395,8 +4952,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:reflns_shellCategory/VRPTx:reflns_shell">
-      <xsl:variable name="pdbx_ordinal_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_ordinal)&lt;64"><xsl:value-of select="@pdbx_ordinal"/></xsl:when><xsl:when test="contains(@pdbx_ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_reflns_shell>
       <PDBo:reflns_shell rdf:about="{$base}/reflns_shell/{$pdbx_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5409,8 +4965,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:space_groupCategory/VRPTx:space_group">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_space_group>
       <PDBo:space_group rdf:about="{$base}/space_group/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5423,8 +4978,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:space_group_symopCategory/VRPTx:space_group_symop">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_space_group_symop>
       <PDBo:space_group_symop rdf:about="{$base}/space_group_symop/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5437,8 +4991,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:structCategory/VRPTx:struct">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct>
       <PDBo:struct rdf:about="{$base}/struct/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5459,15 +5012,13 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_asymCategory/VRPTx:struct_asym">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_asym>
       <PDBo:struct_asym rdf:about="{$base}/struct_asym/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="VRPTx:entity_id!='' and @id!=''">
         <owl:sameAs>
-      <xsl:variable name="VRPTx_entity_id_truncated"><xsl:choose><xsl:when test="string-length(VRPTx:entity_id)&lt;64"><xsl:value-of select="VRPTx:entity_id"/></xsl:when><xsl:when test="contains(VRPTx:entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(VRPTx:entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(VRPTx:entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="VRPTx_entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($VRPTx_entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="VRPTx_entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="VRPTx:entity_id"/></xsl:call-template></xsl:variable>
           <PDBo:struct_asym rdf:about="{$base}/struct_asym/{$VRPTx_entity_id_encoded},{$id_encoded}">
             <rdfs:label>struct_asymUnique_1</rdfs:label>
           </PDBo:struct_asym>
@@ -5482,16 +5033,11 @@
         <!-- entityKeyref_0_0_10_0 -->
       </xsl:if>
       <xsl:for-each select="$sifts_unp_seg_doc/VRPTx:pdbx_sifts_unp_segments[@asym_id=$id_encoded]">
-        <xsl:variable name="asym_id_truncated"><xsl:choose><xsl:when test="string-length(@asym_id)&lt;64"><xsl:value-of select="@asym_id"/></xsl:when><xsl:when test="contains(@asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-        <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-        <xsl:variable name="instance_id_truncated"><xsl:choose><xsl:when test="string-length(@instance_id)&lt;64"><xsl:value-of select="@instance_id"/></xsl:when><xsl:when test="contains(@instance_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@instance_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@instance_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="instance_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($instance_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-        <xsl:variable name="segment_id_truncated"><xsl:choose><xsl:when test="string-length(@segment_id)&lt;64"><xsl:value-of select="@segment_id"/></xsl:when><xsl:when test="contains(@segment_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@segment_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@segment_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="segment_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($segment_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-        <xsl:variable name="unp_acc_truncated"><xsl:choose><xsl:when test="string-length(@unp_acc)&lt;64"><xsl:value-of select="@unp_acc"/></xsl:when><xsl:when test="contains(@unp_acc,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@unp_acc,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@unp_acc,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="unp_acc_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($unp_acc_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@asym_id"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="instance_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@instance_id"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="segment_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@segment_id"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="unp_acc_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@unp_acc"/></xsl:call-template></xsl:variable>
         <PDBo:reference_to_pdbx_sifts_unp_segments>
           <rdf:Description rdf:about="{$base}/pdbx_sifts_unp_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$unp_acc_encoded}">
             <PDBo:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{$id_encoded}"/>
@@ -5499,22 +5045,14 @@
         </PDBo:reference_to_pdbx_sifts_unp_segments>
       </xsl:for-each>
       <xsl:for-each select="$sifts_xref_db_seg_doc/VRPTx:pdbx_sifts_xref_db_segments[@asym_id=$id_encoded]">
-        <xsl:variable name="asym_id_truncated"><xsl:choose><xsl:when test="string-length(@asym_id)&lt;64"><xsl:value-of select="@asym_id"/></xsl:when><xsl:when test="contains(@asym_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@asym_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@asym_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="asym_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($asym_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-        <xsl:variable name="entity_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_id)&lt;64"><xsl:value-of select="@entity_id"/></xsl:when><xsl:when test="contains(@entity_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="entity_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-        <xsl:variable name="instance_id_truncated"><xsl:choose><xsl:when test="string-length(@instance_id)&lt;64"><xsl:value-of select="@instance_id"/></xsl:when><xsl:when test="contains(@instance_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@instance_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@instance_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="instance_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($instance_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-        <xsl:variable name="segment_id_truncated"><xsl:choose><xsl:when test="string-length(@segment_id)&lt;64"><xsl:value-of select="@segment_id"/></xsl:when><xsl:when test="contains(@segment_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@segment_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@segment_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="segment_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($segment_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-        <xsl:variable name="seq_id_end_truncated"><xsl:choose><xsl:when test="string-length(@seq_id_end)&lt;64"><xsl:value-of select="@seq_id_end"/></xsl:when><xsl:when test="contains(@seq_id_end,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@seq_id_end,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@seq_id_end,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="seq_id_end_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($seq_id_end_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-        <xsl:variable name="seq_id_start_truncated"><xsl:choose><xsl:when test="string-length(@seq_id_start)&lt;64"><xsl:value-of select="@seq_id_start"/></xsl:when><xsl:when test="contains(@seq_id_start,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@seq_id_start,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@seq_id_start,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="seq_id_start_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($seq_id_start_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-        <xsl:variable name="xref_db_truncated"><xsl:choose><xsl:when test="string-length(@xref_db)&lt;64"><xsl:value-of select="@xref_db"/></xsl:when><xsl:when test="contains(@xref_db,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@xref_db,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@xref_db,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="xref_db_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($xref_db_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-        <xsl:variable name="xref_db_acc_truncated"><xsl:choose><xsl:when test="string-length(@xref_db_acc)&lt;64"><xsl:value-of select="@xref_db_acc"/></xsl:when><xsl:when test="contains(@xref_db_acc,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@xref_db_acc,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@xref_db_acc,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-        <xsl:variable name="xref_db_acc_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($xref_db_acc_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="asym_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@asym_id"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="entity_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entity_id"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="instance_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@instance_id"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="segment_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@segment_id"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="seq_id_end_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@seq_id_end"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="seq_id_start_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@seq_id_start"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="xref_db_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@xref_db"/></xsl:call-template></xsl:variable>
+        <xsl:variable name="xref_db_acc_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@xref_db_acc"/></xsl:call-template></xsl:variable>
         <PDBo:reference_to_pdbx_sifts_xref_db_segments>
           <rdf:Description rdf:about="{$base}/pdbx_sifts_xref_db_segments/{$asym_id_encoded},{$entity_id_encoded},{$instance_id_encoded},{$segment_id_encoded},{$seq_id_end_encoded},{$seq_id_start_encoded},{$xref_db_encoded},{$xref_db_acc_encoded}">
             <PDBo:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{$id_encoded}"/>
@@ -5531,8 +5069,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_biolCategory/VRPTx:struct_biol">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_biol>
       <PDBo:struct_biol rdf:about="{$base}/struct_biol/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5545,10 +5082,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_biol_viewCategory/VRPTx:struct_biol_view">
-      <xsl:variable name="biol_id_truncated"><xsl:choose><xsl:when test="string-length(@biol_id)&lt;64"><xsl:value-of select="@biol_id"/></xsl:when><xsl:when test="contains(@biol_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@biol_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@biol_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="biol_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($biol_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="biol_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@biol_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_biol_view>
       <PDBo:struct_biol_view rdf:about="{$base}/struct_biol_view/{$biol_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5569,8 +5104,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_confCategory/VRPTx:struct_conf">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_conf>
       <PDBo:struct_conf rdf:about="{$base}/struct_conf/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5591,8 +5125,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_conf_typeCategory/VRPTx:struct_conf_type">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_conf_type>
       <PDBo:struct_conf_type rdf:about="{$base}/struct_conf_type/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5605,8 +5138,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_connCategory/VRPTx:struct_conn">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_conn>
       <PDBo:struct_conn rdf:about="{$base}/struct_conn/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5619,8 +5151,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_conn_typeCategory/VRPTx:struct_conn_type">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_conn_type>
       <PDBo:struct_conn_type rdf:about="{$base}/struct_conn_type/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5633,8 +5164,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_mon_detailsCategory/VRPTx:struct_mon_details">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_mon_details>
       <PDBo:struct_mon_details rdf:about="{$base}/struct_mon_details/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5655,8 +5185,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_mon_nuclCategory/VRPTx:struct_mon_nucl">
-      <xsl:variable name="pdbx_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_id)&lt;64"><xsl:value-of select="@pdbx_id"/></xsl:when><xsl:when test="contains(@pdbx_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_mon_nucl>
       <PDBo:struct_mon_nucl rdf:about="{$base}/struct_mon_nucl/{$pdbx_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5669,8 +5198,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_mon_protCategory/VRPTx:struct_mon_prot">
-      <xsl:variable name="pdbx_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_id)&lt;64"><xsl:value-of select="@pdbx_id"/></xsl:when><xsl:when test="contains(@pdbx_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_mon_prot>
       <PDBo:struct_mon_prot rdf:about="{$base}/struct_mon_prot/{$pdbx_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5683,8 +5211,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_mon_prot_cisCategory/VRPTx:struct_mon_prot_cis">
-      <xsl:variable name="pdbx_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_id)&lt;64"><xsl:value-of select="@pdbx_id"/></xsl:when><xsl:when test="contains(@pdbx_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_mon_prot_cis>
       <PDBo:struct_mon_prot_cis rdf:about="{$base}/struct_mon_prot_cis/{$pdbx_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5697,10 +5224,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_ncs_domCategory/VRPTx:struct_ncs_dom">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="pdbx_ens_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_ens_id)&lt;64"><xsl:value-of select="@pdbx_ens_id"/></xsl:when><xsl:when test="contains(@pdbx_ens_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_ens_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_ens_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_ens_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_ens_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_ens_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_ens_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_ncs_dom>
       <PDBo:struct_ncs_dom rdf:about="{$base}/struct_ncs_dom/{$id_encoded},{$pdbx_ens_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5721,12 +5246,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_ncs_dom_limCategory/VRPTx:struct_ncs_dom_lim">
-      <xsl:variable name="dom_id_truncated"><xsl:choose><xsl:when test="string-length(@dom_id)&lt;64"><xsl:value-of select="@dom_id"/></xsl:when><xsl:when test="contains(@dom_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@dom_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@dom_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="dom_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($dom_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="pdbx_component_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_component_id)&lt;64"><xsl:value-of select="@pdbx_component_id"/></xsl:when><xsl:when test="contains(@pdbx_component_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_component_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_component_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_component_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_component_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="pdbx_ens_id_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_ens_id)&lt;64"><xsl:value-of select="@pdbx_ens_id"/></xsl:when><xsl:when test="contains(@pdbx_ens_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_ens_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_ens_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_ens_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_ens_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="dom_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@dom_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_component_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_component_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_ens_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_ens_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_ncs_dom_lim>
       <PDBo:struct_ncs_dom_lim rdf:about="{$base}/struct_ncs_dom_lim/{$dom_id_encoded},{$pdbx_component_id_encoded},{$pdbx_ens_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5747,8 +5269,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_ncs_ensCategory/VRPTx:struct_ncs_ens">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_ncs_ens>
       <PDBo:struct_ncs_ens rdf:about="{$base}/struct_ncs_ens/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5761,14 +5282,10 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_ncs_ens_genCategory/VRPTx:struct_ncs_ens_gen">
-      <xsl:variable name="dom_id_1_truncated"><xsl:choose><xsl:when test="string-length(@dom_id_1)&lt;64"><xsl:value-of select="@dom_id_1"/></xsl:when><xsl:when test="contains(@dom_id_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@dom_id_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@dom_id_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="dom_id_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($dom_id_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="dom_id_2_truncated"><xsl:choose><xsl:when test="string-length(@dom_id_2)&lt;64"><xsl:value-of select="@dom_id_2"/></xsl:when><xsl:when test="contains(@dom_id_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@dom_id_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@dom_id_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="dom_id_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($dom_id_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="ens_id_truncated"><xsl:choose><xsl:when test="string-length(@ens_id)&lt;64"><xsl:value-of select="@ens_id"/></xsl:when><xsl:when test="contains(@ens_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ens_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ens_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="ens_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ens_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="oper_id_truncated"><xsl:choose><xsl:when test="string-length(@oper_id)&lt;64"><xsl:value-of select="@oper_id"/></xsl:when><xsl:when test="contains(@oper_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@oper_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@oper_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="oper_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($oper_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="dom_id_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@dom_id_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="dom_id_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@dom_id_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="ens_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@ens_id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="oper_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@oper_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_ncs_ens_gen>
       <PDBo:struct_ncs_ens_gen rdf:about="{$base}/struct_ncs_ens_gen/{$dom_id_1_encoded},{$dom_id_2_encoded},{$ens_id_encoded},{$oper_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5797,8 +5314,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_ncs_operCategory/VRPTx:struct_ncs_oper">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_ncs_oper>
       <PDBo:struct_ncs_oper rdf:about="{$base}/struct_ncs_oper/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5811,8 +5327,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_refCategory/VRPTx:struct_ref">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_ref>
       <PDBo:struct_ref rdf:about="{$base}/struct_ref/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5833,8 +5348,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_ref_seqCategory/VRPTx:struct_ref_seq">
-      <xsl:variable name="align_id_truncated"><xsl:choose><xsl:when test="string-length(@align_id)&lt;64"><xsl:value-of select="@align_id"/></xsl:when><xsl:when test="contains(@align_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@align_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@align_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="align_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($align_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="align_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@align_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_ref_seq>
       <PDBo:struct_ref_seq rdf:about="{$base}/struct_ref_seq/{$align_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5855,8 +5369,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_ref_seq_difCategory/VRPTx:struct_ref_seq_dif">
-      <xsl:variable name="pdbx_ordinal_truncated"><xsl:choose><xsl:when test="string-length(@pdbx_ordinal)&lt;64"><xsl:value-of select="@pdbx_ordinal"/></xsl:when><xsl:when test="contains(@pdbx_ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pdbx_ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pdbx_ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="pdbx_ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pdbx_ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="pdbx_ordinal_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@pdbx_ordinal"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_ref_seq_dif>
       <PDBo:struct_ref_seq_dif rdf:about="{$base}/struct_ref_seq_dif/{$pdbx_ordinal_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5877,8 +5390,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_sheetCategory/VRPTx:struct_sheet">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_sheet>
       <PDBo:struct_sheet rdf:about="{$base}/struct_sheet/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5891,12 +5403,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_sheet_hbondCategory/VRPTx:struct_sheet_hbond">
-      <xsl:variable name="range_id_1_truncated"><xsl:choose><xsl:when test="string-length(@range_id_1)&lt;64"><xsl:value-of select="@range_id_1"/></xsl:when><xsl:when test="contains(@range_id_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@range_id_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@range_id_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="range_id_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($range_id_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="range_id_2_truncated"><xsl:choose><xsl:when test="string-length(@range_id_2)&lt;64"><xsl:value-of select="@range_id_2"/></xsl:when><xsl:when test="contains(@range_id_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@range_id_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@range_id_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="range_id_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($range_id_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="sheet_id_truncated"><xsl:choose><xsl:when test="string-length(@sheet_id)&lt;64"><xsl:value-of select="@sheet_id"/></xsl:when><xsl:when test="contains(@sheet_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@sheet_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@sheet_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="sheet_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($sheet_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="range_id_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@range_id_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="range_id_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@range_id_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="sheet_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@sheet_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_sheet_hbond>
       <PDBo:struct_sheet_hbond rdf:about="{$base}/struct_sheet_hbond/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5917,12 +5426,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_sheet_orderCategory/VRPTx:struct_sheet_order">
-      <xsl:variable name="range_id_1_truncated"><xsl:choose><xsl:when test="string-length(@range_id_1)&lt;64"><xsl:value-of select="@range_id_1"/></xsl:when><xsl:when test="contains(@range_id_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@range_id_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@range_id_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="range_id_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($range_id_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="range_id_2_truncated"><xsl:choose><xsl:when test="string-length(@range_id_2)&lt;64"><xsl:value-of select="@range_id_2"/></xsl:when><xsl:when test="contains(@range_id_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@range_id_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@range_id_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="range_id_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($range_id_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="sheet_id_truncated"><xsl:choose><xsl:when test="string-length(@sheet_id)&lt;64"><xsl:value-of select="@sheet_id"/></xsl:when><xsl:when test="contains(@sheet_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@sheet_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@sheet_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="sheet_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($sheet_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="range_id_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@range_id_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="range_id_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@range_id_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="sheet_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@sheet_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_sheet_order>
       <PDBo:struct_sheet_order rdf:about="{$base}/struct_sheet_order/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5943,10 +5449,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_sheet_rangeCategory/VRPTx:struct_sheet_range">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="sheet_id_truncated"><xsl:choose><xsl:when test="string-length(@sheet_id)&lt;64"><xsl:value-of select="@sheet_id"/></xsl:when><xsl:when test="contains(@sheet_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@sheet_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@sheet_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="sheet_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($sheet_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="sheet_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@sheet_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_sheet_range>
       <PDBo:struct_sheet_range rdf:about="{$base}/struct_sheet_range/{$id_encoded},{$sheet_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5967,12 +5471,9 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_sheet_topologyCategory/VRPTx:struct_sheet_topology">
-      <xsl:variable name="range_id_1_truncated"><xsl:choose><xsl:when test="string-length(@range_id_1)&lt;64"><xsl:value-of select="@range_id_1"/></xsl:when><xsl:when test="contains(@range_id_1,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@range_id_1,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@range_id_1,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="range_id_1_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($range_id_1_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="range_id_2_truncated"><xsl:choose><xsl:when test="string-length(@range_id_2)&lt;64"><xsl:value-of select="@range_id_2"/></xsl:when><xsl:when test="contains(@range_id_2,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@range_id_2,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@range_id_2,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="range_id_2_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($range_id_2_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="sheet_id_truncated"><xsl:choose><xsl:when test="string-length(@sheet_id)&lt;64"><xsl:value-of select="@sheet_id"/></xsl:when><xsl:when test="contains(@sheet_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@sheet_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@sheet_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="sheet_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($sheet_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="range_id_1_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@range_id_1"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="range_id_2_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@range_id_2"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="sheet_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@sheet_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_sheet_topology>
       <PDBo:struct_sheet_topology rdf:about="{$base}/struct_sheet_topology/{$range_id_1_encoded},{$range_id_2_encoded},{$sheet_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -5993,8 +5494,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_siteCategory/VRPTx:struct_site">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_site>
       <PDBo:struct_site rdf:about="{$base}/struct_site/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -6007,10 +5507,8 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_site_genCategory/VRPTx:struct_site_gen">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
-      <xsl:variable name="site_id_truncated"><xsl:choose><xsl:when test="string-length(@site_id)&lt;64"><xsl:value-of select="@site_id"/></xsl:when><xsl:when test="contains(@site_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@site_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@site_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="site_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($site_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="site_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@site_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_site_gen>
       <PDBo:struct_site_gen rdf:about="{$base}/struct_site_gen/{$id_encoded},{$site_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -6031,8 +5529,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:struct_site_viewCategory/VRPTx:struct_site_view">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_struct_site_view>
       <PDBo:struct_site_view rdf:about="{$base}/struct_site_view/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -6053,8 +5550,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:symmetryCategory/VRPTx:symmetry">
-      <xsl:variable name="entry_id_truncated"><xsl:choose><xsl:when test="string-length(@entry_id)&lt;64"><xsl:value-of select="@entry_id"/></xsl:when><xsl:when test="contains(@entry_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entry_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entry_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="entry_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entry_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="entry_id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@entry_id"/></xsl:call-template></xsl:variable>
       <PDBo:has_symmetry>
       <PDBo:symmetry rdf:about="{$base}/symmetry/{$entry_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
@@ -6075,8 +5571,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:symmetry_equivCategory/VRPTx:symmetry_equiv">
-      <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
-      <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <xsl:variable name="id_encoded"><xsl:call-template name="key-encode"><xsl:with-param name="str" select="@id"/></xsl:call-template></xsl:variable>
       <PDBo:has_symmetry_equiv>
       <PDBo:symmetry_equiv rdf:about="{$base}/symmetry_equiv/{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
