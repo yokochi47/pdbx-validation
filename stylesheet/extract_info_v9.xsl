@@ -1696,7 +1696,7 @@ Restraint type, <xsl:value-of select="@restraint_type"/>, is not listed in XSLT 
               <xsl:when test='@ang_rest_type="THETA&apos;"'>
                 <VRPTx:theta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_prime_violations_count>
               </xsl:when>
-              <xsl:when test="@ang_rest_type='.' or @ang_rest_type='PPA' or @ang_rest_type='VEANgle' or @ang_rest_type='UNNAMED' or @ang_rest_type='UNKN' or @ang_rest_type='ALIGN' or @ang_rest_type='PLANE'">
+              <xsl:when test="@ang_rest_type='.' or @ang_rest_type='PPA' or starts-with(@ang_rest_type,'VEAN') or starts-with(@ang_rest_type,'UNNA') or starts-with(@ang_rest_type,'UNKN') or starts-with(@ang_rest_type,'ALIG') or starts-with(@ang_rest_type,'PLAN') or starts-with(@ang_rest_type,'DIHE')">
                 <VRPTx:other_violations_count><xsl:value-of select="@violations_count"/></VRPTx:other_violations_count>
               </xsl:when>
               <xsl:otherwise>
@@ -1820,7 +1820,7 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
               <xsl:when test='@ang_rest_type="THETA&apos;"'>
                 <VRPTx:theta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_prime_violations_count>
               </xsl:when>
-              <xsl:when test="@ang_rest_type='.' or @ang_rest_type='PPA' or @ang_rest_type='VEANgle' or @ang_rest_type='UNNAMED' or @ang_rest_type='UNKN' or @ang_rest_type='ALIGN' or @ang_rest_type='PLANE'">
+              <xsl:when test="@ang_rest_type='.' or starts-with(@ang_rest_type,'VEAN') or starts-with(@ang_rest_type,'UNNA') or starts-with(@ang_rest_type,'UNKN') or starts-with(@ang_rest_type,'ALIG') or starts-with(@ang_rest_type,'PLAN') or starts-with(@ang_rest_type,'DIHE')">
                 <VRPTx:other_violations_count><xsl:value-of select="@violations_count"/></VRPTx:other_violations_count>
               </xsl:when>
               <xsl:otherwise>
