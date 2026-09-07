@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Aug 21 20:10:59 JST 2026
+# Date:  Mon Sep  7 10:57:47 JST 2026
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.416)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.417)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.07.xsd
 #         - a XML schema for wwPDB validation reports, v6.07, rev. 2026-03-30
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.416
+    _dictionary.version         4.417
 #
     loop_
     _dictionary_history.version
@@ -1540,6 +1540,13 @@ data_mmcif_pdbx_validation.dic
 >     and _pdbx_nonpoly_atom_coordination.geometry_generic # not mapped
 >   + Add Isobutyrylation to _pdbx_chem_comp_pcm.type and _pdbx_modification_feature.type enumerations # not mapped
 >   + Add ModelAngelo to to _pdbx_initial_refinement_model.source_name enumeration # not mapped
+;
+  4.417   2026-09-07
+;
+>   + Update enumeration for _em_software.name # merged
+>   + Add 'ILL BEAMLINE DALI' and 'ESRF BEAMLINE ID15B'
+>     to _diffrn_source.type enumeration # merged
+>   + Add 'other' to _pdbx_serial_crystallography_sample_delivery.method enumeration # not mapped
 ;
 
 #
@@ -4964,6 +4971,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "ESRF BEAMLINE ID14-2"                           SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE ID14-3"                           SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE ID14-4"                           SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID15B"                            SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE ID2"                              SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE ID22"                             SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE ID23-1"                           SYNCHROTRON
@@ -5002,6 +5010,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "ILL BEAMLINE D19"                               "NUCLEAR REACTOR"
      "_diffrn_source.type"  "ILL BEAMLINE D22"                               "NUCLEAR REACTOR"
      "_diffrn_source.type"  "ILL BEAMLINE D33"                               "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "ILL BEAMLINE DALI"                              "NUCLEAR REACTOR"
      "_diffrn_source.type"  "ILL BEAMLINE H142"                              "NUCLEAR REACTOR"
      "_diffrn_source.type"  "ILL BEAMLINE LADI"                              "NUCLEAR REACTOR"
      "_diffrn_source.type"  "ILL BEAMLINE LADI III"                          "NUCLEAR REACTOR"
@@ -26270,6 +26279,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  D19             .
      "_diffrn_source.pdbx_synchrotron_beamline"  D22             .
      "_diffrn_source.pdbx_synchrotron_beamline"  D33             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  DALI            .
      "_diffrn_source.pdbx_synchrotron_beamline"  DW21B           .
      "_diffrn_source.pdbx_synchrotron_beamline"  DW32            .
      "_diffrn_source.pdbx_synchrotron_beamline"  D41A            .
@@ -26302,6 +26312,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  ID14-2          .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID14-3          .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID14-4          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID15B           .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID2             .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID22            .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID23-1          .
@@ -51731,7 +51742,6 @@ save__em_imaging.microscope_model
   '_em_imaging.microscope_model'  "JEOL 3200FSC"    .
   '_em_imaging.microscope_model'  "JEOL JEM-F200"    .
   '_em_imaging.microscope_model'  "JEOL KYOTO-3000SFF"    .
-  '_em_imaging.microscope_model'  "JEOL 3200FSC"    .
   '_em_imaging.microscope_model'  "JEOL 4000"    .
   '_em_imaging.microscope_model'  "JEOL 4000EX"    .
   '_em_imaging.microscope_model'  "JEOL CRYO ARM 200"    .
@@ -56138,24 +56148,30 @@ save__em_software.name
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
     _pdbx_item_enumeration.detail
+        '_em_software.name'  2dx                                .
         '_em_software.name'  3dmod                              .
+        '_em_software.name'  ACE                                .
         '_em_software.name'  ADP_EM                             .
         '_em_software.name'  AIMLESS                            .
         '_em_software.name'  Amber                              .
         '_em_software.name'  AmiraFPM                           .
         '_em_software.name'  Appion                             .
-        '_em_software.name'  ARP/wARP                           .
+        '_em_software.name'  Arachnid                           .
         '_em_software.name'  AreTomo                            .
+        '_em_software.name'  ARP/wARP                           .
         '_em_software.name'  ASTRA-TOOLBOX                      .
         '_em_software.name'  Auto3DEM                           .
         '_em_software.name'  AV3                                .
+        '_em_software.name'  'Brandeis Helical Package'         .
         '_em_software.name'  Buccaneer                          .
         '_em_software.name'  BUSTER                             .
         '_em_software.name'  Bsoft                              .
         '_em_software.name'  Build_Fspace                       .
         '_em_software.name'  'CCP4 package'                     .
+        '_em_software.name'  CHARMM                             .
         '_em_software.name'  cisTEM                             .
         '_em_software.name'  CNS                                .
+        '_em_software.name'  COMET                              .
         '_em_software.name'  'Confidence Maps'                  .
         '_em_software.name'  Coot                               .
         '_em_software.name'  Cow                                .
@@ -56178,6 +56194,7 @@ save__em_software.name
         '_em_software.name'  DockEM                             .
         '_em_software.name'  'DoG Picker'                       .
         '_em_software.name'  Dynamo                             .
+        '_em_software.name'  eLite3D                            .
         '_em_software.name'  emClarity                          .
         '_em_software.name'  EM-Menu                            .
         '_em_software.name'  EM-Tools                           .
@@ -56188,6 +56205,7 @@ save__em_software.name
         '_em_software.name'  EMPFT                              .
         '_em_software.name'  EMfit                              .
         '_em_software.name'  EMReady                            .
+        '_em_software.name'  EOS                                .
         '_em_software.name'  EPU                                .
         '_em_software.name'  EPU-D                              .
         '_em_software.name'  ERRASER                            .
@@ -56203,10 +56221,13 @@ save__em_software.name
         '_em_software.name'  FREALIX                            .
         '_em_software.name'  Gautomatch                         .
         '_em_software.name'  Gctf                               .
+        '_em_software.name'  gEMfitter                          .
         '_em_software.name'  GisSPA                             .
         '_em_software.name'  Gorgon                             .
         '_em_software.name'  HADDOCK                            .
         '_em_software.name'  HARUSPEX                           .
+        '_em_software.name'  Helicon                            .
+        '_em_software.name'  HHPred                             .
         '_em_software.name'  hsearch_lorentz                    .
         '_em_software.name'  I3                                 .
         '_em_software.name'  I-TASSER                           .
@@ -56248,6 +56269,7 @@ save__em_software.name
         '_em_software.name'  Pathwalking                        .
         '_em_software.name'  PEET                               .
         '_em_software.name'  PHENIX                             .
+        '_em_software.name'  PHOELIX                            .
         '_em_software.name'  POINTLESS                          .
         '_em_software.name'  PowerFit                           .
         '_em_software.name'  PRIISM/IVE                         .
@@ -56265,6 +56287,7 @@ save__em_software.name
         '_em_software.name'  RobEM                              .
         '_em_software.name'  Rosetta                            .
         '_em_software.name'  RosettaEM                          .
+        '_em_software.name'  ROTAN                              .
         '_em_software.name'  Ruby-Helix                         .
         '_em_software.name'  Scipion                            .
         '_em_software.name'  Sculptor                           .
@@ -56283,7 +56306,9 @@ save__em_software.name
         '_em_software.name'  STOPGAP                            .
         '_em_software.name'  SUPER                              .
         '_em_software.name'  'Super-sampling SART'              .
+        '_em_software.name'  SUPRIM                             .
         '_em_software.name'  TEMPy                              .
+        '_em_software.name'  TIGRIS                             .
         '_em_software.name'  TOM                                .
         '_em_software.name'  'TOM Toolbox'                      .
         '_em_software.name'  TOMO3D                             .
@@ -56303,6 +56328,7 @@ save__em_software.name
         '_em_software.name'  X-PLOR                             .
         '_em_software.name'  X3D                                .
         '_em_software.name'  Xmipp                              .
+        '_em_software.name'  YUP                                .
 save_
 
 save__em_software.version

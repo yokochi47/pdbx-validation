@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pdbml.pdb.org/schema/pdbx-v50.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xsd:annotation>
-    <xsd:appinfo>PDBML Schema v5.416</xsd:appinfo>
+    <xsd:appinfo>PDBML Schema v5.417</xsd:appinfo>
     <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xml:lang="en">
 
-PDBML Schema translated from the PDBx/mmCIF Dictionary v5.416:
+PDBML Schema translated from the PDBx/mmCIF Dictionary v5.417:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </xsd:documentation>
@@ -17590,6 +17590,7 @@ This item identifies the resource of initial model used for refinement
                   <xsd:enumeration value="PDB"/>
                   <xsd:enumeration value="AlphaFold"/>
                   <xsd:enumeration value="RoseTTAFold"/>
+                  <xsd:enumeration value="ModelAngelo"/>
                   <xsd:enumeration value="ModelArchive"/>
                   <xsd:enumeration value="SwissModel"/>
                   <xsd:enumeration value="Modeller"/>
@@ -58117,7 +58118,7 @@ coordination information on selected atoms
       &lt;PDBx:label_comp_id&gt;VO4&lt;/PDBx:label_comp_id&gt;
       &lt;PDBx:label_seq_id xsi:nil="true" /&gt;
       &lt;PDBx:number&gt;5&lt;/PDBx:number&gt;
-      &lt;PDBx:software_remark&gt;regular&lt;/PDBx:software_remark&gt;
+      &lt;PDBx:remark&gt;regular&lt;/PDBx:remark&gt;
    &lt;/PDBx:pdbx_nonpoly_atom_coordination&gt;
    &lt;PDBx:pdbx_nonpoly_atom_coordination geometry_id="1" provenance="MetalCoord"&gt;
       &lt;PDBx:assessment&gt;Expected&lt;/PDBx:assessment&gt;
@@ -58133,7 +58134,7 @@ coordination information on selected atoms
       &lt;PDBx:label_comp_id&gt;VO4&lt;/PDBx:label_comp_id&gt;
       &lt;PDBx:label_seq_id xsi:nil="true" /&gt;
       &lt;PDBx:number&gt;5&lt;/PDBx:number&gt;
-      &lt;PDBx:software_remark xsi:nil="true" /&gt;
+      &lt;PDBx:remark xsi:nil="true" /&gt;
    &lt;/PDBx:pdbx_nonpoly_atom_coordination&gt;
 &lt;/PDBx:pdbx_nonpoly_atom_coordinationCategory&gt;
 
@@ -58154,7 +58155,7 @@ coordination information on selected atoms
       &lt;PDBx:label_comp_id&gt;SF4&lt;/PDBx:label_comp_id&gt;
       &lt;PDBx:label_seq_id xsi:nil="true" /&gt;
       &lt;PDBx:number&gt;4&lt;/PDBx:number&gt;
-      &lt;PDBx:software_remark&gt;regular&lt;/PDBx:software_remark&gt;
+      &lt;PDBx:remark&gt;regular&lt;/PDBx:remark&gt;
    &lt;/PDBx:pdbx_nonpoly_atom_coordination&gt;
    &lt;PDBx:pdbx_nonpoly_atom_coordination geometry_id="1" provenance="tetrahedral"&gt;
       &lt;PDBx:assessment&gt;Expected&lt;/PDBx:assessment&gt;
@@ -58170,7 +58171,7 @@ coordination information on selected atoms
       &lt;PDBx:label_comp_id&gt;SF4&lt;/PDBx:label_comp_id&gt;
       &lt;PDBx:label_seq_id xsi:nil="true" /&gt;
       &lt;PDBx:number&gt;4&lt;/PDBx:number&gt;
-      &lt;PDBx:software_remark xsi:nil="true" /&gt;
+      &lt;PDBx:remark xsi:nil="true" /&gt;
    &lt;/PDBx:pdbx_nonpoly_atom_coordination&gt;
    &lt;PDBx:pdbx_nonpoly_atom_coordination geometry_id="2" provenance="tetrahedral"&gt;
       &lt;PDBx:assessment&gt;Expected&lt;/PDBx:assessment&gt;
@@ -58186,7 +58187,7 @@ coordination information on selected atoms
       &lt;PDBx:label_comp_id&gt;SF4&lt;/PDBx:label_comp_id&gt;
       &lt;PDBx:label_seq_id xsi:nil="true" /&gt;
       &lt;PDBx:number&gt;4&lt;/PDBx:number&gt;
-      &lt;PDBx:software_remark&gt;regular&lt;/PDBx:software_remark&gt;
+      &lt;PDBx:remark&gt;regular&lt;/PDBx:remark&gt;
    &lt;/PDBx:pdbx_nonpoly_atom_coordination&gt;
    &lt;PDBx:pdbx_nonpoly_atom_coordination geometry_id="2" provenance="tetrahedral"&gt;
       &lt;PDBx:assessment&gt;Expected&lt;/PDBx:assessment&gt;
@@ -58202,7 +58203,7 @@ coordination information on selected atoms
       &lt;PDBx:label_comp_id&gt;SF4&lt;/PDBx:label_comp_id&gt;
       &lt;PDBx:label_seq_id xsi:nil="true" /&gt;
       &lt;PDBx:number&gt;4&lt;/PDBx:number&gt;
-      &lt;PDBx:software_remark xsi:nil="true" /&gt;
+      &lt;PDBx:remark xsi:nil="true" /&gt;
    &lt;/PDBx:pdbx_nonpoly_atom_coordination&gt;
    &lt;PDBx:pdbx_nonpoly_atom_coordination geometry_id="3" provenance="tetrahedral"&gt;
       &lt;PDBx:assessment&gt;Expected&lt;/PDBx:assessment&gt;
@@ -58218,7 +58219,7 @@ coordination information on selected atoms
       &lt;PDBx:label_comp_id&gt;SF4&lt;/PDBx:label_comp_id&gt;
       &lt;PDBx:label_seq_id xsi:nil="true" /&gt;
       &lt;PDBx:number&gt;4&lt;/PDBx:number&gt;
-      &lt;PDBx:software_remark&gt;regular&lt;/PDBx:software_remark&gt;
+      &lt;PDBx:remark&gt;regular&lt;/PDBx:remark&gt;
    &lt;/PDBx:pdbx_nonpoly_atom_coordination&gt;
    &lt;PDBx:pdbx_nonpoly_atom_coordination geometry_id="3" provenance="tetrahedral"&gt;
       &lt;PDBx:assessment&gt;Expected&lt;/PDBx:assessment&gt;
@@ -58234,7 +58235,7 @@ coordination information on selected atoms
       &lt;PDBx:label_comp_id&gt;SF4&lt;/PDBx:label_comp_id&gt;
       &lt;PDBx:label_seq_id xsi:nil="true" /&gt;
       &lt;PDBx:number&gt;4&lt;/PDBx:number&gt;
-      &lt;PDBx:software_remark xsi:nil="true" /&gt;
+      &lt;PDBx:remark xsi:nil="true" /&gt;
    &lt;/PDBx:pdbx_nonpoly_atom_coordination&gt;
    &lt;PDBx:pdbx_nonpoly_atom_coordination geometry_id="4" provenance="tetrahedral"&gt;
       &lt;PDBx:assessment&gt;Expected&lt;/PDBx:assessment&gt;
@@ -58250,7 +58251,7 @@ coordination information on selected atoms
       &lt;PDBx:label_comp_id&gt;SF4&lt;/PDBx:label_comp_id&gt;
       &lt;PDBx:label_seq_id xsi:nil="true" /&gt;
       &lt;PDBx:number&gt;4&lt;/PDBx:number&gt;
-      &lt;PDBx:software_remark&gt;regular&lt;/PDBx:software_remark&gt;
+      &lt;PDBx:remark&gt;regular&lt;/PDBx:remark&gt;
    &lt;/PDBx:pdbx_nonpoly_atom_coordination&gt;
    &lt;PDBx:pdbx_nonpoly_atom_coordination geometry_id="4" provenance="tetrahedral"&gt;
       &lt;PDBx:assessment&gt;Expected&lt;/PDBx:assessment&gt;
@@ -58266,7 +58267,7 @@ coordination information on selected atoms
       &lt;PDBx:label_comp_id&gt;SF4&lt;/PDBx:label_comp_id&gt;
       &lt;PDBx:label_seq_id xsi:nil="true" /&gt;
       &lt;PDBx:number&gt;4&lt;/PDBx:number&gt;
-      &lt;PDBx:software_remark xsi:nil="true" /&gt;
+      &lt;PDBx:remark xsi:nil="true" /&gt;
    &lt;/PDBx:pdbx_nonpoly_atom_coordination&gt;
 &lt;/PDBx:pdbx_nonpoly_atom_coordinationCategory&gt;
 
@@ -58553,7 +58554,7 @@ The coordination number of the target atom.
                 </xsd:restriction>
               </xsd:simpleType>
             </xsd:element>
-            <xsd:element name="software_remark" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+            <xsd:element name="remark" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
 This data item describes the agreement of the
@@ -68861,6 +68862,7 @@ record general details about the sample delivery
 &lt;PDBx:pdbx_serial_crystallography_sample_deliveryCategory&gt;
    &lt;PDBx:pdbx_serial_crystallography_sample_delivery diffrn_id="1"&gt;
       &lt;PDBx:description&gt;LCP injector&lt;/PDBx:description&gt;
+      &lt;PDBx:method&gt;injection&lt;/PDBx:method&gt;
    &lt;/PDBx:pdbx_serial_crystallography_sample_delivery&gt;
 &lt;/PDBx:pdbx_serial_crystallography_sample_deliveryCategory&gt;
 
@@ -68897,6 +68899,7 @@ of the source.
                 <xsd:restriction base="xsd:string">
                   <xsd:enumeration value="fixed target"/>
                   <xsd:enumeration value="injection"/>
+                  <xsd:enumeration value="other"/>
                 </xsd:restriction>
               </xsd:simpleType>
             </xsd:element>
