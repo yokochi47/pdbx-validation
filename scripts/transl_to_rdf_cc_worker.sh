@@ -64,7 +64,7 @@ do
 
   cc_id=`basename $pdbml_file .xml`
   rdf_file=$WORK_DIR/$cc_id.rdf
-  uc_xml_file=$WORK_DIR/$UNICHEM_SRCS/$cc_id.xml
+  uc_xml_file=$UNICHEM_SRCS/$cc_id.xml
   #if [ ${#cc_id} -gt 3 ] ; then
   # div_dir=$WORK_DIR/${cc_id:2}
   #else
